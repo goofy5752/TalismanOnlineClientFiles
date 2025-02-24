@@ -1,0 +1,16 @@
+ae,string,string,string,marea
+编号,区域名字,区域音乐,区域Logo,区域
+"ID","Name","Music","Logo","Area"
+1,$L:Scenestable_wugongqv$,enviroment1,29,"319 89 512 255;"
+2,$L:Scenestable_shirenbuluo$,enviroment1,29,"0 96 125 256;"
+3,$L:Scenestable_shuizhiqv$,enviroment1,29,"0 -130 164 10;
+0 -246 166 -127;
+166 -246 210 -143;"
+4,$L:Scenestable_kulouqv$,enviroment1,29,"333 -256 512 8;"
+5,$L:Scenestable_jisishentan$,enviroment1,29,"172 -8 277 102;"
+6,$L:Scenestable_yaorendongfu$,enviroment1,29,"277 8 511 89;
+125 102 319 256;
+-1 10 172 98;
+124 92 172 106;
+164 -133 334 -6;"
+7,$L:Scenestable_bingmayong$,enviroment1,29,"1 -511 256 -252;"

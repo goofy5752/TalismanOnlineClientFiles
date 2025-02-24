@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_gemstone_inlay.lua">Script</Script>
+  <Theme Name="THEM_GEMSTONE_INLAY">
+    <Templates>
+      <Form DragIn="true" Inherit="" Location="100,50,500,500" Name="FORM_DEFAULT" Show="true">
+        <TitleBarButton Location="0,0,0,0" Name="TITLEBAR" Show="true" Size="0,20" TextColor="#FFFFFFFF" Transparency="">
+          <Anchors>
+            <Anchor offset="3,0" point="LEFT" relativePoint="LEFT"/>
+            <Anchor offset="-3,0" point="RIGHT" relativePoint="RIGHT"/>
+            <Anchor offset="0,3" point="TOP" relativePoint="TOP"/>
+          </Anchors>
+        </TitleBarButton>
+        <CloseButton Name="BTN_CLOSE" Show="true" Size="13,13">
+          <Anchors>
+            <Anchor offset="0,27" point="TOP"/>
+            <Anchor offset="-15,0" point="RIGHT"/>
+          </Anchors>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Label Inherit="bg1" Location="0,0,500,500" Name="LABLE_BG" Show="true">
+          <Anchors>
+            <Anchor offset="5,0" point="LEFT" relativePoint="LEFT"/>
+            <Anchor offset="-5,0" point="RIGHT" relativePoint="RIGHT"/>
+            <Anchor offset="0,0" point="TOP" relativePoint="TOP"/>
+            <Anchor offset="0,0" point="BOTTOM" relativePoint="BOTTOM"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="0,5,642,50" Name="LABLE_TITLE_BG" Show="true" Size="0,50">
+          <Anchors>
+            <Anchor offset="-5,0" point="LEFT" relativePoint="LEFT"/>
+            <Anchor offset="5,0" point="RIGHT" relativePoint="RIGHT"/>
+            <Anchor offset="0,0" point="TOP" relativePoint="TOP"/>
+          </Anchors>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="10,10,70,18" Name="LABLE_TITLE_TEXT" Show="true" Size="110,20">
+          <Anchors>
+            <Anchor offset="0,23" point="TOP" relativePoint="TOP" relativeTo="LABLE_TITLE_BG"/>
+            <Anchor point="CENTERH" relativePoint="CENTERH" relativeTo="LABLE_TITLE_BG"/>
+          </Anchors>
+        </Label>
+      </Form>
+      <Button DragIn="true" Inherit="" Location="0,0,0,0" Name="BTN_HOLE" Show="true">
+        <BackgroundImage File="ic_it7104a" Source="0,0,32,32"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnLoad>layWorld_frmGemstoneInlay_btnHole_OnLoad(self)</OnLoad>
+          <OnDragIn>layWorld_frmGemstoneInlay_btnHole_OnDragIn( self, drag )</OnDragIn>
+          <OnDragNull>layWorld_frmGemstoneInlay_btnHole_OnDragNull( self )</OnDragNull>
+          <OnHint>layWorld_frmGemstoneInlay_btnHole_OnHint( self )</OnHint>
+          <OnLClick>layWorld_frmGemstoneInlay_btnHole_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" MouseEvent="true" MouseMove="true" Name="LABLE_HOLE_MASK_CLOSED" Show="false">
+        <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+      </Label>
+      <Label Inherit="" Name="LABLE_HOLE_MASK_INLAYED" Show="false">
+        <BackgroundImage File="eff_dimond2" Source="" Transparency="1"/>
+      </Label>
+      <Label Inherit="" Name="LABLE_HOLE_MASK_CHECKED" Show="false">
+        <BackgroundImage File="eff_dimond1" Source=""/>
+      </Label>
+    </Templates>
+  </Theme>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="FORM_DEFAULT" Location="136,45,300,300" Name="FORM_GEMSTONE_INLAY" Show="false">
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="90,1,120,65" Name="LABLE_TITLE_TEXT" Show="true" Size="120,65" Text="$L:1556$" TextFont="$L:1$" TextSize="$L:3$">
+        <Anchors>
+          <Anchor offset="0,0" point="TOP" relativePoint="TOP" relativeTo="LABLE_TITLE_BG"/>
+          <Anchor point="CENTERH" relativePoint="CENTERH" relativeTo="LABLE_TITLE_BG"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="" Location="57,60,185,185" Name="747" Show="true">
+        <BackgroundImage File="tz_034" Source="0,0,185,185"/>
+      </Label>
+      <Button DragIn="true" Inherit="" Location="130,75,40,40" Name="BTN_EQUIP" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnLoad>layWorld_frmGemstoneInlay_btnEquip_OnLoad(self)</OnLoad>
+          <OnDragIn>layWorld_frmGemstoneInlay_btnEquip_OnDragIn( self, drag )</OnDragIn>
+          <OnDragNull>layWorld_frmGemstoneInlay_btnEquip_OnDragNull( self )</OnDragNull>
+          <OnHint>layWorld_frmGemstoneInlay_btnEquip_OnHint( self )</OnHint>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,287,250,20" Name="LABLE_NEED_MONEY" Show="false" Text="$L:1558$"/>
+      <Button Inherit="BTN_HOLE" Location="43,130,32,32" Name="BTN_HOLE_1"/>
+      <Button Inherit="BTN_HOLE" Location="103,130,32,32" Name="BTN_HOLE_2"/>
+      <Button Inherit="BTN_HOLE" Location="161,130,32,32" Name="BTN_HOLE_3"/>
+      <Button Inherit="BTN_HOLE" Location="219,130,32,32" Name="BTN_HOLE_4"/>
+      <Button Inherit="BTN_HOLE" Location="43,171,32,32" Name="BTN_HOLE_5"/>
+      <Button Inherit="BTN_HOLE" Location="103,171,32,32" Name="BTN_HOLE_6"/>
+      <Button Inherit="BTN_HOLE" Location="161,171,32,32" Name="BTN_HOLE_7"/>
+      <Button Inherit="BTN_HOLE" Location="219,171,32,32" Name="BTN_HOLE_8"/>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="42,130,32,32" Name="LABLE_HOLE_MASK_CLOSED_1">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_1"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="104,130,32,32" Name="LABLE_HOLE_MASK_CLOSED_2">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_2"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="157,130,32,32" Name="LABLE_HOLE_MASK_CLOSED_3">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_3"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="216,130,32,32" Name="LABLE_HOLE_MASK_CLOSED_4">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_4"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="42,171,32,32" Name="LABLE_HOLE_MASK_CLOSED_5">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_5"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="104,171,32,32" Name="LABLE_HOLE_MASK_CLOSED_6">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_6"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="159,171,32,32" Name="LABLE_HOLE_MASK_CLOSED_7">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_7"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CLOSED" Location="216,171,32,32" Name="LABLE_HOLE_MASK_CLOSED_8">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_8"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Location="51,130,32,32" Name="LABLE_HOLE_MASK_INLAYED_1">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_1"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Name="LABLE_HOLE_MASK_INLAYED_2">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_2"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Name="LABLE_HOLE_MASK_INLAYED_3">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_3"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Location="219,131,32,32" Name="LABLE_HOLE_MASK_INLAYED_4">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_4"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Name="LABLE_HOLE_MASK_INLAYED_5">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_5"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Name="LABLE_HOLE_MASK_INLAYED_6">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_6"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Name="LABLE_HOLE_MASK_INLAYED_7">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_7"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_INLAYED" Name="LABLE_HOLE_MASK_INLAYED_8">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_8"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_1">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_1"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_1"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_2">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_2"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_2"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_3">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_3"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_3"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_4">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_4"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_4"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_5">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_5"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_5"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_6">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_6"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_6"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_7">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_7"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_7"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="LABLE_HOLE_MASK_CHECKED" Name="LABLE_HOLE_MASK_CHECKED_8">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="LEFT" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="TOP" relativePoint="TOP" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="BTN_HOLE_8"/>
+          <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="BTN_HOLE_8"/>
+        </Anchors>
+      </Label>
+      <Button Inherit="PushButton" Location="60,259,80,20" Name="BTN_INLAY" Show="true" Text="$L:1560$">
+        <Scripts>
+          <OnLClick>layWorld_frmGemstoneInlay_btnInlay_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="162,260,80,20" Name="BTN_GETOUT" Show="true" Text="$L:1561$">
+        <Scripts>
+          <OnLClick>layWorld_frmGemstoneInlay_btnGetout_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <EditBox AutoScrollV="true" BackgroundColor="" ColSpacing="6" EnableInput="false" Inherit="bg3" LineSpacing="6" Location="25,120,250,130" MultiLine="true" Name="EDIT_DESCRIBE" Show="true" Text="$L:1568$" WordWrap="true"/>
+      <Scripts>
+        <OnLoad>layWorld_frmGemstoneInlay_OnLoad(self)</OnLoad>
+        <OnShow>layWorld_frmGemstoneInlay_OnShow(self)</OnShow>
+        <OnHide>layWorld_frmGemstoneInlay_OnHide(self)</OnHide>
+        <OnEvent>layWorld_frmGemstoneInlay_OnEvent(self,event,arg)</OnEvent>
+        <OnDragIn>layWorld_frmGemstoneInlay_OnDragIn(drag)</OnDragIn>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

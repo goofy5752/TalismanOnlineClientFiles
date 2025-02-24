@@ -1,0 +1,25 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<plant>
+   <group name="海底碎物001">
+      <model density="0x32" id="0x15" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x16" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x17" max="1.500" min="1.200" radius="10.000"/>
+   </group>
+   <group name="海底碎物002">
+      <model density="0x32" id="0x18" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x19" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x1A" max="1.500" min="1.200" radius="10.000"/>
+   </group>
+   <group name="海底碎物003">
+      <model density="0x32" id="0x1B" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x1C" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x1D" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x1E" max="1.500" min="1.200" radius="10.000"/>
+   </group>
+   <group name="海底碎物004">
+      <model density="0x32" id="0x1F" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x20" max="1.500" min="1.200" radius="10.000"/>
+      <model density="0x32" id="0x21" max="1.500" min="1.200" radius="10.000"/>
+   </group>
+   <group name="海底碎物005"/>
+</plant>

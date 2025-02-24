@@ -1,0 +1,23 @@
+  <Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="" Transparency="0.5"/>
+	  </Item>
+
+	  
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:npctalk052_13$"color="#ffa6a845" />
+	</Items>
+  </Line>
+
+  <Line>
+	<Items>
+		 
+	</Items>
+  </Line>
+
+  <Line/>

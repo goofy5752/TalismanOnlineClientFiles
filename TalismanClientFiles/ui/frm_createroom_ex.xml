@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_CreateRoom_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="200,100,350,410" Name="frCreateRoomEx" Show="false">
+      <Label Inherit="bg1" Location="10,0,330,400" Name="lbBackground" Show="true"/>
+      <TitleBarButton Location="0,0,350,20"/>
+      <Label Inherit="TemplateNormalTitle" Location="3,0,344,45" Name="lbTittleBackground" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="110,22,130,22" Name="lbTittleName" Show="true" Size="" Text="$L:1377$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="320,25,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" LineSpacing="" Location="35,50,100,20" Name="lbRoomName" Show="true" Text="$L:1378$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <EditBox AlignCol="LEFT" AlignLine="CENTER" ColSpacing="10" EnableInput="true" Inherit="" LineSpacing="5" Location="150,50,160,20" MaxChar="16" MultiLine="false" Name="edbEnterRoomName" Show="true" WordWrap="false">
+        <BackgroundImage File="tz_010" Source="333,353,178,20"/>
+      </EditBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,90,100,20" Name="lbChooseStyle" Show="true" Text="$L:1382$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <ComboBox Inherit="StudioCb" Location="35,130,110,20" Name="cbChooseStyle" Show="true">
+        <Scripts>
+          <OnUpdateText>layWorld_frCreateRoomEx_cbChooseStyle_OnUpdateText(self);</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <Label Inherit="bg3" Location="150,130,170,140" Name="lbStyleIntroduction" Show="false"/>
+      <EditBox AlignCol="LEFT" AlignLine="CENTER" AutoScrollV="true" ColSpacing="5" EnableInput="false" Inherit="" LeftScrollBar="false" LineSpacing="5" Location="155,135,160,130" MultiLine="true" Name="edbStyleIntroduction" Show="false" Text="$L:1380$" WordWrap="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,180,100,20" Name="lbChooseMap" Show="false" Text="$L:1382$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <ComboBox Inherit="StudioCb" Location="35,230,110,20" Name="cbChooseMap" Show="false">
+        <Scripts>
+          <OnUpdateText>layWorld_frCreateRoomEx_cbChooseMap_OnUpdateText(self);</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <Label Inherit="bg3" Location="150,130,170,140" Name="lbMapIntroduction" Show="true"/>
+      <EditBox AlignCol="LEFT" AlignLine="CENTER" AutoScrollV="true" ColSpacing="5" EnableInput="false" Inherit="" LeftScrollBar="false" LineSpacing="5" Location="155,135,160,130" MultiLine="true" Name="edbMapIntroduction" Show="true" Text="" WordWrap="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,290,100,20" Name="lbSetPassword" Show="true" Text="$L:1383$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <EditBox AlignCol="LEFT" AlignLine="CENTER" ColSpacing="10" EnableInput="true" Inherit="" LineSpacing="5" Location="150,290,160,20" MaxChar="8" MultiLine="false" Name="edbEnterPassword" NumberOnly="true" Password="false" Show="true" WordWrap="false">
+        <BackgroundImage File="tz_010" Source="333,353,178,20"/>
+      </EditBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,320,100,20" Name="lbSetLevel" Show="true" Text="$L:1384$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <EditBox AlignCol="LEFT" AlignLine="CENTER" ColSpacing="10" EnableInput="true" Inherit="" LineSpacing="5" Location="150,320,160,20" MaxChar="" MaxNumber="100" MultiLine="false" Name="edbSetLevel" NumberOnly="true" Password="false" Show="true" WordWrap="false">
+        <BackgroundImage File="tz_010" Source="333,353,178,20"/>
+      </EditBox>
+      <Button Inherit="PushButton" Location="60,360,100,24" Name="btConfirm" Show="true" Text="$L:1385$">
+        <Scripts>
+          <OnLClick>layWorld_frCreateRoomEx_btConfirm_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="190,360,100,24" Name="btCancel" Show="true" Text="$L:1312$">
+        <Scripts>
+          <OnLClick>layWorld_frCreateRoomEx_btCancel_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnEvent>layWorld_frCreateRoomEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>layWorld_frCreateRoomEx_OnShow(self);</OnShow>
+        <OnLoad>layWorld_frCreateRoomEx_OnLoad(self);</OnLoad>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

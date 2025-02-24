@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmKeySettings">
+    <Templates>
+      <Button Inherit="" Location="160,0,149,20" Name="TemplateKeySettingButton" Show="true" Text="">
+        <BackgroundImage File="tz_012" Source="364,327,149,24"/>
+        <PushedImage File="tz_010" Source="333,353,179,20"/>
+        <Scripts>
+          <OnLClick>frmKeySettings_TemplateKeySettingButton_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="0,0,470,20" Name="TemplateLabelKeySettingsLine" Show="true">
+        <Label Inherit="" Location="0,0,150,20" Name="lbTitle" Show="true" Text="title"/>
+        <Button Inherit="TemplateKeySettingButton" Location="160,0,149,20" Name="btKey0">
+          <Param key="INDEX" type="number" value="0"/>
+        </Button>
+        <Button Inherit="TemplateKeySettingButton" Location="315,0,149,20" Name="btKey1">
+          <Param key="INDEX" type="number" value="1"/>
+        </Button>
+      </Label>
+    </Templates>
+  </Theme>
+  <Script file="frm_key_settings.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="445,79,540,480" Name="frmKeySettingEx" Show="false">
+      <Label Inherit="bg1" Location="6,15,520,456" Name="lbBackLT" Show="true"/>
+      <Label Inherit="" Location="276,1,255,256" Name="lbBackRT" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="1,256,276,174" Name="lbBackLB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="275,256,256,174" Name="lbBackRB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="bg3" Location="13,52,506,356" Name="1038" Show="true"/>
+      <CheckButton Inherit="DefaultChkBtn" Location="304,412,200,22" Name="ckbRoleSpecify" Show="true" Text="$L:290$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        <Scripts>
+          <OnLClick>layWorld_frmKeySettingEx_ckbRoleSpecify_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label AlignCol="CENTER" Inherit="" Location="17,69,150,18" Name="lbCommand" Show="true" Text="$L:291$" TextColor="#FFFFFF00"/>
+      <Label AlignCol="CENTER" Inherit="" Location="177,69,150,18" Name="lbKeySetting1" Show="true" Text="$L:292$" TextColor="#FFFFFF00"/>
+      <Label AlignCol="CENTER" Inherit="" Location="333,69,150,18" Name="lbKeySetting2" Show="true" Text="$L:293$" TextColor="#FFFFFF00"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,91,470,20" Name="lbLine1"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,111,470,20" Name="lbLine2"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,132,470,20" Name="lbLine3"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,153,470,20" Name="lbLine4"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,175,470,20" Name="lbLine5"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,196,470,20" Name="lbLine6"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,217,470,20" Name="lbLine7"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,238,470,20" Name="lbLine8"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,259,470,20" Name="lbLine9"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,280,470,20" Name="lbLine10"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,301,470,20" Name="lbLine11"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,323,470,20" Name="lbLine12"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,344,470,20" Name="lbLine13"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,365,470,20" Name="lbLine14"/>
+      <Label Inherit="TemplateLabelKeySettingsLine" Location="17,386,470,20" Name="lbLine15"/>
+      <ScrollBarV Inherit="DefaultSbv" Location="488,82,15,318" Name="sbScrollBar">
+        <Scripts>
+          <OnScroll>layWorld_frmKeySettingEx_sbScrollBar_OnScroll(self);</OnScroll>
+        </Scripts>
+      </ScrollBarV>
+      <EditBox Location="20,411,268,24" Name="ebInformation" EnableInput="false" Show="true" Text="" ColSpacing="8" LineSpacing="6" Pick="false" >
+        <BackgroundImage File="tz_011" Source="84,0,160,20"/>
+        <Scripts>
+          <OnLoad>layWorld_frmKeySettingEx_ebInformation_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmKeySettingEx_ebInformation_OnEvent(self, event, arg)</OnEvent>
+        </Scripts>
+      </EditBox>
+      <Button Inherit="PushButtonLong" Location="23,438,160,20" Name="btRestoreDefault" Show="true" Text="$L:294$">
+	    <Scripts>
+		  <OnLClick>layWorld_frmKeySettingEx_btRestoreDefault_OnLClick(self)</OnLClick>
+		</Scripts>
+	  </Button>
+      <Button Inherit="PushButton" Location="193,438,100,20" Name="btCancelKeySetting" Show="true" Text="$L:295$">
+	    <Scripts>
+		  <OnLClick>layWorld_frmKeySettingEx_btCancelKeySetting_OnLClick(self)</OnLClick>
+		</Scripts>
+	  </Button>
+      <Button Inherit="PushButton" Location="301,438,100,20" Name="btOK" Show="true" Text="$L:296$">
+	    <Scripts>
+		  <OnLClick>layWorld_frmKeySettingEx_btOK_OnLClick(self)</OnLClick>
+		</Scripts>
+	  </Button>
+      <Button Inherit="PushButton" Location="409,438,100,20" Name="btCancel" Show="true" Text="$L:297$">
+	    <Scripts>
+		  <OnLClick>layWorld_frmKeySettingEx_btCancel_OnLClick(self)</OnLClick>
+		</Scripts>
+	  </Button>
+      <TitleBarButton Location="0,0,520,28"/>
+      <EditBox EnableInput="true" Inherit="" Location="10,10,16,16" Name="edtNewKey" Show="false">
+        <Scripts>
+          <OnKeyUp>layWorld_frmKeySettingEx_edtNewKey_OnKeyUp(self, key);</OnKeyUp>
+          <OnShow>layWorld_frmKeySettingEx_edtNewKey_OnShow(self);</OnShow>
+          <OnHide>layWorld_frmKeySettingEx_edtNewKey_OnHide(self);</OnHide>
+        </Scripts>
+      </EditBox>
+      <CloseButton Location="501,29,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,530,47" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="386,8,147,47" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="314,0,145,47"/>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" Location="196,22,140,22" Name="2270" Show="true" Text="$L:298$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnShow>layWorld_frmKeySettingEx_OnShow(self);</OnShow>
+		<OnHide>layWorld_frmKeySettingEx_OnHide(self)</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

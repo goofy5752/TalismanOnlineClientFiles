@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="470,117,294,460" Name="frmAllConnection" Show="fals">
+      <Label Inherit="bg1" Location="7,18,280,430" Name="lbBackground" Show="fals"/>
+      <Label Inherit="" Location="0,256,256,164" Name="lbBackground2" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="255,8,90,248" Name="929" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="254,255,90,165" Name="1052" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Form Inherit="NoTitleBarForm" Location="18,97,260,345" Name="frmFriends" Show="fals">
+        <Label Inherit="bg3" Location="2,2,256,295" Name="10505" Show="true"/>
+        <ListBox BackgroundColor="#8f000000" Inherit="" Location="5,5,249,289" Name="ltFriends" Show="true"/>
+        <Button Inherit="PushButton" Location="147,299,80,20" Name="btAddFriends" Show="true" Text="$L:404$"/>
+        <Button Inherit="PushButton" Location="35,299,80,20" Name="btSendMessenger" Show="true" Text="$L:405$"/>
+        <Button Inherit="PushButton" Location="183,283,60,20" Name="btSendEmail" Show="false" Text="$L:406$"/>
+        <Button Inherit="PushButton" Location="147,323,80,20" Name="btDeleteFriends" Show="true" Text="$L:407$"/>
+        <Button Inherit="PushButton" Location="35,323,80,20" Name="btTeam" Show="true" Text="$L:408$"/>
+        <Button Inherit="PushButton" Location="83,318,80,20" Name="btSystem" Show="false" Text="$L:409$"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="18,97,260,345" Name="frmBadMan" Show="false">
+        <Label Inherit="bg3" Location="2,2,256,295" Name="9458" Show="true"/>
+        <ListBox BackgroundColor="#8f000000" Inherit="" Location="5,5,249,289" Name="ltBadMan" Show="true"/>
+        <Button Inherit="PushButton" Location="0,309,80,20" Name="btAddBlock" Show="true" Text="$L:410$"/>
+        <Button Inherit="PushButton" Location="90,309,80,20" Name="btDelBlock" Show="true" Text="$L:411$"/>
+        <Button Inherit="PushButton" Location="178,309,80,20" Name="btSystem" Show="true" Text="$L:412$"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="18,97,260,345" Name="frmBad" Show="false">
+        <Label Inherit="bg3" Location="2,2,256,295" Name="9458" Show="true"/>
+        <ListBox BackgroundColor="#8f000000" Inherit="" Location="5,5,249,289" Name="ltFriends" Show="true"/>
+        <Button Inherit="PushButton" Location="33,309,80,20" Name="btAddFriends" Show="true" Text="$L:972$"/>
+        <Button Inherit="PushButton" Location="183,283,60,20" Name="btSendEmail" Show="false" Text="$L:406$"/>
+        <Button Inherit="PushButton" Location="150,308,80,20" Name="btSystem" Show="true" Text="$L:973$"/>
+      </Form>
+      <TitleBarButton Location="0,0,294,30" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CheckButton CheckStyle="false" Inherit="" Location="27,54,80,40" Name="btnFriends" Show="true" Text="$L:413$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="187,54,80,40" Name="btnBadMan" Show="true" Text="$L:414$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="107,54,80,40" Name="btnBad" Show="true" Text="$L:971$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <Label Inherit="TemplateNormalTitle" Location="1,0,292,50" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="384,8,145,24" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="314,0,145,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,126,66" Name="lbTitleName" Show="true" Text="$L:403$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="13,88,268,6" Name="3404" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

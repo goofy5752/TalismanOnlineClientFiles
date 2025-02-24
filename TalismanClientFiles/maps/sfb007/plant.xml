@@ -1,0 +1,18 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<plant>
+   <group name="紫花">
+      <model density="0x32" id="0x23" max="0.600" min="0.500" radius="10.000"/>
+   </group>
+   <group name="黄花">
+      <model density="0x32" id="0x25" max="0.350" min="0.400" radius="10.000"/>
+   </group>
+   <group name="草">
+      <model density="0x32" id="0x27" max="1.000" min="0.800" radius="10.000"/>
+   </group>
+   <group name="小石块">
+      <model density="0x32" id="0x45" max="1.500" min="1.000" radius="20.000"/>
+   </group>
+   <group name="小石块1">
+      <model density="0x32" id="0x46" max="1.500" min="1.000" radius="20.000"/>
+   </group>
+</plant>

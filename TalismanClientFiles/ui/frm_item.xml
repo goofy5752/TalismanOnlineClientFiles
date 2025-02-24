@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="500,40,294,604" Name="frmItem" Show="true">
+      <Label Inherit="bg1" Location="7,20,280,584" Name="858" Show="true" Size=""/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="586" Show="true"/>
+      <Label Inherit="" Location="7,51,280,300" Name="12701" Show="true">
+        <Label Inherit="" Location="19,10,40,40" Name="Item_P_1" Show="true">
+          <BackgroundImage File="tz_011" Source="133,28,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,60,40,40" Name="Item_P_2" Show="true">
+          <BackgroundImage File="tz_011" Source="44,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,110,40,40" Name="Item_P_3" Show="true">
+          <BackgroundImage File="tz_011" Source="0,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,160,40,40" Name="Item_P_4" Show="true">
+          <BackgroundImage File="tz_011" Source="88,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,210,40,40" Name="Item_P_5" Show="true">
+          <BackgroundImage File="tz_011" Source="44,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="70,254,40,40" Name="Item_P_6" Show="true">
+          <BackgroundImage File="tz_011" Source="178,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="120,254,40,40" Name="Item_P_7" Show="true">
+          <BackgroundImage File="tz_011" Source="133,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="170,254,40,40" Name="Item_P_8" Show="true">
+          <BackgroundImage File="tz_011" Source="88,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="221,10,40,40" Name="Item_P_9" Show="true">
+          <BackgroundImage File="tz_011" Source="178,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,60,40,40" Name="Item_P_10" Show="true">
+          <BackgroundImage File="tz_011" Source="224,29,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,110,40,40" Name="Item_P_11" Show="true">
+          <BackgroundImage File="tz_011" Source="224,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,160,40,40" Name="Item_P_12" Show="true">
+          <BackgroundImage File="tz_011" Source="133,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,210,40,40" Name="Item_P_13" Show="true">
+          <BackgroundImage File="tz_011" Source="178,29,40,39"/>
+        </Label>
+      </Label>
+      <Label Inherit="" Location="40,370,216,181" Name="475" Show="true">
+        <BackgroundImage File="tz_011" Source="297,0,216,181"/>
+      </Label>
+      <Button Inherit="" Location="31,65,32,32" Name="btnPart1" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="30,115,32,32" Name="btnPart2" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="30,165,32,32" Name="btnPart3" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="30,215,32,32" Name="btnPart4" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="30,265,32,32" Name="btnPart5" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="81,309,32,32" Name="btnPart6" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="131,309,32,32" Name="btnPart7" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="181,309,32,32" Name="btnPart8" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="232,65,32,32" Name="btnPart9" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="232,115,32,32" Name="btnPart10" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="232,165,32,32" Name="btnPart11" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="232,215,32,32" Name="btnPart12" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button Inherit="" Location="232,265,32,32" Name="btnPart13" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="215,572,24,17" Name="btnLock" Show="true" Text="">
+        <Hint Text="$L:182$"/>
+        <BackgroundImage File="tz_012" Source="195,9,24,17"/>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="244,568,24,24" Name="btnDelete" Show="true" Text="">
+        <BackgroundImage File="tz_012" Source="237,6,24,24"/>
+        <Hint Text="$L:183$"/>
+      </Button>
+      <CheckButton CheckStyle="false" Inherit="" Location="41,352,36,18" Name="btnCommon" Show="true" Text="$L:184$">
+        <Border color="#aaaa8822" size="1"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="77,352,36,18" Name="btnTask" Show="true" Text="$L:185$">
+        <Border color="#aaaa8822" size="1"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+      </CheckButton>
+      <TitleBarButton Location="0,0,294,30"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Button Inherit="" Location="185,353,13,14" Name="btnPageUp" Show="true" Text="">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+      </Button>
+      <Button Inherit="" Location="246,353,13,14" Name="btnPageDown" Show="true" Text="">
+        <NormalImage File="tz_010" Source="76,382,12,14"/>
+        <PushedImage File="tz_010" Source="76,399,12,14"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="203,348,40,21" Name="labPage" Show="true" Text="$L:187$">
+        <BackgroundImage File="tz_010" Source="458,193,30,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="49,571,44,20" Name="goldnum" Show="true" Text="$L:188$">
+        <BackgroundImage File="tz_010" Source="443,217,60,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="125,571,28,20" Name="silvernum" Show="true" Text="$L:189$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="182,571,28,20" Name="coppernum" Show="true" Text="$L:190$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignLine="CENTER" Inherit="" Location="55,550,180,18" Name="lbLimitTime" Show="true" Text=""/>
+      <ModelView Inherit="bg3" Location="76,61,137,235" MouseEvent="false" MouseMove="false" Name="model" Show="true"/>
+      <Button Inherit="" Location="82,271,20,20" Name="turnLeft" Show="true">
+        <NormalImage File="tz_011" Source="68,256,32,32"/>
+        <PushedImage File="tz_011" Source="102,256,32,32"/>
+      </Button>
+      <Button Inherit="" Location="103,271,20,20" Name="turnRight" Show="true">
+        <NormalImage File="tz_011" Source="0,256,32,32"/>
+        <PushedImage File="tz_011" Source="34,256,32,32"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,124,68" Name="1249" Show="true" Text="$L:186$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="14,565,260,30" Name="2458" Show="fals">
+        <Label Inherit="" Location="8,6,24,22" Name="2490" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="83,7,24,22" Name="2522" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="141,3,24,26" Name="2554" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

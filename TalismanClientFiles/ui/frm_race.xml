@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_race.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form HandleMove="true" Inherit="" Location="347,606,256,102" Name="frmRace" Show="false" Size="200,170">
+      <Anchors>
+        <Anchor offset="0,200" point="TOP"/>
+        <Anchor offset="-100,0" point="RIGHT"/>
+      </Anchors>
+      <Label BackgroundColor="#77000000" Inherit="" Location="4,3,192,163" Name="6600" Show="true"/>
+      <Label BackgroundColor="" Inherit="bg3" Location="1,0,199,169" Name="6054" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="10,16,180,40" Name="lbPathName" Show="true" Text="PathName" TextFont="$L:1$" TextSize="20"/>
+      <EditBox EnableInput="false" Inherit="" Location="10,58,180,85" MouseEvent="false" MouseMove="false" MultiLine="true" Name="ebContent" Pick="false" Show="true" WordWrap="true"/>
+      <TitleBarButton Location="0,0,200,20"/>
+      <CloseButton Location="185,0,14,14" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </CloseButton>
+      <Scripts>
+        <OnLoad>layWorld_frmRace_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frmRace_OnEvent(self, event, arg)</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

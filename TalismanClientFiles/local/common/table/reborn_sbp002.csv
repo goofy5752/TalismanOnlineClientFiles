@@ -1,0 +1,4 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生类型
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:Scenestable_guildarea$,帮派领地,sbp002/,251 -5 519 265;,406 131 0;,0

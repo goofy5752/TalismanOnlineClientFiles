@@ -1,0 +1,43 @@
+<UiRichText> 
+<Line>
+    <Items>
+	  <Item type="TEXT" text="$L:help_task_renwuhuode$" color="#ffa6a845" />
+          </Items>
+ </Line>
+<Line>
+	<Items>
+	<Item type="TEXT" text="  " color="#ffa6a845" />	 
+	</Items>
+  </Line>
+<Line>
+    <Items>
+	<Item type="TEXT" text="  " color="#ffa6a845" />
+	<Item type="TEXT" text="  " color="#ffa6a845" />
+	  <Item type="IMAGE">
+	    <Image File="taskok" Transparency="0" Source="0,0,76,181"/>
+	  </Item>
+	  <Item type="TEXT" text="  " color="#ffa6a845" />
+	  <Item type="IMAGE">
+	    <Image File="taskok" Transparency="0" Source="184,72,72,184"/>
+	  </Item>
+    </Items>
+ </Line>
+<Line>
+	<Items>
+	<Item type="TEXT" text="  " color="#ffa6a845" />	 
+	</Items>
+  </Line>
+ <Line>
+    <Items>
+	<Item type="TEXT" text="$L:helpaaa$" hlink="File:local/common/help/help001c.xml" underline="true" color="#ffa6a845" />
+	</Items>
+ </Line>
+
+  <Line/>
+  <Line>
+	<Items>	 
+	</Items>
+  </Line>
+
+  <Line/>
+</UiRichText>

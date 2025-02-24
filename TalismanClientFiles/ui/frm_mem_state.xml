@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_mem_state.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <HintWidget Inherit="bg3" Location="0,0,250,95" Name="hntMemState" Show="false" MouseEvent="true" MouseMove="true" HandleMove="true" MaxWidth="350">
+	  <Scripts>
+	    <OnLoad>layWorld_hntMemState_OnLoad(self)</OnLoad>
+	    <OnEvent>layWorld_hntMemState_OnEvent(self, event, arg)</OnEvent>
+		<OnUpdate Timer="1000">layWorld_hntMemState_Refresh(self)</OnUpdate>
+	  </Scripts>
+    </HintWidget>
+  </Layer>
+</Ui>

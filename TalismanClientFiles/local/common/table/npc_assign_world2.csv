@@ -1,0 +1,20 @@
+ae,int,int,string,string,marea,"comb(id:int,density[%]:int)",npc,string,string,string
+ID,areaID,IsRebirth,AssignMode,areaName,areaBlock,NpcAssign,Script,AI,Date,Comment
+128,128,3,random,$L:Scenestable_ningbiyamidong$,"1259 1793 1512 2028;
+1645 1538 2012 1758;
+1694 1490 1809 1538;
+1061 1813 1230 2014;
+1067 1578 1252 1767;","5052,3;",script/NpcLocation_fb005.lua,,,
+153,153,3,random,,"1314 1495 1474 1690;
+1505 1502 1604 1552;
+1528 1394 1604 1505;
+1596 1465 1647 1558;
+1498 1603 1588 1704;
+1634 1493 1808 1708;
+1810 1524 1994 1766;
+1047 1777 1499 2026;
+1045 1560 1257 1766;
+1623 1309 1802 1463;
+1826 1319 2019 1496;","5432,3;",,,,
+154,154,2,script,,,,script/XmaxyuelongcunNpcLocation.lua,,,
+

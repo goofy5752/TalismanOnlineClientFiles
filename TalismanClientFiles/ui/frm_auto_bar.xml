@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmAutoBar">
+    <Templates>
+      <Label Inherit="bg3" Location="12,8,80,45" Name="TemplateAutoBarItem" Show="true">
+        <Button DragIn="true" Inherit="" Location="7,6,32,32" Name="BtItem" Show="true">
+		  <Hint/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="185,375,50,50"/>
+          <Scripts>
+            <OnLoad>frmAutoBar_TemplateAutoBarItem_BtItem_OnLoad(self)</OnLoad>
+            <OnEvent>frmAutoBar_TemplateAutoBarItem_BtItem_OnEvent(self, event, arg)</OnEvent>
+            <OnDragIn>frmAutoBar_TemplateAutoBarItem_BtItem_OnDragIn(self, drag)</OnDragIn>
+            <OnDragNull>frmAutoBar_TemplateAutoBarItem_BtItem_OnDragNull(self)</OnDragNull>
+            <OnUpdate>frmAutoBar_TemplateAutoBarItem_BtItem_OnUpdate(self, delta)</OnUpdate>
+			<OnHint>frmAutoBar_TemplateAutoBarItem_BtItem_OnHint(self)</OnHint>
+          </Scripts>
+        </Button>
+        <CheckButton Inherit="DefaultChkBtn" Location="47,17,20,20" Name="cbSelect" Show="true">
+		  <Scripts>
+		    <OnLClick>frmAutoBar_TemplateAutoBarItem_cbSelect_OnLClick(self)</OnLClick>
+		  </Scripts>
+		</CheckButton>
+        <Scripts>
+          <OnLoad>frmAutoBar_TemplateAutoBarItem_OnLoad(self)</OnLoad>
+          <OnEvent>frmAutoBar_TemplateAutoBarItem_OnEvent(self, event, arg)</OnEvent>
+        </Scripts>
+      </Label>
+    </Templates>
+  </Theme>
+  <Script file="frm_auto_bar.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Widget Location="-1,-1,1,1" Name="wtAutoBarUseManager">
+      <Scripts>
+        <OnUpdate>layWorld_wtAutoBarUseManager_OnUpdate(self, delta)</OnUpdate>
+      </Scripts>
+    </Widget>
+    <Form Inherit="" Location="331,153,350,354" Movable="true" Name="frmAutoBar" Show="false">
+      <Label Inherit="bg1" Location="10,21,330,330" Name="lbBackLT" Show="true"/>
+      <Button Inherit="PushButton" Location="141,312,80,24" Name="btDefaultSetting" Show="true" Text="$L:1266$">
+        <Scripts>
+          <OnLClick>layWorld_frmAutoBar_btDefaultSetting_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="37,312,80,24" Name="btOk" Show="true" Text="$L:1327$">
+        <Scripts>
+          <OnLClick>layWorld_frmAutoBar_btOk_OnLClick(self)</OnLClick>
+		  <OnUpdate>layWorld_frmAutoBar_btOk_OnUpdate(self, delta)</OnUpdate>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="241,312,80,24" Name="btClose" Show="true" Text="$L:499$">
+        <Scripts>
+          <OnLClick>layWorld_frmAutoBar_btClose_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,350,30"/>
+      <CloseButton Location="314,29,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="0,2,350,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="114,0,120,72" Name="2015" Show="true" Text="$L:1264$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="20,52,310,40" Name="lbSelectAll" Show="true">
+        <CheckButton Inherit="DefaultChkBtn" Location="16,9,275,22" Name="cbSelectAll" Show="true" Text="$L:1265$">
+          <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+          <Scripts>
+            <OnLoad>layWorld_frmAutoBar_lbSelectAll_cbSelectAll_OnLoad(self)</OnLoad>
+            <OnEvent>layWorld_frmAutoBar_lbSelectAll_cbSelectAll_OnEvent(self, event, arg)</OnEvent>
+            <OnLClick>layWorld_frmAutoBar_lbSelectAll_cbSelectAll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </CheckButton>
+      </Label>
+      <Label Inherit="bg3" Location="20,95,310,210" Name="lbButtonGroup" Show="true">
+        <Label Inherit="TemplateAutoBarItem" Location="12,8,80,45" Name="lbAutoItem1">
+          <Param key="ID" type="number" value="1"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="116,8,80,45" Name="lbAutoItem2">
+          <Param key="ID" type="number" value="2"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="215,8,80,45" Name="lbAutoItem3">
+          <Param key="ID" type="number" value="3"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="13,59,80,45" Name="lbAutoItem4">
+          <Param key="ID" type="number" value="4"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="116,59,80,45" Name="lbAutoItem5">
+          <Param key="ID" type="number" value="5"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="215,59,80,45" Name="lbAutoItem6">
+          <Param key="ID" type="number" value="6"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="12,110,80,45" Name="lbAutoItem7">
+          <Param key="ID" type="number" value="7"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="116,110,80,45" Name="lbAutoItem8">
+          <Param key="ID" type="number" value="8"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="215,110,80,45" Name="lbAutoItem9">
+          <Param key="ID" type="number" value="9"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="12,158,80,45" Name="lbAutoItem10">
+          <Param key="ID" type="number" value="10"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="116,158,80,45" Name="lbAutoItem11">
+          <Param key="ID" type="number" value="11"/>
+        </Label>
+        <Label Inherit="TemplateAutoBarItem" Location="215,158,80,45" Name="lbAutoItem12">
+          <Param key="ID" type="number" value="12"/>
+        </Label>
+      </Label>
+      <Scripts>
+        <OnLoad>layWorld_frmAutoBar_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frmAutoBar_OnEvent(self, event, arg)</OnEvent>
+        <OnShow>layWorld_frmAutoBar_OnShow(self)</OnShow>
+        <OnHide>layWorld_frmAutoBar_OnHide(self)</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

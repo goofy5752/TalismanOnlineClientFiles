@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="299,273,300,250" Name="frmItemReward" Show="false">
+      <Label Inherit="bg1" Location="10,39,280,210" Name="582" Show="true"/>
+      <Label Inherit="bg3" Location="84,73,150,35" Name="737" Show="true" Text=""/>
+      <Label Inherit="bg3" Location="84,105,150,35" Name="847" Show="true" Text=""/>
+      <Label Inherit="bg3" Location="84,137,150,35" Name="949" Show="true" Text=""/>
+      <Label Inherit="bg3" Location="84,169,150,35" Name="1061" Show="true" Text=""/>
+      <Label Inherit="TemplateNormalTitle" Location="4,20,293,50" Name="15201" Show="true"/>
+      <Button Inherit="" Location="51,73,35,35" Name="btReward1" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,42,42"/>
+      </Button>
+      <Label Inherit="" Location="84,73,150,35" Name="lbReward1" Show="true" Text=""/>
+      <Button Inherit="" Location="51,105,35,35" Name="btReward2" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,42,42"/>
+      </Button>
+      <Label Inherit="" Location="84,105,150,35" Name="lbReward2" Show="true" Text=""/>
+      <Button Inherit="" Location="51,137,35,35" Name="btReward3" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,42,42"/>
+      </Button>
+      <Label Inherit="" Location="84,137,150,35" Name="lbReward3" Show="true" Text=""/>
+      <Button Inherit="" Location="51,169,35,35" Name="btReward4" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,42,42"/>
+      </Button>
+      <Label Inherit="" Location="84,169,150,35" Name="lbReward4" Show="true" Text=""/>
+      <Button Inherit="PushButton" Location="50,213,50,20" Name="btRewardOk" Show="true" Text="$L:724$"/>
+      <Button Inherit="PushButton" Location="184,213,50,20" Name="btRewardClose" Show="true" Text="$L:725$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="89,19,124,68" Name="lbRewardTitel" Show="true" Text="$L:740$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <TitleBarButton Location="0,22,300,28"/>
+      <CloseButton Location="264,49,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

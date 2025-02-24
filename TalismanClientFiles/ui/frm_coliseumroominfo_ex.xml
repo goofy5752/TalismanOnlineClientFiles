@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_ColiseumRoomInfo_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="200,100,500,450" Name="frRoomInformationEx" Show="false">
+      <Label Inherit="bg1" Location="10,0,480,450" Name="lbBackground" Show="true"/>
+      <TitleBarButton Location="5,0,490,20"/>
+      <Label Inherit="TemplateNormalTitle" Location="3,0,494,45" Name="lbTittle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,22,130,22" Name="lbTittleName" Show="true" Text="$L:1386$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="470,25,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="LEFT" AlignLine="CENTER" ColSpacing="" Inherit="bg3" Location="120,45,260,25" Name="lbRoomInformation" Show="true" Text=""/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="120,48,55,19" Name="lbRoomNumber" Show="true" Text=""/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,48,150,19" Name="lbRoomName" Show="true" Text=""/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="325,48,55,19" Name="lbMemberCount" Show="true" Text=""/>
+      <Button Inherit="bg3" Location="22,59,96,96" Name="btMapPreview" Show="true"/>
+      <Label Inherit="bg3" Location="120,70,350,85" Name="lbMapIntroduction" Show="true"/>
+      <EditBox AlignCol="LEFT" AlignLine="CENTER" AutoScrollV="true" ColSpacing="5" EnableInput="false" Inherit="" LeftScrollBar="false" LineSpacing="5" Location="125,75,340,75" MultiLine="true" Name="edbMapIntroduction" Show="true" WordWrap="true"/>
+      <Label Inherit="bg3" Location="22,157,225,146" Name="lbRedTeamList" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" ColSpacing="" Inherit="" Location="75,5,75,16" Name="lbRedTeam" Show="true" Text="$L:1388$" TextColor="#ffe40002">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label Inherit="" Location="5,25,13,13" Name="lbTeamLeaderIcon" Show="true">
+          <BackgroundImage File="tz_010" Source="416,258,12,12"/>
+        </Label>
+        <Label AlignLine="CENTER" Inherit="" Location="20,22,180,18" Name="lbUser1" Show="true" Text="">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,25,13,13" Name="btKickUser1" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(1);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,42,180,18" Name="lbUser2" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,45,13,13" Name="btKickUser2" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(2);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,62,180,18" Name="lbUser3" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,65,13,13" Name="btKickUser3" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(3);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,82,180,18" Name="lbUser4" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,85,13,13" Name="btKickUser4" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(4);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,102,180,18" Name="lbUser5" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,105,13,13" Name="btKickUser5" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(5);</OnLClick>
+          </Scripts>
+        </Button>
+        <Button AlignLine="CENTER" Inherit="PushButton" Location="85,122,55,18" Name="btJoinRed" Show="true" Text="$L:1389$">
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btJoinRed_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+      </Label>
+      <Label Inherit="bg3" Location="253,157,225,146" Name="lbBlueTeamList" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" ColSpacing="" Inherit="" Location="75,5,75,16" Name="lbBlueTeam" Show="true" Text="$L:1390$" TextColor="#ff0a6ddb">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label AlignLine="CENTER" Inherit="" Location="20,22,180,18" Name="lbUser6" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,25,13,13" Name="btKickUser6" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(6);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,42,180,18" Name="lbUser7" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,45,13,13" Name="btKickUser7" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(7);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,62,180,18" Name="lbUser8" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,65,13,13" Name="btKickUser8" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(8);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,82,180,18" Name="lbUser9" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,85,13,13" Name="btKickUser9" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(9);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignLine="CENTER" Inherit="" Location="20,102,180,18" Name="lbUser10" Show="true">
+          <BackgroundImage File="tz_013" Source="181,286,98,17"/>
+        </Label>
+        <Button Inherit="" Location="200,105,13,13" Name="btKickUser10" Show="true">
+          <Hint Text="$L:1392$"/>
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+          <DisabledImage File="tz_010" Source="98,383,13,13"/>
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btKickUser_OnLClick(10);</OnLClick>
+          </Scripts>
+        </Button>
+        <Button AlignLine="CENTER" Inherit="PushButton" Location="85,122,55,18" Name="btJoinBlue" Show="true" Text="$L:1391$">
+          <Scripts>
+            <OnLClick>layWorld_frRoomInformationEx_btJoinBlue_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+      </Label>
+      <Label Inherit="bg3" Location="22,305,370,115" Name="lbChatBox" Show="true">
+        <EditBox AlignCol="LEFT" AlignLine="TOP" AutoScrollV="true" ColSpacing="2" EnableInput="false" Inherit="" LeftScrollBar="false" Location="5,5,360,105" MultiLine="true" Name="edbChatBox" Show="true" WordWrap="true"/>
+      </Label>
+      <EditBox AlignCol="LEFT" AlignLine="CENTER" ColSpacing="10" EnableInput="true" Inherit="" LineSpacing="5" Location="20,420,375,20" MaxChar="40" MultiLine="false" Name="edbChatEnterBox" Show="true" WordWrap="false">
+        <BackgroundImage File="tz_010" Source="333,353,178,20"/>
+        <Scripts>
+          <OnUpdateText>layWorld_frRoomInformationEx_edbChatEnterBox(self);</OnUpdateText>
+        </Scripts>
+      </EditBox>
+      <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="395,320,80,20" Name="ckbReady" Show="true" Text="$L:1393$">
+        <NormalImage File="tz_010" Source="442,242,61,20"/>
+        <PushedImage File="tz_010" Source="442,267,61,20"/>
+        <Scripts>
+          <OnLClick>layWorld_frRoomInformationEx_ckbReady_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="395,360,80,20" Name="btInvite" Show="true" Text="$L:1394$">
+        <NormalImage File="tz_010" Source="442,242,61,20"/>
+        <PushedImage File="tz_010" Source="442,267,61,20"/>
+        <DisabledImage File="tz_010" Source="442,267,61,20"/>
+        <Scripts>
+          <OnLClick>layWorld_frRoomInformationEx_btInvite_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="395,400,80,20" Name="btLeave" Show="true" Text="$L:1395$">
+        <NormalImage File="tz_010" Source="442,242,61,20"/>
+        <PushedImage File="tz_010" Source="442,267,61,20"/>
+        <DisabledImage File="tz_010" Source="442,267,61,20"/>
+        <Scripts>
+          <OnLClick>layWorld_frRoomInformationEx_btLeave_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_frRoomInformationEx_OnLoad(self);</OnLoad>
+        <OnShow>layWorld_frRoomInformationEx_OnShow(self);</OnShow>
+        <OnEvent>layWorld_frRoomInformationEx_OnEvent(self,event,arg);</OnEvent>
+        <OnHide>layWorld_frRoomInformationEx_OnHide(self);</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

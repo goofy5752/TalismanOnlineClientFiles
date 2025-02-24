@@ -1,0 +1,37 @@
+<UiRichText> 
+<Line>
+    <Items>
+	  <Item type="TEXT" text="$L:help_ls_moshi$" color="#ffa6a845" />
+          </Items>
+ </Line>
+<Line>
+	<Items>
+	<Item type="TEXT" text="  " color="#ffa6a845" />	 
+	</Items>
+  </Line>
+<Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="moshi" Transparency="0" Source="0,0,161,256"/>
+	  </Item>
+    </Items>
+ </Line>
+<Line>
+	<Items>
+	<Item type="TEXT" text="  " color="#ffa6a845" />	 
+	</Items>
+  </Line>
+ <Line>
+    <Items>
+	<Item type="TEXT" text="$L:helpaaa$" hlink="File:local/common/help/help001e.xml" underline="true" color="#ffa6a845" />
+	</Items>
+ </Line>
+
+  <Line/>
+  <Line>
+	<Items>	 
+	</Items>
+  </Line>
+
+  <Line/>
+</UiRichText>

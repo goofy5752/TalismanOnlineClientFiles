@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_dakong_ex.lua">Script</Script>
+  <Layer InheritTag="true" Name="layWorld" Show="true">
+    <Form DragIn="true" Inherit="" Location="436,159,315,350" Name="frmdakongEx" Show="false">
+      <Label Inherit="bg1" Location="12,6,290,340" Name="809" Show="true">
+        <BackgroundImage/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="1,4,312,45" Name="847" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="97,5,120,65" Name="932" Show="true" Text="$L:1635$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <TitleBarButton Location="8,4,299,24"/>
+      <CloseButton Location="275,32,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg3" Location="25,71,266,100" Name="731" Show="true"/>
+      <EditBox AutoScrollV="true" ColSpacing="8" EnableInput="false" Inherit="" LineSpacing="8" Location="29,75,258,92" MultiLine="true" Name="edbGemreIndex" Show="true" Text="$L:1634$" WordWrap="true"/>
+      <Label Inherit="bg3" Location="25,239,266,52" Name="1780" Show="true"/>
+      <Label Inherit="" Location="25,239,266,52" Name="lbXiangqianshuliangjinqian" Show="true">
+        <Label AlignLine="CENTER" Inherit="" Location="5,6,90,20" Name="687" Show="true" Text="$L:1557$"/>
+        <Label AlignLine="CENTER" Inherit="" Location="5,26,90,20" Name="700" Show="true" Text="$L:1558$"/>
+      </Label>
+      <Label Inherit="" Location="120,245,130,20" Name="lbHolesNum" Show="true" Text=""/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="120,265,20,20" Name="lbStickMoneyGold" Show="true"/>
+      <Label Inherit="" Location="140,265,20,20" Name="lbStickMoneyGoldSign" Show="true">
+        <BackgroundImage File="ic_gold" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="160,265,20,20" Name="lbStickMoneySliver" Show="true"/>
+      <Label Inherit="" Location="180,265,20,20" Name="lbStickMoneySliverSign" Show="true">
+        <BackgroundImage File="ic_ag" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,265,20,20" Name="lbStickMoneyCopper" Show="true"/>
+      <Label Inherit="" Location="220,265,20,20" Name="lbStickMoneyCopperSign" Show="true">
+        <BackgroundImage File="ic_cu" Source=""/>
+      </Label>
+      <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="127,302,60,20" Name="btok" Show="true" Text="$L:1559$" TextFont="" TextSize="">
+        <Scripts>
+          <OnLClick>layWorld_frmDakong_btok_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <CheckButton DragIn="true" Inherit="" Location="141,187,35,35" Name="cbtYaodakongdezhuangbei" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnLoad>layWorld_frmDakong_cbtYaodakongdezhuangbei_OnLoad(self)</OnLoad>
+          <OnDragIn>layWorld_frmDakong_cbtYaodakongdezhuangbei_OnDragIn( self, drag )</OnDragIn>
+          <OnDragNull>layWorld_frmDakong_cbtYaodakongdezhuangbei_OnDragNull( self )</OnDragNull>
+          <OnHint>layWorld_frmDakong_cbtYaodakongdezhuangbei_OnHint( self )</OnHint>
+        </Scripts>
+      </CheckButton>
+      <Scripts>
+        <OnLoad>layWorld_frmDakong_OnLoad(self)</OnLoad>
+        <OnShow>layWorld_frmDakong_OnShow(self)</OnShow>
+        <OnHide>layWorld_frmDakong_OnHide(self)</OnHide>
+        <OnEvent>layWorld_frmDakong_OnEvent(self,event,arg)</OnEvent>
+		<OnDragIn>layWorld_frmDakong_OnDragIn(drag)</OnDragIn>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

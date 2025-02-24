@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="280,470,294,230" Name="frmOtherStallTalkEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,210" Name="582" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="683" Show="fals"/>
+      <Label Inherit="bg3" Location="25,51,245,145" Name="18623" Show="true"/>
+      <Button Inherit="PushButton" Location="165,199,50,20" Name="btBusinessClose" Show="true" Text="$L:965$">
+        <Scripts>
+          <OnLClick>layWorld_frmOtherStallTalkEx_btBusinessClose_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="82,0,130,68" Name="lbRewardTitel" Show="true" Text="$L:969$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <EditBox AutoScrollV="true" BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="30,56,235,135" MultiLine="true" Name="edbBusinessHistory" Show="true" WordWrap="true">
+	    <Scripts>
+		  <OnHyperLink>layWorld_frmOtherStallTalkEx_edbBusinessHistory(self, hypertype, hyperlink)</OnHyperLink>
+		</Scripts>
+	  </EditBox>
+      <Button Inherit="PushButton" Location="65,199,50,20" Name="btStallTalk" Show="true" Text="$L:968$">
+        <Scripts>
+          <OnLClick>layWorld_frmOtherStallTalkEx_btStallTalk_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,294,28"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

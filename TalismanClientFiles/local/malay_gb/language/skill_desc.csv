@@ -1,0 +1,1130 @@
+程序导标记，不用翻译,,,
+ID,Name,Desc,TalentDesc
+320,Mercy Flow,reduce aggro greatly temporary; aggro recover when effect ends,
+1336,Yae Priest Attack,,
+1337,Dark Ranger Attack,,
+1338,White Bone Demon Attack,,
+1339,White Bone Demon Skill01,,
+1,fist ,fist ,
+2,collect,collect,
+3,open,open,
+4,pet catch,pet catch,
+11,Collect Herb,collect herb,
+12,Collect Ore,collect ore,
+13,collect rare items,collect rare items,
+14,Make Potion,make potion,
+15,Craft Magicstone,make charm,
+16,dummy,dummy,
+17,create,make high quality item,
+18,Crack Items,decompose,
+20,monster fist,monster fist,
+24,Amulet / Ring,amulet and ring,
+52,Wizard flying wheel attack,Wizard flying wheel attack,
+53,Wizard flying sword attack,Wizard flying sword attack,
+54,Monk shovel attack,Monk shovel attack,
+55,Monk staff attack,Monk staff attack,
+56,Fairy flying wheel attack,Fairy flying wheel attack,
+57,Fairy flying pearl attack,Fairy flying pearl attack,
+58,Assassin chain simitar attack,Assassin chain simitar attack,
+59,Assassin dagger attack,Assassin dagger attack,
+60,Tamer bow attack,Tamer bow attack,
+61,Tamer crossbow attack,Tamer crossbow attack,
+101,testing--freeze,[no_use],
+102,testing--invincibility,[no_use],
+103,testing--invisible,[no_use],
+104,testing--snow,[no_use],
+105,testing--healing,[no_use],
+106,testing--release from freeze,[no_use],
+107,testing--revive yourself,[no_use],
+108,testing--revive others,[no_use],
+109,testing--teleport,[no_use],
+110,testing--teleport attack,[no_use],
+111,testing--shamam wand,[no_use],
+112,testing--npc assistant,[no_use],
+113,testing--npc self-destroy,[no_use],
+114,testing--open treasure box,[no_use],
+115,testing--group slow ,[no_use],
+116,testing--distractive,[no_use],
+117,testing--absorb enemy value,[no_use],
+118,testing--decrease enemy value,[no_use],
+119,testing--Eff parameter,[no_use],
+120,testing--summon servant,[no_use],
+121,testing--transfer to be servant,[no_use],
+130,testing--improve fire strike,[no_use],improve fire strike damage
+131,testing--improve heal,[no_use],improve HP $200*SkillLevel$
+132,testing--charge forward,[no_use],
+201,Fire Strike,"absorb the fire element between the sky and the ground then agglomerate on the sword, cause target $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage",
+202,Fire Barb,"sword coming out from the ground, pierce the target body, cause target $DmgMin(ActorDPS*2.5)$-$DmgMax(ActorDPS*2.5)$ points damage",
+203,Fire Spiral,"sword shoot to the target with fire, cause target $DmgMin(ActorDPS*1.2)$-$DmgMax(ActorDPS*1.2)$ points damage, target can't use long distance attack in 3 seconds ",
+204,Fire Dragon,"summon fire dragon down from the sky, cause target $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, and with extra burning effect, cause target $PartyDPS(MWLev(204),0)*3$ points damage in 15 seconds.",
+205,Fire Burst,"inspired from the anger, burning the monsters around, cause target $DmgMin(ActorDPS*2)$-$DmgMax(ActorDPS*2)$ points damage",
+211,Water Fling,"absorb the water element between the sky and the ground then agglomerate on the sword, cause target $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage",
+212,Ice Fling,"water element concrete into ice, agglomerate on the sword, cause target  $DmgMin(ActorDPS*1.1)$-$DmgMax(ActorDPS*1.1)$ points damage, and froze target 5 seconds",
+213,Water Barb,"shoot out a huge water column to the target, cause $DmgMin(ActorDPS*2.5)$-$DmgMax(ActorDPS*2.5)$ points damage",
+214,Tide Spout,"tide engendered vortex attack monsters around, slowing down the target, and cause $DmgMin(ActorDPS*0.75)$-$DmgMax(ActorDPS*0.75)$ points damage",
+215,Water Flowing,"sword chopped to the target like water flow, cause target $DmgMin(ActorDPS*1.2)$-$DmgMax(ActorDPS*1.2)$ points damage, and makes target lacks of water defense, takes extra $PartyDPS(MWLev(215), 0)*0.25$ points damage with every water related attack",
+221,Ice Shield,"mana concrete three ice shields, increase defense $DRRToArmor(0.1,MWLev(221))$ points, can't coexist with Tao Power",
+222,Ice Curse,"summon a ice column attack the target, cause $DmgMin(PartyDPS(MWLev(222), 0)*0.8)$-$DmgMax(PartyDPS(MWLev(222), 0)*0.8)$ points damage, slowing down target 80%, lasting for 5 seconds",
+223,Inspiring Art,"increase intelligence $MWLev(223)+5$ points, lasting 30 minutes, can be used to other players",
+224,Pointing Faint,"monster faint for 20 seconds, only can be used to non-battle monsters.",
+225,Tao Power,randomly remove a helpful state from target,
+226,Earth Faint,"group attack skill, cause target $DmgMin(PartyDPS(MWLev(226),0)*2)$-$DmgMax(PartyDPS(MWLev(226),0)*2)$ points damage, enemy faint for 5 seconds",
+227,Silence Spell,"decrease monster's enemy value $PartyDPS(MWLev(227),0)*3$ points",
+228,Sobering Spell,woke up from the faint state at once,
+231,Improve Fire Strike,"absorb the fire element between the sky and the ground then agglomerate on the sword,  cause target $DmgMin(ActorDPS*1.5*(1+SkillLevel(231)*0.06))$-$DmgMax(ActorDPS*1.5*(1+SkillLevel(231)*0.06))$ points damage","improve fire strike damage $SkillLevel(231)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+232,Improve Fire Barb,"sword coming out from the ground, pierce the target body, cause target $DmgMin(ActorDPS*2.5*(1+SkillLevel(232)*0.05))$-$DmgMax(ActorDPS*2.5*(1+SkillLevel(232)*0.05))$ points damage","extend skill lasting time 0.$SkillLevel(232)$ seconds, damage increase $SkillLevel(232)*5$%
+level1 0.1s 5%
+level2 0.2s 10%
+level3 0.3s 15%
+level4 0.4s 20%
+level5 0.5s 25%"
+233,Improve Fire Spiral,"sword shoot to the target with fire, cause target $DmgMin(ActorDPS*1.2)$-$DmgMax(ActorDPS*1.2)$ points damage, target can't use long distance attack in  $3+SkillLevel(233)*0.5$ seconds ","extend skill effect time $SkillLevel(233)*0.5$ seconds
+level1 0.5s
+level2 1.0s
+level3 1.5s
+level4 2.0s
+level5 2.5s"
+234,Improve Fire Dragon,"summon fire dragon down from the sky, cause target $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, and with extra burning effect, cause target $PartyDPS(MWLev(204),0)*3*(1+SkillLevel(234)*0.08)$ points damage in 15 seconds","improve fire damage $SkillLevel(234)*8$%
+level1 8%
+level2 16%
+level3 24%
+level4 32%
+level5 40%"
+235,Improve Fire Burst,"inspired from the anger, burning the monsters around, cause target $DmgMin(ActorDPS*2)$-$DmgMax(ActorDPS*2)$ points damage","improve critical strike rate $SkillLevel(235)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+236,Improve Fire Damage,,"improve fire related skill damage $SkillLevel(236)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+237,Improve CS Rate,,"improve fire related critical strike rate $SkillLevel(237)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+238,Improve CS Damage,,"improve fire related critical strike damage $SkillLevel(238)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+241,Fire Master,"fire critical strike rate increase 50%, lasting 10 seconds",
+242,Fire Criticalness,next fire attack must be critical strike,
+251,Improve Water Fling,"absorb the water element between the sky and the ground then agglomerate on the sword, cause target $DmgMin(ActorDPS*1.5*(1+SkillLevel(251)*0.04))$-$DmgMax(ActorDPS*1.5*(1+SkillLevel(251)*0.04))$ points damage","improve damage $SkillLevel(251)*4$%
+level1 4%
+level2 8%
+level3 12%
+level4 16%
+level5 20%"
+252,Improve Ice Fling,"water element concrete into ice, agglomerate on the sword, cause target  $DmgMin(ActorDPS*1.1)$-$DmgMax(ActorDPS*1.1)$ points damage, and froze target 5 seconds","decrease cooling time $SkillLevel(252)*2$ seconds
+level1 2s
+level2 4s
+level3 6s
+level4 8s
+level510s"
+253,Improve Water Barb,"shoot out a huge water column to the target, cause $DmgMin(ActorDPS*2.5)$-$DmgMax(ActorDPS*2.5)$ points damage","decrease mana cost $SkillLevel(253)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+254,Improve Tide Spout,"tide engendered vortex attack monsters around, slowing down the target, and cause $DmgMin(ActorDPS*0.75)$-$DmgMax(ActorDPS*0.75)$ points damage","improve the effect to decrease target move speed $SkillLevel(254)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+255,Improve Water Flowing,"sword chopped to the target like water flow, cause target $DmgMin(ActorDPS*1.2)$-$DmgMax(ActorDPS*1.2)$ points damage, and makes target lacks of water defense, takes extra $PartyDPS(MWLev(215), 0)*0.25$ points damage with every water related attack","improve extra damage $SkillLevel(255)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+256,Improve Water Damage,,"improve water related skill damage $SkillLevel(256)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+257,Improve CS Rate,,"improve water related critical strike rate $SkillLevel(257)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+258,Improve CS Damage,,"improve water related critical strike damage $SkillLevel(258)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+261,Water Recovery,recover mana 100% in 15 seconds,
+262,Dragon Master,water critical strike rate increase 50% in 10 seconds,
+271,Improve Ice Shield,"mana concrete three ice shields, increase defense $DRRToArmor(0.1,MWLev(222))$ points, can't coexist with Tao Power","attacked by melee physical attack, have $SkillLevel(271)*10$% possibility to slow enemy speed for 80% in 3 seconds
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+272,Improve Ice Curse,"summon a ice column attack the target, cause $DmgMin(PartyDPS(MWLev(222), 0)*0.8)$-$DmgMax(PartyDPS(MWLev(222), 0)*0.8)$ points damage, slowing down target 80%, lasting for 5 seconds","decrease skill cooling time $SkillLevel(272)$ seconds
+level1 1s 
+level2 2s 
+level3 3s 
+level4 4s 
+level5 5s"
+273,Improve Inspiring Art,"increase Intelligence $(MWLev(223)+5)*(1+SkillLevel(273)*0.05)$ points, lasting 30 minutes, can be used to other players","improve effect $SkillLevel(273)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+274,Improve Pointing Faint,"monster faint for $20+SkillLevel(274)*3$ seconds, only can be used to non-battle monsters","improve skill effect to extend target faint time $SkillLevel(274)*3$ seconds
+level1 3s 
+level2 6s 
+level3 9s 
+level4 12s 
+level5 15s "
+275,Improve Tao Power,randomly remove a helpful state from target,"decrease cooling time $SkillLevel(275)*3$ seconds
+level1 3s 
+level2 6s 
+level3 9s 
+level4 12s 
+level5 15s"
+276,Improve Earth Faint,"group attack skill, cause target $DmgMin(PartyDPS(MWLev(226),0)*2)$-$DmgMax(PartyDPS(MWLev(226),0)*2)$ points damage, enemy faint 5 seconds.","increase critical strike possibility $SkillLevel(276)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+277,Improve Silence Spell,"decrease monster's enemy value $PartyDPS(MWLev(227),0)*3*(1+SkillLevel(277)*0.1)$ points","improve skill effect $SkillLevel(277)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+278,Improve Sobering Spell,woke up from the faint state at once,"decrease cooling time $SkillLevel(278)*2$ seconds
+level1 2s 
+level2 4s 
+level3 6s 
+level4 8s 
+level5 10s"
+301,Thunder Faint,"thunder comes from the sky, transfixed target, faint target 5 seconds, target woke up when be attacked",
+302,Lightning Slice,"purple cloud hang over the Talisman, attack target cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage",
+303,Sheen Slice,"Talisman with some illusion shadows attack target, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage",
+304,Lightning Chain,"lightning enlaced target for 3 seconds, cause $DmgMin(ActorDPS*0.5)$-$DmgMax(ActorDPS*0.5)$ damage in every 0.5 second and speed slow down 50%",
+305,White Lotus,"read lection in mouth, create white lotus attack enemy cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage",
+306,Golden Lotus,"read lection in mouth, create golden lotus attack enemy cause total $(ActorDPS)*2+1$ points damage in 10 seconds, and target is in buddha weakness, caused extra $ActorDPS*0.2+1$ points damage if be attacked by buddha attack",
+307,Blue Lotus,"read lection in mouth, create blue lotus attack enemy, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage",
+308,Red Lotus,"link to enemy with a red line, decrease enemy mana $PartyDPS(MWLev(308),3)*3$ points, increase yourself mana $PartyDPS(MWLev(308),3)*1.5$ points",
+309,Healing Spell,"yellow bright sprinkle on the target body, recover $HealPS(MWLev(309))*1.5+20$ health points",
+310,Cure Spell,"green bright enwind on the target body, recover health for 10 seconds, increase $(HealPS(MWLev(310))*1.5+20)/5$ health points in every 2 seconds",
+311,Revive Spell,"revive dead target, also recover $PartyHP(MWLev(311),3)*0.3$ health points",
+312,Leeching Needle,"light prick attack target for 3 seconds, cause $DmgMin(PartyDPS(MWLev(312),3)*0.9)$-$DmgMax(PartyDPS(MWLev(312),3)*0.9)$ points damage every 0.5 seconds, cure teammates around total $DmgMin(PartyDPS(MWLev(312),3)*0.9)$-$DmgMax(PartyDPS(MWLev(312),3)*0.9)$ health points, only can be used to attack monster.",
+313,Antidote Needle,remove the effects of poison,
+314,Sun Needle,"use acupuncture to increase HP upper limitation $PartyHP(MWLev(314),3)*0.15$ points temporarily",
+315,Cloud Dimming,"purple cloud hang over the target, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, and 3 seconds faint",
+316,Cloud Balk,"purple cloud leash target's pet, cause $DmgMin(ActorDPS*2.5)$-$DmgMax(ActorDPS*2.5)$ points damage, speed slow down for 80%, last 10 seconds",
+317,Purple Smoke,"buddha attack target, cause total $(ActorDPS)*3+1$ damage in 10 seconds",
+318,Purple Crystal,"arouse potential ability, $MWLev(318)*0.5$% rate to revive after dead",
+319,Purple Shield,"add a purple shield on target body for 60 seconds, absorb $PartyDPS(MWLev(319),3)*4$ damage",
+321,Improve Thunder Faint,"thunder comes from the sky, transfixed target, faint target 5 seconds, target woke up when be attacked","decrease Thunder Faint cooling time $SkillLevel(321)*1$ seconds
+level1 1s 
+level2 2s 
+level4 3s 
+level5 4s 
+level5 5s "
+322,Improve Lightning Slice,"purple cloud hang over the Talisman, attack target cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage","decrease Lightning Slice preparation time $SkillLevel(322)*0.1$ seconds
+level 0.1s 
+level 0.2s 
+level 0.3s 
+level 0.4s 
+level 0.5s "
+323,Improve Sheen Slice,"Talisman with some illusion shadows attack target, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage","decrease Sheen Slice preparation time$SkillLevel(323)*0.2$ seconds
+level1 0.2s 
+level2 0.4s 
+level3 0.6s 
+level4 0.8s
+level5 1s "
+324,Improve Lightning Chain,"lightning enlaced target for 3 seconds, cause $DmgMin(ActorDPS*0.5)$-$DmgMax(ActorDPS*0.5)$ damage every 0.5 seconds and speed slow down $50+SkillLevel(324)*5$%","increase Lightning Chain effect, to decrease target move speed $SkillLevel(324)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+325,Improve Lightning Damage,,"increase lightning related damage $SkillLevel(325)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+326,Improve CS Rate,,"increase lightning related skill critical strike possibility $SkillLevel(326)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+327,Improve CS Damage,,"increase lightning related critical strike damage $SkillLevel(327)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+331,Improve White Lotus,"read lection in mouth, create white lotus attack enemy cause $DmgMin(ActorDPS*1.5)*(1+SkillLevel(331)*0.06)$-$DmgMax(ActorDPS*1.5)*(1+SkillLevel(331)*0.06)$ points damage","improve White Lotus damage $SkillLevel(331)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+332,Improve Golden Lotus,"read lection in mouth, create golden lotus attack enemy cause total $(ActorDPS)*2*(1+SkillLevel(332)*0.05)+1$ points damage in 10 seconds, and target is in buddha weakness, caused extra $(ActorDPS*0.2*(1+SkillLevel(332)*0.2)+1)$ points damage, when be attacked by buddha attack","improve Golden Lotus Buddha Weakness effect $SkillLevel(332)*20$%
+level1 20%
+level2 40%
+level3 60%
+level4 80%
+level5 100%"
+333,Improve Blue Lotus,"read lection in mouth, create blue lotus attack enemy cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage","decrease Blue Lotus mana cost $SkillLevel(333)*5$%
+level1 5%
+level210%
+level3 15%
+level4 20%
+level5 25%"
+334,Improve Red Lotus,"link to enemy with a red line, decrease enemy mana $PartyDPS(MWLev(308),3)*3$ points, increase yourself mana $PartyDPS(MWLev(308),3)*1.5$ points","when using Red Lotus, decrease the possibility $SkillLevel(334)*20$% of being interrupted
+level1 20%
+level2 40%
+level3 60%
+level4 80%
+level5 100%"
+335,Improve Buddha Damage,,"improve Buddha related damage $SkillLevel(335)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+336,Improve CS Rate,,"improve Buddha related critical strike possibility $SkillLevel(336)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+337,Improve CS Damage,,"improve Buddha related critical strike damage $SkillLevel(337)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+341,Improve Healing Spell,"yellow bright sprinkle on the target body, recover $(HealPS(MWLev(309))*1.5+20)*(1+SkillLevel(341)*0.06)$ health points","improve healing effect $SkillLevel(341)*6$% of Healing Spell
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+342,Improve Cure Spell,"green bright enwind on the target body, recover health for 10 seconds, increase $(HealPS(MWLev(310))*1.5+20)*(1+SkillLevel(342)*0.06)/5$ health points every 2 seconds","improve cure effect $SkillLevel(342)*6$% of Cure Spell
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+343,Improve Revive Spell,"revive dead target and recover $PartyHP(MWLev(311),3)*0.3$ HP","decrease Revive Spell preparation time $SkillLevel(343)*0.6$ seconds
+level1 0.6s 
+level2 1.2s 
+level3 1.8s 
+level4 2.4s
+level5 3s "
+344,Improve Leeching Needle,"light prick attack target for 3 seconds, cause $DmgMin(PartyDPS(MWLev(312),3)*0.9)$-$DmgMax(PartyDPS(MWLev(312),3)*0.9)$ points damage every 0.5 seconds, cure teammates around total $DmgMin(PartyDPS(MWLev(312),3)*0.9)$-$DmgMax(PartyDPS(MWLev(312),3)*0.9)$ health points, only can be used to attack monster.","decrease Leeching Needle mana cost $SkillLevel(344)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+345,Improve Antidote Needle,detoxification ,"recover from level $SkillLevel(345)$ poisoning status
+level1 1
+level2 2
+level3 3
+level4 4
+level5 5"
+346,Improve Sun Needle,"use acupuncture to increase HP upper limitation $PartyHP(MWLev(314),3)*(0.15+SkillLevel(346)*0.02)$ points temporarily","improve Sun Needle effect, increase HP upper limitation $SkillLevel(346)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+347,Improve Cloud Dimming,"purple cloud hang over the target, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, and 3 seconds faint","decrease Cloud Dimming cooling time $SkillLevel(347)*1$ seconds
+level1 1s 
+level2 2s 
+level3 3s 
+level4 4s 
+level5 5s "
+348,Improve Cloud Balk,"purple cloud leash target's pet, cause $DmgMin(PartyDPS(MWLev(316),3)*4.5)$-$DmgMax(PartyDPS(MWLev(316),3)*4.5)$ points damage, $PartyDPS(MWLev(316),3)*4*SkillLevel(348)*0.2$ points poison damage for 10 seconds, speed slow down for 80%, last 10 seconds ","purple cloud, increase $SkillLevel(348)*100$% poision damage on pet, lasting for 10 seconds
+level 1 100%
+level 2 200%
+level 3 300%
+level 4 400%
+level 5 500%"
+349,Improve Purple Smoke,"buddha attack target, cause $(ActorDPS)*3*(1+SkillLevel(349)*0.05)+1$ damage in 10 seconds","improve Purple Smoke damage $SkillLevel(349)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+350,Improve Purple Crystal,"arouse potential ability, $MWLev(318)*0.5+SkillLevel(350)*4$% rate to revive after dead","improve Purple Crystal revive possibility $SkillLevel(350)*4$%
+level1 4%
+level2 8%
+level3 12%
+level4 16%
+level5 20%"
+351,Improve Purple Shield,"add a purple shield on target body for 60 seconds, absorb $PartyDPS(MWLev(319),3)*4*(1+SkillLevel(351)*0.06)$ points damage ","improve Purple Shield effect, increase damage absorb $SkillLevel(351)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+361,Peace Power,no one around you can use any skills in 5 seconds including enemy and yourself,
+362,Magic Sublime,"inspiring spirit, mana recover speed increase 200% in 15 seconds",
+363,Storm Power,"increase target damage effect $PartyDPS(MWLev(305),3)*0.5$, lasting 20 seconds",
+364,Tenacity Shield,"absorb $PartyDPS(MWLev(305),3)*2$ points damage, during the time, you will not be interrupted when you are preparing to cast skills",
+401,Giant Attack,"attack target, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, also amass one break point",
+402,Giant Burst,"burst break points, damage depends on how many break points amassed
+1 break point: 100% of basic damage + $DmgMin(ActorDPS*1)$-$DmgMax(ActorDPS*1)$
+2 break points: 200% of basic damage + $DmgMin(ActorDPS*2)$-$DmgMax(ActorDPS*2)$
+3 break points: 300% of basic damage + $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$
+4 break points: 400% of basic damage + $DmgMin(ActorDPS*4)$-$DmgMax(ActorDPS*4)$
+5 break points: 500% of basic damage + $DmgMin(ActorDPS*5)$-$DmgMax(ActorDPS*5)$
+",
+403,Giant Break,"burst break points, cause $DmgMin(ActorDPS*1.1)$-$DmgMax(ActorDPS*1.1)$ points damage and target faint, faint time depends on how many break points amassed
+1 break point: 1 second
+2 break points: 2 seconds
+3 break points: 3 seconds
+4 break points: 4 seconds
+5 break points: 5 seconds",
+404,Giant Raid,"sneak attack target, cause $DmgMin(ActorDPS*2)$-$DmgMax(ActorDPS*2)$ points damage, must launch behind the target, amass one break point",
+405,Giant Halt,"range lightning attack, cause $DmgMin(ActorDPS*1.2)$-$DmgMax(ActorDPS*1.2)$ damage, dizzy target for 3 seconds",
+411,Fatal Probe,"plough around target, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ damage",
+412,Fatal Bash,"attack target, cause $DmgMin(ActorDPS*2)$-$DmgMax(ActorDPS*2)$ points damage, produce huge enemy value",
+413,Fatal Crack,"transfix target armor with fire, cause $DmgMin(ActorDPS*1.2)$-$DmgMax(ActorDPS*1.2)$ damage.  Decrease target defense $DRRToArmor(0.1,MWLev(413))$ points lasting one minute",
+414,Fatal Burning,"burn target cause $DmgMin(ActorDPS*0.5)$-$DmgMax(ActorDPS*0.5)$ points damage, also cause target fire damage $ActorDPS*2.5+1$ points in 15 seconds, can attack 3 targets at same time",
+415,Fatal Sadness,"confuse target, cause $DmgMin(ActorDPS*0.8)$-$DmgMax(ActorDPS*0.8)$ points damage, also decrease target basic attack $ActorDPS*0.2+1$ points , last 15 seconds",
+421,Buddha Quake,"group attack skill, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, shock faint enemies around 5 seconds",
+422,Buddha Shield,"decrease normal damage $PartyDPS(MWLev(422),1)*2.5$ points and magic damage $PartyDPS(MWLev(422),1)*0.5$ points caused by enemy in 10 seconds",
+423,Heart Lotus,"set a heart lotus, all enemies in range 200 speed slow down 50%, also can detect invisible objects, valid for 20 seconds",
+424,Heart Fire,"increase buddha attack and fire attack damage $PartyDPS(MWLev(424),1)*0.2$ points, last 30 minutes",
+425,Robust Spell,"increase $PartyHP(MWLev(425),1)*0.25$ health points, last 30 minutes, can't coexist with Heart Fire",
+426,Free Spell,release from soul lost status at once,
+427,Mercy,"enemy value increase $PartyDPS(MWLev(427),1)*0.25$ points with every attack, lasting 30 minutes",
+428,Sacrifice,force monsters around attack yourself 10 seconds,
+431,Improve Giant Attack,"attack target, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, also amass one break point","decrease Giant Attack stamina cost $SkillLevel(431)*2$ points
+level1 2 points
+level2 4 points
+level3 6 points
+level4 8 points
+level5 10 points"
+432,Improve Giant Burst,"burst break points, damage depends on how many break points amassed
+1 break point: $100*(1+SkillLevel(432)*0.03)$% of basic damage + $DmgMin((1+SkillLevel(432)*0.03)*ActorDPS*1)$-$DmgMax((1+SkillLevel(432)*0.03)*ActorDPS*1)$
+2 break points $200*(1+SkillLevel(432)*0.03)$% of basic damage + $DmgMin((1+SkillLevel(432)*0.03)*ActorDPS*2)$-$DmgMax((1+SkillLevel(432)*0.03)*ActorDPS*2)$
+3 break points $300*(1+SkillLevel(432)*0.03)$% of basic damage + $DmgMin((1+SkillLevel(432)*0.03)*ActorDPS*3)$-$DmgMax((1+SkillLevel(432)*0.03)*ActorDPS*3)$
+4 break points $400*(1+SkillLevel(432)*0.03)$% of basic damage + $DmgMin((1+SkillLevel(432)*0.03)*ActorDPS*4)$-$DmgMax((1+SkillLevel(432)*0.03)*ActorDPS*4)$
+5 break points $500*(1+SkillLevel(432)*0.03)$% of basic damage + $DmgMin((1+SkillLevel(432)*0.03)*ActorDPS*5)$-$DmgMax((1+SkillLevel(432)*0.03)*ActorDPS*5)$","increase Giant Burst damage $SkillLevel(432)*3$%
+level1 3%
+level2 6%
+level3 9%
+level4 12%
+level5 15%"
+433,Improve Giant Break,"burst break points, cause $DmgMin(ActorDPS*1.1)$-$DmgMax(ActorDPS*1.1)$ points damage and faint time depends on how many break points amassed
+1 break point: 1 second
+2 break points: 2 seconds
+3 break points: 3 seconds
+4 break points: 4 seconds
+5 break points: 5 seconds","improve Giant Break effect, target endure extra $SkillLevel(433)*6$% damage from Buddha attack
+level1  6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+434,Improve Giant Raid,"sneak attack target, cause $DmgMin(ActorDPS*2)$-$DmgMax(ActorDPS*2)$ points damage, must launch behind the target, amass one break point","increase Giant Raid critical strike possibility $SkillLevel(434)*4$%
+level1  4%
+level2  8%
+level3 12%
+level4 16%
+level5  20%"
+435,Improve Giant Halt,"range lightning attack, cause $DmgMin(ActorDPS*1.2*(1+SkillLevel(435)*0.06))$-$DmgMax(ActorDPS*1.2*(1+SkillLevel(435)*0.06))$ points damage, dizzy target for 3 seconds
+","improve Giant Halt damage $SkillLevel(435)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+436,Improve Buddha Damage,,"improve Buddha Damage $SkillLevel(436)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+437,Improve CS Rate,,"increase Buddha related attack critical strike possibility $SkillLevel(437)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+438,Improve CS Damage,,"improve Buddha related critical strike damage $SkillLevel(438)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+441,Spring Tide,increase stamina 100 points at once,
+442,Buddha Criticalness,next buddha attack must be critical strike,
+451,Improve Buddha Quake,"group attack skill, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ damage, shock faint enemies around for 5 seconds","decrease Buddha Quake cooling time $SkillLevel(451)*20$ seconds
+level1 20s 
+level2 40s 
+level3 60s 
+level4 80s
+level5 100s "
+452,Improve Buddha Shield,"decrease normal damage $PartyDPS(MWLev(422),1)*2.5$ points and magic damage $PartyDPS(MWLev(422),1)*0.5$ points caused by enemy in $10+SkillLevel(452)$ seconds","extend Buddha Shield effect time $SkillLevel(452)*1$ seconds
+level1  1s 
+level2  2s 
+level3  3s 
+level4  4s 
+level5  5s "
+453,Improve Heart Lotus,"set a heart lotus, all enemies in range 200 speed slow down 50%, also can detect invisible objects, valid for 20 seconds","improve Heart Lotus HP $SkillLevel(453)*100$ points
+level1 100 points
+level2 200 points
+level3 300 points
+level4 400 points
+level5 500 points"
+454,Improve Heart Fire,"increase buddha attack and fire attack damage $PartyDPS(MWLev(424),1)*0.2*(1+SkillLevel(454)*0.1)$ points, last 30 minutes","improve Heart Fire effect $SkillLevel(454)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+455,Improve Robust Spell,"increase $PartyHP(MWLev(425),1)*0.25*(1+SkillLevel(454)*0.1)$ health points, last 30 minutes, can't coexist with Heart Fire","improve Robust Spell effect $SkillLevel(455)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+456,Improve Free Spell,release from soul lost status at once,"decrease Free Spell cooling time $SkillLevel(456)*3$ seconds
+level1 3s
+level2 6s
+level3 9s
+level4 12s
+level5 15s"
+457,Improve Mercy,"enemy value increase $PartyDPS(MWLev(427),1)*0.25*(1+SkillLevel(457)*0.2)$ points with every attack, lasting 30 minutes","improve Mercy effect $SkillLevel(457)*20$%
+level1 20%
+level2 40%
+level3 60%
+level4 80%
+level5 100%"
+458,Improve Sacrifice,force monsters around attack yourself $10+SkillLevel(458)$ seconds,"extend Sacrifice effect time $SkillLevel(458)$ seconds
+level1 1s
+level2 2s
+level3 3s
+level4 4s
+level5 5s"
+461,Improve Fatal Probe,"plough around target, cause $DmgMin(ActorDPS)*(1+SkillLevel(461)*0.06)$-$DmgMax(ActorDPS)*(1+SkillLevel(461)*0.06)$ damage","increase Fatal Probe damage $SkillLevel(461)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+462,Improve Fatal Bash,"attack target, cause $DmgMin(ActorDPS*2)$-$DmgMax(ActorDPS*2)$ points damage, produce huge enemy value","increase extra enemy value $SkillLevel(462)*12$% from Fatal Bash
+level1 12%
+level2 24%
+level3 36%
+level4 48%
+level5 60%"
+463,Improve Fatal Crack,"transfix target armor with fire, cause $DmgMin(ActorDPS*1.2)$-$DmgMax(ActorDPS*1.2)$ damage.  Decrease target defense $DRRToArmor(0.1*(1+SkillLevel(463)*0.2),MWLev(413))$ points, last one minute","improve Fatal Crack effect $SkillLevel(463)*20$%
+level1 20%
+level2 40%
+level3 60%
+level4 80%
+level5 100%"
+464,Improve Fatal Burning,"burn target, cause $DmgMin(ActorDPS*0.5)$-$DmgMax(ActorDPS*0.5)$ points damage, also cause target fire damage $(ActorDPS*2.5+1)*(1+SkillLevel(464)*0.1)$ points in 15 seconds, can attack 3 targets at same time","improve Fatal Burning damage $SkillLevel(464)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+465,Improve Fatal Sadness,"confuse target, cause $DmgMin(ActorDPS*0.8)$-$DmgMax(ActorDPS*0.8)$ points damage, also decrease target basic attack $ActorDPS*0.2+1$ points, last 15 seconds","increase the possibility $SkillLevel(465)*5$% to shock faint target 5 seconds
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+466,Improve Fire Damage,,"improve fire related damage $SkillLevel(466)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+467,Improve CS Rate,,"improve fire related critical strike possibility $SkillLevel(467)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+468,Improve Block Rate,,"increase $SkillLevel(468)*4$% dodge rate
+level1 4%
+level2 8%
+level3 12%
+level4 16%
+level5 20%"
+471,Tiger Guarding,"increase block rate 100%, last 30 seconds, during the time, HP recover 50%",
+472,Dragon Orbiting,force monsters around attack yourself for 10 seconds with double enemy value,
+501,Lightning Lash,"attack target, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage",
+502,Lash Faint,shock faint target for 2 seconds,
+503,Double Lash,"attack target, cause $DmgMin(ActorDPS)*2$-$DmgMax(ActorDPS)*2$ points damage",
+504,Thunder Slow,"group attack skill, all enemies around speed slow down for 80%, maximum on 5 enemies",
+505,Lightning Sweeping,"group attack skill, cause $DmgMin(ActorDPS)*0.9$-$DmgMax(ActorDPS)*0.9$ points damage, maximum attack 5 enemies",
+511,Poison Sting,"attack target, cause $DmgMin(ActorDPS)*1$-$DmgMax(ActorDPS)*1$ points damage",
+512,Soul Lost,"knock on weapon to make noise, cause target to faint for 3 seconds, target wakes up after be attacked ",
+513,Rush Faint,"rush and attack, cause target faint for 2 seconds",
+514,Poison Bash,"heavily attack, cause target $DmgMin(ActorDPS)*2$-$DmgMax(ActorDPS)*2$ points damage",
+515,Poison Thorn,"target poisoned, speed slow down 50% in 5 seconds",
+521,Swift Move,"move speed increase 50%, lasting 15 seconds",
+522,Shadowy Walk,dodge rate increase 50% in 15 seconds,
+523,Soul Rocking,freeze monster for 15 seconds,
+524,Soul Shield,"physical defense increase $DRRToArmor(0.1,MWLev(524))$ points",
+525,Puzzling Array,"enemy value decrease $PartyDPS(MWLev(525),2)*0.25$ points with every attack",
+526,Elements Array,"increase magic defense $DRRToArmor(0.35,MWLev(526))$ points",
+527,Dragon Cry,"shock faint enemies around, maximum 5 targets, and cause $DmgMin(ActorDPS*1.1)$-$DmgMax(ActorDPS*1.1)$ points damage",
+528,Roc Sing,recover from speed slow down status,
+551,Improve Lightning Lash,"attack target, cause $DmgMin(ActorDPS)*(1+SkillLevel(551)*0.05)$-$DmgMax(ActorDPS)*(1+SkillLevel(551)*0.05)$ points damage","increase damage $SkillLevel(551)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+552,Improve Lash Faint,shock faint target for $2+SkillLevel(552)*0.5$ seconds,"extend faint time $SkillLevel(552)*0.5$ seconds
+level1 0.5s 
+level2 1.0s 
+level3 1.5s 
+level4 2.0s 
+level5 2.5s "
+553,Improve Double Lash,"attack target, cause $DmgMin(ActorDPS)*2$-$DmgMax(ActorDPS)*2$ points damage","critical strike damage increase $SkillLevel(553)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+554,Improve Thunder Slow,"group attack skill, all enemies around speed slow down 80%, maximum on 5 enemies","cooling time decrease $SkillLevel(554)$ seconds
+level1 1s 
+level2 2s 
+level3 3s 
+level4 4s 
+level5 5s "
+555,Improve Lightning Sweeping,"group attack skills, cause $DmgMin(ActorDPS)*0.9$-$DmgMax(ActorDPS)*0.9$ points damage, maximum attack 5 enemies","increase critical strike possibility $SkillLevel(555)*4$%
+level1 4%
+level2 8%
+level3 12%
+level4 16%
+level5 20%"
+556,Improve Lightning Damage,,"increase lightning related damage $SkillLevel(556)*2$%
+level1  2%
+level2  4%
+level3  6%
+level4  8%
+level5 10%"
+557,Improve CS Rate,,"increase lightning related critical strike possibility $SkillLevel(557)*1$%
+level1  1%
+level2  2%
+level3  3%
+level4  4%
+level5  5%"
+558,Improve Dodge Rate,,"increase dodge rate $SkillLevel(558)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+559,Continuous Blade,,
+560,Sweeping All,,
+561,Improve Poison Sting,"attack target, cause $DmgMin(ActorDPS*(1+SkillLevel(561)*0.06))$-$DmgMax(ActorDPS*(1+SkillLevel(561)*0.06))$ points damage","increase damage $SkillLevel(561)*6$%
+level1  6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+562,Improve Soul Lost,"knock on weapon to make noise, cause target to faint for $3+SkillLevel(562)*0.5$ seconds, target wakes up after be attacked","extend effect time $SkillLevel(562)*0.5$ seconds
+level1  0.5s 
+level2  1.0s 
+level3  1.5s 
+level4  2.0s 
+level5  2.5s "
+563,Improve Rush Faint,"rush and attack, cause target faint for 2 seconds","shorten the cooling time $SkillLevel(563)*1$ seconds
+level 1 1 second
+level 2 2 seconds
+level 3 3 seconds
+level 4 4 seconds
+level 5 5 seconds"
+564,Improve Poison Bash,"heavily attack, cause target $DmgMin(ActorDPS)*2$-$DmgMax(ActorDPS)*2$ points damage","increase critical strike damage $SkillLevel(564)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+565,Improve Poison Thorn,"target poisoned, speed slow down 50% in $5+SkillLevel(565)$ seconds","extend effect time $SkillLevel(565)*1$ seconds
+level1  1s 
+level2  2s 
+level3  3s 
+level4  4s 
+level5  5s "
+566,Improve Poison Damage,,"improve poison related damage $SkillLevel(566)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+567,Improve CS Damage,,"increase poison related critical strike damage $SkillLevel(567)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+568,Improve CS Rate,,"increase poison related critical strike possibility $SkillLevel(568)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+569,Improve Shadow Flow,,
+570,Improve Ruin Strike,,
+571,Improve Swift Move,"move speed increase $50+SkillLevel(571)*5$%, lasting 15 seconds","increase move speed $SkillLevel(571)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+572,Improve Shadowy Walk,dodge rate increase 50% in $15+SkillLevel(572)$ seconds,"extend effect time $SkillLevel(572)*1$ seconds
+level1 1s 
+level2 2s 
+level3 3s 
+level4 4s 
+level5 5s "
+573,Improve Soul Rocking,freeze monster in $15+SkillLevel(573)*2$ seconds,"extend effect time $SkillLevel(573)*2$ seconds
+level1  2s 
+level2  4s 
+level3  6s 
+level4  8s 
+level5 10s "
+574,Improve Soul Shield,"physical defense increase $DRRToArmor(0.1,MWLev(524))*(1+SkillLevel(574)*0.05)$ points","increase extra defense $SkillLevel(574)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+575,Improve Puzzling Array,"enemy value decrease $PartyDPS(MWLev(525),2)*0.25*(1+SkillLevel(575)*0.1)$ with every attack","decrease extra enemy value $SkillLevel(575)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+576,Improve Elements Array,"increase magic defense $DRRToArmor(0.35,MWLev(526))*(1+SkillLevel(576)*0.1)$ points","increase extra defense $SkillLevel(576)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+577,Improve Dragon Cry,"shock faint enemies around, maximum 5 targets, and cause $DmgMin(ActorDPS*1.1*(1+SkillLevel(577)*0.1))$-$DmgMax(ActorDPS*1.1*(1+SkillLevel(577)*0.1))$ points damage","increase damage $SkillLevel(577)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+578,Improve Roc Sing,recover from speed slow down status,"decrease cooling time $SkillLevel(578)*6$seconds
+level1 6s 
+level2 12s 
+level3 18s 
+level4 24s 
+level5 30s "
+601,Heavy Crack,"perfuse mana on the arrows, crack down target's armor, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage, with extra $DRRToArmor(0.1,MWLev(601))$ points target defense decrease, lasting 10 seconds",
+602,Rapid Crack,"attack target with arrows, cause target $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage",
+603,Thorn Crack,"hit on target with thorn arrows, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage, enwind on target, decrease target speed for 50% lasting 5 seconds",[no_use]
+604,Shadow Crack,"attack target with shadow arrow, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage, also decrease target attack $ActorDPS*1/5+1$ points",[no_use]
+605,Spiny Crack,"shoot out more than one arrows, hit at most 3 targets, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage each",[no_use]
+611,Rapid Shoot,"hit enemy with crossbow, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage",[no_use]
+612,Snake Poison,"daub poison on arrows, total cause $(ActorDPS)*2+1$ points damage in 6 seconds",
+613,Bear Hit,"shoot arrows with bear's strength, target faint for 3 seconds",
+614,Power Shoot,"shoot skills learn from archer master, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage",[no_use]
+615,Eagle Swoop,"shoot arrows with eagle's power, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage, but need more cooling time",[no_use]
+621,Heal Pet,"curing pet with nature's power, pet recover $HealPS(MWLev(621))*1.5*2+20$ health points",[no_use]
+622,Revive Pet,revive pet and recover it's health points $MonsterGetHp(MWLev(622))*0.3$,[no_use]
+623,Wild Pet,"increase pet's enemy value by $PartyDPS(MWLev(623),4)*8$ points",[no_use]
+624,Poison of Attack,"daub poison on weapons, 20% rate to increase damage $PartyDPS(MWLev(624),4)*0.2$ points, lasting 10 seconds, could be successfully used for 30 times",[no_use]
+625,Poison of Slow,"daub poison on weapons, 20% rate to slow target speed 50%, lasting 10 seconds, could be successfully used for 30 times",[no_use]
+626,Poison of Weakness,"daub poison on weapons, 20% rate to decrease target attack $PartyDPS(MWLev(626),4)*0.1$ points, lasting 10 seconds, could be successfully used for 30 times",
+627,Brisk Wind,"power comes from the nature, recover from speed slowing down",
+628,Stone Skin,"increase pet's physical defense $DRRToArmor(0.2,MWLev(628))$ points, lasting 30 minutes",[no_use]
+629,Brutal Fight,"increase pet's physical attack $MonsterGetDPS(MWLev(629))*0.3$ points, lasting 30 minutes",[no_use]
+630,Fire Trap,"set a fire trap on the ground, cause enemy in the trap total $(ActorDPS)*2+1$ points damage in 6 seconds",[no_use]
+631,Freezing Trap,"set a ice trap on the ground, enemy will be frozen if in the trap, but will recover if be attacked",[no_use]
+651,Improve Heavy Crack,"perfuse mana on the arrows, crack down target's armor, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage, with extra $DRRToArmor(0.1+SkillLevel(651)*0.02,MWLev(601))$ points target defense decrease, lasting 10 seconds","increase Heavy Crack defense  $SkillLevel(651)*2$%
+level1  2%
+level2  4%
+level3  6%
+level4  8%
+level5 10%"
+652,Improve Rapid Crack,"attack target with arrows, cause target $DmgMin(ActorDPS*1.5)*(1+SkillLevel(652)*0.05)$-$DmgMax(ActorDPS*1.5)*(1+SkillLevel(652)*0.05)$ points damage","increase Rapid Crack damage $SkillLevel(652)*5$%
+level1  5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+653,Improve Thorn Crack,"hit on target with thorn arrows, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage, enwind on target, decrease target speed for $50+SkillLevel(653)*5$%, lasting 5 seconds","improve Thorn Crack effect, decrease target speed $SkillLevel(653)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+654,Improve Shadow Crack,"attack target with shadow arrows, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage, decrease target attack $ActorDPS*(0.2+SkillLevel(654)*0.03)+1$ points","improve Shadow Crack effect, decrease target attack $SkillLevel(654)*3$%
+level1 3%
+level2 6%
+level3 9%
+level4 12%
+level5 15%"
+655,Improve Spiny Crack,"shoot out more than one arrows, hit at most 3 targets, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage each","decrease Spiny Crack mana cost $SkillLevel(655)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+656,Improve Water Damage,,"increase water related damage $SkillLevel(656)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+657,Improve CS Damage,,"increase water related critical strike damage $SkillLevel(657)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+658,Improve CS Rate,,"increase water related critical strike possibility $SkillLevel(658)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+659,Squall,,"move speed increase 50% , lasting 15 seconds"
+660,Fulmination,,short distance instant move
+661,Improve Rapid Shoot,"hit enemy with crossbow, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage","decrease the cooling time of Rapid Shoot for 0.$SkillLevel(661)$ seconds
+level 1 0.1 seconds
+level 2 0.2 seconds
+level 3 0.3 seconds
+level 4 0.4 seconds
+level 5 0.5 seconds"
+662,Improve Snake Poison,"daub poison on arrows, total cause $(ActorDPS)*2*(1+SkillLevel(662)*0.05)+1$ points damage in 6 seconds","increase Snake Poison effect $SkillLevel(662)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+663,Improve Bear Hit,"shoot arrows with bear's strength, target faint 3 seconds","decrease Bear Hit cooling time $SkillLevel(663)*1$ seconds
+level1  1s 
+level2  2s
+level3  3s
+level4  4s
+level5  5s"
+664,Improve Power Shoot,"shoot skills learn from archer master, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage","decrease Power Shoot mana cost $SkillLevel(664)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+665,Improve Eagle Swoop,"shoot arrows with eagle's power, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage, but need more cooling time","decrease Eagle Swoop cooling time $SkillLevel(665)*3$ seconds
+level1 3s 
+level2 6s 
+level3 9s 
+level4 12s 
+level5 15s "
+666,Improve Poison Damage,,"increase poison related damage $SkillLevel(666)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+667,Improve CS Damage,,"increase poison related critical strike damage $SkillLevel(667)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+668,Improve CS Rate,,"increase poison related critical strike possibility $SkillLevel(668)*1$%
+level1 1%
+level2 2%
+level3 3%
+level4 4%
+level5 5%"
+669,Dragon Soaring,,double damages for next poison related attack
+670,Bright Mirror,,"except yourself, poison related skills cool down at once"
+671,Improve Heal Pet,"curing pet with nature's power, pet recover $HealPS(MWLev(621))*1.5*2*(1+SkillLevel(671)*0.06)+20$ health points","improve curing effect $SkillLevel(671)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+672,Improve Revive Pet,revive pet and recover it's health points $MonsterGetHp(MWLev(622))*0.3$,"decrease Revive Pet skill cooling time $SkillLevel(672)$ minutes
+level1 1m
+level2 2m
+level3 3m
+level4 4m
+level5 5m"
+673,Improve Wild Pet,"increase pet's enemy value by $PartyDPS(MWLev(623),4)*8*(1+SkillLevel(673)*0.2)$ points","improve the effect of increase pet's enemy value $SkillLevel(673)*20$%
+level1 20%
+level2 40%
+level3 60%
+level4 80%
+level5 100%"
+674,Improve Poison of Attack,"daub poison on weapons, 20% rate to increase damage $PartyDPS(MWLev(624),4)*(0.2+SkillLevel(674)*0.02)$ points, lasting 10 seconds, could be successfully used for 30 times","improve Poison of Attack effect $SkillLevel(674)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+675,Improve Poison of Slow,"daub poison on weapons, 20% rate to slow target speed $50+SkillLevel(675)*5$%, lasting 10 seconds, could be successfully used for 30 times","increase Poison of Slow effect, speed down for $SkillLevel(675)*5$%
+level1 5%
+level2 10%
+level3 15%
+level4 20%
+level5 25%"
+676,Improve Poison of Weakness,"daub poison on weapons, 20% rate to decrease target attack $PartyDPS(MWLev(626),4)*(0.2+SkillLevel(676)*0.02)$ points, lasting 10 seconds, could be successfully used for 30 times","increase Poison of Weakness effect $SkillLevel(676)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+677,Improve Brisk Wind,"power comes from the nature, recover from speed slowing down","decrease Brisk Wind cooling time $SkillLevel(677)*3$ seconds
+level1 3s 
+level2 6s
+level3 9s
+level4 12s
+level5 15s"
+678,Improve Stone Skin,"increase pet's physical defense $DRRToArmor(0.2,MWLev(628))*(1+SkillLevel(678)*0.06)$ points, lasting 30 minutes","improve Stone Skin effect $SkillLevel(678)*6$%
+level1 6%
+level2 12%
+level3 18%
+level4 24%
+level5 30%"
+679,Improve Brutal Fight,"increase pet's physical attack $MonsterGetDPS(MWLev(629))*(0.3+SkillLevel(679)*0.02)$ points, lasting 30 minutes","improve Brutal Fight effect $SkillLevel(679)*2$%
+level1 2%
+level2 4%
+level3 6%
+level4 8%
+level5 10%"
+680,Improve Fire Trap,"set a fire trap on the ground,  cause enemy in the trap total $(ActorDPS)*2*(1+SkillLevel(680)*0.1)+1$ points damage in 6 seconds","improve Fire Trap damage $SkillLevel(680)*10$%
+level1 10%
+level2 20%
+level3 30%
+level4 40%
+level5 50%"
+681,Improve Freezing Trap,"set a ice trap on the ground, enemy will be frozen if in the trap, but will recover if be attacked","increase Freezing Trap effect Range $SkillLevel(681)*10$
+level1 10
+level2 20
+level3 30
+level4 40
+level5 50"
+1000,testing--massman,[no_use],
+1001,testing--tiger,[no_use],
+1002,"testing--massman (200,000)",,
+1003,"testing--massman (1,000,000)",,
+1004,"testing--massman (5,000,000)",,
+1005,"testing--tiger (10,000)",,
+1006,"testing--tiger (50,000)",,
+1007,"testing--tiger (200,000)",,
+1008,"testing--tiger (500,000)",,
+1100,Venom Belch,Jungle King Boa Skill,
+1101,Snake Head Attack,Snake Head Attack,
+1102,Centipede Attack,Centipede Attack,
+1103,Ghost Fire Attack,Ghost Fire Attack,
+1104,Poison Mushroom Attack,Poison Mushroom Attack,
+1105,Immortal Centipede Dig,Immortal Centipede Dig,
+1106,Immortal Centipede Circle,Immortal Centipede Circle,
+1107,Ghost Wind Tao Aureole,Ghost Wind Tao Aureole,
+1108,Ghost Wind Tao Thunder Light,Ghost Wind Tao Thunder Light,
+1109,The Eight Diagrams Master Skill,The Eight Diagrams Master Skill,
+1110,Flame Tao Skill,Flame Tao Skill,
+1111,Iron Bell Tao Skill,Iron Bell Tao Skill,
+1112,Snake Monster Fire Ball,Snake Monster Fire Ball,
+1113,Snake Monster Poison Rain,Snake Monster Poison Rain,
+1114,Blood Eat Soul Attack,Blood Eat Soul Attack,
+1115,Muscle-man Wei Thunder Light,Muscle-man Wei Thunder Light,
+1116,Jin Guangding Flying Sword,Jin Guangding Flying Sword,
+1117,Loong Fei Flying Sword,Loong Fei Flying Sword,
+1118,Lecher Dart,Lecher dart,
+1119,Gangster Zhang's Blade Light,Gangster Zhang's Blade Light,
+1120,Cortege Qin's Flying Sword,Cortege Qin's Flying Sword,
+1121,Cortege Xue's Double Sword,Cortege Xue's Double Sword,
+1122,Callet Head Young Flying Sword,Callet Head Young Flying Sword,
+1123,Gemination Snake Attack,Blood Eat Soul Attack,
+1124,Golden Silkworm Attack,Blood Eat Soul Attack,
+1125,Golden Silkworm Skill,Blood Eat Soul Attack,
+1126,Poison Fly Basic Attack,Blood Eat Soul Attack,
+1127,Green Robe Master Flying Bomb,Cortege Xue's Double Sword,
+1128,Green Robe Master Poison Rain,Snake Monster Poison Rain,
+1129,Monk Zhi Tong Iron Bell,Iron Bell Tao Skill,
+1130,Monk Zhi Tong Bright Rain,Snake Monster Poison Rain,
+1131,Fa Yuan Bright Rain,Snake Monster Poison Rain,
+1132,Fa Yuan Fire Ball ,Snake Monster Poison Rain,
+1133,Buddhist Monk Zhi Fei Flying Bomb,Cortege Xue's Double Sword,
+1134,Buddhist Monk Xiao Yue Attack Skill,Snake Monster Poison Rain,
+1135,Buddhist Monk Xiao Yue Bright Rain,Snake Monster Poison Rain,
+1136,Evil Tao He Skill,Muscle-man Wei Thunder Light,
+1137,Evil Tao Yu Taizhen Enwind ,Iron Bell Tao Skill,
+1138,Evil Tao Yu Taizhen Group Flying Sword,Immortal Centipede Dig,
+1139,Black Ghost Axe Chop,Black Ghost Axe Chop,
+1140,Block Ghost Eddy,Snake Monster Poison Rain,
+1143,Force Attack,"loyalty to the owner, force monster Attack itself 10 seconds",
+1144,Trace,"trace quarries, move speed increase 30%",
+1145,Frenzy,"crazy attack target, increase Attack $MonsterGetDPS(Level)*0.5+1$ points",
+1146,Tiger Rush,,
+1147,Hard Chop,,
+1150,Crocodile Attack,,
+1151,Crocodile Shock,,
+1152,Black Stone Demon Shockwave,,
+1153,Machine Gun Attack,,
+1154,Iron Arm Shock,,
+1155,Flag Rain,,
+1156,Fire Shockwave,,
+1157,Light Blade Attack,,
+1158,Poison Rain of Fly Dragon,,
+1159,Purple Gold Bowl,,
+1160,Fire Cloud,,
+1161,Fire Cloud Wave,,
+1162,Vivid Light Rain,,
+1163,War Ruin,,
+1164,Body Split,,
+1165,Glaring Light Shockwave,,
+1166,Magic Searing,,
+1167,Hypnosis,,
+1168,Virulent Bee Wave,,
+1169,Flame Incantation,,
+1170,Evil Earthquake,,
+1171,Worm Self-explosion,,
+1172,Spawn Explosion,,
+1173,Viper War Giant Rush,,
+1174,Light Blade,,
+1175,Cure Spell,,
+1176,Black Dragon Wave,,
+1177,Metamorphosis,,
+1178,Sleep Wave,,
+1179,Tornado,,
+1180,Blaze Skull Rush,,
+1182,Blaze Skull Eruptiveness,,
+1183,Bloody Skill,,
+1184,Mobs Madly Dancing,,
+1185,Blaze Skull Fire Circle,,
+1186,Ice Light Burst,,
+1187,Cold Snap,,
+1188,Tentacle Twist,,
+1189,Fission Blast,,
+1190,Sky Cruelty,,
+1191,Land Cruelty,,
+1192,Axe Crack (original),,
+1193,Axe Crack (weak),,
+1194,Poison Dragon Frenzy,,
+1195,General Attack,,
+1196,Tiger Rush,,
+1197,Gunner Attack,,
+1198,Ice Light Burst,,
+1199,Cursed Zombie Slow,,
+1200,Flame Incantation,,
+1201,Evil Earthquake,,
+1202,Metamorphosis,,
+1204,Spider Shot,,
+1205,Monkey Shot,,
+1206,Octopus Shot,,
+1207,Junior Cure Spell,,
+1208,Senior Cure Spell,,
+1230,Jet Arm Shot,,
+1231,Jet Arm Quake,,
+1232,Flying Poison Attack,,
+1233,Soul Summon,,
+1234,Lightning  Summon,,
+1235,Lash of Ray,,
+1236,Fire Chop,,
+1237,Broken Chop,,
+1238,Soul Destroy,,
+1239,Plague Shockwave,,
+1240,Shadow Shockwave,,
+1241,Shadow Servant,,
+1242,Base Cannon,,
+1243,Spiny Dart,,
+1244,Circling Dart,,
+1245,Ghost Sound Burst,,
+1246,Ghost Corpse Burst,,
+1247,Poison Scorpion Tail,,
+1248,Poison Frog,,
+1249,Magma Burning,,
+1250,Flame Burst,,
+1251,Life Ray,,
+1252,Mana Ray,,
+1253,Power Explosion,,
+1254,Spider Fire,,
+1255,Hail Attack,,
+1256,Pet Mass Attack,,
+1257,World Boss Cat King Skill,,
+1258,Goddess Forgiveness,,
+1265,Purple Shield,"add a purple shield on target body for 60 seconds, absorb 2000 damage",
+1266,Thunder Faint,"thunder comes from the sky, transfixed target, faint target 3 seconds and cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, target woke up when being attacked",
+1267,Sheen Slice,"Talisman with some illusion shadows attack target, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage",
+1268,Healing Spell,"yellow bright sprinkle on the target body, recover 3000 health points",
+1269,Rush Faint,"rush and attack, cause target faint for 2 seconds",
+1270,Poison Bash,"heavily attack, cause target $DmgMin(ActorDPS)*2$-$DmgMax(ActorDPS)*2$ points damage",
+1271,Dragon Cry,"shock faint enemies around, maximum 5 targets, and cause $DmgMin(ActorDPS*1.1)$-$DmgMax(ActorDPS*1.1)$ points damage",
+1272,Shadowy Walk,dodge rate increase 50% in 15 seconds,
+1273,Rapid Crack,"attack target with arrows, cause target $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage",
+1274,Heavy Crack,"perfuse mana on the arrows, crack down target's armor, cause $DmgMin(ActorDPS*3)$-$DmgMax(ActorDPS*3)$ points damage, with extra 500 points target's defense decrease, lasting 10 seconds",
+1275,Shadow Crack,"attack target with shadow arrow, cause $DmgMin(ActorDPS*1.5)$-$DmgMax(ActorDPS*1.5)$ points damage, also decrease target attack 50 points",
+1276,Fire Trap,"set a fire trap on the ground, cause enemy in the trap total $(ActorDPS)*2+1$ points damage in 6 seconds",
+1277,Earth Faint,"group attack skill, cause target $DmgMin(ActorDPS*0.3)$-$DmgMax(ActorDPS*0.3)$ points damage, enemy faint for 3 seconds",
+1278,Sobering Spell,woke up from the faint and poisoned states at once,
+1279,Fire Barb,"sword coming out from the ground, pierce the target body, cause target $DmgMin(ActorDPS*2.5)$-$DmgMax(ActorDPS*2.5)$ points damage",
+1280,Fire Dragon,"summon fire dragon down from the sky, cause target $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, and with extra burning effect, cause target $PartyDPS(MWLev(204),0)*3$ points damage in 6 seconds.",
+1281,Buddha Quake,"group attack skill, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, shock faint enemies around 5 seconds",
+1282,Heart Lotus,"set a heart lotus, all enemies in range 200 speed slow down 50%, also can detect invisible objects, valid for 20 seconds",
+1283,Giant Attack,"attack target, cause $DmgMin(ActorDPS)$-$DmgMax(ActorDPS)$ points damage, also amass one break point",
+1284,Giant Burst,break points: cause $DmgMin(ActorDPS*4)$-$DmgMax(ActorDPS*4)$ damage points,
+1285,Bow Release,,
+1286,Twin Wheel Peggy Group,,
+1287,Halberd Shadow Xuan Group,,
+1288,Sad Fire Shi Shock,,
+1289,Deadwood Dragon Li Group,,
+1290,Magic Bowl Zheng Group,,
+1291,Cave Witch Single,,
+1292,Huge Blade Bao Single,,
+1293,Thunder Pearl Man Group,,
+1294,Blade Master Sui Single,,
+1295,Bloodthirsty Mummy Shou Single,,
+1296,Seven Color Butterfly Group,,
+1297,Butterfly Pupa Group,,
+1298,Pick Pockets,,
+1299,Ghost Birth (Group),,
+1300,Base,"increase your HP upper limit $(PartyHP(10+SelfGodLevel,Party)-PartyHP(9,Party))*0.35$ points, the higher level of Soul, the more effect.",
+1301,Taoist Xindzi Single,,
+1302,Taoist Xindzi Group,,
+1303,Taoist Xindzi Single Faint,,
+1304,Angel Warrior Tang Group Defense Reduce,,
+1305,Angel Warrior Tang Single CS,,
+1306,Angel Warrior Tang Group Speed Reduce,,
+1307,Slow Down,,
+1308,HP Infusion,,
+1309,Green Robe Master Single,,
+1310,Scorpion Deer Man Single,,
+1311,Nerve Turning,,
+1312,Blood Boomerang,,
+1314,Broken Chop,,
+1315,Cloud Crack,,
+4401,Guard Light Cannon,,
+4402,Guard Cleave,,
+4403,Blood Ghost Single Attack,,
+4404,Blood Ghost Group Attack,,

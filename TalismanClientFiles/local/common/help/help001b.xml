@@ -1,0 +1,27 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<UiRichText>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_03a$" hlink="File:local/common/help/help013.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_03b$" hlink="File:local/common/help/help014.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_03c$" hlink="File:local/common/help/help015.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_03d$" hlink="File:local/common/help/help016.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+
+  <Line/>
+  <Line/>
+  <Line/>
+</UiRichText>

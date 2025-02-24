@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="NoTitleBarForm" Location="0,256,830,630" Movable="true" Name="frmWorldMap" Show="false" Size="848,700" TextColor="" TextFont="$L:1$">
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor point="CENTERV"/>
+      </Anchors>
+      <Label Inherit="bg1" Location="7,18,830,655" Name="1435" Show="true"/>
+      <TitleBarButton Location="0,0,1274,18" Show="false" Text="$L:741$"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,845,45" Name="1261" Show="fals"/>
+      <Label Inherit="" Location="555,9,290,25" Name="1262" Show="false">
+        <BackgroundImage File="tz_010" Source="0,109,250,25 "/>
+      </Label>
+      <Label Inherit="" Location="512,0,256,256" Name="1627" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="768,10,66,247" Name="1993" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,256,256,256" Name="2360" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,256,256" Name="2728" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="512,256,256,256" Name="3097" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="766,257,64,256" Name="3477" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,512,256,256" Name="3848" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="256,512,256,256" Name="4220" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="512,512,256,256" Name="4593" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="768,512,67,142" Name="4967" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Form Inherit="NoTitleBarForm" Location="21,89,800,540" Name="frmContinent01" Show="true">
+        <BackgroundImage File="west_world"/>
+        <CheckButton Inherit="" Location="294,256,85,58" Name="ckbZone001" Show="true">
+          <CheckImage File="hight_chengdu" Source="2,0,74,70" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="202,256,92,58" Name="ckbZone002" Show="true">
+          <CheckImage File="hight_chengdu" Source="76,0,72,70" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="250,139,135,90" Name="ckbZone003" Show="true">
+          <CheckImage File="hight_chengdu" Source="76,72,87,109" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="162,313,90,80" Name="ckbZone004" Show="true">
+          <CheckImage File="hight_chengdu" Source="0,75,70,97" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="256,313,125,70" Name="ckbZone005" Show="true">
+          <CheckImage File="hight_chengdu" Source="153,2,102,80" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="85,392,85,65" Name="ckbZone006" Show="true">
+          <CheckImage File="hight_chengdu" Source="161,159,94,96" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="83,309,82,85" Name="ckbZone007" Show="true">
+          <CheckImage File="hight_chengdu" Source="10,173,57,83" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="255,383,85,45" Name="ckbZone008" Show="true">
+          <CheckImage File="hight_chengdu" Source="82,186,57,70" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="255,198,170,60" Name="ckbZone009" Show="true">
+          <CheckImage File="hight_yunlingshan" Source="-2,0,143,75" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="337,54,86,85" Name="ckbZone010" Show="true">
+          <CheckImage File="hight_yunlingshan" Source="145,-5,54,105" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="253,54,85,85" Name="ckbZone011" Show="true">
+          <CheckImage File="hight_yunlingshan" Source="200,0,56,107" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="211,82,90,60" Name="ckbZone012" Show="true">
+          <CheckImage File="hight_yunlingshan" Source="7,83,60,75" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="255,427,125,55" Name="ckbZone013" Show="true">
+          <CheckImage File="hight_yunlingshan" Source="83,113,86,75" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="169,397,85,85" Name="ckbZone014" Show="true">
+          <CheckImage File="hight_yunlingshan" Source="174,118,63,114" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="380,255,170,60" Name="ckbZone015" Show="true">
+          <CheckImage File="hight_yunlingshan" Source="3,182,112,73" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="381,314,85,85" Name="ckbZone016" Show="true">
+          <CheckImage File="hight_daijiachang" Source="6,4,57,109" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="549,225,250,90" Name="ckbZone017" Show="true">
+          <CheckImage File="hight_daijiachang" Source="77,6,153,109" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="127,225,75,60" Name="ckbZone037" Show="true">
+          <CheckImage File="hight_daijiachang" Source="9,190,51,53" Transparency="0.5"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="2,197,125,60" Name="ckbZone041" Show="true">
+          <CheckImage File="hight_daijiachang" Source="93,193,84,54" Transparency="0.5"/>
+        </CheckButton>
+        <Button Inherit="" Location="294,256,85,58" Name="btZone001_01" Show="true"/>
+        <Button Inherit="" Location="262,304,32,10" Name="btZone001_02" Show="true"/>
+        <Button Inherit="" Location="202,256,92,58" Name="btZone002_01" Show="true"/>
+        <Button Inherit="" Location="253,139,130,60" Name="btZone003_01" Show="true"/>
+        <Button Inherit="" Location="297,198,45,30" Name="btZone003_02" Show="true"/>
+        <Button Inherit="" Location="162,313,90,80" Name="btZone004_01" Show="true"/>
+        <Button Inherit="" Location="256,313,125,70" Name="btZone005_01" Show="true"/>
+        <Button Inherit="" Location="85,392,85,65" Name="btZone006_01" Show="true"/>
+        <Button Inherit="" Location="83,309,82,85" Name="btZone007_01" Show="true"/>
+        <Button Inherit="" Location="255,383,85,45" Name="btZone008_01" Show="true"/>
+        <Button Inherit="" Location="254,227,170,30" Name="btZone009_01" Show="true"/>
+        <Button Inherit="" Location="341,198,40,30" Name="btZone009_02" Show="true"/>
+        <Button Inherit="" Location="337,54,86,85" Name="btZone010_01" Show="true"/>
+        <Button Inherit="" Location="253,54,85,55" Name="btZone011_01" Show="true"/>
+        <Button Inherit="" Location="298,109,40,30" Name="btZone011_02" Show="true"/>
+        <Button Inherit="" Location="211,82,42,60" Name="btZone012_01" Show="true"/>
+        <Button Inherit="" Location="253,109,48,30" Name="btZone012_02" Show="true"/>
+        <Button Inherit="" Location="255,427,125,55" Name="btZone013_01" Show="true"/>
+        <Button Inherit="" Location="169,397,85,85" Name="btZone014_01" Show="true"/>
+        <Button Inherit="" Location="380,255,170,60" Name="btZone015_01" Show="true"/>
+        <Button Inherit="" Location="381,314,85,85" Name="btZone016_01" Show="true"/>
+        <Button Inherit="" Location="549,225,250,90" Name="btZone017_01" Show="true"/>
+        <Button Inherit="" Location="127,225,42,60" Name="btZone037_01" Show="true"/>
+        <Button Inherit="" Location="168,255,33,30" Name="btZone037_02" Show="true"/>
+        <Button Inherit="" Location="1,197,85,60" Name="btZone041_01" Show="true"/>
+        <Button Inherit="" Location="86,226,40,30" Name="btZone041_02" Show="true"/>
+        <Button Inherit="" Location="1,197,85,60" Name="btZone042_01" Show="true"/>
+        <Button Inherit="" Location="86,226,40,30" Name="btZone042_02" Show="true"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone001" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="383,44,280,130" Name="lb1" Show="true" Text="$L:645$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="249,345,230,50" Name="3357" Show="true" Text="$L:646$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="211,166,150,50" Name="3458" Show="true" Text="$L:647$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="401,245,200,50" Name="3570" Show="true" Text="$L:648$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="16,462,240,40" Name="3683" Show="true" Text="$L:891$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,101,40,40" Name="4225" Show="false" Text="$L:650$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,142,40,40" Name="4348" Show="false" Text="$L:651$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="471,25,32,32" Name="824" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="502,27,190,24" Name="868" Show="true" Text="$L:745$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="368,461,32,32" Name="1284" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="367,494,190,24" Name="1438" Show="true" Text="$L:747$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="108,249,32,32" Name="2235" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="29,288,220,24" Name="2391" Show="true" Text="$L:746$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="614,299,32,32" Name="4000" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="549,335,200,24" Name="4282" Show="true" Text="$L:883$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="629,442,32,32" Name="4575" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="563,475,200,24" Name="4859" Show="true" Text="$L:884$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone002" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="278,131,250,50" Name="3357" Show="true" Text="$L:652$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="467,357,310,50" Name="4662" Show="true" Text="$L:653$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="337,238,420,50" Name="4769" Show="true" Text="$L:654$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="571,118,220,50" Name="4888" Show="true" Text="$L:655$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="222,396,230,50" Name="5027" Show="true" Text="$L:656$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="5,453,300,40" Name="4225" Show="true" Text="$L:892$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="5254" Show="false" Text="$L:658$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="5364" Show="false" Text="$L:659$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="341,464,32,32" Name="2235" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="230,495,210,24" Name="2391" Show="true" Text="$L:748$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="737,253,32,32" Name="2196" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="628,300,170,24" Name="2378" Show="true" Text="$L:751$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="464,62,16,16" Name="2429" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="466,58,290,24" Name="3806" Show="true" Text="$L:948$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="235,268,210,24" Name="7440" Show="true" Text="$L:1303$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <BackgroundImage File="map_ciyunsi"/>
+        <Label Inherit="" Location="324,236,32,32" Name="9767" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone003" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="518,57,150,24" Name="3357" Show="true" Text="$L:660$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="265,71,240,24" Name="1217" Show="true" Text="$L:661$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="89,43,180,24" Name="1327" Show="true" Text="$L:662$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="319,158,270,50" Name="1438" Show="true" Text="$L:663$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="80,168,210,50" Name="1550" Show="true" Text="$L:664$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="429,233,370,50" Name="1663" Show="true" Text="$L:665$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="276,339,350,50" Name="1777" Show="true" Text="$L:666$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="41,424,300,40" Name="4225" Show="true" Text="$L:893$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2038" Show="false" Text="$L:668$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,143,40,40" Name="2155" Show="false" Text="$L:669$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="455,382,32,32" Name="2235" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="423,417,200,24" Name="2391" Show="true" Text="$L:749$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="379,38,32,32" Name="13051" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="268,41,32,32" Name="13299" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="493,40,32,32" Name="13548" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone004" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="138,88,340,50" Name="3357" Show="true" Text="$L:670$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="192,239,300,50" Name="1680" Show="true" Text="$L:671$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="412,196,250,50" Name="1797" Show="true" Text="$L:672$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="367,362,250,50" Name="2034" Show="true" Text="$L:673$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="55,429,300,40" Name="4225" Show="true" Text="$L:894$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2308" Show="false" Text="$L:675$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2429" Show="false" Text="$L:676$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="187,202,32,32" Name="2235" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="48,226,210,24" Name="2391" Show="true" Text="$L:750$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="413,22,32,32" Name="5901" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="441,31,200,24" Name="6065" Show="true" Text="$L:746$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="496,110,18,18" Name="1967" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,108,210,24" Name="897" Show="true" Text="$L:1030$" TextColor="#EE000000" TextFont="$L:1$" TextSize="16"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone005" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="188,184,220,50" Name="3357" Show="true" Text="$L:677$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="25,88,220,50" Name="1538" Show="true" Text="$L:678$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="63,182,120,50" Name="1659" Show="true" Text="$L:679$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="253,97,260,50" Name="1787" Show="true" Text="$L:680$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="417,159,250,50" Name="1910" Show="true" Text="$L:681$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="282,391,320,50" Name="2159" Show="true" Text="$L:682$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="512,259,280,40" Name="4225" Show="true" Text="$L:895$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="717,106,40,40" Name="2485" Show="false" Text="$L:684$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="717,147,40,40" Name="2612" Show="false" Text="$L:685$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="418,34,32,32" Name="5901" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="416,54,190,24" Name="6065" Show="true" Text="$L:751$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="216,457,32,32" Name="6949" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="163,490,210,24" Name="7117" Show="true" Text="$L:752$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,65,220,24" Name="6030" Show="true" Text="$L:950$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="60,96,16,16" Name="6350" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone006" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="216,116,300,50" Name="3357" Show="true" Text="$L:686$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="143,218,280,50" Name="936" Show="true" Text="$L:687$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="372,174,240,50" Name="1063" Show="true" Text="$L:688$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="277,281,260,50" Name="1191" Show="true" Text="$L:689$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="329,353,320,50" Name="1320" Show="true" Text="$L:690$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="270,448,280,50" Name="1450" Show="true" Text="$L:691$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="120,395,280,50" Name="1581" Show="true" Text="$L:692$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="10,57,280,40" Name="4225" Text="$L:896$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="1866" Show="false" Text="$L:694$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,152,40,40" Name="2000" Show="false" Text="$L:695$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="291,21,32,32" Name="6949" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="316,30,210,24" Name="7117" Show="true" Text="$L:750$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="252,481,16,16" Name="7116" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="159,497,260,24" Name="7153" Show="true" Text="$L:951$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone007" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="376,375,400,50" Name="lb1" Text="$L:712$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="383,217,280,50" Name="lb2" Text="$L:713$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="410,66,280,50" Name="lb3" Text="$L:714$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="128,186,240,50" Name="1149" Text="$L:715$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="144,379,240,50" Name="1295" Text="$L:716$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="504,477,270,40" Name="4225" Text="$L:897$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="1600" Show="false" Text="$L:718$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="1749" Show="false" Text="$L:719$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,188,40,40" Name="1899" Show="false" Text="$L:720$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="636,299,32,32" Name="6949" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="569,331,210,24" Name="7117" Text="$L:748$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="261,480,32,32" Name="8056" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="272,492,210,24" Name="8230" Text="$L:753$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone008" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="31,304,240,24" Name="3357" Text="$L:696$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,117,340,50" Name="2481" Text="$L:697$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="430,164,280,50" Name="2657" Text="$L:698$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="381,319,240,50" Name="2792" Text="$L:699$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,489,240,24" Name="2928" Text="$L:700$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,44,350,40" Name="4225" Text="$L:898$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="3348" Show="false" Text="$L:702$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,148,40,40" Name="3487" Show="false" Text="$L:703$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="351,30,32,32" Name="8056" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="380,36,210,24" Name="8230" Text="$L:747$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="513,458,32,32" Name="5943" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="121,272,32,32" Name="6193" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone009" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="366,180,240,50" Name="lb1" Text="$L:704$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="172,350,320,50" Name="lb2" Text="$L:705$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="29,310,290,50" Name="lb3" Text="$L:706$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="482,328,300,50" Name="2136" Text="$L:707$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="309,400,380,50" Name="2277" Text="$L:708$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,65,280,40" Name="4225" Text="$L:899$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2572" Show="false" Text="$L:710$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2716" Show="false" Text="$L:711$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="397,158,32,32" Name="8056" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="253,166,150,24" Name="8230" Text="$L:754$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="432,432,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="376,460,170,24" Name="9740" Text="$L:751$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="86,414,16,16" Name="9471" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="52,431,220,24" Name="10692" Show="true" Text="$L:949$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="494,165,16,16" Name="5169" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <BackgroundImage File="map_yunlingshan"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="432,142,220,24" Name="9169" Show="true" Text="$L:1317$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone012" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="153,123,240,50" Name="lb1" Text="$L:770$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="190,330,160,50" Name="lb2" Show="true" Text="$L:771$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="487,342,140,50" Name="2136" Show="true" Text="$L:769$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="428,76,370,40" Name="4225" Text="$L:902$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2572" Show="false" Text="$L:767$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2716" Show="false" Text="$L:768$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="600,466,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="538,495,210,24" Name="9740" Text="$L:772$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone011" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="174,82,240,50" Name="lb1" Text="$L:777$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="182,225,280,50" Name="lb2" Text="$L:778$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="358,109,240,50" Name="2136" Text="$L:776$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="13,447,400,40" Name="4225" Text="$L:901$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2572" Show="false" Text="$L:774$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2716" Show="false" Text="$L:775$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="461,461,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="392,488,200,24" Name="9740" Text="$L:772$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="403,260,140,50" Name="4009" Show="true" Text="$L:779$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="332,381,320,50" Name="4215" Text="$L:780$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone010" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="164,85,460,50" Name="lb1" Text="$L:784$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="177,196,460,50" Name="lb2" Text="$L:785$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="490,445,290,40" Name="4225" Text="$L:900$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2572" Show="false" Text="$L:782$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2716" Show="false" Text="$L:783$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="247,477,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="250,489,210,24" Name="9740" Text="$L:772$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="362,249,450,50" Name="4009" Text="$L:786$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,388,490,50" Name="4215" Text="$L:787$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="138,261,230,24" Name="12988" Show="true" Text="$L:953$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="303,259,16,16" Name="13293" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="138,242,230,24" Name="13589" Show="true" Text="$L:954$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone013" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="274,128,260,50" Name="lb1" Show="true" Text="$L:790$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="42,157,240,50" Name="lb2" Text="$L:792$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="28,439,290,40" Name="4225" Text="$L:903$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,400,40,40" Name="2572" Show="false" Text="$L:789$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,442,40,40" Name="2716" Show="false" Text="$L:783$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="386,36,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="385,50,210,24" Name="9740" Text="$L:795$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="531,152,240,50" Name="4009" Text="$L:793$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="215,288,340,50" Name="4215" Show="true" Text="$L:791$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="378,405,320,50" Name="5472" Text="$L:794$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone014" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="363,113,240,50" Name="lb1" Text="$L:799$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="164,251,240,50" Name="lb2" Text="$L:801$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="471,445,320,40" Name="4225" Text="$L:904$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:798$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:797$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="544,35,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="514,67,210,24" Name="9740" Text="$L:795$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,412,240,50" Name="4009" Text="$L:802$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="184,112,240,50" Name="4215" Text="$L:800$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="280,90,180,25" Name="6052" Text="$L:803$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,42,180,25" Name="6297" Text="$L:804$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone015" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="201,219,340,50" Name="lb1" Text="$L:810$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="410,372,270,50" Name="lb2" Text="$L:812$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="6,474,350,40" Name="4225" Show="true" Text="$L:905$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="33,147,40,40" Name="2572" Show="false" Text="$L:808$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="32,106,40,40" Name="2716" Show="false" Text="$L:807$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="323,425,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="265,454,210,24" Name="9740" Text="$L:815$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="330,130,310,50" Name="4009" Text="$L:811$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="29,174,240,50" Name="4215" Text="$L:809$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="42,293,32,32" Name="1327" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="18,326,210,24" Name="1593" Text="$L:814$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="546,198,240,50" Name="1903" Text="$L:813$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="223,304,280,50" Name="2855" Text="$L:886$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="685,346,16,16" Name="16515" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="537,364,260,24" Name="16552" Show="true" Text="$L:952$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="751,191,32,32" Name="1937" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="639,169,210,24" Name="2596" Show="true" Text="$L:996$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone016" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="218,296,290,50" Name="lb1" Show="true" Text="$L:821$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="83,247,400,50" Name="lb2" Text="$L:820$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="56,443,330,40" Name="4225" Text="$L:906$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,25,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="466,47,210,24" Name="9740" Text="$L:883$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="383,404,240,50" Name="4009" Text="$L:822$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="230,110,240,50" Name="4215" Text="$L:819$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="126,52,210,24" Name="4252" Text="$L:823$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="206,27,32,32" Name="4531" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone017" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="248,309,180,50" Name="lb1" Show="true" Text="$L:978$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-39,210,310,50" Name="lb2" Show="true" Text="$L:975$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="469,343,260,40" Name="4225" Show="true" Text="$L:980$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="592,270,240,50" Name="4009" Show="true" Text="$L:982$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,214,240,50" Name="4215" Show="true" Text="$L:977$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-12,197,210,24" Name="4252" Show="true" Text="$L:974$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="494,194,270,50" Name="2204" Show="true" Text="$L:983$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="462,97,240,50" Name="2516" Show="true" Text="$L:984$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="459,253,240,50" Name="2829" Show="true" Text="$L:987$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="333,173,240,50" Name="3153" Show="true" Text="$L:986$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="303,345,240,50" Name="8471" Show="true" Text="$L:979$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="11,187,32,32" Name="4531" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <BackgroundImage File=""/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="56,443,260,40" Name="2974" Show="true" Text="$L:1099$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="573,242,16,16" Name="16515" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="451,249,300,24" Name="16552" Show="true" Text="$L:1116$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="452,225,16,16" Name="2508" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="324,237,300,24" Name="3668" Show="true" Text="$L:1117$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone018" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="59,51,350,50" Name="lb1" Show="true" Text="$L:1000$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="426,283,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="407,316,240,24" Name="9740" Show="true" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone019" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="59,48,350,50" Name="lb1" Show="true" Text="$L:1002$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,191,32,32" Name="9560" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="9740" Show="true" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone020" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="227,60,350,50" Name="lb1" Show="true" Text="$L:1125$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,191,32,32" Name="9560" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="9740" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <BackgroundImage File=""/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone021" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,373,300,50" Name="lb1" Show="true" Text="$L:1167$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="387,365,300,50" Name="982" Show="true" Text="$L:1168$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="427,150,350,50" Name="1408" Show="true" Text="$L:1169$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,191,32,32" Name="9560" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="99,116,350,50" Name="1835" Show="true" Text="$L:1170$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="111,281,300,50" Name="2301" Show="true" Text="$L:1171$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="9740" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <BackgroundImage File="baimanshan1"/>
+        <Label Inherit="" Location="84,34,32,32" Name="1064" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="17,79,32,32" Name="1511" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="84,66,240,24" Name="3831" Show="true" Text="$L:1180$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="18,111,240,24" Name="4269" Show="true" Text="$L:1179$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-68,453,300,50" Name="4746" Show="true" Text="$L:1175$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="238,85,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="202,96,240,24" Name="2484" Show="true" Text="$L:1182$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="152,445,32,32" Name="12356" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="139,479,240,24" Name="14306" Show="true" Text="$L:1205$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone042" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,373,300,50" Name="lb1" Show="true" Text="$L:1490$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="387,365,300,50" Name="982" Show="true" Text="$L:1491$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="427,150,350,50" Name="1408" Show="true" Text="$L:1492$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,191,32,32" Name="9560" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="99,116,350,50" Name="1835" Show="true" Text="$L:1493$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="111,281,300,50" Name="2301" Show="true" Text="$L:1494$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="9740" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <BackgroundImage File="baimanshan1"/>
+        <Label Inherit="" Location="84,34,32,32" Name="1064" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="17,79,32,32" Name="1511" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="84,66,240,24" Name="3831" Show="true" Text="$L:1180$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="18,111,240,24" Name="4269" Show="true" Text="$L:1179$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-68,453,300,50" Name="4746" Show="true" Text="$L:1175$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="238,85,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="202,96,240,24" Name="2484" Show="true" Text="$L:1182$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="152,445,32,32" Name="12356" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="139,479,240,24" Name="14306" Show="true" Text="$L:1205$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone022" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,333,300,50" Name="2314" Show="true" Text="$L:1172$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2315" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2316" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,191,32,32" Name="2317" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="106,156,300,50" Name="2782" Show="true" Text="$L:1173$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File=""/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="390,155,350,50" Name="3212" Show="true" Text="$L:1174$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="489,246,32,32" Name="2397" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="482,280,240,24" Name="2898" Show="true" Text="$L:1177$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="true" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="307,400,470,50" Name="5249" Show="true" Text="$L:1176$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone023" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="37,113,300,50" Name="2314" Show="true" Text="$L:1201$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="54,119,40,40" Name="2315" Show="true" Text="$L:1214$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="54,78,40,40" Name="2316" Show="true" Text="$L:1213$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="true" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="baimanshan"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="true" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="true" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="true" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="true" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="true" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="true" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="true" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="true" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="true" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="54,37,40,40" Name="16018" Show="true" Text="$L:1212$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="298,197,240,24" Name="6974" Show="true" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Label Inherit="" Location="214,40,40,18" Name="535" Show="false" Text="$L:742$"/>
+      <ComboBox AlignCol="CENTER" Inherit="StudioCb" Location="153,64,130,18" Name="cbContinent" Show="fals"/>
+      <Label Inherit="" Location="400,40,40,18" Name="507" Show="false" Text="$L:743$"/>
+      <ComboBox AlignLine="CENTER" Inherit="StudioCb" Location="351,64,130,18" Name="cbZone" Show="fals"/>
+      <Button Inherit="PushButton" Location="528,64,80,18" Name="btZoomIn" Show="fals" Text="$L:744$"/>
+      <Label Inherit="" Location="149,637,90,20" Name="553" Show="true" Text="$L:726$:" TextColor="#FFFFFF00"/>
+      <Label Inherit="" Location="239,637,80,20" Name="lbMousePos" Show="true"/>
+      <Label Inherit="" Location="343,637,90,20" Name="658" Show="true" Text="$L:727$:" TextColor="#FFFFFF00"/>
+      <Label Inherit="" Location="433,637,80,20" Name="lbUserPos" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="362,0,120,68" Name="15878" Show="true" Text="$L:1057$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="526,637,256,20" Name="895" Show="true" Text="$L:1105$" TextColor="#FFFFFF00"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="624,46,200,32" Name="edtInfo" Show="true" Size="200,32" Text="" TextFont="$L:1$" TextSize="20">
+        <Anchors>
+          <Anchor offset="300,0" point="CENTERH"/>
+          <Anchor offset="0,55" point="TOP"/>
+        </Anchors>
+      </Label>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone024" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="27,36,300,50" Name="2314" Show="true" Text="$L:1225$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="baoxuejjc"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone025" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="384,86,300,50" Name="2314" Show="true" Text="$L:1226$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="shexue"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="28,89,800,540" Name="frmZone026" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="419,415,300,50" Name="2314" Show="true" Text="$L:1227$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="ciyunsi"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="331,275,120,24" Name="6974" Show="true" Text="$L:1622$" TextColor="#EEff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="453,254,120,24" Name="7941" Show="true" Text="$L:1623$" TextColor="#EEff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="643,215,120,24" Name="8783" Show="true" Text="$L:1624$" TextColor="#EEff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="601,310,120,24" Name="9626" Show="true" Text="$L:1625$" TextColor="#EEff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="47,312,120,24" Name="10470" Show="true" Text="$L:1620$" TextColor="#EEff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="220,258,120,24" Name="11316" Show="true" Text="$L:1621$" TextColor="#EEff0000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone027" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="19,69,300,50" Name="2314" Show="true" Text="$L:1228$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="mogong"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone028" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="4,44,300,50" Name="2314" Show="true" Text="$L:1229$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="tengxudong"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="370,409,120,22" Name="12388" Show="true" Text="$L:1626$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="254,285,120,22" Name="12404" Show="true" Text="$L:1627$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="244,213,120,22" Name="13248" Show="true" Text="$L:1628$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="401,48,120,22" Name="14094" Show="true" Text="$L:1629$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone029" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="307,426,300,50" Name="2314" Show="true" Text="$L:1230$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="yaorendongfu"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone030" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="417,88,300,50" Name="2314" Show="true" Text="$L:1231$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="qixingtai"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone031" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="25,49,300,50" Name="2314" Show="true" Text="$L:1232$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="honghuadong"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone032" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="50,380,300,50" Name="2314" Show="true" Text="$L:1233$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="wenzhudong"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone033" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="4,55,300,50" Name="2314" Show="true" Text="$L:1234$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="yinhudong"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone034" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="32,66,300,50" Name="2314" Show="true" Text="$L:1235$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="yinfengdong"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone035" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="8,35,300,50" Name="2314" Show="true" Text="$L:1236$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="zhuben"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="481,325,160,22" Name="12388" Show="true" Text="$L:1630$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="256,161,160,22" Name="3341" Show="true" Text="$L:1631$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone036" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,45,300,50" Name="2314" Show="true" Text="$L:1237$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="shuiben"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="349,295,120,22" Name="12388" Show="true" Text="$L:1632$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="494,59,120,22" Name="5112" Show="true" Text="$L:1633$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="23,88,800,540" Name="frmZone037" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,45,300,50" Name="2314" Show="false" Text="$L:1292$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="667,485,240,24" Name="2898" Show="true" Text="$L:1297$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="338,85,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="353,80,240,24" Name="6974" Show="true" Text="$L:1296$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="720,451,32,32" Name="6949" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="80,148,340,50" Name="4215" Show="true" Text="$L:1293$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="82,350,240,50" Name="36281" Show="true" Text="$L:1294$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="359,430,240,50" Name="37030" Show="true" Text="$L:1295$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="485,400,240,50" Name="42967" Show="false" Text="��԰" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="449,32,320,40" Name="2315" Show="true" Text="$L:1298$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="729,71,40,40" Name="5066" Show="true" Text="$L:1299$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="729,110,40,40" Name="5819" Show="true" Text="$L:1300$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="729,149,40,40" Name="6573" Show="true" Text="$L:1301$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <BackgroundImage File="lijiangcun"/>
+        <Label Inherit="" Location="59,209,32,32" Name="5523" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="51,240,240,24" Name="6353" Show="true" Text="$L:1491$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="25,88,800,540" Name="frmZone038" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,45,300,50" Name="2314" Show="false" Text="$L:1292$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="514,418,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="122,212,240,50" Name="4215" Show="true" Text="$L:1334$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="485,400,240,50" Name="42967" Show="false" Text="��԰" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="450,32,320,40" Name="2315" Show="true" Text="$L:1329$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="730,71,40,40" Name="5066" Show="true" Text="$L:1330$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="730,110,40,40" Name="5819" Show="true" Text="$L:1331$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <BackgroundImage File="wanzhujian"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="354,265,240,50" Name="19986" Show="true" Text="$L:1335$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="533,269,240,50" Name="20783" Show="true" Text="$L:1336$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="730,149,40,40" Name="29573" Show="true" Text="$L:1332$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="730,188,40,40" Name="30383" Show="true" Text="$L:1333$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="135,310,140,24" Name="2898" Show="true" Text="$L:1614$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="180,136,140,24" Name="6501" Show="true" Text="$L:1613$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="592,123,140,24" Name="7337" Show="true" Text="$L:1612$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="414,242,180,24" Name="8171" Show="true" Text="$L:1611$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="161,354,140,24" Name="4046" Show="true" Text="$L:1645$" TextColor="#EEff0000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="26,87,800,540" Name="frmZone039" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,45,300,50" Name="2314" Show="false" Text="$L:1292$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="520,438,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="204,134,240,50" Name="4215" Show="true" Text="$L:1343$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="198,312,240,50" Name="36281" Show="true" Text="$L:1344$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="485,400,240,50" Name="42967" Show="false" Text="��԰" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="449,32,320,40" Name="2315" Show="true" Text="$L:1337$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="729,71,40,40" Name="5066" Show="true" Text="$L:1338$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="729,110,40,40" Name="5819" Show="true" Text="$L:1339$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="729,149,40,40" Name="6573" Show="true" Text="$L:1340$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="452,156,240,50" Name="41222" Show="true" Text="$L:1342$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="729,188,40,40" Name="42020" Show="true" Text="$L:1341$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone040" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,45,300,50" Name="2314" Show="false" Text="$L:1292$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="140,134,240,50" Name="4215" Show="true" Text="$L:1444$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="353,282,240,50" Name="36281" Show="true" Text="$L:1446$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="485,400,240,50" Name="42967" Show="false" Text="��԰" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="414,73,320,40" Name="5066" Show="true" Text="$L:1440$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="694,113,40,40" Name="5819" Show="true" Text="$L:1441$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="694,153,40,40" Name="6573" Show="true" Text="$L:1442$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="410,153,240,50" Name="41222" Show="true" Text="$L:1445$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="694,193,40,40" Name="42020" Show="true" Text="$L:1443$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <BackgroundImage File="spve001"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="286,345,240,24" Name="2928" Show="true" Text="$L:1554$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="380,211,240,24" Name="4107" Show="true" Text="$L:1553$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="482,345,240,24" Name="4948" Show="true" Text="$L:1555$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone041" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,45,300,50" Name="2314" Show="false" Text="$L:1292$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="545,402,240,24" Name="2898" Show="true" Text="$L:1492$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="304,344,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="235,359,240,24" Name="6974" Show="true" Text="$L:1485$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="746,367,32,32" Name="6949" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="265,222,240,50" Name="4215" Show="false" Text="$L:1478$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="280,317,240,50" Name="36281" Show="true" Text="$L:1477$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="446,276,340,50" Name="37030" Show="true" Text="$L:1475$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="485,341,240,50" Name="42967" Show="true" Text="$L:1476$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="515,47,250,40" Name="2315" Show="true" Text="$L:1487$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="725,86,40,40" Name="5066" Show="true" Text="$L:1488$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="725,125,40,40" Name="5819" Show="true" Text="$L:1489$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <BackgroundImage File="feileiling"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="287,162,340,50" Name="3876" Show="true" Text="$L:1479$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="125,126,240,50" Name="5527" Show="false" Text="$L:1481$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="34,259,240,50" Name="6354" Show="true" Text="$L:1482$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="62,135,240,50" Name="7203" Show="true" Text="$L:1483$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="60,114,16,16" Name="7953" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="19,89,240,24" Name="10414" Show="true" Text="$L:1486$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone042" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,373,300,50" Name="lb1" Show="true" Text="$L:1643$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="387,365,300,50" Name="982" Show="true" Text="$L:1640$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="427,150,350,50" Name="1408" Show="true" Text="$L:1644$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2572" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2716" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,191,32,32" Name="9560" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="99,116,350,50" Name="1835" Show="true" Text="$L:1642$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="111,281,300,50" Name="2301" Show="true" Text="$L:1641$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="9740" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <BackgroundImage File="baimanshan1"/>
+        <Label Inherit="" Location="84,34,32,32" Name="1064" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="17,79,32,32" Name="1511" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="84,66,240,24" Name="3831" Show="true" Text="$L:1180$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="18,111,240,24" Name="4269" Show="true" Text="$L:1179$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-68,453,300,50" Name="4746" Show="true" Text="$L:1175$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="238,85,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="202,96,240,24" Name="2484" Show="true" Text="$L:1646$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label Inherit="" Location="152,445,32,32" Name="12356" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="139,479,240,24" Name="14306" Show="true" Text="$L:1649$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+ 		<Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone043" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,333,300,50" Name="2314" Show="true" Text="$L:1172$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,147,40,40" Name="2315" Show="false" Text="$L:818$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,106,40,40" Name="2316" Show="false" Text="$L:817$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="478,191,32,32" Name="2317" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="106,156,300,50" Name="2782" Show="true" Text="$L:1173$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File=""/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="390,155,350,50" Name="3212" Show="true" Text="$L:1174$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="489,246,32,32" Name="2397" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="482,280,240,24" Name="2898" Show="true" Text="$L:1177$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="true" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="307,400,470,50" Name="5249" Show="true" Text="$L:1651$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone044" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="37,113,300,50" Name="2314" Show="true" Text="$L:1201$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="54,119,40,40" Name="2315" Show="true" Text="$L:1214$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="54,78,40,40" Name="2316" Show="true" Text="$L:1213$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="true" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="baimanshan"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="true" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="true">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="true" Text="$L:1648$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="true" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="true" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="true" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="true" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="true" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="true" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="true" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="54,37,40,40" Name="16018" Show="true" Text="$L:1212$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="36"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="true">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="298,197,240,24" Name="6974" Show="true" Text="$L:1647$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone045" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="32,66,300,50" Name="2314" Show="true" Text="$L:1650$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="yinfengdong"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1648$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1650$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,88,800,540" Name="frmZone046" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,45,300,50" Name="2314" Show="true" Text="$L:1237$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="456,223,240,24" Name="2318" Show="false" Text="$L:1001$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,398,300,50" Name="2782" Show="false" Text="$L:1202$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <BackgroundImage File="shuiben"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="476,148,350,50" Name="3212" Show="false" Text="$L:1203$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="390,305,32,32" Name="1944" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label Inherit="" Location="189,25,32,32" Name="2397" Show="false">
+          <BackgroundImage File="tz_012" Source="227,260,49,60"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="219,42,240,24" Name="2898" Show="false" Text="$L:1210$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="404,337,240,24" Name="3334" Show="false" Text="$L:1178$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="400,379,470,50" Name="5249" Show="false" Text="$L:1204$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,219,470,50" Name="59453" Show="false" Text="$L:1205$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="356,62,470,50" Name="11817" Show="false" Text="$L:1211$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="397,250,470,50" Name="13890" Show="false" Text="$L:1208$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="-78,252,470,50" Name="15708" Show="false" Text="$L:1207$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="170,75,470,50" Name="17255" Show="false" Text="$L:1206$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="165,373,470,50" Name="19331" Show="false" Text="$L:1209$" TextColor="#EEc74106" TextFont="$L:1$" TextSize="30"/>
+        <Label Inherit="" Location="386,191,16,16" Name="2042" Show="false">
+          <BackgroundImage File="mapFBpoint"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="185,450,240,24" Name="6974" Show="false" Text="$L:1222$" TextColor="#EE000000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="349,295,120,22" Name="12388" Show="true" Text="$L:1632$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+        <Label AlignLine="CENTER" Inherit="" Location="494,59,120,22" Name="5112" Show="true" Text="$L:1633$" TextColor="#eeff0000" TextFont="$L:1$" TextSize="20"/>
+      </Form>
+    </Form>
+    <Button Inherit="" Location="969,122,13,13" Name="btClose" Show="false" Size="13,13">
+      <NormalImage File="tz_010" Source="120,383,13,13"/>
+      <PushedImage File="tz_010" Source="98,383,13,13"/>
+      <Anchors>
+        <Anchor offset="0,40" point="BOTTOM" relativePoint="TOP" relativeTo="layWorld.frmWorldMap"/>
+        <Anchor offset="-40,0" point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frmWorldMap"/>
+      </Anchors>
+    </Button>
+  </Layer>
+</Ui>

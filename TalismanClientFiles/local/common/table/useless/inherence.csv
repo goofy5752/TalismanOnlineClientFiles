@@ -1,0 +1,6 @@
+备注,所属法宝系列名[int],天赋的名字[string],最高等级[int],显示列[int]
+ID,BelowSeriesID,Name,MaxLevel,DisplayColumn
+1,1,$L:inherence_huojianjichu$,5,1
+2,1,$L:inherence_huojianjiaqiang$,1,2
+3,2,$L:inherence_bingfeidaojichu$,3,1
+4,2,$L:inherence_bingfeidaojiaqiang$,1,2

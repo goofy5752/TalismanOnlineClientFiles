@@ -1,0 +1,8 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:ectype_wenzhudong$,文蛛洞,guihuashanfuben/,"253 -256 514 0;
+902 -1279 1282 -1025;
+1280 -1281 1538 -1024;
+1537 -1281 1792 -1023;
+1280 -1537 1536 -1279;",1507 -1480 12;,0

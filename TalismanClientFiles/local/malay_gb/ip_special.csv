@@ -1,0 +1,3 @@
+,string,string,float
+,起始IP,结束IP,经验率
+ID,IpStart,IpEnd,ExpRate

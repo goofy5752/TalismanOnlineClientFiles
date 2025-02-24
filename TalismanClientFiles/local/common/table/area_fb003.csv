@@ -1,0 +1,11 @@
+ae,string,string,string,marea
+编号,区域名字,区域音乐,区域Logo,区域
+"ID","Name","Music","Logo","Area"
+1,$L:sn001_wuduqv$,enviromnet2,27,"-256 0 62 256;"
+2,$L:sn001_lieyanqv$,cave1,27,"30 -160 182 0;
+62 0 182 221;"
+3,$L:sn001_hanbingqv$,enviroment1,27,"181 -71 256 224;
+255 1 482 225;"
+4,$L:sn001_mogongneiting$,enviromnet2,27,"0 354 256 511;"
+5,$L:sn001_mogongwaiqv$,mountain4,27,"56 221 243 353;"
+6,$L:sn001_mogongfubenjinkou$,,27,"72 -247 153 -160;"

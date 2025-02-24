@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="loot_body_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="299,273,300,230" Name="frmLootBodyEx" Show="false">
+      <Label Inherit="bg1" Location="10,19,280,210" Name="16658" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="3,0,294,50" Name="25786" Show="true"/>
+      <Button Inherit="" Location="57,51,32,32" Name="Item1" Show="true">
+        <BackgroundImage File="tz_010.tga" Source="142,381,40,40"/>
+        <Scripts>
+          <OnHint>layWorld_frmLootBodyEx_btItem_OnHint(self)</OnHint>
+          <OnLClick>layWorld_frmLootBodyEx_btItem_OnLClick(self)</OnLClick>
+          <OnRClick>layWorld_frmLootBodyEx_btItem_OnRClick(self)</OnRClick>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="90,50,150,36" Name="ItemName1" Show="true" Text="">
+        <BackgroundImage File="tz_011" Source="0,176,150,36"/>
+      </Label>
+      <Button Inherit="" Location="57,85,32,32" Name="Item2" Show="true">
+        <BackgroundImage File="tz_010.tga" Source="142,381,40,40"/>
+        <Scripts>
+          <OnHint>layWorld_frmLootBodyEx_btItem_OnHint(self)</OnHint>
+          <OnLClick>layWorld_frmLootBodyEx_btItem_OnLClick(self)</OnLClick>
+          <OnRClick>layWorld_frmLootBodyEx_btItem_OnRClick(self)</OnRClick>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Button Inherit="" Location="57,119,32,32" Name="Item3" Show="true">
+        <BackgroundImage File="tz_010.tga" Source="142,381,40,40"/>
+        <Scripts>
+          <OnHint>layWorld_frmLootBodyEx_btItem_OnHint(self)</OnHint>
+          <OnLClick>layWorld_frmLootBodyEx_btItem_OnLClick(self)</OnLClick>
+          <OnRClick>layWorld_frmLootBodyEx_btItem_OnRClick(self)</OnRClick>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="90,84,150,36" Name="ItemName2" Show="true">
+        <BackgroundImage File="tz_011" Source="0,176,150,36"/>
+      </Label>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="90,118,150,36" Name="ItemName3" Show="true">
+        <BackgroundImage File="tz_011" Source="0,176,150,36"/>
+      </Label>
+      <Button Inherit="" Location="57,154,32,32" Name="Item4" Show="true">
+        <BackgroundImage File="tz_010.tga" Source="142,381,40,40"/>
+        <Scripts>
+          <OnHint>layWorld_frmLootBodyEx_btItem_OnHint(self)</OnHint>
+          <OnLClick>layWorld_frmLootBodyEx_btItem_OnLClick(self)</OnLClick>
+          <OnRClick>layWorld_frmLootBodyEx_btItem_OnRClick(self)</OnRClick>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="89,152,150,36" Name="ItemName4" Show="true">
+        <BackgroundImage File="tz_011" Source="0,176,150,36"/>
+      </Label>
+      <Button Inherit="PushButton" Location="24,196,80,20" Name="Previous" Show="true" Text="$L:370$">
+        <Scripts>
+          <OnLClick>layWorld_frmLootBodyEx_Previous_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="196,196,80,20" Name="Next" Show="true" Text="$L:371$">
+        <Scripts>
+          <OnLClick>layWorld_frmLootBodyEx_Next_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="110,196,80,20" Name="btPickAll" Show="true" Text="$L:1190$">
+        <Scripts>
+          <OnLClick>layWorld_frmLootBodyEx_btPickAll_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="90,0,120,66" Name="lbLootTitle" Show="true" Text="$L:372$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="0,189,256,11" Name="794" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="10,4,280,28"/>
+      <CloseButton Location="267,27,14,14">
+        <NormalImage File="tz_010.tga" Source="120,383,13,13"/>
+        <PushedImage File="tz_010.tga" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)
+			UI_layWorld_frmLootBodyEx_LootAll_next_i = 1</OnShow>
+        <OnHide>layWorld_frmLootBodyEx_OnHide(self)</OnHide>
+        <OnUpdate Timer="500">layWorld_frmLootBodyEx_OnUpdate(self,delta)</OnUpdate>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_NPC_DROP_ITEM_VIEWDROPITEM")
+				self:RegisterScriptEventNotify("CEV_NPC_DROP_ITEM_LOOTBODYONE")
+				self:RegisterScriptEventNotify("CEV_NPC_DROP_ITEM_LOOTALL")
+				
+				self:Set("NpcOid", 0)</OnLoad>
+        <OnEvent>if event == "CEV_NPC_DROP_ITEM_VIEWDROPITEM" then
+					
+					layWorld_frmLootBodyEx_OnEvent_ViewDropItem(self, arg[1])
+				elseif event == "CEV_NPC_DROP_ITEM_LOOTBODYONE" then
+					layWorld_frmLootBodyEx_OnEvent_LootBodyOne(self, arg[1], arg[2])
+				elseif event == "CEV_NPC_DROP_ITEM_LOOTALL" then
+					if arg[1] == 1 then
+						UI_LootBody_IsLootAll = true
+					else
+						UI_LootBody_IsLootAll = false
+					end
+				end</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

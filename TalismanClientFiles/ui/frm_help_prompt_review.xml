@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_help_prompt_review.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="470,117,294,460" Name="frmEventReview" Show="false">
+      <Label Inherit="bg1" Location="7,18,280,430" Name="lbBackground" Show="fals"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <TitleBarButton Location="0,0,294,30" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,0,292,50" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,126,66" Name="lbTitleName" Show="true" Text="$L:1584$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="23,57,248,140" Name="4078" Show="true"/>
+      <ListBox AlignCol="LEFT" AutoScrollV="true" BackgroundColor="#8f000000" Inherit="" Location="29,63,236,128" Name="ltEvent" Show="true">
+		<ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="" TextColor="#ffe0e020" Width="30"/>
+		<ColumnButton AlignCol="TOP" AlignLine="LEFT" Text="$L:1539$" TextColor="#ffe0e020" Width="1000"/>
+		<Scripts>
+		  <OnLDown>layWorld_ltEvent_OnLDown(self)</OnLDown>
+		</Scripts>
+	  </ListBox>
+      <Label Inherit="bg3" Location="23,222,248,180" Name="1293" Show="true"/>
+      <EditBox AlignCol="LEFT" AutoScrollV="false" BackgroundColor="#8f000000" EnableInput="false" Inherit="" Location="29,229,236,166" MultiLine="true" Name="ebxEventDescription" Show="true" WordWrap="true" AutoScrollV="true" />
+      <Button Inherit="PushButton" Location="41,412,80,20" Name="btUpPage" Show="true" Text="$L:1585$">
+	    <Scripts>
+		  <OnLClick>layWorld_btUpPage_OnLClick(self)</OnLClick>
+		</Scripts>
+	  </Button>
+      <Button Inherit="PushButton" Location="176,412,80,20" Name="btDownPage" Show="true" Text="$L:1586$">
+	    <Scripts>
+		  <OnLClick>layWorld_btDownPage_OnLClick(self)</OnLClick>
+		</Scripts>
+	  </Button>
+      <Label AlignCol="LEFT" AlignLine="TOP" Inherit="" Location="23,204,70,18" Name="760" Show="true" Text="$L:1587$"/>
+	  <Scripts>
+	    <OnLoad>layWorld_frmEventReview_OnLoad(self)</OnLoad>
+		<OnEvent>layWorld_frmEventReview_OnEvent(self, event, arg)</OnEvent>
+	  </Scripts>
+    </Form>
+  </Layer>
+</Ui>

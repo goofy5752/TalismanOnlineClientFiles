@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmAddExtendBag">
+    <Templates>
+      <Label Inherit="" Location="0,0,220,32" Name="TemplateAddItemBagLabel" Show="true">
+		<Button Inherit="PushButton" Location="0,0,32,32" Name="btAdd" Show="true" Text="1">
+		  <Scripts>
+		    <OnLClick>frmAddExtendBag_TemplateAddItemBagLabel_btAdd_OnLClick(self)</OnLClick>
+		  </Scripts>
+		</Button>
+		<Widget Inherit="bg3" Location="35,0,185,32" Name="lbBackground" Show="true"/>
+		<Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="35,0,185,32" Name="lbBagDesc" Show="true"/>
+		<Scripts>
+		  <OnLoad>frmAddExtendBag_TemplateAddItemBagLabel_OnLoad(self)</OnLoad>
+		</Scripts>
+	  </Label>
+    </Templates>
+  </Theme>
+  <Script file="frm_add_extend_bag.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="299,273,300,320" Name="frmAddExtendBag" Show="false" Size="300,320">
+      <Label Inherit="bg1" Location="24,16,260,130" Name="lbback" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="18,2,272,47" Name="lbTatleBcak" Show="true"/>
+	  
+      <Label Inherit="TemplateAddItemBagLabel" Location="50,55,220,32" Name="lbAddItemBag1" Show="true">
+	    <Param key="ID" value="1" type="number" />
+	  </Label>
+      <Label Inherit="TemplateAddItemBagLabel" Location="50,93,220,32" Name="lbAddItemBag2" Show="true">
+	    <Param key="ID" value="2" type="number" />
+	  </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="94,0,120,70" Name="lbLootTitle" Show="true" Text="$L:1353$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Anchors>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="frmItem"/>
+        <Anchor point="BOTTOM" relativeTo="frmItem"/>
+      </Anchors>
+      <TitleBarButton Location="14,6,280,28"/>
+      <CloseButton Location="260,29,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+	  <Scripts>
+	    <OnLoad>layWorld_frmAddExtendBag_OnLoad(self)</OnLoad>
+	    <OnEvent>layWorld_frmAddExtendBag_OnEvent(self, event, arg)</OnEvent>
+		<OnShow>layWorld_frmAddExtendBag_OnShow(self)</OnShow>
+		<OnHide>layWorld_frmAddExtendBag_OnHide(self)</OnHide>
+	  </Scripts>
+    </Form>
+  </Layer>
+</Ui>

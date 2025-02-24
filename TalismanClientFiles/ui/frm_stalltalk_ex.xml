@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form BackgroundColor="" Inherit="" Location="299,273,294,230" Name="frmStallTalkEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,210" Name="582" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,294,50" Name="683" Show="fals"/>
+      <Label Inherit="bg3" Location="32,53,230,140" Name="18767" Show="true"/>
+      <Button Inherit="PushButton" Location="37,198,50,20" Name="btBusinessClear" Show="true" Text="$L:964$">
+        <Scripts>
+          <OnLClick>layWorld_frmStallTalkEx_btBusinessClear_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="207,198,50,20" Name="btBusinessClose" Show="true" Text="$L:965$">
+        <Scripts>
+          <OnLClick>layWorld_frmStallTalkEx_btBusinessClose_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" Inherit="" Location="62,1,130,18" Name="lbRewardTitel" Show="false" Text="$L:969$"/>
+      <EditBox AutoScrollV="true" BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="37,58,220,130" MultiLine="true" Name="edbBusinessHistory" Show="true" WordWrap="true">
+	    <Scripts>
+		  <OnHyperLink>layWorld_frmStallTalkEx_edbBusinessHistory(self, hypertype, hyperlink)</OnHyperLink>
+		</Scripts>
+	  </EditBox>
+      <Button Inherit="PushButton" Location="122,198,50,20" Name="btStallTalk" Show="true" Text="$L:968$">
+        <Scripts>
+          <OnLClick>layWorld_frmStallTalkEx_btStallTalk_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,294,20"/>
+      <CloseButton Location="264,28,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,68" Name="8439" Show="true" Text="$L:969$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+  </Layer>
+</Ui>

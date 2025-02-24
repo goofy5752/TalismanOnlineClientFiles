@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="104,192,300,370" Name="frmItemlook" Show="falsee">
+      <Label Inherit="bg1" Location="11,20,266,324" Name="858" Show="true" Size=""/>
+      <Label Inherit="bg3" Location="73,57,140,230" Name="18176" Show="true"/>
+      <Label Inherit="" Location="5,256,246,66" Name="12609" Show="false" Size="">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="5,321,246,7" Name="1746" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,327,256,23" Name="12662" Show="false" Size="">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="4,1,280,50" Name="14021" Show="true"/>
+      <Label Inherit="" Location="25,64,40,40" Name="16884" Show="fals">
+        <BackgroundImage File="tz_011" Source="133,28,40,40"/>
+      </Label>
+      <Button Inherit="" Location="29,67,32,32" Name="btnPart1" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="25,114,40,40" Name="17094" Show="true">
+        <BackgroundImage File="tz_011" Source="44,70,40,40"/>
+      </Label>
+      <Button Inherit="" Location="29,117,32,32" Name="btnPart2" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="25,162,40,40" Name="17235" Show="true">
+        <BackgroundImage File="tz_011" Source="0,70,40,40"/>
+      </Label>
+      <Button Inherit="" Location="29,165,32,32" Name="btnPart3" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="25,212,40,40" Name="17303" Show="true">
+        <BackgroundImage File="tz_011" Source="88,70,40,40"/>
+      </Label>
+      <Button Inherit="" Location="29,216,32,32" Name="btnPart4" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="25,262,40,40" Name="17450" Show="true">
+        <BackgroundImage File="tz_011" Source="44,115,40,39"/>
+      </Label>
+      <Button Inherit="" Location="29,266,32,32" Name="btnPart5" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="72,292,40,40" Name="17520" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,40,39"/>
+      </Label>
+      <Button Inherit="" Location="76,296,32,32" Name="btnPart6" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="122,292,40,40" Name="17591" Show="true">
+        <BackgroundImage File="tz_011" Source="133,115,40,39"/>
+      </Label>
+      <Button Inherit="" Location="126,296,32,32" Name="btnPart7" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="171,292,40,40" Name="17747" Show="true">
+        <BackgroundImage File="tz_011" Source="88,115,40,39"/>
+      </Label>
+      <Button Inherit="" Location="175,295,32,32" Name="btnPart8" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="219,64,40,40" Name="18311" Show="true">
+        <BackgroundImage File="tz_011" Source="178,70,40,40"/>
+      </Label>
+      <Button Inherit="" Location="223,67,32,32" Name="btnPart9" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="219,113,40,40" Name="18385" Show="true">
+        <BackgroundImage File="tz_011" Source="224,29,40,40"/>
+      </Label>
+      <Button Inherit="" Location="223,117,32,32" Name="btnPart10" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="219,164,40,40" Name="18460" Show="true">
+        <BackgroundImage File="tz_011" Source="224,70,40,40"/>
+      </Label>
+      <Button Inherit="" Location="223,167,32,32" Name="btnPart11" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="219,212,40,40" Name="18536" Show="true">
+        <BackgroundImage File="tz_011" Source="133,70,40,40"/>
+      </Label>
+      <Button Inherit="" Location="223,216,32,32" Name="btnPart12" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <Label Inherit="" Location="219,262,40,40" Name="18707" Show="true">
+        <BackgroundImage File="tz_011" Source="178,29,40,39"/>
+      </Label>
+      <Button Inherit="" Location="223,266,32,32" Name="btnPart13" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+      </Button>
+      <TitleBarButton Location="11,6,290,28" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="253,30,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <ModelView Inherit="" Location="78,62,130,220" MouseEvent="false" MouseMove="false" Name="model" Show="true"/>
+      <Button Inherit="" Location="123,259,20,20" Name="turnLeft" Show="true">
+        <NormalImage File="tz_011" Source="68,255,33,33"/>
+        <PushedImage File="tz_011" Source="102,255,33,33"/>
+      </Button>
+      <Button Inherit="" Location="146,259,20,20" Name="turnRight" Show="true">
+        <NormalImage File="tz_011" Source="0,255,33,33"/>
+        <PushedImage File="tz_011" Source="34,255,33,33"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="84,0,120,68" Name="584" Show="true" Text="$L:846$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+  </Layer>
+</Ui>

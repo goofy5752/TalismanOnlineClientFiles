@@ -1,0 +1,9 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<boundless blrate="0x2" bltile="0x80" blwidth="40.000" centerx="0x7" centery="0x9" cnt="0x6" h="0x13" name="sfb08.snw" set="sfb08" version="0x506" w="0x13">
+   <block file="sfb08_005106" id="0x2" x="0xC" y="0x3"/>
+   <block file="sfb08_003105" id="0x6" x="0xA" y="0x4"/>
+   <block file="sfb08_004105" id="0x5" x="0xB" y="0x4"/>
+   <block file="sfb08_005105" id="0x3" x="0xC" y="0x4"/>
+   <block file="sfb08_006105" id="0x4" x="0xD" y="0x4"/>
+   <block file="sfb08_001101" id="0x1" x="0x8" y="0x8"/>
+</boundless>

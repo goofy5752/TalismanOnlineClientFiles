@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Warehouse_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="390,206,300,370" Name="frmWarehouseEx" Show="false">
+      <Label Inherit="bg1" Location="11,20,280,340" Name="543" Show="true"/>
+      <Label Inherit="" Location="-2,254,256,75" Name="573" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,7,256,314" Name="858" Show="false" Size="">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="2,1,300,50" Name="23831" Show="true"/>
+      <TitleBarButton Location="11,5,280,28" Text="" TextFont="$L:1$" TextSize="$L:18$"/>
+      <CloseButton Location="266,30,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+	   <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="198,58,70,20" Name="btSort" Show="false" Text="$L:1589$">
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_btSort_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="109,289,44,20" Name="goldnum" Show="false" Text="$L:469$">
+        <BackgroundImage File="tz_010" Source="443,217,61,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="181,289,29,20" Name="silvernum" Show="false" Text="$L:470$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="240,289,24,20" Name="coppernum" Show="false" Text="$L:471$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="36,56,167,24" Name="lbWarehouse" Show="false" Text="">
+        <BackgroundImage File="tz_010" Source="181,352,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="27,289,50,20" Name="lbTotal" Show="false" Text="$L:472$">
+        <BackgroundImage File="tz_010" Source="443,267,61,20"/>
+      </Label>
+      <CheckButton Inherit="" Location="44,247,32,32" Name="BtBag1" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="80,247,32,32" Name="BtBag2" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="115,247,32,32" Name="BtBag3" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="151,247,32,32" Name="BtBag4" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="187,247,32,32" Name="BtBag5" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="225,247,32,32" Name="BtBag6" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Button Inherit="PushButton" Location="44,322,70,20" Name="btnSaveMoney" Show="false" Text="$L:473$">
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_btnSaveMoney_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="185,322,70,20" Name="btnLoadMoney" Show="false" Text="$L:474$">
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_btnLoadMoney_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="bg3" Location="38,85,220,149" Name="21233" Show="true"/>
+      <Label Inherit="" Location="41,89,213,141" Name="lbItems" Show="true">
+        <BackgroundImage File="tz_011" Source="298,2,213,141"/>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,2,31,31" Name="btItem1" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,2,31,31" Name="btItem2" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,2,31,31" Name="btItem3" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,2,31,31" Name="btItem4" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,2,31,31" Name="btItem5" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,2,31,31" Name="btItem6" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,37,31,31" Name="btItem7" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,37,31,31" Name="btItem8" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,37,31,31" Name="btItem9" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,37,31,31" Name="btItem10" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,37,31,31" Name="btItem11" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,37,31,31" Name="btItem12" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,72,31,31" Name="btItem13" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,72,31,31" Name="btItem14" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,72,31,31" Name="btItem15" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,72,31,31" Name="btItem16" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,72,31,31" Name="btItem17" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,72,31,31" Name="btItem18" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,107,31,31" Name="btItem19" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,107,31,31" Name="btItem20" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,107,31,31" Name="btItem21" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,107,31,31" Name="btItem22" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,107,31,31" Name="btItem23" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem24" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+		<Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem25" Show="false">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+		<Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem26" Show="false">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+		<Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem27" Show="false">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+		<Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem28" Show="false">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+		<Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem29" Show="false">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+		<Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem30" Show="false">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+      </Label>
+      <Label Inherit="" Location="78,285,31,26" Name="714" Show="false">
+        <BackgroundImage File="tz_010" Source="409,486,31,26"/>
+      </Label>
+      <Label Inherit="" Location="151,286,31,26" Name="857" Show="false">
+        <BackgroundImage File="tz_010" Source="441,486,31,26"/>
+      </Label>
+      <Label Inherit="" Location="210,286,31,26" Name="1018" Show="false">
+        <BackgroundImage File="tz_010" Source="473,485,31,26"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="92,0,120,68" Name="18779" Show="true" Text="$L:468$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_BANK_RECV_DATA")
+				self:RegisterScriptEventNotify("CEV_BANK_RECV_MONEY_UPDATE")
+				self:RegisterScriptEventNotify("CEV_BANK_RECVITEM_UPDATE_DEFAULT")
+				self:RegisterScriptEventNotify("EVENT_SelfEnterWorld")</OnLoad>
+        <OnEvent>if event == "CEV_BANK_RECV_DATA" then
+					layWorld_frmWarehouseEx_Bank_Recv_Date(self, arg)
+				 elseif event == "CEV_BANK_RECV_MONEY_UPDATE" then
+					layWorld_frmWarehouseEx_RefreshBankMoney()
+				elseif event == "CEV_BANK_RECVITEM_UPDATE_DEFAULT" then
+					layWorld_frmWarehouseEx_Refresh()
+				elseif event == "EVENT_SelfEnterWorld" then
+					layWorld_frmWarehouseEx_Restructuring()
+			end</OnEvent>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnHide>layWorld_frmWarehouseEx_OnHide()</OnHide>
+		<OnUpdate>layWorld_frmWarehouseEx_OnUpdate(self)</OnUpdate>
+      </Scripts>
+      <CheckButton Inherit="" Location="39,288,32,32" Name="BtBag7" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="76,288,32,32" Name="BtBag8" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="113,288,32,32" Name="BtBag9" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="150,288,32,32" Name="BtBag10" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="187,288,32,32" Name="BtBag11" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="225,288,32,32" Name="BtBag12" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLClick>layWorld_frmWarehouseEx_BtBag_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+    </Form>
+  </Layer>
+</Ui>

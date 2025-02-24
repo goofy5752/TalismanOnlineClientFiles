@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_task_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Location="216,173,294,512" Name="frmTaskEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,492" Name="2395" Show="true"/>
+      <Label Inherit="" Location="12,24,77,80" Name="10209" Show="true">
+        <BackgroundImage File="tz_010" Source="404,51,77,80"/>
+      </Label>
+      <Label Inherit="" Location="93,59,170,24" Name="19408" Show="true">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Label Inherit="bg3" Location="19,111,256,355" Name="10397" Show="true"/>
+      <Button Inherit="" Location="14,27,64,64" Name="btTaskImg" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="2524" Show="fals"/>
+      <TitleBarButton Location="0,0,294,30" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="265,28,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="27,118,240,340" MultiLine="true" Name="edtTest" Show="true" WordWrap="true">
+		  <Label Inherit="" Location="186,376,48,48" Name="lbchoose" Show="false">
+			<BackgroundImage File="tz_010" Source="186,376,48,48"/>
+		  </Label>
+        <Hint/>
+        <Scripts>
+          <OnMouseMove>layWorld_frmTaskEx_edtTest_OnMouseMove(self,mouse_x,mouse_y);</OnMouseMove>
+          <OnLClick>layWorld_frmTaskEx_edtTest_OnLClick(self,mouse_x,mouse_y);</OnLClick>
+		  <OnScrollV>layWorld_frmTaskEx_edtTest_OnScrollV(self)</OnScrollV>
+        </Scripts>
+      </EditBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="108,61,140,20" Name="lbNpcName" Show="true" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Button Inherit="PushButton" Location="57,475,70,20" Name="btAction" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmTaskEx_btAction_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="167,475,70,20" Name="btClose" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmTaskEx_btClose_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="112,475,70,20" Name="btClose1" Show="true" Size="70,20">
+        <Scripts>
+          <OnLClick>layWorld_frmTaskEx_btClose_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="92,0,110,70" Name="566" Show="true" Text="$L:363$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>layWorld_frmTaskEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmTaskEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>uiRegisterEscWidget(self);</OnShow>
+        <OnUpdate>layWorld_frmTaskEx_OnUpdate(self, delta);</OnUpdate>
+		<OnHide>layWorld_frmTaskEx_OnHide(self)</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

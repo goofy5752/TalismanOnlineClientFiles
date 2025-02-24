@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Ui>
+	<Layer Name="layWorld" Show="true">
+		<Form Inherit="" Location="299,273,294,250" Name="frmBussinessHistoryEx" Show="false">
+			<Label Inherit="bg1" Location="7,40,284,210" Name="582" Show="true"/>
+			<Label Inherit="bg3" Location="18,73,262,138" Name="1304" Show="true"/>
+			<Button Inherit="PushButton" Location="35,216,50,20" Name="btBusinessClear" Show="true" Text="$L:964$">
+				<Scripts>
+					<OnLClick>layWorld_frmBussinessHistoryEx_btBusinessClear_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="213,216,50,20" Name="btBusinessClose" Show="true" Text="$L:965$">
+				<Scripts>
+					<OnLClick>layWorld_frmBussinessHistoryEx_btBusinessClose_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Label AlignCol="CENTER" Inherit="" Location="62,1,130,18" Name="lbRewardTitel" Show="false" Text="$L:963$"/>
+			<EditBox AutoScrollV="true" BackgroundColor="" EnableInput="false" Inherit="" Location="25,79,248,125" MultiLine="true" Name="edbBusinessHistory" Show="true" WordWrap="true"/>
+			<Button Inherit="PushButton" Location="123,216,50,20" Name="btTotalStat" Show="true" Text="$L:967$">
+				<Scripts>
+					<OnLClick>layWorld_frmBussinessHistoryEx_btTotalStat_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Label Inherit="TemplateNormalTitle" Location="1,23,296,50" Name="1548" Show="true">
+				<Label Name="lbTitelText" Show="false"/>
+			</Label>
+			<TitleBarButton Location="3,27,294,36"/>
+			<CloseButton Location="263,52,13,13" Show="true">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+		</Form>
+	</Layer>
+</Ui>

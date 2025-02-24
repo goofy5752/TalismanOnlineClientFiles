@@ -1,0 +1,1677 @@
+程序导标记，不用翻译,,
+STRID,LAN,Remark
+help_jingjichangguize,"Confrontation:
+
+Each Confrontation Competition takes one hour.  Level of mobs is determined by system according to party's level. Players must join this competition in the form of Room.
+
+Room Arrangement: You must create a room or join a room to participate PVP competition，and there are two opposite parties in the PVP : Red Party and Blue Party.  Players can click 'Join' button to join a party.  Each party can have max 5 players respectively.  To start the PVP competition, each participant must click the 'Ready' button first.  PVP competition is only available when all 10 participants are ready.
+
+The maximum fighting time in this map is one hour.  During the valid time, the one that succeed to defeat the Tree of Life of the enemy will be the winner.  If neither Tree of Life is defeated, the one with the higher points will be the winner. If the two parties' points are equal, system will decide the winner party randomly. Each player can participate twice per day.
+
+
+Defense:
+
+Info: Monsters come in waves to attack NPC Master Ku.  You must defeat the monsters to protect Master Ku from being killed.  The more waves you succeed to resist, the more rewards you will get. (Can gain PVE score)
+
+During the competition, experience and energy are also rewarded by killing mobs. When the competition ends, more experience and energy will be rewarded. If you can resist 10 rounds, you will get Soul Experience as rewards after the Defense Competition ends.  
+
+Defense: Protect Master Ku from being attacked by monsters.  The more successful rounds, the more experience and energy to be rewarded. Each player can participate for 3 times at most per day.
+",
+npctalk5435,[no_use],
+npctalk5436,[no_use],
+npctalk5439,I gain my freedom finally.,
+npctalk5440,The people of South Border Land still remember me?  I am so happy!,
+npctalk5441,I have nothing to do with South Border Land...,
+npctalk5455,Welcome to visit me when you've collected enough gem chips.,
+npctalk5455_2,Please visit me when you've reached level 40.,
+npctalk5459,Welcome to Taliman Online!,
+npctalk5466,Welcome to use Gem Inlay system!  It's another way to strengthen your equipment except from combination.  Have a try?,
+npctalk5467,Nice to meet you here.  We must try our best to defeat the evil!,
+npctalk5468,"Wait please!  When you've reached level 29, please visit me when you earn every 3 levels, I will give you surprise!",
+npctalk5469,What can I do for you?,
+npctalk5470,"I was asked to guard here, who are you?",
+npctalk5471,"I was asked to guard here, who are you?",
+npctalk5472,"I was asked to guard here, who are you?",
+npctalk5478,"We live on hunting.  But the wild animals are infected by the evil these days, we are in difficulty now.",
+npctalk5479,"We always hunt in that place, so we are familiar with there.",
+npctalk5480,"We live on hunting.  But the wild animals are infected by the evil these days, we are in difficulty now.",
+npctalk5481,What can I do for you?,
+npctalk5482,What can I do for you?,
+npctalk5483,I can help you to enhance your tiger and kylin.,
+npctalk5636,Be careful!  Demons may appear at any time!  Have you heard something?,
+npctalk5637,Many villagers are injured now.,
+npctalk5649,"The rocks in Thunder Ridge are well-known.  If you need some, I can help to send.",
+npctalk5669,I miss my family and friends.,
+npctalk5677_1,Murk Woods,
+npctalk5677_2,Enter Murk Woods,
+npctalk5677_3,"You'd better not hunt for the secrets about our Yae, or you will regret one day.",
+npctalk5677_4,Murk Woods,
+npctalk5677_5,Leave Murk Woods,
+npctalk5677_6,"Though it's the holy place of Yae, I don't like here.  Please help me leave here.",
+npctalk5694_1,Dark Stone,
+npctalk5694_2,Enter Dark Stone,
+npctalk5694_3,Welcome ,
+npctalk5694_4,Dark Stone,
+npctalk5694_5,Leave Dark Stone,
+npctalk5694_6,You wanna leave such a good place?,
+npctalk5696,Where do you come from?,
+npctalk5697,So boring here.  I should follow my leader.,
+npctalk5698,My brother died in battle several days ago...  So sad!,
+npctalk5699,So many demons!  I miss my family.,
+npctalk5700,I wanna go home...  ,
+npctalk5701,Please keep alert!,
+Dungeon_3c_14,Results,
+Dungeon_3c_3,Winner has come out after fierce battle.  Now the competition finished.,
+Dungeon_3c_Exp,Experience: ,
+Dungeon_3c_Money,Money: ,
+Dungeon_3c_Nimbus,Energy: ,
+Dungeon_3c_Score,Score: ,
+Dungeon_3c_Team,Participating Group: ,
+Dungeon_3c_Winner,Congratulations to the WINNER: ,
+Dungeon_Protect_Fail_21,"Ascetic Master Ku's body was hurt badly, which almost made evil's plot successful.  But fortunately, master's soul came back in the last minute.  Although he beat enemy successfully, he was severely injured and needs to convalesce.  Try your best next time.",
+Dungeon_Protect_Fail_3,It's to be regretted that you failed to pass the test.,
+Dungeon_Protect_Success_14,Score: ,
+Dungeon_Protect_Success_20,You protected Ascetic Master Ku's body and drove off the attack of evils successfully.  The evil's plot has come to an end.  The master's soul has been placed aback.  The demons left must will be eliminated.,
+Dungeon_Protect_Success_3,Congratulations!  You passed the test!,
+Dungeon_Protect_Success_8,Round: ,
+Dungeon_Protect_Success_Exp,Experience: ,
+Dungeon_Protect_Success_God,Soul Experience: ,
+Dungeon_Protect_Success_Money,Money: ,
+Dungeon_Protect_Success_Nimbus,Energy: ,
+help_fbxt_duanzaocailiao,"The Materials for Combination:
+
+The materials for combine the Talisman or Mount are different from those for combine the Defense Gear. The materials for combine the Talisman is 'Emerald', while the materials for combine the Defense Gear is 'Ruby'.
+
+The same kind of equipment may also use different materials because of different Plus Rank.
+
+For Talisman and Mount:
+to Plus Rank 1-3      Small Emerald
+to Plus Rank 4-6      Medium Emerald
+to Plus Rank 7-10    Large Emerald
+
+For Defense Gear:     
+to Plus Rank 1-3      Small Ruby
+to Plus Rank 4-6      Medium Ruby
+to Plus Rank 7-10    Large Ruby
+",
+help_fbxt_fabaodengji,"What are the levels of Talisman:
+
+There are three levels of Talisman: initial, current, and maximum.  The initial level refers to the level when the Talisman was set up in the game.  The current level means the effective level at the moment.  It can be improved through enhancing with energy, but it cannot surpass the maximum level.  The maximum level means the highest level that a Talisman can be.  The power of the skills on a Talisman usually relates to the current level of the Talisman. ",
+help_fbxt_fabaoduanzao,"Combine the Equipments:
+
+Combination can improve item's power, and the appearance of the item will become more shinning. To combine items, you need get Ruby (for Defense Gear) or Emerald (for Talisman and Mount) first, then go to the Blacksmith to finish the combination.  Once the combination is success, your item Plus Rank get raised.
+
+The Effect of the Combination:
+
+The attack power improves after the Talisman has been combined successfully.  The physical defense and the magic defense improved after the defense gear has been combined successfully.  The mount moves faster and has more cool shape.  And some extra attributes, like increase critical strike rate, increase HP, etc., will add to Talisman and Defense Gear of high Plus Rank.",
+help_fbxt_fabaogainian,"What's the Talisman:
+
+The Talisman is a kind of special tool which can strengthen characters' power greatly.  There are all kinds of skill on the Talisman.  The level of the Talisman can be  enhanced with energy, thus to get skills that are more powerful.  The Talisman are classified as Weapon Talisman and Assistant Talisman.  One character can be equipped with one Weapon Talisman and two Assistant Talisman in the same time. ",
+help_fbxt_fabaojianding,"Identify the Talisman:
+
+In the game, one can get some equipment with hidden attribute by finish quest or beat monsters.  If you want to activate the hidden attribute, you have to go to the blacksmith's to have the equipment identified. 
+
+The materials for identify:
+
+To identify the equipments, it needs materials.  You can buy 'Identify Gem' in the shopping mall to identify.  Besides, with the different degrees of  equipments, different kinds of 'Identify Gem' are needed.  The Green Equipments need 'Green Identify Gem', Blue Equipments need 'Blue Identify Gem' and Golden Equipments need 'Golden Identify Gem'. ",
+help_fbxt_fabaojineng,"How to use the skills of Talisman:
+
+Open the skill interface, on the interface, there lists the Talismans you equipped at that moment.  Select Weapon Talisman or Assistant Talisman, related skills show below.  You can drag the skill icon into the hotkey or shortcut tray.  Use the skill by pressing the hotkey or clicking the shortcut.",
+help_fbxt_fabaoronghe,"Merge the Talisman:
+
+With the improvement of character's level, some present Talismans will be not suitable for players to use any longer.  In that case, you can choose to merge the Talisman.
+
+The Rules to Merge the Talisman:
+
+The Talismans that are going to be merged should be the same type.  The Talisman from mergence obtains the level of the first Talisman and obtains the quality and attribute of the second Talisman.  By merging the Talisman, the players can save much time to re-enhancing the Talisman. ",
+help_fbxt_fabaoxiulian,"Enhancing Talisman:
+
+Only energy can be used to enhance Talisman. Energy can be accumulated through killing monsters and finishing quests. Besides, Talisman's level must be in line with its character's level. New skills and more attributes can be available through enhance. 
+
+In enhance interface, the number in the column of 'Energy' is the Energy that the player accumulated from killing monsters and finishing quests, while the column of 'Talisman' shows the number of Energy that is needed to enhance the Talisman to the next level.
+
+First of all, please open the interface of Skill by press 'S', and find Talisman operation icon 'Enhance'.  Click the icon to open the enhancing interface.  To enhance, you need to put your Talisman into the blank in the middle of the 'Enhance' interface.",
+help_fbxt_fabaozhuangbei,"How to equip a Talisman:
+
+To equip Talisman is as same as other normal equipments.  But the Talisman have their specific place to equip.  They can only be equipped in the corresponding Talisman column.  A character cannot equip a Talisman that his/her level has not reached the required equipping level of the Talisman.  The Talisman cannot be equipped or unequipped in battle. ",
+help_fuben_1,"Cloud Mountain Snake Cave
+(above level 15)
+
+When Ghost Wind Tao's preexistence was the officer in an evil junta, he learned from ancient books that Millenary Snake Demon's spirit was sealed in the snake cave on Cloud Mountain.  In order to increase his own power to resist immortals, he broke the seal, went secretly into snake cave to defraud snake demo's trust.  He committed primes by relying on snake demo's power and was looking for a human's body for snake demo to get preparation for snake demon's birth on the world.  Due to Ghost Wind Tao's evildoing, army of snake demons has occupied the Serene Village.
+
+Snake Cave Monsters:
+
+Elite Jungle Boa   
+  level 15  Snake Cave
+Poison  Mushroom
+  level 15  Snake Cave
+Elite Jungle King Boa  
+  level 16  Snake Cave
+Dicephalous Snake (boss) 
+  level 16  Snake Cave 
+Elite Servant of Snake Head   
+  level 16  Snake Cave
+Elite Snake Captor   
+  level 16  Snake Cave
+Elite Ghost Fire   
+  level 17  Altar
+Avatar of Snake Demon (boss)    
+  level 17  Altar
+Elite Vampire Ghost  
+  level 18  Altar
+Elite Cacodaemon   
+  level 18  Altar
+Elite Ghost Captain   
+  level 18  Altar
+Elite Golden Horn Boa
+  level 19  Altar
+Ghost Wind Tao (boss) 
+  level 19  Altar
+Elite Golden Horn Boa
+  level 19  Altar
+Elite Captain of Snake Head
+  level 20  Altar  
+Soul of Snake Demon (boss) 
+  level 20  Altar",
+help_fuben_2,"Tiger Mountain Rattan Cave
+(above level 15)
+
+Evil Tao Beard, who was chasing by immortals, ran like a drowned mouse to Tiger Mountain. He found that people in Crow Forest were very simple and believed in ghosts and gods.  So he gave some bewitchment to frighten the villagers and asked his student Evil Tao He to scout them.  They made the villagers as their slaves, and used the site of an ancient city near Crow Forest as their palace and named it as Rattan Cave. We have to perish all the evils in Rattan Cave if we want to rebuild the peace of Tiger Mountain. The Rattan Cave Entrance is in an Ancient Rattan at the north west of Crow Forest. 
+
+Rattan Cave Monsters:
+
+Elite Boa   
+  level 15  Monster Woods
+Elite Poison Fly 
+  level 15  Monster Woods
+Elite Golden Macaque 
+  level 16  Monster Woods
+Golden Macaque Head (boss)
+  level 16  Monster Woods
+Elite Wild Wolf 
+  level 16  Peach Headstream Village
+Tiger King (boss)
+  level 17  Peach Headstream Village
+Elite Wild Mule 
+  level 17  Peach Headstream Village
+Elite Aborigine Guard 
+  level 17  Peach Headstream Village
+Aborigine Officer (boss)
+  level 18  Peach Headstream Village
+Ancient City Evil Ghost
+  level 19  Ancient City
+Elite Tree Man 
+  level 20  Ancient City
+Evil Tao Beard (boss)
+  level 20  Ancient City",
+help_fuben_3,"Mercy Temple Happiness Hall
+(above level 25)
+
+The Mercy Temple used to be a very nice place to go.  Monk Zhi Tong ran it well. There were usually a lot of worshippers to go to pilgrimage.  However, the monks did some small tricks, hid some women and killed some students from justical juntas.  One day, Zhou Yuncong and other examinees went to pilgrimage.  They came to the temple to pilgrimage and found the machinery in the adytum.  They were all captured by Monk Zhi Tong. After killing more than ten examinees, Monk Zhi Tong felt tired, so he put Zhou Yuncong in the prison in rock room, and asked him to commit suicide in three days.  Zhou ran out of the temple by taking the advantage of rain, and was helped by old man Zhang and his daughters.  Then, people began to know the secret of Mercy Temple.  This time, the immortals arranged to fight with Mercy Temple.  Zhi Tong asked many coagents to hide among the monks.  So, it will be some setbacks if they immortals want to perish the evil juntas.  You can go to Happiness Hall through the secretly path at one side of the main hall of Mercy Temple.
+
+Happiness Hall Monsters:
+
+Elite Bandit 
+  level 25  Dungeon
+Elite Evil Monk
+  level 26  Dungeon
+Monk Mao Tai (boss)
+  level 26  Dungeon
+Loong Fei (boss)
+  level 26  Dungeon
+Elite Play Boy
+  level 26  Visitor Room
+Elite Blackshirt Bandit
+  level 27  Visitor Room
+Fa Yuan (boss)
+  level 27  Visitor Room
+Elite Lecher
+  level 27  Inner Hall Subway
+Elite Callet
+  level 28  Inner Hall Subway
+Callet Head Young (boss)
+  level 27  Hall Cella
+Monk Zhi Tong (boss)
+  level 28  Hall Cella
+Elite Black Leopard
+  level 28  Subway
+Elite Fatal Centipede
+  level 29  Subway
+Green Robe Master (boss)
+  level 29  Subway
+Elite Mercy Temple Monk Soldier 
+  level 29  Main Hall
+Elite Sturdy Monk Soldier
+  level 30  Main Hall
+Buddhist Monk Purple Moon (boss)
+  level 30  Main Hall",
+help_fuben_35,"Laurel Mountain Laurel Wonderland
+(above level 35)
+
+Located to the west of the Stone City and within the Laurel Mountain, Laurel Mountain Laurel Wonderland had been a Geomantic holy place for people to practice, have rest cure and cultivate character with surrounding towering mountains and fresh water sources.  But this beautiful and peaceful place was accroached by Poison Dragon General as a lair to gather different kinds of heathendom and bad juntas to fight against the justicial warriors.  Poision Dragon General secretly ate the Millenial Ganoderma made in Golden Peak Mountain, which improved his strength dramatically, but luckily there is still one Poison Dragon Vitals left which can be broken.  This Poison Dragon Vitals is covered up carefully and concealed in a unconspicuous place with Ochu Faerie guarding near, so you must beat the Ochu Faerie first before trying to break the Poison Dragon Vitals.  The Poison Dragon General will lose much strength and become weak if the Poison Dragon Vitals is broken, which means it will be a easy job to fight him.
+
+Laurel Wonderland Monsters:
+
+Glacier Silver Fox
+  level 35  Ice Mirror Pool
+Ice Mirror Prentice
+  level 36  Ice Mirror Pool
+Ice Mirror Faerie (boss)
+  level 36  Ice Mirror Pool 
+Elite Machine Monster
+  level 37  Machine Mill
+Elite Machine Giant
+  level 38  Machine Mill
+Machine Master (boss)
+  level 38  Machine Mill 
+Elite Peach Spirit
+  level 38  Poison Plant Scarp 
+Elite Meat Ganoderma
+  level 39  Poison Plant Scarp
+Ochu Faerie (boss)
+  level 39  Poison Plant Scarp 
+Dank Poison Fly
+  level 39  Poison Dragon Puddle 
+Poison Dragon Underling
+  level 40  Poison Dragon Puddle
+Poison Dragon General (boss)
+  level 40  Poison Dragon Puddle
+",
+help_fuben_4,"Whorl Mountain Fantasy Palace
+(above level 40)
+
+There are eight main evils staying in Fantasy Palace.  Four of them are going out doing evils things.  So only four left in the Fantasy Palace.  It's a good opportunity for the Justice Junta to perish the evil force in Fantasy Palace.  Fantasy Palace located in the deep of Whorl Mountain.  Take care when you go there. 
+
+Fantasy Palace Monsters:
+
+Cruel Snow Beast
+  level 42  Frost Zone
+Mace Snow Giant
+  level 43  Frost Zone
+Ice Banshee (boss)
+  level 43  Frost Zone
+Giant Spider
+  level 43  Virulent Zone
+Giant Bat
+  level 44  Virulent Zone
+Virulent Spider (boss)
+  level 44  Virulent Zone
+Demon Soldier
+  level 44  Purgatory Zone
+Fire Rock Giant
+  level 45  Purgatory Zone
+Fire Boar (boss)
+  level 45  Purgatory Zone
+Fantasy Escort
+  level 45  Inner Hall
+Fantasy Guard
+  level 45  Inner Hall
+Evil Blade (boss)
+  level 46  Inner Hall",
+help_fuben_5,"Vast Mountain Bewitcher Cave
+(above level 45)
+
+Vast Mountain is located at the east of Stone City.  Luxuriant forests covered the hillside.  There are many caves in the mountain.  Bewitcher Cave is in Ghost Din Woods, located at the south east corner of Vast Mountain.  Leftover evils from Whorl Mountain decamped into the cave.  Now the righteous people are gathering and preparing to defeat the evils in the cave.
+
+Bewitcher Cave Monsters:
+
+Wing Centipede
+  level 45  Centipede Zone
+Evil Centipede
+  level 46  Centipede Zone
+Four-hand Yaksha Countess (boss)
+  level 47  Centipede Zone
+Poleax Aborigine
+  level 46  Man-eater Tribe
+Bow Aborigine
+  level 47  Man-eater Tribe
+Viper War Giant (boss)
+  level 48  Man-eater Tribe
+Poison Rattan
+  level 47  Bloodsucker Zone
+Bloodsucker
+  level 48  Bloodsucker Zone
+Bloodsucker Queen (boss)
+  level 49  Bloodsucker Zone
+Fire Eye Skull
+  level 48  Skull Tomb
+Sway Fire Elf
+  level 48  Skull Tomb
+Blue Fire Whip Skeleton (boss)
+  level 49  Skull Tomb
+Altar Guard
+  level 49  Secret Cemetery
+Gun Witch
+  level 50  Secret Cemetery
+Cemetery Guard
+  level 50  Secret Cemetery
+Blaze Skull Marshal (boss)
+  level 50  Secret Cemetery",
+help_fuben_6,"Ichthyoid Cave Seven Stars Stage
+(above level 55)
+
+Seven Stars Stage is inside a cave which is between Dai's Field and Loo's Village. This cave looks like a big fish externally, so it enjoys the reputation of 'Ichthyoid Cave'. Although it seems quite normally like other caves around, unknown mystery and danger are approaching here step by step. Since the sharp conflict between Loo's Village and Dai's Field, a lot of powerful characters have gathered here.  Another bad news is that the people of Loo's Village have built a Star Tower for Golden Star Tao Guo to help him cope with the justicial heroes with his enhancement.  So the most urgent thing for you is to enter Ichthyoid Cave Seven Stars Stage and eliminate Golden Star Tao Guo!!
+
+Seven Stars Stage Monsters:
+
+Elite Necromancer Herald  
+  level  55  South Frontier Area
+Elite Blaze Herald        
+  level  56  South Frontier Area
+Body of Xuyu (exceptional)
+  level  54  South Frontier Area
+Body of Wei-Chiyuan (exceptional)
+  level  55  South Frontier Area
+Jet-arm Luo  (boss)
+  level  56  South Frontier Area
+Elite Spalpeen
+  level  56  Loo's Court
+Elite Club Servitor
+  level  57  Loo's Court
+Body of Cui-Tianshou (exceptional)
+  level  56  Loo's Court
+Body of Chen-Changgu (exceptional)
+  level  56  Loo's Court
+Mountain Man Kai  (boss)
+  level  57  Loo's Court
+Elite Soldier Watcher
+  level  58  Backyard
+Elite Bodyguard
+  level  59  Backyard
+Body of Loosi (exceptional)
+  level  58  Backyard
+Body of Loosan (exceptional)
+  level  59  Backyard
+Bright Crystal Killer  (boss)
+  level  58  Backyard
+Red Bat Killer  (boss)
+  level  59  Backyard
+Elite Soldier Coach
+  level  56  Star Tower
+Elite Posseman
+  level  58  Star Tower
+Soul of Xuyu (exceptional)
+  level  54  Star Tower
+Soul of Wei-Chiyuan (exceptional)
+  level  55  Star Tower
+Soul of Cui-Tianshou (exceptional)
+  level  56  Star Tower
+Soul of Chen-Changgu (exceptional)
+  level  57  Star Tower
+Soul of Loosi (exceptional)
+  level  58  Star Tower
+Soul of Loosan (exceptional)
+  level  59  Star Tower
+Golden Star Tao Guo  (boss)
+  level  60  Star Tower
+",
+help_fuben_7,"Spider Catacomb 
+(above level 60)
+                                                                                                                                                                                  
+With the hidden evil purpose of breeding the Super Battle Spider which achieves worldwide notoriety as 'King of Poison', Golden Star Tao Guo has asked Loo's Villagers to build Sever Stars Stage for him to make enchantment.  Many years ago, Guo has captured both Iron Scorpion and Flame Spider which are necessaries for fostering the Spider.  Although the born Super Battle Spider has come into shape after years of breeding, it's still in a state of dormancy because it lacks the evil's breath for its ability to expose to the outside world.  When Guo was invited by Loo's Villager to help, he took the chance to examine the Ichthyoid Cave and found that the bottom of this cave can provide the needed evil's breath, so he accepted their request immediately and took the lead of Loo's Villagers to build the Seven Stars Stage, and by means of Seven Stars Stage's geographical advantage, exploit an independent area at the bottom of Ichthyoid Cave which is called Spider Catacomb.  Guo especially asked his henchman Turbo Machine Demon to guard around this place.  Now with Golden Star Tao Guo's failure, the Spider Catacomb is getting start to split, the Super Battle Spider is feeling this and about to come out soon.  You can enter Spider Catacomb from Screw Bay Jail.
+
+Spider Catacomb Monsters:
+
+Grave Guard
+  level  60  Ancient Catacomb
+Ghost Guard
+  level  60  Ancient Catacomb
+Hollow Demon Ghost  (boss)
+  level  60  Ancient Catacomb
+Ice Scorpion
+  level  60  Miasma Area
+Hail Scorpion
+  level  60  Miasma Area
+Millenary Iron Scorpion  (boss)
+  level  60  Miasma Area
+Fire Spider
+  level  60  Magma Area
+Brass Spider
+  level  60  Magma Area
+Millenary Flame Spider  (boss)
+  level  60  Magma Area
+Turbo Machine Demon (boss)
+  level  60  Central Hall
+Super Battle Spider (boss)
+  level  62  Spider Chamber
+",
+help_jbcz_gongjimubiao,"Attack the target:
+
+Press the skill hotkey to attack selected target.  Each hotkey press cause one skill attack.  Right click on the monsters to use normal attack.  For some professions, normal attack can be continued automatically.  ",
+help_jbcz_jianpancaozuo,"Key Function:
+
+1-0    the hotkeys
+I  -  open/close the Item interface
+C  -  open/close the Attribute interface
+S  -  open/close the Skill interface
+M  -  open/close the Map
+T  -  open/close the Quest interface
+TAB  -  interchange the next target
+Enter  -  open/close the Chat Box
+Esc  -  cancel the current selection
+           or open/close the System interface",
+help_jbcz_npcjiaotan,"Talk with NPC:
+
+Right-click on the NPC, the system will select the target and begin to talk automatically.  Left-click to choose in the dialogue box.",
+help_jbcz_renwuyidong,"Move the character:
+
+Left-click on the ground, the character starts to move.  If you hold your click for 3 seconds, the character will move continuously. ",
+help_jbcz_shubiaocaozuo,"The operation of mouse:
+
+Single left-click: 
+  walk, select the target
+
+Single right-click: 
+  do default operation to the target
+  to NPC is talk
+  to monster/enemy is attack
+  no default operation to players
+
+Move when holding right-click: 
+  upward - raise the visual angle
+  downward - lower visual angle
+  left/rightward - rotate the visual angle
+
+Roll the scroll bar:
+  zoom in or out the view                ",
+help_jbcz_teshuwuti,"Special items:
+
+Move the mouse on the special item, then the mouse pointer changes into special icon.  The special item refer to the things that can interacts with the players in the scenes, for example, the door can be open, relative things with the quest, and so on. ",
+help_jbcz_xuanzemubiao,"Select the target:
+
+Left-click on the target.  If the target can be selected, then the target is the selected target at the moment.  The head portrait of the target will be shown on the main interface.  At the foot of target shows a highlight circle. ",
+help_jingjichangjifen,"Competition Points:
+
+PvP Point Evaluation: The winner party will get 30 points, and 60 points at most can be got per day. For the loser party, 15 points and max 30 points to get per day. When one Competition ends, the points will be rewarded to all participants instantly and the party will disband. Certain amount of Points can be exchanged for special suit equipment.
+",
+help_ls_caiji,"All kinds of herbs spread around the game world.  Herbs level is accord with the area level.  The higher of the area level, the higher of the herbs level.
+
+Name / Collect Herb Skill Level
+
+Red Grass / level 1
+Wild Mushroom /  level 1
+Red Rooted Salvia /  level 1
+Summer Withered Grass /  level 2
+Red Fruit /  level 2
+Lichee Grass /  level 2
+Honewort /  level 3
+Polygonum /  level 3
+Honeysuckle / level 3
+Grosvenor Momordica /  level 4
+Cowbane /  level 4
+Stone Orchid / level 4
+Fig / level 5
+Durmast / level 5
+Thyme / level 5
+",
+help_ls_caikuang,"All kinds of ores spread around the game world.  Ores level is accord with the area level.  The higher of the area level, the higher of the ores level.
+
+Name / Collect Ore Skill Level
+
+Orange Ore / level 1
+Dolomite Ore / level 1
+Leucite Ore / level 2
+Green Ore / level 2
+Spinel Ore / level 3
+Barite Ore / level 3
+Magnesium Ore / level 4
+Flame Ore / level 4
+Aluminum Ore / level 5
+Silver Ore / level 5
+
+",
+help_ls_fenjie,"Decompose:
+Decompose color rare items into color crystal.
+
+Decompose Conditions:
+Decompose skill only can be used on level matched items.
+
+For example:
+Skill Level    Item Level    Crystal Level
+  level 1           1~10                1
+  level 2          11~20               2
+  level 3          21~30               3
+  level 4          31~40               4
+  level 5          41~50               5
+
+Crystal color is as same as item quality.  For example: Decompose green item will only get green crystal.",
+help_ls_jichuguize,"Every character can learn at most 2 living skills from NPC.
+
+There are totally 10 levels for every living skills.  Living skill experience increase from each time you using the skills.  To increase the living skills faster, you need use skill on the target which level is match your skill level. 
+
+Some items produced from living skills need reach certain living skills to use.",
+help_ls_moshi,"Use the crystal from decompose and some other material can make Magicstone.  Magicstone can be socketed on your Talisman or defense gear.  White and Green item only can socket one Magicstone.  Blue, Purple and Golden item can socket 2 Magicstones.  Magicstone will be invalid after 7~30 days.
+
+Magicstones:
+
+Strength Magicstone        
+increase Strength X points
+
+Dexterity Magicstone       
+increase Dexterity X points
+
+Intelligence Magicstone    
+increase Intelligence X points
+
+Vitality Matistone            
+increase Vitality X points
+",
+help_ls_zhifu,"Make Charm: Use the ore collected to make charm.  Charm can be used in battle.
+
+Charms:
+
+Healing Charm    
+recover XX points HP in X seconds, cooling time 2 minutes
+
+Mana Charm       
+recover XX points Mana in X seconds, cooling time 2 minutes",
+help_ls_zhiyao,"Make Potion: Use the herbs collected to make potion.  Some potions only can be used in non-battle status. 
+
+Potions:
+
+Healing Potion           
+recover XX points HP in X seconds (Non-battle status)
+
+Mana Potion              
+recover XX points Mana in X seconds (Non-battle status)
+
+Rapid Healing Potion  
+instant recover XX points HP, cooling time 3minutes
+
+Rapid Mana Potion     
+instant recover XX points Mana, cooling time 3 minutes
+",
+help_ltxt_ltbiaoqing,"The symbol language:
+
+Bored with dull characters, you can also choose the interesting expression symbols that we have prepared for you beforehand to express your humor.
+
+How to use expression symbols?
+
+It's very easy.  As long as you click at the smiley symbol on the right of input box, the expression menu will pop up automatically. Or you can type '#' in the dialogue box directly and then type in the corresponding number of the expression symbol.",
+help_ltxt_ltdiy,"DIY chatting characters
+
+Do you want your messages to be shown in brilliant style?  Do you want your messages flash to catch others' eyes? Then you should remember the following abbreviation directions.
+
+#numbers    can type in symbols.
+#r     can type in a new line
+##    can type in the mark of #
+#b    can type in #b flashing words
+#u    can type in #u underlined words
+#R    can type in #R red words
+#G    can type in #G green words
+#B    can type in #B blue words
+#Y    can type in #Y yellow words
+#W   can type in #W White words
+#K    can type in #K black words
+#c     followed by RGB numbers of hex,
+          to set appointed color
+#n     can return to the default color and state",
+help_ltxt_ltml,"Followings are some chat instruction for you to operate easily:
+
+/s  -  chat in current channel
+/playername  -  chat in whisper channel
+/t  -  chat in team channel
+/p  -  chat in profession channel 
+/g  -  chat in guild channel
+/w  -  chat in world channel
+/y  -  chat in shout channel
+/d  -  chat in trade channel
+
+If you can't remember the abbreviation instruction when you are playing the game, you can type in /? chat in the input box, the system will list all the chat instruction automatically.",
+help_ltxt_ltpd,"There are eight specific channels in the chatting system:
+
+Say / Current: 
+The information on the current channel can be seen by all the players near the current view.
+
+Shout: 
+The information on this channel can be seen by all the players in this area.
+
+Team:
+An independent channel used to communicate with other members in the same team with you.  If players belong to no team, then appears the system message:'Currently no team'.
+
+Whisper:
+Chat between two players.  This channel usually used for the communication between two players. The message can only be sent to the exact player.  If the target player is not online, then appears the system message:'*** offline'. 
+
+Profession: 
+Used for the communication with the same profession.   The messages in this channel can be received by all the players in the same profession.
+
+Guild:
+Used for the communication in the guild that was founded by the players themselves, the messages in this channel can be received by all the members of the guild.  If players belong to no guild, then appears the system message:' You do not belong to any guilds'.
+
+Trade:
+The deal channel used to deliver player's demand information in the game.
+
+World: 
+The information delivered by the world channel can be seen by all players in the entire game world.  However, the use of world channel is restricted by the level of the player.  Only those whose level is higher than 10 can use it.",
+help_monster_11to20,"Once you've reached Level 11, you may go to Cloud Mountain from Sky Village or to Tiger Mountain from Sand Village.  There are no conflicts among the quests.  You can do all of them.  Once you've reached Level 15, you may accept scenario quests from both places.  You can team up with your friends and start your fantastic adventure. 
+
+Cloud Mountain Monsters:
+
+Aberrance Bamboo Snake
+  level 11  Bamboo Forest
+Snake King Guard
+  level 11  Bamboo Forest
+Green Bamboo Snake
+  level 11  Bamboo Forest
+Green Bamboo Snake King (boss)
+  level 12  Bamboo Forest
+Flying Centipede 
+  level 13  Centipede Mountain
+Fatal Centipede 
+  level 13  Centipede Mountain
+Immortal Centipede (boss)
+  level 14  Centipede Mountain
+Servant of Snake Head
+  level 14  Serene Village
+Snake Captor 
+  level 15  Serene Village
+Snake Head
+  level 16  Serene Village
+Snakeman Guard 
+  level 16  Serene Village
+Snake Bandit General (boss)
+  level 16  Serene Village
+Ghost Fire
+  level 17  Cacodaemon Stockade
+Bitter Elf 
+  level 19  Cacodaemon Stockade
+Cacodaemon
+  level 20  Cacodaemon Stockade
+Ghost Wind Tao (boss)
+  level 18  Cacodaemon Stockade
+
+Tiger Mountain Monsters:
+
+Boa 
+  level 11  Bramble Hill
+Poison Fly
+  level 12  Bramble Hill
+Male Aborigine
+  level 12  Bramble Hill
+Sturdy Aborigine
+  level 13  Crow Forest 
+Little Wild Mule
+  level 14  Wild Mule Slope
+Evil Tao He (boss)
+  level 14  Crow Forest
+Timber Wild Wolf 
+  level 15  Crow Forest
+Little Golden Macaque
+  level 16  Crow Forest
+Jungle Crocodile
+  level 17  Wild Mule Slope
+Black Ghost Guard
+  level 18  Crow Forest
+Wild Mule
+  level 18  Wild Mule Slope
+Sagamore Black Ghost (boss)
+  level 18  Crow Forest
+Little Tiger 
+  level 19  Wild Mule Slope
+Forest Tree Man
+  level 20  Crow Forest
+Golden Macaque
+  level 20  Crow Forest
+Wild Mule King (boss)
+  level 20  Wild Mule Slope",
+help_monster_1to4,"For newbies under level 5, the fastest way to level up is to do quests and to kill the monsters related to the quests. ",
+help_monster_21to24,"You may go to Stone City when you reached level 20. Stone City is a big city. A lot of players gathering here.  You can hunt the following monsters around Stone City.
+
+Stone City Monsters:
+
+Mountain Demon 
+  level 21  Stone City North
+Wild Rabbit 
+  level 21  Stone City North
+Mobster
+  level 21  Mushroom Village
+Poison Mushroom  
+  level 22  Mushroom Village
+Jin Guangding (boss) 
+  level 22  Mushroom Village
+Cortege Cat Burglar
+  level 22  Gangster's Alley
+Play Boy
+  level 23  Leud Temple
+Blackshirt Bandit 
+  level 23  Green Nunnery
+Gangster Zhang (boss)
+  level 23  Gangster's Alley 
+Strange Pilgrim
+  level 24  Leud Temple",
+help_monster_25to30,"You will accept some quests of Mercy Temple while you were in Stone City.  There is a Scenario in Mercy Temple. Once you reached level 25 you may have a try of this scenario. But we would like suggest you team up with some high level friends to go Mercy Temple Scenario. 
+
+Mercy Temple Monsters:
+
+Phony Muscle-man Wei (boss)  
+  level 24  Stone City West  
+Guard of Muscle-man Wei
+  level 24  Stone City West
+Evil Monk
+  level 25  Stone City West
+Wild Wolf
+  level 25  Stone City West 
+Loong Fei's Guard 
+  level 25  Stone City West
+Golden Silkworm Guard 
+  level 25  Stone City West
+Prentice of Monk Mao Tai 
+  level 25  Stone City West
+Lecher 
+  level 26  Stone City West
+Poison Golden Silkworm (boss) 
+  level 26  Stone City West  
+Loong Fei (boss)
+  level 26  Stone City West 
+Green Robe Master (boss) 
+  level 26  Stone City West  
+Monk Mao Tai (boss) 
+  level 26  Stone City West  
+Monk Soldier
+  level 27  Mercy Temple
+Hiding Bandits 
+  level 27  Mercy Temple
+Callet
+  level 28  Mercy Temple
+Callet Head Young (boss) 
+  level 27  Mercy Temple
+Brutal Monk
+  level 28  Mercy Temple
+Monk Yu De (boss) 
+  level 28  Mercy Temple
+Sturdy Monk Soldier 
+  level 29  Mercy Temple
+Flame Tao (boss) 
+  level 28  Wei's Village
+Guard of Wei's Village 
+  level 29  Wei's Village  
+Cortege Xue (boss)
+  level 28  Wei's Village   
+Cortege Qin (boss)   
+  level 28  Wei's Village  
+Buddhist Monk Zhi Fei (boss)  
+  level 30  Wei's Village ",
+help_monster_31to35,"Your hunting ground could be transferred to Laurel Mountain once you reached level 31.  Laurel Mountain has very beautiful scene.  You can talk to Ruo Lan to check what you can do for her.
+
+Laurel Mountain Monsters: 
+
+Peach Spirit 
+  level 31  Green Spring Gully
+Peach Monster 
+  level 31  Lauren Woods
+Machine Monster 
+  level 31  Ancient Laurel Grounds
+Polluted Peach Tree  
+  level 32  Green Spring Gully
+Golden Camel (boss)
+  level 32  Green Spring Gully  
+Fierce Tiger 
+  level 32  Green Spring Gully
+Golden Camel Guard
+  level 32  Fountain Plain
+Machine Man 
+  level 33  Red Flower Cave 
+Machine Guard 
+  level 33  Red Flower Cave
+Red Flower Guard  
+  level 34  Red Flower Cave
+Crocodile 
+  level 34  Red Flower Cave
+Pangolin 
+  level 34  Fire Rock Cave 
+Machine Giant (boss)
+  level 34  Red Flower Cave  
+Immortal Crocodile (boss) 
+  level 35  Fortune Pond  
+Black Stone Demon (boss) 
+  level 35  Grass Pool  
+Black Stone Guard
+  level 35  Grass Pool
+Fire Stone Monster 
+  level 35  Fire Rock Cave
+Nun Fly Dragon (boss)
+  level 35  Alchemical Room  
+",
+help_monster_36to40,"After you reached level 35, you can go to Snow Mountain, where is frozing all the year.  And Snow Mountain is the front guard of the Evils in the Whorl Mountain.  You can do some practise in Snow Mountain for preparing attack Whorl Mountain.
+
+Snow Mountain Monsters:
+
+Western Regions Enchanter 
+  level 35  White Shrubberies
+Western Regions Gundog  
+  level 35  White Shrubberies
+Western Regions Evil Monk 
+  level 35  White Shrubberies
+Bald Vulture Guard 
+  level 36  Ghost Shadow Swamp
+Red head Vulture 
+  level 36  Ghost Shadow Swamp
+Rotten-Eat Crocodile 
+  level 36  Ghost Shadow Swamp
+Bald Vulture Head (boss)  
+  level 36  Ghost Shadow Swamp 
+Black Bear
+  level 37  Ghost Wind Valley
+Bine Monster 
+  level 37  Ghost Wind Valley
+Guard of West Region Demon  
+  level 38  Ghost Wind Valley
+Demon of West Region (boss) 
+  level 38  Ghost Wind Valley 
+Jokul Flying Snake 
+  level 37  Snow Forest 
+Ore Giant  
+  level 38  Riprap Hillock
+Mountain Wild Wolf 
+  level 38  Riprap Hillock
+Ancient Snow Man  
+  level 39  Riprap Hillock
+Snow Giant (boss) 
+  level 39  Riprap Hillock   
+Snow Leopard 
+  level 39  Outer Far Temple
+Snow Eagle 
+  level 39  Outer Far Temple
+Evil Monk Guard
+  level 40  Far Temple
+Evil Monk in Far Temple 
+  level 40  Far Temple
+Demon of Sanskrit Sound (boss)
+  level 40  Far Temple 
+Snow Bandit  
+  level 40  Floating Ice Area
+Demon Palace Jackal 
+  level 40  Floating Ice Area",
+help_monster_41to45,"Once you reached level 41, you can start your adventure in the Whorl Mountain.  There are eight main evils in Whorl Mountain.  But currently only 4 main evils are staying in Fantasy Palace.  So probably it's a great opportunity for you to exterminate the evil force in Whorl Mountain once you get prepared of yourself.
+
+Whorl Mountain Monsters:
+
+Blade Ranger 
+  level 41  Live Diagram Zone
+Claw Beast  
+  level 41  Live Diagram Zone
+Snow Man  
+  level 41  Live Diagram Zone
+Masked Heister 
+  level 42  Ice Prick Forest
+Snow Beast 
+  level 42  Ice Prick Forest
+Evil Snow Giant
+  level 43  Hotspring Valley
+Water Monster 
+  level 43  Hotspring Valley
+Mire Monster
+  level 43  Hotspring Valley
+Hell Snow Giant 
+  level 44  Ice Prick Forest
+Hollow Masked Heister 
+  level 44  Death Diagram Zone
+Frost  Skull
+  level 44  Throat Rift Stage
+Throat Rift Orc 
+  level 45  Throat Rift Stage
+Orc Watcher 
+  level 45  Arm Broken Bluff
+Phantom Corpse
+  level 45  Arm broken Bluff",
+help_monster_46to50,"After you reached level 46, you can go to Vast Mountain which is located at the east of Stone City.  You can do some body warm up on the Cursed Zombie in Zhao's Palace.  White Bear Villagers are bullied by the Black Horse-head Bear.  They are seeking for help.  You can take some reputation quest here to earn reputation points of Vast Mountain. The Reputation Merchant are selling Purple Suit in Vast Mountain.  Bewitcher Cave is located at the south east corner of Vast Mountain, you can explore the cave after you strong enough.
+
+Vast Mountain Monsters:
+
+Purple Wing Bat      
+  level 45  Zhao's Palace
+Plum Blossom Tree  
+  level 45  Zhao's Palace
+Cursed Zombie     
+  level 45  Zhao's Palace
+Green Snipe
+  level 45  Zhao's Palace
+Aberrance Horse-head Bear 
+  level 46  Black Bear Cave
+Soul Lost Horse-head Bear  
+  level 46  Black Bear Cave
+Horse-head Bear Patrol    
+  level 46  Black Bear Cave
+Horse-head Bear Guard    
+  level 46  Black Bear Cave
+Horse-head Bear Captain (boss) 
+  level 46  Black Bear Cave
+Tusk Ogre 
+  level 47  Tusk Ogre Lair
+Tusk Ogre Warrior 
+  level 47  Tusk Ogre Lair
+Tusk Ogre Sorcerer  
+  level 47  Tusk Ogre Lair
+Blowgun Tusk Ogre    
+  level 47  Tusk Ogre Lair
+Crystal Rockman    
+  level 47  White Bear Village
+Small Crystal Rockman   
+  level 47  White Bear Village
+Tri-arm Swordman (boss)    
+  level 47  Tusk Ogre Lair
+Fire Fan Childe (boss)   
+  level 47  Tusk Ogre Lair
+Small Wood Demon   
+  level 48  Wood Demon Cave
+Wood Demon     
+  level 48  Wood Demon Cave
+Mace Wood Demon   
+  level 48  Wood Demon Cave
+Eyes Wood Beast   
+  level 48  Wood Demon Cave
+Snake Sword Tao (boss)
+  level 48  Wood Demon Cave
+Cub Tiger   
+  level 48  Ghost Din Woods
+Tiger major    
+  level 48  Ghost Din Woods
+White Tiger King (boss)   
+  level 49  Ghost Din Woods
+Fire Serpent    
+  level 49  Ghost Din Woods
+Dicephalous Fire Serpent   
+  level 49  Ghost Din Woods
+Callet Ghost   
+  level 49  Ghost Din Woods
+Callet Ghost major    
+  level 49  Ghost Din Woods
+Green Tree Ghost   
+  level 49  Ghost Din Woods
+Voodoo Spider
+  level 49  Ghost Din Woods
+",
+help_monster_51to60,"After you reached level 51, you can go through Ghost Din Woods to Dai's Field to go on your adventure.  There are some places near Dai's Field, such as Brier Woods, Star Town, Ling Mansion...  Recently, some evil force seems growing stronger in Loo's Village.  Some strange people were seen often walking around Ichthyoid Cave.  If you help the people who ask your help on the way to Dai's Field, you will get your reputation raised there.",
+help_monster_5to10a,"Sky Village has almost all the NPCs.  It is a good place for newbies to level up.  There are many monsters around the village.  Most of them are suitable for newbies.  Through an anchoret villager, you will be teleported to Sand Village.  But in Sand Village, there will be no game gears as reward.  The rewards of the quests in Sand Village are only money and experience.  You'd better find some friends to team up, if you want to finish an elite quest.
+
+Sky Village Monsters:
+
+Adult Wolf 
+  level 4  North Suburb of Sky Village
+Mushroom
+  level 5  West Suburb of Sky Village
+Guard of Wolf King
+  level 6  North Suburb of Sky Village
+Elite Wolf King (boss)
+  level 6  North Suburb of Sky Village 
+Little Leopard 
+  level 6  Black Heart Campo
+Little Black Leopard
+  level 6  Black Heart Campo
+Little Dicephalous Snake
+  level 7  Snake Swamp
+Roving Bandits
+  level 7  South Suburb of Sky Village
+Apparition 
+  level 7  Black Heart Campo
+Golden Horn Boa
+  level 8  Snake Swamp
+Bandit
+  level 8  South Suburb of Sky Village
+Jackal Wolf
+  level 8  depth of Black Heart Campo
+Gemination Snake
+  level 8  depth of Black Heart Campo
+Flying Snake 
+  level 9  depth of Black Heart Campo
+Brigand 
+  level 9  South Waste Land
+Bandit Vice Head
+  level 9  South Waste Land
+Bandit Soldier
+  level 10  South Waste Land
+Black Leopard
+  level 10  depth of Black Heart Campo
+Horrible Demon  Ghost (boss)
+  level 10  Black Heart Campo 
+Brigand Head (boss)
+  level 10  South Waste Land ",
+help_monster_5to10b,"Sand Village is just beside a desert, with almost all the necessary NPCs there.  The people there are friendly.  And the monsters around Sand Village are suitable for newbies to level up. You also could teleport to Sky Village.  But in Sky Village, there will be no game gears as reward.  The rewards of the quests in Sky Village are only money and experience.  You'd better find some friends to team up, if you want to finish an elite quest.
+
+Sand Village Monsters:
+
+Battle Horst 
+  level 4  Darkness Valley
+Roving Bandit Head (boss) 
+  level 6  Sand Village East 
+Mounted Brigand   
+  level 8  Mounted Brigand Lair
+Mounted Brigand Head (boss) 
+  level 8  Mounted Brigand Lair 
+Herald without Eyebrow 
+  level 8  Desert
+Syren without Eyebrow 
+  level 9  Desert
+Tempted Man 
+  level 9  Bitter Elf Ruins
+Bitter Elf 
+  level 9  Bitter Elf Ruins
+Undeserved Ghost 
+  level 10  Bitter Elf Ruins
+Friar's Lantern
+  level 10  Bitter Elf Ruins
+Fire Tao (boss) 
+  level 10  Bitter Elf Ruins 
+",
+help_task_paimaijieshao,"Auction System:
+
+You can find the NPC which in charging auction in some cities or villages.  This NPC is willing to accept players from different profession dealing with him.
+
+He charges deposit fees for all the things that will be auctioned beforehand.  After the commodity has been sold successfully, he returns the deposit fees, but if the commodity is not sold, the deposit fees will be left to him.
+
+The commodity you get from the auction will be sent to your mailbox, you can get it from the Post Officer.",
+help_task_paimaijinjia,"Bid:
+
+Select the item you want to bid on the browse windows.  The item's quality and name will be listed with its level, the end time of the auction, the person who gives the highest price and the bid price.  And then type your price in the right place at the bottom of the list of commodity classifications.  Then press the 'Bid' button at the bottom of the item list.
+
+The Auction Item Display:
+
+The items that you have bid are all displayed in the bid page.  Select the bid tag at the bottom of the interface, you can enter into the interface of checking the item.
+
+The failure of bid:
+
+If somebody gave a higher price than you, then your bid is failed.  Your bid currency will be returned to the counterjumper.
+
+The 'Buy Now' Price:
+
+A commodity has a 'Buy Now' price, if you are willing to buy the item in this price and not through auction, then you get it and the auction is over.  You can get the commodity at the counterjumper.",
+help_task_paimailiulan,"Browse the Auction Goods:
+
+When you click on the auction NPC, you will see a blank form.  You can use that to search what you need.  Frequently-used search options includes:
+
+The name of the item: 
+type in the name of the item that you want.
+The level range: 
+type in the level range of the item that you need.
+The rare rate: 
+select one rare rate you need in the pull down menu.
+The profession: 
+select the right profession of the item that you need in the pull down menu.
+Usable commodities: 
+display all the auction commodities that suitable for your profession and your current level.
+List of commodity classifications: 
+display the commodity classifications that you need.",
+help_task_paimaipaimai,"Drag commodities to the auction box:
+
+Press the 'Auction' key to enter into the auction interface and open your item box to drag those you want to sell to the auction goods box on the left upper side of the interface.
+
+Set the starting price:
+Player set a lowest price according to his own judgement or he can refer to the prices other players have made.
+
+Set the bid time:
+The set of time is very important.  The longer you set, the more deposit fees you cost.  If your items were sold, you can take back your deposit fees.  But if no one wants your goods, you will lose your deposit fees.  Usually, the shorter of the bid time set (some hours or even less), the less of the risk.  However, if you don't set your time longer enough, other players might not see it.
+
+Set the 'Buy Now' price (optional):
+This is the most satisfactory price to this item of you.  Don't set it too high, or those who are interested in it will be scared away.
+
+Auction Over:
+If you haven't sold your item out when the auction is over.  The auction will stop and you will lose your deposit fees.  The item you want to sell will be reserved at the counterjumper.",
+help_task_renwudezuoyong,"The functions of Quests:
+
+Doing quests is the principle and shortcut to level up and get equipments.  If you want to level up and become stronger, it is absolutely right to spend most of your time on the quests.  It can let you get twice the result with half the effort.  Accept quests as many as you can.  Once you have finished one quest, you soon turn to another!  Of course, you can play at your pleasure.  Quest is not necessary for you.  But remember, no matter what happens, the most important thing is to be happy. ",
+help_task_renwuditu,"Mini Map:
+
+If you found there is a small yellow point instead of a green point on your mini map, which means, that's the NPC you need talk to reply your quest you have accomplished.",
+help_task_renwugongxiang,"Quest Sharing:
+
+In Talisman Online, most of the quests can be shared with other players, but there are some requirement as follows:
+
+1. The quests can only be shared under the condition of one same team. 
+2. If the shared quest is one in the series quests, then all parties who is sharing the quest must keep the same progress in finishing the quest.",
+help_task_renwuhuode,"How to accept a quest?
+
+There distributed all kinds of NPC with different functions all over the vast game world.  When you see a NPC with a yellow exclamatory mark over his head, it means that he has quests which are in accordance with your level.
+
+Some of the accepted quests are series quests, they need your patience to finish the little quests in all phases.  There are also some elite quests.  To finish them, you'd better find some partners.",
+help_task_renwuwupin,"The reward of a quest:
+
+The reward of a quest is bound.  So the reward can be equipped or can be sold to NPC, but it can not be sent or sold to another player.",
+help_task_renwuzuizong,"The function of tracing the quests:
+
+In order to know the content and condition of the quests more quickly and easily, you can check the right side of the main interface of the game. When you have quests, it will show you the progress of your quests.  At the same time, you can open the quest menu to check details.  And choose to trace or not to trace certain quest.  Even you can choose to give up some quests that you have accepted but don't want to do any more.",
+help001_01a,Select Target,
+help001_01b,Character Move,
+help001_01c,Talk to NPC,
+help001_01d,Attack Target,
+help001_01e,Special Item,
+help001_01f,Mouse Related Operation,
+help001_01g,Keyboard Related Operation,
+help001_01h,How to accept quest?,
+help001_02a,What is Talisman?,
+help001_02b,How to use Talisman skills?,
+help001_02c,Talisman Level,
+help001_02d,Equip Talisman,
+help001_02e,Talisman Identify,
+help001_02f,Talisman Enhance,
+help001_02g,Talisman Merge,
+help001_02h,Talisman Combine,
+help001_02i,Combine Material,
+help001_03a,Chatting System Introduction,
+help001_03b,Chat Command,
+help001_03c,Font DIY,
+help001_03d,Symbols,
+help001_04a,Quest Function,
+help001_04b,Quest Reply,
+help001_04c,Quest Trace,
+help001_04d,Quest Items,
+help001_04e,Shared Quest,
+help001_04f,Mini Map,
+help001_05a,Auction System Introduction,
+help001_05b,Browse Items,
+help001_05c,Bid,
+help001_05d,Auction Item,
+help001_06a,Basic Rules,
+help001_06b,Collect Herb,
+help001_06c,Create Something,
+help001_06d,Collect Ore,
+help001_06e,Craft Magicstone,
+help001_06f,Crack Item,
+help001_06g,Amulet / Ring,
+help001_07a,Competition Arena Rules,
+help001_07b,Competition Arena Points,
+help004_014,"The sound of the Buddhism makes the heart calm and clear the bosom.  What can I do for you, donor?",
+help005_014,"Weal and woe go with the heart, Mind is as clear as a mirror.  Donor should come and go safely.",
+help006_014,"The master has gone out to roam, he asked me to visit around.  What can I do for you, donor?",
+helpaaa,Return to the Previous Page,
+npctalk_012,Welcome to the world of Talisman Online!,
+npctalk_018,Here is a holy place of immortals.  Visitors can have a look around here.,
+npctalk_024,And then?,
+npctalk002_13,You may go out along the Water Curtain Cave on the cliff to have a look.,
+npctalk002_19,Enter Snake Cave,
+npctalk002_7,This is the second page.,
+npctalk040_14,I was attacked by these snakes because of carelessness.  It seems no places are peaceful recently. ,
+npctalk041_14,"The sound of the Buddhism makes the heart calm and clear the bosom.  What can I do for you, donor?",
+npctalk041_2,Enter Bamboo Valley,
+npctalk041_3,Cloud Mountain Bamboo Valley,
+npctalk042_14,"Weal and woe go with the heart, Mind is as clear as a mirror.  Donor should come and go safely. ",
+npctalk045_14,"The master has gone out to roam, he asked me to visit around.  What can I do for you, donor?",
+npctalk049_14,"Sigh.. The hateful snake monster, more and more villagers get injured.  It can't go longer like that. ",
+npctalk050_14,"Wooo... the hateful Evil Tao, my poor wife.... ",
+npctalk051_14,Do you want to drink with me? The wine of Belvedere is so great! We can be drunk today since we have such nice wine. ,
+npctalk052_13,Green Scarp is a holy place for practicing.  Each apprentice must study hard to be the best one. ,
+npctalk053_13,"The soul of Tamer Tao Huang has roamed out, his body was left here as a statue, with his long beard waving gently with the breeze. ",
+npctalk054_14,Why are you staring at me like that? Do you want me to give you a lesson? ,
+npctalk056_14,"Xixixi.., don't disturb me looking for beauties, or I will hit you. ",
+npctalk058_10,"There are heroes in every generation, I'm old now......",
+npctalk093_14,"You are all Wizard, aren't you?  When my master comes back, I'll kill you all.",
+npctalk095_14,"I'm the host of Crow Forest.  Friends who come from afar should be treated as honored guests, but if they are enemies, Hummm.....  ",
+npctalk096_14,The young man was wounded and can't go far away.  What can we do now?,
+npctalk097_14,"I'm so talented and intelligent, how can you understand my ambitions. ",
+npctalk098_14,"It will be very dangerous of this travel, we are so worry about the future... ",
+npctalk099_14,That's the living style I like to travel around with a sword and root out the evils. ,
+npctalk100_14,Do you wanna take a rest?  Then come to join me and lets Talk about every thing you want!,
+npctalk1000_12,I need help. ,
+npctalk1000_18,"Follow me, and cover me out. ",
+npctalk1006_10,"Come on!  Drink more with me, we can be drunk today since we have nice wine. ",
+npctalk1007_10,"Golden Peak Mountain has beautiful scenery, no wonder Predecessor Zhu-ge still lives here after he has studied out the mystery of martial art. ",
+npctalk1008_10,My teacher Drunk Tao cries for wine all days.  I really don't know what to do with him. ,
+npctalk102_14,"How is it so noisy, don't bother me when I am counting money. ",
+npctalk103_14,"These monks are so hateful!  I have been stay here because of other's request, or I would try to find a chance to leave here first. ",
+npctalk104_14,"Golden Peak Mountain is an orthodox school in the world.  The master take you in here, the complement of practice all depends on yourselves.  You can ask the brothers of this school when you meet with difficulties. ",
+npctalk105_14,"The master is roaming out, you should not slack off, or I will punish you...",
+npctalk107_14,It seems very easy to light up this ordinary pile of firewood. ,
+npctalk108_14,"Hello, my hero.  I am auctioneer.  I like meeting people.  Welcome to sell or buy items here.  ",
+npctalk109_04,My friends always say my goods are of good quality.  Come to choose some you need. ,
+npctalk110_14,"Tear, tear.... ",
+npctalk6325_14,"It's heard that there is collusion between Monsters and our Village's, it seems that Dai's Field & Vast Mountain will have trouble.",
+npctalk111_14,"Looking back to before, I was a famous man in the country.  Now there are so many young talented man, I must recognized my old age. ",
+npctalk112_14,Blue Mountain is the most tranquil mountain in the world.  People can get twice the result with half the effort when practicing here.  You should know what you do here. ,
+npctalk113_14,"Amitabha, this way, please. ",
+npctalk114_14,"Persons not concerned, please get out of here...",
+npctalk115_14,"Those Evil Tao have done a lot of evil things, and they have make the mountain immortal angry.  So the disaster will coming soon. ",
+npctalk116_14,It is not until you come that so much things happened.  Sigh....,
+npctalk127_14,I have secluded here for many years.  There are heroes in every generation.  Now it all depends on this new generations of yours. ,
+npctalk128_14,"This grass has a sweet nature, and can be used as medicine. ",
+npctalk129_14,"Brother, let's go to hunt for leopards. ",
+npctalk130_14,"Ah.., are you also the bad man who want to bully us?",
+npctalk131_14,"Is there anything you come for, donor?",
+npctalk132_14,"The way before is dangerous, let me try the swordsmanship that I have just learned. ",
+npctalk133_14,That Evil Tao... I can't turn my body around...,
+npctalk134_14,I don't know whether my little master is safe. ,
+npctalk143_14,"It seems that there are something abnormal around here, let me have a look around. ",
+npctalk157_13,Well... you little brat dare bother the master's sleeping... I will give you a lesson...,
+npctalk157_20,Those who are not afraid of dying can come to have a try. ,
+npctalk158_01_13,A mysterious ancient statue looks so lively.  ,
+npctalk158_01_19,Use the energy of snakeman. ,
+npctalk158_13,"A mysterious ancient statue looks so lively.  There seems to be a mark on the statue, sending out evil. ",
+npctalk158_20,Touch the mark. ,
+npctalk161_14,"The Golden Peak Mountain is very vast and there are many beautiful places.  You can walk around when you have time.  Practicing is very tiring.  You can do that just like me, go walk around and have a look at the beautiful scenes.  By doing this, you can forget all the troubles. ",
+npctalk162_14,"The white rabbits here are very great, do you want some?",
+npctalk163_14,Wooooo... I want my mum...,
+npctalk165_13,Those who dare bother the master's sleeping will not be living any longer. ,
+npctalk165_19,Enter Snake Cave,
+npctalk165_29_2,Cloud Mountain Snake Cave,
+npctalk176_01_12,Welcome to the world of Talisman Online. ,
+npctalk176_01_18,You get the spore. ,
+npctalk176_01_24,Yes. ,
+npctalk176_02_05,"Those who knows the truth will die, you really aren't afraid?",
+npctalk176_02_10,I'm ready. ,
+npctalk176_13,"Guaaaaaa...pollution, you will be all polluted...hehehe...",
+npctalk176_19,Do you want to know the truth?,
+npctalk177_13,Cough....I don't feel well... ,
+npctalk178_02_20,Cloud Mountain Snake Cave,
+npctalk178_14,"Finally, all these things are finished, it's a great pleasure..",
+npctalk178_20,Leave Snake Cave,
+npctalk180_13,Chichichi....I'm the flamen of Snake Demon. ,
+npctalk182_14,"Amitabha, don't be surprise, donor.  It is natural that one have the Buddha in his heart after listened so much sutra. ",
+npctalk183_14,"You can deposit almost all items and money here!  Don't worry, I will keep them safe.",
+npctalk184_02_19,The Snake Cave of the Cloud Mountain,
+npctalk184_13,"Hehehe, it's still not too later for you go back now. ",
+npctalk184_19,Leave Snake Cave,
+npctalk2070,"Under the threat from both Simen Mountain Southern Heathen and Simen Mountain Enchanter, Moon Dragon Village is now filled with demons.  Bewildered by Southern Heathen, many  villagers of Moon Dragon Village regard those Simen Mountain demons as divine spirits, some  are even following them to do evils.  Fortunately, there are still some justicial villagers, who refuse to join in the evils, have a desire to eliminate the demons in Simen Mountain to save Moon Dragon Village from the evil.  Taking advantage of the defeat and flee of Green Robe Master, the five Profession Sword Immortals intend to joint hands together, and has sent a elite apprentice respectively already.  Moreover, more master hands will come together to spare no efforts to overcome this Simen Mountain!",
+npctalk212_13,The hateful robbers!  I'm homeless now...,
+npctalk213_13,Reading Buddhist sutra does much good to practice.  Remember to persuade others with morality but not your power. ,
+npctalk225_04,"My family lives here for long time, recently because of the evil ghost, animals around become fewer and fewer for hunting...",
+npctalk232_10,"I was entrusted by Yan Nan Fei and secluded here, I can lead you to Sand Village. ",
+npctalk253_04,I'm the only child of my family.  Please! Hero! Help me out!  Woooooo...,
+npctalk254_04,"With the help of Master Jade, I can keep myself alive temporarily.",
+npctalk278_02_19,Mercy Temple Happiness Hall,
+npctalk278_13,The master is having a rest.  Those who has no relative can't bother him. ,
+npctalk278_19,Enter Happiness Hall,
+npctalk279_02_19,Mercy Temple Happiness Hall,
+npctalk279_13,Put down the butcher knife and become a Buddha.  Hehehe...,
+npctalk279_19,Leave Happiness Hall,
+npctalk287_03,What can I do for you?  Just tell me.,
+npctalk288_13,Come on!  Here are all first-class goods. ,
+npctalk2914_14,"He looks very ordinary, but gives out feelings of evil. ",
+npctalk2914_14_2,"It looks that my skill of camouflage is not too bad.  If you want to go to Blood Palace, I can lead you. ",
+npctalk2915_14,"If you want to go back to Stone City, I can lead you. ",
+npctalk2916_14,"Hunting is tired, isn't it?  You Excellency, I will send you back to Blood Palace soon. ",
+npctalk2917_14,I am in charge of the Blood Palace Hunting Ground under the order of my master.  Only the owner of the Blood Palace has the right to get into it. ,
+npctalk2917_14_2,"If you want to get into the Blood Palace Hunting Ground, I can lead you there.  There are treasures left by the old owner, you have to guard them carefully. ",
+npctalk2918_14,The Blood Palace is not a good place for those who have no relationship with it.  You should know what you do here.  ,
+npctalk2918_14_2,"If there are problems in the inner city, you can transmit from here. ",
+npctalk2919_14,The Blood Palace is not a good place for those who have no relationship with it.  You should know what you do here.  ,
+npctalk2919_14_2,I can send You Excellency to the outer city. ,
+npctalk3003_14,"The Wizard was founded by Master Changmei 2000 years ago.  Now it has been descended to Master Miaoyi.  Recently, there are wars again in the world.  The power of heathendom grows day by day.  Now it's your responsibility to defense the justice.",
+npctalk3004_14,"Madame Miaoyi asked me to inspection around and notice whether there are heathendom come to make trouble.  It is quiet until now, you can practice without worry. ",
+npctalk3005_14,I have practiced many years with the master.   We are brothers in one school.  I can give you some help if we the have chance. ,
+npctalk3006_14,The magic power of Wizard is very brilliant.  It's a pity that I'm not so talented to practice.  I'm also contented to be a little servant boy of master. ,
+npctalk3007_14,"I have many medicine and groceries here, you can find what you need. ",
+npctalk3008_14,"I will make efforts to practice, then I can contribute my power when the heathendom returns. ",
+npctalk3009_14,It is just like an immortal when practicing in such a beautiful mountain. ,
+npctalk3014_01_12,"Master Changmei said that if you want to go down of the mountain, you must beat me first. ",
+npctalk3014_01_18,Are you ready?,
+npctalk3014_01_24,Yes. ,
+npctalk3014_13,"Master Changmei woke me up at that time, and I don't know how many years it has been that I stayed here to test the prentice before they go down of the mountain. ",
+npctalk3101_14,"Many new fellows have arrived here recently, so I have many things to do.  I wanna try my best to serve them.",
+npctalk3102_14,"Amitabha, I have all kinds of goods here, what can I do for you?",
+npctalk3103_14,"My master told me that the Soul of Evil had bypassed the icy pool and broke out from the mountain which is under the waterfall at the opposite side.  Even now, there are still many fragments of the evil soul sealed inide.  You'd better not go there if you have nothing important to do in that horrible area. ",
+npctalk3104_01_12,"If you want to go down of the mountain, you should have enough power.  Let me see how strong you are. ",
+npctalk3104_01_18,Are you ready?,
+npctalk3104_01_24,Yes. ,
+npctalk3104_13,Sha...sha...You should beat me if you want to go down of the mountain. ,
+npctalk3104_14,Sha...sha...You should beat me if you want to go down of the mountain. ,
+npctalk3105_14,Ho...ho... The devil must be rooted out.,
+npctalk3106_14,Well... I must try my best to fulfill what the old Buddha Monk has entrusted me. ,
+npctalk3107_14,Hello!  Have we met before?  Master is not here these days.  I wanna try something new.  It seems that the wild boars taste good. ,
+npctalk3108_14,"Amitabha... The Buddhism is very vast and deep, I just have learned the least of it. ",
+npctalk3129_02_19,Lotus Cave,
+npctalk3129_13,Wanna enter Lotus Cave?  I will pray for you!,
+npctalk3129_19,Enter Lotus Cave,
+npctalk3130_02_19,Lotus Cave,
+npctalk3130_13,"How is the situation in the cave? If you want to leave the cave, I will lead the way.",
+npctalk3130_19,Leave Lotus Cave,
+npctalk318_04,Generations of our family live for hunting here.  No one is more familiar with every place of Snow Mountain than me. ,
+npctalk319_14,"Sigh... the apothecary in Snow Village is my master, he send me here to collect some herbs.  I have thought this is an easy job, however, I get into trouble now.  How bothersome...",
+npctalk320_14,"Nowadays, the rich like wearing furry coats in winter.  My stores in Stone City only do business with the riches, so the materials are very important.  I think the bearskin is the best. ",
+npctalk3202_14,"The environment of Blue Mountain is very good, isn't it?  Practicing here does much good to the health as well as the mind.  Although I am a little Prentice boy here, I'm sure I can be a master if I make efforts. ",
+npctalk3203_14,I was entrusted by the master and collected some commodities.  You can have a look and find what you need. ,
+npctalk3209_01_12,"For not making the Master disappointed, I'll fight with all my efforts.  You take care!",
+npctalk3209_01_18,Are you ready?,
+npctalk3209_01_24,Yes. ,
+npctalk3209_13,"I'm a eidolon stone in the mountain and have some magic power under the directions of master.  Here, I will test the new prentice...",
+npctalk321_14,I'm the head of Snow Village.  The safety of our village is first responsibility.  I'm bothered with something recently. ,
+npctalk322_14,Wild wolf meat is the most delicious food in the world... Haha...,
+npctalk323_10,My trade caravan was attacked by the monsters around when we stopped to have a rest here.  My counterjumpers have gone to find foods and clear water.  I'm afraid of being alone.,
+npctalk323_13,Our last act has annoyed those Rotten Skin Wolf and Red Head Vulture.  Now they are gathering here.  It seems that there will be an unavoidable dying fight. ,
+npctalk323_19,Are you really ready for that?,
+npctalk324_14,Who can help me?  How can I take so many fruits to my boss...  And the jackals on my way are so dangerous.  ,
+npctalk325_04,I can't offend those men of Whorl Mountain.  Have you got anything to do with me?  If not please go to other places in the village.  I have got no spare time to chat with you. ,
+npctalk326_14,"I have all kinds of herbs here, what can I do for you?",
+npctalk327_10,It never occurred to me that the Far Temple was controlled by the Fantasy Palace so soon.  The power of Whorl Mountain is becoming stronger and stronger.  The situation is very severe to us.,
+npctalk328_10,The robbers always haunt around here.  Leave here if you have nothing important to do. ,
+npctalk3301_14,Master Youtan come to practice in the Tide Cave every month during flood tide.  I guard here under the order of my master.  This is a great responsibility and I can't leave without authorization. ,
+npctalk3302_14,"Since the found of the Fairy by Master Youtan, there come many new prentices.  Looking at the flourishing growth of the Fairy, I think all my toil is worthwhile. ",
+npctalk3304_14,"There are four seasons in the Flowers Mountain, every area has different scenery.  If you are tired of practicing, you can walk around.",
+npctalk3305_14,"I have many medicine and groceries here, you can find what you need when you are practicing. ",
+npctalk3306_14,"Although I'm younger than you, I grow up in Flowers Mountain, so I'm your elder sister.  The master asked me to deliver some tasks to the new prentice.  You can come to see what you can do when you have the ability. ",
+npctalk3307_14,"Long long ago, Master Youtan come to the Flowers Mountain and took a fancy on the wonder in the Tide Cave, so she built the Kwan-yin Nunnery nearby.  Besides, she practices here every month and made great progress.  I will also practice in it in the future. ",
+npctalk3308_14,"The scenery of Flowers Mountain is as beautiful as pictures in all seasons.  Besides, The prentice live harmoniously like families.  It is such a wonderland in the world!",
+npctalk3309_14,The master always taught us to practice diligently and help others.  I must remember it well. ,
+npctalk3314_01_12,"Although I'll hold my hand, you'd better get well prepared. ",
+npctalk3314_01_18,Are you ready?,
+npctalk3314_01_24,Yes. ,
+npctalk3314_13,"I'm the Flower Sprite in this mountain, the Master asked me to give tests to the little prentice and let those who are excellent go down of the mountain. ",
+npctalk3324_02_19,Tide Cave,
+npctalk3324_13,"When the moon goes full, the tide goes up.  Strange things will probably happen in the horrible cave.",
+npctalk3324_19,Enter Tide Cave,
+npctalk3325_02_19,Tide Cave,
+npctalk3325_13,How beautiful the world outside is...,
+npctalk3325_19,Leave Tide Cave,
+npctalk334_10,The desert around Sand Village covered larger and larger area since years of drought.  Some mounted-brigands always haunt there.  Don't go there if you have nothing important to do. ,
+npctalk335_10,"There are sand storm out of the village, go back and don't walk forward any more.  There are always mounted brigands there.  Listen to me, or no one will help you if you were caught by them. ",
+npctalk337_10,Don't be afraid.  I have no relationship with the mounted brigands.  The village head asked me to get into them and notice their action to the villagers.  So I can report to him. ,
+npctalk3402_14,"Here is the animals zone, you little prentice should not walk around here.  What you should do is to practice more and more. ",
+npctalk3403_14,"All of the creatures in the world can become our friends, so we must treat them well. ",
+npctalk3404_14,"Well... I was not healthy when I was very young.  Later, the master adopted me and let me practice here to improve my health condition.  I'm much better now, but there still leaves the root cause of the disease.   ",
+npctalk3405_14,"Roar... Since I followed the master and practiced in this mountain for a long time, my murderous mind is eliminating gradually and I feel easy from head to foot. ",
+npctalk3406_14,Life takes meaning in the moving.  It is another practice to do some sports in the forests. ,
+npctalk3407_14,"I did business before.  Since I followed the master to practice here, I sell some commodities by the way.  You can have a look and find what you need. ",
+npctalk3408_14,"Wowww, wowww......",
+npctalk3409_14,"Geeeez, Geeeez...",
+npctalk3410_14,Hey!  Do you feel bored?  Why not fly to a another city to find something interesting?  I can transport you!,
+npctalk343_10,"Passer, some people from No-Eyebrow Heathendom haunt here recently.  You'd better find others accompany you.  No-Eyebrow Heathendom is one big heathendom.  The immortals send me here to monitoring of their actions. ",
+npctalk344_10,The origin of No-Eyebrow Heathendom traces back to the minority of the south area.  The head of the tribe has studied the wizard with great concentration for years and has learned magic power of five poison.  He always sends his prentice to loot virgin boys and girls to try his poison power. ,
+npctalk362_10,Those brute aborigines! They are so peremptory to treat me unjustly as a thief. ,
+npctalk364_10,"Although the Crow Forest is beautiful, it is not as beautiful as my hometown where I live with my young master.  I have separated with my young master for a long time.  I miss him very much. ",
+npctalk365_10,"The water source near the village becomes worse and worse, sometimes dead fish even can be seen floating on the water surface. ",
+npctalk366_10,Well... The wild mules all over the mountains are a large treasure.  We can get a great amount of money by selling their furs in the town. ,
+npctalk367_10,How come master treat me like that?  I'm so loyal and devoted to him. ,
+npctalk384_10,"I'm seriously wounded, who can help me?",
+npctalk385_10,"The Laurel Mountain is a very beautiful place.  However, since those peaches have absorbed the polluted water that Master Loong Fei used to make Machine Man, they become more aggressive. ",
+npctalk386_10,You damned tiger!  Get away from me!  I can't bear you any more!  Go away from me!,
+npctalk387_10,"The water here can't be drunk any more.  We have to solve the problem, or the villagers will die of thirst. ",
+npctalk388_10,"The war is quiet down temporarily.  We don't know where the heathendom is hiding, so we have to keep an eye open.  There are also many other trouble things for me to deal with. ",
+npctalk389_10,Master Loong Fei's evil power is spreading again...,
+npctalk404_1,A thousand years ancient tree with a cave covered by rattan on it.,
+npctalk404_2,Enter Rattan Cave,
+npctalk404_3,Tiger Mountain Rattan Cave,
+npctalk405_1,An thousand years ancient tree with a cave covered by rattan on it.,
+npctalk405_2,Leave Rattan Cave,
+npctalk405_3,Tiger Mountain Rattan Cave,
+npctalk406_10,I have many good quality equipments for sale in a low price.  However they only belong to those who has contributed to Cloud Mountain. ,
+npctalk407_10,I have many good quality equipments for sale in a low price.  However they only belong to those who has contributed to Tiger Mountain. ,
+npctalk413_10,I have many good quality equipments for sale in a low price.  However they only belong to those who has contributed to Stone City. ,
+npctalk414_10,I have many good quality equipments for sale in a low price.  However they only belong to those who has contributed to Mercy Temple. ,
+npctalk416_02_20,Tiger Mountain Rattan Cave,
+npctalk416_14,"Lumme, it's very dangerous here.  I must try to get out of here, are you going out, too?",
+npctalk416_20,Leave Rattan Cave,
+npctalk417_02_20,Mercy Temple Happiness Hall,
+npctalk417_14,"Don't beat me.  I'm just a servant of here, if you want to leave here, I can help you...",
+npctalk417_20,Leave Happiness Hall,
+npctalk418_10,"Brother, what's the matter with you by wandering here?  Master Zhu-ge should be just at the left side of the back mountain.  Drunk Tao should be sobering up in the alcove at the right side of the back mountain.  ",
+npctalk419_10,I'm enhancing my Talisman with all my concentration at the moment.  I will talk to you later. ,
+npctalk420_10,"Please get out of the road, brother.  I must clean up the fallen leaves under your feet. Not letting them attain Golden Peak Mountain. ",
+npctalk421_10,"The Buddhism has a long history, it's can't be explained in a while. ",
+npctalk422_10,Iron Arms Lee has great amount of knowledge.  It would be better for you to listen to his explanation of Buddhism. ,
+npctalk423_10,I'm enhancing my Talisman with all my concentration at the moment.  I will talk to you later. ,
+npctalk424_10,"Please get out of the road, brother.  I must clean up the lichen under your feet. Not letting them attain Green Scarp. ",
+npctalk425_10,The animals down the Flowers Mountain become manic and anxious.  There seems something strange.  Is there something that going to happen?,
+npctalk426_10,"Since Master Youtan create the Fairy, Fairies are getting more and more powerful.  It has become a strong power that cannot be ignored. ",
+npctalk427_10,The new liquid medicine master told me to make will be finished successfully soon. ,
+npctalk428_10,"Flowers Mountain is very beautiful.  You looks a new comer here, you can go to visit Fairy Mojia and listen the history of the Fairy.  ",
+npctalk429_10,I'm enhancing my Talisman with all my concentration at the moment.  I will talk to you later. ,
+npctalk430_10,"Please get out of the road, sister.  I must clean up the fallen leaves under your feet. Not letting them attain Flowers Mountain. ",
+npctalk432_10,"I roam out all the year and the medicine I have collected are for great use.  Although the price is high, they are all first-class goods.  You will never meet such good thing again if you missed.  I won't force you to buy, it's up to you. ",
+npctalk433_10,"I have a very important thing ask you to do, but unfortunately you are not strong enough.  I don't want to wait, go to do more exercise.",
+npctalk4334_02_19,Whorl Mountain Fantasy Palace,
+npctalk4334_13,"There are some rays of lights in front of you,  it seems they are summoning you going forward.",
+npctalk4334_19,Enter Fantasy Palace,
+npctalk4335_02_19,Whorl Mountain Fantasy Palace,
+npctalk4335_13,"Here is the exit. Beyond here, your nightmare will be finished...",
+npctalk4335_19,Leave Fantasy Palace,
+npctalk4371_3,"Different from the ordinary stele, Teleport Stele can record the space and time.  It can help you to come back here when you are in another city.",
+npctalk4412_10,"What a big and busy Stone City!  But I still prefer the foods in my home village.  Well, I'd like to walk around.",
+npctalk4413_10,I need take a rest after one day work... Having some fruits...,
+npctalk4414_10,I am going to clean up the hay.  It has been really busy these days.,
+npctalk4415_10,Horse-head Bear Captain killed my child.  Anyone would like revenge for my poor child?  I prepared lots of money as reward.,
+npctalk4416_10,"This village has hundred of years history.  We used to be in the same villager with black Horse-head Bear.  Since they sold their souls to the evils because of greed, the disaster comes.",
+npctalk4417_10,I was brought here by strange tornado.  Here is so horrible... You can see Cursed Zombies everywhere.  Anyone could save me out of here?,
+npctalk4418_10,"I am Bamboo Hat Tao, I come here for helping the White Bear Villagers fight against the evils.",
+npctalk4420_10,"I am Madam Golden Whisk, I come here for helping the White Bear Villagers fight against the evils.",
+npctalk4421_10,"I am Sword Master Linglingzi.  If you never heard about my name, you can ask your master.  Hahahahaha...",
+npctalk4422_3,Purple Flying Sword has the power of positivity;,
+npctalk4423_3,Green Flying Sword has the power of negativity;,
+npctalk4424_3,When two swords become one;,
+npctalk4425_3,It will have incredible power.,
+npctalk4435_10,My master ask me to wait for him outside of Zhao's Palace.  But the strange animals around make me so curious.  I really hope I can get inside to see what happened.,
+npctalk4436_10,"The evil force is exactly around, you'd better be careful.  I am just busy now.  If you have nothing important, then please don't bother me.",
+npctalk4437_10,I plan to meet Chi Chengzi here.  But he hasn't come yet.  I guess he might be in trouble now.,
+npctalk4438_10,The Fire Pearl in the forest is very good medicine for healing wound.  I never expect you can find Fire Pearl here.  I think I will be recover soon.,
+npctalk4441_3,[no_use],
+npctalk4446_14,Welcome to my belvedere to have a rest!  It's a place embraced by rivers from three sides with attractive views. It is a symbol of Stone City! ,
+npctalk4447_10,I have so many gears with best quality in cheap price.  But I only sell them to those people who contributed a lot for the place.,
+npctalk446_14,"I am the son of the Blacksmith in Tiger Mountain, which is on the south of Stone City.  My father sent me to Cloud Mountain to be an apprentice. ",
+npctalk4483_02_19,Vast Mountain Bewitcher Cave,
+npctalk4483_13,This way is your only chance to leave Bewitcher Cave!,
+npctalk4483_19,Leave Bewitcher Cave,
+npctalk4484_02_19,Vast Mountain Bewitcher Cave,
+npctalk4484_13,The dispersed light ahead is summoning you.,
+npctalk4484_19,Enter Bewitcher Cave,
+npctalk4504_14,I was brought here by strange black wind.  Here is filled with Cursed Zombie and Aberrance animals.  It's so horrible... Anyone could save me from here?,
+npctalk4518_14,Merry Christmas and Happy New Year!,
+npctalk4520_14,"Hello, Merry Christmas~ I bring many gifts to you! The player could take one gift if he/she is higher than level 15!",
+npctalk4522_14,"Hello, Merry Christmas~ I bring many gifts to you! The player could take one gift if he/she is higher than level 10!",
+npctalk4584_01_12,Sir Ling is just a coward person in my eyes.  Who are you?  What are you doing here?  Go away immediately!  Are you going to revenge them? ,
+npctalk4584_01_18,How about you?  Are you ready?,
+npctalk4584_01_24,Let me kick you out of this place!,
+npctalk4584_13,"What a bad place the Ling Mansion is...  If Ling doesn't succumb to our Chen's Manor, we will give them a lesson again!",
+npctalk4584_14,You are so fearless that help Ling Mansion to oppose me!  It seems that you will not be convinced before some punishment.  Show your strength! ,
+npctalk4591_01_12,The old fellow Ling Cao is too strong-willed to let his daughter marry my elder brother.  What is he thinking about?  He even doesn't care these wealth.,
+npctalk4591_01_18,How about you?  Are you ready?,
+npctalk4591_01_24,I shall show you my strength!,
+npctalk4591_13,"Since our Chen's Manor went to Blaze Skull for shelter, we have been so successful in every aspect.  No person is brave enough to go against us!",
+npctalk4591_14,You are so fearless that help Ling Mansion to oppose me!  It seems that you will not be convinced before some punishment.  Show your strength! ,
+npctalk4617_14,I am badly hurt after the battle with Blaze Skull and I can only stay here now to cure and wait for other justice men.,
+npctalk4618_14,I must collect some herb quickly.  I have been very compunctious and I have planned to make another one since I lost my master's medicine. ,
+npctalk4619_14,"Hello!  You must be very tired after such a long journey, come here and have a rest.",
+npctalk4620_14,Would you like to eat something?  The food here is very delicious and the price is cheap!,
+npctalk4621_14,How to deal with it.  Chen's Manor sent so many people to come here to force our young lady to marry him.,
+npctalk4622_14,The Chen's Manor simply ignored me a lot.  They must get some punishment for this.  I will organize some fellows to condemn it!,
+npctalk4623_14,"I was hurt by some evil men near the Dai's Field.  I have never seen them before, so they seem to be from other place.",
+npctalk4624_14,"Our Dai's Field's villagers are bullied in these days.  We found people from Chen's Manor did that, what on earth were they going to do?",
+npctalk4625_14,"It's heard that there is collusion between Chen's Manor and Loo's Village, it seems that Dai's Field will have trouble.",
+npctalk4626_14,"I am the boss of this market,  we can offer you some daily service you need.",
+npctalk4627_14,"There are more and more bandits here recently.  It's said that they come from Star Town.  We don't dare leave here, the bandits are so rampant. ",
+npctalk4628_14,"I am so old.  I never expected that there would be so much trouble in my late years, cough...",
+npctalk4629_14,"It's very dangerous here.  The people in Loo's Village have practiced a lot recently, you'd better be careful.",
+npctalk4630_14,"Muscle-man Wei has foretold that Dai's Field would be in danger, so he sent me here to help you.  Who are you?  Please leave if you are not our comrade, its very dangerous here!",
+npctalk4631_14,"Help me... Help me...  I was hurt by those monsters with strange appearance, they are in the Ichthyoid Cave...",
+npctalk4637_14,[no_use],
+npctalk4643_14,[no_use],
+npctalk4650_14,I have many good quality equipments for sale in a low price.  However they only belong to those who has contributed to Mercy Temple. ,
+npctalk4666_14,"You are so stupid to dare to fight me!  Beat my three heelers first before going here to fight me, hahaha...",
+npctalk4669_02_19,Laurel Mountain Laurel Wonderland,
+npctalk4669_13,"This is the Laurel Wonderland Entrance, are you ready?",
+npctalk4669_19,Enter Laurel Wonderland,
+npctalk4670_02_19,Laurel Mountain Laurel Wonderland,
+npctalk4670_13,Here is the exit!  Leave here soon!,
+npctalk4670_19,Leave Laurel Wonderland,
+npctalk4695_14,"Sky Village is a busier place than our Golden Peak Mountain with so many people here.  What am I doing here?  Hehe, my friend is convoying me to go up the mountain.  Well...the evils have come out to imperil people, please take care!    ",
+npctalk4696_14,My friend was killed by Jin Guangding...  I miss him very much...  I must Avenge Him!,
+npctalk4777_02_19,Ichthyoid Cave Seven Stars Stage,
+npctalk4777_13,Here is the entrance of Seven Stars Stage!  Are you ready?,
+npctalk4777_19,Enter Seven Stars Stage,
+npctalk4778_02_19,Ichthyoid Cave Seven Stars Stage,
+npctalk4778_13,Exit is right here! ,
+npctalk4778_19,Leave Seven Stars Stage,
+npctalk4847_02_19,Spider Catacomb,
+npctalk4847_13,Here is the exit!  Leave here soon!,
+npctalk4847_19,Leave Spider Catacomb,
+npctalk4848_02_19,Spider Catacomb,
+npctalk4848_13,"Here is the Spider Catacomb entrance, are you ready?",
+npctalk4848_19,Enter Spider Catacomb,
+npctalk4885,"It is a busy village, but you can always obtain peace of mind with practicing of Buddha.",
+npctalk4886,"The leaves stirred in the soft breeze. Hope I can help you, my friend.",
+npctalk4887,Flying can always bring me delight and immensurable space to dream away.,
+npctalk4889,Merry Christmas!  All players can get Christmas Gift from me.,
+npctalk4918,Happy New Year and best wishes for you!,
+npctalk4937,"Different from those caged children, I am here to finish master's quest.  If you are able to get me out of this place, please help me!",
+npctalk4938_02_19,Simen Mountain Silver Fox Cave,
+npctalk4938_13,"Here is the entrance to Simen Mountain Silver Fox Cave, please be more careful!  This cave is very unfathomable!",
+npctalk4938_19,Enter Silver Fox Cave,
+npctalk4939_02_19,Simen Mountain Silver Fox Cave,
+npctalk4939_13,Leave here soon before enemy's troop's arrival!  Tell everything here to people outside.,
+npctalk4939_19,Leave Silver Fox Cave,
+npctalk4961,"Aahh, so terrible!  If it goes like this, even my life will be under threat!  Now I fully understand that empty promise can never be believed.",
+npctalk4962,"With limited ability, I am too weak to cope the demon evils myself.  If I can do something for this battle, I even don't care my life.",
+npctalk4963,"Even this world has been filled with evildoers, I still must finish my master's quest!",
+npctalk4964,"Moon Dragon Golden Lotus, Twelve Golden Master...  It has been so many year, but I still fail to let them go.  Who can tell me when can we embrace peaceful life?",
+npctalk4965,"Do not always focus on well-known beings.  You know, there are many well-known great events were caused by us ordinary people from ancient time!",
+npctalk4966,"I only have some ordinary medicine here, so please don't disturb me if you are just bumming around here.  With various supernatural shield, no one need me any longer.",
+npctalk4967,"As a blacksmith, I know nothing about others.  Knowing little is a safe way to survive these days...  What can I do for you?",
+npctalk4975_01_12,"Those villains of Heathendom regard us as ignorant folks and thought that we would follow them upon their cheating in Simen Mountain.  So ridiculous, I have been waiting here to show my power to them!",
+npctalk4975_01_18,Are you ready?,
+npctalk4975_01_24,"Haha, show me your strength if you can!",
+npctalk4975_13,Those damn villains Heathendom!  They even tried to assimilate us.  That's impossible!  Defeat me first!,
+npctalk4975_14,Do you want to have a try?  Then you'd better take care.  Show me your strength if you can!,
+npctalk4979_01_12,"Those villains of Heathendom regard us as ignorant folks and thought that we would follow them upon their cheating in Simen Mountain.  So ridiculous, I have been waiting here to show my power to them!",
+npctalk4979_01_18,Are you ready?,
+npctalk4979_01_24,"Haha, show me your strength if you can!",
+npctalk4979_13,Those damn villains Heathendom!  They even tried to assimilate us.  That's impossible!  Defeat me first!,
+npctalk4979_14,Do you want to have a try?  Then you'd better take care.  Show me your strength if you can!,
+npctalk4988_01_12,"Those villains of Heathendom regard us as ignorant folks and thought that we would follow them upon their cheating in Simen Mountain.  So ridiculous, I have been waiting here to show my power to them!",
+npctalk4988_01_18,Are you ready?,
+npctalk4988_01_24,"Haha, show me your strength if you can!",
+npctalk4988_13,Those damn villains Heathendom!  They even tried to assimilate us.  That's impossible!  Defeat me first!,
+npctalk4988_14,Do you want to have a try?  Then you'd better take care.  Show me your strength if you can!,
+npctalk4995_01_12,"Those villains of Heathendom regard us as ignorant folks and thought that we would follow them upon their cheating in Simen Mountain.  So ridiculous, I have been waiting here to show my power to them!",
+npctalk4995_01_18,Are you ready?,
+npctalk4995_01_24,"Haha, show me your strength if you can!",
+npctalk4995_13,Those damn villains Heathendom!  They even tried to assimilate us.  That's impossible!  Defeat me first!,
+npctalk4995_14,Do you want to have a try?  Then you'd better take care.  Show me your strength if you can!,
+npctalk5002_01_12,"Those villains of Heathendom regard us as ignorant folks and thought that we would follow them upon their cheating in Simen Mountain.  So ridiculous, I have been waiting here to show my power to them!",
+npctalk5002_01_18,Are you ready?,
+npctalk5002_01_24,"Haha, show me your strength if you can!",
+npctalk5002_13,Those damn villains Heathendom!  They even tried to assimilate us.  That's impossible!  Defeat me first!,
+npctalk5002_14,Do you want to have a try?  Then you'd better take care.  Show me your strength if you can!,
+npctalk5011,Those horrible demons have been capturing children those days and put them into black cages...  Who can rescue us?  I am starving!,
+npctalk5013,"There are more and more demons these days, and no clear trend yet.  Please take care at any time and avoid going out frequently.  Please bear in mind!",
+npctalk5014,"After casting spell to separate my soul from body, I can clearly hear the horrible shrieks of those demons...",
+npctalk5015,"During the period of demon's lasting provocation, we must enhance alertness to keep serenity in this world.",
+npctalk5016,It was Lady Fei who told me the evil behavior of Malefic Hong.  It's so difficult to straighten up.,
+npctalk5017,"I have to save my uncle's face this time.  Damn, he himself went to Snow Mountain, leaving elderly people here.",
+npctalk5018,It can be regarded as a great merit I earn for Tamer profession if I am able to eliminate the demon disaster before I achieve ultimate achievement!,
+npctalk5019,"I cannot go there personally, so I have to cast spells to let my soul go to search for information instead.",
+npctalk5020,"It has not been a long time since I started cultivating myself according to religious doctrine, so my soul cannot be far away from my body.  That's why I must guard near Moon Dragon Village.",
+npctalk5021,It was Lady Fei who told me the evil behavior of Malefic Hong.  It's so difficult to straighten up.,
+npctalk5022,"I have to save my uncle's face this time.  Damn, he himself went to Snow Mountain, leaving elderly people here.",
+npctalk5023,It can be regarded as a great merit I earn for Tamer profession if I am able to eliminate the demon disaster before I achieve ultimate achievement!,
+npctalk5026,"Alas!  I really regret not listening father's advice.  I went to Simen Mountain by stealth and then stuck by demon.  If I can succeed to escape this time, I will certainly make an apology to him!",
+npctalk5027,"Oh, no!  Many venomous things have run from Simen Mountain, and they sting people on first sight...  Please figure a way out soon, it's very urgent!",
+npctalk5030,What a spectacular scene!  ,
+npctalk5031,"I am Nameless Warrior, Nameless Warrior is my name.  Human life comes and goes fast without destination...",
+npctalk5032,Small gift means a lot.  Our high-quality mail service here always keeps long-standing friendship between you and your dear friend.,
+npctalk5033,"Unfortunately, I was asked to take charge of such a strange place.  It's hard to do business here!  Maybe I will be at risk soon...  Come to the point!  I am very busy!  ",
+npctalk5034,"God bless me!  Please spare me from those robbers and evils.  I saw nothing, really nothing...",
+npctalk5035,Great!  Good medicine as expected!!,
+npctalk5038,Nice to meet you!  Please work hard to learn the skills and try your best to protect this wonderful world!,
+npctalk5053,Good day!  Hope everyone try best to acquire good skills and great power!  Eliminate evil monsters to protect the people!,
+npctalk5082,"Cave Witch wants to kill all of us, our safe are under big threat.  If we still lack of timely rescue, we will die soon.",
+npctalk5120,So horrible here...  We must stay more alert at any time.,
+npctalk5121,"Nice to meet you.  I am Taoist Flying Rainbow, one of the seven Wizard immortals.  Although all three parties of us join together to challenge the heathendom, we are still under the disadvantage of short-staffed.",
+npctalk5122,"Thunder Spirit Pearl, our most valuable treasure,  is now in the hands of our enemy.  We are bound to suppress Stone Wood to eliminate this disgrace!",
+npctalk5123,"If all creatures enjoy the equality statues in your eyes, you are sure to understand the power of Buddha and no longer be scared of any evil spirit.",
+npctalk5124,I am not strong enough to assist my Class to defeat those demons.,
+npctalk5125,"You Tan, master of my Class, gets along with Master with White Eyebrow as peers.  So my Class also has relations with Monk Class and embraces great compassion.",
+npctalk5126,"I was the leader of Happiness Village, Jiu Hua Mountain.  Once I was directed by Heaven Child who comes from Assassin Class.  Though I have yet been recruited as his apprentice, I will try my best to help them.",
+npctalk5127,"Now most of our members of justical part are gathering here to suppress Barbarian Mountain, we still face difficulties.  Only two of us cannot meet the challenge of Wizard at all!  We must recruit more fighters to defeat them.",
+npctalk5128,Master will leave with complete achievements...  Wish to meet you again in the future!,
+npctalk5129,So gloomy here!  Even more horrible than underworld...  No way to break it?,
+npctalk5130,I am feeling something unusual in our part these days.  Let me check it.,
+npctalk5133,Damn!  I should have expected the revenge from Fallen Libardo...  I was so careless.,
+npctalk5134,"Don't worry, I am not from the heathendom.  My current appearance was resulted from Cave Witch's spells.  What a hell!",
+npctalk5135,Wait a moment please!  I have something to show you.,
+npctalk5146_02_19,Barbarian Mountain Chill Wind Cave,
+npctalk5146_13,Here is the entrance of Mountain Chill Wind Cave.  This cave is mysterious and unfathomable.  Bless you!,
+npctalk5146_19,Enter Chill Wind Cave,
+npctalk5147_02_19,Barbarian Mountain Chill Wind Cave,
+npctalk5147_13,Leave here soon before enemy's troop's arrival!  Tell everything here to people outside.,
+npctalk5147_19,Leave Chill Wind Cave,
+npctalk5172_01_12,"Wow!  You are able to find such a secret location, I am sure you came all the way here to hunt for the one inside.  But...  I am afraid that you will meet unexpected threat.",
+npctalk5172_01_18,Are you ready?,
+npctalk5172_01_24,Yes!,
+npctalk5172_13,"Sorry, someone has taken an earlier action, so you have to wait before making decision.",
+npctalk5173_01_12,"You are leading the right way, right?  That's ok.  Be careful, none of us knows the condition inside.  Our fates are now in the hands of god.",
+npctalk5173_01_18,Are you ready?,
+npctalk5173_01_24,Yes!,
+npctalk5174_01_12,"Who are you?!  If you don't wanna meet your death, please leave here now!  If you wanna show your power to me, you can start now!",
+npctalk5174_01_18,Are you ready?,
+npctalk5174_01_24,Yes!,
+npctalk5175_01_12,"Wait a moment please!  It's so dangerous here, you'd better give up.",
+npctalk5175_01_18,Are you ready?,
+npctalk5175_01_24,Yes!,
+npctalk5176_01_12,"If you continue your adventure, you will meet punishment.  Your fate is now in your own hand, please consider carefully.",
+npctalk5176_01_18,Are you ready?,
+npctalk5176_01_24,Yes!,
+npctalk5177_01_12,"So fabulous!  This is the greatest battle I've ever seen!  You defeated those five Guardians, best wishes for you.",
+npctalk5177_01_18,Are you sure to leave here now?,
+npctalk5177_01_24,Yes.,
+npctalk5218,The rumors about Sky Village maybe come from Lotus Cave.,
+npctalk5219,Wish all Sky villagers can avoid this disaster.,
+npctalk5220,"I am so busy!  Many unusual things have taken place here, do you have any idea about those bandits?",
+npctalk5221,It never occurred to me that there is such a great conspiracy in Black Wind Camp!  Please pass this news to Zhou soon.,
+npctalk5222,"Please wait a moment!  I've been searching for the panacea ""Blue Frost and White Snow "", do you have any idea about its whereabouts?",
+npctalk5223,Snow Village is much colder in winter.  It will put you through the coldness if you have no preparation.,
+npctalk5224,Something unusual have taken place in Far Temple.  I am sure conspiracy is planned.,
+npctalk5225,The entrance of Whorl Mountain is well-designed.  I admire the designers' wisdom despite that they are our enemies.,
+npctalk5226,Those sword masters in Ghost Din Woods have helped us a lot!  These foods cannot express our gratitude at all.,
+npctalk5227,Clear Water Dam is under great threat now.  But those villagers from Loo's Village and Chen's Manor are taking this chance to stir up troubles!  So awful!,
+npctalk5228,Crow Forest presbyter asked us to head for Stone City and visit Zhou.  Need help?,
+npctalk5305,"Buddha Lotus embraces the power of justice. With this power and friends' help, I can do a better job in the battle to protect this serene world and my true love.  My love, it's my best wish to spend the rest of my life with you!",
+npctalk5306,I feel great happiness for being with my true love!  I think love is the greatest and eternal power in the world!,
+npctalk5308_1,"It's the starting point of the Junior Race, which is only available for players of level 30 - 40.  The race starts at PST 19:00 (Monday), 13:00 (Wednesday) and 7:00 (Friday) every week.  The route starts from here to Golden Peak Mountain.  There are Check Points along the route.  You will get an instant message after passing each Check Point.  If you miss a Check Point, the result of your race will be invalid.",
+npctalk5308_2,"Race will start soon, please get prepared!  You will be transported to the starting point.  The race closes at PST 21:00 (Monday), 15:00 (Wednesday) and 9:00 (Friday).  Route starts here and ends at Golden Peak Mountain.  There are Check Points along the route.  You will get an instant message after passing each Check Point.  If you miss a Check Point, the result of your race will be invalid.",
+npctalk5308_3,Are you ready?,
+npctalk5308_4,Yes!,
+npctalk5309_1,"It's the starting point of the Senior Race, which is only available for players of level 41 and above.  The race starts at PST 19:00 (Monday), 13:00 (Wednesday) and 7:00 (Friday) every week.  The route starts from here to Fantasy Palace in Whorl Mountain.  There are Check Points along the route.  You will get an instant message after passing each Check Point.  If you miss a Check Point, the result of your race will be invalid.",
+npctalk5309_2,"Race will start soon, please get prepared!  You will be transported to the starting point.  The race closes at PST 21:00 (Monday), 15:00 (Wednesday) and 9:00 (Friday).  Route starts here and ends at Fantasy Palace in Whorl Mountain.  There are Check Points along the route.  You will get an instant message after passing each Check Point.  If you miss a Check Point, the result of your race will be invalid.",
+npctalk5309_3,Are you ready?,
+npctalk5309_4,Yes!,
+npctalk5332,"Oh, I am so glad to meet you!  My team was looted by those damn bandits!  Fortunately, I escaped with these treasures.  Are you interested in my valuable treasures?",
+npctalk5333_1,"Please leave here soon, or you will be killed soon!",
+npctalk5333_2,Leave Bamboo Valley,
+npctalk5333_3,Cloud Mountain Bamboo Valley,
+npctalk5348_14,I am sure you will make great achievements in the future.  Hope to meet you again! ,
+npctalk5349_14,"As one of the twelve Golden Phoenixes, I came here all the way from Golden Peak Mountain to celebrate the two-year anniversary of Talisman Online with all of you!",
+npctalk5350_14,Would you please do charity?,
+npctalk5373,Points Merchant (bound goods),
+npctalk5418,South Border Warrior Ranking List,
+npctalk5500,I am so tired!  Such a tough place!  ,
+npctalk5501,"It's heard that there are immortals wandering here sometimes.  If I have the chance to meet them, my father may get rid of the misfortune.  But where are immortals on earth?",
+npctalk5502,We lack of the medicine materials we need.,
+npctalk5503,What can I do for you?,
+npctalk5504,I am seriously ill.  I am so worried about my two children. ,
+npctalk5505,Good!  We have delicious chicken soup tonight!!,
+npctalk5506,"Haha!  I get you finally, come out!",
+npctalk5507,Sh!  Be quiet!  ,
+npctalk5508,Sh!  Be quiet!  ,
+npctalk5509,Sh!  Be quiet!  ,
+npctalk5510,Sh!  Be quiet!  ,
+npctalk5511,I shouldn't have believed Elder Dong.  Those medicines he bought are so crappy.  Such a great loss!,
+npctalk5512,I have mystic recipes!,
+npctalk5513,Try our best to do a good job on Lantern Festival!,
+npctalk5515,I am afraid the harvests this year are much less.  I'd better visit Elder Dong to learn some ways to control pests.,
+npctalk5516,We have been managing this Orchard for a long time.  But recently we find many pests...   So annoying!,
+npctalk5517,"You have new grain to transport?  Please take care.  Those mice inside are big, please don't hurt them.",
+npctalk5532,"Hello!  I am Childe Tangz.  I have been finding immortals.  Today I found them finally!  To the north of this mountain lies the Ease Cloud Cave, if you wanna make more achievements in your pursuit.  Please go to this place!",
+npctalk5532_01_12,How dare you question the medicine sent by immortal?  I cannot forgive you!,
+npctalk5532_01_18,"Well, it's not so late if you change your mind now.",
+npctalk5532_01_24,Show me your strength!,
+npctalk5542,What can I do for you?,
+npctalk5543_1,I... am ... not ghost!  I will tell you the truth in the future.  Please leave here soon.,
+npctalk5543_2,Enter Ease Cloud Cave,
+npctalk5543_3,North Resting Place Ease Cloud Cave,
+npctalk5544_1,I wanna find a safe place.,
+npctalk5544_2,Leave Ease Cloud Cave,
+npctalk5544_3,North Resting Place Ease Cloud Cave,
+npctalk5550_1,"Hexagram Array is now closed now.  If you wanna pass it, you must activate Hellfire Vessel.  Hellfire Vessel will start absorbing the nimbus once it's activated.  But demons will also start absorbing the nimbus.  We must stop these demons to ensure the Hexagram Array will not be closed!",
+npctalk5550_2,Activate Hellfire Vessel,
+npctalk5600,"It's hard to deal with those mobs in Thunder Ridge,  so we must find more partners.  If you can help us, we will never forget your kindness.",
+npctalk5601,"Sh!  If we are found by them, we will be in big trouble.  What else do you need to know?",
+npctalk5602,"I can carve everything you need.  But I am busy carving joss now, they can suppress demons!",
+npctalk5603,We will try our best to guard our home! ,
+npctalk5604,Wish you good luck!,
+npctalk5605,"All my partners were killed...  We've found important information, but those devils captured us and killed my bros.  Please help me!",
+npctalk5606,"My master is Wizard Liyu.  He asked me to expel demons here and get some information.  But I am not powerful enough to deal with all demons, I wanna help.",
+npctalk5607,Please don't disturb me.  You'd better practice more with your masters before wandering here.,
+npctalk5608,I was asked to expel devils here.  But now I need someone to help me to fight.,
+npctalk5610,So many demons here!  I must learn master's skills soon to make more contributions!,
+npctalk5630_1,Can make Hell Spark.,
+npctalk5630_2,Make Hell Spark,
+npctalk5635,"We are surrounded.  It's a place full of ghosts.  We've already got some useful information about the ghosts here, we were captured by those ghosts on the way.  ",
+npctalk10003_19,Enter Cave,
+npctalk10004_19,Leave Cave,
+npctalk10005_19,Enter Cave,
+npctalk10006_19,Leave Cave,

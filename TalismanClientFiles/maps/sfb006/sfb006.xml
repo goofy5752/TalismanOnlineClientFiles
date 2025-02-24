@@ -1,0 +1,10 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<boundless blrate="0x2" bltile="0x80" blwidth="40.000" centerx="0x5" centery="0x0" cnt="0x7" h="0x3" name="sfb006.snw" set="sfb006" version="0x506" w="0x6">
+   <block file="sfb006_105000" id="0x6" x="0x0" y="0x0"/>
+   <block file="sfb006_103000" id="0x5" x="0x2" y="0x0"/>
+   <block file="sfb006_000000" id="0x1" x="0x5" y="0x0"/>
+   <block file="sfb006_101001" id="0x3" x="0x4" y="0x1"/>
+   <block file="sfb006_000001" id="0x2" x="0x5" y="0x1"/>
+   <block file="sfb006_103002" id="0x7" x="0x2" y="0x2"/>
+   <block file="sfb006_101002" id="0x4" x="0x4" y="0x2"/>
+</boundless>

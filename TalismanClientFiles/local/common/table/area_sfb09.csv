@@ -1,0 +1,5 @@
+ae,string,string,string,marea
+编号,区域名字,区域音乐,区域Logo,区域
+"ID","Name","Music","Logo","Area"
+1,$L:Scenestable_yinhudong$,cave4,33,"222 506 534 771;"
+2,$L:Scenestable_yinge$,cave1,33,"247 768 534 1031;"

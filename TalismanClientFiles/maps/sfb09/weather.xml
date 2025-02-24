@@ -1,0 +1,20 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x6">
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF804040" fog="0xFFFF0000" forfar="2000.000" fornear="1000.000" name="天气01" range="100.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-754.175" left="6071.147" right="9390.521" top="-4305.745"/>
+   </group>
+   <group colors="true" desc="" env="0xFF393E60" envo="0xFF4C4C4C" fog="0xFF2D6B99" forfar="1500.000" fornear="600.000" name="天气02" range="300.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-25609.201" left="25608.896" right="30704.787" top="-30700.682"/>
+      <area bottom="-20513.055" left="25630.906" right="30687.658" top="-25620.678"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFFBD5F00" fog="0xFFFF0000" forfar="2000.000" fornear="1000.000" name="天气03" range="300.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-20497.764" left="30673.867" right="35808.898" top="-25565.027"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="ss" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF008000" forfar="2500.000" fornear="300.000" name="天气04" range="300.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-20493.758" left="20493.293" right="25604.838" top="-25569.992"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF62B0FF" fog="0xFF0080FF" forfar="1500.000" fornear="150.000" name="天气05" range="300.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-20506.213" left="16476.730" right="20498.648" top="-25566.303"/>
+   </group>
+</weather>

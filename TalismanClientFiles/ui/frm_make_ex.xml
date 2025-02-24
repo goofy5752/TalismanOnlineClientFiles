@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Make_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="458,210,294,450" Name="frMakeEx" Show="true">
+      <Label Inherit="bg1" Location="7,20,280,420" Name="846" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="905" Show="fals"/>
+      <Label Inherit="bg3" Location="28,75,238,166" Name="2347" Show="true"/>
+      <Label Inherit="bg3" Location="28,303,238,92" Name="2572" Show="true"/>
+      <Label AlignCol="CENTER" Inherit="" Location="83,0,130,68" Name="lbTitle" Show="true" Text="$L:571$" TextFont="$L:1$" TextSize="$L:3$" AlignLine="CENTER"/>
+      <ListBox AutoScrollV="true" DrawHeader="false" Inherit="" Location="33,83,228,150" Name="lstMakeItem" Show="true">
+        <Scripts>
+          <OnLoad>layWorld_frMakeEx_lstMakeItem_OnLoad(self)</OnLoad>
+          <OnSelect>layWorld_frMakeEx_lstMakeItem_OnSelect(self)</OnSelect>
+        </Scripts>
+      </ListBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="30,55,60,20" Name="599" Show="true" Text="$L:572$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <Button Inherit="" Location="35,242,36,36" Name="btMakeItem" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frMakeEx_btItem_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="85,247,160,24" Name="lbMakeItemName" Show="true" Text="$L:573$">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="29,281,60,22" Name="1326" Show="true" Text="$L:574$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <Button Inherit="" Location="35,311,36,36" Name="btMake1" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frMakeEx_btItem_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="70,312,76,34" Name="lbMake1" Show="true"/>
+      <Button Inherit="" Location="146,311,36,36" Name="btMake2" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frMakeEx_btItem_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,312,76,34" Name="lbMake2" Show="true"/>
+      <Button Inherit="" Location="35,351,36,36" Name="btMake3" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frMakeEx_btItem_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="69,352,76,34" Name="lbMake3" Show="true"/>
+      <Button Inherit="" Location="146,351,36,36" Name="btMake4" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frMakeEx_btItem_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,352,76,34" Name="lbMake4" Show="true"/>
+      <Button Inherit="PushButton" Location="30,403,70,20" Name="btMakeAll" Show="true" Text="$L:575$">
+        <Scripts>
+          <OnLClick>layWorld_frMakeEx_btMakeAll_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="173,403,40,20" Name="bt_Make" Show="true" Text="$L:576$">
+        <Scripts>
+          <OnLClick>layWorld_frMakeEx_bt_Make_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="217,403,40,20" Name="bt_Cancel" Show="true" Text="$L:577$">
+        <Scripts>
+          <OnLClick>layWorld_frMakeEx_bt_Cancel_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="122,403,30,20" Name="lbMakeItemNumber" Show="true" Text="$L:578$">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <Button Inherit="" Location="109,406,12,14" Name="btMakeLeft" Show="true">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frMakeEx_btMakeLeft_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="153,407,12,14" Name="btMakeRight" Show="true">
+        <NormalImage File="tz_010" Source="76,382,12,14"/>
+        <PushedImage File="tz_010" Source="76,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frMakeEx_btMakeRight_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,-1,294,30" Show="true"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_ITEM_RECV_COMPOSE_LIST")
+			self:RegisterScriptEventNotify("bag_item_update")
+			self:RegisterScriptEventNotify("bag_item_removed")
+			self:RegisterScriptEventNotify("CEV_ITEM_RECV_COMPOSE_BEGIN")
+			self:RegisterScriptEventNotify("CEV_ITEM_RECV_COMPOSE_END")
+			self:RegisterScriptEventNotify("CEV_ACTION_SELF_MOVE")
+			self:RegisterScriptEventNotify("CEV_GAMESTAGE_GAME_ONKEYDOWN")
+			self:RegisterScriptEventNotify("CEV_USER_LIFESKILL_COMPOSE_REFRESH")</OnLoad>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnEvent>if event == "CEV_ITEM_RECV_COMPOSE_LIST" then
+				layWorld_frMakeEx_RecvData_ToShow(self, arg[1])
+			elseif event == "bag_item_update" then
+				if self:getVisible() then
+					layWorld_frMakeEx_Refresh()
+				end
+			elseif event == "bag_item_removed" then
+				if self:getVisible() then
+					layWorld_frMakeEx_Refresh()
+				end
+			elseif event == "CEV_USER_LIFESKILL_COMPOSE_REFRESH" then
+				if self:getVisible() then
+					layWorld_frMakeEx_Refresh()
+				end
+			elseif event == "CEV_ITEM_RECV_COMPOSE_BEGIN" then
+				UI_Item_Compose_ItemIndex = arg[1]
+			elseif event == "CEV_ITEM_RECV_COMPOSE_END" then
+				layWorld_frMakeEx_Recv_Compose_Success(arg[1],arg[2])
+			elseif event == "CEV_ACTION_SELF_MOVE" then
+				if UI_Item_Compose_ItemIndex &gt; 0 then
+					uiItemCompose_StopComposeItem()
+				end
+			elseif event == "CEV_GAMESTAGE_GAME_ONKEYDOWN" then
+				if UI_Item_Compose_ItemIndex &gt; 0 then
+					if arg[1] == 27 then
+						uiItemCompose_StopComposeItem()
+					end
+				end
+			end</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

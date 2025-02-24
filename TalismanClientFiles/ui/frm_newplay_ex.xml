@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_newplay_ex.lua"></Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="252,138,300,350" Name="frmNewPlayEx" Show="false">
+      <Label Inherit="bg1" Location="10,20,280,320" Name="lbup" Show="true"/>
+      <TitleBarButton Location="8,8,280,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="267,33,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13 "/>
+        <PushedImage File="tz_010" Source="98,383,13,13 "/>
+      </CloseButton>
+      <Button Inherit="PushButton" Location="180,305,65,22" Name="btCancel" Show="true" Text="$L:831$">
+		<Scripts>
+		  <OnLClick>layWorld_frmNewPlayEx_btCancel_OnLCLick(self);</OnLClick>
+		</Scripts>
+	  </Button>
+      <Button Inherit="PushButton" Location="58,305,65,22" Name="btBack" Show="true" Text="$L:830$">
+		<Scripts>
+		  <OnLClick>layWorld_frmNewPlayEx_btBack_OnLClick(self);</OnLClick>
+		</Scripts>
+	  </Button>
+      <Form Inherit="NoTitleBarForm" Location="22,36,255,260" Name="frmHelpIndex" Show="true">
+        <Label Inherit="bg3" Location="0,30,255,210" Name="8946" Show="true"/>
+        <Button Inherit="PushButtonLong" Location="19,60,220,22" Name="btTaskGuide" Show="true" Text="$L:827$">
+		  <Scripts>
+		    <OnLClick>layWorld_frmNewPlayEx_frmHelpIndex_btTaskGuide_OnLClick(self);</OnLClick>
+		  </Scripts>
+	    </Button>
+        <Button Inherit="PushButtonLong" Location="19,119,220,22" Name="btMonsterGuide" Show="true" Text="$L:828$">
+		  <Scripts>
+		    <OnLClick>layWorld_frmNewPlayEx_frmHelpIndex_btMonsterGuide_OnLClick(self);</OnLClick>
+		  </Scripts>
+	    </Button>
+        <Button Inherit="PushButtonLong" Location="19,179,220,22" Name="btDungeonGuild" Show="true" Text="$L:829$">
+		  <Scripts>
+		    <OnLClick>layWorld_frmNewPlayEx_frmHelpIndex_btDungeonGuild_OnLClick(self);</OnLClick>
+		  </Scripts>
+	    </Button>
+        <Label Inherit="" Location="-1,14,255,18" Name="9785" Show="true">
+          <BackgroundImage File="tz_012" Source="232,153,212,18"/>
+        </Label>
+        <Label Inherit="" Location="-1,238,255,18" Name="9859" Show="true">
+          <BackgroundImage File="tz_012" Source="232,178,212,18"/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="19,50,260,250" Name="frmgettask" Show="false">
+        <Label Inherit="bg3" Location="0,0,260,250" Name="4837" Show="true"/>
+        <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="9,7,245,236" Name="edbtask" Show="fals" WordWrap="true">
+		  <Scripts>
+		    <OnLoad>layWorld_frmNewPlayEx_frmgettask_edbtask_OnLoad(self);</OnLoad>
+		    <OnEvent>layWorld_frmNewPlayEx_frmgettask_edbtask_OnEvent(self, event, arg);</OnEvent>
+		    <OnHyperLink>layWorld_frmNewPlayEx_frmgettask_edbtask_OnHyperLink(self, hypertype, hyperlink);</OnHyperLink>
+		  </Scripts>
+		</EditBox>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="19,50,260,250" Name="frmkillmonster" Show="false">
+        <Label Inherit="bg3" Location="0,0,260,250" Name="4837" Show="true"/>
+        <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="9,7,245,236" Name="edbmonster" Show="fals" WordWrap="true">
+		  <Scripts>
+		    <OnLoad>layWorld_frmNewPlayEx_frmkillmonster_edbmonster_OnLoad(self);</OnLoad>
+		    <OnEvent>layWorld_frmNewPlayEx_frmkillmonster_edbmonster_OnEvent(self, event, arg);</OnEvent>
+		    <OnHyperLink>layWorld_frmNewPlayEx_frmkillmonster_edbmonster_OnHyperLink(self, hypertype, hyperlink);</OnHyperLink>
+		  </Scripts>
+		</EditBox>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="19,50,260,250" Name="frmhelpfubenIndex" Show="false">
+        <Label Inherit="bg3" Location="0,0,260,250" Name="4837" Show="true"/>
+        <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="9,7,245,236" Name="edbfubenname" Show="fals" WordWrap="true">
+		  <Scripts>
+		    <OnLoad>layWorld_frmNewPlayEx_frmhelpfubenIndex_edbfubenname_OnLoad(self);</OnLoad>
+		    <OnEvent>layWorld_frmNewPlayEx_frmhelpfubenIndex_edbfubenname_OnEvent(self, event, arg);</OnEvent>
+		    <OnHyperLink>layWorld_frmNewPlayEx_frmhelpfubenIndex_edbfubenname_OnHyperLink(self, hypertype, hyperlink);</OnHyperLink>
+		  </Scripts>
+		</EditBox>
+      </Form>
+      <Label Inherit="TemplateNormalTitle" Location="4,5,292,40" Name="16653" Show="true">
+        <Label Name="lbTitelText" Show="false"/>
+      </Label>
+	  <Scripts>
+		<OnShow>layWorld_frmNewPlayEx_OnShow(self);</OnShow>
+	  </Scripts>
+    </Form>
+  </Layer>
+</Ui>

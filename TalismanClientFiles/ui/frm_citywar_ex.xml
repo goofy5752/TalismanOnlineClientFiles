@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_citywar_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form BackgroundColor="" Inherit="" Location="252,138,535,450" Name="frmcitywarEx" Show="false">
+      <Label Inherit="bg1" Location="7,18,520,430" Name="lbup" Show="fals">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,257,256,164" Name="lbdown" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="255,9,90,248" Name="589" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,90,164" Name="629" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="0,0,530,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="502,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Button Inherit="PushButton" Location="227,399,90,22" Name="btLoginCitywar" Show="true" Text="$L:762$">
+        <Scripts>
+          <OnLClick>layWorld_frmcitywarEx_btLoginCitywar_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="386,399,90,22" Name="btCancleCitywar" Show="true" Text="$L:763$">
+        <Scripts>
+          <OnLClick>layWorld_frmcitywarEx_btCancleCitywar_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="bg3" Location="15,147,500,240" Name="1672" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="19,50,147,24" Name="lbCityName" Show="true">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="34,80,80,18" Name="907" Show="true" Text="$L:756$"/>
+      <Label BackgroundColor="#99000000" Inherit="" Location="66,99,16,16" Name="lbGuildImg" Show="true">
+        <BackgroundImage File="tz_011" Source="1,1,80,19"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="145,80,80,18" Name="1069" Show="true" Text="$L:757$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="273,80,70,18" Name="1091" Show="true" Text="$L:758$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#99000000" Inherit="" Location="145,99,120,20" MouseEvent="true" MouseMove="true" Name="lbCityMasterGuild" Show="true">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+        <Hint/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#99000000" Inherit="" Location="273,99,100,20" MouseEvent="true" MouseMove="true" Name="lbCityMasterName" Show="true">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+        <Hint/>
+      </Label>
+      <Button Inherit="PushButton" Location="19,122,76,20" Name="btCitywarTime" Show="true" Text="$L:759$">
+        <Scripts>
+          <OnLClick>layWorld_frmcitywarEx_btCitywarTime_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="104,122,76,20" Name="btAttackerGuild" Show="true" Text="$L:760$">
+        <Scripts>
+          <OnLClick>layWorld_frmcitywarEx_btAttackerGuild_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="187,122,76,20" Name="btDefenderGuild" Show="true" Text="$L:761$">
+        <Scripts>
+          <OnLClick>layWorld_frmcitywarEx_btDefenderGuild_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="19,151,475,32" Name="lbWarTime" Show="true"/>
+      <ListBox Inherit="" Location="18,150,492,234" Name="lsAttacker">
+        <Scripts>
+          <OnLoad>layWorld_frmcitywarEx_lstBox_OnLoad(self)</OnLoad>
+        </Scripts>
+      </ListBox>
+      <ListBox Inherit="" Location="18,150,492,234" Name="lsDefender">
+        <Scripts>
+          <OnLoad>layWorld_frmcitywarEx_lstBox_OnLoad(self)</OnLoad>
+        </Scripts>
+      </ListBox>
+      <Button Inherit="PushButton" Location="58,399,90,22" Name="btGetFlag" Show="true" Text="$L:765$">
+        <Scripts>
+          <OnLClick>layWorld_frmcitywarEx_btGetFlag_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,532,47" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="205,0,124,68" Name="24661" Show="true" Text="$L:1040$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_WAR_RECV_WAR_INFO")
+		self:RegisterScriptEventNotify("CEV_WAR_RECV_UPDATE_WAR_DATA")</OnLoad>
+        <OnEvent>if event == "CEV_WAR_RECV_WAR_INFO" then
+				layWorld_frmcitywarEx_Show(self, arg[1])
+			elseif event == "CEV_WAR_RECV_UPDATE_WAR_DATA" then
+				layWorld_frmcitywarEx_Refresh()
+			end</OnEvent>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

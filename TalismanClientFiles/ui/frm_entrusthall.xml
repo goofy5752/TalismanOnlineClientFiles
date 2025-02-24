@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_entrusthall.lua">LUA</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="190,140,800,500" Name="frmEntrusthall" Show="true">
+      <Label Inherit="bg1" Location="10,10,780,480" Name="997" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,800,45" Name="627" Show="true"/>
+      <TitleBarButton Location="0,0,800,45"/>
+      <CloseButton Location="765,27,16,16">
+        <NormalImage File="tz_010" FillMode="STRETCH" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" FillMode="STRETCH" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="340,-8,120,80" Name="959" Show="true" Text="委托大厅" TextFont="$L:1$" TextSize="$L:4$"/>
+      <Label Inherit="bg3" Location="20,54,760,340" Name="2949" Show="true"/>
+      <ListBox AutoScrollV="true" BackgroundColor="" Inherit="" Location="25,59,750,330" Name="lbxEntrust" Show="true">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="委托等级" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="委托难度" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="委托发布人" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="委托名称" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="委托奖励" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="信誉度" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="当前状态" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="有效期" TextColor="#eefff902" Width="70"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="委托描述" TextColor="#eefff902" Width="100"/>
+      </ListBox>
+      <Label Inherit="" Location="219,446,100,18" Name="2254" Show="true" Text="可发布委托次数"/>
+      <Label Inherit="" Location="429,446,100,18" Name="2248" Show="true" Text="可接受委托次数"/>
+      <Button Inherit="PushButton" Location="73,443,70,24" Name="btReceiveEntrust" Show="true" Text="接受委托"/>
+      <Button Inherit="PushButton" Location="629,442,70,24" Name="btReceivedTrust" Show="true" Text="已接受委托"/>
+      <Label Inherit="" Location="318,446,100,18" Name="lbIssueTimes" Show="true"/>
+      <Label Inherit="" Location="528,446,100,18" Name="lbReceiveTimes" Show="true"/>
+      <Button Inherit="PushButton" Location="709,442,70,24" Name="btRefresh" Show="true" Text="刷新">
+        <Scripts>
+          <OnLClick>layWorld_frmEntrusthall_BtnRefresh_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="629,410,70,24" Name="btPrepage" Show="true" Text="上一页">
+        <Scripts>
+          <OnLClick>layWorld_frmEntrusthall_BtnPrepage_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="709,410,70,24" Name="btNextpage" Show="true" Text="下一页">
+        <Scripts>
+          <OnLClick>layWorld_frmEntrusthall_BtnNextpage_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+	  <Scripts>
+        <OnLoad>layWorld_frmEntrusthall_OnLoad(self)</OnLoad>
+		<OnShow>layWorld_frmEntrusthall_OnShow(self)</OnShow>
+		<OnEvent>layWorld_frmEntrusthall_OnEvent(self,event,arg)</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

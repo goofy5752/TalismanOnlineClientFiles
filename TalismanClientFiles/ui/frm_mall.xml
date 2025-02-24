@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="104,192,300,370" Name="frmItem" Show="false">
+      <Label Inherit="bg1" Location="10,20,260,285" Name="lbMall" Show="true" Size=""/>
+      <TitleBarButton Location="10,8,280,28" Text=""/>
+      <Label Inherit="TemplateNormalTitle" Location="4,4,272,49" Name="24359" Show="true"/>
+      <CloseButton Location="245,33,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="120,383,13,13"/>
+      </CloseButton>
+      <Button Inherit="" Location="176,68,14,14" Name="btnMallPageUp" Show="true" Text="">
+        <NormalImage File="tz_010" Source="50,382,14,14"/>
+        <PushedImage File="tz_010" Source="50,399,14,14"/>
+      </Button>
+      <Button Inherit="" Location="244,68,14,14" Name="btnMallPageDown" Show="true" Text="">
+        <NormalImage File="tz_010" Source="75,382,14,14"/>
+        <PushedImage File="tz_010" Source="75,399,14,14"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="192,65,50,20" Name="labPage" Show="true" Text="1/2">
+        <BackgroundImage File="tz_010" Source="443,217,60,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="22,63,147,24" Name="lbMallname" Show="true" Text="111111">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Button Inherit="PushButton" Location="40,260,58,20" Name="btMallName" Show="true" Text="$L:730$"/>
+      <Button Inherit="PushButton" Location="185,260,58,20" Name="btCancel" Show="true" Text="$L:732$"/>
+      <Button Inherit="PushButton" Location="112,260,58,20" Name="btOpentMall" Show="true" Text="$L:731$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="79,0,120,74" Name="8244" Show="true" Text="$L:733$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="32,95,219,149" Name="18893" Show="true"/>
+      <Label Inherit="" Location="35,99,213,141" Name="20357" Show="true">
+        <BackgroundImage File="tz_011" Source="298,2,213,141"/>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

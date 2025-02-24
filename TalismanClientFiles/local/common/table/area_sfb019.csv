@@ -1,0 +1,18 @@
+ae,string,string,string,marea,int
+编号,区域名字,区域音乐,区域Logo,区域,地图id
+ID,Name,Music,Logo,Area,ZoneId
+1,$L:guangchanghuayuan$,,,"633 -179 815 -21;
+653 -22 689 -2;
+748 -22 790 -3;",
+2,$L:sanshengdian$,,,"688 91 747 100;
+720 99 747 103;
+691 79 747 92;
+689 -22 748 81;",
+3,$L:siguoting$,,,643 -3 677 67;,
+4,$L:siguotingzoulang$,,,"653 79 691 92;
+653 67 669 80;",
+5,$L:cangjingge$,,,687 99 722 129;,
+6,$L:huayuanhuilang$,,,746 43 833 107;,
+7,$L:sanshengshan$,,,784 105 861 273;,
+8,$L:tongtianta$,,,805 272 850 316;,
+9,$L:shengdiancanhai$,,,634 149 687 255;,

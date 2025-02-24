@@ -1,0 +1,12 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:Scenestable_qixintaichongsheng$,戴家场七星台副本,qixingtai/,"-269 374 2 771;
+-269 255 2 376;
+1 43 255 495;
+100 2 256 46;
+-657 646 -513 768;
+-740 526 -616 648;
+-655 19 -510 146;
+-761 120 -635 243;
+-1287 -4 -1017 261;",148 62 15;,0

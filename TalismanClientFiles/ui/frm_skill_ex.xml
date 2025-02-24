@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_skill_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="252,128,294,512" Name="frmSkillEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,445" Name="lbUP" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="lbDown" Show="fals"/>
+      <Label Inherit="" Location="13,86,268,6" Name="5658" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+      <TitleBarButton AlignCol="CENTER" Location="0,-1,294,30" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="265,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="27,52,80,40" Name="btnSkills" Show="true" Text="$L:172$">
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_frmSkillEx_btnSkills_OnLClick()</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="107,52,80,40" Name="btnOtherSkills" Show="true" Text="$L:173$">
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_frmSkillEx_btnOtherSkills_OnLClick()</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Form Inherit="NoTitleBarForm" Location="28,111,238,316" Name="frmOtherSkills" Show="false">
+        <Label Inherit="bg3" Location="7,0,226,54" Name="5007" Show="true"/>
+        <Label Inherit="bg3" Location="7,61,226,54" Name="781" Show="true"/>
+        <Button Inherit="" Location="12,6,40,40" Name="lbOtherSkillIcon1" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+          <Scripts>
+            <OnLClick>layWorld_frmSkillEx_frmOtherSkills_lbOtherSkillIcon_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="" Location="58,9,100,18" Name="lbOtherSkillName1" Show="true" Text=""/>
+        <ProgressBar BackgroundColor="#ee000000" Inherit="" Location="57,33,162,10" Name="prgOtherSkill1" Show="true">
+          <ProgressBarImage File="tz_010" Source="380,405,116,8"/>
+        </ProgressBar>
+        <Button Inherit="" Location="12,67,40,40" Name="lbOtherSkillIcon2" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+          <Scripts>
+            <OnLClick>layWorld_frmSkillEx_frmOtherSkills_lbOtherSkillIcon_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="" Location="58,70,100,18" Name="lbOtherSkillName2" Show="true" Text=""/>
+        <ProgressBar BackgroundColor="#ee000000" Inherit="" Location="57,94,162,10" Name="prgOtherSkill2" Show="true">
+          <ProgressBarImage File="tz_010" Source="380,405,116,8"/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,122,230,54" Name="wgOtherSkill3" Show="false">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,128,40,40" Name="lbOtherSkillIcon3" Show="false">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+        </Button>
+        <Label Inherit="" Location="58,131,70,18" Name="lbOtherSkillName3" Show="false" Text=""/>
+        <ProgressBar Inherit="" Location="57,155,162,10" Name="prgOtherSkill3" Show="false">
+          <ProgressBarImage File="tz_010" Source="380,405,116,8"/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,184,230,54" Name="wgOtherSkill4" Show="false">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,190,40,40" Name="lbOtherSkillIcon4" Show="false">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+        </Button>
+        <Label Inherit="" Location="58,195,70,18" Name="lbOtherSkillName4" Show="false" Text=""/>
+        <ProgressBar Inherit="" Location="57,218,162,10" Name="prgOtherSkill4" Show="false">
+          <ProgressBarImage File="tz_010" Source="380,405,116,8"/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,246,230,54" Name="wgOtherSkill5" Show="false">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,252,40,40" Name="lbOtherSkillIcon5" Show="false">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+        </Button>
+        <Label Inherit="" Location="58,257,70,18" Name="lbOtherSkillName5" Show="false" Text=""/>
+        <ProgressBar Inherit="" Location="57,280,162,10" Name="prgOtherSkill5" Show="false">
+          <ProgressBarImage File="tz_010" Source="380,405,116,8"/>
+        </ProgressBar>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="164,69,60,20" Name="btLifeSkillForget2" Show="true" Text="$L:635$">
+          <Scripts>
+            <OnLClick>layWorld_frmSkillEx_frmOtherSkills_btLifeSkillForget_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="164,8,60,20" Name="btLifeSkillForget1" Show="true" Text="$L:635$">
+          <Scripts>
+            <OnLClick>layWorld_frmSkillEx_frmOtherSkills_btLifeSkillForget_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="31,92,238,370" Name="frmTrumps" Show="true">
+        <Label Inherit="bg3" Location="3,27,135,52" Name="938" Show="true"/>
+        <Label Inherit="bg3" Location="3,104,224,52" Name="1748" Show="true"/>
+        <Label Inherit="bg3" Location="3,184,224,92" Name="2032" Show="true"/>
+        <Label Inherit="bg3" Location="3,304,224,52" Name="2212" Show="true"/>
+        <CheckButton Inherit="" Location="12,35,36,36" Name="btnWeapon1" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+          <CheckImage File="tz_010" Source="185,375,50,50"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillEx_frmTrumps_btnWeapon_OnHint(self)</OnHint>
+            <OnLClick>layWorld_frmSkillEx_frmTrumps_btnWeapon_OnLClick(self)</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <CheckButton Inherit="" Location="53,35,36,36" Name="btnWeapon2" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+          <CheckImage File="tz_010" Source="185,375,50,50"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillEx_frmTrumps_btnWeapon_OnHint(self)</OnHint>
+            <OnLClick>layWorld_frmSkillEx_frmTrumps_btnWeapon_OnLClick(self)</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <CheckButton Inherit="" Location="94,35,36,36" Name="btnWeapon3" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+          <CheckImage File="tz_010" Source="185,375,50,50"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillEx_frmTrumps_btnWeapon_OnHint(self)</OnHint>
+            <OnLClick>layWorld_frmSkillEx_frmTrumps_btnWeapon_OnLClick(self)</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="2,5,92,20" Name="758" Show="true" Text="$L:175$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="2,85,92,20" Name="780" Show="true" Text="$L:176$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label Inherit="" Location="7,110,220,40" MouseEvent="true" MouseMove="true" Name="labSkills" Show="true">
+          <Button Inherit="" Location="5,1,36,36" Name="btnSkill1" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="46,1,36,36" Name="btnSkill2" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="87,1,36,36" Name="btnSkill3" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="128,1,36,36" Name="btnSkill4" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="169,1,36,36" Name="btnSkill5" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_labSkills_btnSkill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+        </Label>
+        <EditBox EnableInput="false" Inherit="" Location="133,36,90,34" MultiLine="true" Name="edtDesc" Show="false" WordWrap="true">
+          <Border color="#111" size="2"/>
+        </EditBox>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="2,162,92,20" Name="1126" Show="true" Text="$L:177$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label Inherit="" Location="7,190,220,80" MouseEvent="true" MouseMove="true" Name="lbItemTalent" Show="true">
+          <Button Inherit="" Location="5,2,36,36" Name="btnTalent1" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="46,2,36,36" Name="btnTalent2" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="87,2,36,36" Name="btnTalent3" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="128,2,36,36" Name="btnTalent4" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="169,2,36,36" Name="btnTalent5" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="5,41,36,36" Name="btnTalent6" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="46,41,36,36" Name="btnTalent7" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="87,41,36,36" Name="btnTalent8" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="128,41,36,36" Name="btnTalent9" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="169,41,36,36" Name="btnTalent10" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbItemTalent_btnTalent_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="2,282,92,20" Name="2189" Show="true" Text="$L:178$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label Inherit="" Location="7,310,220,40" MouseEvent="true" MouseMove="true" Name="lbFinalSkill" Show="true">
+          <Button Inherit="" Location="5,1,36,36" Name="btnSkillTill1" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts><OnHint>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnHint(self)</OnHint>.</Scripts>
+          </Button>
+          <Button Inherit="" Location="46,1,36,36" Name="btnSkillTill2" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="87,1,36,36" Name="btnSkillTill3" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="128,1,36,36" Name="btnSkillTill4" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="169,1,36,36" Name="btnSkillTill5" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+            <HighlightImage Blend="true" File="tz_010" Source="185,375,50,50"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnHint(self)</OnHint>
+              <OnLClick>layWorld_frmSkillEx_frmTrumps_lbFinalSkill_btnSkillTill_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CETNER" Inherit="" Location="143,163,52,18" Name="3163" Show="true" Text="$L:179$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="197,162,30,20" Name="lbLastPoint" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="134,5,92,20" Name="873" Show="true" Text="$L:1163$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label Inherit="bg3" Location="135,27,95,52" Name="1074" Show="true"/>
+        <Button Inherit="" Location="145,37,32,32" Name="btNormal2" Show="true">
+          <NormalImage File="ic_action_pracitice"/>
+          <Scripts>
+            <OnLClick>layWorld_frmSkillEx_frmTrumps_btNormal2_OnClick(self)</OnLClick>
+            <OnRClick>layWorld_frmSkillEx_frmTrumps_btNormal2_OnClick(self)</OnRClick>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Button Inherit="" Location="183,37,32,32" Name="btBlend" Show="true">
+          <NormalImage File="ic_action_fuse"/>
+          <Scripts>
+            <OnLClick>layWorld_frmSkillEx_frmTrumps_btBlend_OnClick(self)</OnLClick>
+            <OnRClick>layWorld_frmSkillEx_frmTrumps_btBlend_OnClick(self)</OnRClick>
+          </Scripts>
+          <Hint/>
+        </Button>
+      </Form>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,68" Name="6102" Show="true" Text="$L:171$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnLoad>self:RegisterScriptEventNotify("ToggleMagicWeapon")
+				self:RegisterScriptEventNotify("EVENT_SelfEnterWorld")
+				self:RegisterScriptEventNotify("UserSkillRefresh")
+
+				self:RegisterScriptEventNotify("equipment item changed")
+				self:RegisterScriptEventNotify("equipment item equiped")
+				self:RegisterScriptEventNotify("equipment item unequiped")</OnLoad>
+        <OnEvent>if event == "ToggleMagicWeapon" then
+				if (arg[1] ~= EV_EXCUTE_EVENT_KEY_DOWN) and (arg[1] ~= EV_EXCUTE_EVENT_ON_LCLICK) then
+					return
+				end
+				layWorld_frmSkillEx_Show(self)
+			elseif event == "EVENT_SelfEnterWorld" then
+				
+				layWorld_frmSkillEx_Player_EnterWorld()
+			elseif event == "UserSkillRefresh" then
+				if not self:getVisible() then return end
+				layWorld_frmSkillEx_Refresh()
+			elseif event == "equipment item changed" then
+				if not self:getVisible() then return end
+				layWorld_frmSkillEx_Refresh()
+			elseif event == "equipment item equiped" then
+				if not self:getVisible() then return end
+				layWorld_frmSkillEx_Refresh()
+			elseif event == "equipment item unequiped" then
+				if not self:getVisible() then return end
+				layWorld_frmSkillEx_Refresh()
+			end</OnEvent>
+        <OnUpdate Timer="40">layWorld_frmSkillEx_OnUpdate(self)</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

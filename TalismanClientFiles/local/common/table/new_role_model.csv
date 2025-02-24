@@ -1,0 +1,9 @@
+,,,,,,string,string,string,string,string,string,string,string,string,string,string,string,string
+,,,,,,没有武器时的等待动作,有武器时的等待动作,动作,创建时绑定的BOX,武器1,武器1连接,武器1收起link点,武器2,武器2连接,武器2收起link点,武器初始动作,特效,特效link
+party,sex,act,bodySkin,handSkin,footSkin,waitPoseWithoutWeapon,waitPoseWithWeapon,SelectedPose,linkBox,weapon1,weapon1Link,weapon1DrawInLink,weapon2,weapon2Link,weapon2DrawInLink,weaponInitPose,SelectedEffect,SelectedEffectLink
+0,0,pe,bpe08hp,hpe08hp,lpe08hp,wait_select,wait_select,show_select,Box01,iweb08_02,eff_show_e,,,,,,eff_show_e,root
+1,0,pf,bpf08hp,hpf08hp,lpf08hp,wait,wait_select,show_select,Box03,iwfb08_02,Blink_wp,Blink_bk,,,,effect,eff_show_f,root
+3,1,pb,bpb08hp,hpb08hp,lpb08hp,wait_select,wait_select,show_select,Box05,iwbb08_02,eff_show_b,,,,,,eff_show_b,root
+2,0,pq,bpq08hp,hpq08hp,lpq08hp,wait_select,wait_select,show_select,Box04,iwqb08_L_02,Blink_wp_L,Blink_bk_L,iwqb08_R_02,Blink_wp_R,Blink_bk_R,wait,eff_show_q,root
+4,1,px,bpx08hp,hpx08hp,lpx08hp,wait_select,wait_select,show_select,Box06,iwxa08_02,Blink_wp,Blink_bk01,,,,effect,eff_show_x,root
+0,1,pew04,bpew08hp,hpew08hp,lpew08hp,wait_select,wait_select,show_select,Box02,iwea08_02,eff_show_ew,,,,,,eff_show_ew,root

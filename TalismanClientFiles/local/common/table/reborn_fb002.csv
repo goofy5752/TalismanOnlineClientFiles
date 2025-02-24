@@ -1,0 +1,5 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生类型
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:ectype_ciyunsihuanxidian$,慈云寺欢喜殿,ciyunsihuanxidian/,"0 -5 258 256;
+244 -46 621 293;",55 31 0;,1

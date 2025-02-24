@@ -1,0 +1,35 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x9">
+   <group colors="true" desc="" env="0xFF6D806A" envo="0xFF669E4B" fog="0xFF71BB82" forfar="3000.000" fornear="500.000" name="毒001" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="4862.369" left="-4835.041" right="1284.181" top="100.606"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFFA2B44B" forfar="3000.000" fornear="500.000" name="毒-火001" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="122.711" left="409.268" right="1519.540" top="-1122.451"/>
+   </group>
+   <group colors="true" desc="" env="0xFFEC841C" envo="0xFFC7A312" fog="0xFFC67239" forfar="3000.000" fornear="600.000" name="火001" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="-1009.619" left="343.165" right="3301.786" top="-3419.583"/>
+      <area bottom="136.313" left="1591.569" right="3016.227" top="-1102.490"/>
+      <area bottom="4131.518" left="1400.418" right="3343.626" top="10.030"/>
+      <area bottom="4150.708" left="3315.688" right="3889.073" top="3356.065"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFFDECAF4" forfar="3000.000" fornear="500.000" name="火-冰" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="-181.066" left="3246.439" right="4935.994" top="-2423.494"/>
+   </group>
+   <group colors="true" desc="" env="0xFF244457" envo="0xFF6FA6C4" fog="0xFFBFF5FF" forfar="1200.000" fornear="700.000" name="冰" range="100.000" sun="0xFF4C4C4C" suno="0xFF2E2E2E">
+      <area bottom="3088.037" left="3441.107" right="9527.824" top="-177.605"/>
+      <area bottom="4596.484" left="4657.548" right="9483.881" top="3040.123"/>
+   </group>
+   <group colors="true" desc="" env="0xFF578184" envo="0xFFE6FFFF" fog="0xFFE6FFFF" forfar="1200.000" fornear="700.000" name="悬崖户外" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="6378.575" left="-32.771" right="5200.279" top="4096.294"/>
+      <area bottom="6978.780" left="1927.301" right="2588.749" top="6057.541"/>
+   </group>
+   <group colors="true" desc="" env="0xFF793571" envo="0xFFBC6BC0" fog="0xFF400040" forfar="1500.000" fornear="300.000" name="魔宫" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="13519.157" left="447.480" right="4804.160" top="6969.851"/>
+      <area bottom="6915.622" left="3082.266" right="4166.415" top="6413.390"/>
+      <area bottom="7037.797" left="789.710" right="1881.615" top="6571.279"/>
+   </group>
+   <group colors="true" desc="" env="0xFF353535" envo="0xFF353535" fog="0xFF353535" forfar="3000.000" fornear="300.000" name="暗" range="100.000" sun="0xFF353535" suno="0xFF353535">
+      <area bottom="-3406.191" left="1200.028" right="3505.312" top="-5138.580"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="34gfh" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

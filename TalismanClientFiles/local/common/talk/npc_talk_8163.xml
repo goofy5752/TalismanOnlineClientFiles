@@ -1,0 +1,37 @@
+  <Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="" Transparency="0.5"/>
+	  </Item>
+	</Items>
+  </Line>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="Level 52-58 Set" hlink="String:NpcDialog:armorset5258?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="Level 62-68 Set" hlink="String:NpcDialog:armorset6268?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="Blue Magic Bead (50%)" hlink="String:NpcDialog:bluemagicbead?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+    <Line>
+    <Items>
+	  <Item type="TEXT" text="1 Free Spin" hlink="String:NpcDialog:exchangespin?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+    <Line>
+    <Items>
+	  <Item type="TEXT" text="10 Free Spin" hlink="String:NpcDialog:exchangespin2?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+
+  <Line>
+  </Line>
+
+  <Line/>

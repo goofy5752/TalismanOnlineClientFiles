@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_gem_sign.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form DragIn="true" Inherit="" Location="200,170,300,370" MouseEvent="true" Name="frm_StoneSign" Show="false">
+      <Anchors/>
+      <Label Inherit="bg1" Location="10,20,280,335" Name="1637" Show="true"/>
+      <TitleBarButton Location="9,6,280,26"/>
+      <CloseButton Location="265,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,300,50" Name="21483" Show="true"/>
+      <Label Inherit="" Location="-2,256,256,75" Name="1671" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="57,64,188,129" Name="1956" Show="true">
+        <BackgroundImage File="tz_029" Source="0,0,188,129" Transparency="0.9"/>
+      </Label>
+      <Label Inherit="bg3" Location="35,202,230,110" Name="12681" Show="true"/>
+      <Button DragIn="true" DragOut="false" Inherit="" Location="134,109,32,32" Name="btItem" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnLoad>layWorld_frm_StoneSign_btItem_OnLoad(self)</OnLoad>
+          <OnDragIn>layWorld_frm_StoneSign_btItem_OnDragIn(self, drag)</OnDragIn>
+          <OnDragNull>layWorld_frm_StoneSign_btItem_OnDragNull(self)</OnDragNull>
+          <OnRClick>layWorld_frm_StoneSign_btItem_OnRClick(self)</OnRClick>
+          <OnHint>layWorld_frm_StoneSign_btItem_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="56,319,75,20" Name="btOK" Show="true" Text="$L:1348$">
+        <Scripts>
+          <OnLClick>layWorld_frm_StoneSign_btOK_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="169,319,75,20" Name="btCancel" Show="true" Text="$L:1349$">
+        <Scripts>
+          <OnLClick>layWorld_frm_StoneSign_btCancel_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="90,1,122,68" Name="1229" Show="true" Text="$L:1646$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>layWorld_frm_StoneSign_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frm_StoneSign_OnEvent(self, event, arg)</OnEvent>
+        <OnShow>layWorld_frm_StoneSign_OnShow(self)</OnShow>
+        <OnHide>layWorld_frm_StoneSign_OnHide(self)</OnHide>
+        <OnDragIn>layWorld_frm_StoneSign_OnDragIn(self,drag)</OnDragIn>
+      </Scripts>
+      <EditBox AutoScrollV="true" EnableInput="false" HandleMove="false" Inherit="" LeftScrollBar="false" Location="39,206,222,102" MultiLine="true" Name="1389" Show="true" Text="$L:1647$" WordWrap="true"/>
+    </Form>
+  </Layer>
+</Ui>

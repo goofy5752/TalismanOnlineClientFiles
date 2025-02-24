@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_count_down.lua"></Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="NoTitleBarForm" Location="569,155,294,230" Movable="true" Move="true" Name="frmCountDown" Show="true" Size="260,100" HandleMove="true">
+      <Anchors>
+        <Anchor point="RIGHT" offset="-200,0"/>
+        <Anchor point="TOP" offset="0,100"/>
+      </Anchors>
+      <Label Inherit="bg3" Location="0,0,260,100" Name="1218" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="26,49,244,40" Size="0,30" Name="lbTime" Show="true" TextFont="$L:ui_1$" TextSize="$L:ui_4$" Text="">
+		  <Anchors>
+			<Anchor point="LEFT" offset="5,0"/>
+			<Anchor point="RIGHT" offset="-5,0"/>
+			<Anchor point="TOP" offset="0,5"/>
+		  </Anchors>
+	  </Label>
+      <EditBox EnableInput="false" Inherit="" Location="27,92,242,115" Size="0,0" MultiLine="true" Name="edbMessage" Show="true" WordWrap="true" Pick="false">
+		  <Anchors>
+			<Anchor point="LEFT" relativeTo="lbTime"/>
+			<Anchor point="RIGHT" relativeTo="lbTime"/>
+			<Anchor point="TOP" relativeTo="lbTime" relativePoint="BOTTOM" offset="0,5"/>
+			<Anchor point="BOTTOM" offset="0,-5"/>
+		  </Anchors>
+	  </EditBox>
+      
+      <Param key="Left" type="number" value="10"/>
+      <Param key="Msg" value="count_down message."/>
+      <Scripts>
+        <OnLoad>layWorld_frmCountDown_OnLoad(self);</OnLoad>
+        <OnUpdate>layWorld_frmCountDown_OnUpdate(self, delta);</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

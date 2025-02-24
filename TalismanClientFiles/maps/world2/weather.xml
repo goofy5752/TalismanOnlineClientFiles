@@ -1,0 +1,303 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x35">
+   <group colors="true" desc="" env="0xFF1D4F74" envo="0xFF1D4F74" fog="0xFFFFFF80" forfar="3000.000" fornear="300.000" name="虎爪雾" range="100.000" sun="0xFFFFC286" suno="0xFFFFC286">
+      <area bottom="-15651.191" left="-4485.967" right="10224.413" top="-26394.852"/>
+   </group>
+   <group colors="true" desc="" env="0xFF007882" envo="0xFF20404F" fog="0xFF400000" forfar="2500.000" fornear="300.000" name="云灵山废墟" range="400.000" sun="0xFFFFFFFF" suno="0xFFFFFFFF">
+      <area bottom="-65.451" left="55.457" right="4935.929" top="-4995.476"/>
+   </group>
+   <group colors="true" desc="" env="0xFF45627E" envo="0xFF4B5683" fog="0xFF508BAF" forfar="3000.000" fornear="400.000" name="云灵山蛇妖区" range="500.000" sun="0xFF557BA2" suno="0xFF8BBCE9">
+      <area bottom="-2.017" left="-5086.271" right="53.911" top="-5295.606"/>
+   </group>
+   <group colors="true" desc="" env="0xFF808080" envo="0xFF72634E" fog="0xFFFFE1B5" forfar="2500.000" fornear="250.000" name="南方新手村" range="300.000" sun="0xFFC6BC8C" suno="0xFFFFFFFF">
+      <area bottom="-30043.307" left="682.691" right="4414.660" top="-35701.059"/>
+      <area bottom="-26392.162" left="-5071.361" right="696.656" top="-34636.086"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3F5081" envo="0xFF3F5081" fog="0xFFE8FEC9" forfar="3000.000" fornear="1000.000" name="百花宫" range="400.000" sun="0xFF4C4C4C" suno="0xFF3F6B76">
+      <area bottom="-30849.064" left="-10186.861" right="-5060.512" top="-35828.230"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFFACACFF" fog="0xFFA2D1F4" forfar="1500.000" fornear="300.000" name="桂花山" range="500.000" sun="0xFFFEF7DA" suno="0xFF4C4C4C">
+      <area bottom="-15712.648" left="-14850.566" right="-11051.067" top="-18887.984"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFFA8F2C8" forfar="3000.000" fornear="500.000" name="桂花山林区" range="500.000" sun="0xFFECAF7D" suno="0xFFC4EAC1">
+      <area bottom="-15620.878" left="-11028.255" right="-8106.491" top="-18330.633"/>
+      <area bottom="-19271.736" left="-12523.144" right="-8422.324" top="-22646.480"/>
+      <area bottom="-19248.186" left="-15122.229" right="-12886.047" top="-23290.078"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF3E3E3E" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="桂花山红花洞" range="500.000" sun="0xFF4C4C4C" suno="0xFF4888B7">
+      <area bottom="-15526.527" left="-8080.794" right="-4538.637" top="-21441.395"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF435A3D" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="桂花山练丹房" range="200.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-21458.029" left="-7344.151" right="-4603.114" top="-23411.076"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF743E3D" fog="0xFFFE4D01" forfar="2000.000" fornear="300.000" name="桂花山火山" range="200.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-25648.828" left="-10131.212" right="-5164.923" top="-30656.814"/>
+      <area bottom="-24703.422" left="-9906.202" right="-5018.337" top="-25663.305"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF743E3D" fog="0xFF89BDED" forfar="2000.000" fornear="500.000" name="桂花山仙福潭" range="100.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="-21687.109" left="-9227.744" right="-7352.823" top="-23961.738"/>
+      <area bottom="-23623.041" left="-7673.112" right="-5366.872" top="-24434.842"/>
+   </group>
+   <group colors="true" desc="" env="0xFF215F21" envo="0xFF004040" fog="0xFF008040" forfar="2000.000" fornear="500.000" name="南方新手村废墟区" range="300.000" sun="0xFFC0C0C0" suno="0xFFFFFFFF">
+      <area bottom="-26785.977" left="694.459" right="4995.735" top="-30033.207"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3F5081" envo="0xFF3F5081" fog="0xFF01FEAC" forfar="3000.000" fornear="900.000" name="天气04" range="500.000" sun="0xFF4C4C4C" suno="0xFF3F6B76">
+      <area bottom="-21314.162" left="-19990.086" right="-15262.129" top="-24627.564"/>
+      <area bottom="-18250.869" left="-20008.057" right="-16715.424" top="-20837.109"/>
+      <area bottom="-17800.082" left="-18549.432" right="-18218.709" top="-18242.047"/>
+   </group>
+   <group colors="true" desc="" env="0xFF843C51" envo="0xFF8D3D7D" fog="0xFFFEB4FB" forfar="3000.000" fornear="900.000" name="鬼风山谷" range="500.000" sun="0xFF4C4C4C" suno="0xFFB87EBC">
+      <area bottom="-14968.502" left="-20548.270" right="-15243.901" top="-18154.199"/>
+   </group>
+   <group colors="true" desc="" env="0xFF6A9BD0" envo="0xFF6A9BD0" fog="0xFF007EFF" forfar="3000.000" fornear="900.000" name="雪山" range="500.000" sun="0xFF4C4C4C" suno="0xFF3F6B76">
+      <area bottom="-15298.385" left="-25716.371" right="-21194.451" top="-20444.580"/>
+      <area bottom="-17066.990" left="-21124.713" right="-20383.326" top="-18736.633"/>
+      <area bottom="-20441.600" left="-25205.295" right="-20619.078" top="-25856.223"/>
+   </group>
+   <group colors="true" desc="" env="0xFF20506C" envo="0xFF457CA5" fog="0xFFCEFEFF" forfar="1200.000" fornear="800.000" name="雪山2" range="500.000" sun="0xFF457CA5" suno="0xFFCAFAFF">
+      <area bottom="-25861.746" left="-26103.189" right="-15238.929" top="-35108.535"/>
+      <area bottom="-35027.637" left="-21955.229" right="-18156.725" top="-35629.930"/>
+      <area bottom="-34855.973" left="-18073.654" right="-15844.691" top="-35943.023"/>
+   </group>
+   <group colors="true" desc="" env="0xFF75488C" envo="0xFF75488C" fog="0xFF442D48" forfar="1200.000" fornear="800.000" name="雪山02后山" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="-35799.836" left="-25887.637" right="-15449.258" top="-41459.141"/>
+      <area bottom="-35251.441" left="-24820.385" right="-22133.313" top="-36084.844"/>
+      <area bottom="-35506.043" left="-22240.627" right="-20411.895" top="-36148.617"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3A3B3A" envo="0xFF4C4C4C" fog="0xFF0080FF" forfar="3000.000" fornear="300.000" name="qqqq" range="100.000" sun="0xFF262626" suno="0xFF747474">
+      <area bottom="-15390.090" left="10332.399" right="19997.195" top="-20554.547"/>
+      <area bottom="-20621.199" left="14699.410" right="20151.598" top="-30416.727"/>
+      <area bottom="-20820.160" left="10547.146" right="14381.880" top="-25188.176"/>
+   </group>
+   <group colors="true" desc="" env="0xFF563C23" envo="0xFFBA8856" fog="0xFF415F43" forfar="2000.000" fornear="600.000" name="黑谷" range="300.000" sun="0xFFFFFFFF" suno="0xFFFFFFFF">
+      <area bottom="-35714.387" left="-439.422" right="5244.860" top="-38863.180"/>
+   </group>
+   <group colors="true" desc="" env="0xFF215F47" envo="0xFFBD8A5B" fog="0xFF265935" forfar="2000.000" fornear="600.000" name="黑谷001" range="300.000" sun="0xFF99C8BD" suno="0xFFFFFFFF">
+      <area bottom="-36016.852" left="-4978.115" right="-449.897" top="-40949.578"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3F5372" envo="0xFFCD9D69" fog="0xFF71B8FF" forfar="2000.000" fornear="600.000" name="黑谷002" range="300.000" sun="0xFFC0C0C0" suno="0xFFFFFFFF">
+      <area bottom="-38874.973" left="-435.329" right="5109.651" top="-43583.016"/>
+      <area bottom="-43586.621" left="17.560" right="3095.760" top="-46029.504"/>
+      <area bottom="-35863.129" left="5115.609" right="10228.974" top="-40924.219"/>
+   </group>
+   <group colors="true" desc="" env="0xFF336C77" envo="0xFF41727E" fog="0xFF000000" forfar="2000.000" fornear="600.000" name="黑谷003" range="300.000" sun="0xFF808080" suno="0xFFC0C0C0">
+      <area bottom="-43588.625" left="3097.898" right="5098.806" top="-45738.594"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3F5081" envo="0xFF3F5081" fog="0xFFAED3FD" forfar="1500.000" fornear="700.000" name="百花夏天" range="500.000" sun="0xFF4C4C4C" suno="0xFF3F6B76">
+      <area bottom="-31691.068" left="-14531.636" right="-10397.166" top="-35846.531"/>
+   </group>
+   <group colors="true" desc="" env="0xFF82763E" envo="0xFF82683E" fog="0xFFFDDD5E" forfar="3000.000" fornear="1000.000" name="百花山秋天" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="-36008.063" left="-15158.327" right="-10336.485" top="-40718.895"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3F5081" envo="0xFF3F5081" fog="0xFF95CBFD" forfar="2000.000" fornear="500.000" name="百花山冬天" range="500.000" sun="0xFF4C4C4C" suno="0xFF3F6B76">
+      <area bottom="-40821.102" left="-14972.465" right="-10524.604" top="-45648.320"/>
+      <area bottom="-5205.859" left="43158.379" right="46520.816" top="-9176.594"/>
+   </group>
+   <group colors="true" desc="" env="0xFF515C36" envo="0xFF515C36" fog="0xFF384321" forfar="2000.000" fornear="700.000" name="莽苍山户外" range="300.000" sun="0xFF3A4327" suno="0xFF353D23">
+      <area bottom="-5102.586" left="10131.200" right="14804.281" top="-15163.887"/>
+      <area bottom="-10906.107" left="14625.874" right="15569.123" top="-15361.106"/>
+      <area bottom="-10868.983" left="15268.228" right="20286.434" top="-12915.170"/>
+      <area bottom="-5819.386" left="23253.072" right="24998.637" top="-13235.961"/>
+      <area bottom="-12961.529" left="23392.709" right="24971.965" top="-13347.180"/>
+      <area bottom="-13158.839" left="23619.715" right="25153.961" top="-13470.498"/>
+      <area bottom="-11760.083" left="24052.123" right="25615.410" top="-13692.791"/>
+      <area bottom="-13334.025" left="24204.018" right="25491.689" top="-13818.331"/>
+      <area bottom="-5179.148" left="24910.600" right="30460.268" top="-14184.847"/>
+      <area bottom="-9698.374" left="22076.150" right="23546.072" top="-11408.726"/>
+      <area bottom="-10030.049" left="20020.289" right="22939.264" top="-12646.083"/>
+      <area bottom="-12214.205" left="19663.939" right="21832.547" top="-13108.275"/>
+      <area bottom="-12563.980" left="18465.863" right="20166.451" top="-13037.864"/>
+      <area bottom="-12778.585" left="18761.639" right="20309.939" top="-13318.943"/>
+      <area bottom="-11222.479" left="22847.727" right="23534.615" top="-12720.237"/>
+      <area bottom="-5171.660" left="17189.840" right="20432.773" top="-8769.644"/>
+      <area bottom="-12034.684" left="49504.984" right="51232.988" top="-15225.333"/>
+      <area bottom="-12036.609" left="47743.902" right="49539.680" top="-15168.975"/>
+   </group>
+   <group colors="true" desc="" env="0xFFFEC576" envo="0xFFFEC576" fog="0xFFF7E0B3" forfar="1500.000" fornear="500.000" name="莽苍山户外02" range="100.000" sun="0xFFFEC576" suno="0xFFFEC576">
+      <area bottom="-12838.995" left="15603.153" right="18121.732" top="-15468.146"/>
+      <area bottom="-13045.655" left="17868.539" right="18657.188" top="-15413.140"/>
+      <area bottom="-13307.367" left="18441.336" right="19678.996" top="-15444.529"/>
+      <area bottom="-5207.328" left="49255.066" right="51184.836" top="-9101.765"/>
+      <area bottom="-4186.108" left="51191.176" right="53226.805" top="-7185.922"/>
+   </group>
+   <group colors="true" desc="" env="0xFF171E28" envo="0xFF171E28" fog="0xFF171E28" forfar="2000.000" fornear="500.000" name="莽苍山洞内" range="300.000" sun="0xFF171E28" suno="0xFF171E28">
+      <area bottom="-5318.971" left="14769.885" right="17203.414" top="-10911.158"/>
+      <area bottom="-7902.925" left="17174.754" right="18491.469" top="-10987.043"/>
+      <area bottom="-8748.401" left="18108.061" right="19012.170" top="-10942.457"/>
+      <area bottom="-8919.611" left="18765.633" right="20274.961" top="-10998.730"/>
+      <area bottom="-5307.133" left="20777.945" right="23239.830" top="-9623.781"/>
+      <area bottom="-13256.336" left="19954.129" right="23587.791" top="-15266.498"/>
+      <area bottom="-12705.655" left="22000.227" right="23215.490" top="-13382.785"/>
+      <area bottom="-13460.528" left="23539.441" right="24065.859" top="-15108.511"/>
+      <area bottom="-13692.523" left="24037.008" right="24612.350" top="-15226.155"/>
+      <area bottom="-5248.309" left="47222.930" right="49249.070" top="-9035.889"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF967B65" fog="0xFF9BDBDD" forfar="1700.000" fornear="1300.000" name="戴家场" range="300.000" sun="0xFFFFFFFF" suno="0xFFFFFFFF">
+      <area bottom="-5141.753" left="30466.807" right="35206.938" top="-10209.336"/>
+      <area bottom="-5175.294" left="35203.277" right="40548.551" top="-10148.494"/>
+      <area bottom="-3975.611" left="53221.633" right="56235.082" top="-7178.903"/>
+      <area bottom="-7154.239" left="53524.055" right="56281.414" top="-7902.717"/>
+      <area bottom="-7734.662" left="54567.059" right="56275.473" top="-8652.072"/>
+      <area bottom="-8587.252" left="55091.793" right="56240.523" top="-10823.940"/>
+      <area bottom="-10770.539" left="53841.254" right="56277.770" top="-12201.343"/>
+      <area bottom="-10230.786" left="50920.844" right="53840.777" top="-12200.464"/>
+      <area bottom="-12190.944" left="51233.801" right="56284.160" top="-15325.674"/>
+      <area bottom="-9494.333" left="47742.320" right="50485.594" top="-12035.558"/>
+      <area bottom="-9198.487" left="45458.426" right="47743.188" top="-15216.229"/>
+      <area bottom="-9178.747" left="41007.824" right="45460.145" top="-15310.772"/>
+      <area bottom="-5156.871" left="40547.789" right="43156.711" top="-9180.174"/>
+      <area bottom="-5192.357" left="56306.410" right="61317.512" top="-10105.070"/>
+      <area bottom="-10154.085" left="56325.172" right="61404.727" top="-15266.616"/>
+   </group>
+   <group colors="true" desc="" env="0xFF1E1E1E" envo="0xFF376259" fog="0xFFCEE7FF" forfar="1200.000" fornear="800.000" name="戴家场a" range="300.000" sun="0xFF615132" suno="0xFFFFFFFF">
+      <area bottom="-64.361" left="51223.418" right="56257.805" top="-4142.120"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFFCF9B4E" fog="0xFF76D3BA" forfar="2500.000" fornear="800.000" name="竞技场a" range="100.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="51160.742" left="51267.742" right="56287.316" top="46131.320"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF437BA9" fog="0xFF000000" forfar="3000.000" fornear="600.000" name="竞技场b" range="100.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="51144.914" left="41007.148" right="46038.520" top="46132.996"/>
+      <area bottom="-10031.935" left="-15305.220" right="-11162.316" top="-15525.727"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFFFFFFFF" forfar="2500.000" fornear="1000.000" name="百蛮山" range="300.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="35916.430" left="25520.822" right="31059.307" top="25572.072"/>
+      <area bottom="35919.715" left="30932.760" right="41031.879" top="30553.887"/>
+      <area bottom="30718.146" left="30730.410" right="32110.070" top="27140.928"/>
+      <area bottom="30937.160" left="31804.670" right="36830.941" top="29062.412"/>
+      <area bottom="31174.426" left="36341.031" right="37759.129" top="29981.098"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF32354E" fog="0xFF5E4264" forfar="2500.000" fornear="300.000" name="摆满三2" range="500.000" sun="0xFF4C4C4C" suno="0xFF707070">
+      <area bottom="40945.816" left="20490.398" right="25591.967" top="30733.242"/>
+   </group>
+   <group colors="true" desc="" env="0xFF553A2B" envo="0xFF655034" fog="0xFF59959F" forfar="2000.000" fornear="400.000" name="办满山3" range="300.000" sun="0xFF4C4C4C" suno="0xFFE7CC72">
+      <area bottom="40969.020" left="25566.256" right="30715.117" top="35888.410"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="dd" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF472B1F" envo="0xFF88583C" fog="0xFFFFAD86" forfar="2500.000" fornear="700.000" name="摆满三60-70a" range="500.000" sun="0xFF5E5E5E" suno="0xFFC0C0C0">
+      <area bottom="25631.078" left="25614.396" right="30685.527" top="14951.576"/>
+      <area bottom="25644.123" left="30543.270" right="35857.078" top="21051.146"/>
+      <area bottom="15523.267" left="30630.410" right="35854.926" top="10231.764"/>
+      <area bottom="19200.494" left="35816.324" right="40972.191" top="15366.071"/>
+      <area bottom="19814.002" left="39907.391" right="41129.109" top="19088.947"/>
+      <area bottom="21124.678" left="35805.117" right="37094.082" top="19130.777"/>
+      <area bottom="19786.115" left="37004.414" right="37531.211" top="19088.947"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4B4B4B" envo="0xFF66756C" fog="0xFF008080" forfar="1600.000" fornear="500.000" name="摆满三60-70b" range="500.000" sun="0xFFC0C0C0" suno="0xFF8C8C8C">
+      <area bottom="21067.563" left="30676.736" right="35832.602" top="15464.077"/>
+      <area bottom="25695.576" left="35822.879" right="41013.773" top="21083.625"/>
+      <area bottom="21133.963" left="37049.035" right="40973.027" top="19793.223"/>
+      <area bottom="19872.822" left="37477.758" right="39925.043" top="19161.711"/>
+   </group>
+   <group colors="true" desc="" env="0xFF232323" envo="0xFF272727" fog="0xFF800000" forfar="1500.000" fornear="300.000" name="摆满三火山" range="500.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="14960.290" left="25601.779" right="30708.609" top="10210.835"/>
+   </group>
+   <group colors="true" desc="" env="0xFF77665E" envo="0xFF9B8D7D" fog="0xFF004040" forfar="2000.000" fornear="700.000" name="摆满三a" range="100.000" sun="0xFF8E8780" suno="0xFFC0C0C0">
+      <area bottom="15453.964" left="35798.816" right="40989.711" top="10190.348"/>
+   </group>
+   <group colors="true" desc="" env="0xFFE2D9B8" envo="0xFFB5A55B" fog="0xFF8CDAFB" forfar="2800.000" fornear="800.000" name="南明海岸" range="300.000" sun="0xFFC59F76" suno="0xFFFFFFFF">
+      <area bottom="30587.314" left="6328.591" right="14248.690" top="22513.865"/>
+      <area bottom="30702.400" left="13909.722" right="15371.949" top="28224.416"/>
+      <area bottom="22898.691" left="9422.834" right="14193.063" top="21506.129"/>
+   </group>
+   <group colors="true" desc="" env="0xFF172C3E" envo="0xFF2E6B9E" fog="0xFF223E68" forfar="1800.000" fornear="0.000" name="深海里" range="300.000" sun="0xFF226A77" suno="0xFFC6A84F">
+      <area bottom="22649.313" left="5144.244" right="8638.316" top="20459.191"/>
+      <area bottom="21629.012" left="8530.865" right="14347.560" top="18674.230"/>
+      <area bottom="28279.059" left="14098.877" right="15350.664" top="17793.016"/>
+      <area bottom="20852.619" left="7319.422" right="9458.959" top="19955.859"/>
+      <area bottom="30680.016" left="2657.545" right="6318.869" top="20454.951"/>
+      <area bottom="29055.631" left="149.347" right="3938.736" top="22026.465"/>
+      <area bottom="23238.150" left="6253.457" right="8201.429" top="22330.938"/>
+      <area bottom="23870.949" left="6192.505" right="7239.812" top="22712.461"/>
+      <area bottom="19013.078" left="8971.323" right="12571.686" top="17266.564"/>
+      <area bottom="22186.318" left="1305.759" right="4168.058" top="18364.518"/>
+      <area bottom="17497.645" left="253.131" right="3585.262" top="15383.865"/>
+      <area bottom="18879.994" left="684.990" right="2378.701" top="16915.875"/>
+      <area bottom="30715.088" left="775.215" right="2856.222" top="28786.180"/>
+      <area bottom="18406.719" left="3180.906" right="4166.423" top="15355.248"/>
+      <area bottom="14412.128" left="5124.008" right="9263.706" top="11916.656"/>
+      <area bottom="12156.604" left="7280.121" right="10744.807" top="11352.664"/>
+      <area bottom="11651.992" left="8301.352" right="10741.125" top="10703.876"/>
+      <area bottom="10832.834" left="9051.208" right="10722.543" top="8273.091"/>
+      <area bottom="8421.684" left="9677.306" right="13083.326" top="5117.566"/>
+      <area bottom="8425.640" left="13017.761" right="14484.386" top="6980.808"/>
+      <area bottom="11649.806" left="14042.677" right="15260.838" top="7576.600"/>
+      <area bottom="11645.342" left="15058.778" right="16231.473" top="8426.266"/>
+      <area bottom="11642.810" left="16207.014" right="18308.979" top="9079.784"/>
+      <area bottom="11638.402" left="18272.100" right="20493.912" top="9577.729"/>
+      <area bottom="14582.960" left="19246.258" right="20487.768" top="11483.882"/>
+      <area bottom="17292.363" left="9655.014" right="11802.368" top="14808.258"/>
+      <area bottom="14909.119" left="9245.189" right="12076.928" top="12142.480"/>
+      <area bottom="13962.149" left="11847.406" right="13436.928" top="12080.805"/>
+      <area bottom="13040.266" left="13322.971" right="14199.545" top="12051.184"/>
+      <area bottom="12347.837" left="13919.943" right="15413.445" top="11414.820"/>
+      <area bottom="6902.465" left="7792.209" right="9681.555" top="5106.751"/>
+      <area bottom="18773.992" left="13011.897" right="14357.716" top="18128.951"/>
+      <area bottom="18255.719" left="13414.943" right="15295.951" top="17464.307"/>
+      <area bottom="20438.459" left="15276.303" right="16068.880" top="18222.029"/>
+      <area bottom="18465.947" left="15130.257" right="15805.067" top="17463.662"/>
+      <area bottom="30729.424" left="15348.338" right="20876.342" top="25601.020"/>
+      <area bottom="22625.348" left="8089.533" right="9399.642" top="21284.172"/>
+      <area bottom="22133.137" left="9186.521" right="9791.263" top="21300.826"/>
+   </group>
+   <group colors="true" desc="" env="0xFF32462F" envo="0xFF646664" fog="0xFF84EAF2" forfar="3000.000" fornear="500.000" name="蛟人" range="300.000" sun="0xFF93B5DB" suno="0xFF85D2E0">
+      <area bottom="20550.604" left="4126.554" right="9350.575" top="14253.305"/>
+      <area bottom="17270.283" left="8944.433" right="9690.151" top="14808.518"/>
+   </group>
+   <group colors="true" desc="" env="0xFF1B1B1B" envo="0xFF317586" fog="0xFF255567" forfar="2000.000" fornear="800.000" name="飞鸿岛洞" range="100.000" sun="0xFF283F64" suno="0xFF8B9841">
+      <area bottom="6804.534" left="5127.384" right="7792.606" top="5152.857"/>
+      <area bottom="7492.184" left="5172.514" right="6205.173" top="6509.970"/>
+   </group>
+   <group colors="true" desc="" env="0xFF22506A" envo="0xFF8C9AAA" fog="0xFF18B3D3" forfar="2300.000" fornear="600.000" name="飞鸿岛" range="300.000" sun="0xFF8C9AAA" suno="0xFFC0C0C0">
+      <area bottom="11995.457" left="5143.521" right="6195.437" top="7414.868"/>
+      <area bottom="11932.771" left="6088.545" right="7353.065" top="6789.325"/>
+      <area bottom="11394.758" left="7143.796" right="8362.664" top="6763.891"/>
+      <area bottom="10755.729" left="8162.026" right="9062.344" top="6761.163"/>
+      <area bottom="8350.808" left="8870.027" right="9718.659" top="6991.984"/>
+   </group>
+   <group colors="true" desc="" env="0xFF1E1E1E" envo="0xFF4C4C4C" fog="0xFF7D5E5E" forfar="3000.000" fornear="500.000" name="暗礁岛" range="300.000" sun="0xFF463228" suno="0xFF804000">
+      <area bottom="12231.470" left="10711.300" right="13964.442" top="8397.866"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF141414" fog="0xFF4C4C4C" forfar="3000.000" fornear="500.000" name="密室" range="300.000" sun="0xFF4C4C4C" suno="0xFF272727">
+      <area bottom="20450.246" left="18573.621" right="20479.451" top="17378.377"/>
+      <area bottom="20278.709" left="18233.281" right="18987.408" top="18318.244"/>
+      <area bottom="18040.951" left="19560.754" right="20476.193" top="16939.217"/>
+      <area bottom="16591.977" left="19685.275" right="20457.920" top="15261.977"/>
+      <area bottom="16399.631" left="19363.912" right="19720.588" top="15273.581"/>
+   </group>
+   <group colors="true" desc="" env="0xFF473E5B" envo="0xFF655298" fog="0xFFBFA7E7" forfar="2500.000" fornear="800.000" name="伏牛岛" range="300.000" sun="0xFF42422D" suno="0xFFF4E7CE">
+      <area bottom="9667.022" left="18300.365" right="20480.869" top="5196.435"/>
+      <area bottom="9090.511" left="16220.897" right="18663.045" top="5156.393"/>
+      <area bottom="8445.845" left="15277.438" right="16759.990" top="5124.147"/>
+      <area bottom="7636.090" left="14474.170" right="15325.963" top="5123.149"/>
+      <area bottom="6993.167" left="13067.095" right="14522.690" top="5120.227"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3A3923" envo="0xFF676767" fog="0xFFACFFFF" forfar="3500.000" fornear="1000.000" name="紫云岛" range="300.000" sun="0xFF4C4C4C" suno="0xFFFDD79D">
+      <area bottom="30691.539" left="-5096.844" right="181.665" top="15365.386"/>
+      <area bottom="30699.082" left="-50.906" right="843.578" top="29091.098"/>
+      <area bottom="22052.516" left="139.935" right="1318.651" top="18858.482"/>
+      <area bottom="19146.781" left="62.958" right="688.399" top="17204.680"/>
+   </group>
+   <group colors="true" desc="" env="0xFF313131" envo="0xFF8275BF" fog="0xFF7E54ED" forfar="2200.000" fornear="200.000" name="紫云宫" range="300.000" sun="0xFF4C4C4C" suno="0xFFC09BD9">
+      <area bottom="25585.070" left="-15362.608" right="-4874.321" top="15352.611"/>
+      <area bottom="15580.106" left="-20553.568" right="-10225.249" top="9940.106"/>
+   </group>
+   <group colors="true" desc="" env="0xFF22506A" envo="0xFF8C9AAA" fog="0xFF004040" forfar="2500.000" fornear="200.000" name="金庭1" range="300.000" sun="0xFF8C9AAA" suno="0xFF8C9AAA">
+      <area bottom="25241.949" left="-20479.396" right="-15298.652" top="20431.855"/>
+   </group>
+   <group colors="true" desc="" env="0xFF22506A" envo="0xFF8C9AAA" fog="0xFF6C8E3E" forfar="2500.000" fornear="200.000" name="金庭2" range="300.000" sun="0xFF8C9AAA" suno="0xFFC0C0C0">
+      <area bottom="31022.701" left="-20477.395" right="-15365.674" top="24966.047"/>
+   </group>
+   <group colors="true" desc="" env="0xFF32462F" envo="0xFF646664" fog="0xFF84EAF2" forfar="3000.000" fornear="500.000" name="桐椰岛" range="300.000" sun="0xFF93B5DB" suno="0xFF85D2E0">
+      <area bottom="20445.832" left="16034.685" right="18245.465" top="15992.051"/>
+      <area bottom="18669.271" left="12564.389" right="13471.189" top="13971.792"/>
+      <area bottom="17282.879" left="11792.702" right="12685.800" top="15375.484"/>
+      <area bottom="15687.432" left="11814.213" right="12817.135" top="13968.021"/>
+      <area bottom="17466.404" left="13421.666" right="16065.494" top="13042.539"/>
+      <area bottom="13235.355" left="14172.903" right="16063.331" top="12339.137"/>
+      <area bottom="16035.699" left="15404.321" right="19239.457" top="11674.985"/>
+      <area bottom="17344.939" left="18247.604" right="19307.387" top="14597.880"/>
+      <area bottom="18305.959" left="18111.469" right="18565.324" top="17272.514"/>
+      <area bottom="17391.914" left="19110.510" right="19668.395" top="16442.334"/>
+      <area bottom="30748.824" left="20869.006" right="25757.779" top="25590.000"/>
+   </group>
+</weather>

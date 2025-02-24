@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="299,273,294,230" Name="frmMessage" Show="false" Size="294,234">
+      <Label Inherit="bg1" Location="7,20,280,210" Name="582" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="3125" Show="fals"/>
+      <Label Inherit="" Location="13,154,270,11" Name="683" Show="false"/>
+      <EditBox Inherit="" Location="17,56,260,130" Name="edbReward4" Show="true" Text="" MultiLine="true" WordWrap="true" EnableInput="false"/>
+      <Button Inherit="PushButton" Location="125,191,50,20" Name="btRewardOk" Show="true" Text="$L:724$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="115,0,70,68" Name="lbRewardTitel" Show="true" Text=""/>
+      <TitleBarButton Location="0,0,294,20"/>
+      <CloseButton Location="264,29,13,13" Show="">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Anchors>
+        <Anchor offset="0,0" point="CENTERH"/>
+        <Anchor offset="0,-140" point="CENTERV"/>
+      </Anchors>
+    </Form>
+  </Layer>
+</Ui>

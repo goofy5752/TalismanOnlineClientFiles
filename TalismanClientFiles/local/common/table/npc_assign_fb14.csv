@@ -1,0 +1,4 @@
+ae,int,int,string,string,marea,"comb(id:int,density[%]:int)",npc,string,string,string
+ID,areaID,IsRebirth,AssignMode,areaName,areaBlock,NpcAssign,Script,AI,Date,Comment
+1,1,1,random,$L:npc_assign_1$,"180 40 356 -29;",,,,,
+2,1,1,random,$L:npc_assign_1$,"318 -84 401 -88",,,,,

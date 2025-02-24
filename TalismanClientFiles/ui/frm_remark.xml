@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Location="216,173,294,512" Name="frmremark" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,492" Name="2395" Show="true"/>
+      <Label Inherit="bg3" Location="19,49,256,326" Name="10397" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="2524" Show="fals"/>
+      <TitleBarButton Location="0,0,294,30" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="265,28,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Button Inherit="PushButton" Location="57,472,70,20" Name="btok" Show="true" Text="$L:1188$"/>
+      <Button Inherit="PushButton" Location="167,472,70,20" Name="btClose" Show="true" Text="$L:1189$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="92,0,110,70" Name="566" Show="true" Text="" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Button Inherit="" Location="116,344,24,24" Name="btLeft" Show="true" Size="">
+        <NormalImage File="tz_011" Source="68,256,34,34"/>
+        <PushedImage File="tz_011" Source="102,256,34,34"/>
+      </Button>
+      <Button Inherit="" Location="153,344,24,24" Name="btRight" Show="true" Size="">
+        <NormalImage File="tz_011" Source="0,256,34,34"/>
+        <PushedImage File="tz_011" Source="34,256,34,34"/>
+      </Button>
+      <ModelView Inherit="" Location="24,53,246,290" MouseEvent="false" MouseMove="false" Name="MV" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="20,394,80,20" Name="lbHair" Show="true" Text="$L:210$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="20,432,80,20" Name="lbHead" Show="true" Text="$L:211$">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <Label Inherit="" Location="115,395,140,20" Name="lbChangeHair" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+      </Label>
+      <Label Inherit="" Location="115,432,140,20" Name="lbChangeHead" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+      </Label>
+      <Button Inherit="" Location="100,398,14,14" Name="btHairLeft" Show="true">
+        <NormalImage File="tz_010" Source="50,382,14,14"/>
+        <PushedImage File="tz_010" Source="50,399,14,14"/>
+      </Button>
+      <Button Inherit="" Location="100,436,14,14" Name="btHeadLeft" Show="true">
+        <NormalImage File="tz_010" Source="50,382,14,14"/>
+        <PushedImage File="tz_010" Source="50,399,14,14"/>
+      </Button>
+      <Button Inherit="" Location="255,398,14,14" Name="btHairRight" Show="true">
+        <NormalImage File="tz_010" Source="75,382,14,14"/>
+        <PushedImage File="tz_010" Source="75,399,14,14"/>
+      </Button>
+      <Button Inherit="" Location="255,435,14,14" Name="btHeadRight" Show="true">
+        <NormalImage File="tz_010" Source="75,382,14,14"/>
+        <PushedImage File="tz_010" Source="75,399,14,14"/>
+      </Button>
+    </Form>
+  </Layer>
+</Ui>

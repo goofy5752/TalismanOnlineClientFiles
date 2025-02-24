@@ -1,0 +1,13 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x3">
+   <group colors="true" desc="" env="0xFF808080" envo="0xFF225E59" fog="0xFF008080" forfar="1000.000" fornear="0.000" name="海" range="300.000" sun="0xFFFFFFFF" suno="0xFFB0E1DF">
+      <area bottom="4466.825" left="14.212" right="5089.942" top="69.838"/>
+      <area bottom="5130.023" left="3269.194" right="5085.070" top="4188.059"/>
+      <area bottom="4999.099" left="3.897" right="2261.558" top="4195.527"/>
+   </group>
+   <group colors="true" desc="" env="0xFF2E2E2E" envo="0xFF606782" fog="0xFF178EBB" forfar="1300.000" fornear="600.000" name="冰屋" range="300.000" sun="0xFF717171" suno="0xFFAEB8D2">
+      <area bottom="10224.130" left="25.268" right="5108.108" top="4872.401"/>
+      <area bottom="4898.729" left="2265.287" right="3273.115" top="4466.933"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="ffgfh" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

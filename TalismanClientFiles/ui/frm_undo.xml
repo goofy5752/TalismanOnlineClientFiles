@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="611,38,300,370" Name="frUndo" Show="false" Size="300,370">
+      <Anchors>
+        <Anchor offset="0,-100" point="BOTTOM"/>
+        <Anchor offset="-500,0" point="RIGHT"/>
+      </Anchors>
+      <TitleBarButton Location="10,5,280,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="266,29,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg1" Location="10,21,280,340" Name="lbPlayer1" Show="true"/>
+      <Label Inherit="bg3" Location="40,81,224,135" Name="13583" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="4,2,290,50" Name="23107" Show="true"/>
+      <Label Inherit="" Location="0,236,256,172" Name="918" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignLine="CENTER" Inherit="" Location="55,55,120,20" Name="lbTodayNews" Show="true" Text="$L:913$"/>
+      <Label Inherit="" Location="0,245,256,11" Name="3746" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <EditBox AutoScrollV="true" BackgroundColor="#ee000000" Inherit="" Location="46,152,212,60" Name="edtBulletin" Show="true" WordWrap="true"/>
+      <Button Inherit="PushButton" Location="190,325,70,20" Name="btSpendInfo" Show="true" Text="$L:916$"/>
+      <Label Inherit="bg3" Location="176,52,75,25" Name="14500" Show="true"/>
+      <Label BackgroundColor="#ee000000" Inherit="" Location="179,55,69,19" Name="lbTime" Show="true" WordWrap="true"/>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,221,180,20" Name="ckb1" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,246,180,20" Name="ckb2" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,271,180,20" Name="ckb3" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,296,180,20" Name="ckb4" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="89,0,120,70" Name="576" Show="true" Text="$L:921$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="46,87,212,65" Name="lbundoImg" Show="true"/>
+    </Form>
+  </Layer>
+</Ui>

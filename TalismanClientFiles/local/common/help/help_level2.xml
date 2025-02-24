@@ -1,0 +1,30 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<UiRichText>
+  <Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="GlowStar" Transparency="0.5"/>
+	  </Item>
+	  <Line/>
+	  <Item type="TEXT" text=" $username$" color="#ff86a8cb" />
+	  <Line/>
+	  <Line/>
+	  <Item type="TEXT" text=" $L:help001_011$" color="#ff86a8cb" />
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:help001_017$" color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_023$" hlink="File:language/gb/help/help002.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line/>
+  <Line/>
+  <Line/>
+</UiRichText>

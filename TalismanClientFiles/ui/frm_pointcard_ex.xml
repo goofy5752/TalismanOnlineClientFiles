@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Ui>
+	<Script file="frm_PointCard_ex.lua"/>
+	<Layer Name="layWorld" Show="true">
+		<Form Inherit="" Location="299,270,294,230" Name="frmPointCardEx" Show="false">
+			<Label Inherit="bg1" Location="7,20,280,210" Name="4113" Show="true"/>
+			<Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="13885" Show="true"/>
+			<Button Inherit="PushButton" Location="77,183,50,20" Name="btRewardOk" Show="true" Text="$L:724$">
+				<Scripts>
+					<OnLClick>layWorld_frmPointCardEx_btRewardOk_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="168,183,50,20" Name="btRewardClose" Show="true" Text="$L:725$">
+				<Scripts>
+					<OnLClick>layWorld_frmPointCardEx_btRewardClose_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,66" Name="lbRewardTitel" Show="true" Text=""/>
+			<Label Inherit="" Location="19,192,256,11" Name="3204" Show="false"/>
+			<EditBox Inherit="" Location="145,59,110,20" Name="edbCardNumber" Show="true">
+				<BackgroundImage File="tz_011" Source="0,0,80,20"/>
+			</EditBox>
+			<EditBox Inherit="" Location="145,88,110,20" Name="edbCardPsWord" Show="true">
+				<BackgroundImage File="tz_011" Source="0,0,80,20"/>
+			</EditBox>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="44,60,96,18" Name="2423" Show="true" Text="$L:642$">
+				<BackgroundImage File="tz_012" Source="364,327,149,25"/>
+			</Label>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="44,89,96,18" Name="2557" Show="true" Text="$L:643$">
+				<BackgroundImage File="tz_012" Source="364,327,149,25"/>
+			</Label>
+			<Label Inherit="" Location="57,114,180,60" Name="lbCardTips" Show="true"/>
+			<TitleBarButton Location="0,0,294,28"/>
+			<CloseButton Location="264,29,13,13">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+			<Scripts>
+				<OnUpdate>layWorld_frmPointCardEx_OnUpdate(self,delta);</OnUpdate>
+				<OnLoad>layWorld_frmPointCardEx_OnLoad(self);</OnLoad>
+				<OnEvent>layWorld_frmPointCardEx_OnEvent(self,event,arg);</OnEvent>
+				<OnShow>layWorld_frmPointCardEx_OnShow(self);</OnShow>
+			</Scripts>
+		</Form>
+	</Layer>
+</Ui>

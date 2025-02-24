@@ -1,0 +1,16 @@
+ae,string,string,string,marea,int
+编号,区域名字,区域音乐,区域Logo,区域,地图id
+ID,Name,Music,Logo,Area,ZoneId
+1,$L:icedream$,,,1 1 510 510;,
+2,$L:icedream$,,,-1 -1 -510 -510;,
+3,$L:icedream$,,,1 -1 510 -510;,
+4,$L:icedream$,,,-1 1 -510 510;,
+5,$L:icedream$,,,-1 1 510 -510;,
+6,$L:icedream$,,,1 -1 -510 510;,
+7,$L:icedream$,,,1 -1 -710 710;,
+8,$L:icedream$,,,-1 1 710 -710;,
+9,$L:icedream$,,,-1 -1 -710 -710;,
+10,$L:icedream$,,,-1 1 -710 -710;,
+11,$L:icedream$,,,-1 -1 710 -710;,
+12,$L:icedream$,,,1 -1 710 -710;,
+13,$L:icedream$,,,1 1 710 -710;,

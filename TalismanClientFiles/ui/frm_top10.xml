@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="39,123,640,540" Name="frmRank" Show="false">
+      <Label Inherit="bg1" Location="7,18,620,520" Name="lbBackground" Show="true"/>
+      <Label Inherit="" Location="7,331,256,224" Name="1622" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,-2,256,340" Name="613" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,329,256,224" Name="663" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="512,-2,200,340" Name="984" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="512,329,200,224" Name="1584" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <CloseButton Location="605,26,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Form AlignCol="" Inherit="NoTitleBarForm" Location="16,103,605,395" Name="frmRanklist" Show="falsee" TextColor="#ee778899">
+        <Label Inherit="bg3" Location="1,-1,600,390" Name="13674" Show="true"/>
+        <ListBox AutoScrollV="true" BackgroundColor="" Inherit="" Location="5,5,595,380" Name="ltRank" Show="fals">
+          <ColumnButton AlignCol="CENTER" Name="ColBtpaiming" Text="$L:1127$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtMingzi" Text="$L:1128$" TextColor="#eefff902" Width="130"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtLevel" Text="$L:1129$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtMengpai" Text="$L:1130$" TextColor="#eefff902" Width="190"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtGuid" Text="$L:1157$" TextColor="#eefff902" Width="140"/>
+        </ListBox>
+        <ListBox AutoScrollV="true" BackgroundColor="" Inherit="" Location="5,3,595,380" Name="ltRankFangju" Show="false">
+          <ColumnButton AlignCol="CENTER" Name="ColBtpaiming" Text="$L:1127$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtMingzi" Text="$L:1128$" TextColor="#eefff902" Width="130"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtLevel" Text="$L:1129$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="RIGHT" Name="ColBtPingfen" Text="$L:1135$" TextColor="#eefff902" Width="60"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtSuoyouren" Text="$L:1136$" TextColor="#eefff902" Width="130"/>
+        </ListBox>
+        <ListBox AutoScrollV="true" BackgroundColor="" Inherit="" Location="5,4,595,380" Name="ltRankFaBao" Show="false">
+          <ColumnButton AlignCol="CENTER" Name="ColBtpaiming" Text="$L:1127$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtMingzi" Text="$L:1128$" TextColor="#eefff902" Width="130"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtLevel" Text="$L:1129$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="RIGHT" Name="ColBtPingfen" Text="$L:1135$" TextColor="#eefff902" Width="60"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtSuoyouren" Text="$L:1136$" TextColor="#eefff902" Width="130"/>
+        </ListBox>
+        <ListBox AutoScrollV="true" BackgroundColor="" Inherit="" Location="5,5,595,380" Name="ltRankGod" Show="false">
+          <ColumnButton AlignCol="CENTER" Name="ColBtpaiming" Text="$L:1127$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtMingzi" Text="$L:1128$" TextColor="#eefff902" Width="110"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtJingjie" Text="$L:1131$" TextColor="#eefff902" Width="140"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtMengpai" Text="$L:1130$" TextColor="#eefff902" Width="140"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtGuid" Text="$L:1157$" TextColor="#eefff902" Width="140"/>
+        </ListBox>
+        <ListBox AutoScrollV="true" BackgroundColor="" Inherit="" Location="5,4,595,380" Name="ltRankGuild" Show="false">
+          <ColumnButton AlignCol="CENTER" Name="ColBtpaiming" Text="$L:1127$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtBanghui" Text="$L:1132$" TextColor="#eefff902" Width="120"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtLevel" Text="$L:1129$" TextColor="#eefff902" Width="50"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtFanrongdu" Text="$L:1133$" TextColor="#eefff902" Width="100"/>
+          <ColumnButton AlignCol="CENTER" Name="ColBtBangzhu" Text="$L:1134$" TextColor="#eefff902" Width="100"/>
+        </ListBox>
+      </Form>
+      <Label Inherit="TemplateNormalTitle" Location="-1,0,635,47" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="446,9,185,25" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="0,109,250,25"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="255,0,120,66" Name="lbTitleName" Show="true" Text="$L:852$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <TitleBarButton Location="0,7,628,28"/>
+      <CheckButton CheckStyle="false" Inherit="" Location="32,60,80,40" Name="btnLev" Show="true" Text="$L:847$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="112,60,80,40" Name="btngod" Show="true" Text="$L:848$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="192,60,80,40" Name="btnGuild" Show="true" Text="$L:849$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="272,60,80,40" Name="btMainTrump" Show="true" Text="$L:1037$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="352,60,80,40" Name="btDefendEquip" Show="true" Text="$L:1038$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+      </CheckButton>
+      <Button Inherit="" Location="447,509,12,14" Name="btPrePage" Show="true">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+        <DisabledImage File="tz_010" Source="51,382,12,14"/>
+      </Button>
+      <Button Inherit="" Location="479,509,12,14" Name="btNextPage" Show="true">
+        <NormalImage File="tz_010" Source="77,382,12,14"/>
+        <PushedImage File="tz_010" Source="77,399,12,14"/>
+        <DisabledImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="373,506,66,20" Name="btFind" Show="true" Text="$L:882$">
+        <DisabledImage File="" Source=""/>
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label Inherit="" Location="136,506,40,18" Name="lbRank" Show="true" Text="$L:880$"/>
+      <EditBox Inherit="DefaultEdit" Location="177,505,31,20" Name="edtRank" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,31,20"/>
+      </EditBox>
+      <Label Inherit="" Location="245,506,44,18" Name="lbName" Show="true" Text="$L:881$"/>
+      <EditBox Inherit="DefaultEdit" Location="289,505,80,20" Name="edtName" Show="true">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </EditBox>
+      <Button Inherit="" Location="244,22,66,20" Name="btFindSelf" Show="false" Text="$L:988$">
+        <DisabledImage File="" Source=""/>
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label Inherit="" Location="13,94,608,6" Name="53501" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+      <Label Inherit="" Location="459,507,20,17" Name="16212" Show="true">
+        <BackgroundImage File="tz_010" Source="458,194,31,20"/>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

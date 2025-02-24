@@ -1,0 +1,16 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<plant>
+   <group name="枯萎的植物001">
+      <model density="0xA" id="0x51" max="1.500" min="0.500" radius="20.000"/>
+      <model density="0xA" id="0x52" max="1.000" min="0.500" radius="20.000"/>
+   </group>
+   <group name="枯萎的植被002">
+      <model density="0xA" id="0x4F" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="草地">
+      <model density="0x14" id="0x53" max="1.000" min="0.500" radius="20.000"/>
+   </group>
+   <group name="黄草地">
+      <model density="0xA" id="0x5A" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+</plant>

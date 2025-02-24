@@ -1,0 +1,10 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x3">
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFFBDA77D" fog="0xFFFFFFFF" forfar="1800.000" fornear="1200.000" name="天气01" range="300.000" sun="0xFF9CD5EF" suno="0xFFFFFFFF">
+      <area bottom="10169.516" left="10301.173" right="15303.130" top="5475.582"/>
+   </group>
+   <group colors="true" desc="" env="0xFF0000FF" envo="0xFF68AFCE" fog="0xFFBFDFFF" forfar="1500.000" fornear="1200.000" name="天气02" range="300.000" sun="0xFFCAE4FF" suno="0xFFFFFFFF">
+      <area bottom="5492.049" left="10289.351" right="15321.444" top="60.352"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="sdsdfs" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

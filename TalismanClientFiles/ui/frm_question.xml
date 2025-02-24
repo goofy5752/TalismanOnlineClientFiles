@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Question.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="474,479,300,370" Name="frmQuestion" Show="false" Size="300,370">
+      <Anchors>
+        <Anchor offset="0,-100" point="BOTTOM"/>
+        <Anchor offset="-500,0" point="RIGHT"/>
+      </Anchors>
+      <TitleBarButton Location="10,5,280,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="266,29,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg1" Location="10,21,280,340" Name="lbPlayer1" Show="true"/>
+      <Label Inherit="bg3" Location="40,57,224,135" Name="13583" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="4,2,290,50" Name="23107" Show="true"/>
+      <Button Inherit="PushButton" Location="84,308,140,40" Name="btSpendInfo" Show="true" Text="$L:1438$" TextFont="$L:1$" TextSize="$L:3$">
+        <Scripts>
+          <OnLClick>layWorld_frmQuestion_btSpendInfo_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,201,180,20" Name="ckb1" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+        <Scripts>
+          <OnLClick>layWorld_frmQuestion_ckb1_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,228,180,20" Name="ckb2" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+        <Scripts>
+          <OnLClick>layWorld_frmQuestion_ckb2_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,255,180,20" Name="ckb3" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+        <Scripts>
+          <OnLClick>layWorld_frmQuestion_ckb3_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="61,282,180,20" Name="ckb4" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+        <Scripts>
+          <OnLClick>layWorld_frmQuestion_ckb4_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="89,0,120,70" Name="576" Show="true" Text="$L:1435$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <EditBox EnableInput="false" Inherit="" Location="52,73,200,55" Name="lbundoImg" Show="true" WordWrap="true"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="52,127,74,20" Name="3505" Show="true" Text="$L:1436$"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="52,146,205,20" Name="3683" Show="true" Text="$L:1437$"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="125,127,132,20" Name="lbQuestionsNumber" Show="true" Text=""/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="52,165,205,20" Name="lbReward" Show="true" Text=""/>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("event_misc_ask_and_answer")</OnLoad>
+        <OnEvent>if event == "event_misc_ask_and_answer" then
+				layWorld_frmQuestion_ToShow(self)
+			end</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

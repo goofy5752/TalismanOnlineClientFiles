@@ -1,0 +1,19 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<UiRichText>
+  <Line/>
+  <Line>
+    	<Items>
+	  <Item type="TEXT" text="$L:help_monster_46to50$" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+	<Item type="TEXT" text="  " color="#ffa6a845" />	 
+	</Items>
+  </Line>
+<Line>
+  </Line>
+  <Line/>
+  <Line/>
+  <Line/>
+</UiRichText>

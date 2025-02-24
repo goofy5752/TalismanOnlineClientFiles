@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Create_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form DragIn="true" Inherit="" Location="432,225,294,512" Name="frmCreateEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,470" Name="799" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,2,292,50" Name="531" Show="fals"/>
+      <Label Inherit="bg3" Location="61,51,180,155" Name="2566" Show="false"/>
+      <Label Inherit="bg3" Location="19,49,256,245" Name="16989" Show="true"/>
+      <Label Inherit="bg3" Location="19,294,256,160" Name="1189" Show="true"/>
+      <Label Inherit="" Location="82,66,136,136" Name="658" Show="true">
+        <BackgroundImage File="tz_024" Source="0,0,167,166"/>
+      </Label>
+      <Label Inherit="bg3" Location="167,258,86,30" Name="3398" Show="true"/>
+      <Label Inherit="bg3" Location="88,301,178,70" Name="16955" Show="true"/>
+      <Label Inherit="bg3" Location="88,376,178,70" Name="17188" Show="true"/>
+      <Button Inherit="PushButton" Location="57,458,70,20" Name="btOKCreate" Show="true" Text="$L:598$" CDTime="1000">
+        <Scripts>
+          <OnLClick>layWorld_frmCreateEx_btOKCreate_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="168,458,70,20" Name="btCancelCreate" Show="true" Text="$L:599$">
+        <Scripts>
+          <OnLClick>layWorld_frmCreateEx_btCancelCreate_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Anchors/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="85,0,122,70" Name="1229" Show="true" Text="$L:600$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label AlignCol="CENTER" AlignLine="TOP" BackgroundColor="" Inherit="" Location="131,148,32,22" Name="lbSmithingLevel" Show="true" Text="+0" TextColor="#FF00FF00" TextFont="$L:1$" TextSize="$L:4$"/>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="131,117,32,32" Name="btCreateItem" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmCreateEx_btCreateItem_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmCreateEx_btCreateItem_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmCreateEx_btCreateItem_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="131,59,32,32" Name="btCreateSmithing" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmCreateEx_btCreateSmithing_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmCreateEx_btCreateSmithing_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmCreateEx_btCreateSmithing_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="27,380,60,30" Name="lbCreateName" Show="true" Text="$L:1112$"/>
+      <Label Inherit="" Location="27,263,90,16" Name="522" Show="true" Text="$L:602$"/>
+      <EditBox AlignCol="" AlignLine="CENTER" Enable="false" EnableInput="false" Inherit="" Location="170,262,80,24" Name="edtMoney" Show="true" Text=""/>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="92,170,32,32" Name="btLuckyItem1" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmCreateEx_btLuckyItem1_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmCreateEx_btLuckyItem1_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmCreateEx_btLuckyItem1_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="171,170,32,32" Name="btLuckyItem2" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmCreateEx_btLuckyItem2_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmCreateEx_btLuckyItem2_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmCreateEx_btLuckyItem2_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="66,100,32,32" Name="btLuckyItem3" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmCreateEx_btLuckyItem3_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmCreateEx_btLuckyItem3_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmCreateEx_btLuckyItem3_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="197,100,32,32" Name="btLuckyItem4" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmCreateEx_btLuckyItem4_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmCreateEx_btLuckyItem4_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmCreateEx_btLuckyItem4_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <EditBox AutoScrollV="true" BackgroundColor="#ee000000" Enable="false" EnableInput="false" Location="93,306,168,60" MultiLine="true" Name="lbCreateTip" Show="true" WordWrap="true"/>
+      <Label Inherit="" Location="27,215,110,16" Name="2136" Show="true" Text="$L:840$"/>
+      <EditBox AlignCol="CENTER" AlignLine="CENTER" Enable="false" EnableInput="false" Inherit="" Location="214,211,30,20" Name="SuccessRate" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </EditBox>
+      <Label AlignCol="LEFT" Inherit="" Location="248,211,20,20" Name="2332" Show="true" Text="%"/>
+      <TitleBarButton Location="0,0,294,30" Show=""/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="27,237,150,16" Name="814" Show="true" Text="$L:1108$"/>
+      <EditBox AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Enable="false" EnableInput="false" Inherit="" Location="214,237,30,20" Name="SuccessRate2" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </EditBox>
+      <Label AlignCol="LEFT" Inherit="" Location="247,237,20,20" Name="967" Show="true" Text="%"/>
+      <Label Inherit="" Location="27,304,60,30" Name="1183" Show="true" Text="$L:601$"/>
+      <EditBox AutoScrollV="true" BackgroundColor="#ee000000" Enable="false" EnableInput="false" Location="93,381,168,60" MultiLine="true" Name="exbCreatloseTip" Show="true" Text="$L:1113$" WordWrap="true"/>
+      <Scripts>
+        <OnLoad>layWorld_frmCreateEx_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frmCreateEx_OnEvent(self, event, arg)</OnEvent>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnDragIn>layWorld_frmCreateEx_OnDragIn(drag)</OnDragIn>
+        <OnHide>layWorld_frmCreateEx_OnHide()</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

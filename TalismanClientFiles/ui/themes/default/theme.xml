@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Theme Name="Default">
+
+		<WidgetsDefaultAttrib Description="Widget的默认属性">
+			<Form>
+			</Form>
+		</WidgetsDefaultAttrib>
+
+		<Templates Description="模板Widget">
+	
+	<ModelView Inherit="" Name="TemplateModelViewEditor" MouseDClick="true">
+	  <Scripts>
+		<OnMouseMove>
+			if self:IsCaptured() then
+				if uiIsKeyPressed("CTRL") then
+					self:SetCameraEyeOffset(delta_y/20, 0, -delta_x/20, false);
+				elseif uiIsKeyPressed("SHIFT") then
+					self:MoveCamera(-delta_x/6,delta_y/6,0);
+				end
+			end
+		</OnMouseMove>
+		<OnMouseWheel>
+			self:SetCameraEyeOffset(0, delta/80, 0, false);
+		</OnMouseWheel>
+		<OnLDClick>
+			local Eye = self:GetCameraEye();
+			local LookAt = self:GetCameraLookAt();
+			local name = self:getName();
+			self = uiGetglobal(name);
+			uiEditorAttrSetAttributeEx(self, "Camera", "Eye", string.format("%.2f,%.2f,%.2f", Eye.x, Eye.y, Eye.z), false);
+			self = uiGetglobal(name);
+			uiEditorAttrSetAttributeEx(self, "Camera", "IsEyePosition", tostring(Eye.IsPosition), false);
+			self = uiGetglobal(name);
+			uiEditorAttrSetAttributeEx(self, "Camera", "LookAt", string.format("%.2f,%.2f,%.2f", LookAt.x, LookAt.y, LookAt.z), true);
+		</OnLDClick>
+	  </Scripts>
+	</ModelView>
+		
+    <Button Inherit="" Name="TemplateShortcut" Size="" Location="40,40,32,32" DragIn="true" DragOut="false" Show="true">
+      <BackgroundImage File="background_box"/>
+	  <Scripts>
+		<OnLoad>
+			self:Set("NewShortcut", true);
+			self:Set("DragOut_MouseMove", true);
+			self:Set("DragOut_LeftButton", false);
+			self:Set("DragOut_RightButton", false);
+		</OnLoad>
+		<OnDragIn>
+			local dragIn = uiGetglobal(drag);
+			if dragIn then uiDragIn(self, drag, false) end</OnDragIn>
+		<OnLClick>uiShortcutActive(self);</OnLClick>
+		<OnRClick>uiShortcutActive(self);</OnRClick>
+		<OnDragOut>uiDragOut(self);</OnDragOut>
+		<OnDragNull>uiDragNull(self);</OnDragNull>
+	  </Scripts>
+    </Button>
+	<Button Inherit="TemplateShortcut" Name="TemplateShortcutStatic" DragIn="false" DragOut="false">
+	  <Scripts>
+		<OnDragNull InheritTag="false"/>
+	  </Scripts>
+    </Button>
+		
+	<Widget Inherit="" Location="0,0,300,300" Name="TemplateLayerFull" Show="true" MouseEvent="true" MouseMove="true" Pick="false">
+      <Anchors>
+        <Anchor point="LEFT"/>
+        <Anchor point="TOP"/>
+        <Anchor point="RIGHT"/>
+        <Anchor point="BOTTOM"/>
+      </Anchors>
+	</Widget>
+	<Widget Inherit="" Location="0,0,300,300" Name="TemplateLayerNormal" Show="true" MouseEvent="true" MouseMove="true" Pick="false">
+	</Widget>
+
+
+  <Label Inherit="" Location="10,10,294,50" Name="TemplateNormalTitle" Show="true" Size="294,50">
+    <Label Inherit="" Location="18,0,128,25" Name="lbcenter" Show="true" Size="0,25">
+      <BackgroundImage File="tz_028" FillMode="REPEAT" Source="0,0,128,25"/>
+      <Anchors>
+        <Anchor point="TOP"/>
+        <Anchor offset="13,0" point="LEFT"/>
+        <Anchor offset="-13,0" point="RIGHT"/>
+      </Anchors>
+    </Label>
+    <Label Inherit="" Location="0,0,19,30" Name="lbleft" Show="true" Size="19,30">
+      <BackgroundImage File="tz_028" Source="0,75,19,30"/>
+      <Anchors>
+        <Anchor point="TOP"/>
+        <Anchor offset="4,0" point="LEFT"/>
+      </Anchors>
+    </Label>
+    <Label Inherit="" Location="116,0,19,30" Name="lbright" Show="true" Size="19,30">
+      <BackgroundImage File="tz_028" Source="24,75,19,30"/>
+      <Anchors>
+        <Anchor point="TOP"/>
+        <Anchor  offset="-4,0" point="RIGHT"/>
+      </Anchors>
+    </Label>
+    <Label Inherit="" Location="18,25,128,21" Name="lbTitelText" Show="true" Size="128,21">
+      <BackgroundImage File="tz_028" Source="0,107,128,21"/>
+      <Anchors>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lbcenter"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+    </Label>
+  </Label>
+
+
+
+
+<Widget Inherit="" Location="222,134,200,200" Name="bg1" Show="false" Pick="false">
+    <Widgets>
+      <Widget Inherit="" Location="81,79,8,8" Name="lt" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_01" Source=""/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="rt" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_02" Source=""/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="lb" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_03" Source=""/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+
+
+      <Widget Inherit="" Location="81,79,8,8" Name="rb" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_04" Source=""/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+
+
+      <Widget Inherit="" Location="81,79,8,8" Name="l" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_05" FillMode="REPEAT" Source="0,0,8,8"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="lt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="r" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_06" FillMode="REPEAT" Source="0,0,8,8"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="rt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+          <Anchor point="RIGHT" relativeTo="rt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="t" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_07" FillMode="REPEAT" Source="0,0,8,8"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lt"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="b" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_08" FillMode="REPEAT" Source="0,0,8,8"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lb"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+          <Anchor point="BOTTOM" relativeTo="lb"/>
+        </Anchors>
+      </Widget>
+      <Widget BackgroundColor="" Name="center" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_09" FillMode="REPEAT"/>
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,19,19" Name="rb1" Show="true" Size="19,19" Pick="false" Level="0">
+        <BackgroundImage File="tz_013" Source="27,356,19,19"/>
+        <Anchors>
+          <Anchor point="RIGHT" relativeTo="rb"/>
+          <Anchor point="BOTTOM" relativeTo="rb"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,19,19" Name="lb1" Show="true" Size="19,19" Pick="false" Level="0">
+        <BackgroundImage File="tz_013" Source="0,356,19,19"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="lb"/>
+          <Anchor point="BOTTOM" relativeTo="lb"/>
+        </Anchors>
+      </Widget>
+    </Widgets>
+  </Widget>
+
+<Widget Inherit="" Location="222,134,200,200" Name="bg2" Show="false" Pick="false">
+    <Widgets>
+      <Widget Inherit="" Location="81,79,8,8" Name="lt" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_012" Source="233,142,8,8"/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="rt" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_012" Source="250,142,8,8"/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="lb" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_012" Source="263,144,8,8"/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="rb" Show="true" Size="8,8" Pick="false" Level="0">
+        <BackgroundImage File="tz_012" Source="280,144,8,8"/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="l" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_019" FillMode="REPEAT" Source="3,0,5,8"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="lt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="r" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_020" FillMode="REPEAT" Source="0,0,8,8"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="rt" offset="2,0"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+          <Anchor point="RIGHT" relativeTo="rt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="t" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_021" FillMode="REPEAT" Source="0,3,8,5"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lt"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,8" Name="b" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_022" FillMode="REPEAT" Source="0,0,8,8"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lb" offset="0,2"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+          <Anchor point="BOTTOM" relativeTo="lb"/>
+        </Anchors>
+      </Widget>
+      <Widget BackgroundColor="" Name="center" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_014" FillMode="REPEAT"/>
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+        </Anchors>
+      </Widget>
+    </Widgets>
+  </Widget>
+
+<Widget Inherit="" Location="222,134,200,200" Name="bg3" Show="false" Pick="true">
+    <Widgets>
+      <Widget Inherit="" Location="81,79,5,5" Name="lt" Show="true" Size="5,5" Pick="true" Level="0">
+        <BackgroundImage File="tz_012" Source="233,117,5,5"/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,5,5" Name="rt" Show="true" Size="5,5" Pick="true" Level="0">
+        <BackgroundImage File="tz_012" Source="248,117,5,5"/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,5,5" Name="lb" Show="true" Size="5,5" Pick="false" Level="0">
+        <BackgroundImage File="tz_012" Source="262,117,5,5"/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,5,5" Name="rb" Show="true" Size="5,5" Pick="false" Level="0">
+        <BackgroundImage File="tz_012" Source="277,117,5,5"/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,5,8" Name="l" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_015" FillMode="REPEAT" Source="3,0,5,8"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="lt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,5,8" Name="r" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_016" FillMode="REPEAT" Source="0,0,5,8"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="rt" offset="0,0"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+          <Anchor point="RIGHT" relativeTo="rt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,5" Name="t" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_017" FillMode="REPEAT" Source="0,3,8,5"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lt"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,8,5" Name="b" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_018" FillMode="REPEAT" Source="0,0,8,5"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lb" offset="0,0"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+          <Anchor point="BOTTOM" relativeTo="lb"/>
+        </Anchors>
+      </Widget>
+      <Widget BackgroundColor="" Name="center" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="tz_014" FillMode="REPEAT"/>
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+        </Anchors>
+      </Widget>
+    </Widgets>
+  </Widget>
+
+
+
+
+
+
+			<Button Name="PushButton" Text="PushButton">
+				<NormalImage File="tz_010" Source="443,242,61,21" />
+				<PushedImage File="tz_010" Source="443,267,60,20"/>
+				<DisabledImage File="tz_010" Source="443,267,60,20"/>
+			</Button>
+			
+			<Button Name="PushButtonLong" Text="PushButton">
+				<NormalImage File="tz_010" Source="0,325,120,20" />
+				<PushedImage File="tz_010" Source="130,325,120,20"/>
+				<DisabledImage File="tz_010" Source="130,325,120,20"/>
+			</Button>
+
+			<Button Name="PushButtonLong2" Text="PushButton2">
+				<NormalImage File="tz_010" Source="0,353,178,20" />
+				<PushedImage File="tz_010" Source="332,353,178,20"/>
+				<DisabledImage File="tz_010" Source="332,353,178,20"/>
+			</Button>
+
+	
+			<Button Name="PushButtonBlue" Text="PushButton">
+				<NormalImage File="" Source="0,105,148,24" />
+				<PushedImage File="" Source="0,172,148,24"/>
+				<DisabledImage File="" Source="0,172,148,24"/>
+			</Button>
+
+			<EditBox Name="StudioEdit" >
+				<Border size="1" color="#99999999" />
+				<BackgroundImage File="" />
+			</EditBox>
+
+			<EditBox Name="DefaultEdit" ColSpacing="4" LineSpacing="4">
+				<BackgroundImage File="" />
+			</EditBox>
+
+			<CheckButton Name="DefaultChkBtn" Text="ChkBtn" BackgroundColor="#bb222222" CheckStyle="true">
+				<NormalImage File="tz_012" Source="152,7,24,22" />
+				<HighlightCheckArea File="" />
+				<PushedImage File="tz_012" Source="152,7,24,22" />
+				<DisabledImage File="tz_012" Source="152,7,24,22" />
+				<CheckImage File="tz_012" Source="82,5,24,21" />
+				<CheckDisabledImage File="tz_012" Source="120,5,24,21" />
+			</CheckButton>
+
+			<ComboBox Name="StudioCb" EnableInput="false" >
+				<DropdownButton>
+					<NormalImage File="tz_010" Source="485,328,18,18"/>
+					<DisabledImage File="tz_010" Source="118,399,18,18" />
+				</DropdownButton>
+				<DropdownList BackgroundColor="#cc334422" >
+					<Border size="1" color="#ffffffff" />
+				</DropdownList>
+				<Editor>
+					<Border size="1" color="#99999999" />
+					<BackgroundImage File="tz_011" Source="84,0,160,20" />
+				</Editor>
+			</ComboBox>
+
+			<CloseButton Name="DefaultCloseBtn" Text="" Show="true" Location="0,0,18,16" >
+				<NormalImage File="" Source="6,7,19,18" />
+				<HighlightImage File="" Source="6,7,19,18" Blend="true" Transparency="0.5"/>
+				<PushedImage File="" Source="6,7,19,18" />
+				<DisabledImage File="" Source="6,7,19,18" />
+			</CloseButton>
+
+		  <Form Inherit="" Location="222,134,300,500" Name="TitleBarForm">
+			<TitleBarButton Size="0,18">
+			  <!--<BackgroundImage File="" Source="0,0,256,18"/>-->
+			  <Anchors>
+				<Anchor point="LEFT"/>
+				<Anchor point="RIGHT"/>
+				<Anchor point="TOP"/>
+			  </Anchors>
+			</TitleBarButton>
+			<CloseButton Size="13,13">
+			  <Anchors>
+				<Anchor point="TOP" offset="0,20"/>
+				<Anchor point="RIGHT" offset="-10,0"/>
+			  </Anchors>
+			  <NormalImage File="tz_010" Source="120,383,13,13"/>
+			  <PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+		  </Form>
+		  
+		  <Button Inherit="" Location="222,134,300,500" Name="TemplateButtonAsTitleBar">
+              <Scripts>
+			    <OnLDown>
+				  local x, y = uiGetWidgetRect(self);
+				  self:Set("MouseOffset", {x = mouse_x - x, y = mouse_y - y});
+				</OnLDown>
+	            <OnMouseMove>
+		          if self:IsCaptured() then
+					local target = self:Get("TARGET");
+					local allowX = self:Get("ALLOW_X");
+					local allowY = self:Get("ALLOW_Y");
+					if not target then uiError("[Theme.xml:TemplateButtonResizeForm]:NoTarget error!!!"); return; end
+					if target == "$parent" then
+						target = SAPI.GetParent(self);
+					else
+						target = uiGetglobal(target);
+					end
+					if not target then uiError("[Theme.xml:TemplateButtonResizeForm]:NoTarget error!!!"); return; end
+				    local x, y = uiGetWidgetRect(self);
+				    local offset = self:Get("MouseOffset");
+					local _x = mouse_x - (x + offset.x);
+					local _y = mouse_y - (y + offset.y);
+					if not allowX then		_x = 0;		end
+					if not allowY then		_y = 0;		end
+		            target:MoveTo_Offset(_x, _y);
+		          end
+		        </OnMouseMove>
+			  </Scripts>
+		  </Button>
+		  <Button Inherit="" Location="222,134,300,500" Name="TemplateButtonResizeForm">
+              <Scripts>
+			    <OnLDown>
+				  local x, y = uiGetWidgetRect(self);
+				  self:Set("MouseOffset", {x = mouse_x - x, y = mouse_y - y});
+				</OnLDown>
+	            <OnMouseMove>
+		          if self:IsCaptured() then
+					local ResizeType = self:Get("ResizeButtonType");
+				    local target = ResizeType.Target;
+					if not target then uiError("[Theme.xml:TemplateButtonResizeForm]:NoTarget error!!!"); return; end
+					target = uiGetglobal(target);
+					if not target then uiError("[Theme.xml:TemplateButtonResizeForm]:NoTarget error!!!"); return; end
+				    local x, y = uiGetWidgetRect(self);
+				    local offset = self:Get("MouseOffset");
+					local _x = mouse_x - (x + offset.x);
+					local _y = mouse_y - (y + offset.y);
+					local _w = 0;
+					local _h = 0;
+					if ResizeType.Left then					_w = -_x;
+					elseif ResizeType.Right then			_w =  _x;	_x = 0;
+					else									_w =   0;	_x = 0;
+					end
+					if ResizeType.Top then					_h = -_y;
+					elseif ResizeType.Bottom then			_h =  _y;	_y = 0;
+					else									_h =   0;	_y = 0;
+					end
+		            target:MoveSize_Offset(_x, _y, _w, _h);
+		          end
+		        </OnMouseMove>
+			  </Scripts>
+		  </Button>
+		  <Form Inherit="TitleBarForm" Location="222,134,200,200" Name="StandardWindowForm" MaxSize="200,200" MinSize="100,100">
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_LeftTop" Size="10,10" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="LEFT"/>
+				<Anchor point="TOP"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Left=true,Top=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_RightTop" Size="10,10" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="RIGHT"/>
+				<Anchor point="TOP"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Top=true,Right=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_RightBottom" Size="10,10" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="RIGHT"/>
+				<Anchor point="BOTTOM"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Right=true,Bottom=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_LeftBottom" Size="10,10" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="LEFT"/>
+				<Anchor point="BOTTOM"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Left=true,Bottom=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_Left" Size="10,0" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="LEFT"/>
+				<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="Resize_LeftTop"/>
+				<Anchor point="BOTTOM" relativePoint="TOP" relativeTo="Resize_LeftBottom"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Left=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_Top" Size="0,10" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="TOP"/>
+				<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="Resize_LeftTop"/>
+				<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="Resize_RightTop"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Top=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_Right" Size="10,0" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="RIGHT"/>
+				<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="Resize_RightTop"/>
+				<Anchor point="BOTTOM" relativePoint="TOP" relativeTo="Resize_RightBottom"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Right=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<Button Inherit="TemplateButtonResizeForm" Location="222,134,300,500" Name="Resize_Bottom" Size="0,10" BackgroundColor="#eeff0000">
+			  <Anchors>
+				<Anchor point="BOTTOM"/>
+				<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="Resize_LeftBottom"/>
+				<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="Resize_RightBottom"/>
+			  </Anchors>
+              <Scripts>
+			    <OnLoad>self:Set("ResizeButtonType", {Bottom=true,Target=SAPI.GetParent(self):getName()});</OnLoad>
+	          </Scripts>
+			</Button>
+			<TitleBarButton Inherit="PushButton" Size="0,18">
+			  <!--<BackgroundImage File="" Source="0,0,256,18"/>-->
+			  <Anchors>
+				<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="Resize_Left"/>
+				<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="Resize_Right"/>
+				<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="Resize_Top"/>
+			  </Anchors>
+			</TitleBarButton>
+			<CloseButton Size="18,18">
+			  <NormalImage File="" Source="156,110,15,15"/>
+			  <PushedImage File="" Source="196,110,15,15"/>
+			  <Anchors>
+				<Anchor point="TOP" offset="0,0"/>
+				<Anchor point="RIGHT" offset="-6,0"/>
+			  </Anchors>
+			</CloseButton>
+		  </Form>
+
+		  <Form Inherit="" Location="222,134,300,500" Name="NoTitleBarForm">
+			<TitleBarButton Show="false"/>
+			<CloseButton Show="false"/>
+		  </Form>
+
+			<Tree Name="Def_Tree" AutoScrollV="true" >
+				<ExpandImage File="ico02"/>
+				<ShrinkImage File="ico04"/>
+			</Tree>
+			<Tree Name="Noscroll_Tree"  >
+				<ExpandImage File="tree_arrow" Source="0,2,12,12" Blend="true"/>
+				<ShrinkImage File="tree_arrow" Source="18,0,12,12" Blend="true"/>
+			</Tree>
+
+			  <Widget Inherit="" Location="222,134,300,500" Name="" Show="true">
+			    <Widgets>
+				<Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+				  <BackgroundImage File="" Source="4,2,6,6"/>
+				  <Anchors>
+					<Anchor point="LEFT" />
+					<Anchor point="TOP" />
+				  </Anchors>
+				</Widget>
+				<Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+				  <BackgroundImage File="" Source="246,2,6,6"/>
+				  <Anchors>
+					<Anchor point="RIGHT" />
+					<Anchor point="TOP" />
+				  </Anchors>
+				</Widget>
+				<Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+				  <BackgroundImage File="" Source="4,119,6,6"/>
+				  <Anchors>
+					<Anchor point="LEFT" />
+					<Anchor point="BOTTOM" />
+				  </Anchors>
+				</Widget>
+				<Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+				  <BackgroundImage File="" Source="246,119,6,6"/>
+				  <Anchors>
+					<Anchor point="RIGHT" />
+					<Anchor point="BOTTOM" />
+				  </Anchors>
+				</Widget>
+				<Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+				  <BackgroundImage File="" Source="4,9,6,6"/>
+				  <Anchors>
+					<Anchor point="LEFT" relativeTo="lt"/>
+					<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+					<Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+					<Anchor point="RIGHT" relativeTo="lt"/>
+				  </Anchors>
+				</Widget>
+				<Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+				  <BackgroundImage File="" Source="246,9,6,6"/>
+				  <Anchors>
+					<Anchor point="LEFT" relativeTo="rt"/>
+					<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+					<Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+					<Anchor point="RIGHT" relativeTo="rt"/>
+				  </Anchors>
+				</Widget>
+				<Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+				  <BackgroundImage File="" Source="9,2,6,6"/>
+				  <Anchors>
+					<Anchor point="TOP" relativeTo="lt"/>
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+					<Anchor point="BOTTOM" relativeTo="lt"/>
+				  </Anchors>
+				</Widget>
+				<Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+				  <BackgroundImage File="" Source="9,119,6,6"/>
+				  <Anchors>
+					<Anchor point="TOP" relativeTo="lb"/>
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+					<Anchor point="BOTTOM" relativeTo="lb"/>
+				  </Anchors>
+				</Widget>
+				<Widget Name="center" Show="true" BackgroundColor="#bb222222" >
+				  <Anchors>
+				    <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+					<Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+				  </Anchors>
+				</Widget>
+				</Widgets>
+			  </Widget>
+
+			<ScrollBarV Name="DefaultSbv" Text="" >
+				<HandleImage File="tz_012" Source="164,301,22,30"/>
+				<TopButton>
+					<NormalImage File="tz_010" Source="5,382,15,12" />
+					<DisabledImage File="tz_010" Source="5,400,15,12" />
+				</TopButton>
+				<BottomButton>
+					<NormalImage File="tz_010" Source="29,384,15,12" />
+					<DisabledImage File="tz_010" Source="29,401,15,12" />
+				</BottomButton>
+				<ToBottomButton Show="false">
+				  <NormalImage File="tz_010" Source="71,421,21,20"/>
+				  <PushedImage File="tz_010" Source="209,484,21,20"/>
+				  <Flicker Cycle="2.0" Show="false">
+					<Image File="tz_010" Source="40,454,21,20"/>
+				  </Flicker>
+				</ToBottomButton>
+			</ScrollBarV>
+
+			<ScrollBarH Name="DefaultSbh" >
+				<HandleImage File="" Source="7,9,17,15"/>
+				<LeftButton>
+					<NormalImage File="" Source="9,7,15,17" />
+					<HighlightImage File="" Source="9,7,15,17" Blend="true" Transparency="0.5" />
+					<PushedImage File="" Source="9,7,15,17" />
+					<DisabledImage File="" Source="9,7,15,17" />
+				</LeftButton>
+				<RightButton>
+					<NormalImage File="" Source="7,9,17,15" />
+					<HighlightImage File="" Source="7,9,17,15" Blend="true" Transparency="0.5" />
+					<PushedImage File="" Source="7,9,17,15" />
+					<DisabledImage File="" Source="7,9,17,15" />
+				</RightButton>
+			</ScrollBarH>
+
+			<SliderV Name="DefaultSliderV">
+				<RailwayImage File="tz_012" Source="8,307,130,12" />
+				<SliderBar>
+					<NormalImage File="tz_012" Source="145,307,10,12" />
+				</SliderBar>
+			</SliderV>
+
+			<Widget Name="BorderOut" BackgroundColor="#bb222222" >
+				<BorderImage File="" Source="4,2,248,123" bottom="6" left="6" right="6" top="6" />
+			</Widget>
+			<Widget Name="BorderIn" BackgroundColor="#bb222222" >
+				<BorderImage File="" Source="4,2,248,123" bottom="6" left="6" right="6" top="6" renderOut="false"/>
+			</Widget>
+
+		</Templates>
+
+		<SystemWidgets Description="系统内置Widgets，每一个Theme都必须包含这些Widgets">
+
+			<Layer Name="$laySystem" >
+
+			<Label Name="$DefaultHint" BackgroundColor="#bb222222" Show="false" Location="0,0,60,16" />
+
+			<ScrollBarV Name="$AutoSbv" Text="" Show="false">
+				<HandleImage File="tz_012" Source="164,301,22,30"/>
+				<TopButton>
+					<NormalImage File="tz_010" Source="5,382,15,12" />
+					<DisabledImage File="tz_010" Source="5,400,15,12" />
+				</TopButton>
+				<BottomButton>
+					<NormalImage File="tz_010" Source="29,384,15,12" />
+					<DisabledImage File="tz_010" Source="29,401,15,12" />
+				</BottomButton>
+				<ToBottomButton Show="false">
+				  <NormalImage File="tz_010" Source="71,421,21,20"/>
+				  <PushedImage File="tz_010" Source="209,484,21,20"/>
+				  <Flicker Cycle="2.0" Show="false">
+					<Image File="tz_010" Source="40,454,21,20"/>
+				  </Flicker>
+				</ToBottomButton>
+			</ScrollBarV>
+
+			<ScrollBarH Name="$AutoSbh" Text="" Show="false">
+				<HandleImage File="" Source="7,9,17,15"/>
+				<LeftButton>
+					<NormalImage File="" Source="9,7,15,17" />
+					<HighlightImage File="" Source="9,7,15,17" />
+					<PushedImage File="" Source="9,7,15,17" />
+					<DisabledImage File="" Source="9,7,15,17" />
+				</LeftButton>
+				<RightButton>
+					<NormalImage File="" Source="7,9,17,15" />
+					<HighlightImage File="" Source="7,9,17,15" />
+					<PushedImage File="" Source="7,9,17,15" />
+					<DisabledImage File="" Source="7,9,17,15" />
+				</RightButton>
+			</ScrollBarH>
+
+			<!--<PopupMenu Name="$PopupMenu" BackgroundColor="#bb222222" Show="false" Location="0,0,100,200" />-->
+
+			  <PopupMenu Inherit="" Location="129,529,100,90" Name="$PopupMenu" Show="false">
+				<MenuList HoverSelect="true" AutoScrollV="false" DrawHeader="true" AutoResize="true" BackgroundColor="#bb222222" >
+					<ColumnButton Text="MenuColumn" Width="100" TextColor="#ff00ffff" >
+					</ColumnButton>
+				</MenuList>
+				<Widgets>
+				  <Widget Inherit="" Location="81,79,5,8" Name="l" Show="true" Size="5,0">
+					<BackgroundImage File="tz_015" FillMode="REPEAT" Source="3,0,5,8"/>
+					<Anchors>
+					  <Anchor point="TOP" relativeTo="$MenuList"/>
+					  <Anchor point="BOTTOM" relativeTo="$MenuList"/>
+					  <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$MenuList"/>
+					</Anchors>
+				  </Widget>
+				  <Widget Inherit="" Location="81,79,5,8" Name="r" Show="true" Size="5,0">
+					<BackgroundImage File="tz_016" FillMode="REPEAT" Source="0,0,5,8"/>
+					<Anchors>
+					  <Anchor point="LEFT" relativeTo="$MenuList" relativePoint="RIGHT"/>
+					  <Anchor point="TOP" relativeTo="$MenuList"/>
+					  <Anchor point="BOTTOM" relativeTo="$MenuList"/>
+					</Anchors>
+				  </Widget>
+				  <Widget Inherit="" Location="81,79,8,5" Name="t" Show="true" Size="0,5">
+					<BackgroundImage File="tz_017" FillMode="REPEAT" Source="0,3,8,5"/>
+					<Anchors>
+					  <Anchor point="LEFT" relativeTo="$MenuList"/>
+					  <Anchor point="RIGHT" relativeTo="$MenuList"/>
+					  <Anchor point="BOTTOM" relativeTo="$MenuList" relativePoint="TOP"/>
+					</Anchors>
+				  </Widget>
+				  <Widget Inherit="" Location="81,79,8,5" Name="b" Show="true" Size="0,5">
+					<BackgroundImage File="tz_018" FillMode="REPEAT" Source="0,0,8,5"/>
+					<Anchors>
+					  <Anchor point="TOP" relativeTo="$MenuList" relativePoint="BOTTOM"/>
+					  <Anchor point="LEFT" relativeTo="$MenuList"/>
+					  <Anchor point="RIGHT" relativeTo="$MenuList"/>
+					</Anchors>
+				  </Widget>
+				  <Widget Inherit="" Location="81,79,5,5" Name="lt" Show="true" Size="5,5">
+					<BackgroundImage File="tz_012" Source="233,117,5,5"/>
+					<Anchors>
+					  <Anchor point="LEFT" relativeTo="l" />
+					  <Anchor point="TOP" relativeTo="t" />
+					</Anchors>
+				  </Widget>
+				  <Widget Inherit="" Location="81,79,5,5" Name="rt" Show="true" Size="5,5">
+					<BackgroundImage File="tz_012" Source="248,117,5,5"/>
+					<Anchors>
+					  <Anchor point="RIGHT" relativeTo="r" />
+					  <Anchor point="TOP" relativeTo="t" />
+					</Anchors>
+				  </Widget>
+				  <Widget Inherit="" Location="81,79,5,5" Name="lb" Show="true" Size="5,5">
+					<BackgroundImage File="tz_012" Source="262,117,5,5"/>
+					<Anchors>
+					  <Anchor point="LEFT" relativeTo="l" />
+					  <Anchor point="BOTTOM" relativeTo="b" />
+					</Anchors>
+				  </Widget>
+				  <Widget Inherit="" Location="81,79,5,5" Name="rb" Show="true" Size="5,5">
+					<BackgroundImage File="tz_012" Source="277,117,5,5"/>
+					<Anchors>
+					  <Anchor point="RIGHT" relativeTo="r" />
+					  <Anchor point="BOTTOM" relativeTo="b" />
+					</Anchors>
+				  </Widget>
+				</Widgets>
+				<Scripts>
+					<OnMenuSelect>
+						if not SystemPopupMenuCallBackList then return end
+						for _, FTable in ipairs(SystemPopupMenuCallBackList) do
+							FTable.F(self, select, FTable.Arg);
+						end
+					</OnMenuSelect>
+					<OnHide>
+						SAPI.RemoveDefaultPopupMenuCallBack();
+					</OnHide>
+				</Scripts>
+			  </PopupMenu>
+
+
+
+ <Form Inherit="" Location="299,273,294,230" Name="$MessageBox" Show="false" Size="294,234">
+      <Label Inherit="" Location="112,29,70,30" Name="$Title" Show="true" AlignCol="CENTER" Size="70,30"/>
+      <Label Inherit="bg1" Location="7,20,285,210" Name="$Bk1" Show="true">
+        <Label Inherit="bg3" Location="10,33,256,138" Name="1304" Show="true" Level="50"/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="$Bk2" Show="fals">
+      </Label>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="26,63,246,124" MultiLine="true" Name="$Message" Show="true" WordWrap="true"/>
+      <Button Inherit="PushButton" Location="123,198,80,20" Name="$Ok" Show="true" Text="$L:724$">
+		<Scripts>
+			<OnLClick>
+				local frame = SAPI.GetParent(self);
+				local messagebox = uiFindMessageBoxByForm(frame);
+				SAPI.CallWidgetCallBackFunction(messagebox, frame, "Ok");
+				SAPI.RemoveWidgetCallBack(frame);
+			</OnLClick>
+		</Scripts>
+	  </Button>
+      <Button Inherit="PushButton" Location="188,167,80,20" Name="$Cancel" Show="true" Text="$L:604$">
+		<Scripts>
+			<OnLClick>
+				local frame = SAPI.GetParent(self);
+				local messagebox = uiFindMessageBoxByForm(frame);
+				SAPI.CallWidgetCallBackFunction(messagebox, frame, "Cancel");
+				SAPI.RemoveWidgetCallBack(frame);
+			</OnLClick>
+		</Scripts>
+	  </Button>
+      <TitleBarButton Location="0,0,294,20"/>
+      <CloseButton Show="fasle"/>
+      <Anchors>
+        <Anchor offset="0,0" point="CENTERH"/>
+        <Anchor offset="0,-140" point="CENTERV"/>
+      </Anchors>
+	  <Scripts>
+		<OnHide>
+			local frame = self;
+			local messagebox = uiFindMessageBoxByForm(frame);
+			SAPI.CallWidgetCallBackFunction(messagebox, frame, "Cancel");
+			SAPI.RemoveWidgetCallBack(frame);
+		</OnHide>
+		<OnUpdate>
+			local frame = self;
+			local messagebox = uiFindMessageBoxByForm(frame);
+			SAPI.CallWidgetCallBackFunction(messagebox, frame, "Update");
+		</OnUpdate>
+	  </Scripts>
+    </Form>
+
+<Form Inherit="" Location="200,200,290,180" Name="$InputBox" Show="false" Size="290,200">
+    <Label Inherit="" Location="105,29,70,30" Name="$Title" Show="true" AlignCol="CENTER" Size="70,30"/>
+    <Label Inherit="bg1" Location="10,18,262,160" Name="$Bk1" Show="true"/>
+    <Label Inherit="TemplateNormalTitle" Location="0,1,278,47" Name="$Bk2" Show="true">
+    </Label>
+    <Button Inherit="PushButton" Location="46,146,80,20" Name="$Ok" Text="$L:603$">
+		<Scripts>
+			<OnLClick>
+				local frame = SAPI.GetParent(self);
+				local inputbox = uiFindInputBoxByForm(frame);
+				local InputContent = frame:Get("InputContent");
+				SAPI.CallWidgetCallBackFunction(inputbox, frame, "Ok", frame:Get("InputContent"));
+				SAPI.RemoveWidgetCallBack(frame);
+			</OnLClick>
+		</Scripts>
+	</Button>
+    <Button Inherit="PushButton" Location="154,146,80,20" Name="$Cancel" Text="$L:604$">
+		<Scripts>
+			<OnLClick>
+				local frame = SAPI.GetParent(self);
+				local inputbox = uiFindInputBoxByForm(frame);
+				SAPI.CallWidgetCallBackFunction(inputbox, frame, "Cancel", frame:Get("InputContent"));
+				SAPI.RemoveWidgetCallBack(frame);
+			</OnLClick>
+		</Scripts>
+	</Button>
+    <EditBox EnableInput="false" Location="31,52,220,66" MultiLine="true" Name="$Message" WordWrap="true"/>
+    <EditBox AutoScrollV="false" Inherit="" Location="29,123,220,18" MultiLine="false" Name="$Edit" Text="" WordWrap="false">
+      <Border color="#ff999999" size="1"/>
+	  <Scripts>
+	    <OnTextChanged>SAPI.GetParent(self):Set("InputContent", self:getText());</OnTextChanged>
+		<OnKeyDown>
+			if uiGetKeyName(key) == "ENTER" then
+				local frame = SAPI.GetParent(self);
+				local inputbox = uiFindInputBoxByForm(frame);
+				local InputContent = frame:Get("InputContent");
+				SAPI.CallWidgetCallBackFunction(inputbox, frame, "Ok", InputContent);
+				SAPI.RemoveWidgetCallBack(frame);
+			end
+		</OnKeyDown> 
+	  </Scripts>
+    </EditBox>
+    <Anchors>
+      <Anchor point="CENTERH"/>
+      <Anchor offset="0,-140" point="CENTERV"/>
+    </Anchors>
+    <TitleBarButton Location="0,1,286,30"/>
+    <CloseButton Location="244,26,14,15">
+      <NormalImage File="tz_010" Source="120,383,13,13"/>
+      <PushedImage File="tz_010" Source="98,383,13,13"/>
+    </CloseButton>
+	<Scripts>
+		<OnHide>
+			local frame = self;
+			local inputbox = uiFindInputBoxByForm(frame);
+			SAPI.CallWidgetCallBackFunction(inputbox, frame, "Cancel", frame:Get("InputContent"));
+			SAPI.RemoveWidgetCallBack(frame);
+		</OnHide>
+		<OnUpdate>
+			local frame = self;
+			local inputbox = uiFindInputBoxByForm(frame);
+			SAPI.CallWidgetCallBackFunction(inputbox, frame, "Update");
+		</OnUpdate>
+	</Scripts>
+  </Form>
+
+
+			</Layer>
+
+		</SystemWidgets>
+
+	</Theme>
+</Ui>

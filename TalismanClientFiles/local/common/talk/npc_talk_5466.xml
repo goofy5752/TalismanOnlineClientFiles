@@ -1,0 +1,15 @@
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:npctalk5466$"color="#ffa6a845" />
+	</Items>
+  </Line>
+
+ <Line>
+    
+  </Line>
+
+ <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help5466_01a$" hlink="File:local/common/help/help5644_001.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>

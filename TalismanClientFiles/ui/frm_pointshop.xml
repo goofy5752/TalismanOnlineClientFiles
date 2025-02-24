@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_PointShop.lua">Script</Script>
+  <Script file="frm_PointShop_api.lua">Script</Script>
+  <Theme Name="Business">
+    <Templates>
+      <CheckButton Inherit="" Name="PointShopItemTypeTemplate" Show="false">
+        <PushedImage File="tz_012" Source="216,69,256,40"/>
+        <CheckImage File="tz_012" Source="216,69,256,40"/>
+        <Widget Inherit="bg3" Name="wgtBorders" Show="TRUE">
+          <Anchors>
+            <Anchor point="TOP"/>
+            <Anchor point="RIGHT"/>
+            <Anchor point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+        </Widget>
+        <Label AlignLine="CENTER" Inherit="" Location="8,6,24,24" Name="Image" Show="false" Text=""/>
+        <Label AlignLine="CENTER" Inherit="" Location="8,6,65,24" Name="Name" Show="true" Text=""/>
+        <Hint/>
+        <Scripts>
+          <OnLClick>PointShopItemType_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Name="PointShopItemTemplate" Show="false" Size="214,80">
+        <PushedImage File="tz_012" Source="216,69,256,40"/>
+        <CheckImage File="tz_012" Source="216,69,256,40"/>
+        <Hint/>
+        <Widget Inherit="bg3" Name="wgtBorders" Show="TRUE">
+          <Anchors>
+            <Anchor point="TOP"/>
+            <Anchor point="RIGHT"/>
+            <Anchor point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+        </Widget>
+        <Label AutoSize="true" Inherit="" Location="0,0,50,50" Name="Icon" Show="true" Size="50,50" Text="">
+          <BackgroundImage File="" FillMode="" Source=""/>
+          <Anchors>
+            <Anchor offset="0,8" point="TOP"/>
+            <Anchor offset="-8,0" point="RIGHT"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="" Location="8,14,32,32" Name="Image" Show="true">
+          <BackgroundImage File="" FillMode="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="48,14,148,20" Name="Name" Show="true" Text=""/>
+        <Label AlignCol="RIGHT" Inherit="" Location="38,36,70,20" Name="PointLebal" Show="true" Text="$L:940$"/>
+        <EditBox EnableInput="false" Inherit="" Location="110,36,88,16" MouseEvent="false" Name="Point" Show="true" Text="-"/>
+        <Button Inherit="PushButton" Location="138,54,64,22" Name="Buy" Show="true" Text="$L:441$">
+          <Scripts>
+            <OnLClick>PointShopItemBuy_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Scripts>
+          <OnLClick>PointShopItem_OnLClick(self);</OnLClick>
+          <OnEnter>PointShopItem_OnEnter(self);</OnEnter>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Name="PointShopItemLinkTemplate" Show="false" Size="175,40">
+        <PushedImage File="tz_012" Source="216,69,256,40"/>
+        <CheckImage File="tz_012" Source="216,69,256,40"/>
+        <Widget Inherit="bg3" Name="wgtBorders" Show="TRUE">
+          <Anchors>
+            <Anchor point="TOP"/>
+            <Anchor point="RIGHT"/>
+            <Anchor point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+        </Widget>
+        <Label AlignLine="CENTER" Inherit="" Location="8,8,24,24" Name="Image" Show="true" Text=""/>
+        <Label AlignLine="CENTER" Inherit="" Location="40,8,160,24" Name="Name" Show="true" Text=""/>
+        <Scripts>
+          <OnLClick>PointShopItemLink_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+    </Templates>
+  </Theme>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="45,216,988,450" Name="frmPointShop1" Show="false">
+      <Label Inherit="bg1" Location="8,20,972,430" Name="775" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,990,46" Name="807" Show="true" Size="990,46">
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="" Location="573,9,323,24" Name="726" Show="false">
+        <BackgroundImage File="tz_010" Source="0,108,250,24"/>
+      </Label>
+      <TitleBarButton Location="0,1,984,25"/>
+      <CloseButton Location="946,28,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Form Inherit="NoTitleBarForm" Location="20,50,97,286" Name="frmShopTypes" Show="true">
+        <Label Inherit="bg3" Location="0,0,97,286" Name="12942" Show="true"/>
+        <CheckButton Inherit="PointShopItemTypeTemplate" Location="8,11,80,36" Name="ItemType0" Show="fals"/>
+        <CheckButton Inherit="PointShopItemTypeTemplate" Name="ItemType1" Show="show" Size="80,36">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="ItemType0"/>
+            <Anchor offset="0,3" point="TOP" relativePoint="BOTTOM" relativeTo="ItemType0"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTypeTemplate" Name="ItemType2" Show="" Size="80,36">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="ItemType1"/>
+            <Anchor offset="0,3" point="TOP" relativePoint="BOTTOM" relativeTo="ItemType1"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTypeTemplate" Name="ItemType3" Show="" Size="80,36">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="ItemType2"/>
+            <Anchor offset="0,3" point="TOP" relativePoint="BOTTOM" relativeTo="ItemType2"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTypeTemplate" Name="ItemType4" Show="" Size="80,36">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="ItemType3"/>
+            <Anchor offset="0,3" point="TOP" relativePoint="BOTTOM" relativeTo="ItemType3"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTypeTemplate" Name="ItemType5" Show="" Size="80,36">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="ItemType4"/>
+            <Anchor offset="0,3" point="TOP" relativePoint="BOTTOM" relativeTo="ItemType4"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTypeTemplate" Name="ItemType6" Show="" Size="80,36">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="ItemType5"/>
+            <Anchor offset="0,3" point="TOP" relativePoint="BOTTOM" relativeTo="ItemType5"/>
+          </Anchors>
+        </CheckButton>
+        <Scripts>
+          <OnLoad>PointShop_frmShopTypes_OnLoad(self);</OnLoad>
+          <OnScrollV>PointShopItemType_Update();</OnScrollV>
+        </Scripts>
+      </Form>
+      <Label Inherit="bg3" Location="118,50,665,366" Name="lbBgItems" Show="true" Size="665,386">
+        <Anchors>
+          <Anchor offset="118,0" point="LEFT"/>
+          <Anchor offset="0,50" point="TOP"/>
+        </Anchors>
+      </Label>
+      <Form AutoScrollV="true" Inherit="NoTitleBarForm" Location="145,39,660,386" Name="frmItems" Show="true" Size="0,0">
+        <Anchors>
+          <Anchor offset="8,0" point="LEFT" relativeTo="lbBgItems"/>
+          <Anchor offset="0,8" point="TOP" relativeTo="lbBgItems"/>
+          <Anchor offset="-8,0" point="RIGHT" relativeTo="lbBgItems"/>
+          <Anchor offset="0,-8" point="BOTTOM" relativeTo="lbBgItems"/>
+        </Anchors>
+        <Label Inherit="bg3" Location="0,1,488,365" Name="10713" Show="false"/>
+        <Label Inherit="bg3" Location="1,6,460,354" Name="1164" Show="false" Size="460,354">
+          <Anchors>
+            <Anchor offset="6,0" point="LEFT" relativePoint="LEFT"/>
+            <Anchor offset="0,6" point="TOP" relativePoint="TOP"/>
+          </Anchors>
+        </Label>
+        <Label AutoSize="true" Inherit="" Location="14,14,433,164" Name="PromotionImage" Show="false" Text=""/>
+        <CheckButton Inherit="PointShopItemTemplate" Location="0,0,214,80" Name="Item0">
+          <Anchors>
+            <Anchor offset="0,0" point="TOP"/>
+            <Anchor offset="0,0" point="LEFT"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="237,21,214,80" Name="Item1">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item0"/>
+            <Anchor offset="5,0" point="LEFT" relativePoint="RIGHT" relativeTo="Item0"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="237,21,214,80" Name="Item2">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item0"/>
+            <Anchor offset="5,0" point="LEFT" relativePoint="RIGHT" relativeTo="Item1"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="16,104,214,80" Name="Item3">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="Item0"/>
+            <Anchor point="LEFT" relativeTo="Item0"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="237,104,214,80" Name="Item4">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item3"/>
+            <Anchor point="LEFT" relativeTo="Item1"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="16,187,214,80" Name="Item5">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item3"/>
+            <Anchor point="LEFT" relativeTo="Item2"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="237,187,214,80" Name="Item6">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="Item3"/>
+            <Anchor point="LEFT" relativeTo="Item3"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="16,270,214,80" Name="Item7">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item6"/>
+            <Anchor point="LEFT" relativeTo="Item4"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="232,266,214,80" Name="Item8">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item6"/>
+            <Anchor point="LEFT" relativeTo="Item5"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="237,187,214,80" Name="Item9">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="Item6"/>
+            <Anchor point="LEFT" relativeTo="Item3"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="16,270,214,80" Name="Item10">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item9"/>
+            <Anchor point="LEFT" relativeTo="Item4"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemTemplate" Location="232,266,214,80" Name="Item11">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="Item9"/>
+            <Anchor point="LEFT" relativeTo="Item5"/>
+          </Anchors>
+        </CheckButton>
+        <Scripts>
+          <OnLoad>PointShop_frmItems_OnLoad(self);</OnLoad>
+          <OnScrollV>PointShopItemShow_Update();</OnScrollV>
+        </Scripts>
+        <Label Inherit="" Location="14,349,300,20" Name="lbItemPageControl" Show="true">
+          <Button Inherit="PushButton" Location="75,0,80,20" Name="btPageUp" Show="true" Text="$L:520$">
+            <Scripts>
+              <OnLClick>PointShop_frmItems_lbItemPageControl_btPageUp_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="PushButton" Location="162,0,80,20" Name="btPageDown" Show="true" Text="$L:521$">
+            <Scripts>
+              <OnLClick>PointShop_frmItems_lbItemPageControl_btPageDown_OnLClick(self)</OnLClick>
+            </Scripts>
+          </Button>
+          <Label Inherit="bg3" Location="0,0,70,20" Name="lbPageBackground" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="0,2,70,16" Name="lbPageText" Show="true" Text="1 / 1"/>
+        </Label>
+      </Form>
+      <Button Inherit="PushButton" Location="25,360,80,20" Name="btPay" Show="true" Text="$L:1183$">
+        <Scripts>
+          <OnLClick>uiInfo(self:Get("url"));uiOpenUrl(self:Get("url"));</OnLClick>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Button Inherit="PushButton" Location="25,392,80,20" Name="btMark" Show="true" Text="$L:1184$">
+        <Scripts>
+          <OnLClick>uiInfo(self:Get("url"));uiOpenUrl(self:Get("url"));</OnLClick>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Form Inherit="NoTitleBarForm" Location="634,50,240,386" Name="frmPromotion" Show="true" Size="0,386">
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lbBgItems"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lbBgItems"/>
+          <Anchor offset="-20,0" point="RIGHT"/>
+        </Anchors>
+        <Widget Inherit="bg3" Name="wgtBorders" Show="TRUE">
+          <Anchors>
+            <Anchor point="TOP"/>
+            <Anchor point="RIGHT"/>
+            <Anchor point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+        </Widget>
+        <Label AlignLine="CENTER" Inherit="" Location="9,8,170,98" Name="Image" Show="true" Text=""/>
+        <ModelView Inherit="" Location="9,8,170,98" Name="Model" Show="true"/>
+        <EditBox AlignLine="CENTER" AutoScrollV="true" EnableInput="false" Location="9,112,170,76" MouseEvent="false" MultiLine="true" Name="Promotion" Show="true" Text="" WordWrap="true"/>
+        <CheckButton Inherit="PointShopItemLinkTemplate" Location="5,305,175,40" Name="ItemLink0"/>
+        <CheckButton Inherit="PointShopItemLinkTemplate" Name="ItemLink1">
+          <Anchors>
+            <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="ItemLink0"/>
+            <Anchor point="LEFT" relativeTo="ItemLink0"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemLinkTemplate" Name="ItemLink2">
+          <Anchors>
+            <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="ItemLink1"/>
+            <Anchor point="LEFT" relativeTo="ItemLink1"/>
+          </Anchors>
+        </CheckButton>
+        <CheckButton Inherit="PointShopItemLinkTemplate" Name="ItemLink3">
+          <Anchors>
+            <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="ItemLink2"/>
+            <Anchor point="LEFT" relativeTo="ItemLink2"/>
+          </Anchors>
+        </CheckButton>
+        <Scripts>
+          <OnLoad>PointShop_frmPromotion_OnLoad(self);</OnLoad>
+        </Scripts>
+      </Form>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="435,0,120,66" Name="8367" Show="true" Text="$L:439$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" ColSpacing="4" Inherit="" Location="17,26,130,24" Name="labelPointDesc" Show="true" Text="$L:640$">
+        <BackgroundImage File="tz_010" Source="315,195,92,25"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="150,29,60,22" Name="labelPoint" Show="true" Text="">
+        <Scripts>
+          <OnLoad>if self:RegisterScriptEventNotify("point_changed") == false then
+			    uiError("RegisterEvent[point_changed] error");
+		      end</OnLoad>
+          <OnEvent>if event == "point_changed" then
+				PointShop_UpdatePoint(self);
+			  end</OnEvent>
+        </Scripts>
+        <BackgroundImage File="tz_010" Source="443,217,61,21"/>
+      </Label>
+      <Scripts>
+        <OnLoad>PointShop_frmPointShop_OnLoad(self)</OnLoad>
+        <OnShow>PointShop_frmPointShop_OnShow(self);</OnShow>
+        <OnEvent>PointShop_frmPointShop_OnEvent(self, event, arg);</OnEvent>
+      </Scripts>
+      <Button Inherit="PushButton" Location="634,26,100,24" Name="btSwitchShop" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmPointShop1_btSwitchShop_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+    </Form>
+    <Form Inherit="TitleBarForm" Location="200,200,300,190" Name="PointShopBuyInputBox" Show="false" Size="300,190">
+      <CloseButton Show="false"/>
+      <Label Inherit="bg1" Location="20,19,270,171" Name="23725" Show="true"/>
+      <Label Inherit="bg3" Location="35,58,238,68" Name="25235" Show="true"/>
+      <Button Inherit="PushButton" Location="46,156,100,20" Name="Ok" Text="$L:603$">
+        <Scripts>
+          <OnLClick>PointShop_BuyInputBox_Ok_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="167,156,100,20" Name="Cancel" Text="$L:604$">
+        <Scripts>
+          <OnLClick>self:getParent():Hide();</OnLClick>
+        </Scripts>
+      </Button>
+      <EditBox EnableInput="false" Location="39,62,230,60" MultiLine="true" Name="Message" WordWrap="true"/>
+      <Label AlignCol="CENTER" Location="37,132,60,18" Name="EditTitle" Show="true" Text="$L:440$"/>
+      <EditBox AutoScrollV="false" Location="97,131,30,18" MaxChar="2" Name="Edit" NumberOnly="true">
+        <Border color="#ff999999" size="1"/>
+        <Scripts>
+          <OnTextChanged>PointShopItemBuy_OnTextChanged(self);</OnTextChanged>
+        </Scripts>
+      </EditBox>
+      <Label Location="97,131,30,18" Name="lbNoModifyCount"/>
+      <Label AlignCol="CENTER" Inherit="" Location="135,132,60,18" Name="PointDesc" Show="true" Text="$L:425$"/>
+      <EditBox EnableInput="false" Inherit="" Location="195,132,80,18" MouseEvent="false" Name="Point" Show="true" Text="-"/>
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor offset="0,-140" point="CENTERV"/>
+      </Anchors>
+      <Scripts>
+        <OnShow>layWorld_PointShopBuyInputBox_OnShow(self)</OnShow>
+      </Scripts>
+      <Label Inherit="TemplateNormalTitle" Location="12,0,284,49" Name="24179" Show="true"/>
+    </Form>
+  </Layer>
+</Ui>

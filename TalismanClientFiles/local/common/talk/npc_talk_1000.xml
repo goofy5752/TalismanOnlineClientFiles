@@ -1,0 +1,23 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- <UiRichText> -->
+  <Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="" Transparency="0.5"/>
+	  </Item>
+	  <Line/>
+	  <Item type="TEXT" text=" $USER_NAME" color="#ff86a8cb" />
+	  <Line/>
+	  <Line/>
+	  <Item type="TEXT" text="$L:npctalk1000_12$"color="#ff86a8cb" />
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:npctalk1000_18$"color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line/>
+
+<!-- </UiRichText> -->

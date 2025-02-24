@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Ui>
+	<Script file="frm_apart_ex.lua"/>
+	<Layer Name="layWorld" Show="true">
+		<Form Inherit="" Location="331,153,350,354" Movable="true" Name="frmApartEx" Show="false">
+			<Label Inherit="bg1" Location="10,21,330,330" Name="lbBackLT" Show="true"/>
+			<TitleBarButton Location="0,0,350,30"/>
+			<CloseButton Location="314,29,14,14">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+			<Label Inherit="TemplateNormalTitle" Location="0,2,350,48" Name="lbTitle" Show="true"/>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="114,0,120,72" Name="2015" Show="true" Text="$L:1267$" TextFont="$L:1$" TextSize="$L:3$"/>
+			<Label Inherit="bg3" Location="25,63,300,90" Name="lbteacher" Show="true">
+				<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="8,12,147,24" Name="3276" Show="true" Text="$L:1268$">
+					<BackgroundImage File="tz_010" Source="181,351,147,24"/>
+				</Label>
+				<Label Inherit="" Location="13,47,140,24" Name="lbTeacherName" Show="true">
+					<BackgroundImage File="tz_010" Source="130,325,121,20"/>
+				</Label>
+				<Button Inherit="PushButton" Location="173,48,100,24" Name="btApart" Show="true" Text="$L:1270$">
+					<Scripts>
+						<OnLClick>layWorld_frmApartEx_lbteacher_btApart_OnLClick(self);</OnLClick>
+					</Scripts>
+				</Button>
+			</Label>
+			<Label Inherit="bg3" Location="25,157,300,180" Name="lbStudent" Show="true" MouseEvent="true" MouseMove="true" Pick="false">
+				<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="9,12,147,24" Name="3276" Show="true" Text="$L:1269$">
+					<BackgroundImage File="tz_010" Source="181,351,147,24"/>
+				</Label>
+				<Label Inherit="bg3" Location="10,42,280,130" Name="ltstudent" Show="true" MouseEvent="true" MouseMove="true" Pick="false">
+					<ListBox Inherit="" Location="5,5,270,120" Name="ltStudentName" Show="true">
+						<ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1272$" TextColor="#ffe0e020" Width="100"/>
+						<ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1273$" TextColor="#ffe0e020" Width="50"/>
+						<ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1274$" TextColor="#ffe0e020" Width="105"/>
+					</ListBox>
+				</Label>
+				<Button Inherit="PushButton" Location="173,13,100,24" Name="btApart" Show="true" Text="$L:1271$">
+					<Scripts>
+						<OnLClick>layWorld_frmApartEx_lbStudent_btApart_OnLClick(self);</OnLClick>
+					</Scripts>
+				</Button>
+			</Label>
+			<Scripts>
+				<OnLoad>layWorld_frmApartEx_OnLoad(self);</OnLoad>
+				<OnEvent>layWorld_frmApartEx_OnEvent(self,event,arg);</OnEvent>
+				<OnShow>layWorld_frmApartEx_OnShow(self);</OnShow>
+			</Scripts>
+		</Form>
+	</Layer>
+</Ui>

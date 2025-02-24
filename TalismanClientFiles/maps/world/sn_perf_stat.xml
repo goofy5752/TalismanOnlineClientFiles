@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='GB2312'?>
+<AppIdle>
+<EatParentTime>100.000%</EatParentTime>
+<EatTotalTime>100.000%</EatTotalTime>
+<TimePreFrame>0.003ms</TimePreFrame>
+<TotalTime>18.395ms</TotalTime>
+<TotalCall>  5818</TotalCall>
+<GraphPresent>
+<EatParentTime>2.954%</EatParentTime>
+<EatTotalTime>2.954%</EatTotalTime>
+<TimePreFrame>0.000ms</TimePreFrame>
+<TotalTime>0.543ms</TotalTime>
+<TotalCall>  5818</TotalCall>
+</GraphPresent>
+<GraphRender>
+<EatParentTime>93.655%</EatParentTime>
+<EatTotalTime>93.655%</EatTotalTime>
+<TimePreFrame>0.003ms</TimePreFrame>
+<TotalTime>17.227ms</TotalTime>
+<TotalCall>  5818</TotalCall>
+</GraphRender>
+<GraphRun>
+<EatParentTime>2.617%</EatParentTime>
+<EatTotalTime>2.617%</EatTotalTime>
+<TimePreFrame>0.000ms</TimePreFrame>
+<TotalTime>0.481ms</TotalTime>
+<TotalCall>  5818</TotalCall>
+</GraphRun>
+<MissingTime>
+<EatParentTime>0.774%</EatParentTime>
+<EatTotalTime>0.774%</EatTotalTime>
+</MissingTime>
+</AppIdle>

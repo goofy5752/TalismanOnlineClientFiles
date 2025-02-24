@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Argescale_PVE.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Button BackgroundColor="#77000000" HandleMove="true" Inherit="" Location="1047,146,258,22" Name="btnPVE" Show="false" Size="258,22">
+      <Button Inherit="" Location="218,1,22,20" Name="wgtDropDown" Show="true" Size="22,20">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor offset="0,1" point="TOP"/>
+        </Anchors>
+        <NormalImage File="tz_010" Source="68,418,27,26"/>
+        <PushedImage File="tz_010" Source="206,481,27,26"/>
+        <Scripts>
+          <OnLClick>local frmLargescalePVE = uiGetglobal("layWorld.frmLargescalePVE")
+			if frmLargescalePVE:getVisible() == true then
+				frmLargescalePVE:Hide()
+			else
+				frmLargescalePVE:ShowAndFocus()
+			end</OnLClick>
+        </Scripts>
+      </Button>
+      <Anchors>
+        <Anchor offset="0,180" point="TOP"/>
+        <Anchor offset="-20,0" point="RIGHT"/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="14,0,200,21" Name="lbname" Show="true" Text="$L:1408$"/>
+      <Scripts>
+        <OnLoad>layWorld_btnPVE_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_btnPVE_OnEvent(self, event, arg)</OnEvent>
+      </Scripts>
+    </Button>
+    <Form BackgroundColor="#77000000" Inherit="" Location="10,10,258,303" Name="frmLargescalePVE" Show="false" Size="258,303">
+      <Label Inherit="bg3" Location="1,0,256,303" Name="5871" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="7,41,140,22" Name="lbAreaContent" Show="true" Text="$L:1409$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="9,64,240,108" Name="735" Show="fals"/>
+      <ListBox AutoScrollV="false" Inherit="" Location="12,68,234,100" Name="lstAreaContent" Show="true" Text="">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1412$" TextColor="#ffe0e020" Width="140"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1413$" TextColor="#ffe0e020" Width="80"/>
+      </ListBox>
+      <TitleBarButton Location="0,0,200,20" Show="false"/>
+      <Anchors>
+        <Anchor offset="0,-1" point="TOP" relativePoint="BOTTOM" relativeTo="layWorld.btnPVE"/>
+        <Anchor point="RIGHT" relativeTo="layWorld.btnPVE"/>
+      </Anchors>
+      <CloseButton Location="185,0,14,14" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="8,175,140,22" Name="lbBossContent" Show="true" Text="$L:1410$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="9,198,240,98" Name="3830" Show="fals"/>
+      <ListBox AutoScrollV="false" Inherit="" Location="12,202,234,90" Name="lstBossContent" Show="true" Text="" TextColor="">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1414$" TextColor="#ffe0e020" Width="140"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1416$" TextColor="#ffe0e020" Width="80"/>
+      </ListBox>
+      <Button Inherit="PushButton" Location="155,13,90,20" Name="btnUserContent" Show="true" Text="$L:1411$">
+        <Scripts>
+          <OnLClick>local frmLargescalePVERank = uiGetglobal("layWorld.frmLargescalePVERank")
+			if frmLargescalePVERank:getVisible() == true then
+				frmLargescalePVERank:Hide()
+			else
+				frmLargescalePVERank:ShowAndFocus()
+			end</OnLClick>
+          <OnUpdate Timer="60000">uiPveUpdateInfo()</OnUpdate>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_frmLargescalePVE_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frmLargescalePVE_OnEvent(self, event, arg)</OnEvent>
+        <OnShow>layWorld_frmLargescalePVE_OnShow(self)</OnShow>
+        <OnHide>local frmLargescalePVERank = uiGetglobal("layWorld.frmLargescalePVERank")
+			if frmLargescalePVERank:getVisible() == true then
+				frmLargescalePVERank:Hide()
+			end</OnHide>
+		<OnUpdate Timer="60000">uiPveUpdateRank()</OnUpdate>
+      </Scripts>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="7,14,78,22" Name="1900" Show="true" Text="$L:1465$"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="84,14,70,22" Name="lbuserpoint" Show="true"/>
+    </Form>
+    <Form BackgroundColor="" Inherit="" Location="0,0,580,532" Name="frmLargescalePVERank" Show="false" Size="580,532">
+      <Label Inherit="bg1" Location="7,18,548,470" Name="5871" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,565,48" Name="32305" Show="true"/>
+      <TitleBarButton Location="0,0,565,24" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="213,4,140,60" Name="52180512" Show="true" Text="$L:1417$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="19,85,526,320" Name="735" Show="fals"/>
+      <ListBox AutoScrollV="true" Inherit="" Location="23,94,518,304" Name="lstuserRanking" Show="true" Text="">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1418$" TextColor="#ffe0e020" Width="140"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1419$" TextColor="#ffe0e020" Width="140"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1420$" TextColor="#ffe0e020" Width="50"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1421$" TextColor="#ffe0e020" Width="80"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1422$" TextColor="#ffe0e020" Width="100"/>
+        <Scripts>
+          <OnSelect>layWorld_frmLargescalePVERank_lstuserRanking_OnSelect(self)</OnSelect>
+        </Scripts>
+      </ListBox>
+      <Anchors>
+        <Anchor offset="-20,0" point="RIGHT" relativePoint="LEFT" relativeTo="layWorld.frmLargescalePVE"/>
+        <Anchor offset="0,70" point="CENTERV" relativeTo="layWorld.frmLargescalePVE"/>
+      </Anchors>
+      <CloseButton Inherit="CloseButton" Location="530,28,13,13" Show="true">
+        <BackgroundImage File="tz_010" Source="98,383,13,13"/>
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+      </CloseButton>
+      <EditBox Inherit="DefaultEdit" Location="161,448,80,20" Name="edUserName" Show="true">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </EditBox>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="37,447,120,22" Name="40932" Show="true" Text="$L:1423$"/>
+      <Button Inherit="PushButton" Location="251,448,40,20" Name="btnFindUser" Show="true" Text="$L:1424$">
+        <Scripts>
+          <OnLClick>layWorld_frmLargescalePVERank_btnFindUser_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="391,448,80,20" Name="btnRefresh" Show="true" Text="$L:1425$">
+        <Scripts>
+          <OnLClick>uiPveUpdateRank()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="41,415,100,22" Name="1419" Show="true" Text="$L:1426$"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="141,415,100,22" Name="lbCurrentlyIntegral" Show="true" Text="3850"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="405,415,100,22" Name="lbPeakIntegral" Show="true" Text="15698"/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="245,415,160,22" Name="3349" Show="true" Text="$L:1427$"/>
+      <Scripts>
+        <OnLoad>layWorld_frmLargescalePVERank_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frmLargescalePVERank_OnEvent(self, event, arg)</OnEvent>
+        <OnShow>layWorld_frmLargescalePVERank_OnShow(self)</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,38 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0xC">
+   <group colors="true" desc="" env="0xFF262626" envo="0xFF4C4C4C" fog="0xFF130FB7" forfar="1500.000" fornear="1000.000" name="高塔b" range="100.000" sun="0xFF1F1F1F" suno="0xFF2A2A2A">
+      <area bottom="4966.221" left="-15050.140" right="-12512.611" top="2158.333"/>
+   </group>
+   <group colors="true" desc="" env="0xFF242424" envo="0xFF4C4C4C" fog="0xFFFFFFFF" forfar="1500.000" fornear="450.000" name="高塔a" range="100.000" sun="0xFF1C1C1C" suno="0xFF272727">
+      <area bottom="3133.768" left="-12836.671" right="-10259.598" top="170.800"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF5580AA" fog="0xFF75BDFF" forfar="2000.000" fornear="1500.000" name="搞他c" range="100.000" sun="0xFF4C4C4C" suno="0xFFE6E6E6">
+      <area bottom="4829.082" left="-25355.855" right="-20672.508" top="139.483"/>
+      <area bottom="13252.085" left="-3203.867" right="-2129.654" top="11117.861"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="ss" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF000000" envo="0xFF2F2F2F" fog="0xFF000000" forfar="5000.000" fornear="4000.000" name="搞他d" range="100.000" sun="0xFF4C4C4C" suno="0xFF3C3C3C">
+      <area bottom="13450.603" left="-15243.186" right="-12041.772" top="10296.570"/>
+      <area bottom="15124.805" left="-12250.038" right="-10269.830" top="13059.526"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="ddfff" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF000000" envo="0xFF5E936D" fog="0xFF004000" forfar="1500.000" fornear="500.000" name="沼泽" range="300.000" sun="0xFF4C4C4C" suno="0xFFD8E9DF">
+      <area bottom="5110.727" left="94.956" right="5075.194" top="37.431"/>
+      <area bottom="15293.959" left="-2139.575" right="-54.560" top="12547.059"/>
+      <area bottom="15320.508" left="-4476.806" right="-1746.229" top="13233.376"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF6DA8C7" forfar="2500.000" fornear="500.000" name="沼泽2" range="300.000" sun="0xFF4C4C4C" suno="0xFF88CEF4">
+      <area bottom="10141.350" left="30.649" right="5061.822" top="5130.341"/>
+   </group>
+   <group colors="true" desc="" env="0xFF000000" envo="0xFFB69A81" fog="0xFF9BD7F7" forfar="2500.000" fornear="800.000" name="吕装" range="300.000" sun="0xFF4C4C4C" suno="0xFF97C19F">
+      <area bottom="9945.996" left="-5071.430" right="17.529" top="5194.876"/>
+      <area bottom="11124.703" left="-4203.653" right="-1688.185" top="9946.132"/>
+      <area bottom="12562.811" left="-2192.326" right="-260.517" top="11103.760"/>
+      <area bottom="11182.749" left="-1744.204" right="-317.589" top="9843.464"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="55u5u" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF638B9C" envo="0xFF254949" fog="0xFF000000" forfar="1000.000" fornear="450.000" name="农无" range="300.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="13338.272" left="-5084.001" right="-3200.713" top="10868.121"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="eeete" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

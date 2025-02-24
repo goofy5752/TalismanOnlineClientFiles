@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form BackgroundColor="#66666666" Inherit="TitleBarForm" Location="299,273,256,200" Name="frmLootBody" Show="false">
+      <BackgroundImage File="" Source=""/>
+      <Label Inherit="" Location="25,40,40,20" Name="lbUserName1" Show="true" Text="$L:734$"/>
+      <Label Inherit="" Location="25,80,40,20" Name="lbUserPassword1" Show="true" Text="$L:735$"/>
+      <Label Inherit="" Location="25,120,54,20" Name="lbUserPassowrd2" Show="true" Text="$L:736$"/>
+      <Button Inherit="PushButton" Location="50,160,50,20" Name="Previous" Show="true" Text="$L:737$"/>
+      <Button Inherit="PushButton" Location="159,160,50,20" Name="Next" Show="true" Text="$L:738$"/>
+      <Label AlignCol="true" Inherit="" Location="92,1,70,18" Name="lbLootTitle" Show="true" Text="$L:739$"/>
+      <EditBox Inherit="" Location="84,38,140,18" Name="4263" Show="true" WordWrap="false">
+        <BackgroundImage File="" Source=""/>
+      </EditBox>
+      <EditBox Inherit="" Location="84,79,140,18" Name="4466" Show="true" WordWrap="false">
+        <BackgroundImage File="" Source=""/>
+      </EditBox>
+      <EditBox Inherit="" Location="84,119,140,18" Name="4490" Show="true" WordWrap="false">
+        <BackgroundImage File="" Source=""/>
+      </EditBox>
+      <Label Inherit="" Location="0,189,256,11" Name="1728" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

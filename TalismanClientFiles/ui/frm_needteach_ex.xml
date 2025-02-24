@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Ui>
+	<Script file="frm_needteach_ex.lua">Script</Script>
+	<Layer Name="layWorld" Show="true">
+		<Form Inherit="" Location="234,129,540,450" Name="frmNeedTeachEx" Show="false">
+			<Label Inherit="bg1" Location="6,18,520,430" Name="1637" Show="fals"/>
+			<Label Inherit="bg3" Location="19,65,495,330" Name="8342" Show="true"/>
+			<Label Inherit="" Location="0,256,256,174" Name="1671" Show="false">
+				<BackgroundImage File="" Source=""/>
+			</Label>
+			<Label Inherit="" Location="256,0,256,256" Name="521" Show="false">
+				<BackgroundImage File=""/>
+			</Label>
+			<Label Inherit="" Location="256,256,256,174" Name="1139" Show="false">
+				<BackgroundImage File="" Source=""/>
+			</Label>
+			<Button Inherit="PushButton" Location="71,407,66,20" Name="btAddteacher" Show="true" Text="$L:873$">
+				<Scripts>
+					<OnLClick>layWorld_frmNeedTeachEx_btAddteacher_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="236,407,66,20" Name="btcheckin" Show="true" Text="$L:877$">
+				<Scripts>
+					<OnLClick>layWorld_frmNeedTeachEx_btcheckin_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="380,407,66,20" Name="btcheckout" Show="true" Text="$L:878$">
+				<Scripts>
+					<OnLClick>layWorld_frmNeedTeachEx_btcheckout_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Anchors/>
+			<Label Inherit="TemplateNormalTitle" Location="0,0,532,47" Name="lbTitle" Show="true"/>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="199,0,136,68" Name="1229" Show="true" Text="$L:876$" TextFont="$L:1$" TextSize="$L:3$"/>
+			<ListBox BackgroundColor="#ee000000" Inherit="" Location="23,69,487,322" Name="lstNeedTeach" Show="fals">
+				<ColumnButton Text="$L:1354$" AlignCol="CENTER" Width="120" TextColor="#FFFFFF00"/>
+				<ColumnButton Text="$L:1355$" AlignCol="CENTER" Width="40" TextColor="#FFFFFF00"/>
+				<ColumnButton Text="$L:1356$" AlignCol="CENTER" Width="80" TextColor="#FFFFFF00"/>
+				<ColumnButton Text="$L:1357$" AlignCol="CENTER" Width="120" TextColor="#FFFFFF00"/>
+				<ColumnButton Text="$L:1358$" AlignCol="LEFT" Width="220" TextColor="#FFFFFF00"/>
+				<Scripts>
+					<OnLoad>self:InsertLine(12,4294967295,-1);self:SetLineItem(0,0,"ddd",4294967295)</OnLoad>
+					<OnSelect>layWorld_frmNeedTeachEx_lstNeedTeach_OnSelect(self);</OnSelect>
+				</Scripts>
+			</ListBox>
+			<TitleBarButton Location="0,0,520,28"/>
+			<CloseButton Location="500,31,13,13">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+			<Scripts>
+				<OnLoad>layWorld_frmNeedTeachEx_OnLoad(self);</OnLoad>
+				<OnEvent>layWorld_frmNeedTeachEx_OnEvent(self,event,arg);</OnEvent>
+				<OnShow>layWorld_frmNeedTeachEx_OnShow(self)</OnShow>
+			</Scripts>
+		</Form>
+	</Layer>
+</Ui>

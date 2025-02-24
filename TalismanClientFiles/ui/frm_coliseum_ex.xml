@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Coliseum_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="200,100,410,500" Name="frColiseumEx" Show="false">
+      <Label Inherit="bg1" Location="10,10,390,480" Name="lbColiseum" Show="true">
+        <Label AlignCol="LEFT" AlignLine="CENTER" ColSpacing="6" Inherit="bg3" LineSpacing="" Location="15,37,360,30" Name="lbColiseumPoint" Show="true" Text="" TextColor="">
+          <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="5,5,140,20" Name="lbPointTittle" Show="true" Text="$L:1359$"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="145,5,210,20" Name="lbPoint" Show="true" Text="" TextColor="#ffe10d2e"/>
+        </Label>
+        <Label AlignCol="LEFT" AlignLine="CENTER" ColSpacing="6" Inherit="bg3" LineSpacing="" Location="15,37,360,30" Name="lbColiseumPointBack" Show="false" Text="" TextColor="">
+          <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="5,5,140,20" Name="lbPointTittle" Show="true" Text=""/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="145,5,210,20" Name="lbPoint" Show="true" Text="" TextColor="#ffe10d2e"/>
+        </Label>
+      </Label>
+      <TitleBarButton Location="5,0,400,20"/>
+      <CloseButton Inherit="" Location="380,25,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+        <DisabledImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="5,0,400,47" Name="lbTittleBar" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="135,22,130,23" Name="lbTittleName" Show="true" Text="$L:1467$" TextFont="$L:1$" TextSize="$L:3$"/>
+      </Label>
+      <Form Inherit="NoTitleBarForm" Location="15,70,380,115" Name="frColiseumStyle" Show="true">
+        <Label Inherit="bg3" Location="10,30,360,80" Name="lbStyleInfo" Show="true"/>
+        <CheckButton AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="10,10,80,20" Name="btStyle1" Show="true" Text="$L:1361$">
+          <NormalImage File="tz_010" Source="82,231,80,34"/>
+          <PushedImage File="tz_010" Source="0,231,80,34"/>
+          <CheckImage File="tz_010" Source="0,231,80,34"/>
+          <Scripts>
+            <OnLClick>layWorld_frColiseumEx_frColiseumStyle_btStyle1_OnLClick(self);</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <CheckButton AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="90,10,80,20" Name="brStyle2" Show="true" Text="$L:1362$">
+          <NormalImage File="tz_010" Source="82,231,80,34"/>
+          <PushedImage File="tz_010" Source="0,231,80,34"/>
+          <CheckImage File="tz_010" Source="0,231,80,34"/>
+          <Scripts>
+            <OnLClick>layWorld_frColiseumEx_frColiseumStyle_brStyle2_OnLClick(self);</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <EditBox AlignCol="LEFT" AlignLine="CENTER" AutoScrollV="true" AutoSizeH="false" ColSpacing="10" EnableInput="false" Inherit="" LeftScrollBar="false" LineSpacing="5" Location="15,35,350,70" MultiLine="false" Name="ebStyleInfomation" Show="true" Text="$L:1363$" WordWrap="true"/>
+        <Button Inherit="PushButton" Location="285,10,85,20" Name="btShowRoom" Show="true" Text="$L:1462$">
+          <Scripts>
+            <OnLClick>layWorld_frColiseumEx_frColiseumStyle_btShowRoom_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="" Location="2,28,376,6" Name="lbBackgroundBar" Show="true">
+          <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="25,185,360,240" Name="frRoomList" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="120,0,120,25" Name="lbRoomTittle" Show="true" Text="$L:1365$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label Inherit="bg3" Location="0,25,360,210" Name="lbListBackground" Show="true" TextColor=""/>
+        <ListBox AutoResize="false" DrawHeader="true" Inherit="" Location="5,30,345,200" Name="lbRoomList" Show="true" Text="">
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1366$" TextColor="#ffffd10f" Width="60"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1367$" TextColor="#ffffd10f" Width="100"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1368$" TextColor="#ffffd10f" Width="60"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1369$" TextColor="#ffffd10f" Width="60"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1370$" TextColor="#ffffd10f" Width="50"/>
+        </ListBox>
+      </Form>
+      <Button Inherit="PushButton" Location="35,425,90,20" Name="btCreateRoom" Show="true" Text="$L:1371$">
+        <Scripts>
+          <OnLClick>layWorld_frColiseumEx_btCreateRoom_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="160,425,90,20" Name="btEnterRoom" Show="true" Text="$L:1372$">
+        <Scripts>
+          <OnLClick>layWorld_frColiseumExbtEnterRoom_OnLClick(self,0);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="285,425,90,20" Name="btQuickEnter" Show="true" Text="$L:1373$">
+        <Scripts>
+          <OnLClick>layWorld_frColiseumExbtEnterRoom_OnLClick(self,1);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="35,455,90,20" Name="btSearchRoom" Show="true" Text="$L:1374$">
+        <Scripts>
+          <OnLClick>layWorld_frColiseumEx_btSearchRoom_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="160,455,90,20" Name="btListRefresh" Show="true" Text="$L:1375$">
+        <Scripts>
+          <OnLClick>layWorld_frColiseumEx_btListRefresh_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="285,455,90,20" Name="btColiseumRanking" Show="true" Text="$L:1376$">
+        <Scripts>
+          <OnLClick>layWorld_btColiseumRankingm_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnEvent>layWorld_frColiseumEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>layWorld_frColiseumEx_OnShow(self);</OnShow>
+        <OnLoad>layWorld_frColiseumEx_OnLoad(self);</OnLoad>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

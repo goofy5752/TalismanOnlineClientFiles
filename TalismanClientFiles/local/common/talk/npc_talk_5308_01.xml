@@ -1,0 +1,32 @@
+﻿<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- <UiRichText> -->
+  <Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="" Transparency="0.5"/>
+	  </Item>
+	  <Line/>
+	  
+	  <Line/>
+	  <Line/>
+	  <Item type="TEXT" text="$L:npctalk5308_2$"color="#ff86a8cb" />
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:npctalk5308_3$"color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:npctalk5308_4$"hlink="String:NpcDialog:Run?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+
+  <Line/>
+  <Line/>
+  <Line/>
+
+<!-- </UiRichText> -->

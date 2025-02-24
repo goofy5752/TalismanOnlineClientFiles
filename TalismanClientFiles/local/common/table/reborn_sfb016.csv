@@ -1,0 +1,7 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+"ID","Name","Comment","Directory","area","pos","nNpcRebirthType"
+1,$L:fuben016_haidaochaoxue$,,,"768 -1281 1025 -1068;
+533 -1520 770 -1068;
+768 -1534 1025 -1278;","837 -1399 0;",0
+2,$L:kr_2013_Chrmax60$,韩国2013元旦圣诞活动,kr2013ny80/,"530 -1521 1022 -1068;","",2

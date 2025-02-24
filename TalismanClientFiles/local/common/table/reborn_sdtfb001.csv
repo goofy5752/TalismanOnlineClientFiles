@@ -1,0 +1,5 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:Scenestable_sdtfb001$,大悲寺出生点,sdtfb001/,"476 165 795 530;
+473 -20 818 183;",639 125 0;,0

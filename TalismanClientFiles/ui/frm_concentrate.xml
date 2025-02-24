@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_concentrate.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="869,372,326,310" Name="frmNingshen" Show="false" Size="326,310">
+      <Label Inherit="bg1" Location="8,19,303,275" Name="23940" Show="true" Transparency=""/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,320,48" Name="lbTitle" Show="true"/>
+      <TitleBarButton Location="2,2,316,28"/>
+      <CloseButton Location="288,27,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignLine="CENTER" Inherit="" Location="20,52,60,20" Name="lbuserlev" Show="true" Text="$L:1216$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="" Inherit="" Location="95,52,30,20" Name="lbuserlevinfo" Show="true"/>
+      <Label Inherit="bg3" Location="98,173,201,87" Name="lbNingshenShow" Show="true"/>
+      <Label AlignLine="CENTER" Inherit="" Location="140,51,100,20" Name="lbleftningshen" Show="true" Text="$L:1218$"/>
+      <Button Inherit="" Location="113,88,41,41" Name="btmainweapon" Show="true">
+        <Hint/>
+        <BackgroundImage File="tz_010" Source="141,380,41,41"/>
+        <HighlightImage File="tz_010" Source="191,382,38,38"/>
+        <Scripts>
+          <OnHint>layWorld_frmNingshen_btmainweapon_OnHint(self);</OnHint>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="172,88,41,41" Name="btningshenguo" Show="true">
+        <Hint/>
+        <BackgroundImage File="tz_010" Source="141,380,41,41"/>
+        <HighlightImage File="tz_010" Source="191,382,38,38"/>
+        <Scripts>
+          <OnHint>layWorld_frmNingshen_btningshenguo_OnHint(self);</OnHint>
+        </Scripts>
+      </Button>
+      <EditBox BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="100,176,196,80" Name="edbningsheninfo" Show="true" Text="凝神说明" WordWrap="true"/>
+      <Button Inherit="PushButton" Location="132,261,70,20" Name="btBegin" Show="true" Text="$L:1221$">
+        <Scripts>
+          <OnLoad>layWorld_frmNingshen_btBegin_OnLoad(self);</OnLoad>
+          <OnEvent>layWorld_frmNingshen_btBegin_OnEvent(self, event, arg);</OnEvent>
+          <OnLClick>layWorld_frmNingshen_btBegin_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="100,0,120,66" Name="6232" Show="true" Text="$L:1217$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Anchors>
+        <Anchor offset="300,0" point="LEFT" relativePoint="TOP" relativeTo=""/>
+        <Anchor offset="0,200" point="TOP" relativeTo=""/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="" Inherit="" Location="244,52,50,20" Name="lbleftningsheninfo" Show="true"/>
+      <EditBox BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="102,141,196,30" Name="lbningshengetval" Show="true" Text="获得10000经验，3000灵力" WordWrap="true"/>
+      <Label AlignLine="CENTER" Inherit="" Location="20,141,80,20" Name="lbningshenget" Show="true" Text="$L:1219$"/>
+      <Label AlignLine="CENTER" Inherit="" Location="20,175,80,20" Name="49481" Show="true" Text="$L:1220$"/>
+      <Scripts>
+        <OnLoad>layWorld_frmNingshen_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmNingshen_OnEvent(self, event, arg);</OnEvent>
+        <OnShow>layWorld_frmNingshen_OnShow(self);</OnShow>
+      </Scripts>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="" Inherit="" Location="25,95,80,20" Name="1006" Show="true" Text="$L:1223$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="" Inherit="" Location="219,95,80,20" Name="4732" Show="true" Text="$L:1224$"/>
+    </Form>
+  </Layer>
+</Ui>

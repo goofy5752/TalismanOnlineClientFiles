@@ -1,0 +1,23 @@
+  <Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="" Transparency="0.5"/>
+	  </Item>
+
+	  
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:npctalk5677_6$"color="#ffa6a845" />
+	</Items>
+  </Line>
+
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:npctalk5677_5$"hlink="String:RequestLeaveEctype:$L:npctalk5677_4$?id=22" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+
+  <Line/>

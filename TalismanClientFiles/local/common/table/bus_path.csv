@@ -1,0 +1,3 @@
+,,路径（注意，该路径忽略所有阻挡）,坐骑模型,人物的动作,坐骑缩放,移动速度,动作播放速度,金钱,等级,,门派
+ID,Name,BusPath,StrModel,RidePose,RideScale,MoveSpeed,PoseSpeed,NeedMoney,NeedMinLev,NeedMaxLev,NeedParty
+1,无敌路线,128 100;128 80;128 60;135 47;124 28;150 20;162 56;152 64,ride005_c1,waiting1,1.0;1.0;1.0,200,1,1000,10,300,

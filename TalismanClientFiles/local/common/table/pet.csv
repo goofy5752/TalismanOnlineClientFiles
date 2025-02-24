@@ -1,0 +1,6 @@
+,类别,Hp变化系数,Mp变化系数,攻击系数,伤害系数,防御系数,闪躲系数
+ID,Type,Hp,Mp,Att,Dam,Arm,Dodge
+1,1,1.5*MonsterGetHp(Level),0,0,1*MonsterGetDPS(Level)*0.8,1.35*MonsterGetArmor(Level),0
+2,2,1.1*MonsterGetHp(Level),0,0,1.2*MonsterGetDPS(Level)*0.8,1.22*MonsterGetArmor(Level),0
+3,3,1.2*MonsterGetHp(Level),0,0,1.15*MonsterGetDPS(Level)*0.8,1.2*MonsterGetArmor(Level),0
+4,4,1*MonsterGetHp(Level),0,0,1.25*MonsterGetDPS(Level)*0.8,1.15*MonsterGetArmor(Level),0

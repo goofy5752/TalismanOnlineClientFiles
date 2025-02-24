@@ -1,0 +1,23 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x4">
+   <group colors="true" desc="" env="0xFF004000" envo="0xFF004000" fog="0xFF004000" forfar="3000.000" fornear="500.000" name="蜘蛛洞" range="100.000" sun="0xFF004000" suno="0xFF004000">
+      <area bottom="5002.454" left="7228.492" right="11143.306" top="2723.770"/>
+      <area bottom="2874.708" left="8130.765" right="11283.235" top="1766.994"/>
+   </group>
+   <group colors="true" desc="" env="0xFF776BB8" envo="0xFF776BB8" fog="0xFF3E325A" forfar="3000.000" fornear="500.000" name="坟地" range="100.000" sun="0xFF776BB8" suno="0xFF594882">
+      <area bottom="-213.575" left="7744.770" right="9844.574" top="-4749.550"/>
+      <area bottom="-294.764" left="7588.083" right="7789.649" top="-1926.461"/>
+      <area bottom="-491.461" left="7449.137" right="7650.702" top="-1777.175"/>
+      <area bottom="-647.711" left="7244.574" right="7482.405" top="-2142.925"/>
+      <area bottom="-1301.407" left="7090.458" right="8006.310" top="-3756.260"/>
+      <area bottom="80.261" left="8309.010" right="9616.251" top="-655.399"/>
+      <area bottom="-1243.796" left="7009.122" right="8056.088" top="-2179.064"/>
+      <area bottom="-996.028" left="7281.137" right="7870.178" top="-1605.403"/>
+   </group>
+   <group colors="true" desc="" env="0xFF472F1F" envo="0xFF583A27" fog="0xFF4C4C4C" forfar="3000.000" fornear="500.000" name="兵马俑" range="100.000" sun="0xFF583A27" suno="0xFF583A27">
+      <area bottom="-6737.021" left="575.972" right="4237.013" top="-9318.642"/>
+      <area bottom="-3045.304" left="32.517" right="3753.822" top="-4892.262"/>
+      <area bottom="-1241.568" left="57.259" right="2453.990" top="-3439.736"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="sdgsgss" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

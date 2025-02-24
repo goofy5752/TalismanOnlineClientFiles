@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Script file="warehouse_pass_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="370,300,294,230" Name="frmWareHousePassEx" Show="false" Size="294,234">
+      <Label Inherit="bg1" Location="7,20,280,210" Name="619" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="704" Show="fals">
+        <Label Name="lbTitelText" Show="false"/>
+      </Label>
+      <Label Inherit="" Location="12,75,120,24" Name="9913" Show="false">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <EditBox ColSpacing="4" LineSpacing="7" Location="131,77,140,20" Name="edtWareHousePass" Password="true" Show="true">
+        <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+      </EditBox>
+      <EditBox ColSpacing="4" EnableInput="false" Inherit="" LineSpacing="1" Location="37,116,220,60" Name="edtPassTips" Show="true" WordWrap="true">
+        <BackgroundImage/>
+      </EditBox>
+      <Label AlignCol="CENTER" Inherit="" Location="32,78,80,18" Name="lbPassword" Show="true" Text="$L:1118$">
+        <BackgroundImage File="tz_012" Source="364,327,149,25"/>
+      </Label>
+      <Button Inherit="PushButton" Location="92,194,110,22" Name="btOK" Show="true" Text="$L:1122$">
+		<Scripts>
+			<OnLClick>
+				layWorld_frmWareHousePassEx_btOK()
+			</OnLClick>
+		</Scripts>
+	  </Button>
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor offset="0,70" point="CENTERV"/>
+      </Anchors>
+      <TitleBarButton Location="0,0,294,30"/>
+      <CloseButton Location="264,28,13,13" Show="fals">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+	  <Scripts>
+	  <OnLoad>self:RegisterScriptEventNotify("CEV_BANK_NEED_PASS")</OnLoad>
+        <OnEvent>if event == "CEV_BANK_NEED_PASS" then
+					self:Show()
+			end</OnEvent>
+		<OnShow>uiRegisterEscWidget(self)</OnShow>
+		<OnHide>layWorld_frmWareHousePassEx_OnHide(self)</OnHide>
+		</Scripts>
+    </Form>
+    <Form Inherit="" Location="370,300,294,230" Name="frmWareHousePassSetEx" Show="false" Size="294,234">
+      <Label Inherit="bg1" Location="7,20,280,180" Name="619" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,294,50" Name="704" Show="fals">
+        <Label Name="lbTitelText" Show="false"/>
+      </Label>
+      <Label Inherit="" Location="12,58,120,24" Name="8184" Show="false">
+        <BackgroundImage File="tz_012" Source="364,327,148,24"/>
+      </Label>
+      <Label Inherit="" Location="12,92,120,24" Name="8218" Show="false">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <Label Inherit="" Location="12,126,120,24" Name="8252" Show="false">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="7" Location="131,59,140,20" Name="edtWareHouseoldPass" Password="true" Show="true">
+        <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+      </EditBox>
+      <Label AlignCol="CENTER" Inherit="" Location="32,61,80,18" Name="lboldPassword" Show="true" Text="$L:1120$">
+        <BackgroundImage File="tz_012" Source="364,327,149,25"/>
+      </Label>
+      <Button Inherit="PushButton" Location="32,161,110,22" Name="btOK" Show="true" Text="$L:1122$">
+		<Scripts>
+			<OnLClick>
+				layWorld_frmWareHousePassSetEx_btOK_OnLClick()
+			</OnLClick>
+		</Scripts>
+	  </Button>
+      <Button Inherit="PushButton" Location="152,161,110,22" Name="btRelplay" Show="true" Text="$L:1123$">
+		<Scripts>
+			<OnLClick>
+				layWorld_frmWareHousePassSetEx_btRelplay_OnLClick()
+			</OnLClick>
+		</Scripts>
+	  </Button>
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor offset="0,-10" point="CENTERV"/>
+      </Anchors>
+      <CloseButton Location="264,28,13,13" Show="fals">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <TitleBarButton Location="0,0,294,30"/>
+      <Label AlignCol="CENTER" Inherit="" Location="32,95,80,18" Name="707" Show="true" Text="$L:1121$">
+        <BackgroundImage File="tz_012" Source="364,327,149,25"/>
+      </Label>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="7" Location="132,93,140,20" Name="edtwarehouseNewPass" Password="true" Show="true">
+        <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+      </EditBox>
+      <Label AlignCol="CENTER" Inherit="" Location="32,129,80,18" Name="637" Show="true" Text="$L:1124$">
+        <BackgroundImage File="tz_012" Source="364,327,149,25"/>
+      </Label>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="7" Location="131,127,140,20" Name="edtwarehousePass2" Password="true" Show="true">
+        <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+      </EditBox>
+	  <Scripts>
+	  <OnLoad>self:RegisterScriptEventNotify("CEV_BANK_SET_PASS")
+				self:RegisterScriptEventNotify("CEV_BANK_SET_PASS_RESULT")</OnLoad>
+        <OnEvent>if event == "CEV_BANK_SET_PASS" then
+					self:Show()
+				elseif event == "CEV_BANK_SET_PASS_RESULT" then
+					self:Hide()
+			end</OnEvent>
+		<OnShow>uiRegisterEscWidget(self)</OnShow>
+		<OnHide>layWorld_frmWareHousePassSetEx_OnHide(self)</OnHide>
+		</Scripts>
+    </Form>
+  </Layer>
+</Ui>

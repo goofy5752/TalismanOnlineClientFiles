@@ -1,0 +1,4 @@
+number,string,,number,string,number,number,number,number,number,number,number,string,cmd,cmd,cmd,cmd,cmd,cmd,number,number;num,number;num,number;num,number;num,number;num,number;num,number;num,number;num,string,number,number,number;num,number;num,,cmd,,cmd,cmd,,
+任务编号,名称,所属势力,任务等级,任务难度,单次任务,"重复任务每天
+最大完成次数",重复任务每日前三次奖励加成,团队自动接受,团队共享,最小接受等级,最大接受等级,门派要求,额外接受要求,任务接受后指令,额外完成要求,完成要求,任务完成指令,任务取消指令,完成时间限制,杀死npc,杀死npc数量,收集道具,收集道具数量,道具掉落npc,掉落道具,道具掉落率,最大掉落数量,交互类型,相关npc,相关npc数量,使用道具,使用道具数量,xxx,任务固定奖励,任务固定奖励,任务选择奖励,任务随机奖励,门派专有奖励,向导屏蔽
+ID,,force,lev,dif,once,day_num,day_rate,team_accept,team_shared,accept_min_lev,accept_max_lev,accept_party,accept_req,accept_exe,extra_finish_req,finish_req,finish_exe,cancel_exe,time_limit,kill_npc_id,kill_npc_num,get_item_id,get_item_num,item_drop_npcid,item_drop_id,item_drop_rate,item_drop_num,related_type,related_npcid,related_npcnum,use_item_id,use_item_num,,reward_fix_exp,reward_fix,reward_select,reward_random,party_reward,mask

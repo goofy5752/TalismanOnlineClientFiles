@@ -1,0 +1,20 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<plant>
+   <group name="灌木从A">
+      <model density="0x32" id="0xD" max="0.400" min="1.000" radius="10.000"/>
+      <model density="0x32" id="0xE" max="0.400" min="1.000" radius="10.000"/>
+   </group>
+   <group name="灌木从B">
+      <model density="0x32" id="0xF" max="0.400" min="1.000" radius="10.000"/>
+      <model density="0x32" id="0x10" max="0.400" min="1.000" radius="10.000"/>
+   </group>
+   <group name="灌木从C">
+      <model density="0x32" id="0x11" max="0.400" min="1.000" radius="10.000"/>
+      <model density="0x32" id="0x12" max="0.400" min="1.000" radius="10.000"/>
+      <model density="0x32" id="0x13" max="0.400" min="0.700" radius="10.000"/>
+      <model density="0x32" id="0x14" max="1.000" min="0.400" radius="10.000"/>
+   </group>
+   <group name="草">
+      <model density="0x32" id="0x1F" max="1.500" min="1.200" radius="7.000"/>
+   </group>
+</plant>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="laySelectChar2">
+    <Templates>
+      <Widget Inherit="bg3" Location="20,30,700,40" Name="TemplateSelectCharActiveRoleBar" Show="true" Size="0,42">
+        <Label Inherit="" Location="13,12,180,18" Name="lbName" Show="true" Text=""/>
+        <Label Inherit="" Location="124,12,70,18" Name="lbParty" Show="true" Text=""/>
+        <Label Inherit="" Location="170,12,70,18" Name="lbLevel" Show="true" Text=""/>
+        <EditBox Inherit="" Location="210,7,180,40" Name="ebAutoDeleteTip" Pick="false" Show="true" Text="" TextColor="#ffff0000" WordWrap="true"/>
+        <CheckButton Inherit="PushButtonLong" Location="405,10,130,20" Name="cbFreeze" Show="true" Text="">
+          <Hint/>
+          <Scripts>
+            <OnLClick>TemplateSelectCharActiveRoleBar_cbFreeze_OnLClick(self);</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <CheckButton Inherit="PushButtonLong" Location="470,10,70,18" Name="cbDelete" Show="false">
+          <Hint/>
+          <Scripts>
+            <OnLClick>TemplateSelectCharActiveRoleBar_cbDelete_OnLClick(self);</OnLClick>
+          </Scripts>
+        </CheckButton>
+      </Widget>
+    </Templates>
+  </Theme>
+  <Script file="frm_character_active.lua"/>
+  <Layer Name="laySelectChar" Show="true">
+    <Button Inherit="PushButtonLong" Location="10,10,120,24" Name="btRoleActive" Show="true" Size="120,24" Text="$L:1193$">
+      <Anchors>
+        <Anchor offset="20,0" point="LEFT"/>
+        <Anchor offset="0,20" point="TOP"/>
+      </Anchors>
+      <Scripts>
+        <OnLClick>uiGetglobal("laySelectChar.wtLayerRoleActiveGlobal.fmRoleActive"):ShowModal();</OnLClick>
+      </Scripts>
+    </Button>
+    <Widget Inherit="TemplateLayerFull" Location="0,0,100,100" Name="wtLayerRoleActiveGlobal" Show="true">
+      <Form Inherit="NoTitleBarForm" Location="122,123,240,500" Name="fmRoleActive" Show="false" Size="580,450">
+        <Anchors>
+          <Anchor point="CENTERH"/>
+          <Anchor point="CENTERV"/>
+        </Anchors>
+        <Widget Inherit="bg1" Location="100,100,100,100" Name="Background" Show="true" Size="0,0">
+          <Anchors>
+            <Anchor offset="" point="LEFT"/>
+            <Anchor offset="" point="RIGHT"/>
+            <Anchor offset="" point="TOP"/>
+            <Anchor point="BOTTOM"/>
+          </Anchors>
+        </Widget>
+        <Widget Inherit="TemplateSelectCharActiveRoleBar" Location="29,44,540,44" Name="wtRole0" Show="true">
+          <Anchors>
+            <Anchor offset="10,0" point="LEFT"/>
+            <Anchor offset="-10,0" point="RIGHT"/>
+            <Anchor offset="0,44" point="TOP"/>
+          </Anchors>
+        </Widget>
+        <Widget Inherit="TemplateSelectCharActiveRoleBar" Name="wtRole1" Show="true">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="wtRole0"/>
+            <Anchor point="RIGHT" relativeTo="wtRole0"/>
+            <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="wtRole0"/>
+          </Anchors>
+        </Widget>
+        <Widget Inherit="TemplateSelectCharActiveRoleBar" Name="wtRole2" Show="true">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="wtRole1"/>
+            <Anchor point="RIGHT" relativeTo="wtRole1"/>
+            <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="wtRole1"/>
+          </Anchors>
+        </Widget>
+        <Widget Inherit="TemplateSelectCharActiveRoleBar" Name="wtRole3" Show="true">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="wtRole2"/>
+            <Anchor point="RIGHT" relativeTo="wtRole2"/>
+            <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="wtRole2"/>
+          </Anchors>
+        </Widget>
+        <Widget Inherit="TemplateSelectCharActiveRoleBar" Name="wtRole4" Show="true">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="wtRole3"/>
+            <Anchor point="RIGHT" relativeTo="wtRole3"/>
+            <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="wtRole3"/>
+          </Anchors>
+        </Widget>
+        <Widget Inherit="TemplateSelectCharActiveRoleBar" Name="wtRole5" Show="true">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="wtRole4"/>
+            <Anchor point="RIGHT" relativeTo="wtRole4"/>
+            <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="wtRole4"/>
+          </Anchors>
+        </Widget>
+        <Button CDTime="5000" Inherit="PushButtonLong2" Location="157,532,300,24" Name="btOk" Show="true" Size="300,24" Text="$L:195$">
+          <Anchors>
+            <Anchor offset="0,0" point="CENTERH"/>
+            <Anchor offset="0,-18" point="BOTTOM"/>
+          </Anchors>
+          <Scripts>
+            <OnLClick>laySelectChar_wtLayerRoleActiveGlobal_fmRoleActive_btOk_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="669,534,65,24" Name="btReturn" Show="true" Size="65,24" Text="$L:199$">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="btOk"/>
+            <Anchor offset="-30,0" point="RIGHT"/>
+          </Anchors>
+          <Scripts>
+            <OnLClick>laySelectChar_wtLayerRoleActiveGlobal_fmRoleActive_btReturn_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Scripts>
+          <OnLoad>self:RegisterScriptEventNotify("ReceiveRoleInfoList");
+					self:RegisterScriptEventNotify("ReceiveServerInfoList");
+					self:RegisterScriptEventNotify("DisconnectServer");</OnLoad>
+          <OnEvent>if event == "ReceiveRoleInfoList" then
+						laySelectChar_wtLayerRoleActiveGlobal_fmRoleActive_OnEvent_ReceiveRoleInfoList(self);
+					elseif event == "ReceiveServerInfoList" then
+						--self:Hide();
+					elseif event == "DisconnectServer" then
+						--self:Hide();
+					end</OnEvent>
+        </Scripts>
+        <Label Inherit="TemplateNormalTitle" Location="-2,-1,605,45" Name="lbTitle" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="244,22,110,20" Name="37253" Show="true" Text="$L:1196$"/>
+        <EditBox EnableInput="false" Inherit="" Location="18,324,545,72" Name="ebAutoDeleteInfo" Pick="true" Show="true" Text="$L:1200$" TextColor="" WordWrap="true"/>
+        <Label Inherit="" Location="18,301,70,20" Name="33260" Show="true" Text="$L:1199$"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="10,10,300,500" Name="fmRoleRename" Show="false" Size="336,250">
+        <Anchors>
+          <Anchor point="CENTERH"/>
+          <Anchor point="CENTERV"/>
+        </Anchors>
+        <Widget Inherit="bg1" Location="0,0,400,300" Name="Background" Show="true" Size="0,0">
+          <Anchors>
+            <Anchor offset="" point="LEFT"/>
+            <Anchor offset="" point="RIGHT"/>
+            <Anchor offset="" point="TOP"/>
+            <Anchor point="BOTTOM"/>
+          </Anchors>
+        </Widget>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="37,56,260,18" Name="1551" Show="true" Text="$L:1194$"/>
+        <Label Inherit="" Location="39,91,80,20" Name="2545" Show="true" Text="$L:1195$"/>
+        <Widget Inherit="bg3" Location="126,85,170,30" Name="wtBG1" Show="true">
+          <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+        </Widget>
+        <EditBox AlignCol="LEFT" AlignLine="CENTER" ColSpacing="1" Inherit="" LineSpacing="6" Location="131,88,160,22" MaxChar="16" Name="ebNewName" Show="true" Size="0,0" Text="">
+          <Anchors>
+            <Anchor offset="5,0" point="LEFT" relativeTo="wtBG1"/>
+            <Anchor offset="-5,0" point="RIGHT" relativeTo="wtBG1"/>
+            <Anchor offset="0,4" point="TOP" relativeTo="wtBG1"/>
+            <Anchor offset="0,-4" point="BOTTOM" relativeTo="wtBG1"/>
+          </Anchors>
+        </EditBox>
+        <Button CDTime="3000" Inherit="PushButton" Location="42,132,100,24" Name="btOk" Show="true" Text="$L:195$">
+          <Scripts>
+            <OnLClick>laySelectChar_wtLayerRoleActiveGlobal_fmRoleRename_btOk_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="190,132,100,24" Name="btCancel" Show="true" Text="$L:199$">
+          <Scripts>
+            <OnLClick>laySelectChar_wtLayerRoleActiveGlobal_fmRoleRename_btCancel_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Scripts>
+          <OnLoad>self:RegisterScriptEventNotify("SelectCharRenameRequest");
+				self:RegisterScriptEventNotify("SelectCharRenameResult");
+				self:RegisterScriptEventNotify("ReceiveServerInfoList");
+				self:RegisterScriptEventNotify("DisconnectServer");</OnLoad>
+          <OnEvent>if event == "SelectCharRenameRequest" then
+					laySelectChar_wtLayerRoleActiveGlobal_fmRoleRename_OnEvent_SelectCharRenameRequest(self);
+				elseif event == "SelectCharRenameResult" then
+					laySelectChar_wtLayerRoleActiveGlobal_fmRoleRename_OnEvent_SelectCharRenameResult(self, arg);
+				elseif event == "ReceiveServerInfoList" then
+					--self:Hide();
+				elseif event == "DisconnectServer" then
+					--self:Hide();
+				end</OnEvent>
+          <OnShow>SAPI.GetChild(self, "ebNewName"):SetFocus();</OnShow>
+        </Scripts>
+        <Widget Inherit="bg3" Location="41,174,250,50" Name="wtErrorMsgBackground" Show="true"/>
+        <EditBox AutoScrollV="false" ColSpacing="4" EnableInput="false" Inherit="" LineSpacing="5" Location="41,174,250,50" MultiLine="true" Name="ebErrorMsg" Pick="false" Show="true" Size="0,0" Text="" WordWrap="true">
+          <Anchors>
+            <Anchor offset="5,0" point="LEFT" relativeTo="wtErrorMsgBackground"/>
+            <Anchor offset="-5,0" point="RIGHT" relativeTo="wtErrorMsgBackground"/>
+            <Anchor offset="0,4" point="TOP" relativeTo="wtErrorMsgBackground"/>
+            <Anchor offset="0,-4" point="BOTTOM" relativeTo="wtErrorMsgBackground"/>
+          </Anchors>
+        </EditBox>
+        <Label Inherit="TemplateNormalTitle" Location="-2,-1,340,45" Name="lbTitle" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="113,22,110,20" Name="37253" Show="true" Text="$L:1197$"/>
+      </Form>
+    </Widget>
+  </Layer>
+</Ui>

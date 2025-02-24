@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmCombatPetEx">
+    <Templates>
+      <Button AlignCol="CENTER" Inherit="" Location="0,0,16,16" Name="TemplateBtnSelfPetBuff" Show="true">
+        <Hint/>
+        <Scripts>
+          <OnHint>frmTargetEx_TemplateBtnSelfPetBuff_OnHint(self);</OnHint>
+        </Scripts>
+      </Button>
+    </Templates>
+  </Theme>
+  <Script file="frm_combat_pet_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="NoTitleBarForm" Location="35,66,196,76" Name="frmCombatPetEx" Show="false" Size="192,70">
+      <Button Inherit="" Location="7,14,40,40" Name="btHead" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmCombatPetEx_btHead_OnLClick(self);</OnLClick>
+          <OnRClick>layWorld_frmCombatPetEx_btHead_OnRClick(self);</OnRClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="1,9,138,50" Name="lbBackGround" Show="true" Size="122,50">
+        <BackgroundImage Blend="true" File="tz_030" Source="8,184,146,51"/>
+      </Label>
+      <Label Inherit="" Location="49,21,96,5" Name="lbHpBarBg" Show="fals">
+        <BackgroundImage File="tz_010" Source="430,452,74,5"/>
+      </Label>
+      <ProgressBar Inherit="" Location="49,21,86,5" Name="pbHP" Show="fals">
+        <ProgressBarImage File="tz_010" Source="428,427,68,5"/>
+      </ProgressBar>
+      <Label Inherit="" Location="49,31,86,5" Name="lbSPBarBg" Show="fals">
+        <BackgroundImage File="tz_010" Source="430,460,66,5"/>
+      </Label>
+      <ProgressBar Inherit="" Location="50,30,84,5" Name="pbSP" Show="fals">
+        <ProgressBarImage File="tz_010" Source="380,395,114,7"/>
+      </ProgressBar>
+      <Label AlignCol="CENTER" Inherit="" Location="45,4,102,15" Name="lbName" Show="true" Text=""/>
+      <Label AlignCol="CENTER" Inherit="" Location="1,38,18,18" Name="lbLev" Show="true" Text="$L:219$"/>
+      <Label Inherit="" Location="50,40,130,34" MouseMove="true" Name="lbBuff" Show="true">
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="1,1,16,16" Name="btBuff1"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="17,1,16,16" Name="btBuff2"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="33,1,16,16" Name="btBuff3"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="49,1,16,16" Name="btBuff4"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="65,1,16,16" Name="btBuff5"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="81,1,16,16" Name="btBuff6"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="97,1,16,16" Name="btBuff7"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="1,17,16,16" Name="btBuff8"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="17,17,16,16" Name="btBuff9"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="33,17,16,16" Name="btBuff10"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="49,17,16,16" Name="btBuff11"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="65,17,16,16" Name="btBuff12"/>
+        <Button Inherit="TemplateBtnSelfPetBuff" Location="81,17,16,16" Name="btBuff13"/>
+      </Label>
+      <Scripts>
+        <OnLoad>layWorld_frmCombatPetEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmCombatPetEx_OnEvent(self, event, arg);</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

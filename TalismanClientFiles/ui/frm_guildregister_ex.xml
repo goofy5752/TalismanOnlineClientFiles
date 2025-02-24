@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_GuildRegister_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="250,200,400,480" Name="Frm_GuildRegister" Show="false">
+      <TitleBarButton Location="0,0,400,25"/>
+      <CloseButton Location="366,27,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg1" Location="10,10,380,470" Name="544" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,400,50" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="145,3,110,60" Name="883" Show="true" Text="$L:1570$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="20,62,360,280" Name="1001" Show="true"/>
+      <ListBox AutoScrollV="true" Inherit="" Location="25,67,350,270" Name="lstGuildRegister" Show="true">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1572$" TextColor="#ffe0e020" Width="155"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1573$" TextColor="#ffe0e020" Width="55"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1574$" TextColor="#ffe0e020" Width="120"/>
+        <Scripts>
+          <OnSelect>layWorld_frmGuildRegisterEx_lstGuildRegister_OnSelect( self )</OnSelect>
+          <OnHeaderClick>layWorld_frmGuildRegisterEx_lstGuildRegister_OnHeaderClick( self, index )</OnHeaderClick>
+          <OnRDown>layWorld_frmGuildRegisterEx_lstGuildRegister_OnRDown(self, mouse_x, mouse_y)</OnRDown>
+        </Scripts>
+      </ListBox>
+      <Button Inherit="PushButton" Location="30,441,60,24" Name="btGuildRegister" Show="true" Text="$L:1575$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildRegisterEx_btGuildRegister_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="128,441,60,24" Name="btCancel" Show="true" Text="$L:1576$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildRegisterEx_btCancel_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="223,441,60,24" Name="btRecruit" Show="true" Text="$L:1577$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildRegisterEx_btRecruit_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="311,441,60,24" Name="btRenovate" Show="true" Text="$L:1578$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildRegisterEx_btRenovate_OnClicked( self )</OnLClick>
+        </Scripts>
+      </Button>
+      <EditBox AutoScrollV="true" EnableInput="false" HandleMove="false" Inherit="bg3" LeftScrollBar="false" Location="20,365,360,70" MultiLine="true" Name="lbHelp" Show="true" Text="$L:1653$" WordWrap="true" AutoSize="false" AlignLine="TOP" ColSpacing="6" LineSpacing="6"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="21,343,70,18" Name="1094" Show="true" Text="$L:1579$"/>
+      <Scripts>
+        <OnLoad>layWorld_frmGuildRegisterEx_OnLoad(self)</OnLoad>
+        <OnShow>layWorld_frmGuildRegisterEx_OnShow(self)</OnShow>
+        <OnHide>layWorld_frmGuildRegisterEx_OnHide(self)</OnHide>
+        <OnEvent>layWorld_frmGuildRegisterEx_OnEvent(self,event,arg)</OnEvent>
+        <OnUpdate>layWorld_frmGuildRegisterEx_OnUpdate(self)</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

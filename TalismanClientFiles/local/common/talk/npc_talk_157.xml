@@ -1,0 +1,24 @@
+  <Line>
+    <Items>
+	  <Item type="IMAGE">
+	    <Image File="" Transparency="0.5"/>
+	  </Item>
+
+	  
+	</Items>
+  </Line>
+  <Line/>
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:npctalk157_13$"color="#ffa6a845" />
+	</Items>
+  </Line>
+ <Line/>
+ <Line/>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:npctalk157_20$"hlink="String:NpcDialog:Step2?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+
+  <Line/>

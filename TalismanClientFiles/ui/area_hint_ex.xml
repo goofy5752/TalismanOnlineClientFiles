@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="area_hint_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <HintWidget FadeOutTime="3.6" Inherit="" Level="99" Location="0,0,600,42" Name="hntAreaHint" Pick="false" Show="false" Size="600,42" MaxWidth="10240">
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor point="CENTERV" offset="0,-160"/>
+      </Anchors>
+      <Scripts>
+        <OnLoad>
+			layWorld_hntAreaHint_OnLoad(self);
+		</OnLoad>
+		<OnEvent>
+			layWorld_hntAreaHint_OnEvent(self, event, arg);
+		</OnEvent>
+		<OnShow>self:Hide();</OnShow>
+      </Scripts>
+    </HintWidget>
+  </Layer>
+</Ui>

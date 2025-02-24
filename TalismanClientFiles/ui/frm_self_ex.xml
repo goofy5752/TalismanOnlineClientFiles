@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmSelfEx">
+    <Templates>
+      <Label Inherit="" Location="-1,43,28,28" MouseEvent="true" MouseMove="true" Name="TemplateLabPkMode" Show="false">
+        <Hint Text="pkmode"/>
+        <Scripts>
+          <OnLoad>frmSelfEx_TemplateLabPkMode_OnLoad(self);</OnLoad>
+          <OnEvent>frmSelfEx_TemplateLabPkMode_OnEvent(self, event, arg);</OnEvent>
+        </Scripts>
+      </Label>
+      <Button Inherit="" Location="4,53,38,50" Name="TemplateBtnSelfBuff" Pick="false" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="3,0,32,32" MouseEvent="true" MouseMove="true" Name="lbIcon" TextColor="#FFFFFF00" TextFont="$L:1$" TextSize="$L:4$">
+          <Hint/>
+          <Scripts>
+            <OnHint>frmSelfEx_TemplateBtnSelfBuff_lbIcon_OnHint(self);</OnHint>
+            <OnRClick>frmSelfEx_TemplateBtnSelfBuff_lbIcon_OnRClick(self);</OnRClick>
+          </Scripts>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,32,40,18" Name="lbTime">
+          <Scripts>
+            <OnUpdate>frmSelfEx_TemplateBtnSelfBuff_lbTime_OnUpdate(self);</OnUpdate>
+          </Scripts>
+        </Label>
+      </Button>
+    </Templates>
+  </Theme>
+  <Script file="frm_self_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="NoTitleBarForm" Location="0,0,224,83" Name="frmSelfEx" Show="true" Size="222,83">
+      <Button Inherit="" Location="18,17,59,59" Name="btCharHead" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmSelfEx_btCharHead_OnLClick(self);</OnLClick>
+          <OnRClick>layWorld_frmSelfEx_btCharHead_OnRClick(self);</OnRClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="1,0,223,83" Name="lbBackGround" Show="true" Size="222,83">
+        <BackgroundImage Blend="true" File="tz_030" Source="2,2,222,83"/>
+      </Label>
+      <Label Inherit="" Location="83,40,139,8" Name="lbHpBarBg" Show="true">
+        <BackgroundImage File="tz_010" Source="240,383,115,8"/>
+      </Label>
+      <ProgressBar Inherit="" Location="83,38,138,9" Name="pbCharHP" Show="fals">
+        <ProgressBarImage File="tz_010" Source="380,383,116,8"/>
+      </ProgressBar>
+      <Label Inherit="" Location="83,51,139,8" Name="lbMPBarBg" Show="true">
+        <BackgroundImage File="tz_010" Source="240,394,115,8"/>
+      </Label>
+      <ProgressBar Inherit="" Location="83,50,138,9" Name="pbCharMP" Show="fals">
+        <ProgressBarImage File="tz_010" Source="380,394,116,8"/>
+      </ProgressBar>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="82,18,140,22" Name="lbName" Show="true" Text="$L:217$" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="15,63,20,20" Name="lbCharLev" Show="true" Text="$L:218$"/>
+      <Label Inherit="" Location="81,60,142,16" MouseEvent="true" MouseMove="true" Name="lbComboTitle" Show="false">
+        <CheckButton Enable="false" Inherit="" Location="5,4,8,8" Name="ckbPoint1" Show="true">
+          <DisabledImage File="tz_010" Source="417,284,8,8"/>
+          <CheckDisabledImage File="tz_010" Source="417,238,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="16,4,8,8" Name="ckbPoint2" Show="true">
+          <DisabledImage File="tz_010" Source="417,284,8,8"/>
+          <CheckDisabledImage File="tz_010" Source="417,238,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="27,2,11,11" Name="ckbPoint3" Show="true">
+          <DisabledImage File="tz_010" Source="416,304,12,12"/>
+          <CheckDisabledImage File="tz_010" Source="416,258,12,12"/>
+          <Hint Text="$L:1023$"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="42,4,8,8" Name="ckbPoint4" Show="true">
+          <DisabledImage File="tz_010" Source="417,284,8,8"/>
+          <CheckDisabledImage File="tz_010" Source="417,238,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="54,4,8,8" Name="ckbPoint5" Show="true">
+          <DisabledImage File="tz_010" Source="417,284,8,8"/>
+          <CheckDisabledImage File="tz_010" Source="417,238,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="65,2,11,11" Name="ckbPoint6" Show="true">
+          <DisabledImage File="tz_010" Source="416,304,12,12"/>
+          <CheckDisabledImage File="tz_010" Source="416,258,12,12"/>
+          <Hint Text="$L:1024$"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="80,4,8,8" Name="ckbPoint7" Show="true">
+          <DisabledImage File="tz_010" Source="417,284,8,8"/>
+          <CheckDisabledImage File="tz_010" Source="417,238,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="92,4,8,8" Name="ckbPoint8" Show="true">
+          <DisabledImage File="tz_010" Source="417,284,8,8"/>
+          <CheckDisabledImage File="tz_010" Source="417,238,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="103,2,11,11" Name="ckbPoint9" Show="true">
+          <DisabledImage File="tz_010" Source="416,304,12,12"/>
+          <CheckDisabledImage File="tz_010" Source="416,258,12,12"/>
+          <Hint Text="$L:1025$"/>
+        </CheckButton>
+        <Scripts>
+          <OnUpdate>layWorld_frmSelfEx_lbComboTitle_OnUpdate(self);</OnUpdate>
+        </Scripts>
+      </Label>
+      <Label Inherit="" Location="96,61,116,18" Name="lbSavePoint" Show="false">
+        <CheckButton Enable="false" Inherit="" Location="10,5,8,8" Name="ckbPoint1" Show="true">
+          <CheckDisabledImage File="tz_012" Source="199,305,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="26,5,8,8" Name="ckbPoint2" Show="true">
+          <CheckDisabledImage File="tz_012" Source="199,305,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="42,5,8,8" Name="ckbPoint3" Show="true">
+          <CheckDisabledImage File="tz_012" Source="199,305,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="57,5,8,8" Name="ckbPoint4" Show="true">
+          <CheckDisabledImage File="tz_012" Source="199,305,8,8"/>
+        </CheckButton>
+        <CheckButton Enable="false" Inherit="" Location="72,5,8,8" Name="ckbPoint5" Show="true">
+          <CheckDisabledImage File="tz_012" Source="199,305,8,8"/>
+        </CheckButton>
+        <Scripts>
+          <OnUpdate>layWorld_frmSelfEx_lbSavePoint_OnUpdate(self);</OnUpdate>
+        </Scripts>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" Location="61,4,31,14" Name="lbLeader" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="83,50,138,9" Name="pbCharSP" Show="false">
+        <ProgressBarImage File="tz_010" Source="104,426,229,11"/>
+      </ProgressBar>
+      <Label Inherit="TemplateLabPkMode" Location="11,9,19,19" Name="lbNormal" Show="false">
+        <BackgroundImage File="tz_011" Source="349,216,28,28"/>
+        <Hint Text="$L:930$"/>
+        <Param key="ID" type="number" value="0"/>
+      </Label>
+      <Label Inherit="TemplateLabPkMode" Location="11,9,19,19" Name="lbTrueOrFalse" Show="false">
+        <BackgroundImage File="tz_011" Source="117,382,28,28"/>
+        <Hint Text="$L:931$"/>
+        <Param key="ID" type="number" value="1"/>
+      </Label>
+      <Label Inherit="TemplateLabPkMode" Location="11,9,19,19" Name="lbTeam" Show="false">
+        <BackgroundImage File="tz_011" Source="380,216,28,28"/>
+        <Hint Text="$L:932$"/>
+        <Param key="ID" type="number" value="2"/>
+      </Label>
+      <Label Inherit="TemplateLabPkMode" Location="11,9,19,19" Name="lbGuild" Show="false">
+        <BackgroundImage File="tz_011" Source="88,382,28,28"/>
+        <Hint Text="$L:933$"/>
+        <Param key="ID" type="number" value="3"/>
+      </Label>
+      <Label Inherit="TemplateLabPkMode" Location="11,9,19,19" Name="lbAllPk">
+        <BackgroundImage File="tz_011" Source="58,383,28,28"/>
+        <Hint Text="$L:934$"/>
+        <Param key="ID" type="number" value="4"/>
+      </Label>
+      <Scripts>
+        <OnLoad>layWorld_frmSelfEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmSelfEx_OnEvent(self, event, arg);</OnEvent>
+      </Scripts>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="488,190,270,120" Name="frmSelfBuffEx" Pick="false" Show="true" Size="270,120">
+      <Anchors>
+        <Anchor offset="-10,0" point="RIGHT" relativePoint="LEFT" relativeTo="layWorld.frmMiniMap.lbMapFrameBg"/>
+        <Anchor offset="0,30" point="TOP"/>
+      </Anchors>
+      <Button Inherit="TemplateBtnSelfBuff" Location="232,0,38,50" Name="btBuff1"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="193,0,38,50" Name="btBuff2"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="155,0,38,50" Name="btBuff3"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="117,0,38,50" Name="btBuff4"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="79,0,38,50" Name="btBuff5"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="41,0,38,50" Name="btBuff6"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="232,53,38,50" Name="btBuff7"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="194,53,38,50" Name="btBuff8"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="156,53,38,50" Name="btBuff9"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="118,53,38,50" Name="btBuff10"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="80,53,38,50" Name="btBuff11"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="42,53,38,50" Name="btBuff12"/>
+      <Button Inherit="TemplateBtnSelfBuff" Location="4,53,38,50" Name="btBuff13"/>
+      <Scripts>
+        <OnLoad>layWorld_frmSelfBuffEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmSelfBuffEx_OnEvent(self, event, arg);</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

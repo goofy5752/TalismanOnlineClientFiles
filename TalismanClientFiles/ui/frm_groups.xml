@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form BackgroundColor="#884499ee" Inherit="" Location="257,82,512,512" Name="frGroups" Show="true">
+      <Label Inherit="" Location="27,45,70,18" Name="lbGroupSouth" Show="true" Text="$L:728$"/>
+      <Button Inherit="" Location="27,95,100,24" Name="btGroup1" Show="true" Text="1"/>
+      <Button Inherit="" Location="143,95,100,24" Name="btGroup2" Show="true" Text="2"/>
+      <Button Inherit="" Location="259,95,100,24" Name="btGroup3" Show="true" Text="3"/>
+      <Button Inherit="" Location="380,95,100,24" Name="btGroup4" Show="true" Text="4"/>
+      <Button Inherit="" Location="27,137,100,24" Name="btGroup5" Show="true" Text="5"/>
+      <Button Inherit="" Location="143,137,100,24" Name="btGroup6" Show="true" Text="6"/>
+      <Button Inherit="" Location="260,137,100,24" Name="btGroup7" Show="true" Text="7"/>
+      <Button Inherit="" Location="381,137,100,24" Name="btGroup8" Show="true" Text="8"/>
+      <Label Inherit="" Location="27,245,70,18" Name="lbGroupNorth" Show="true" Text="$L:729$"/>
+      <Button Inherit="" Location="27,295,100,24" Name="btNorthGroup1" Show="true" Text="1"/>
+      <Button Inherit="" Location="143,295,100,24" Name="btNorthGroup2" Show="true" Text="2"/>
+      <Button Inherit="" Location="260,295,100,24" Name="btNorthGroup3" Show="true" Text="3"/>
+      <Button Inherit="" Location="381,295,100,24" Name="btNorthGroup4" Show="true" Text="4"/>
+      <Button Inherit="" Location="27,337,100,24" Name="btNorthGroup5" Show="true" Text="5"/>
+      <Button Inherit="" Location="143,337,100,24" Name="btNorthGroup6" Show="true" Text="6"/>
+      <Button Inherit="" Location="260,337,100,24" Name="btNorthGroup7" Show="true" Text="7"/>
+      <Button Inherit="" Location="381,337,100,24" Name="btNorthGroup8" Show="true" Text="8"/>
+    </Form>
+  </Layer>
+</Ui>

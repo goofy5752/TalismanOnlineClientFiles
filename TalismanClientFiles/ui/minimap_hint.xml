@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Widget Inherit="" Location="222,134,200,200" Name="wgtMinimapHint" Show="false">
+    <Widgets>
+      <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+        <BackgroundImage File="" Source="4,2,6,6"/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="lt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="rt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+          <Anchor point="RIGHT" relativeTo="rt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lt"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lb"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+          <Anchor point="BOTTOM" relativeTo="lb"/>
+        </Anchors>
+      </Widget>
+      <Widget BackgroundColor="#e2121212" Name="center" Show="true">
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+        </Anchors>
+      </Widget>
+    </Widgets>
+    <EditBox Inherit="" Location="7,7,70,18" MultiLine="true" Name="edtText" Show="true" WordWrap="true">
+      <Anchors>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+        <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+      </Anchors>
+    </EditBox>
+  </Widget>
+</Ui>

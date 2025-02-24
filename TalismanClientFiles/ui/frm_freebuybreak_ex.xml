@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Ui>
+	<Layer Name="layWorld" Show="true">
+		<Form ClipChildren="false" Inherit="NoTitleBarForm" Location="299,273,220,120" Name="frmFreeBuyBreakEx" Show="false">
+			<Label Inherit="bg1" Location="0,0,220,120" Name="582" Show="true">
+				<BackgroundImage/>
+			</Label>
+			<Button Inherit="PushButton" Location="22,90,50,20" Name="btFBBOk" Show="true" Text="$L:998$">
+				<Scripts>
+					<OnLClick>layWorld_frmFreeBuyBreakEx_btFBBOk_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="146,89,50,20" Name="btFBBClose" Show="fals" Text="$L:999$">
+				<Scripts>
+					<OnLClick>layWorld_frmFreeBuyBreakEx_btFBBClose_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<EditBox BackgroundColor="#ee000000" EnableInput="true" Inherit="" LineSpacing="4" Location="95,76,30,20" MaxChar="3" Name="edbNumCount" NumberOnly="true" Show="true">
+				<BackgroundImage File="tz_010" Source="458,193,30,20"/>
+				<Scripts>
+				  <OnUpdate>layWorld_frmFreeBuyBreakEx_edbNumCount_OnUpdate(self)</OnUpdate>
+				</Scripts>
+			</EditBox>
+			<Button Inherit="" Location="80,79,12,14" Name="btItemb1" Show="true">
+				<NormalImage File="tz_010" Source="51,382,12,14"/>
+				<PushedImage File="tz_010" Source="51,399,12,14"/>
+				<Scripts>
+					<OnLClick>layWorld_frmFreeBuyBreakEx_btItemb1_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="" Location="128,79,12,14" Name="btItemb2" Show="true">
+				<NormalImage File="tz_010" Source="76,382,12,14"/>
+				<PushedImage File="tz_010" Source="76,399,12,14"/>
+				<Scripts>
+					<OnLClick>layWorld_frmFreeBuyBreakEx_btItemb2_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<EditBox BackgroundColor="" Enable="false" EnableInput="false" Inherit="" Location="29,33,160,40" Name="FreebuyIndex" Show="true" WordWrap="true">
+				<BackgroundImage File="tz_011" Source="84,0,160,20"/>
+			</EditBox>
+			<Label Inherit="TemplateNormalTitle" Location="-6,-18,232,45" Name="5143" Show="true"/>
+			<Label AlignCol="true" Inherit="" Location="87,6,70,18" Name="lbRewardTitel" Show="true" Text="$L:997$"/>
+			<CloseButton Location="198,9,13,13" Show="ture">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+			<TitleBarButton Location="-9,-16,235,26" Show="ture"/>
+			<Scripts>
+				<OnShow>layWorld_frmFreeBuyBreakEx_OnShow(self);</OnShow>
+			</Scripts>
+		</Form>
+	</Layer>
+</Ui>

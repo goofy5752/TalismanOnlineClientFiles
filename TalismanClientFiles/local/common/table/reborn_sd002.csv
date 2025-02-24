@@ -1,0 +1,5 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:Scenestable_sd002$,灵玉崖,sd002/,"467 -141 820 268;
+460 -521 806 -127;",554 216 4;,0

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Blend_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form DragIn="true" Inherit="" Location="478,383,300,360" Name="frmBlendEx" Show="false">
+      <Label Inherit="bg1" Location="10,21,280,335" Name="554" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="4,2,292,50" Name="9942" Show="true"/>
+      <Anchors/>
+      <Label Inherit="" Location="-1,256,256,75" Name="588" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="50,56,200,161" Name="719" Show="fals">
+        <BackgroundImage File="tz_026" Source="0,0,200,161" Transparency="1"/>
+      </Label>
+      <Button DragIn="false" DragOut="false" Inherit="" Location="136,145,32,32" Name="btPracticePic" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmBlendEx_btPracticePic_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="36,316,70,20" Name="btOK" Show="true" Text="$L:475$">
+        <Scripts>
+          <OnLClick>layWorld_frmBlendEx_btOK_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="194,316,70,20" Name="btCancel" Show="true" Text="$L:476$">
+        <Scripts>
+          <OnLClick>layWorld_frmBlendEx_btCancel_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="89,0,120,70" Name="1229" Show="true" Text="$L:477$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="76,82,32,32" Name="btPracticeLeft" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmBlendEx_btPracticeLeft_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmBlendEx_btPracticeLeft_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmBlendEx_btPracticeLeft_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="190,82,32,32" Name="btPracticeRight" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmBlendEx_btPracticeRight_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmBlendEx_btPracticeRight_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmBlendEx_btPracticeRight_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Label Inherit="bg3" Location="82,222,179,84" Name="1508" Show="true"/>
+      <EditBox BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="84,224,175,80" MultiLine="ture" Name="lbPracticeTip" Show="true" Text="dfag" WordWrap="true"/>
+      <Label Inherit="" Location="40,230,36,16" Name="lbPracticeName" Show="true" Text="$L:478$"/>
+      <Label Inherit="" Location="106,180,52,16" Name="570" Show="false" Text="$L:479$"/>
+      <TitleBarButton Location="8,6,280,28"/>
+      <CloseButton Location="265,32,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("cev_item_fuse_show")
+		self:RegisterScriptEventNotify("bag_item_update")
+			self:RegisterScriptEventNotify("bag_item_removed")
+			self:RegisterScriptEventNotify("CEV_ITEM_FUSE_RESULT")</OnLoad>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnEvent>if event == "cev_item_fuse_show" then
+				if not self:getVisible() then
+					layWorld_frmBlendEx_Show(self)
+				end
+				elseif event == "bag_item_update" then
+					layWorld_frmBlendEx_OnEventItemUpDate(self, arg)
+				elseif event == "bag_item_removed" then
+					layWorld_frmBlendEx_Refresh()
+				elseif event == "CEV_ITEM_FUSE_RESULT" then
+					layWorld_frmBlendEx_Fuse_Result(arg)
+			end</OnEvent>
+        <OnDragIn>layWorld_frmBlendEx_OnDragIn(drag)</OnDragIn>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,70 @@
+编号,名称,部件,效果1个,效果2个,效果3个,效果4个,效果5个,效果6个,效果7个,效果8个,效果9个,效果10个,Icon,特效,特效link,特效(女),特效link(女)
+ID,Name,Items,Action_1,Action_2,Action_3,Action_4,Action_5,Action_6,Action_7,Action_8,Action_9,Action_10,Icon,AppearenceEffect,EffectLink,AppearenceEffect_Women,EffectLink_Women
+1,火龙套装,810;811;812;813;814;815,,AddCon(50),,"AddUltraDmg(1,18)",,"SkillAddTargetRadius(205,30)",,,,,ic_ide005,eff_em_set50,Bip_pe01,,Bip01 Spine
+2,雷音套装,816;817;818;819;820;821,,AddCon(70),,AddParryRate(0.1),,"SkillAddCdTime(422,-60000)",,,,,ic_idf005,eff_fm_set50,Bip01,,
+3,百合套装,822;823;824;825;826;827,,AddWis(75),,AddUltraHeal(46),,"SkillAddCdTime(319,-30000)",,,,,ic_idb005,eff_bh_set50,Bip_pb01,,
+4,灭魔套装,828;829;830;831;832;833,,AddDex(75),,AddDodgeRate(0.1),,"SkillAddCdTime(521,-60000)",,,,,ic_idq005,eff_qc_set50,Bip_pq,,
+5,青鹬套装,834;835;836;837;838;839,,AddWis(65),,"AddDeltaCriticalRate(2,0.02)",,"SkillAddCdTime(602,-500)",,,,,ic_idx005,eff_xq_set50,Bip_px Spine,,
+6,七星套装,840;841;842;843;844;845,,AddWis(90),,"AddDeltaCriticalRate(1,0.05)",,"SkillAddCdTime(205,-2000)",,,,,ic_ide006,eff_em_setr60,Bip_pe01,,Bip01 Spine
+7,烈火套装,846;847;848;849;850;851,,AddStr(90),,"AddArmorRate(0,10)",,"SkillAddUseMp(412,-10)",,,,,ic_idf006,eff_fm_setr60,Bip01,,
+8,雪舞套装,852;853;854;855;856;857,,AddWis(90),,AddUltraHeal(152),,"SkillAddMaxTargetRange(309,30)",,,,,ic_idb006,eff_bh_setr60,Bip_pb01,,
+9,贪狼套装,858;859;860;861;862;863,,AddDex(90),,"AddDmgRate(4,0.05)",,"SkillAddUseMp(505,-5)",,,,,ic_idq006,eff_qc_setr60,Bip_pq,,
+10,朱鹭套装,864;865;866;867;868;869,,AddWis(90),,AddSpeedRate(0.03),,"SkillAddPreTime(601,-500)",,,,,ic_idx006,eff_xq_setr60,Bip_px Spine,,
+11,寒芒套装,870;871;872;873;874;875,,AddCon(65),,"AddDeltaCriticalRate(2,0.05)",,"SkillAddTargetRadius(214,30)",,,,,ic_ide006,eff_em_setp60,root,,
+12,佛音套装,876;877;878;879;880;881,,AddCon(90),,"AddDmgRate(5,0.05)",,"SkillAddCriticalRate(404,0.3)",,,,,ic_idf006,eff_fm_setp60,root,,
+13,柳絮套装,882;883;884;885;886;887,,AddCon(80),,"AddDmgRate(4,0.05)",,"SkillAddPreTime(303,-500)",,,,,ic_idb006,eff_bh_setp60,root,,
+14,逐日套装,888;889;890;891;892;893,,AddCon(80),,"AddDeltaCriticalRate(3,0.05)",,"SkillAddCdTime(526,-15000)",,,,,ic_idq006,eff_qc_setp60,root,,
+15,冲宵套装,894;895;896;897;898;899,,AddCon(75),,"AddDeltaCriticalRate(3,0.05)",,"SkillAddPreTime(614,-500)",,,,,ic_idx006,eff_xq_setp60,root,,
+98,WizzPrcSetPvm,12057;12058;12059;12060;12061;12062,,AddWis(120),AddCon(50),"AddDmgRate(2,8)",AddMaxMpRate(0.03),"SkillAddPreTime(211,-300);SkillAddPreTime(251,-300)",,,,,ic_ide006,eff_em_setr60,Bip_pe01,,Bip01 Spine
+104,MonkPrcSetPvm,12063;12064;12065;12066;12067;12068,,AddStr(100),AddCon(80),"AddDmgRate(1,8)",AddParryRate(0.1),"SkillAddUseMp(414,-10);SkillAddUseMp(464,-10)",,,,,ic_idf006,eff_fm_setr60,Bip01,,
+105,FairyPrcSetPvm,12069;12070;12071;12072;12073;12074,,AddWis(100),"SkillAddMaxTargetRange(309,30)",AddUltraHeal(285),"AddArmorRate(0,5)","SkillAddPreTime(309,-500);SkillAddPreTime(341,-500)",,,,,ic_idb006,eff_bh_setr60,Bip_pb01,,
+101,AssasinPrcSetPvm,12051;12052;12053;12054;12055;12056,,AddDex(120),AddCon(50),"AddDmgRate(4,8);",AddDodgeRate(0.1),"SkillAddCdTime(522,-60000);SkillAddCdTime(572,-60000)",,,,,ic_idq006,eff_qc_setr60,Bip_pq,,
+107,TamerPrcSetPvm,12075;12076;12077;12078;12079;12080,,AddWis(100),AddCon(50),"AddDmgRate(2,8);",AddSpeedRate(0.03),"SkillAddCdTime(630,-15000);SkillAddCdTime(680,-15000)",,,,,ic_idx006,eff_xq_setr60,Bip_px Spine,,
+110,WizzPrcSetPvp,12100;12101;12102;12103;12104;12105,,AddCon(120),AddWis(70),"AddDmgRate(1,8)","AddDeltaCriticalRate(1,0.05)","SkillAddPreTime(201,-300);SkillAddPreTime(231,-300)",,,,,ic_ide008,eff_em_setp60,Bip_pe01,,Bip01 Spine
+111,MonkPrcSetPvp,12106;12107;12108;12109;12110;12111,,AddCon(140),AddStr(70),"AddDmgRate(5,8);","AddDeltaCriticalRate(5,0.05)","SkillAddUseMp(405,-10);SkillAddUseMp(435,-10)",,,,,ic_idf008,eff_fm_setp60,Bip01,,
+112,FairyPrcSetPvp,12112;12113;12114;12115;12116;12117,,AddCon(120),AddWis(70),"AddDmgRate(5,8);","AddDeltaCriticalRate(5,0.05)","SkillAddPreTime(317,-1000);SkillAddPreTime(349,-1000)",,,,,ic_idb008,eff_bh_setp60,Bip_pb01,,
+113,AssasinPrcSetPvp,12118;12119;12120;12121;12122;12123,,AddCon(140),AddDex(70),"AddDmgRate(3,8);","AddDeltaCriticalRate(3,0.05)","SkillAddCdTime(527,-30000);SkillAddCdTime(577,-30000)",,,,,ic_idq008,eff_qc_setp60,Bip_pq,,
+114,TamerPrcSetPvp,12124;12125;12126;12127;12128;12129,,AddCon(120),AddWis(70),"AddDmgRate(3,8);","AddDeltaCriticalRate(3,0.05)","SkillAddCdTime(615,-15000);SkillAddCdTime(665,-15000)",,,,,ic_idx008,eff_xq_setp60,Bip_px Spine,,
+115,BOAmulets1,9605;9606,,,,,,,,,,,,,,,
+116,BOAmulets2,9607;9608,,,,,,,,,,,,,,,
+117,BOAmulets3,9609;9610,,,,,,,,,,,,,,,
+118,BOAmulets4,9611;9612,,,,,,,,,,,,,,,
+119,BOAmulets5,9613;9614,,,,,,,,,,,,,,,
+120,BOAmulets6,9615;9616,,,,,,,,,,,,,,,
+121,BOAmulets7,9617;9618,,"AddMaxHpRate(0.1);AddSpeedRate(0.05);",,,,,,,,,,,,,
+122,BOAmulets8,9619;9620,,"AddMaxHpRate(0.12);AddSpeedRate(0.10);",,,,,,,,,,,,,
+123,BOAmulets9,9621;9622,,"AddMaxHpRate(0.15);AddSpeedRate(0.15);",,,,,,,,,,,,,
+124,BOAmuletsTamer,9623;9624,,"AddMaxHpRate(0.20);AddSpeedRate(0.20);SkillAddCdTime(631,-10000);SkillAddCdTime(631,-10000);",,,,,,,,,,,,,
+125,BOAmuletsFairy,9625;9626,,"AddMaxHpRate(0.20);AddSpeedRate(0.20);AddUltraHeal(436)",,,,,,,,,,,,,
+126,BOAmuletsAssasin,9627;9628,,"AddMaxHpRate(0.20);AddSpeedRate(0.20);SkillAddCdTime(527,-15000);SkillAddCdTime(527,-15000)",,,,,,,,,,,,,
+127,BOAmuletsWizzard,9629;9630,,"AddMaxHpRate(0.20);AddSpeedRate(0.20);SkillAddCdTime(276,-5000);SkillAddCdTime(276,-5000)",,,,,,,,,,,,,
+128,BOAmuletsMonk,9631;9632,,"AddMaxHpRate(0.20);AddSpeedRate(0.20);SkillAddCdTime(421,-15000);SkillAddCdTime(421,-15000)",,,,,,,,,,,,,
+129,BORings1,6534;6535,,,,,,,,,,,,,,,
+130,BORings2,6536;6537,,,,,,,,,,,,,,,
+131,BORings3,6538;6539,,,,,,,,,,,,,,,
+132,BORings4,6540;6541,,,,,,,,,,,,,,,
+133,BORings5,6542;6543,,,,,,,,,,,,,,,
+134,BORings6,6544;6545,,,,,,,,,,,,,,,
+135,BORings7,6546;6547,,"AddDeltaCriticalDmg(0,0.1);AddDeltaCriticalDmg(1,0.1);AddDeltaCriticalDmg(2,0.1);AddDeltaCriticalDmg(3,0.1);AddDeltaCriticalDmg(4,0.1);AddDeltaCriticalDmg(5,0.1)",,,,,,,,,,,,,
+136,BORings8,6548;6549,,"AddDeltaCriticalDmg(0,0.2);AddDeltaCriticalDmg(1,0.2);AddDeltaCriticalDmg(2,0.2);AddDeltaCriticalDmg(3,0.2);AddDeltaCriticalDmg(4,0.2);AddDeltaCriticalDmg(5,0.2)",,,,,,,,,,,,,
+137,BORings9,6550;6551,,"AddDeltaCriticalDmg(0,0.3);AddDeltaCriticalDmg(1,0.3);AddDeltaCriticalDmg(2,0.3);AddDeltaCriticalDmg(3,0.3);AddDeltaCriticalDmg(4,0.3);AddDeltaCriticalDmg(5,0.3)",,,,,,,,,,,,,
+138,BORingsTamer,6552;6553,,"AddDeltaCriticalDmg(0,0.5);AddDeltaCriticalDmg(1,0.5);AddDeltaCriticalDmg(2,0.5);AddDeltaCriticalDmg(3,0.5);AddDeltaCriticalDmg(4,0.5);AddDeltaCriticalDmg(5,0.5);SkillAddDamage(651,400);SkillAddDamage(664,400)",,,,,,,,,,,,,
+139,BORingsFairy,6554;6555,,"AddDeltaCriticalDmg(0,0.5);AddDeltaCriticalDmg(1,0.5);AddDeltaCriticalDmg(2,0.5);AddDeltaCriticalDmg(3,0.5);AddDeltaCriticalDmg(4,0.5);AddDeltaCriticalDmg(5,0.5);SkillAddDamage(323,400);SkillAddDamage(331,400)",,,,,,,,,,,,,
+140,BORingsAssasin,6556;6557,,"AddDeltaCriticalDmg(0,0.5);AddDeltaCriticalDmg(1,0.5);AddDeltaCriticalDmg(2,0.5);AddDeltaCriticalDmg(3,0.5);AddDeltaCriticalDmg(4,0.5);AddDeltaCriticalDmg(5,0.5);SkillAddDamage(564,400);SkillAddDamage(553,400)",,,,,,,,,,,,,
+141,BORingsWizzard,6558;6559,,"AddDeltaCriticalDmg(0,0.5);AddDeltaCriticalDmg(1,0.5);AddDeltaCriticalDmg(2,0.5);AddDeltaCriticalDmg(3,0.5);AddDeltaCriticalDmg(4,0.5);AddDeltaCriticalDmg(5,0.5);SkillAddDamage(232,400);SkillAddDamage(232,400);SkillAddDamage(253,400)",,,,,,,,,,,,,
+142,BORingsMonk,6560;6561,,"AddDeltaCriticalDmg(0,0.5);AddDeltaCriticalDmg(1,0.5);AddDeltaCriticalDmg(2,0.5);AddDeltaCriticalDmg(3,0.5);AddDeltaCriticalDmg(4,0.5);AddDeltaCriticalDmg(5,0.5);SkillAddDamage(462,500);SkillAddDamage(462,500);SkillAddDamage(431,500)",,,,,,,,,,,,,
+148,"SetPLWizzard","15030;15031;15032;15033;15034;15035",,AddWis(120),AddCon(80),"AddDeltaCriticalRate(0,0.08);AddDeltaCriticalRate(1,0.08);AddDeltaCriticalRate(2,0.08);AddDeltaCriticalRate(3,0.08);AddDeltaCriticalRate(4,0.08);AddDeltaCriticalRate(5,0.08)","AddDmgRate(2,8)","SkillAddCdTime(212,-2000);SkillAddCdTime(252,-2000)",,,,,"ic_ide008",eff_thund_dot,root
+149,"SetPLMonk","15036;15037;15038;15039;15040;15041",,AddStr(120),AddCon(80),"AddDeltaCriticalRate(0,0.08);AddDeltaCriticalRate(1,0.08);AddDeltaCriticalRate(2,0.08);AddDeltaCriticalRate(3,0.08);AddDeltaCriticalRate(4,0.08);AddDeltaCriticalRate(5,0.08)","AddDmgRate(1,8);","SkillAddDamage(412,350);SkillAddDamage(462,350)",,,,,"ic_idf008",eff_thund_dot,root
+150,"SetPLFairy","15042;15043;15044;15045;15046;15047",,AddCon(80),AddWis(120),"AddDeltaCriticalRate(0,0.08);AddDeltaCriticalRate(1,0.08);AddDeltaCriticalRate(2,0.08);AddDeltaCriticalRate(3,0.08);AddDeltaCriticalRate(4,0.08);AddDeltaCriticalRate(5,0.08)","AddDmgRate(4,8)","SkillAddCdTime(301,-1000);SkillAddCdTime(321,-1000)",,,,,"ic_idb008",eff_thund_dot,root
+151,"SetPLAssasin","15048;15049;15050;15051;15052;15053",,AddDex(120),AddCon(80),"AddDeltaCriticalRate(0,0.08);AddDeltaCriticalRate(1,0.08);AddDeltaCriticalRate(2,0.08);AddDeltaCriticalRate(3,0.08);AddDeltaCriticalRate(4,0.08);AddDeltaCriticalRate(5,0.08)","AddDmgRate(4,8);","SkillAddCriticalRate(503,0.1);SkillAddCriticalRate(553,0.1)",,,,,"ic_idq008",eff_thund_dot,Bip_pq,,
+152,"SetPLTamer","15054;15055;15056;15057;15058;15059",,AddWis(120),AddCon(80),"AddDeltaCriticalRate(0,0.08);AddDeltaCriticalRate(1,0.08);AddDeltaCriticalRate(2,0.08);AddDeltaCriticalRate(3,0.08);AddDeltaCriticalRate(4,0.08);AddDeltaCriticalRate(5,0.08)","AddDmgRate(2,8);","SkillAddDamage(602,150);SkillAddDamage(652,150)",,,,,"ic_idf008",eff_thund_dot,root
+143,"SetWPWizz","15000;15001;15002;15003;15004;15005",,AddCon(180),AddDex(200),"AddDeltaCriticalRate(3,0.1)","AddDmgRate(3,10)","SkillAddUseMp(511,-5);SkillAddUseMp(561,-5)",,,,,"ic_ide008",eff_westpalaceset,root
+144,"SetWPMonk","15006;15007;15008;15009;15010;15011",,AddCon(180),AddWis(200),"AddDeltaCriticalRate(1,0.1)","AddDmgRate(1,10)","SkillAddPreTime(202,-300);SkillAddPreTime(232,-300)",,,,,"ic_idf008",eff_westpalaceset,root
+145,"SetWPFay","15012;15013;15014;15015;15016;15017",,AddCon(180),AddWis(200),"AddDeltaCriticalRate(2,0.1)","AddDmgRate(2,10)","SkillAddCriticalRate(601,0.1);SkillAddCriticalRate(651,0.1)",,,,,"ic_idb008",eff_westpalaceset,root
+146,"SetWPSin","15018;15019;15020;15021;15022;15023",,AddCon(220),AddStr(280),"AddDeltaCriticalRate(1,0.1)","AddDmgRate(1,10)","SkillAddCriticalRate(411,0.3);SkillAddCriticalRate(461,0.3)",,,,,"ic_idq008",eff_westpalaceset,root
+147,"SetWPTamer","15024;15025;15026;15027;15028;15029",,AddCon(200),AddWis(220),"AddDeltaCriticalRate(5,0.12)","AddDmgRate(5,0.12)","SkillAddPreTime(305,-500);SkillAddPreTime(335,-500)",,,,,"ic_idx008",eff_westpalaceset,root
+153,"TalismanSin","15081;15082","AddCon(700)","AddDex(500)",,,,,,,,,,,
+154,"TalismanTam","15083;15084","AddCon(700)","AddWis(500)",,,,,,,,,,,
+155,"TalismanWiz","15085;15086","AddCon(700)","AddWis(500)",,,,,,,,,,,
+156,"TalismanMon","15087;15088","AddCon(700)","AddStr(500)",,,,,,,,,,,
+157,"TalismanFay","15089;15090","AddCon(700)","AddWis(500)",,,,,,,,,,,

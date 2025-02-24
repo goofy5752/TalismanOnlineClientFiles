@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="369,234,300,370" Name="frPetui" Show="false">
+      <Button Inherit="" Location="12,16,64,64" Name="btPlayerImg" Show="false"/>
+      <Label Inherit="bg1" Location="10,22,280,335" Name="2037" Show="true"/>
+      <Label Inherit="" Location="-2,255,256,100" Name="2208" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,317,256,12" Name="2275" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="3,3,292,50" Name="17169" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="33,56,160,24" Name="lbPlayName" Show="true" Text="111">
+        <BackgroundImage File="tz_010" Source="181,352,147,24"/>
+      </Label>
+      <Form Inherit="NoTitleBarForm" Location="33,88,230,215" Name="frmPetList" Show="true">
+        <Label Inherit="bg3" Location="0,1,230,210" Name="7725" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="5,11,220,20" Name="lbPetMaster" Show="true" Text="$L:480$">
+          <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+        </Label>
+        <Label Inherit="" Location="10,46,104,20" Name="lbPetName" Show="true" Text="$L:481$"/>
+        <Label Inherit="" Location="113,46,28,20" Name="lbPetLev" Show="true" Text="$L:482$"/>
+        <ProgressBar Inherit="" Location="140,46,71,10" Name="prgHpPet" Show="true" Text="$L:483$">
+          <BackgroundImage File="tz_010" Source="429,427,66,5"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="140,56,71,10" Name="prgMpPet" Show="true" Text="$L:484$">
+          <BackgroundImage File="tz_010" Source="429,435,66,5"/>
+        </ProgressBar>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="5,78,220,20" Name="lbPetSave" Show="true" Text="$L:485$">
+          <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+        </Label>
+        <Label Inherit="" Location="9,109,104,20" Name="lbSavePetName1" Show="true" Text="$L:486$"/>
+        <Label Inherit="" Location="112,109,28,20" Name="lbPetLev1" Show="true" Text="$L:487$"/>
+        <ProgressBar Inherit="" Location="139,109,71,10" Name="pgbHpPet1" Show="true" Text="$L:488$">
+          <ProgressBarImage File="tz_010" Source="429,427,66,5"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="139,118,71,10" Name="pgbMpPet1" Show="true" Text="$L:489$">
+          <ProgressBarImage File="tz_010" Source="429,435,66,5"/>
+        </ProgressBar>
+        <Label Inherit="" Location="9,145,104,20" Name="lbSavePetName2" Show="true" Text="$L:490$"/>
+        <Label Inherit="" Location="112,145,28,20" Name="lbPetLev2" Show="true" Text="$L:491$"/>
+        <ProgressBar Inherit="" Location="139,145,71,10" Name="pgbHpPet2" Show="true" Text="$L:492$">
+          <ProgressBarImage File="tz_010" Source="429,427,66,5"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="139,154,71,10" Name="pgbMpPet2" Show="true" Text="$L:493$">
+          <ProgressBarImage File="tz_010" Source="429,435,66,5"/>
+        </ProgressBar>
+        <Label Inherit="" Location="9,181,104,20" Name="lbSavePetName3" Show="true" Text="$L:494$"/>
+        <Label Inherit="" Location="112,181,28,20" Name="lbPetLev3" Show="true" Text="$L:495$"/>
+        <ProgressBar Inherit="" Location="139,181,71,10" Name="pgbHpPet3" Show="true" Text="$L:496$">
+          <ProgressBarImage File="tz_010" Source="429,427,66,5"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="139,190,71,10" Name="pgbMpPet3" Show="true" Text="$L:497$">
+          <ProgressBarImage File="tz_010" Source="429,435,66,5"/>
+        </ProgressBar>
+        <Label Inherit="" Location="9,109,210,20" Name="labStoragePet1" Show="true" Text=""/>
+        <Label Inherit="" Location="9,145,210,20" Name="labStoragePet2" Show="true" Text=""/>
+        <Label Inherit="" Location="9,181,210,20" Name="labStoragePet3" Show="true" Text=""/>
+        <Label Inherit="" Location="10,44,210,20" Name="labCarrayPet" Show="true" Text=""/>
+      </Form>
+      <Button Inherit="PushButton" Location="28,315,70,20" Name="btSavePet" Show="true" Text="$L:498$"/>
+      <Button Inherit="PushButton" Location="199,315,70,20" Name="btPetClose" Show="true" Text="$L:499$"/>
+      <Button Inherit="PushButton" Location="113,315,70,20" Name="btPetFree" Show="true" Text="$L:500$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="91,0,120,72" Name="lbPet" Show="true" Text="$L:501$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="20,255,218,6" Name="500" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="10,8,280,28"/>
+      <CloseButton Location="265,33,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

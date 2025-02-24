@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_MailText_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="252,128,294,512" Movable="true" Name="frmMailTextsEx" Show="false" Size="294,512">
+      <Label Inherit="bg1" Location="7,20,280,470" Name="lbUP" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="lbDown" Show="fals"/>
+      <TitleBarButton Location="0,0,294,28" Text=""/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+		<Scripts>
+            <OnLClick>layWorld_frmMailTextsEx_frmSendMailTexts_MailClose(self)</OnLClick>
+        </Scripts>
+      </CloseButton>
+      <Form Inherit="NoTitleBarForm" Location="26,50,235,430" Name="frmSendMailTexts" Show="t">
+        <Label AlignCol="CENTER" Inherit="" Location="10,12,60,18" Name="lbAcceptMailName" Show="true" Text="$L:592$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="10,35,60,18" Name="LbMailTitle" Show="true" Text="$L:593$"/>
+        <Label Inherit="" Location="10,81,218,270" Name="1554" Show="true">
+          <BackgroundImage File="tz_023"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="10,57,218,20" Name="lbSystext" Show="true" Text=""/>
+        <EditBox AutoScrollV="true" ColSpacing="14" Inherit="" LineSpacing="10" Location="11,104,218,230" MultiLine="true" Name="edbMail" Show="true" WordWrap="true"/>
+        <Button Inherit="PushButton" Location="28,392,80,22" Name="btMailDelete" Show="true" Text="$L:594$">
+          <Scripts>
+            <OnLClick>layWorld_frmMailTextsEx_frmSendMailTexts_MailDelete(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="129,392,80,22" Name="btMailClose" Show="true" Text="$L:595$">
+          <Scripts>
+            <OnLClick>layWorld_frmMailTextsEx_frmSendMailTexts_MailClose(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="" Location="74,10,100,20" Name="lbTextName" Show="true">
+          <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+        </Label>
+        <Label Inherit="" Location="74,33,154,22" Name="lbTextTitle" Show="true">
+          <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="3,358,147,24" Name="lbGetA" Show="true" Text="$L:596$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Button Inherit="" Location="156,354,32,32" Name="btnA1" Show="true">
+          <HighlightImage File="tz_010" Source="185,375,50,50"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <Hint/>
+          <Scripts>
+            <OnLClick>layWorld_frmMailTextsEx_frmSendMailTexts_OnLClick(1)</OnLClick>
+            <OnHint>layWorld_frmMailTextsEx_frmSendMailTexts_OnHint(self)</OnHint>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="194,354,32,32" Name="btnA2" Show="true">
+          <HighlightImage File="tz_010" Source="185,375,50,50"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <Scripts>
+            <OnLClick>layWorld_frmMailTextsEx_frmSendMailTexts_OnLClick(2)</OnLClick>
+          </Scripts>
+        </Button>
+      </Form>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,68" Name="7778" Show="true" Text="$L:591$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Anchors>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frmMailEx"/>
+        <Anchor point="TOP" relativeTo="layWorld.frmMailEx"/>
+      </Anchors>
+      <Scripts>
+        <OnShow>layWorld_MailTextsEx_OnShow(self);</OnShow>
+        <OnHide>layWorld_MailTextsEx_OnHide(self);</OnHide>
+        <OnUpdate>layWorld_MailTextsEx_OnUpdate(self);</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

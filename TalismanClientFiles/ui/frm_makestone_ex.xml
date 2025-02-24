@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_makestone_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form DragIn="true" Inherit="" Location="479,383,300,370" Name="frmMakeStoneEx" Show="false">
+      <Label Inherit="bg1" Location="10,20,280,335" Name="554" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="4,2,292,50" Name="15787" Show="true"/>
+      <Label Inherit="" Location="-2,256,256,75" Name="588" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="53,56,200,161" Name="719" Show="true">
+        <BackgroundImage File="tz_026" Source="0,0,200,161" Transparency="1"/>
+      </Label>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="140,83,32,32" Name="btStoneCenter1" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmMakeStoneEx_btStoneCenter1_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmMakeStoneEx_btStoneCenter1_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmMakeStoneEx_btStoneCenter1_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="140,149,32,32" Name="btStoneCenter2" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmMakeStoneEx_btStoneCenter2_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="39,307,70,20" Name="btOK" Show="true" Text="$L:924$">
+        <Scripts>
+          <OnLClick>layWorld_frmMakeStoneEx_btOK_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="bg3" Location="87,225,173,67" Name="9360" Show="true"/>
+      <Button Inherit="PushButton" Location="190,307,70,20" Name="btCancel" Show="true" Text="$L:476$">
+        <Scripts>
+          <OnLClick>layWorld_frmMakeStoneEx_btCancel_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Anchors/>
+      <Label AlignCol="CENTER" Inherit="" Location="91,0,120,70" Name="1229" Show="true" Text="$L:922$" TextFont="$L:1$" TextSize="$L:3$" AlignLine="CENTER"/>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="80,83,32,32" Name="btStoneLeft" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmMakeStoneEx_btStoneLeft_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmMakeStoneEx_btStoneLeft_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmMakeStoneEx_btStoneLeft_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="192,83,32,32" Name="btStoneRight" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmMakeStoneEx_btStoneRight_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmMakeStoneEx_btStoneRight_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmMakeStoneEx_btStoneRight_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <EditBox BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="91,229,166,60" MultiLine="ture" Name="lbMakeStoneTip" Show="true" Text="3333333" WordWrap="true"/>
+      <Label Inherit="" Location="38,238,36,16" Name="lbPracticeName" Show="true" Text="$L:478$"/>
+      <Label Inherit="" Location="106,180,52,16" Name="570" Show="false" Text="$L:479$"/>
+      <TitleBarButton Location="10,5,280,28"/>
+      <CloseButton Location="265,33,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_ITEM_ENCHANT_SHOW")
+			self:RegisterScriptEventNotify("bag_item_update")
+			self:RegisterScriptEventNotify("bag_item_removed")
+			self:RegisterScriptEventNotify("CEV_ITEM_ENCHANT_RESULT")</OnLoad>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnEvent>if event == "CEV_ITEM_ENCHANT_SHOW" then
+					if self:getVisible() then
+						return
+					end
+					self:ShowAndFocus()
+					--self:MoveTo(150, 200)
+					UI_ItemEnchant_Item_ObjectId = 0
+					UI_ItemEnchant_Accompany_ObjectId = 0
+					UI_ItemEnchant_Crystal_ObjectId = 0
+					layWorld_frmMakeStoneEx_Refresh()
+				elseif event == "bag_item_update" then
+					layWorld_frmMakeStoneEx_Refresh()
+				elseif event == "bag_item_removed" then
+					layWorld_frmMakeStoneEx_Refresh()
+				elseif event == "CEV_ITEM_ENCHANT_RESULT" then
+					if arg[1] == 0 then
+						uiClientMsg(uiLanString("MSG_ITEM_GEMMY_FAILED"), false)
+					else
+						uiClientMsg(uiLanString("MSG_ITEM_GEMMY_SUCCESS"), false)
+					end
+					UI_ItemEnchant_Item_ObjectId = 0
+					UI_ItemEnchant_Accompany_ObjectId = 0
+					UI_ItemEnchant_Crystal_ObjectId = 0
+					layWorld_frmMakeStoneEx_Refresh()
+				end</OnEvent>
+        <OnDragIn>layWorld_frmMakeStoneEx_OnDragIn(drag)</OnDragIn>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

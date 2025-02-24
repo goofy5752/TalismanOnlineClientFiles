@@ -1,0 +1,476 @@
+程序导标记，不用翻译,,
+ID,Name,Desc
+1230,Increase Mana Recovery Speed,increase master's mana recovery speed $EffParam1$ points per second in battle state.
+2047,Energy Increase (Hamadryad Hierogram),"in $EffParam2$ hours, earn extra $EffParam1$% energy from monster killing"
+2048,Experience Increase (Vivid Spell),"in $EffParam2$ hours, increase $EffParam1$% experience from monster killing"
+2049,Energy Increase,"in $EffParam2$ hours, earn extra $EffParam1$% energy from monster killing"
+2050,Experience Increase,"in $EffParam2$ hours, increase $EffParam1$% experience from monster killing"
+2339,Consciousness of Racer (no mount),
+2340,Blossom,"increase experience and energy by 200%, lasts 30 minutes"
+2351,Flaming,burn combustible materials
+2352,Love Symbol,
+2353,Black Wind Camp Newbie,
+2354,Laurel Wonderland Newbie,
+2355,Fantasy Palace Newbie,
+2400,Carol Pill of Strength,increase $EffParam2$ Strength
+2401,Carol Pill of Dexterity,increase $EffParam2$ Dexterity
+2402,Carol Pill of Intelligence,increase $EffParam2$ Intelligence
+2403,Carol Pill of Vitality,increase $EffParam2$ Vitality
+2404,Carol Pill of Speed,increase $EffParam2$% move speed
+2405,Carol Pill of All,"increase 500 HP, 20 Strength, 20 Dexterity, 20 Intelligence and 20 Vitality"
+2406,Adv. Carol Pill of All,"increase 1000 HP, 30 Strength, 30 Dexterity, 30 Intelligence, 30 Vitality and 10% move speed"
+5000,Reduce Aggro (Mercy Flow),reduce aggro greatly temporarily; aggro recover when effect ends
+1,Thunder,
+2,Thunder,
+3,Thunder,
+4,Soul,
+5,Soul,
+6,Healing,"increase 250 HP, lasting 10 seconds"
+7,Wounding,cause damage lasting for 10 seconds
+8,Wounding,cause damage lasting for 10 seconds
+9,Slow,speed slow down 50%
+10,Add Strength Temp,"increase strength 10 points, lasting for 3 minutes"
+11,Maximize Mana Temp,"increase mana upper limitation 500 points, lasting for 6 minutes"
+12,Burning,fire cause damage lasting for 15 seconds
+13,Healing (lvl 1),"increase 10 HP per second, lasting 15 seconds"
+14,Mana Recovery (lvl 1),"increase 16 mana per second, lasting 15 seconds"
+15,Maximize HP,increase master's upper limitation of HP $EffParam1$ points
+16,Increase Mana Recovery Speed,increase master's mana recovery speed $EffParam1$ points per second  in non-battle state
+17,Maximize Mana,increase master's mana upper limitation $EffParam1$ points
+18,Increase HP Recovery Speed,increase master's HP healing speed $EffParam1$ points per second in non-battle state
+31,Faint (Thunder Faint),"target faint for 5 seconds, recovered when be attacked"
+32,Lightning Weakness (Lightning Slice),lightning attack cause target $EffParam1$ points extra damage
+33,Buddha Weakness (Golden Lotus),buddha attack cause target $EffParam1$ points extra damage
+34,Poison (Golden Lotus),"cause target $EffParam1$ poison damage in every 2 seconds, lasting 10 seconds"
+35,Heal (Cure Spell),"increase target $EffParam1$ HP in every 2 seconds, lasting 10 seconds"
+36,Maximize HP (Sun Needle),increase target HP upper limitation $EffParam1$ points
+37,Dizziness (Cloud Dimming),target dizzy for 3 seconds
+38,Slow (Cloud Balk),target speed down for 10 seconds
+39,Poison (Cloud Balk),"cause target $EffParam1$ poison damage in every 2 seconds, lasting 10 seconds"
+40,Damage Lasting (Purple Smoke),"cause target $EffParam1$ damage in every 2 seconds, lasting 10 seconds"
+41,Revive (Purple Crystal),target $EffParam1$% chance to revive
+42,Absorb Damage (Purple Shield),absorb damage $EffParam1$ points in 60 seconds
+43,Slow (Lightning Chain),target speed down $EffParam1$%
+44,Attack Increase (Storm Power),attack increase $EffParam1$ points
+100,Healing (lvl 2),"increase 16 HP per second, lasting 15 seconds"
+101,Mana Recovery (lvl 2),"increase 24 mana per second, lasting 15 seconds"
+102,Healing (lvl 3),"increase 24 HP per second, lasting 15 seconds"
+103,Mana Recovery (lvl 3),"increase 36 mana per second, lasting 15 seconds"
+104,Healing (lvl 4),"increase 32 HP per second, lasting 15 seconds"
+105,Mana Recovery (lvl 4),"increase 48 mana per second, lasting 15 seconds"
+106,Healing (lvl 5),"increase 42 HP per second, lasting 15 seconds"
+107,Mana Recovery (lvl 5),"increase 60 mana per second, lasting 15 seconds"
+108,Healing (lvl 6),"increase 52 HP per second, lasting 15 seconds"
+109,Mana Recovery (lvl 6),"increase 78 mana per second, lasting 15 seconds"
+110,Healing (lvl 7),"increase 64 HP per second, lasting 15 seconds"
+111,Mana Recovery (lvl 7),"increase 96 mana per second, lasting 15 seconds"
+112,Healing (lvl 8),"increase 76 HP per second, lasting 15 seconds"
+113,Mana Recovery (lvl 8),"increase 114 mana per second, lasting 15 seconds"
+114,Healing (lvl 9),"increase 90 HP per second, lasting 15 seconds"
+115,Mana Recovery (lvl 9),"increase 136 mana per second, lasting 15 seconds"
+116,Healing (lvl 10),"increase 106 HP per second, lasting 15 seconds"
+117,Mana Recovery (lvl 10),"increase 160 mana per second, lasting 15 seconds"
+118,Healing (lvl 11),"increase 122 HP per second, lasting 15 seconds"
+119,Mana Recovery (lvl 11),"increase 184 mana per second, lasting 15 seconds"
+120,Maximize HP,"increase master's upper limitation of HP, 20 + pet's level * (10+ master's HP*0.01) points"
+121,Increase Mana Recovery Speed,"increase mana recovery speed, in every 2 seconds, pet's level * (1.5 + master' mana * 0.001) points"
+122,Maximize Mana,"increase master's mana upper limitation, 30 + pet's level * (15 + master's mana * 0.01) points"
+123,Increase HP Recovery Speed,"increase master's HP healing speed, in every 2 seconds, pet's level * (1 + master's HP * 0.001) points"
+124,Strong Healing (lvl 1),"strong medicine, recover 150 HP in 15 seconds, can be used in battle"
+125,Strong Mana Recovery (lvl 1),"strong medicine, recover 225 Mana in 15 seconds, can be used in battle"
+126,Strong Healing (lvl 2),"strong medicine, recover 450 HP in 15 seconds, can be used in battle"
+127,Strong Mana Recovery (lvl 2),"strong medicine, recover 675 Mana in 15 seconds, can be used in battle"
+128,Vulnerary (S),"increase 120 HP in 10 seconds, it can be used in battle"
+129,Vulnerary (M),"increase 500 HP in 10 seconds, it can be used in battle"
+130,Vulnerary (L),"increase 1000 HP in 10 seconds, it can be used in battle"
+131,Alchemy Pill (S),"increase 120 Mana in 10 seconds, it can be used in battle"
+132,Alchemy Pill (M),"increase 500 Mana in 10 seconds, it can be used in battle"
+133,Alchemy Pill (L),"increase 1000 Mana in 10 seconds, it can be used in battle"
+134,Strong Healing (lvl 3),"strong medicine, recover 1350 HP in 15 seconds, can be used in battle"
+135,Strong Mana Recovery (lvl 3),"strong medicine, recover 2025 Mana in 15 seconds, can be used in battle"
+136,Healing (lvl 12),"increase 139 HP per second, lasting 15 seconds"
+137,Mana Recovery (lvl 12),"increase 208 mana per second, lasting 15 seconds"
+138,Healing (lvl 13),"increase 158 HP per second, lasting 15 seconds"
+139,Mana Recovery (lvl 13),"increase 236 mana per second, lasting 15 seconds"
+140,Healing (lvl 14),"increase 177 HP per second, lasting 15 seconds"
+141,Mana Recovery (lvl 14),"increase 266 mana per second, lasting 15 seconds"
+142,Healing (lvl 15),"increase 198 HP per second, lasting 15 seconds"
+143,Mana Recovery (lvl 15),"increase 297 mana per second, lasting 15 seconds"
+144,Healing (lvl 16),"increase 500 HP per second, lasting 15 seconds"
+145,Mana Recovery (lvl 16),"increase 500 mana per second, lasting 15 seconds"
+146,Healing (lvl 17),"increase 10000 HP per second, lasting 15 seconds"
+147,Mana Recovery (lvl 17),"increase 10000 mana per second, lasting 15 seconds"
+148,Healing (lvl 18),"increase 20000 HP per second, lasting 15 seconds"
+149,Mana Recovery (lvl 18),"increase 20000 mana per second, lasting 15 seconds"
+150,Healing (lvl 19),"increase 30000 HP per second, lasting 15 seconds"
+151,Mana Recovery (lvl 19),"increase 30000 mana per second, lasting 15 seconds"
+152,Healing (lvl 20),"increase 40000 HP per second, lasting 15 seconds"
+153,Mana Recovery (lvl 20),"increase 40000 mana per second, lasting 15 seconds"
+154,Strong Healing,"recover 450 HP in 15 seconds, can be used in battle"
+155,Strong Mana Recovery,"recover 675 Mana in 15 seconds, can be used in battle"
+156,Mass Healing Potion (lvl 1),"increase all teammates 1350 HP within 15 seconds, can be used in battle"
+157,Mass Healing Potion (lvl 2),"increase all teammates 1950 HP within 15 seconds, can be used in battle"
+201,Silence (Fire Spiral),target can't use long distance attack
+202,Burning (Fire Dragon),"cause target $EffParam1/5$ fire damage in every 3 seconds, lasting 15 seconds"
+211,Freezing (Ice Fling),"target frozen, can't move"
+212,Water Weakness (Water Flowing),water attack cause target $EffParam1$ points extra damage
+213,Slow (Tide Spout),"target speed down for 80%, lasting 3 seconds"
+221,Slow (Ice Curse),"target speed down for 80%, lasting 5 seconds"
+222,Intelligence Increase (Inspiring Art),increase target intelligence for $EffParam1$ points
+223,Faint (Pointing Faint),"target faint last for $EffParam1$ seconds, effect disappear when attacked"
+224,Attack Increase (Tao Power),attack increase $EffParam1$ points
+225,Faint (Earth Faint),target faint for 5 seconds
+226,Ice Shield (Ice Shield),increase defense $EffParam1$ points
+227,Slow (Ice Shield),target speed down 50%
+401,Dizziness (Giant Break),target dizzy for $EffParam1$ seconds
+402,Dizziness (Giant Halt),target dizzy for 3 seconds
+411,Burning (Fatal Burning),"cause target $EffParam1$ fire damage in every 3 seconds, lasting 15 seconds"
+412,Weakness (Fatal Crack),target defense decrease $EffParam1$ points
+413,Damage Decrease (Fatal Sadness),target damage decrease $EffParam1$ points
+414,Dizziness (Fatal Sadness),target dizzy for 5 seconds
+421,Faint (Buddha Quake),target faint last for 3 seconds
+422,Defense Increase (Buddha Shield),decrease the damage caused by enemy
+423,Damage Increase (Heart Fire),attack increase $EffParam1$ points
+424,Defense Increase (Robust Spell),HP increase $EffParam1$ points
+425,Mass Slow (Heart Lotus),slow objects around
+426,Slow (Heart Lotus),target slow down for 50%
+427,Hate Increase (Mercy),"every attack to the monster, caused extra enemy value $EffParam1$ points"
+428,Force Attack (Sacrifice),force monsters attack yourself for $10+EffParam2$ seconds.
+431,Dizziness (Giant Break),target dizzy for $EffParam1$ seconds
+502,Faint (Lash Faint),target faint
+504,Slow (Thunder Slow),target speed down
+512,Faint (Soul Lost),"target faint, recovered when be attacked"
+513,Faint (Rush Faint),target faint
+515,Slow (Poison Thorn),target speed down
+521,Fast (Swift Move),speed increase $EffParam2$%
+522,Dodge Increase (Shadowy Walk),dodge rate increase 50%
+523,Faint (Soul Rocking),"target faint, recovered when be attacked"
+524,Defense Increase (Soul Shield),defense increase $EffParam2$ points
+525,Hate Decrease (Puzzling Array),target enemy value decrease $EffParam1$ points every attack
+526,Magic Defense Increase (Elements Array),magic defense increase $EffParam2$ points
+527,Faint (Dragon Cry),target faint
+601,Defense Decrease (Heavy Crack),target defense decrease $EffParam1$ points
+602,Slow (Thorn Crack),target speed down $EffParam1$%
+603,Attack Decrease (Shadow Crack),target attack decrease $EffParam1$ points
+604,Poison (Snake Poison),"cause target $EffParam1$ poison damage in every 2 seconds, lasting 6 seconds"
+605,Dizziness (Bear Hit),target faint 3 seconds
+606,Hate Increase (Wild Pet),increase pet enemy value $EffParam1$ value
+607,Poison of Attack,"daubed with poison, some rate to increase attack"
+608,Poison of Slow,"daubed with poison, some rate to decrease target move speed"
+609,Poison of Weakness,"daubed with poison, some rate to decrease damage from target"
+610,Poison of Attack (Damage Increase),increase damage $EffParam1$ points
+611,Poison of Slow (Slow),decrease target moving speed $EffParam1$%
+612,Poison of Weakness (Target Attack Decrease),target attack decrease $EffParam1$ points
+613,Defense Increase (Stone Skin),increase pet physical defense $EffParam1$ points
+614,Attack Increase (Brutal Fight),increase pet physical attack $EffParam1$ points
+615,Fire (Fire Trap),
+616,Fire ,"cause target $EffParam1$ fire damage in every 2 seconds, lasting 6 seconds"
+617,Ice (Freezing Trap),
+618,Ice,"target frozen, can't move"
+619,Healing (Heal Pet),"curing pet with nature's power, pet recover $EffParam1$ health points"
+701,Faint (Tiger Rush),
+702,Hypnosis,"target faint for 10 seconds, recovered when be attacked"
+703,Erode,"cause target $EffParam1$ poison damage in every 2 seconds, lasting 10 seconds"
+704,Raging Fire,
+705,Raging Fire,"decrease $EffParam1$ HP in every 2 seconds, lasting 10 seconds"
+706,Defense Decrease,defense decrease $EffParam1$ points
+707,Freezing,"be frozen, can not move or attack"
+708,Erode,"cause target $EffParam1$ poison damage every 2 seconds, lasting 10 seconds"
+710,Fire Resist Decrease,decrease fire resistance $EffParam1$ points
+1001,Force Attack (Force),pet absorb enemy value instance
+1002,Fast (Speedy),increase pet moving speed $EffParam2$%
+1003,Attack Increase (Frenzy),increase pet attack $EffParam1$ points
+1200,Maximize HP,pet increase master's HP upper limitation $EffParam1$ points
+1201,Increase HP Recovery Speed,pet increase master's HP healing speed $EffParam1$ points per second in non-battle state
+1202,HP Recovery Enhance,"pet increase master's HP, 20 + pet level * (10 + master's HP * 1%) points, increase master's HP healing speed, pet level * (1 + master's HP * 0.1%) points every 2 seconds in non-battle state"
+1203,Maximize Mana,pet increase master's Mana upper limitation $EffParam1$ points
+1204,Increase Mana Recovery Speed,pet increase master's mana recovery speed $EffParam1$ points per second in non-battle state
+1205,Mana Recovery Enhance,"pet increase master's mana, 30 + pet level * (15 + master's Mana * 1%) points, increase master's Mana recovery speed, pet level * (1.5 + master's Mana * 0.1%) points every 2 seconds in non-battle state"
+1206,Maximize HP,pet increase master's HP upper limitation $EffParam1$ points
+1207,Increase HP Recovery Speed,pet increase master's HP healing speed $EffParam1$ points per second in non-battle state
+1208,HP Recovery Enhance,"pet increase master's HP, 20 + pet level * (10 + master's HP * 1%) points, increase master's HP healing speed, pet level * (1 + master's HP * 0.1%) points every 2 seconds in non-battle state"
+1209,Defense Increase,pet increase master's physical defense $EffParam1$%
+1210,Increase HP Recovery Speed,pet increase master's HP healing speed $EffParam1$ points per second in non-battle state
+1211,Increase HP Recovery Speed & Defense,"pet increase master's physical defense (pet level * 1)%, increase master's HP healing speed, pet level * (1 + master's HP * 0.1%) points every 2 seconds in non-battle state"
+1212,Defense Increase,pet increase master's physical defense $EffParam1$%
+1213,Increase HP Recovery Speed,pet increase master's HP healing speed $EffParam1$ points per second in non-battle state
+1214,Increase HP Recovery Speed & Defense,"pet increase master's physical defense (pet level * 1)%, increase master's HP healing speed, pet level * (1 + master's HP * 0.1%) points every 2 seconds in non-battle state"
+1215,Defense Increase,pet increase master's physical defense $EffParam1$%
+1216,Defense Increase,pet increase master's physical defense (pet level * 1)%
+1217,Maximize HP,pet increase master's HP upper limitation $EffParam1$ points
+1218,Defense Increase,pet increase master's physical defense $EffParam1$%
+1219,Maximize HP & Defense Increase,"pet increase master's HP, 20 + pet level * (10 + master's HP * 1%) points; pet increase master's physical defense (pet level * 1)%"
+1220,Maximize HP,increase master's upper limitation of HP $EffParam1$ points
+1221,Increase HP Recovery Speed (non-battle states),"increase master's HP healing speed $EffParam1$ points per second, can be used in non-battle state"
+1222,HP Recovery Enhance,"increase master's HP, 20 + pet level * (10 + master's HP * 1%) points; increase master's HP healing speed, pet level * (1 + master's HP * 0.1%) points every 2 seconds, can be used in non-battle state"
+1223,Maximize Mana,increase master's Mana upper limitation $EffParam1$ points
+1224,Increase Mana Recovery Speed (battle & non-battle states),"increase master's mana recovery speed $EffParam1$ points per second, can be used in both battle and non-battle states"
+1225,Increase Mana Recovery Speed,"increase master's mana, 30 + pet level * (15 + master's mana * 1%) points, increase master's Mana recovery speed, pet level * (1.5 + master's Mana * 0.1%) points every 2 seconds, can be used in both battle and non-battle states"
+1226,Maximize HP,increase master's upper limitation of HP $EffParam1$ points
+1227,Increase HP Recovery Speed,"increase master's HP healing speed $EffParam1$ points per second, can be used in both battle and non-battle states"
+1228,HP Recovery Enhance,"increase master's HP, 20 + pet level * (10 + master's HP * 1%) points; increase master's HP healing speed, pet level * (1 + master's HP * 0.1%) points every 2 seconds, can only be used in battle state"
+1229,Maximize Mana,increase master's mana upper limitation $EffParam1$ points
+1231,Mana Recovery Enhance,"pet increase master's mana, 30 + pet level * (15 + master's Mana * 1%) points, increase master's Mana recovery speed, pet level * (1.5 + master's Mana * 0.1%) points every 2 seconds, can only be used in battle state"
+1232,Increase Mana Recovery & Move Speed (battle & non-battle states),"increase master's Mana recovery speed $EffParam1$ points every 2 seconds, can be used in both battle and non-battle states, and increase 5% move speed"
+1233,Increase Mana Recovery & Move Speed,"increase master's Mana recovery speed pet level * (1.5 + master's Mana * 0.1%) points every 2 seconds, can be used in both battle and non-battle states, and increase 5% move speed"
+1234,HP Recovery Enhance & Auto Pick,"increase master's HP healing speed, pet level * (1 + master's HP * 0.1%) points every 2 seconds in non-battle state.  Auto pick item or money dropped from mobs"
+2001,Riding Skill,increase moving speed
+2007,Defense Increase (Golden Light Pill),increase defense $EffParam1$%
+2011,HP Increase (Apothecary Pill),increase HP $EffParam1$%
+2035,Experience Increase (Vivid Spell),increase $EffParam1$% experience from monster killing
+2039,Experience Increase (Duality Spell),increase $EffParam1$% experience from monster killing
+2043,Energy Increase (Hamadryad Hierogram),earn extra $EffParam1$% energy from monster killing
+2044,Experience Increase,increase $EffParam1$% experience from monster killing
+2045,Experience Increase,get extra 100% experience from killing monster
+2046,Experience Card,increase extra $EffParam1$% experience and $EffParam2$ energy from killing mobs
+2051,Energize,pet increase master's Energy $EffParam1$ points in every 30 seconds
+2052,Energize,pet increase master's Energy 3 + (pet level - 10) points in every 30 seconds
+2053,Requite,pet increase master's experience $EffParam1$ points in every 10 seconds
+2054,Requite,pet increase master's experience 3 + (pet level - 10) points in every 10 seconds
+2055,Auto Healing,master's HP recovered by taking the most effect healing medicine automatically when it is less than 1/3
+2056,Auto Healing,master's HP recovered by taking the most effect healing medicine automatically when it is less than 1/3
+2057,Auto Mana Recovery,master's Mana recovered by taking the most effect mana medicine automatically when it is less than 1/3
+2058,Auto Mana Recovery,master's Mana recovered by taking the most effect mana medicine automatically when it is less than 1/3
+2059,Auto Pick,pick up battle reward automatically
+2060,Auto Pick,pick up battle reward automatically
+2062,Defense Increase (Adv. Golden Light Pill),increase defense $EffParam1$%
+2063,HP Increase (Adv. Apothecary Pill),increase HP $EffParam1$%
+2064,Experience Increase (Adv. Vivid Spell),increase experience from killing monsters $EffParam1$%
+2065,Experience Increase (Adv. Duality Spell),increase experience from killing monsters $EffParam1$%
+2066,Love Heart Card,"a love heart highlight circle shown at the foot in 3 days, increase 100% experience rate, increase 150% energy rate, can not effect with other experience and energy items"
+2067,Love Heart Angel,given a title of Love Heart Angel in 30 days
+2068,Metamorphosis,"under a curse of metamorphosis, can not attack"
+2069,Extra Experience for Little Pet,"little pet gains 20 points extra experience in every minute, lasting 1 hour"
+2070,Experience Increase for Little Pet,double the little pet experience rate
+2071,Experience Increase (Adv.) for Little Pet,double the little pet experience rate
+2072,Revive Protection,"when a character is revived, other's attack will cause no damage on him/her; the protection will last few seconds; the protection will vanish if he/she attacks other ones initiatively"
+2073,Towline of Wroth,"be in a special state, during which if you kill other players without Charm of Refuge, the corpse can be towed by you for 30 seconds; the special state will disappear after the tow"
+2074,Curse of Body Distortion,"be in a special state, during which if you kill other players without Charm of Refuge, the corpse will be distorted to an animal for 30 seconds; the special state will disappear after the distortion"
+2075,Transfiguration,"during the transfiguration, character can not attack or ride a mount"
+2076,Transfiguration,"during the transfiguration, character can not attack or ride a mount"
+2077,[no_use],[no_use]
+2078,[no_use],[no_use]
+2080,Adv. Energize,pet increase master's Energy 3 + (pet level - 10) * 2 points in every 30 seconds
+2082,Adv. Requite,pet increase master's Experience 3 + (pet level - 10) * 2 points in every 10 seconds
+2083,Damage Increase (Adv. Volcanic Pill),increase damage $EffParam1$%
+2084,Damage Absorb (Adv. Blue Light Pill),increase damage absorb $EffParam1$%
+2085,Damage Increase,increase physical damage $EffParam1/10000.0*25$%
+2086,Defense Increase,increase physical damage absorb $EffParam1/10000.0*30$%
+2087,Intimity Increase,the intimity will be increased after you summon out your pet; each hour increase one intimity
+2088,Fast,speed increase $EffParam1$%
+2089,Faint,"target faint for 10 seconds, recover after being attacked"
+2090,Mass Slow (Buddha Lotus),all enemies around slowing down
+2091,Slow (Buddha Lotus),speed slow down 50%
+2092,Fire (Fire Trap),
+2093,Fire ,"cause target 100 points fire damage every 2 seconds, lasting 6 seconds"
+2094,Revive Weakness,"being weak after reviving in the Group Arena, only can move after recovery "
+2095,Defense Increase,increase physical defense
+2096,Fire Resist Increase,increase fire resistance
+2097,Fast ,speed increase
+2098,Faint,"target faint, can wake up after being attacked"
+2099,Faint (Tiger Rush),"target faint, can't wake up after being attacked"
+2100,Slow,speed slow down
+2101,Damage Increase,increase damage 10% 
+2102,Damage Absorb,increase damage absorb 10%
+2103,Fast,speed increase 10%
+2104,Infection of Plague,infected by plague around
+2105,Plague,"harm of plague, the cut will cause death gradually"
+2106,Mass Healing,increase HP around
+2107,Healing,increase HP 
+2108,Mass Healing,increase HP around
+2109,Healing,increase HP
+2110,Invulnerability,being invincible within $EffParam1$ seconds
+2111,Vitality Increase,"increase Vitality $EffParam1$ points, and increase physical defense $EffParam1*5$ points"
+2112,Strength Increase,increase Strength $EffParam1$ points
+2113,Intelligence Increase,increase Intelligence $EffParam1$ points
+2114,Dexterity Increase,increase Dexterity $EffParam1$ points
+2115,Guard,"increase damage absorb 50%, but decrease damage 50%"
+2116,Berserker,"increase damage 50%, but decrease damage absorb 50%"
+2117,Damage Increase,increase damage $EffParam1$ points
+2118,Attack Aura,increase attack of surrounding partners 20%
+2119,Attack Increase,increase attack 20%
+2120,Defense Aura,decrease accepted damage of surrounding partners 20%
+2121,Defense Increase,decrease accepted damage 20%
+2122,Expand Attack Range,expand the attack range of Wizard skill Fire Burst and Tide Spout
+2123,Quicken Cooling Time,decrease the cooling time of Monk skill Buddha Shield 120 seconds
+2124,Cure Effect Increase,increase the cure effect of Fairy skill 300 HP
+2125,Elements Damage Increase,increase the damage of Assassin lightning and poison skill 100 points
+2126,C.S. Rate Increase,increase the critical strike rate of Tamer skill 10%
+2200,Burning Ray,cause target $EffParam1$ points damage in 10 seconds
+2201,Twisted Ray,"target twisted, can not move "
+2202,Fire Burning,cause target $EffParam1$ points damage in 10 seconds
+2203,Infection of Plague,infected by plague around
+2204,Plague,"harm of plague, the cut will cause death gradually"
+2205,Immunity of Plague,no possibility of having plague anymore
+2207,Revive Weakness,"being weak after reviving in the Group Arena, only can move after recovery "
+2208,Increase HP & Mana around,"effect of hotspring, recover HP & Mana quickly"
+2209,Increase HP & Mana,"effect of hotspring, recover HP & Mana quickly"
+2210,Holy Burst,earn 250% Experience and 200% Energy in 24 hours
+2211,Fast,speed increase $EffParam1$%
+2212,Faint,"target faint for 10 seconds, recovered when be attacked"
+2213,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2214,Experience Increase (White Eagle),increase experience rate to 150%
+2215,Experience Increase (White Eagle),increase experience rate to 130%
+2216,Maximize HP (Sir Disaster),"blessed by Sir Disaster, increase upper limitation of HP 30 points"
+2217,Defense Increase (Sir Disaster),"blessed by Sir Disaster, increase physical defense 15 points"
+2218,Saint Cake,"temporarily increase upper limit of four basic attributes 10 points each, and HP 1000 points, and Mana 500 points."
+2219,Metamorphosis Preparing,
+2220,Blood Palace Glory,"the symbol for the winner of Blood Palace War, increases HP upper limitation"
+2221,Experience Increase,"increase experience rate of monster killing to 200%, can coexist with other experience BUFF"
+2222,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2223,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2224,Pet Master,"with the BUFF, the happy value of your summoned little pet will not be decreased"
+2225,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2226,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2227,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2228,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2229,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2230,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2231,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2232,Experience Increase,"increase experience rate of monster killing to 130%, can coexist with other experience BUFF"
+2233,Metamorphosis,"under metamorphosis status, can not attack, can not ride"
+2234,Maximize HP (Moon Dragon Fighter),"blessed by Moon Dragon Fighter, increase 500 points of HP upper limitation for 30 minutes"
+2235,Defense Increase (Moon Dragon Ninja),"blessed by Moon Dragon Ninja, increase 500 points of physical defense for 30 minutes"
+2236,Damage Increase (Moon Dragon Strong Man),"blessed by Moon Dragon Strong Man, increase damage 10% for 30 minutes"
+2237,Damage Absorb (Moon Dragon Warlock),"blessed by Moon Dragon Warlock, increase damage absorb 10% for 30 minutes"
+2238,Faint,"mass faint for 20 seconds, target will recover after being attacked"
+2239,Fast,speed increase $EffParam1$%
+2240,Metamorphosis of Rice Dumpling,
+2241,Metamorphosis of Dragon Boat Panda,
+2242,Metamorphosis of Snake Demon,
+2243,Metamorphosis of Rice Dumpling,
+2244,Metamorphosis of Dragon Boat Panda,
+2245,Metamorphosis of Snake Demon,
+2246,Shock,
+2247,Dizziness,
+2248,Damage Increase,
+2249,Damage Absorb,
+2250,Defense Increase,
+2251,Defense Increase,
+2252,Dodge Increase,
+2253,CS Increase,
+2254,Invincible,
+2255,Damage Increase,
+2256,Damage Absorb,
+2257,Defense Increase,
+2258,Defense Increase,
+2259,Dodge Increase,
+2260,CS Increase,
+2261,Absorb Damage (Purple Shield),absorb damage 2000 points in 60 seconds
+2262,Faint (Thunder Faint),target faint for 3 seconds
+2263,Defense Decrease (Heavy Crack),target defense decrease 500 points
+2264,Burning (Fire Dragon),"cause target 600 damage in every 2 seconds, lasting 6 seconds"
+2265,Faint (Earth Faint),target faint for 3 seconds
+2266,Defense Loss,"reduce target's defense 2000 points, lasting 10 seconds"
+2267,Faint,faint target for 10 seconds
+2270,Attack Failure,make target unable to attack
+2271,Faint,faint target for $EffParam1$ seconds
+2272,Infection of Plague,infected by plague around
+2273,Plague Damage,"harm of plague, the cut will cause death gradually"
+2274,HP Loss,"reduce target's HP $EffParam1$ points every 2 seconds, lasting 10 seconds"
+2275,Weak Curse,reduce target's defense by 25%
+2276,Slow,speed slow down $EffParam1$%
+2277,HP Recovery,recover target's HP $EffParam1$ points
+2278,Energy Increase,kill mobs to earn extra energy $EffParam1$% points
+2279,Concentration,start Concentration to get extra Experience & Energy 
+2280,Concentration Pause,"Concentration pauses when character enters Concentration-Forbidden area, no increase in Experience & Energy, no loss either; Concentration continues when enters Concentration-Allowed area again"
+2281,Seal,"during seal Blood Palace, immune to all damage but be unable to move or attack"
+2282,Soul Gathering,
+2283,Jolly,get together in Guild Demesne to enjoy the power of Ancient Tree of Life and earn Experience & Energy
+2284,Jolly,enjoy the harmonious atmosphere and earn Experience & Energy
+2285,Experience Increase,kill mobs to earn extra experience $EffParam1$% points
+2286,Experience Increase for Tamer Pet,double Tamer Pet's experience earned from battle
+2287,Metamorphosis,
+2288,Metamorphosis,
+2289,Metamorphosis,
+2290,Metamorphosis,
+2291,Damage Absorb,absorb damage 1350 points in 1 minute
+2292,Element Defense (Fire),"increase Fire Resistance 600 points, lasting 3 minutes"
+2293,Element Defense (Water),"increase Water Resistance 600 points, lasting 3 minutes"
+2294,Element Defense (Lightning),"increase Lightning Resistance 600 points, lasting 3 minutes"
+2295,Element Defense (Poison),"increase Poison Resistance 600 points, lasting 3 minutes"
+2296,Element Defense (Buddha),"increase Buddha Resistance 600 points, lasting 3 minutes"
+2297,Metamorphosis of Pomelo Panda,
+2298,Metamorphosis of Moon Cake Panda,
+2299,Metamorphosis of Rabbit Ear,
+2300,Metamorphosis of Pomelo Panda,
+2301,Metamorphosis of Moon Cake Panda,
+2302,Metamorphosis of Rabbit Ear,
+2303,Consciousness of Racer,
+2304,Mystic Mask,hide identity
+2305,Five Elements Star ,"increase 7% CS, 7% dodge, 10% move speed, 10% HP upper limit, 10% Mana recovery speed, 10% HP recovery speed and 1000 Damage Points"
+2306,Increase HP Upper Limit 5%,
+2307,Increase Defense 5%,
+2308,Increase HP Upper Limit 10%,
+2309,Increase Defense 10%,
+2310,Fire of Life,lose battle
+2311,Max HP Decrease,decrease max HP
+2312,Shock,
+2313,Experience Increase,get extra $EffParam1$% experience from killing mobs
+2314,Metamorphosis of Xmas Boy,
+2315,Metamorphosis of Xmas Girl,
+2316,Metamorphosis of Santa,
+2317,Metamorphosis of Santa Snowman,
+2318,Preparing Metamorphosis of Xmas Boy,
+2319,Preparing Metamorphosis of Xmas Girl,
+2320,Preparing Metamorphosis of Santa,
+2321,Preparing Metamorphosis of Santa Snowman,
+2322,Excellent Mount,increase moving speed
+2323,Metamorphosis,
+2324,Metamorphosis,
+2325,Metamorphosis of Blade Bull,
+2326,Metamorphosis of Sword Cow,
+2327,Metamorphosis,
+2328,Metamorphosis,
+2329,Metamorphosis,
+2330,Metamorphosis,
+2331,Metamorphosis,
+2332,Metamorphosis,
+2333,Metamorphosis,
+2334,Metamorphosis,
+2335,Thunderbolt Faint,faint targets for 60 seconds
+2336,[no_use],[no_use]
+2337,[no_use],[no_use]
+2350,Hell Spark,make the guards around attack you
+4001,Mass Slow (Crystal Tower),all enemies in range 600 slowing down
+4002,Slow (Crystal Tower),crystal tower caused slow down
+8000,Rider's Order,use mount in scenario within 2 hours (no matter what plus rank the mount is)
+9998,Test - Strong Defense,"increase upper limitation of HP, damage absorb and DPS"
+9999,Eff Parameter Testing,testing Eff parameter
+10000,Immovable,immovable
+10001,Faint,faint
+10002,Invisible,invisible
+10003,Invincible,invincible
+10004,Stone Attracting,attract
+10005,Mass Healing,increase HP around
+10006,Mass Slow,decrease speed around
+10007,Attracted by Stone,attracted by stones
+10008,Transform,invisible
+10009,Test - Do after Attack,testing - do after attack
+10010,Test - Riding,testing - riding
+3987,Moving Speed,moving $EffParam1$% faster,
+3988,Moving Speed,moving $EffParam1$% faster,
+3989,Increase Dexterity,Add 200 Dexterity,
+3990,Increase Dexterity,Add 200 Dexterity,
+3991,Increase Strength,Add 200 Strength,
+3992,Increase Strength,Add 200 Strength,
+3993,Increase Intelligence,Add 200 Intelligence,
+3994,Increase Intelligence,Add 200 Intelligence,
+3995,Adv. Maximize Mana,Add $EffParam1$ Mana,
+3996,Adv. Maximize Mana,Add $EffParam1$ Mana,
+3997,Increase Dodge,Add 200 Dodge,
+3998,Increase Dodge,Add 200 Dodge,
+3999,Online Buff,Give (Online Chip) every 60 minutes!,
+4100,White Tiger's Strength,"Increase Maximum HP 1000, + 10% Move Speed, + 10% C. Strike and increase 220 defense on Fire, Water, Lightning, Poison and Buddha Elements",
+4101,Armor of Black Turtle,"Increase Maximum HP 1000, +10% Physical Defense, +10% HP and increase 220 defense on Fire, Water, Poison, Lightning and Buddha Elements",
+4102,Blue Dragon's Rage,"Increase Maximum HP 1000, +10% Dodge, +10% to Physical, Fire, Water, Poison, Lightning and Buddha Damage Decrease and increase all elemental defense by 220",
+4103,Fire Phoenix Blaze ,"Increase Maximum HP 1000, +10% Physical, Fire, Water, Poison, Lightning and Buddha Damage; +10% Physical, Fire, Water, Poison, Lightning and Buddha Critical Strike Damage; +220 to all Elemental Defense",
+4104,Defense Increase,pet increase master's physical defense $EffParam1$%
+4105,Increase HP Recovery Speed,pet increase master's HP healing speed $EffParam1$ points per second in non-battle state
+4106,Increase HP Recovery Speed, Defense & Move Speed,"pet increase master's physical defense (pet level * 1)%, increase master's HP healing speed, pet level * (1 + master's HP * 0.10%) points every 2 seconds in non-battle state, increase Move Speed (pet level * 1)%"
+4107,Maximize Mana,increase master's Mana upper limitation $EffParam1$ points
+4108,Increase Mana Recovery Speed (battle & non-battle states),"increase master's mana recovery speed $EffParam1$ points per second, can be used in both battle and non-battle states"
+4109,Increase Mana Recovery Speed, Maximize Mana & Move Speed,"increase master's mana, 30 + pet level * (15 + master's mana * 1%) points, increase master's Mana recovery speed, pet level * (1.5 + master's Mana * 0.10%) points every 2 seconds, can be used in both battle and non-battle states, increase Move Speed (pet level * 1)%"
+4110,Increase HP Recovery Speed, Defense, Move Speed & Dexterity,"pet increase master's physical defense (pet level * 1)%, increase master's HP healing speed, pet level * (1 + master's HP * 0.10%) points every 2 seconds in non-battle state, increase Move Speed (pet level * 1)%, increase Dexterity 200 points"
+4111,Increase HP Recovery Speed, Defense, Move Speed & Strength,"pet increase master's physical defense (pet level * 1)%, increase master's HP healing speed, pet level * (1 + master's HP * 0.10%) points every 2 seconds in non-battle state, increase Move Speed (pet level * 1)%, increase Strength 200 points"
+4112,Increase Mana Recovery Speed, Maximize Mana, Move Speed & Intelligence,"increase master's mana, 30 + pet level * (15 + master's mana * 1%) points, increase master's Mana recovery speed, pet level * (1.5 + master's Mana * 0.10%) points every 2 seconds, can be used in both battle and non-battle states, increase Move Speed (pet level * 1)%, increase Intelligence 200 points"

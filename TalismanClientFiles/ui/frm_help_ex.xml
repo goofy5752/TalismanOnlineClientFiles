@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_help_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="371,151,540,450" Name="frmHelpEx" Show="false">
+      <Label Inherit="bg1" Location="6,18,520,425" Name="lbBackLT" Show="true"/>
+      <Label Inherit="" Location="281,0,286,256" Name="lbBackRT" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,256,286,212" Name="lbBackLB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="281,256,286,212" Name="lbBackRB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="2,1,530,28"/>
+      <Label Inherit="bg3" Location="14,51,207,378" Name="8083" Show="true"/>
+      <ListBox Inherit="" Location="18,56,199,370" Name="lstHelpInfo" Show="true">
+        <Scripts>
+          <OnSelect>layWorld_frmHelpEx_lstHelpInfo_OnSelect(self);</OnSelect>
+        </Scripts>
+      </ListBox>
+      <Label Inherit="bg3" Location="229,51,290,379" Name="9517" Show="true"/>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="234,57,279,370" Name="edtContext" Show="true" WordWrap="true"/>
+      <CloseButton Location="501,30,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,532,47" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="206,0,122,66" Name="16601" Show="true" Text="$L:597$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnShow>layWorld_frmHelpEx_OnShow(self);</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

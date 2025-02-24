@@ -1,0 +1,6 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+"ID","Name","Comment","Directory","area","pos","nNpcRebirthType"
+1,$L:Scenestable_3c$,,table/s3c01/,"504 -3 912 260;
+852 -16 1055 269;","599 117 12;
+956 126 12;",0

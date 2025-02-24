@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form BackgroundColor="" Inherit="" Location="385,139,570,450" Name="frmGroup3C" Show="false">
+      <Label Inherit="bg1" Location="6,19,550,430" Name="lbup" Show="fals">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,275,406,184" Name="lbdown" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="406,9,164,268" Name="589" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="406,275,164,184" Name="629" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="0,2,570,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="532,30,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Button Inherit="PushButton" Location="170,410,90,20" Name="btAway" Show="true" Text="$L:1076$"/>
+      <Button Inherit="PushButton" Location="294,377,94,20" Name="btGoSet" Show="true" Text="$L:1073$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="19,55,100,20" Name="lbCityName" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignLine="CENTER" Inherit="" Location="29,56,80,18" Name="907" Show="true" Text="$L:1066$"/>
+      <Label Inherit="bg3" Location="16,163,531,211" Name="11147" Show="true"/>
+      <Label ColSpacing="4" Inherit="" LineSpacing="3" Location="113,56,110,20" Name="lb3CTeamName" Show="true" Text="" TextColor="#ff22dd22">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="19,115,86,18" Name="1069" Show="true" Text="$L:1067$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="116,115,86,18" Name="1091" Show="true" Text="$L:1068$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="20,137,86,20" Name="lbPVPTop10" Show="true" TextColor="#ff22dd22">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="117,137,86,20" Name="lbPVPLevel" Show="true" TextColor="#ff22dd22">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <Button Inherit="PushButton" Location="408,53,80,20" Name="btCitywarTime" Show="true" Text="$L:1064$"/>
+      <Button Inherit="PushButton" Location="43,377,94,20" Name="btAccept3C" Show="true" Text="$L:1071$"/>
+      <Button Inherit="PushButton" Location="170,377,90,20" Name="btCancelPlayer" Show="true" Text="$L:1072$"/>
+      <ListBox BackgroundColor="" Inherit="" Location="20,167,523,203" Name="lsDefender" Show="fals">
+        <ColumnButton AlignCol="CENTER" Name="3Cname" Text="$L:1137$" TextColor="#EEfff902" Width="100"/>
+        <ColumnButton AlignCol="CENTER" Name="3Cworker" Text="$L:1138$" TextColor="#EEfff902" Width="60"/>
+        <ColumnButton AlignCol="CENTER" Name="3Cjob" Text="$L:1139$" TextColor="#EEfff902" Width="60"/>
+        <ColumnButton AlignCol="CENTER" Name="3Clevel" Text="$L:1140$" TextColor="#EEfff902" Width="40"/>
+        <ColumnButton AlignCol="CENTER" Name="3CpvpPlayer" Text="$L:1141$" TextColor="#EEfff902" Width="60"/>
+        <ColumnButton AlignCol="CENTER" Name="3CpvpGroup" Text="$L:1142$" TextColor="#EEfff902" Width="60"/>
+        <ColumnButton AlignCol="CENTER" Name="3Cpve" Text="$L:1143$" TextColor="#EEfff902" Width="60"/>
+        <ColumnButton AlignCol="CENTER" Name="3Cchuchang" Text="$L:1144$" TextColor="#EEfff902" Width="60"/>
+      </ListBox>
+      <Button Inherit="PushButton" Location="43,410,94,20" Name="btSetTeamLeader" Show="true" Text="$L:1075$"/>
+      <Label AlignLine="CENTER" Inherit="" Location="29,77,80,18" Name="1284" Show="true" Text="$L:1065$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="214,115,86,18" Name="3946" Show="true" Text="$L:1069$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="215,137,86,20" Name="lbPVETop10" Show="true" TextColor="#ff22dd22">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="313,137,86,20" Name="lbPVELevel" Show="true" TextColor="#ff22dd22">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="312,115,86,18" Name="4597" Show="true" Text="$L:1070$"/>
+      <Button Inherit="PushButton" Location="294,410,94,20" Name="btNewTeam" Show="true" Text="$L:1077$"/>
+      <Button Inherit="PushButton" Location="418,377,94,20" Name="bt3CMatch" Show="true" Text="$L:1074$"/>
+      <Button Inherit="PushButton" Location="418,410,94,20" Name="btTrainMatch" Show="true" Text="$L:1078$"/>
+      <Label Location="113,77,270,35" Name="18838" Show="true">
+        <BackgroundImage File="tz_011" Source="84,0,161,20"/>
+      </Label>
+      <EditBox EnableInput="false" Location="116,80,263,30" MultiLine="true" Name="edtPairState" Show="true" Text="" TextColor="#ff22dd22" WordWrap="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,562,47" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="219,0,124,68" Name="24661" Show="true" Text="$L:1063$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+    <Form Inherit="" Location="875,139,366,450" Name="frm3CTop10" Show="false" Size="366,450">
+      <Anchors>
+        <Anchor offset="-8,0" point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frmGroup3C"/>
+        <Anchor point="TOP" relativeTo="layWorld.frmGroup3C"/>
+      </Anchors>
+      <Label Inherit="bg1" Location="6,19,353,430" Name="6168" Show="true"/>
+      <Label Inherit="bg3" Location="14,91,338,350" Name="1240" Show="true"/>
+      <Label Inherit="" Location="0,255,266,166" Name="2394" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="266,10,100,246" Name="2872" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="261,256,104,164" Name="3017" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <CheckButton Inherit="" Location="18,51,80,40" Name="ckbPVP" Show="true" Text="$L:1079$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="98,51,80,40" Name="ckbPVE" Show="true" Text="$L:1080$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <ListBox BackgroundColor="" Inherit="" Location="20,97,326,340" Name="lst3CTop" Show="fals"/>
+      <TitleBarButton Location="6,1,360,28"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,367,50" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="123,0,120,68" Name="802" Show="true" Text="$L:1064$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="12,85,340,6" Name="1927" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+      <CloseButton Location="333,28,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+    <Form Inherit="" Location="467,563,300,376" Name="frm3CList" Show="false" Size="300,376">
+      <Label Inherit="bg1" Location="7,19,280,356" Name="6168" Show="true"/>
+      <Label Inherit="" Location="-1,261,286,356" Name="2394" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="bg3" Location="18,58,260,276" Name="14512" Show="true"/>
+      <ListBox BackgroundColor="#ee000000" Inherit="" Location="21,61,254,270" Name="lst3CStyle" Show="true"/>
+      <TitleBarButton Location="0,0,295,28"/>
+      <Button Inherit="PushButton" Location="53,337,70,20" Name="btChangeOk" Show="true" Text="$L:1101$"/>
+      <Button Inherit="PushButton" Location="169,337,70,20" Name="btClose" Show="true" Text="$L:1102$"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,0,292,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,66" Name="802" Show="true" Text="$L:1100$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Anchors>
+        <Anchor offset="-8,0" point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frmGroup3C"/>
+        <Anchor point="TOP" relativeTo="layWorld.frmGroup3C"/>
+      </Anchors>
+      <CloseButton Location="262,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

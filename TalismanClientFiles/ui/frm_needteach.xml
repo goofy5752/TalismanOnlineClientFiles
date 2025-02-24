@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="234,129,540,450" Name="frmNeedTeach" Show="false">
+      <Label Inherit="bg1" Location="6,18,520,430" Name="1637" Show="fals"/>
+      <Label Inherit="bg3" Location="19,65,495,330" Name="8342" Show="true"/>
+      <Label Inherit="" Location="0,256,256,174" Name="1671" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,0,256,256" Name="521" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,256,174" Name="1139" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="PushButton" Location="71,407,66,20" Name="btAddteacher" Show="true" Text="$L:873$"/>
+      <Button Inherit="PushButton" Location="236,407,66,20" Name="btcheckin" Show="true" Text="$L:877$"/>
+      <Button Inherit="PushButton" Location="380,407,66,20" Name="btcheckout" Show="true" Text="$L:878$"/>
+      <Anchors/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,532,47" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="199,0,136,68" Name="1229" Show="true" Text="$L:876$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <ListBox BackgroundColor="#ee000000" Inherit="" Location="23,69,487,322" Name="lstNeedTeach" Show="fals"/>
+      <TitleBarButton Location="0,0,520,28"/>
+      <CloseButton Location="500,31,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

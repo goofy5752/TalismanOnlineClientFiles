@@ -1,0 +1,15 @@
+索引,"区域 左上x,左上y,右下x,右下y","偏移 左上x,左上y,右下x,右下y",图标宽高,备注,父ui,行,列,页
+STRID,Rect,Offset,WidthHeight,Mem,father ui,line,col,page
+Bank,40;89;253;229,3;2;34;33,35;35,银行,layWorld.frmWarehouse,4,6,1
+Shop,39;80;249;220,3;4;34;35,35;35,买商店,layWorld.frmNpcShop,4,6,2
+Buyer,39;295;251;437,3;4;34;35,35;35,买商店的人,layWorld.frmNpcShop,4,6,1
+SaleSelf,39;80;249;220,3;4;34;35,35;35,卖商店的人,layWorld.frmSaleShop,4,6,3
+Sale,39;295;251;437,3;4;34;35,35;35,卖商店,layWorld.frmSaleShop,4,6,1
+Self,39;297;251;439,3;4;34;35,35;35,交易自己,layWorld.frmBToP,4,6,1
+Other,39;80;249;220,3;4;34;35,35;35,交易别人,layWorld.frmBToP,4,6,1
+GuildBank,38;90;257;240,4;4;35;35,35;35,帮会银行,layWorld.frmGuildWarehouse,4,6,2
+Item,40;350;255;550,4;24;35;55,35;35,道具,layWorld.frmItem,5,6,4
+Stall,46;87;260;229,4;4;35;35,35;35,摆摊自己,layWorld.frmFreeShop,4,6,1
+OtherStall,43;93;257;235,4;4;35;35,35;35,摆摊其他,layWorld.frmLookFreeShop,4,6,1
+UltraBank,44;64;248;134,0;0;34;34,34;34,扩展仓库,xx.xx,2,6,6
+MaxBag,0;0;0;0,0;0;0;0,0;0,所有bag的行列最大限制,xx.xx,5,6,0

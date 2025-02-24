@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_itemroll_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Widget Inherit="TemplateLayerFull" Location="10,480,273,190" Name="lbLayerRollItem" Show="true">
+      <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="147,134,220,120" Name="frmRollItem1" Show="false">
+        <BackgroundImage/>
+        <Label Inherit="bg1" Location="0,0,220,120" Name="2061" Show="true"/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:373$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:374$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,19,21" Name="lbRoll" Show="true">
+          <BackgroundImage File="tz_011" Source="227,413,19,21"/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,30" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,30." Show="ture"/>
+        <CloseButton Location="198,10,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="147,272,220,120" Name="frmRollItem2" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="3156" Show="true"/>
+        <BackgroundImage/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:375$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:376$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,19,21" Name="lbRoll" Show="true">
+          <BackgroundImage File="tz_011" Source="227,413,19,21"/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,30" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,30" Show="ture"/>
+        <CloseButton Location="198,11,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="147,409,220,120" Name="frmRollItem3" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="3692" Show="true"/>
+        <BackgroundImage/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:377$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:378$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,19,21" Name="lbRoll" Show="true">
+          <BackgroundImage File="tz_011" Source="227,413,19,21"/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,30" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-7,-17,230,30" Show="ture"/>
+        <CloseButton Location="199,10,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="147,548,220,120" Name="frmRollItem4" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="4010" Show="true"/>
+        <BackgroundImage/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,17,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:379$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:380$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,19,21" Name="lbRoll" Show="true">
+          <BackgroundImage File="tz_011" Source="227,413,19,21"/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,35" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,35" Show="ture"/>
+        <CloseButton Location="199,9,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="376,135,220,120" Name="frmRollItem5" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="4411" Show="true"/>
+        <BackgroundImage/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:381$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:382$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,20,20" Name="lbRoll" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-16,232,30" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,30" Show="ture"/>
+        <CloseButton Location="198,11,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="376,272,220,120" Name="frmRollItem6" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="bg1" Show="true"/>
+        <BackgroundImage/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:383$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:384$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,20,20" Name="lbRoll" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,30" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,30" Show="ture"/>
+        <CloseButton Location="199,10,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="375,410,220,120" Name="frmRollItem7" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="5467" Show="true"/>
+        <BackgroundImage/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:385$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:386$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,20,20" Name="lbRoll" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,35" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,30" Show="ture"/>
+        <CloseButton Location="198,11,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="608,410,220,120" Name="frmRollItem8" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="5878" Show="true"/>
+        <BackgroundImage File="" Source=""/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:387$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:388$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,20,20" Name="lbRoll" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,35" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,35" Show="ture"/>
+        <CloseButton Location="198,10,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="611,270,220,120" Name="frmRollItem9" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="6296" Show="true"/>
+        <BackgroundImage/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:389$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:390$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,20,20" Name="lbRoll" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-17,232,30" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,35"/>
+        <CloseButton Location="198,10,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Form BackgroundColor="#66666666" ClipChildren="false" Inherit="NoTitleBarForm" Location="609,135,220,120" Name="frmRollItem10" Show="false">
+        <Label Inherit="bg1" Location="0,0,220,120" Name="6757" Show="true"/>
+        <BackgroundImage File="" Source=""/>
+        <Label Inherit="" Location="22,13,40,40" Name="745" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="26,16,32,32" Name="btItemPic" Show="true">
+          <Scripts>
+            <OnHint>layWorld_lbLayerRollItem_frmRollItem_btItemPic_OnHint(self)</OnHint>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label Inherit="" Location="68,18,130,32" Name="lbItemName" Show="true" Text=""/>
+        <Button Inherit="PushButton" Location="36,66,50,20" Name="btRoll" Show="true" Text="$L:391$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btRoll_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="136,66,50,20" Name="btCancel" Show="true" Text="$L:392$">
+          <Scripts>
+            <OnLClick>layWorld_lbLayerRollItem_frmRollItem_btCancel_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <ProgressBar Inherit="" Location="46,97,140,5" Name="prgRollItem" Show="true">
+          <ProgressBarImage File="tz_010" Source="104,439,229,11"/>
+          <Scripts>
+            <OnUpdate>layWorld_lbLayerRollItem_frmRollItem_prgRollItem_OnUpdate(self)</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label Inherit="" Location="23,89,20,20" Name="lbRoll" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="TemplateNormalTitle" Location="-6,-16,232,30" Name="825" Show="true">
+          <Label Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="-6,-17,230,35" Show="ture"/>
+        <CloseButton Location="197,11,13,13" Show="ture">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Scripts>
+          <OnHide>layWorld_lbLayerRollItem_frmRollItem_OnHide(self)</OnHide>
+          <OnShow>uiRegisterEscWidget(self)</OnShow>
+        </Scripts>
+      </Form>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_NPC_DROP_ITEM_ROLL_ITEM")</OnLoad>
+        <OnEvent>if event == "CEV_NPC_DROP_ITEM_ROLL_ITEM" then
+					
+					layWorld_lbLayerRollItem_OnEvent_RollItem(self, arg[1], arg[2])
+				end</OnEvent>
+      </Scripts>
+    </Widget>
+  </Layer>
+</Ui>

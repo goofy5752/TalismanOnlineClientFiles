@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="390,206,300,370" Name="frmWarehouse" Show="true">
+      <Label Inherit="bg1" Location="11,20,280,340" Name="543" Show="true"/>
+      <Label Inherit="" Location="-2,254,256,75" Name="573" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,7,256,314" Name="858" Show="false" Size="">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="2,1,300,50" Name="23831" Show="true"/>
+      <TitleBarButton Location="11,5,280,28" Text="" TextFont="$L:1$" TextSize="$L:18$"/>
+      <CloseButton Location="266,30,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="109,289,44,20" Name="goldnum" Show="true" Text="$L:469$">
+        <BackgroundImage File="tz_010" Source="443,217,61,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="181,289,29,20" Name="silvernum" Show="true" Text="$L:470$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="240,289,24,20" Name="coppernum" Show="true" Text="$L:471$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="36,56,167,24" Name="lbWarehouse" Show="true" Text="">
+        <BackgroundImage File="tz_010" Source="181,352,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="27,289,50,20" Name="lbTotal" Show="true" Text="$L:472$">
+        <BackgroundImage File="tz_010" Source="443,267,61,20"/>
+      </Label>
+      <CheckButton Inherit="" Location="44,247,32,32" Name="BtBag1" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="80,247,32,32" Name="BtBag2" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="115,247,32,32" Name="BtBag3" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="151,247,32,32" Name="BtBag4" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="187,247,32,32" Name="BtBag5" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="225,247,32,32" Name="BtBag6" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <CheckImage File="tz_010" Source="186,376,48,48"/>
+      </CheckButton>
+      <Button Inherit="PushButton" Location="44,322,70,20" Name="btnSaveMoney" Show="true" Text="$L:473$"/>
+      <Button Inherit="PushButton" Location="185,322,70,20" Name="btnLoadMoney" Show="true" Text="$L:474$"/>
+      <Label Inherit="bg3" Location="38,85,220,149" Name="21233" Show="true"/>
+      <Label Inherit="" Location="41,89,213,141" Name="620" Show="true">
+        <BackgroundImage File="tz_011" Source="298,2,213,141"/>
+      </Label>
+      <Label Inherit="" Location="78,285,31,26" Name="714" Show="true">
+        <BackgroundImage File="tz_010" Source="409,486,31,26"/>
+      </Label>
+      <Label Inherit="" Location="151,286,31,26" Name="857" Show="true">
+        <BackgroundImage File="tz_010" Source="441,486,31,26"/>
+      </Label>
+      <Label Inherit="" Location="210,286,31,26" Name="1018" Show="true">
+        <BackgroundImage File="tz_010" Source="473,485,31,26"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="92,0,120,68" Name="18779" Show="true" Text="$L:468$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+  </Layer>
+</Ui>

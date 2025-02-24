@@ -1,0 +1,5 @@
+ae,string,string,string,marea
+编号,区域名字,区域音乐,区域Logo,区域
+"ID","Name","Music","Logo","Area"
+1,$L:Scenestable_ningbiyamidong$,enviroment1,35,"-18 -5 270 313;
+-31 302 270 533;"

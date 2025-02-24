@@ -1,0 +1,2 @@
+bind 0 MainShortcut(0)
+bind SPACE MainShortcut(0)

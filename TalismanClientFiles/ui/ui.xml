@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="GB2312"?>
+<Ui>
+	<Languages>
+		<Language Name="china" TextFile="local/china/language/message_ui.csv" />
+		<Language Name="taiwan" TextFile="local/taiwan/language/message_ui.csv" />
+		<Language Name="malay_gb" TextFile="local/malay_gb/language/message_ui.csv" />
+		<Language Name="malay_english" TextFile="local/malay_english/language/message_ui.csv" />
+		<Language Name="euramerican" TextFile="local/euramerican/language/message_ui.csv" />
+		<Language Name="vn" TextFile="local/vn/language/message_ui.csv" />
+		<Language Name="mars" TextFile="local/mars/language/message_ui.csv" />
+		<Language Name="korean" TextFile="local/korean/language/message_ui.csv" />
+		<Language Name="euramerican" TextFile="local/euramerican/language/message_ui.csv" />
+		<Language Name="pps" TextFile="local/pps/language/message_ui.csv" />
+	</Languages>
+	<Loader Description="按照顺序Load以下所有xml文件" >
+		<Script Name="api_global.lua"/>
+		<File Name="lay_login.xml" />
+		<File Name="lay_select_character.xml" />
+		<File Name="lay_select_character1.xml" />
+		<File Name="lay_select_character2.xml" />
+		<File Name="lay_new_character.xml" />
+		<File Name="lay_new_character1.xml" />
+		<File Name="lay_new_character2.xml" />
+		<File Name="frm_character_active.xml" />
+		<File Name="lay_world.xml" />
+		<!--<File Name="hint.xml" />-->
+		<File Name="default_hint.xml" />
+		<!--<File Name="frm_task.xml" />-->
+		<File Name="frm_task_ex.xml" />
+		<!--<File Name="frm_task_list.xml" />-->
+		<File Name="frm_task_list_ex.xml" />
+		<!--<File Name="loot_body.xml" />-->
+		<File Name="loot_body_ex.xml" />
+		<!--<File Name="frm_itemroll.xml" />-->
+		<File Name="frm_itemroll_ex.xml" />
+		<File Name="frm_Friends.xml" />
+		<!--<File Name="frm_Business.xml" />-->
+		<File Name="frm_Business_ex.xml" />
+		<File Name="frm_PointShop.xml" />
+		<!--<File Name="frm_Dailoger.xml" />-->
+		<File Name="frm_dialoger_ex.xml" />
+		<File Name="frm_Buy.xml" />
+		<File Name="frm_get_storage.xml" />
+		<File Name="frm_Make.xml" />
+		<!--<File Name="frm_Help.xml" />-->
+		<File Name="frm_help_ex.xml" />
+		<File Name="frm_WorldMap.xml" />
+		<!--<File Name="frm_GuildIndexPage.xml" />-->
+		<File Name="frm_GuildIndexPage_ex.xml" />
+		<!--<File Name="frm_guild.xml" />-->
+		<File Name="frm_guild_ex.xml" />
+		<File Name="minimap_hint.xml" />
+		<File Name="Frm_gamewatting.xml"/>
+		<!--<File Name="frm_citywar.xml"/>-->
+		<File Name="frm_citywar_ex.xml"/>
+		<!--<File Name="frm_newplay.xml" />-->
+		<File Name="frm_newplay_ex.xml" />
+		<!--<File Name="frm_itemLook.xml" />-->
+		<File Name="frm_itemLook_ex.xml" />
+		<!--<File Name="frm_Top10.xml" />-->
+		<File Name="frm_Top10_ex.xml" />
+		<File Name="frm_undo.xml" />
+		<!--<File Name="Frm_Message.xml" />-->
+		<File Name="frm_dead_ex.xml" />
+		<File Name="frm_guildDonate.xml" />
+		<File Name="frm_NewTeam.xml" />
+		<File Name="frm_Dungeons.xml" />
+		<File Name="frm_Group3C.xml" />
+		<File Name="Frm_CH.xml" />
+		<File Name="frm_remark.xml" />
+		<File Name="frm_concentrate.xml" />
+		<File Name="frm_alern.xml" />
+		<File Name="frm_nearby_user_npc.xml" />
+		<File Name="frm_BlessingsCard.xml" />
+		<File Name="frm_smallpetskill.xml" />
+		<File Name="frm_race.xml" />
+		<File Name="frm_apart_ex.xml" />
+		<File Name="frm_auto_bar.xml" />
+		<File Name="frm_GuildPK_ex.xml" />
+		
+		
+		
+		
+		<!--<File Name="frm_KillerTip.xml" />-->
+		<!--<File Name="frm_GuildWarehouse.xml" />-->
+		<!--<File Name="warehouse_pass.xml" />-->
+		<!--<File Name="frm_warebag.xml" />-->
+		<!--<File Name="frm_Warehouse.xml" />-->
+		<!--<File Name="frm_Savemoney.xml" />-->
+		<!--<File Name="frm_addbag.xml" />-->
+		<!--<File Name="frm_ItemPoint.xml" />-->
+		<!--<File Name="frm_makestone.xml" />-->
+		<!--<File Name="frm_Create.xml" />-->
+		<!--<File Name="frm_Build.xml" />-->
+		<!--<File Name="frm_Blend.xml" />-->
+		<!--<File Name="frm_practice.xml" />-->
+		<!--<File Name="frm_skill.xml" />-->
+		<!--<File Name="frm_FreeShop.xml" />-->
+		<!--<File Name="frm_LookFreeShop.xml" />-->
+		<!--<File Name="Frm_BusinessHistroy.xml" />-->
+		<!--<File Name="Frm_StallTalk.xml" />-->
+		<!--<File Name="Frm_OtherStallTalk.xml" />-->
+		<!--<File Name="frm_Setmoney.xml" />-->
+		<!--<File Name="Frm_FreeBuybreak.xml" />-->
+		<!--<File Name="frm_BusinessPtoP.xml" />-->
+		<!--<File Name="frm_Mail.xml" />-->
+		<!--<File Name="frm_MailText.xml" />-->
+		<!--<File Name="frm_user.xml" />-->
+		<!--<File Name="release_progress.xml" />-->
+		<!--<File Name="shortcut.xml" />-->
+		<!--<File Name="chat.xml" />-->
+		<!--<File Name="frm_item.xml" />-->
+		<!--<File Name="Frm_Itembreak.xml" />-->
+		<!--<File Name="scene_hint.xml" />-->
+		
+		<Script Name="frm_skill_use_ex.lua"/>
+		<File Name="release_progress_ex.xml" />
+		<File Name="scene_hint_ex.xml" />
+		<File Name="area_hint_ex.xml" />
+		<File Name="chat_ex.xml" />
+		<File Name="frm_self_ex.xml" />
+		<File Name="frm_combat_pet_ex.xml" />
+		<File Name="frm_target_ex.xml" />
+		<File Name="frm_anti_robot_ex.xml" />
+		<File Name="frm_help_prompt_ex.xml" />
+		<File Name="frm_team_ex.xml" />
+		
+		<File Name="frm_Itembreak_ex.xml" />
+		
+		<File Name="frm_item_ex.xml" />
+		<File Name="shortcut_ex.xml" />
+		<File Name="frm_user_ex.xml" />
+		<File Name="frm_Mail_ex.xml" />
+		<File Name="frm_MailText_ex.xml" />
+		<File Name="frm_BusinessPtoP_ex.xml" />
+		<File Name="frm_FreeShop_ex.xml" />
+		<File Name="frm_LookFreeShop_ex.xml" />
+		<File Name="Frm_BusinessHistroy_ex.xml" />
+		<File Name="Frm_StallTalk_ex.xml" />
+		<File Name="Frm_OtherStallTalk_ex.xml" />
+		<File Name="frm_Setmoney_ex.xml" />
+		<File Name="Frm_FreeBuybreak_ex.xml" />
+		<File Name="frm_skill_ex.xml" />
+		<File Name="frm_practice_ex.xml" />
+		<File Name="frm_Blend_ex.xml" />
+		<File Name="frm_Build_ex.xml" />
+		<File Name="frm_Create_ex.xml" />
+		<File Name="frm_makestone_ex.xml" />
+		<File Name="frm_ItemPoint_ex.xml" />
+		<File Name="frm_addbag_ex.xml" />
+		<File Name="frm_Bank_Setmoney_ex.xml" />
+		<File Name="frm_Warehouse_ex.xml" />
+		<File Name="frm_warebag_ex.xml" />
+		<File Name="warehouse_pass_ex.xml" />
+		<File Name="frm_GuildWarehouse_ex.xml" />
+		<File Name="frm_KillerTip_ex.xml" />
+		
+		
+		<!--<File Name="system_menu.xml" />-->
+		<File Name="system_menu_ex.xml" />
+		<File Name="frm_key_settings.xml" />
+		<File Name="frm_mem_state.xml" />
+		
+		<File Name="frm_sign.xml" />
+		<File Name="frm_sign_delete.xml" />
+		<File Name="frm_add_extend_bag.xml" />
+		
+		<!--<File Name="frm_pet.xml" />-->
+		<!--<File Name="frm_PetSkill.xml" />-->
+		<!--<File Name="frm_SmallPet.xml" />-->
+		<!--<File Name="frm_Actpet.xml" />-->
+		<File Name="frm_pet_ex.xml" />
+		<File Name="frm_SmallPet_ex.xml" />
+		<File Name="frm_Actpet_ex.xml" />
+		
+		<!--<File Name="Frm_PointCard.xml" />-->
+		<File Name="Frm_PointCard_ex.xml" />
+		
+		<!--<File Name="Frm_teachpoint.xml" />-->
+		<File Name="frm_teachpoint_ex.xml" />
+		
+		<File Name="frm_teach.xml" />
+		<!--<File Name="frm_teach_ex.xml" />-->
+		
+		<!--<File Name="frm_NeedTeach.xml" />-->
+		<File Name="frm_needteach_ex.xml" />
+
+		<File Name="frm_CreateRoom_ex.xml" />
+		<File Name="frm_ColiseumRoomInfo_ex.xml" />    
+		<File Name="frm_SuperCreate.xml" />
+		<File Name="frm_Question.xml" />
+		<File Name="frm_ColiseumRakings_ex.xml" />
+    <File Name="frm_Coliseum_ex.xml" />
+		<File Name="frm_Argescale_PVE.xml" />
+		
+		<File Name="frm_calendar.xml" />
+		<!--<File Name="frm_entrusthall.xml"/>-->
+		<!--<File Name="frm_entrustissue.xml"/>-->
+		<!--<File Name="frm_BindMount_ex.xml"/>-->
+		
+		
+	</Loader>
+	<Config Theme="Default" >
+		<Fonts>
+			<Font Load="true" UsagePath="mars" TextFace="Arial" Name="def" Size="12" RenderSize="12" />
+			<Font Load="true" UsagePath="mars" TextFace="Arial" Name="title" Size="36" RenderSize="36" />
+			<Font Load="true" UsagePath="euramerican" TextFace="Arial" Name="title" Size="36" RenderSize="36" />
+			<Font Load="true" UsagePath="euramerican" TextFace="Calibri" Name="def" Size="12" RenderSize="12" />
+			<Font Load="true" UsagePath="euramerican" TextFace="Arial" Name="def" Size="12" RenderSize="12" />			
+			<Font Load="true" UsagePath="vn" TextFace="Arial" Name="def" Size="12" RenderSize="12" />
+			<Font Load="true" UsagePath="vn" TextFace="Arial" Name="title" Size="36" RenderSize="36" />
+			<Font Load="true" UsagePath="korean" TextFace="NanumGothicBold" Name="def" File="local\korean\ui\NanumGothicBold.ttf" Size="12" RenderSize="12" Setting="Engine:GDI;CharSet:ANSI;LoadFont:MEM;" />
+			<Font Load="true" UsagePath="korean" TextFace="唱串绊雕 Bold" Name="def" File="local\korean\ui\NanumGothicBold.ttf" Size="12" RenderSize="12" Setting="Engine:GDI;CharSet:ANSI;LoadFont:MEM;"/>
+			<Font Load="true" UsagePath="korean" TextFace="Gulim" Name="def" Size="12" RenderSize="12" Setting="Compatibility:Possible;" />
+			<Font Load="true" UsagePath="korean" TextFace="NanumGothicBold" Name="title" File="local\korean\ui\NanumGothicBold.ttf" Size="36" RenderSize="36" Setting="Engine:GDI;CharSet:ANSI;LoadFont:MEM;" />
+			<Font Load="true" UsagePath="korean" TextFace="唱串绊雕 Bold" Name="title" File="local\korean\ui\NanumGothicBold.ttf" Size="36" RenderSize="36" Setting="Engine:GDI;CharSet:ANSI;LoadFont:MEM;"/>
+			<Font Load="true" UsagePath="korean" TextFace="Gungsuh" Name="title" Size="36" RenderSize="36" Setting="Compatibility:Possible;" />
+			<Font Load="true" TextFace="穝灿砰" Name="def" Size="12" RenderSize="12" />
+			<Font Load="true" TextFace="夹发砰" Name="title" Size="36" RenderSize="36" />
+			<Font Load="true" TextFace="灿砰" Name="title" Size="36" RenderSize="36" />
+			<Font Load="true" TextFace="宋体" Name="def" Size="12" RenderSize="12" />
+			<Font Load="true" TextFace="楷体_GB2312" Name="title" Size="36" RenderSize="36" />
+			<Font Load="true" TextFace="隶书" Name="title" Size="36" RenderSize="36" />
+			<Font Load="true" TextFace="宋体" Name="title" Size="36" RenderSize="36" />
+		</Fonts>
+	</Config>
+</Ui>

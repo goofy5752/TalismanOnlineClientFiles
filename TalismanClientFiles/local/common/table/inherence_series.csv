@@ -1,0 +1,4 @@
+备注,所属门派[int],系列名[string],显示行[int],图标[string],说明文字[string]
+ID,BelowParty,Name,DisplayLine,Icon,Readme
+1,0,$L:inherence_series_huofeijianxi$,1,ic_eskill01,$L:inherence_series_huofeijianshuoming$
+2,0,$L:inherence_series_bingfeidaoxi$,2,ic_eskill11,$L:inherence_series_bingfeidaoshuoming$

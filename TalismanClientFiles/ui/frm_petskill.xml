@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="252,128,300,250" Name="frmSkillPet" Show="false" Size="300,250">
+      <Label Inherit="bg1" Location="11,28,280,210" Name="lbUP" Show="true"/>
+      <Label Inherit="" Location="0,243,256,11" Name="2849" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="5,9,292,50" Name="20719" Show="true"/>
+      <TitleBarButton Location="10,13,280,28" Text="" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="266,39,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13 "/>
+      </CloseButton>
+      <Form Inherit="NoTitleBarForm" Location="8,60,238,340" Name="frmOtherSkills" Show="false">
+        <Widget Inherit="" Location="3,-1,230,54" Name="wgOtherSkill1" Show="true">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,6,40,40" Name="lbOtherSkillIcon1" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <HighlightImage Blend="true" File="" Source=""/>
+        </Button>
+        <Label Inherit="" Location="58,9,70,18" Name="lbOtherSkillName1" Show="true" Text=""/>
+        <ProgressBar Inherit="" Location="57,33,162,10" Name="prgOtherSkill1" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,53,230,54" Name="wgOtherSkill2" Show="true">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,60,40,40" Name="lbOtherSkillIcon2" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <HighlightImage Blend="true" File="" Source=""/>
+        </Button>
+        <Label Inherit="" Location="58,63,70,18" Name="lbOtherSkillName2" Show="true" Text=""/>
+        <ProgressBar Inherit="" Location="57,87,162,10" Name="prgOtherSkill2" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,107,230,54" Name="wgOtherSkill3" Show="true">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,114,40,40" Name="lbOtherSkillIcon3" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <HighlightImage Blend="true" File="" Source=""/>
+        </Button>
+        <Label Inherit="" Location="58,117,70,18" Name="lbOtherSkillName3" Show="true" Text=""/>
+        <ProgressBar Inherit="" Location="57,141,162,10" Name="prgOtherSkill3" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,161,230,54" Name="wgOtherSkill4" Show="true">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,168,40,40" Name="lbOtherSkillIcon4" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <HighlightImage Blend="true" File="" Source=""/>
+        </Button>
+        <Label Inherit="" Location="58,171,70,18" Name="lbOtherSkillName4" Show="true" Text=""/>
+        <ProgressBar Inherit="" Location="57,195,162,10" Name="prgOtherSkill4" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,215,230,54" Name="wgOtherSkill5" Show="true">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,222,40,40" Name="lbOtherSkillIcon5" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <HighlightImage Blend="true" File="" Source=""/>
+        </Button>
+        <Label Inherit="" Location="58,226,70,18" Name="lbOtherSkillName5" Show="true" Text=""/>
+        <ProgressBar Inherit="" Location="57,249,162,10" Name="prgOtherSkill5" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <Widget Inherit="" Location="3,270,230,54" Name="wgOtherSkill6" Show="true">
+          <Widgets>
+            <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="TOP"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="RIGHT"/>
+                <Anchor point="BOTTOM"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="lt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="LEFT" relativeTo="rt"/>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+                <Anchor point="RIGHT" relativeTo="rt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lt"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+                <Anchor point="BOTTOM" relativeTo="lt"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+              <BackgroundImage File="" Source=""/>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="lb"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+                <Anchor point="BOTTOM" relativeTo="lb"/>
+              </Anchors>
+            </Widget>
+            <Widget Inherit="" Location="100,100,200,200" Name="center" Show="true">
+              <Anchors>
+                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+                <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+                <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+                <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+              </Anchors>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Button Inherit="" Location="12,277,40,40" Name="lbOtherSkillIcon6" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <HighlightImage Blend="true" File="" Source=""/>
+        </Button>
+        <Label Inherit="" Location="58,281,70,18" Name="lbOtherSkillName6" Show="true" Text=""/>
+        <ProgressBar Inherit="" Location="57,305,162,10" Name="prgOtherSkill6" Show="true">
+          <BackgroundImage File="" Source=""/>
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="24,60,238,165" Name="frmTrumps" Show="fals">
+        <Label Inherit="bg3" Location="8,30,220,50" Name="10206" Show="true"/>
+        <CheckButton Inherit="" Location="14,38,36,36" Name="btnPet1" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <CheckImage File="tz_010" Source="186,376,48,48"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="56,37,36,36" Name="btnPet2" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <CheckImage File="tz_010" Source="186,376,48,48"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="99,37,36,36" Name="btnPet3" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <CheckImage File="tz_010" Source="186,376,48,48"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="142,37,36,36" Name="btnPet4" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <CheckImage File="tz_010" Source="186,376,48,48"/>
+        </CheckButton>
+        <CheckButton Inherit="" Location="186,37,36,36" Name="btnPet5" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <CheckImage File="tz_010" Source="186,376,48,48"/>
+        </CheckButton>
+        <Label Inherit="bg3" Location="7,109,220,50" Name="10846" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="4,3,147,24" Name="758" Show="true" Text="$L:628$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="5,83,147,24" Name="780" Show="true" Text="$L:629$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="" Location="7,115,220,40" MouseEvent="true" MouseMove="true" Name="labSkills" Show="true">
+          <Button Inherit="" Location="8,1,36,36" Name="btnSkillPet1" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="51,1,36,36" Name="btnSkillPet2" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="93,1,36,36" Name="btnSkillPet3" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="136,1,36,36" Name="btnSkillPet4" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="179,1,36,36" Name="btnSkillPet5" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+        </Label>
+      </Form>
+      <Anchors>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frmAllPet"/>
+        <Anchor point="TOP" relativeTo="frmAllPet.frmXianqingPet.btnPetSkill"/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="92,10,120,64" Name="16622" Show="true" Text="$L:171$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="lay_new_character2.lua"></Script>
+  <Theme Name="layCreateChar2">
+    <Templates>
+      <CheckButton Inherit="" Name="CharacterSelectionTemplate" Show="false" Size="144,46">
+        <CheckButton CheckStyle="false" Inherit="" Location="70,0,58,15" MouseEvent="false" MouseMove="false" Name="ckbParty" Show="true" Size="95,15" Text="">
+          <Anchors>
+            <Anchor offset="-1,0" point="CENTERH"/>
+            <Anchor offset="0,7" point="TOP"/>
+          </Anchors>
+          <NormalImage File="tz_013" Source="417,11,95,15"/>
+          <PushedImage File="tz_013" Source="417,80,95,15"/>
+          <DisabledImage File="" Source=""/>
+          <CheckImage File="tz_013" Source="417,80,95,15"/>
+          <HighlightCheckArea File="tz_013" Source="417,80,95,15"/>
+        </CheckButton>
+        <CheckButton CheckStyle="false" Inherit="" Location="0,0,29,15" Name="ckbMale" Show="true" Size="47,16" Text="$L:215$">
+          <Anchors>
+            <Anchor point="LEFT" relativeTo="ckbParty"/>
+            <Anchor offset="0,4" point="TOP" relativePoint="BOTTOM" relativeTo="ckbParty"/>
+          </Anchors>
+          <NormalImage File="tz_013" Source="416,33,47,16"/>
+          <PushedImage File="tz_013" Source="412,112,47,15"/>
+          <DisabledImage File="" Source=""/>
+          <CheckImage File="tz_013" Source="412,112,47,15"/>
+          <HighlightCheckArea File="tz_013" Source="412,112,47,15"/>
+          <Scripts>
+            <OnLClick>CharacterSelection_ckbMale_OnLClick(self);</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <CheckButton CheckStyle="false" Inherit="" Location="110,0,29,15" Name="ckbFemale" Show="true" Size="47,16" Text="$L:216$">
+          <Anchors>
+            <Anchor offset="1,0" point="RIGHT" relativeTo="ckbParty"/>
+            <Anchor offset="0,4" point="TOP" relativePoint="BOTTOM" relativeTo="ckbParty"/>
+          </Anchors>
+          <NormalImage File="tz_013" Source="465,34,47,15"/>
+          <PushedImage File="tz_013" Source="465,112,47,15"/>
+          <DisabledImage File="" Source=""/>
+          <CheckImage File="tz_013" Source="465,112,47,15"/>
+          <HighlightCheckArea File="tz_013" Source="465,112,47,15"/>
+          <Scripts>
+            <OnLClick>CharacterSelection_ckbFemale_OnLClick(self);</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <Scripts>
+          <OnLoad>CharacterSelection_OnLoad(self);</OnLoad>
+          <OnLClick>CharacterSelection_OnLClick(self);</OnLClick>
+        </Scripts>
+        <NormalImage File="tz_013" Source="256,49,144,46"/>
+        <DisabledImage File="tz_013" Source="256,49,144,46"/>
+        <PushedImage File="tz_013" Source="256,0,144,46"/>
+        <HighlightImage File="tz_013" Source="256,0,144,46"/>
+        <CheckImage File="tz_013" Source="256,0,144,46"/>
+      </CheckButton>
+      <Label Inherit="" Name="CharacterAttributeSelectionTemplate1" Show="true" Size="215,18">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="0,0,68,18" Name="lbTitle" Show="true">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Button Inherit="" Location="94,150,14,14" Name="btLeft" Show="true" Size="14,14">
+          <Anchors>
+            <Anchor offset="5,0" point="LEFT" relativePoint="RIGHT" relativeTo="lbTitle"/>
+            <Anchor offset="0,2" point="TOP"/>
+          </Anchors>
+          <NormalImage File="tz_010" Source="50,382,14,14"/>
+          <PushedImage File="" Source=""/>
+          <Scripts>
+            <OnLClick>CharacterAttributeSelection_btLeft_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="267,101,14,14" Name="btRight" Show="true" Size="14,14">
+          <Anchors>
+            <Anchor offset="0,0" point="RIGHT"/>
+            <Anchor offset="0,2" point="TOP"/>
+          </Anchors>
+          <NormalImage File="tz_010" Source="75,382,14,14"/>
+          <PushedImage File="" Source=""/>
+          <Scripts>
+            <OnLClick>CharacterAttributeSelection_btRight_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="0,0,30,18" Name="lbDesc" Show="true" Size="0,18">
+          <Anchors>
+            <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="btLeft"/>
+            <Anchor offset="-2,0" point="RIGHT" relativePoint="LEFT" relativeTo="btRight"/>
+            <Anchor point="TOP"/>
+          </Anchors>
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Scripts>
+          <OnLoad>CharacterAttributeSelection_OnLoad(self);</OnLoad>
+        </Scripts>
+      </Label>
+    </Templates>
+  </Theme>
+  <Layer Name="layCreateChar2" Show="false">
+    <Button Inherit="PushButton" Location="1154,906,100,24" Name="btReturn" Show="true" Size="100,24" Text="$L:207$" CDTime="5000">
+      <Anchors>
+        <Anchor offset="0,-20" point="BOTTOM"/>
+        <Anchor offset="60,0" point="CENTERH"/>
+      </Anchors>
+      <Scripts>
+        <OnLClick>uiCharStageReturn();</OnLClick>
+      </Scripts>
+    </Button>
+    <Button Inherit="PushButton" Location="1155,863,100,24" Name="btAccept" Show="true" Size="100,24" Text="$L:208$" CDTime="3000">
+      <Anchors>
+        <Anchor offset="0,-20" point="BOTTOM"/>
+        <Anchor offset="-60,0" point="CENTERH"/>
+      </Anchors>
+      <Scripts>
+        <OnLClick>layCreateChar2_btAccept_OnLClick(self);</OnLClick>
+      </Scripts>
+    </Button>
+    <Form Inherit="NoTitleBarForm" Location="6,255,300,256" Name="frNewChar" Show="false">
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,51,65,18" Name="lbSchoolName" Show="true" Text="$L:209$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="106,51,160,18" Name="lbCharSchool" Show="true" Text="">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="94,53,13,14" Name="btSchoolLeft" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="267,53,13,14" Name="btSchoolRight" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,74,65,18" Name="lbHair" Show="true" Text="$L:210$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="94,76,13,14" Name="btCharLeft" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="267,77,13,14" Name="btCharRight" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,97,65,18" Name="lbHead" Show="true" Text="$L:211$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="94,100,13,14" Name="btFaceChangeLeft" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="267,101,13,14" Name="btFaceChangeRight" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,120,65,18" Name="lbShape" Show="true" Text="$L:1153$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="94,122,13,14" Name="btShapeChangeLeft" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="106,120,160,18" Name="lbShapeName" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="267,122,13,14" Name="btShapeChangeRight" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,140,65,18" Name="lbSkinColor" Show="true" Text="$L:1154$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="94,142,13,14" Name="btSkinColorChangeLeft" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="106,140,160,18" Name="lbSkinColorName" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="267,142,13,14" Name="btSkinColorChangeRight" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,203,65,18" Name="lbName" Show="true" Text="$L:212$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <EditBox Inherit="" Location="96,203,140,18" Name="edbCharName" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </EditBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="46,189,65,18" Name="lbPassword" Show="false" Text="$L:213$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <EditBox Inherit="" Location="122,189,100,18" Name="edbCharPassword" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </EditBox>
+      <Button Inherit="PushButton" Location="210,168,70,24" Name="btRandomRole" Show="false" Size="70,24" Text="$L:214$"/>
+      <CheckButton CheckStyle="false" Location="25,171,70,20" Name="ckbMale" Show="fals" Size="70,24" Text="$L:215$">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+        <CheckImage File="" Source=""/>
+        <HighlightCheckArea File="" Source=""/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Location="107,171,70,20" Name="ckbFemale" Show="fals" Size="70,24" Text="$L:216$">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+        <CheckImage File="" Source=""/>
+        <HighlightCheckArea File="" Source=""/>
+      </CheckButton>
+      <BackgroundImage File=""/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="106,75,160,18" Name="lbHairName" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="106,98,160,18" Name="lbHeadName" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="38,163,65,18" Name="lbChangSexyName" Show="false" Text="$L:1042$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="117,165,13,14" Name="btChangeMan" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="201,165,13,14" Name="btChangWomen" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="130,163,70,18" Name="lbChangeSexy" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+	  <Scripts>
+		  <OnLoad>self:RegisterScriptEventNotify("NewCharChanged");
+			  self:RegisterScriptEventNotify("EVENT_EnterStage");
+			  self:RegisterScriptEventNotify("EVENT_LeaveStage");</OnLoad>
+		  <OnEvent>
+			if (event == "NewCharChanged") then
+			  CharacterSelection_SelectChanged(arg[1], arg[2]);
+			elseif (event == "EVENT_EnterStage") then
+				if arg[1] == "gs_create_char" then
+					CharacterSelection_Enter();
+				end
+			elseif (event == "EVENT_LeaveStage") then
+				if arg[1] == "gs_create_char" then
+					CharacterSelection_Leave();
+				end
+			end</OnEvent>
+	  </Scripts>
+    </Form>
+    <CheckButton Inherit="CharacterSelectionTemplate" Location="390,10,144,46" Name="CharacterSelection2" Show="true">
+      <Anchors>
+        <Anchor offset="0,-50" point="BOTTOM"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+      <CheckButton Name="ckbParty" Text="$L:1160$"/>
+    </CheckButton>
+    <Widget Inherit="" Location="0,0,200,200" Name="wtAnchorAssistant0" Show="true" Size="0,0,">
+      <Anchors>
+        <Anchor point="LEFT"/>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="CharacterSelection2"/>
+        <Anchor point="TOP" relativeTo="CharacterSelection2"/>
+        <Anchor point="BOTTOM" relativeTo="CharacterSelection2"/>
+      </Anchors>
+    </Widget>
+    <Widget Inherit="" Location="0,0,200,200" Name="wtAnchorAssistant1" Show="true" Size="0,0">
+      <Anchors>
+        <Anchor point="RIGHT"/>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="CharacterSelection2"/>
+        <Anchor point="TOP" relativeTo="CharacterSelection2"/>
+        <Anchor point="BOTTOM" relativeTo="CharacterSelection2"/>
+      </Anchors>
+    </Widget>
+    <CheckButton Inherit="CharacterSelectionTemplate" Location="128,754,144,46" Name="CharacterSelection0" Show="true">
+      <Anchors>
+        <Anchor point="TOP" relativeTo="CharacterSelection2"/>
+        <Anchor point="CENTERH" relativeTo="wtAnchorAssistant0"/>
+      </Anchors>
+      <CheckButton Location="55,0,70,24" Name="ckbParty" Text="$L:1159$"/>
+    </CheckButton>
+    <CheckButton Inherit="CharacterSelectionTemplate" Location="770,10,144,46" Name="CharacterSelection4" Show="true">
+      <Anchors>
+        <Anchor point="TOP" relativeTo="CharacterSelection2"/>
+        <Anchor point="CENTERH" relativeTo="wtAnchorAssistant1"/>
+      </Anchors>
+      <CheckButton Name="ckbParty" Text="$L:1162$"/>
+    </CheckButton>
+    <Widget Inherit="" Location="0,0,200,200" Name="wtAnchorAssistant2" Show="true" Size="0,0">
+      <Anchors>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="CharacterSelection0"/>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="CharacterSelection2"/>
+        <Anchor point="TOP" relativeTo="CharacterSelection2"/>
+        <Anchor point="BOTTOM" relativeTo="CharacterSelection2"/>
+      </Anchors>
+    </Widget>
+    <Widget Inherit="" Location="0,0,200,200" Name="wtAnchorAssistant5" Show="true" Size="0,0">
+      <Anchors>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="CharacterSelection2"/>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="CharacterSelection4"/>
+        <Anchor point="TOP" relativeTo="CharacterSelection2"/>
+        <Anchor point="BOTTOM" relativeTo="CharacterSelection2"/>
+      </Anchors>
+    </Widget>
+    <CheckButton Inherit="CharacterSelectionTemplate" Location="200,10,144,46" Name="CharacterSelection1" Show="true">
+      <Anchors>
+        <Anchor point="TOP" relativeTo="CharacterSelection0"/>
+        <Anchor point="CENTERH" relativeTo="wtAnchorAssistant2"/>
+      </Anchors>
+      <CheckButton Name="ckbParty" Text="$L:1158$"/>
+    </CheckButton>
+    <CheckButton Inherit="CharacterSelectionTemplate" Location="580,10,180,50" Name="CharacterSelection3" Show="true">
+      <Anchors>
+        <Anchor point="TOP" relativeTo="CharacterSelection2"/>
+        <Anchor point="CENTERH" relativeTo="wtAnchorAssistant5"/>
+      </Anchors>
+      <CheckButton Name="ckbParty" Text="$L:1161$"/>
+    </CheckButton>
+    <Label Inherit="" Location="10,10,70,18" MouseEvent="true" MouseMove="true" Pick="false" Name="lbRollControler" Transparency="0 ">
+      <Anchors>
+        <Anchor point="LEFT"/>
+        <Anchor point="TOP"/>
+        <Anchor point="RIGHT"/>
+        <Anchor point="BOTTOM"/>
+      </Anchors>
+      <Label Inherit="bg3" Location="30,26,256,240" MouseMove="true" Name="lbIndex" Show="true" Size="256,240" MouseEvent="true">
+        <EditBox AutoScrollV="true" BackgroundColor="" EnableInput="false" Inherit="" Location="16,18,225,200" MultiLine="true" Name="edbIndex" Show="true" Text="" WordWrap="true">
+          <Anchors>
+            <Anchor offset="0,20" point="TOP"/>
+            <Anchor offset="20,0" point="LEFT"/>
+            <Anchor offset="0,-20" point="BOTTOM"/>
+            <Anchor offset="-20,0" point="RIGHT"/>
+          </Anchors>
+        </EditBox>
+        <Anchors>
+          <Anchor offset="0,30" point="TOP"/>
+          <Anchor offset="30,0" point="LEFT"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="bg3" Location="30,26,256,130" Name="lbRoleAttribute" Show="true" Size="256,114" MouseMove="true" MouseEvent="true">
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lbIndex"/>
+          <Anchor offset="30,0" point="LEFT"/>
+        </Anchors>
+        <Label Inherit="CharacterAttributeSelectionTemplate1" Location="150,10,180,50" Name="TypeSelection0" Show="true">
+          <Anchors>
+            <Anchor offset="20,0" point="LEFT"/>
+            <Anchor offset="0,20" point="TOP"/>
+          </Anchors>
+          <Label Name="lbTitle" Text="$L:210$">
+            <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+          </Label>
+          <Label Name="lbDesc" Text="default">
+            <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+          </Label>
+        </Label>
+        <Label Inherit="CharacterAttributeSelectionTemplate1" Location="416,21,180,50" Name="TypeSelection1" Show="true">
+          <Anchors>
+            <Anchor point="LEFT" relativePoint="LEFT" relativeTo="TypeSelection0"/>
+            <Anchor offset="0,10" point="TOP" relativePoint="BOTTOM" relativeTo="TypeSelection0"/>
+          </Anchors>
+          <Label Name="lbTitle" Text="$L:211$">
+            <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+          </Label>
+          <Label Name="lbDesc" Text="default">
+            <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+          </Label>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="20,75,65,18" Name="lbName" Show="true" Size="65,18" Text="$L:212$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+          <Anchors>
+            <Anchor offset="20,0" point="LEFT"/>
+            <Anchor offset="0,-20" point="BOTTOM"/>
+          </Anchors>
+        </Label>
+        <EditBox Inherit="" Location="96,203,140,18" MaxChar="16" MouseMove="true" Name="edbCharName" Show="true" Size="140,18">
+          <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+          <Anchors>
+            <Anchor point="TOP" relativeTo="lbName"/>
+            <Anchor offset="10,0" point="LEFT" relativePoint="RIGHT" relativeTo="lbName"/>
+          </Anchors>
+          <Scripts>
+            <OnTextChanged>layCreateChar2_edbCharName_OnTextChanged(self);</OnTextChanged>
+			<OnKeyDown>layCreateChar2_edbCharName_OnKeyDown(self, key);</OnKeyDown>
+          </Scripts>
+        </EditBox>
+      </Label>
+      <Label Inherit="" Location="596,836,84,34" Name="lbRoleRoller" Show="true" Size="84,34" MouseEvent="true" MouseMove="true">
+        <Anchors>
+          <Anchor point="CENTERH"/>
+          <Anchor offset="0,-110" point="BOTTOM" relativePoint="BOTTOM"/>
+        </Anchors>
+        <Button Inherit="" Location="0,0,34,34" Name="btNewRight" Show="true" Size="32,32">
+          <Anchors>
+            <Anchor point="RIGHT"/>
+            <Anchor point="TOP"/>
+          </Anchors>
+          <NormalImage File="tz_011" Source="0,256,32,32"/>
+          <HighlightImage File="" Source=""/>
+          <PushedImage File="tz_011" Source="34,256,32,32"/>
+          <Scripts>
+            <OnLDown>uiCharStartTurnRight();</OnLDown>
+            <OnLUp>uiCharStopTurn();</OnLUp>
+            <OnLeave>uiCharStopTurn();</OnLeave>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="10,10,34,34" Name="btNewLeft" Show="true" Size="32,32">
+          <Anchors>
+            <Anchor point="LEFT"/>
+            <Anchor point="TOP"/>
+          </Anchors>
+          <NormalImage File="tz_011" Source="68,256,32,32"/>
+          <HighlightImage File="" Source=""/>
+          <PushedImage File="tz_011" Source="102,256,32,32"/>
+          <Scripts>
+            <OnLDown>uiCharStartTurnLeft();</OnLDown>
+            <OnLUp>uiCharStopTurn();</OnLUp>
+            <OnLeave>uiCharStopTurn();</OnLeave>
+          </Scripts>
+        </Button>
+      </Label>
+      <Scripts>
+        <OnUpdate Timer="40">layCreateChar2_lbRollControler_OnUpdate(self);</OnUpdate>
+      </Scripts>
+    </Label>
+  </Layer>
+</Ui>

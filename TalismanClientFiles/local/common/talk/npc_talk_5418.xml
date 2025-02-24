@@ -1,0 +1,6 @@
+ <Line/>
+<Line>
+<Items>
+<Item type="TEXT" text="$L:npctalk5418$" font="title" fontsize="17" color="#ffff7733" hlink="String:local:pverank?NA=0"/>
+</Items>
+</Line>

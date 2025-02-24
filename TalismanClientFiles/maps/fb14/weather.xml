@@ -1,0 +1,9 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x2">
+   <group colors="true" desc="" env="0xFF0F547D" envo="0xFF183F78" fog="0xFF05515F" forfar="3000.000" fornear="300.000" name="天气01" range="100.000" skyMaterial="" skyMovieActor="" sun="0xFF0D296C" suno="0xFF175A97">
+      <area bottom="10643.859" left="-62.889" right="10968.741" top="-5484.056"/>
+   </group>
+   <group colors="true" desc="" env="0xFF2B317B" envo="0xFF40549B" fog="0xFF3D3397" forfar="3000.000" fornear="300.000" name="天气02" range="100.000" skyMaterial="" skyMovieActor="" sun="0xFF424B9F" suno="0xFF364E78">
+      <area bottom="3433.927" left="10859.074" right="15582.764" top="-5394.345"/>
+   </group>
+</weather>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_GuildIndexPage_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="519,130,529,532" Name="frmGuildIndexPageEx" Show="false" Size="580,532">
+	  <Param key="NeedRefresh" value="true" type="bool" />
+      <Label Inherit="bg1" Location="6,18,553,512" Name="lbUP" Show="fals"/>
+      <Label Inherit="" Location="0,256,256,194" Name="lbDown" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="0,0,570,28" Text="" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="533,32,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="256,0,256,256" Name="626" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,256,194" Name="878" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="512,0,220,256" Name="770" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="512,256,220,194" Name="823" Show="false">
+        <BackgroundImage File="" Source="0,0,176,194"/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,565,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="224,0,124,68" Name="1268" Show="true" Text="$L:1044$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="14,167,536,296" Name="670" Show="true"/>
+      <ListBox BackgroundColor="" Inherit="" Location="18,172,528,288" Name="lstGuildIndx" Show="true" Text="">
+        <Scripts>
+          <OnLoad>layWorld_frmGuildIndexPageEx_lstGuildIndx_OnLoad(self)</OnLoad>
+          <OnRDown>layWorld_frmGuildIndexPageEx_lstGuildIndx_OnRDown(self,mouse_x,mouse_y)</OnRDown>
+          <OnSelect>layWorld_frmGuildIndexPageEx_lstGuildIndx_OnSelect(self)</OnSelect>
+        </Scripts>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Show="true" Text="$L:1238$" TextColor="#ffe0e020" Width="92"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Show="true" Text="$L:1239$" TextColor="#ffe0e020" Width="100"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Show="true" Text="$L:1240$" TextColor="#ffe0e020" Width="94"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Show="true" Text="$L:1241$" TextColor="#ffe0e020" Width="102"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Show="true" Text="$L:1242$" TextColor="#ffe0e020" Width="34"/>
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Show="true" Text="$L:1243$" TextColor="#ffe0e020" Width="72"/>
+      </ListBox>
+      <Label Inherit="bg3" Location="233,54,307,106" Name="1283" Show="true"/>
+      <EditBox BackgroundColor="#ee000000" Inherit="" Location="236,57,300,100" MaxChar="200" Name="edbGuildInfo" Show="true" WordWrap="true">
+        <Scripts>
+          <OnTextChanged>layWorld_frmGuildIndexPageEx_edbGuildInfo_OnTextChanged(self)</OnTextChanged>
+        </Scripts>
+      </EditBox>
+      <Button Inherit="PushButton" Location="345,470,90,20" Name="btGuideNews" Show="true" Text="$L:1045$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btGuideNews_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="30,470,90,20" Name="btAddPlayer" Show="true" Text="$L:1046$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btAddPlayer_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="135,470,90,20" Name="btMovePlayer" Show="true" Text="$L:1047$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btMovePlayer_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="240,470,90,20" Name="btGuildManger" Show="true" Text="$L:1048$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btGuildManger_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="30,498,90,20" Name="btPlayerNameSet" Show="true" Text="$L:1049$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btPlayerNameSet_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="135,498,90,20" Name="btLocalGuildName" Show="true" Text="$L:1050$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btLocalGuildName_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="240,498,90,20" Name="btGuildMaster" Show="true" Text="$L:1051$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btGuildMaster_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="345,498,90,20" Name="btGuildOver" Show="true" Text="$L:1052$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btGuildOver_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="450,470,90,20" Name="btAppendUniteGuild" Show="true" Text="$L:1306$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btAppendUniteGuild_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="450,498,90,20" Name="btGuildPK" Show="true" Text="$L:1309$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildIndexPageEx_btGuildPK_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" Inherit="" Location="15,76,90,18" Name="1140" Show="true" Text="$L:1060$"/>
+      <Label AlignCol="CENTER" Inherit="" LineSpacing="4" Location="105,75,120,20" Name="lbGuildName" Show="true" Text="" TextColor="#ff20e020">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" Location="15,100,90,18" Name="1205" Show="true" Text="$L:1061$"/>
+      <Label AlignCol="CENTER" Inherit="" LineSpacing="4" Location="105,98,50,20" Name="lbGuildPoint" Show="true" Text="">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <CheckButton Inherit="DefaultChkBtn" Location="31,142,140,20" Name="ckbShowOline" Show="true" Text="$L:1062$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        <Scripts>
+          <OnLoad>self:SetChecked(true)</OnLoad>
+          <OnLClick>layWorld_frmGuildIndexPageEx_ckbShowOline_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <EditBox EnableInput="false" Inherit="" Location="29,121,200,20" Name="edbGuildPlayerNumber" Show="true"/>
+      <Label AlignLine="CENTER" Inherit="" Location="34,48,170,22" Name="lbBulletinTitle" Show="true" Text="今日帮会信息" TextColor="#ffe0e010" TextFont="$L:1$" TextSize="$L:3$">
+        <Scripts>
+          <OnLoad/>
+        </Scripts>
+      </Label>
+      <Anchors>
+        <Anchor offset="-10,0" point="RIGHT"/>
+        <Anchor offset="0,130" point="TOP"/>
+      </Anchors>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("ToggleGuild")
+		self:RegisterScriptEventNotify("CEV_GUILD_LOCAL_DATA_CHANGED")</OnLoad>
+        <OnEvent>if event == "ToggleGuild" then
+				if (arg[1] ~= EV_EXCUTE_EVENT_KEY_DOWN) and (arg[1] ~= EV_EXCUTE_EVENT_ON_LCLICK) then
+					return
+				end
+				layWorld_frmGuildIndexPageEx_Show(self)
+			elseif event == "CEV_GUILD_LOCAL_DATA_CHANGED" then
+				self.NeedRefresh = true;
+				layWorld_frmGuildIndexPageEx_Refresh(self)
+			end</OnEvent>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="10,10,300,380" Name="frmLocalGuildMangerEx" Show="false" Size="300,380">
+      <TitleBarButton Location="0,0,290,28"/>
+      <Label Inherit="bg1" Location="6,18,280,350" Name="963" Show="fals"/>
+      <Label Inherit="bg3" Location="96,310,110,20" Name="87332" Show="true"/>
+      <Label Inherit="bg3" Location="14,76,263,208" Name="5243" Show="true"/>
+      <Label Inherit="" Location="-2,254,256,100" Name="1035" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <CloseButton Location="261,30,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="72,50,147,24" Name="lbLocalGuildName" Show="true">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <ListBox BackgroundColor="" DrawHeader="false" Inherit="" Location="18,80,255,200" Name="ltbLocalGuild" Show="true">
+        <Scripts>
+          <OnLoad>layWorld_frmLocalGuildMangerEx_ltbLocalGuild_OnLoad(self)</OnLoad>
+          <OnSelect>layWorld_frmLocalGuildMangerEx_ltbLocalGuild_OnSelect()</OnSelect>
+        </Scripts>
+      </ListBox>
+      <Label AlignCol="CENTER" Inherit="" Location="76,288,150,20" Name="1755" Show="true" Text="$L:1054$"/>
+      <EditBox AlignCol="CENTER" BackgroundColor="" ColSpacing="4" Inherit="" LineSpacing="4" Location="97,310,110,20" MaxChar="12" Name="edbRenameLocalGuild" Show="true"/>
+      <Button Inherit="PushButton" Location="120,335,60,20" Name="btRenameLocalGuild" Show="true" Text="$L:1055$">
+        <Scripts>
+          <OnLClick>layWorld_frmLocalGuildMangerEx_btRenameLocalGuild_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="TemplateNormalTitle" Location="-1,1,293,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,120,68" Name="1419" Show="true" Text="$L:1053$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Anchors>
+        <Anchor point="TOP" relativeTo="layWorld.frmGuildIndexPageEx"/>
+        <Anchor offset="8,0" point="RIGHT" relativePoint="LEFT" relativeTo="layWorld.frmGuildIndexPageEx"/>
+      </Anchors>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_GUILD_SELF_REAL_DESTROY")
+		self:RegisterScriptEventNotify("CEV_GUILD_SELF_LEFT")
+		self:RegisterScriptEventNotify("CEV_GUILD_HOUSEHOLD_UPDATE")</OnLoad>
+        <OnEvent>if event == "CEV_GUILD_SELF_REAL_DESTROY" then
+				self:Hide()
+			elseif event == "CEV_GUILD_SELF_LEFT" then
+				self:Hide()
+			elseif event == "CEV_GUILD_HOUSEHOLD_UPDATE" then
+				layWorld_frmLocalGuildMangerEx_Refresh()
+			end</OnEvent>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="180,75,300,380" Name="frmUniteGuild" Show="false" Size="300,380">
+      <TitleBarButton Location="1,0,290,28"/>
+      <Label Inherit="bg1" Location="6,18,280,350" Name="963" Show="fals"/>
+      <Label Inherit="bg3" Location="14,66,263,258" Name="5243" Show="true"/>
+      <CloseButton Location="261,30,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <ListBox BackgroundColor="" DrawHeader="true" Inherit="" Location="18,70,255,250" Name="ltbUniteGuild" Show="true">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1305$" TextColor="#ffe0e020" Width="240"/>
+      </ListBox>
+      <Button Inherit="PushButtonLong" Location="33,332,100,20" Name="btAppendUniteGuild" Show="true" Text="$L:1307$">
+        <Scripts>
+          <OnLClick>layWorld_frmUniteGuild_btAppendUniteGuild_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="TemplateNormalTitle" Location="-1,1,293,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,120,68" Name="1419" Show="true" Text="$L:1304$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Button Inherit="PushButtonLong" Location="157,332,100,20" Name="btDeleteUniteGuild" Show="true" Text="$L:1308$">
+        <Scripts>
+          <OnLClick>layWorld_frmUniteGuild_btDeleteUniteGuild_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Anchors>
+        <Anchor point="TOP" relativeTo="layWorld.frmGuildIndexPageEx"/>
+        <Anchor offset="8,0" point="RIGHT" relativePoint="LEFT" relativeTo="layWorld.frmGuildIndexPageEx"/>
+      </Anchors>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_GUILD_SELF_REAL_DESTROY")
+			self:RegisterScriptEventNotify("CEV_GUILD_SELF_LEFT")
+			self:RegisterScriptEventNotify("CEV_GUILD_BUND_CHANGED")</OnLoad>
+        <OnEvent>if event == "CEV_GUILD_SELF_REAL_DESTROY" then
+					self:Hide()
+				elseif event == "CEV_GUILD_SELF_LEFT" then
+					self:Hide()
+				elseif event == "CEV_GUILD_BUND_CHANGED" then
+					layWorld_frmUniteGuild_Refresh()
+				end</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

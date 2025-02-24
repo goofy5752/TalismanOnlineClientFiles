@@ -1,0 +1,8 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+"ID","Name","Comment","Directory","area","pos","nNpcRebirthType"
+1,$L:Scenestable_yaorendongfufb$,$L:Scenestable_yaorendongfufb$,yaorendongfu/,"94 -255 512 114;
+-7 -113 100 263;
+-11 -258 101 -111;
+5 -463 251 -351;
+93 112 513 273;","433 52 12;",0

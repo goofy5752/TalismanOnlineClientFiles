@@ -1,0 +1,11 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生类型
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:fuben015_kongquehezhishang$,sfb015,sfb015/,"-257 767 2 1027;
+-257 510 2 769;
+-513 767 -255 1026;
+-513 511 -255 770;
+-564 643 -478 773;
+-751 882 -681 996;
+-769 518 -678 627;","-96 633 0;",0
+ 

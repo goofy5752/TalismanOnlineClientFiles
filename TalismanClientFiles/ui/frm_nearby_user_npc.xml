@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_nearby_user_npc.lua">Script</Script>
+  <Layer Name="layWorld">
+    <Form Inherit="" Location="230,131,400,450" Name="FrmNearby" Show="false">
+      <Label Inherit="bg1" Location="22,18,370,430" Name="lbUP" Show="fals">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="15,0,385,44" Name="lbTitle" Show="true"/>
+      <TitleBarButton Location="1,3,400,28" TextFont="$L:1$" TextSize="$L:4$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="127,0,160,66" Name="11141" Show="true" Text="$L:1244$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="369,26,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="28,82,358,6" Name="12268" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+      <CheckButton CheckStyle="false" Inherit="" Location="136,48,80,40" Name="cbNPC" Show="true" Text="$L:1246$">
+        <NormalImage File="tz_010" Source="83,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_FrmNearby_cbNpc_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="57,48,80,40" Name="cbUser" Show="true" Text="$L:1245$">
+        <NormalImage File="tz_010" Source="83,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_FrmNearby_cbUser_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label Inherit="" Location="39,96,340,340" MouseEvent="true" MouseMove="true" Name="lbUser" Pick="false" Show="true">
+        <Label Inherit="bg3" Location="1,3,340,292" Name="15110" Show="true"/>
+        <ListBox Inherit="" Location="6,9,330,280" Name="lsbUser" Show="true" Text="">
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1249$" TextColor="#eefff902" Width="100"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1250$" TextColor="#eefff902" Width="40"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1251$" TextColor="#eefff902" Width="90"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1252$" TextColor="#eefff902" Width="80"/>
+          <Scripts>
+            <OnRDown>layWorld_FrmNearby_lbUser_lsbUser_OnRDown(self, mouse_x, mouse_y);</OnRDown>
+          </Scripts>
+        </ListBox>
+        <Button Inherit="PushButton" Location="45,302,100,24" Name="btRefresh" Show="true" Text="$L:1247$">
+          <Scripts>
+            <OnLClick>layWorld_FrmNearby_lbUser_btRefresh_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="190,302,100,24" Name="btClose" Show="true" Text="$L:1248$">
+          <Scripts>
+            <OnLClick>layWorld_FrmNearby_lbUser_btClose_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Scripts>
+          <OnLoad>layWorld_FrmNearby_lbUser_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_FrmNearby_lbUser_OnEvent(self, event, arg);</OnEvent>
+          <OnShow>layWorld_FrmNearby_lbUser_OnShow(self)</OnShow>
+        </Scripts>
+      </Label>
+      <Label Inherit="" Location="39,96,340,340" MouseEvent="true" MouseMove="true" Name="lbNpc" Pick="false" Show="false">
+        <Label Inherit="bg3" Location="1,3,340,212" Name="10374" Show="true"/>
+        <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="6,9,330,200" Name="ebNpcList" Show="true">
+          <Scripts>
+            <OnHyperLink>layWorld_FrmNearby_lbNpc_ebNpcList_OnHyperLink(self, hypertype, hyperlink);</OnHyperLink>
+          </Scripts>
+        </EditBox>
+        <Button Inherit="PushButton" Location="45,302,100,24" Name="btRefresh" Show="true" Text="$L:1247$">
+          <Scripts>
+            <OnLClick>layWorld_FrmNearby_lbNpc_btRefresh_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="190,302,100,24" Name="btClose" Show="true" Text="$L:1248$">
+          <Scripts>
+            <OnLClick>layWorld_FrmNearby_lbNpc_btClose_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="bg3" Location="1,214,340,80" Name="4017" Show="true"/>
+        <EditBox Inherit="" KeyboardEvent="false" Location="6,219,330,70" MultiLine="true" Name="EdbNPCintroduce" Show="true" Text="$L:1256$" WordWrap="true"/>
+        <Scripts>
+          <OnLoad>layWorld_FrmNearby_lbNpc_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_FrmNearby_lbNpc_OnEvent(self, event, arg);</OnEvent>
+          <OnShow>layWorld_FrmNearby_lbNpc_OnShow(self)</OnShow>
+        </Scripts>
+      </Label>
+      <Scripts>
+        <OnLoad>layWorld_FrmNearby_OnLoad(self)</OnLoad>
+        <OnShow>layWorld_FrmNearby_OnShow(self)</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmWareBagEx">
+    <Templates>
+      <Widget Location="0,0,204,90" Name="TemplateWtWbag">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="0,0,204,20" Name="lbTimeLimit" Show="false" Text="LimitTime"/>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="0,20,34,34" Name="BtWbag1" Show="true">
+		  <Param key="line" value="1" type="number"/>
+		  <Param key="column" value="1" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="34,20,34,34" Name="BtWbag2" Show="true">
+		  <Param key="line" value="1" type="number"/>
+		  <Param key="column" value="2" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="68,20,34,34" Name="BtWbag3" Show="true">
+		  <Param key="line" value="1" type="number"/>
+		  <Param key="column" value="3" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="102,20,34,34" Name="BtWbag4" Show="true">
+		  <Param key="line" value="1" type="number"/>
+		  <Param key="column" value="4" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="136,20,34,34" Name="BtWbag5" Show="true">
+		  <Param key="line" value="1" type="number"/>
+		  <Param key="column" value="5" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="170,20,34,34" Name="BtWbag6" Show="true">
+		  <Param key="line" value="1" type="number"/>
+		  <Param key="column" value="6" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="0,54,34,34" Name="BtWbag7" Show="true">
+		  <Param key="line" value="2" type="number"/>
+		  <Param key="column" value="1" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="34,54,34,34" Name="BtWbag8" Show="true">
+		  <Param key="line" value="2" type="number"/>
+		  <Param key="column" value="2" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="68,54,34,34" Name="BtWbag9" Show="true">
+		  <Param key="line" value="2" type="number"/>
+		  <Param key="column" value="3" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="102,54,34,34" Name="BtWbag10" Show="true">
+		  <Param key="line" value="2" type="number"/>
+		  <Param key="column" value="4" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="136,54,34,34" Name="BtWbag11" Show="true">
+		  <Param key="line" value="2" type="number"/>
+		  <Param key="column" value="5" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragOut="true" Enable="true" Inherit="" Location="170,54,34,34" Name="BtWbag12" Show="true">
+		  <Param key="line" value="2" type="number"/>
+		  <Param key="column" value="6" type="number"/>
+          <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+			<OnLoad>layWorld_frmWarebagEx_BtWbag_OnLoad(self)</OnLoad>
+            <OnHint>layWorld_frmWarebagEx_BtWbag_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmWarebagEx_BtWbag_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmWarebagEx_BtWbag_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Label BackgroundColor="#6633dd33" Inherit="TemplateLayerFull" Location="0,0,1,1" MouseEvent="true" MouseMove="true" Name="lbLock" Pick="true" Show="false"/>
+      </Widget>
+    </Templates>
+  </Theme>
+  <Script file="frm_Warebag_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="390,92,440,560" Name="frmWarebagEx" Show="false" Size="440,560">
+      <Label Inherit="bg1" Location="0,0,220,560" Name="543" Show="true"/>
+      <Label Inherit="bg1" Location="220,0,220,560" Name="2285" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="858" Show="false" Size=""/>
+      <TitleBarButton Location="0,0,294,30" Show="false" TextFont="$L:1$" TextSize="$L:18$"/>
+      <CloseButton Location="258,8,21,21" Show="false">
+      <NormalImage File="tz_newimage01" Source="402,159,21,21"/>
+      <PushedImage File="tz_newimage01" Source="402,181,21,21"/>
+      </CloseButton>
+      <Widget Inherit="TemplateWtWbag" Location="  8,  8,204,90" Name="wtWbag1">
+		<Param key="ID" value="1" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="  8, 98,204,90" Name="wtWbag2">
+		<Param key="ID" value="2" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="  8,188,204,90" Name="wtWbag3">
+		<Param key="ID" value="3" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="  8,278,204,90" Name="wtWbag4">
+		<Param key="ID" value="4" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="  8,368,204,90" Name="wtWbag5">
+		<Param key="ID" value="5" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="  8,458,204,90" Name="wtWbag6">
+		<Param key="ID" value="6" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="228,  8,204,90" Name="wtWbag7">
+		<Param key="ID" value="7" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="228, 98,204,90" Name="wtWbag8">
+		<Param key="ID" value="8" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="228,188,204,90" Name="wtWbag9">
+		<Param key="ID" value="9" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="228,278,204,90" Name="wtWbag10">
+		<Param key="ID" value="10" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="228,368,204,90" Name="wtWbag11">
+		<Param key="ID" value="11" type="number"/>
+	  </Widget>
+      <Widget Inherit="TemplateWtWbag" Location="228,458,204,90" Name="wtWbag12">
+		<Param key="ID" value="12" type="number"/>
+	  </Widget>
+      <Anchors>
+        <Anchor point="TOP" relativeTo="frmWarehouseEx"/>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frmWarehouseEx"/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,68" Name="18335" Show="false" Text="$L:468$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_BANK_RECV_DATA")
+				self:RegisterScriptEventNotify("CEV_BANK_RECVITEM_UPDATE_ULTRABAG")
+				self:RegisterScriptEventNotify("CEV_BANK_RECVITEM_UPDATE_ULTRAITEM")
+				--[[
+				self:RegisterScriptEventNotify("EVENT_SelfEnterWorld")
+				]]
+				</OnLoad>
+        <OnEvent>if event == "CEV_BANK_RECV_DATA" then
+					layWorld_frmWarebagEx_Refresh()
+				elseif event == "CEV_BANK_RECVITEM_UPDATE_ULTRABAG" then
+					layWorld_frmWarebagEx_Refresh()
+				elseif event == "CEV_BANK_RECVITEM_UPDATE_ULTRAITEM" then
+					if arg[1] == 0 then return end
+					layWorld_frmWarebagEx_Item_Refresh(arg[1], arg[2] + 1, arg[3] + 1)
+					--[[
+				elseif event == "EVENT_SelfEnterWorld" then
+					layWorld_frmWarebagEx_Restructuring()
+					]]
+			end</OnEvent>
+        <OnShow>layWorld_frmWarebagEx_OnShow(self)</OnShow>
+        <OnHide>layWorld_frmWarebagEx_OnHide()</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

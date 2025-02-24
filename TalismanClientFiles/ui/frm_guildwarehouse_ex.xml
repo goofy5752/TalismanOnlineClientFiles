@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_GuildWarehouse_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="0,220,295,325" Name="frmGuildWarehouseEx" Show="false" Size="295,325">
+      <Label Inherit="bg1" Location="7,19,280,306" Name="543" Show="fals"/>
+      <Label Inherit="" Location="0,7,256,314" Name="858" Show="false" Size="">
+        <BackgroundImage File="" Source="0,0,256,256"/>
+      </Label>
+      <TitleBarButton Location="0,0,299,28" Text="" TextFont="$L:1$" TextSize="$L:18$"/>
+      <CloseButton Location="262,30,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="93,253,60,20" Name="goldnum" Show="true" Text="$L:469$">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="180,253,31,20" Name="silvernum" Show="true" Text="$L:470$">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="237,253,31,20" Name="coppernum" Show="true" Text="$L:471$">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" LineSpacing="6" Location="42,61,147,24" Name="lbGuildWarehouse" Show="true" Text="">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="30,252,34,20" Name="lbTotal" Show="true" Text="$L:472$">
+        <BackgroundImage File="tz_010" Source="448,269,31,14"/>
+      </Label>
+      <Button Inherit="PushButton" Location="23,287,70,20" Name="btnSaveMoney" Show="true" Text="$L:473$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildWarehouseEx_btnSaveMoney_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="113,287,70,20" Name="btnLoadMoney" Show="true" Text="$L:474$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildWarehouseEx_btnLoadMoney_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="bg3" Location="36,88,221,149" Name="6043" Show="true"/>
+      <Label Inherit="" Location="40,92,213,141" Name="lbItems" Show="true">
+        <BackgroundImage File="tz_011" Source="298,2,213,141"/>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,2,31,31" Name="btItem1" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,2,31,31" Name="btItem2" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,2,31,31" Name="btItem3" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,2,31,31" Name="btItem4" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,2,31,31" Name="btItem5" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,2,31,31" Name="btItem6" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,37,31,31" Name="btItem7" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,37,31,31" Name="btItem8" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,37,31,31" Name="btItem9" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,37,31,31" Name="btItem10" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,37,31,31" Name="btItem11" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,37,31,31" Name="btItem12" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,72,31,31" Name="btItem13" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,72,31,31" Name="btItem14" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,72,31,31" Name="btItem15" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,72,31,31" Name="btItem16" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,72,31,31" Name="btItem17" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,72,31,31" Name="btItem18" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="3,107,31,31" Name="btItem19" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="38,107,31,31" Name="btItem20" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="73,107,31,31" Name="btItem21" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="108,107,31,31" Name="btItem22" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="143,107,31,31" Name="btItem23" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="178,107,31,31" Name="btItem24" Show="true">
+          <HighlightImage File="tz_010" Source="186,376,48,48"/>
+          <PushedImage File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmGuildWarehouseEx_btItem_OnHint(self)</OnHint>
+            <OnRClick>layWorld_frmGuildWarehouseEx_btItem_OnRClick(self)</OnRClick>
+            <OnDragIn>layWorld_frmGuildWarehouseEx_btItem_OnDragIn(self, drag)</OnDragIn>
+          </Scripts>
+        </Button>
+      </Label>
+      <Label Inherit="" Location="67,251,25,23" Name="714" Show="true">
+        <BackgroundImage File="tz_010" Source="413,487,25,23"/>
+      </Label>
+      <Label Inherit="" Location="155,252,24,23" Name="857" Show="true">
+        <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+      </Label>
+      <Label Inherit="" Location="212,251,23,23" Name="1018" Show="true">
+        <BackgroundImage File="tz_010" Source="477,485,23,26"/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,293,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,120,68" Name="18779" Show="true" Text="$L:1096$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Button Inherit="" Location="205,67,12,14" Name="btGuildLeft" Show="true">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmGuildWarehouseEx_btGuildLeft_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="239,67,13,14" Name="btGuildRight" Show="true">
+        <NormalImage File="tz_010" Source="77,382,12,14"/>
+        <PushedImage File="tz_010" Source="77,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmGuildWarehouseEx_btGuildRight_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label BackgroundColor="#ee000000" Inherit="" Location="217,65,22,18" Name="lbGuildHouse2" Show="true">
+        <BackgroundImage File="tz_010" Source="459,194,30,20"/>
+      </Label>
+      <Button Inherit="PushButton" Location="201,287,70,20" Name="btGuildWareHouseHistory" Show="true" Text="$L:1097$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildWarehouseEx_btGuildWareHouseHistory_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Anchors>
+        <Anchor offset="0,220" point="TOP"/>
+        <Anchor point="LEFT"/>
+      </Anchors>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_GUILD_RECV_GUILD_BANK_DATA")
+		self:RegisterScriptEventNotify("CEV_GUILD_SELF_REAL_DESTROY")
+		self:RegisterScriptEventNotify("CEV_GUILD_BANK_DATA_CHANGED")</OnLoad>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnEvent>if event == "CEV_GUILD_RECV_GUILD_BANK_DATA" then
+				layWorld_frmGuildWarehouseEx_Guild_Recv_BankDate(self, arg)
+			elseif event=="CEV_GUILD_SELF_REAL_DESTROY" then
+				self:Hide()
+				UI_Guild_Bank_Npc_Object_Id = 0
+			elseif event == "CEV_GUILD_BANK_DATA_CHANGED" then
+				layWorld_frmGuildWarehouseEx_Refresh()
+			end</OnEvent>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="247,231,534,500" Name="frmHistoryGuildEx" Show="false" Size="534,500">
+      <Anchors>
+        <Anchor point="TOP" relativeTo="layWorld.frmGuildWarehouseEx"/>
+        <Anchor offset="-8,0" point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frmGuildWarehouseEx"/>
+      </Anchors>
+      <TitleBarButton Location="1,3,530,28"/>
+      <Label Inherit="bg1" Location="6,18,520,430" Name="611" Show="true"/>
+      <Label Inherit="" Location="256,0,256,256" Name="713" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="bg3" Location="14,88,502,326" Name="6643" Show="true"/>
+      <Label Inherit="" Location="1,256,256,174" Name="746" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,256,174" Name="786" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <CloseButton Location="501,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,532,47" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="206,0,120,68" Name="1027" Show="true" Text="$L:1097$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <ListBox AutoScrollV="false" BackgroundColor="#ee000000" Inherit="" Location="19,93,492,316" Name="lstGuildHistoryItem" Show="true">
+        <Scripts>
+          <OnLoad>layWorld_frmHistoryGuildEx_lstGuildHistory_OnLoad(self)</OnLoad>
+        </Scripts>
+      </ListBox>
+      <CheckButton Inherit="" Location="16,49,76,32" Name="ckItemPage" Show="true" Text="$L:276$">
+        <NormalImage Blend="true" File="tz_010" Source="82,231,80,40"/>
+        <PushedImage Blend="true" File="tz_010" Source="0,231,80,40"/>
+        <CheckImage Blend="true" File="tz_010" Source="0,231,80,40"/>
+        <Scripts>
+          <OnLoad>self:SetChecked(true)</OnLoad>
+          <OnLClick>layWorld_frmHistoryGuildEx_ckItemPage_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="92,49,76,32" Name="ckGoldPage" Show="true" Text="$L:955$">
+        <NormalImage Blend="true" File="tz_010" Source="82,231,80,40"/>
+        <PushedImage Blend="true" File="tz_010" Source="0,231,80,40"/>
+        <CheckImage Blend="true" File="tz_010" Source="0,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_frmHistoryGuildEx_ckGoldPage_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label Inherit="" Location="12,77,508,6" Name="34952" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+      <ListBox AutoScrollV="false" BackgroundColor="#ee000000" Inherit="" Location="19,93,492,316" Name="lstGuildHistoryMoney" Show="false">
+        <Scripts>
+          <OnLoad>layWorld_frmHistoryGuildEx_lstGuildHistory_OnLoad(self)</OnLoad>
+        </Scripts>
+      </ListBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="255,417,20,17" Name="lbPage" Show="true" Text="1">
+        <BackgroundImage File="tz_010" Source="458,194,31,20"/>
+      </Label>
+      <Button Inherit="" Location="243,418,12,14" Name="btnPre" Show="true">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+        <DisabledImage File="tz_010" Source="51,382,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmHistoryGuildEx_btnPre_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="276,418,12,14" Name="btnNext" Show="true">
+        <NormalImage File="tz_010" Source="77,382,12,14"/>
+        <PushedImage File="tz_010" Source="77,399,12,14"/>
+        <DisabledImage File="tz_010" Source="77,382,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmHistoryGuildEx_btnNext_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_GUILD_SELF_REAL_DESTROY")
+			self:RegisterScriptEventNotify("CEV_GUILD_RECV_BANK_HISTORY")</OnLoad>
+        <OnEvent>if event=="CEV_GUILD_SELF_REAL_DESTROY" then
+				self:Hide()
+			elseif event == "CEV_GUILD_RECV_BANK_HISTORY" then
+				if arg[1] == 1 then
+					local lstGuildHistoryItem = SAPI.GetChild(self, "lstGuildHistoryItem")
+					layWorld_frmHistoryGuildEx_lstGuildHistoryItem_Refresh(lstGuildHistoryItem, arg[2])
+				elseif arg[1] == 0 then
+					local lstGuildHistoryMoney = SAPI.GetChild(self, "lstGuildHistoryMoney")
+					layWorld_frmHistoryGuildEx_lstGuildHistoryMoney_Refresh(lstGuildHistoryMoney, arg[2])
+				end
+			end</OnEvent>
+        <OnUpdate>layWorld_frmHistoryGuildEx_OnUpdate(self)</OnUpdate>
+      </Scripts>
+    </Form>
+    <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="347,606,256,120" Name="frmGuildBankMoneyEx" Show="false" Size="220,120">
+      <Label Inherit="bg1" Location="0,0,220,120" Name="10501" Show="true"/>
+      <BackgroundImage/>
+      <Button Inherit="PushButton" Location="30,82,50,20" Name="btSetOk" Show="true" Text="$L:466$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildBankMoneyEx_btSetOk_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="136,82,50,20" Name="btSetCancel" Show="true" Text="$L:467$">
+        <Scripts>
+          <OnLClick>layWorld_frmGuildBankMoneyEx_btSetCancel_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="18,24,185,24" Name="lbSavemoney" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="37,41,60,20" MaxChar="4" Name="EdbGold" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+      </EditBox>
+      <EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="122,41,30,20" MaxChar="2" Name="EdbAG" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </EditBox>
+      <EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="177,41,30,20" MaxChar="2" Name="EdbCu" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </EditBox>
+      <Anchors>
+        <Anchor offset="0,-100" point="BOTTOM"/>
+        <Anchor offset="-60,0" point="CENTERH"/>
+      </Anchors>
+      <Label Inherit="TemplateNormalTitle" Location="-7,-19,233,35" Name="5906" Show="true">
+        <Label Name="lbTitelText" Show="false"/>
+      </Label>
+      <CloseButton Location="198,7,13,13" Show="ture">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <TitleBarButton Location="-5,-19,230,35" Show="true"/>
+      <Label Inherit="" Location="12,39,24,22" Name="2554" Show="true">
+        <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+      </Label>
+      <Label Inherit="" Location="97,39,24,22" Name="2674" Show="true">
+        <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+      </Label>
+      <Label Inherit="" Location="152,38,24,26" Name="2794" Show="true">
+        <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+      </Label>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnHide>layWorld_frmGuildBankMoneyEx_OnHide(self)</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

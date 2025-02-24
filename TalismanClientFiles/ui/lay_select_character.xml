@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="laySelectChar" Show="fals">
+	<Widget Inherit="TemplateLayerFull" Name="lbLayerSelectChar" Show="false">
+    <Button Inherit="PushButton" Location="587,737,100,24" Name="btEnterGame" Show="true" Size="100,24" Text="$L:198$">
+      <Anchors>
+        <Anchor offset="0,-20" point="BOTTOM"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+    </Button>
+    <Button Inherit="PushButton" Location="83,377,100,24" Name="btReturn" Show="true" Size="100,24" Text="$L:199$">
+      <Anchors>
+        <Anchor offset="0,-20" point="BOTTOM"/>
+        <Anchor offset="-20,0" point="RIGHT"/>
+      </Anchors>
+    </Button>
+    <Button Inherit="PushButton" Location="398,106,100,24" Name="btDelRole" Show="true" Size="100,24" Text="$L:200$">
+      <Anchors>
+        <Anchor offset="0,-20" point="BOTTOM"/>
+        <Anchor offset="-20,0" point="RIGHT" relativePoint="LEFT" relativeTo="btReturn"/>
+      </Anchors>
+    </Button>
+    <Form Inherit="NoTitleBarForm" Location="930,20,256,426" Name="frmSelectCharacter" Show="false" Size="296,446">
+      <Anchors>
+        <Anchor offset="0,20" point="TOP"/>
+        <Anchor offset="-10,0" point="RIGHT"/>
+      </Anchors>
+      <Label Inherit="bg1" Location="7,19,280,426" Name="532" Show="true"/>
+      <Label Inherit="" Location="0,255,256,170" Name="474" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,293,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" Inherit="" Location="63,27,170,18" Name="lbServerName" Show="true" Size="170,18" Text="$L:201$">
+        <Anchors>
+          <Anchor point="CENTERH"/>
+          <Anchor offset="0,28" point="TOP"/>
+        </Anchors>
+      </Label>
+      <Button Inherit="PushButton" Location="78,59,100,24" Name="btSelectServer" Show="true" Size="100,24" Text="$L:202$">
+        <Anchors>
+          <Anchor point="CENTERH"/>
+          <Anchor offset="0,10" point="TOP" relativePoint="BOTTOM" relativeTo="lbServerName"/>
+        </Anchors>
+      </Button>
+      <CheckButton CheckStyle="false" Inherit="" Location="26,88,236,72" Name="ckbSelectChar00" Show="fals" Size="267,72">
+        <Anchors>
+          <Anchor offset="14,0" point="LEFT" relativePoint="LEFT"/>
+          <Anchor offset="0,10" point="TOP" relativePoint="BOTTOM" relativeTo="btSelectServer"/>
+        </Anchors>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbName" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP"/>
+            <Anchor offset="5,0" point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbLevel" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="lbName"/>
+            <Anchor offset="5,0" point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbPosition" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="5,0" point="LEFT"/>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="lbLevel"/>
+          </Anchors>
+        </Label>
+        <PushedImage File="tz_012" Source="4,342,249,123"/>
+        <CheckImage File="tz_012" Source="4,342,249,123"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="10,140,236,72" Name="ckbSelectChar01" Show="fals" Size="267,72">
+        <Anchors>
+          <Anchor offset="14,0" point="LEFT" relativePoint="LEFT"/>
+          <Anchor offset="0,2" point="TOP" relativePoint="BOTTOM" relativeTo="ckbSelectChar00"/>
+        </Anchors>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbName" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP"/>
+            <Anchor offset="5,0" point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbLevel" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="lbName"/>
+            <Anchor offset="5,0" point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbPosition" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="5,0" point="LEFT"/>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="lbLevel"/>
+          </Anchors>
+        </Label>
+        <PushedImage File="tz_012" Source="4,342,249,123"/>
+        <CheckImage File="tz_012" Source="4,342,249,123"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="9,232,280,72" Name="ckbSelectChar02" Show="fals" Size="267,72">
+        <Anchors>
+          <Anchor offset="14,0" point="LEFT" relativePoint="LEFT"/>
+          <Anchor offset="0,2" point="TOP" relativePoint="BOTTOM" relativeTo="ckbSelectChar01"/>
+        </Anchors>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbName" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP"/>
+            <Anchor offset="5,0" point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbLevel" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="lbName"/>
+            <Anchor offset="5,0" point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label Inherit="" Location="10,10,100,18" MouseEvent="false" Name="lbPosition" Show="true" Size="200,18">
+          <Anchors>
+            <Anchor offset="5,0" point="LEFT"/>
+            <Anchor offset="0,5" point="TOP" relativePoint="BOTTOM" relativeTo="lbLevel"/>
+          </Anchors>
+        </Label>
+        <CheckImage File="tz_012" Source="4,342,249,123"/>
+        <PushedImage File="tz_012" Source="4,342,249,123"/>
+      </CheckButton>
+      <Button Inherit="PushButton" Location="21,40,100,24" Name="btCreateRole" Show="true" Size="100,24" Text="$L:203$">
+        <Anchors>
+          <Anchor offset="0,-14" point="BOTTOM" relativePoint="BOTTOM"/>
+          <Anchor point="CENTERH"/>
+        </Anchors>
+      </Button>
+    </Form>
+    <Label BackgroundColor="#80000000" Inherit="" Location="10,10,70,18" Name="lbMask" Show="false">
+      <Anchors>
+        <Anchor point="LEFT"/>
+        <Anchor point="RIGHT"/>
+        <Anchor point="TOP"/>
+        <Anchor point="BOTTOM"/>
+      </Anchors>
+    </Label>
+    <Form Inherit="NoTitleBarForm" Location="341,158,520,430" Name="frServies" Show="false" Size="540,450">
+      <Label Inherit="bg1" Location="6,18,480,380" Name="809" Show="true"/>
+      <Label Inherit="" Location="256,0,256,256" Name="810" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="0,256,256,174" Name="849" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,256,174" Name="889" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="bg3" Location="21,56,450,300" Name="7902" Show="true"/>
+      <Button Inherit="PushButton" Location="282,364,70,20" Name="btServiesOk" Show="true" Text="$L:205$"/>
+      <Button Inherit="PushButton" Location="395,364,70,20" Name="btServiesCancel" Show="true" Text="$L:206$"/>
+      <ListBox Inherit="" Location="26,61,440,288" Name="lstServers" Show="true">
+        <BorderImage/>
+      </ListBox>
+      <Label Inherit="TemplateNormalTitle" Location="0,2,490,47" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="364,12,130,24" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="316,4,145,25"/>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" Location="211,26,70,18" Name="1169" Show="true" Text="$L:204$"/>
+      <Anchors>
+        <Anchor point="CENTERV"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+    </Form>
+    <Button Inherit="" Location="472,840,100,24" Name="btLeft" Show="true" Size="34,34">
+      <Anchors>
+        <Anchor offset="0,-6" point="BOTTOM" relativePoint="TOP" relativeTo="laySelectChar.btEnterGame"/>
+        <Anchor offset="45,0" point="RIGHT" relativePoint="LEFT" relativeTo="laySelectChar.btEnterGame"/>
+      </Anchors>
+      <NormalImage File="tz_011" Source="68,256,34,34"/>
+      <PushedImage File="tz_011" Source="102,256,34,34"/>
+    </Button>
+    <Button Inherit="" Location="472,840,100,24" Name="btRight" Show="true" Size="34,34">
+      <Anchors>
+        <Anchor offset="0,-6" point="BOTTOM" relativePoint="TOP" relativeTo="laySelectChar.btEnterGame"/>
+        <Anchor offset="-45,0" point="LEFT" relativePoint="RIGHT" relativeTo="laySelectChar.btEnterGame"/>
+      </Anchors>
+      <NormalImage File="tz_011" Source="0,256,34,34"/>
+      <PushedImage File="tz_011" Source="34,256,34,34"/>
+    </Button>
+    <Form Inherit="NoTitleBarForm" Location="941,20,256,512" Name="frmPin" Show="false" Size="293,542" Level="0">
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor point="CENTERV"/>
+      </Anchors>
+      <Label Inherit="bg1" Location="20,19,256,512" Name="lbBg1" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="13,0,270,48" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="1,253,256,256" Name="lbBg2" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" Location="63,25,170,18" Name="lbPinName" Show="true" Size="170,18" Text="$L:201$"/>
+      <Button Inherit="PushButton" Location="54,493,80,22" Name="btPinOk" Show="true" Size="100,24" Text="$L:918$"/>
+      <Button Inherit="PushButton" Location="164,493,80,22" Name="btPinClear" Show="true" Size="100,24" Text="$L:919$"/>
+      <Label BackgroundColor="" Inherit="" Location="37,52,216,220" Name="lbPinNumberBg" Show="true"/>
+      <Label BackgroundColor="#99ee683a" Inherit="" Location="228,51,24,220" Name="lbPinX" Show="true"/>
+      <Label BackgroundColor="#99fff478" Inherit="" Location="36,231,216,20" Name="lbPinY" Show="true"/>
+      <Form Inherit="NoTitleBarForm" Location="71,322,160,160" Name="frmChekPoint" Show="true">
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="3,2,24,24" Name="btPoint1" Show="true" Text=" 1">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="29,2,24,24" Name="btPoint2" Show="true" Text=" 2">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="55,2,24,24" Name="btPoint3" Show="true" Text=" 3">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="81,2,24,24" Name="btPoint4" Show="true" Text=" 4">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="107,2,24,24" Name="btPoint5" Show="true" Text=" 5">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="3,27,24,24" Name="btPoint6" Show="true" Text=" 6">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="29,27,24,24" Name="btPoint7" Show="true" Text=" 7">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="55,27,24,24" Name="btPoint8" Show="true" Text=" 8">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="81,27,24,24" Name="btPoint9" Show="true" Text=" 9">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Enable="false" Inherit="" Location="106,27,24,24" Name="btPoint0" Show="true" Text=" 0">
+          <NormalImage File="tz_010" Source="490,-1,22,21"/>
+          <PushedImage File="tz_010" Source="490,30,22,21"/>
+          <DisabledImage File="tz_010" Source="490,30,22,21"/>
+        </Button>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="41,67,80,40" Name="lbPinIndex" Show="true"/>
+      </Form>
+      <EditBox AlignCol="CENTER" AlignLine="CENTER" EnableInput="false" Inherit="" Location="42,278,216,40" Name="lbPinIndex" Show="true" WordWrap="true"/>
+    </Form>
+	</Widget>
+  </Layer>
+</Ui>

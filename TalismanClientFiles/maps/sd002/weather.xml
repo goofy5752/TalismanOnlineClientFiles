@@ -1,0 +1,7 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x2">
+   <group colors="true" desc="" env="0xFF000000" envo="0xFF21556B" fog="0xFF000000" forfar="1400.000" fornear="1000.000" name="d" range="300.000" sun="0xFF4C4C4C" suno="0xFF68AE91">
+      <area bottom="872.089" left="10274.490" right="15341.812" top="-7330.475"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="sfsfs" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

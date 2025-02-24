@@ -1,0 +1,12 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x3">
+   <group colors="true" desc="" env="0xFF2D2D2D" envo="0xFF313131" fog="0xFF5192A2" forfar="1800.000" fornear="550.000" name="野猪区" range="300.000" sun="0xFF535353" suno="0xFF6D6D6D">
+      <area bottom="2529.774" left="86.814" right="5109.032" top="-146.677"/>
+      <area bottom="3937.840" left="2809.996" right="5106.637" top="2534.239"/>
+   </group>
+   <group colors="true" desc="" env="0xFF333333" envo="0xFF4C4C4C" fog="0xFFFF0000" forfar="1500.000" fornear="650.000" name="血精灵" range="300.000" sun="0xFF333333" suno="0xFF4C4C4C">
+      <area bottom="10296.509" left="-428.891" right="2840.520" top="2513.931"/>
+      <area bottom="10233.928" left="2814.163" right="5437.352" top="3930.831"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="dfgdfgd" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

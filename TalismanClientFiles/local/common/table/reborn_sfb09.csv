@@ -1,0 +1,5 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:ectype_61to65simenshan$,四门山副本重生点,simenshanfuben/,"249 507 540 917;
+232 914 557 1035;",418 532 13;,0

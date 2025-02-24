@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Business_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="104,192,294,542" Name="frmNpcShopEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,522" Name="858" Show="fals" Size=""/>
+      <Label Inherit="bg3" Location="22,47,250,460" Name="2314" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="475" Show="fals"/>
+      <TitleBarButton AlignLine="CENTER" Location="0,0,294,28"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="22,230,240,26" Name="2339" Show="true">
+        <Label Inherit="" Location="10,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010.tga" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="58,3,24,22" Name="Jin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="134,3,24,22" Name="Yin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="188,0,24,26" Name="Tong" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="476,485,24,26"/>
+        </Label>
+      </Label>
+      <Label Inherit="" Location="22,443,240,26" Name="1481" Show="true">
+        <Label Inherit="" Location="10,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010.tga" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="58,3,24,22" Name="Jin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="134,3,24,22" Name="Yin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="188,0,24,26" Name="Tong" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="476,485,24,26"/>
+        </Label>
+      </Label>
+      <Button Inherit="" Location="189,59,13,14" Name="btnPageUp" Show="true" Text="">
+        <NormalImage File="tz_010.tga" Source="51,382,12,14"/>
+        <PushedImage File="tz_010.tga" Source="51,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmNpcShopEx_btnPage_OnLClick(self,0);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="242,59,13,14" Name="btnPageDown" Show="true" Text="">
+        <NormalImage File="tz_010.tga" Source="76,382,12,14"/>
+        <PushedImage File="tz_010.tga" Source="76,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmNpcShopEx_btnPage_OnLClick(self,1);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="202,57,40,21" Name="labPage" Show="true" Text="$L:416$">
+        <BackgroundImage File="tz_010" Source="458,193,30,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,448,44,20" Name="goldnum" Show="true" Text="$L:417$">
+        <BackgroundImage File="tz_010" Source="457,193,32,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,448,24,20" Name="silvernum" Show="true" Text="$L:418$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="236,448,24,18" Name="coppernum" Show="true" Text="$L:419$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,235,44,20" Name="lbNpcgoldnum" Show="true" Text="$L:420$">
+        <BackgroundImage File="tz_010" Source="457,193,32,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,234,24,20" Name="lbNpcsilvernum" Show="true" Text="$L:421$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="236,235,24,20" Name="lbNpccoppernum" Show="true" Text="$L:422$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="28,54,147,24" Name="lbNpcname" Show="true">
+        <BackgroundImage File="tz_010.tga" Source="181,351,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="28,269,147,24" Name="lbUsername" Show="true" Text="">
+        <BackgroundImage File="tz_010.tga" Source="181,351,147,24"/>
+      </Label>
+      <Label Inherit="bg3" Location="25,471,245,32" Name="4966" Show="true"/>
+      <Label Inherit="" Location="22,473,240,26" Name="809" Show="true">
+        <Label Inherit="" Location="10,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010.tga" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="58,3,24,22" Name="Jin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="134,3,24,22" Name="Yin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="188,0,24,26" Name="Tong" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="476,485,24,26"/>
+        </Label>
+        <Label Inherit="" Location="6,4,50,20" Name="4365" Show="true" Text="$L:1531$" TextFont="$L:1$" TextSize="$L:3$"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,478,44,20" Name="bindgoldnum" Show="true" Text="$L:429$">
+        <BackgroundImage File="tz_010" Source="457,193,32,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,478,24,20" Name="bindsilvernum" Show="true" Text="$L:430$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="236,478,24,20" Name="bindcoppernum" Show="true" Text="$L:431$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Button Inherit="PushButton" Location="53,510,80,22" Name="btBuy" Show="true" Text="$L:423$">
+        <Scripts>
+          <OnLClick>layWorld_frmNpcShopEx_btBuy(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="158,510,80,22" Name="btCancel" Show="true" Text="$L:424$">
+        <Scripts>
+          <OnLClick>layWorld_frmNpcShopEx_btCancel(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="33,233,40,20" Name="lbSpend" Show="true" Text="$L:425$">
+        <BackgroundImage File="tz_010" Source="443,267,61,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="33,447,40,20" Name="lbTotal" Show="true" Text="$L:426$">
+        <BackgroundImage File="tz_010" Source="443,267,61,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="83,0,128,68" Name="9785" Show="true" Text="$L:415$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="184,276,60,20" Name="2103" Show="true" Text="1234567">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="174,259,80,18" Name="2335" Show="true" Text="$L:1126$"/>
+      <Label Inherit="" Location="41,82,211,141" Name="607" Show="true">
+        <BackgroundImage File="tz_011" Source="299,2,211,141"/>
+      </Label>
+      <Label Inherit="" Location="41,297,211,141" Name="1284" Show="true">
+        <BackgroundImage File="tz_011" Source="299,2,211,141"/>
+      </Label>
+      <Label Inherit="" Location="10,10,70,18" Name="1534" Show="true"/>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D1" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,1);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,1);</OnDragIn>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,1);</OnHint>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,1);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,1);</OnRClick>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D2" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,2);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,2);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,2);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,2);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,2);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D3" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,3);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,3);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,3);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,3);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,3);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D4" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,4);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,4);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,4);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,4);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,4);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D5" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,5);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,5);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,5);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,5);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,5);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D6" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,6);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,6);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,6);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,6);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,6);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D7" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,7);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,7);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,7);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,7);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,7);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D8" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,8);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,8);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,8);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,8);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,8);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D9" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,9);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,9);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,9);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,9);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,9);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D10" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,10);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,10);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,10);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,10);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,10);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D11" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,11);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,11);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,11);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,11);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,11);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D12" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,12);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,12);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,12);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,12);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,12);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D13" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,13);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,13);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,13);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,13);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,13);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D14" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,14);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,14);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,14);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,14);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,14);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D15" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,15);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,15);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,15);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,15);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,15);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D16" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,16);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,16);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,16);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,16);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,16);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D17" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,17);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,17);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,17);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,17);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,17);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D18" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,18);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,18);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,18);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,18);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,18);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D19" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,19);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,19);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,19);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,19);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,19);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D20" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,20);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,20);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,20);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,20);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,20);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D21" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,21);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,21);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,21);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,21);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,21);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D22" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,22);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,22);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,22);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,22);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,22);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D23" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,23);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,23);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,23);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,23);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,23);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D24" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,24);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,24);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,24);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,24);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,24);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D25" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,25);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,25);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,25);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,25);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,25);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D26" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,26);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,26);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,26);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,26);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,26);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D27" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,27);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,27);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,27);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,27);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,27);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D28" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,28);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,28);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,28);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,28);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,28);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D29" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,29);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,29);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,29);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,29);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,29);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D30" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_D_OnDragOut(self,30);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_D_OnDragIn(self, drag,30);</OnDragIn>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,30);</OnLClick>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,30);</OnRClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_D_OnHint(self,30);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom1" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,1);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,1);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,1);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,1);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,1);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom2" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,2);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,2);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,2);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,2);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,2);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom3" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,3);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,3);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,3);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,3);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,3);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom4" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,4);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,4);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,4);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,4);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,4);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom5" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,5);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,5);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,5);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,5);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,5);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom6" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,6);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,6);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,6);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,6);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,6);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom7" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,7);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,7);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,7);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,7);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,7);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom8" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,8);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,8);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,8);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,8);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,8);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom9" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,9);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,9);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,9);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,9);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,9);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom10" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,10);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,10);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,10);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,10);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,10);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom11" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,11);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,11);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,11);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,11);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,11);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom12" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,12);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,12);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,12);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,12);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,12);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom13" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,13);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,13);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,13);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,13);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,13);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom14" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,14);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,14);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,14);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,14);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,14);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom15" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,15);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,15);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,15);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,15);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,15);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom16" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,16);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,16);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,16);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,16);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,16);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom17" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,17);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,17);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,17);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,17);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,17);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom18" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,18);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,18);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,18);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,18);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,18);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom19" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,19);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,19);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,19);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,19);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,19);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom20" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,20);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,20);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,20);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,20);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,20);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom21" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,21);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,21);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,21);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,21);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,21);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom22" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,22);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,22);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,22);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,22);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,22);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom23" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,23);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,23);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,23);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,23);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,23);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom24" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,24);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,24);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,24);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,24);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,24);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom25" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,25);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,25);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,25);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,25);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,25);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom26" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,26);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,26);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,26);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,26);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,26);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom27" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,27);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,27);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,27);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,27);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,27);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom28" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,28);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,28);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,28);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,28);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,28);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom29" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,29);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,29);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,29);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,29);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,29);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom30" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragOut>layWorld_frmNpcShopEx_btnCustom_OnDragOut(self,30);</OnDragOut>
+          <OnDragIn>layWorld_frmNpcShopEx_btnCustom_OnDragIn(self, drag,30);</OnDragIn>
+          <OnRClick>layWorld_frmNpcShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,30);</OnRClick>
+          <OnLClick>layWorld_frmNpcShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,30);</OnLClick>
+          <OnHint>layWorld_frmNpcShopEx_btnCustom_OnHint(self,30);</OnHint>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_frmNpcShopEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmNpcShopEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>layWorld_frmNpcShopEx_OnShow(self);</OnShow>
+        <OnUpdate Timer="1">layWorld_frmNpcShopEx_OnUpdate(self,delta);</OnUpdate>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="394,192,294,542" Name="frmSaleShopEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,522" Name="858" Show="true" Size=""/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="475" Show="fals"/>
+      <Label Inherit="bg3" Location="22,47,250,460" Name="2314" Show="fals"/>
+      <TitleBarButton Location="0,0,294,28"/>
+      <Button Inherit="" Location="189,59,13,14" Name="btnPageUp" Show="true" Text="">
+        <NormalImage File="tz_010.tga" Source="51,382,12,14"/>
+        <PushedImage File="tz_010.tga" Source="51,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmSaleShopEx_btnPage_OnLClick(self,0);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="242,59,13,14" Name="btnPageDown" Show="true" Text="">
+        <NormalImage File="tz_010.tga" Source="76,382,12,14"/>
+        <PushedImage File="tz_010.tga" Source="76,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmSaleShopEx_btnPage_OnLClick(self,1);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="22,230,240,26" Name="2339" Show="true">
+        <Label Inherit="" Location="10,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010.tga" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="58,3,24,22" Name="Jin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="134,3,24,22" Name="Yin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="188,0,24,26" Name="Tong" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="476,485,24,26"/>
+        </Label>
+      </Label>
+      <Label Inherit="" Location="22,443,240,26" Name="1481" Show="true">
+        <Label Inherit="" Location="10,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010.tga" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="58,3,24,22" Name="Jin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="134,3,24,22" Name="Yin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="188,0,24,26" Name="Tong" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="476,485,24,26"/>
+        </Label>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="202,57,40,21" Name="labPage" Show="true" Text="$L:428$">
+        <BackgroundImage File="tz_010" Source="458,193,30,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,448,44,20" Name="goldnum" Show="true" Text="$L:429$">
+        <BackgroundImage File="tz_010" Source="457,193,32,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,448,24,20" Name="silvernum" Show="true" Text="$L:430$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="236,448,24,20" Name="coppernum" Show="true" Text="$L:431$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,235,44,20" Name="lbNpcgoldnum" Show="true" Text="$L:432$">
+        <BackgroundImage File="tz_010" Source="457,193,32,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,234,24,20" Name="lbNpcsilvernum" Show="true" Text="$L:433$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="236,235,24,20" Name="lbNpccoppernum" Show="true" Text="$L:433$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="28,54,147,24" Name="lbNpcname" Show="true">
+        <BackgroundImage File="tz_010.tga" Source="181,351,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="28,269,147,24" Name="lbUsername" Show="true">
+        <BackgroundImage File="tz_010.tga" Source="181,351,147,24"/>
+      </Label>
+      <Label Inherit="bg3" Location="25,471,245,32" Name="5840" Show="true"/>
+      <Label Inherit="" Location="22,473,240,26" Name="3675" Show="true">
+        <Label Inherit="" Location="10,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010.tga" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="58,3,24,22" Name="Jin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="134,3,24,22" Name="Yin" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="188,0,24,26" Name="Tong" Show="fals">
+          <BackgroundImage File="tz_010.tga" Source="476,485,24,26"/>
+        </Label>
+        <Label Inherit="" Location="6,4,50,20" Name="4687" Show="true" Text="$L:1531$" TextFont="$L:1$" TextSize="$L:3$"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="107,478,44,20" Name="bindgoldnum" Show="true" Text="$L:417$">
+        <BackgroundImage File="tz_010" Source="457,193,32,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="183,478,24,20" Name="bindsilvernum" Show="true" Text="$L:418$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="236,478,24,18" Name="bindcoppernum" Show="true" Text="$L:419$">
+        <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+      </Label>
+      <Button Inherit="PushButton" Location="57,511,80,22" Name="btSell" Show="true" Text="$L:435$">
+        <Scripts>
+          <OnLClick>layWorld_frmSaleShopEx_btSell(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="161,511,80,22" Name="490" Show="true" Text="$L:436$">
+        <Scripts>
+          <OnLClick>layWorld_frmSaleShopEx_btCancel(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="33,233,40,20" Name="lbSpend" Show="true" Text="$L:437$">
+        <BackgroundImage File="tz_010" Source="443,267,61,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="33,447,40,20" Name="lbTotal" Show="true" Text="$L:438$">
+        <BackgroundImage File="tz_010" Source="443,267,61,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="82,0,130,68" Name="17506" Show="true" Text="$L:427$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="41,82,211,141" Name="607" Show="true">
+        <BackgroundImage File="tz_011" Source="299,2,211,141"/>
+      </Label>
+      <Label Inherit="" Location="40,297,211,141" Name="1425" Show="true">
+        <BackgroundImage File="tz_011" Source="299,2,211,141"/>
+      </Label>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom1" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,1);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,1);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,1);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,1);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom2" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,2);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,2);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,2);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,2);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom3" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,3);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,3);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,3);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,3);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom4" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,4);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,4);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,4);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,4);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom5" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,5);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,5);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,5);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,5);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom6" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,6);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,6);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,6);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,6);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom7" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,7);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,7);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,7);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,7);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom8" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,8);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,8);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,8);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,8);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom9" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,9);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,9);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,9);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,9);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom10" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,10);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,10);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,10);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,10);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom11" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,11);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,11);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,11);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,11);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom12" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,12);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,12);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,12);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,12);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom13" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,13);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,13);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,13);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,13);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom14" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,14);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,14);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,14);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,14);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom15" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,15);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,15);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,15);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,15);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom16" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,16);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,16);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,16);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,16);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom17" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,17);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,17);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,17);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,17);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom18" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,18);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,18);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,18);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,18);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom19" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,19);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,19);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,19);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,19);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom20" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,20);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,20);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,20);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,20);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom21" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,21);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,21);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,21);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,21);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom22" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,22);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,22);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,22);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,22);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom23" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,23);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,23);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,23);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,23);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom24" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,24);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,24);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,24);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,24);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom25" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,25);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,25);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,25);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,25);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom26" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,26);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,26);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,26);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,26);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom27" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,27);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,27);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,27);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,27);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom28" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,28);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,28);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,28);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,28);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom29" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,29);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,29);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,29);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,29);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom30" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_OnDragIn(self, drag,30);</OnDragIn>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_OnRClick(self,mouse_x,mouse_y,30);</OnRClick>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_OnLClick(self,mouse_x,mouse_y,30);</OnLClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_OnHint(self,30);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D1" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,1);</OnDragIn>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,1);</OnHint>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,1);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,1);</OnRClick>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D2" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,2);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,2);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,2);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,2);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D3" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,3);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,3);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,3);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,3);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D4" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,4);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,4);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,4);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,4);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D5" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,5);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,5);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,5);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,5);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D6" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,6);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,6);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,6);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,6);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D7" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,7);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,7);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,7);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,7);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D8" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,8);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,8);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,8);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,8);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D9" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,9);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,9);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,9);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,9);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D10" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,10);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,10);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,10);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,10);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D11" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,11);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,11);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,11);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,11);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D12" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,12);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,12);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,12);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,12);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D13" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,13);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,13);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,13);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,13);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D14" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,14);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,14);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,14);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,14);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D15" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,15);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,15);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,15);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,15);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D16" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,16);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,16);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,16);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,16);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D17" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,17);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,17);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,17);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,17);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D18" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,18);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,18);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,18);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,18);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D19" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,19);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,19);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,19);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,19);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D20" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,20);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,20);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,20);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,20);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D21" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,21);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,21);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,21);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,21);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D22" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,22);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,22);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,22);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,22);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D23" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,23);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,23);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,23);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,23);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D24" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,24);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,24);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,24);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,24);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D25" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,25);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,25);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,25);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,25);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D26" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,26);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,26);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,26);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,26);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D27" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,27);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,27);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,27);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,27);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D28" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,28);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,28);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,28);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,28);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D29" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,29);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,29);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,29);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,29);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D30" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmSaleShopEx_btnCustom_D_OnDragIn(self, drag,30);</OnDragIn>
+          <OnLClick>layWorld_frmSaleShopEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,30);</OnLClick>
+          <OnRClick>layWorld_frmSaleShopEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,30);</OnRClick>
+          <OnHint>layWorld_frmSaleShopEx_btnCustom_D_OnHint(self,30);</OnHint>
+        </Scripts>
+      </Button>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnShow>layWorld_frmSaleShopEx_OnShow(self);</OnShow>
+        <OnHide>layWorld_frmSaleShopEx_OnHide(self);</OnHide>
+        <OnUpdate>layWorld_frmSaleShopEx_OnUpdate(self, delta);</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

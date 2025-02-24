@@ -1,0 +1,4 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x1">
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="天气01" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

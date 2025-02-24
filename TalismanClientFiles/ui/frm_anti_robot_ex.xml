@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmAntiRobotEx">
+    <Templates>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Name="TemplateAnswerSelect" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+		<Scripts>
+		  <OnLClick>frmAntiRobotEx_TemplateAnswerSelect_OnLClick(self);</OnLClick>
+		</Scripts>
+      </CheckButton>
+	</Templates>
+  </Theme>
+  <Script file="frm_anti_robot_ex.lua"></Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="611,38,300,370" Name="frmAntiRobotEx" Show="false" Size="300,370">
+      <Anchors>
+        <Anchor offset="0,-100" point="BOTTOM"/>
+        <Anchor offset="-500,0" point="RIGHT"/>
+      </Anchors>
+      <TitleBarButton Location="10,5,280,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="266,29,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg1" Location="10,21,280,340" Name="lbPlayer1" Show="true"/>
+      <Label Inherit="bg3" Location="40,81,224,135" Name="13583" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="4,2,290,50" Name="23107" Show="true"/>
+      <Label Inherit="" Location="0,236,256,172" Name="918" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignLine="CENTER" Inherit="" Location="55,55,120,20" Name="lbTodayNews" Show="true" Text="$L:913$"/>
+      <Label Inherit="" Location="0,245,256,11" Name="3746" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <EditBox AutoScrollV="true" BackgroundColor="#ee000000" Inherit="" Location="46,152,212,60" Name="edtBulletin" Show="true" WordWrap="true"/>
+      <Button Inherit="PushButton" Location="190,325,70,20" Name="btOk" Show="true" Text="$L:916$">
+	    <Scripts>
+		  <OnLClick>layWorld_frmAntiRobotEx_btOk_OnLClick(self);</OnLClick>
+		</Scripts>
+	  </Button>
+      <Label Inherit="bg3" Location="176,52,75,25" Name="14500" Show="true"/>
+      <Label BackgroundColor="#ee000000" Inherit="" Location="179,55,69,19" Name="lbTime" Show="true" Text="lbTime" WordWrap="true"/>
+      <CheckButton Inherit="TemplateAnswerSelect" Location="61,221,180,20" Name="ckb1"/>
+      <CheckButton Inherit="TemplateAnswerSelect" Location="61,246,180,20" Name="ckb2"/>
+      <CheckButton Inherit="TemplateAnswerSelect" Location="61,271,180,20" Name="ckb3"/>
+      <CheckButton Inherit="TemplateAnswerSelect" Location="61,296,180,20" Name="ckb4"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="89,0,120,70" Name="576" Show="true" Text="$L:921$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="46,87,212,65" Name="lbundoImg" Show="true"/>
+	  <Scripts>
+		<OnLoad>layWorld_frmAntiRobotEx_OnLoad(self);</OnLoad>
+		<OnEvent>layWorld_frmAntiRobotEx_OnEvent(self,event,arg);</OnEvent>
+		<OnUpdate>layWorld_frmAntiRobotEx_OnUpdate(self,delta);</OnUpdate>
+		<OnShow>layWorld_frmAntiRobotEx_OnShow(self);</OnShow>
+		<OnHide>layWorld_frmAntiRobotEx_OnHide(self);</OnHide>
+	  </Scripts>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="215,21,64,54" Name="frmAntiRobotAlertEx" Show="false" Size="64,54">
+      <Anchors>
+        <Anchor offset="340,0" point="LEFT"/>
+        <Anchor offset="0,30" point="TOP"/>
+      </Anchors>
+      <Button Inherit="" Location="16,0,35,35" Name="btHint" Show="true">
+        <PushedImage File="tz_010" Source="382,430,40,40"/>
+        <Flicker Cycle="2" Show="true">
+          <Image File="tz_010" Source="338,472,40,40"/>
+        </Flicker>
+        <NormalImage File="tz_010" Source="382,430,40,40"/>
+		<Scripts>
+		  <OnLClick>layWorld_frmAntiRobotAlertEx_btHint_OnLClick(self);</OnLClick>
+		</Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,34,60,18" Name="lbTimeLeft" Show="true"/>
+	  <Scripts>
+		<OnLoad>layWorld_frmAntiRobotAlertEx_OnLoad(self);</OnLoad>
+		<OnEvent>layWorld_frmAntiRobotAlertEx_OnEvent(self,event,arg);</OnEvent>
+		<OnUpdate>layWorld_frmAntiRobotAlertEx_OnUpdate(self,delta);</OnUpdate>
+	  </Scripts>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="569,155,294,230" Movable="true" Move="true" Name="frmLockUserEx" Show="false" Size="294,220">
+      <Label Inherit="bg1" Location="9,17,280,210" Name="18200" Show="true"/>
+      <Label Inherit="bg3" Location="20,44,256,170" Name="1218" Show="true"/>
+      <EditBox EnableInput="false" Inherit="" Location="26,49,244,160" MultiLine="true" Name="edbLockReason" Show="true" WordWrap="true"/>
+      <CloseButton Location="267,26,13,13" Show="fals">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="2,0,294,31" Name="12880" Show="true">
+        <Label Inherit="" Name="lbTitelText" Show="false"/>
+      </Label>
+      <TitleBarButton Location="5,0,288,30" Show="true"/>
+	  <Scripts>
+		<OnLoad>layWorld_frmLockUserEx_OnLoad(self);</OnLoad>
+		<OnEvent>layWorld_frmLockUserEx_OnEvent(self,event,arg);</OnEvent>
+		<OnUpdate>layWorld_frmLockUserEx_OnUpdate(self,delta);</OnUpdate>
+	  </Scripts>
+    </Form>
+  </Layer>
+</Ui>

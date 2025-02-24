@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="Shortcut">
+    <Templates>
+      <Button DragIn="true" DragOut="false" FadeInTime="0.5" FadeOutDelayTime="2" FadeOutTime="2" Inherit="" Location="39,4,32,32" Name="TemplateShortcutShortcutButton" Show="true" Size="32,32">
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Param key="Lock" value="false"/>
+        <Param key="AutoHide" type="bool" value="true"/>
+        <Param key="AlwaysHide" type="bool" value="false"/>
+        <Scripts>
+          <OnLoad>Shortcut_TemplateShortcutShortcutButton_OnLoad(self);</OnLoad>
+          <OnEvent>Shortcut_TemplateShortcutShortcutButton_OnEvent(self, event, arg);</OnEvent>
+          <OnDragIn>Shortcut_TemplateShortcutShortcutButton_OnDragIn(self, drag);</OnDragIn>
+          <OnDragNull>Shortcut_TemplateShortcutShortcutButton_OnDragNull(self);</OnDragNull>
+          <OnLClick>Shortcut_TemplateShortcutShortcutButton_OnLClick(self);</OnLClick>
+          <OnRClick>Shortcut_TemplateShortcutShortcutButton_OnRClick(self);</OnRClick>
+          <OnHint>Shortcut_TemplateShortcutShortcutButton_OnHint(self);</OnHint>
+          <OnUpdate Timer="40">Shortcut_TemplateShortcutShortcutButton_OnUpdate(self);</OnUpdate>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Button Inherit="TemplateShortcutShortcutButton" Name="TemplateShortcutShortcutButtonBgBox">
+        <BackgroundImage File="background_box"/>
+      </Button>
+      <Label Inherit="" Location="100,100,500,500" MouseEvent="true" MouseMove="true" Name="TemplateShortcutButtonGroup" Pick="false" Show="true" Size="500,500">
+        <Param key="MODE" value="H"/>
+        <Param key="BUTTON_GAP" type="number" value="4"/>
+        <Param key="BUTTON_SIZE" type="number" value="32"/>
+        <Param key="BUTTON_COUNT" type="number" value="12"/>
+        <Param key="CAN_CONTROL" type="bool" value="false"/>
+        <Button FadeInDelayTime="0.5" FadeInTime="1" FadeOutDelayTime="15" FadeOutTime="2" Inherit="TemplateButtonAsTitleBar" Location="0,0,32,32" MouseDClick="true" Name="btControl" Show="false">
+          <NormalImage File="tz_010" Source="443,242,61,21"/>
+          <PushedImage File="tz_010" Source="443,267,60,20"/>
+          <DisabledImage File="tz_010" Source="443,267,60,20"/>
+          <Param key="TARGET" value="$parent"/>
+          <Param key="ALLOW_X" type="bool" value="true"/>
+          <Param key="ALLOW_Y" type="bool" value="true"/>
+          <Scripts>
+            <OnLoad>self:FadingOut();</OnLoad>
+            <OnRClick>Shortcut_TemplateShortcutButtonGroup_btControl_OnRClick(self)</OnRClick>
+            <OnEnter>self:FadingIn();</OnEnter>
+            <OnLeave>self:FadingOut();</OnLeave>
+          </Scripts>
+        </Button>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut1"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut2"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut3"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut4"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut5"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut6"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut7"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut8"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut9"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut10"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut11"/>
+        <Button Inherit="TemplateShortcutShortcutButton" Location="0,0,32,32" Name="btShortcut12"/>
+        <Button DragIn="true" DragOut="true" Inherit="" Location="0,0,32,32" Name="btShortcutTemp" Show="false">
+          <Scripts>
+            <OnLoad>self:Set(EV_UI_SHORTCUT_OWNER_KEY, EV_UI_SHORTCUT_OWNER_SHORTCUT);</OnLoad>
+          </Scripts>
+        </Button>
+        <Scripts>
+          <OnLoad>Shortcut_TemplateShortcutButtonGroup_OnLoad(self)</OnLoad>
+          <OnEvent>Shortcut_TemplateShortcutButtonGroup_OnEvent(self, event, arg)</OnEvent>
+        </Scripts>
+      </Label>
+      <Label Inherit="TemplateShortcutButtonGroup" Name="TemplateShortcutButtonGroupBgBox">
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut1"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut2"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut3"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut4"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut5"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut6"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut7"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut8"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut9"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut10"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut11"/>
+        <Button Inherit="TemplateShortcutShortcutButtonBgBox" Name="btShortcut12"/>
+      </Label>
+      <Label Inherit="TemplateShortcutButtonGroup" Name="TemplateShortcutButtonGroupMainBar">
+        <Param key="BUTTON_GAP" type="number" value="2"/>
+        <Param key="BUTTON_SIZE" type="number" value="36"/>
+        <Param key="CAN_CONTROL" type="bool" value="false"/>
+        <Param key="BUTTON_COUNT" type="number" value="10"/>
+      </Label>
+      <Button Inherit="" Location="131,0,26,26" Name="TemplateShortcutButtonCombatPetSkill" Show="true">
+        <Hint/>
+        <BackgroundImage File="pet_attack.tga"/>
+        <HighlightImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+        <CoverModel File="ui_autocast" Offset="0,0,0" Rotate="4.7,0,0" Scale="1.8,1.8,1.8"/>
+        <Scripts>
+          <OnLClick>Shortcut_TemplateShortcutButtonCombatPetSkill_OnLClick(self)</OnLClick>
+          <OnHint>Shortcut_TemplateShortcutButtonCombatPetSkill_OnHint(self)</OnHint>
+          <OnUpdate Timer="80">Shortcut_TemplateShortcutButtonCombatPetSkill_OnUpdate(self)</OnUpdate>
+          <OnRClick>Shortcut_TemplateShortcutButtonCombatPetSkill_OnRClick(self)</OnRClick>
+        </Scripts>
+      </Button>
+    </Templates>
+  </Theme>
+  <Script file="shortcut_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Label Inherit="TemplateShortcutButtonGroupBgBox" Name="ShortcutGroup1">
+      <Anchors>
+        <Anchor offset="0,-130" point="TOP" relativePoint="BOTTOM"/>
+        <Anchor offset="-440, 0" point="LEFT" relativePoint="CENTERH"/>
+      </Anchors>
+      <Param key="MODE" value="H"/>
+      <Param key="ID" type="number" value="1"/>
+      <Param key="POSITION" value="LEFTDOWN"/>
+    </Label>
+    <Label Inherit="TemplateShortcutButtonGroupBgBox" Name="ShortcutGroup2">
+      <Anchors>
+        <Anchor offset="0,-130" point="TOP" relativePoint="BOTTOM"/>
+        <Anchor offset="10, 0" point="LEFT" relativePoint="CENTERH"/>
+      </Anchors>
+      <Param key="MODE" value="H"/>
+      <Param key="ID" type="number" value="2"/>
+      <Param key="POSITION" value="RIGHTDOWN"/>
+    </Label>
+    <Label Inherit="TemplateShortcutButtonGroupBgBox" Name="ShortcutGroup3">
+      <Anchors>
+        <Anchor offset="0,170" point="TOP"/>
+        <Anchor offset="-80, 0" point="LEFT" relativePoint="RIGHT"/>
+      </Anchors>
+      <Param key="MODE" value="V"/>
+      <Param key="ID" type="number" value="3"/>
+      <Param key="POSITION" value="RIGHT1"/>
+    </Label>
+    <Label Inherit="TemplateShortcutButtonGroupBgBox" Name="ShortcutGroup4">
+      <Anchors>
+        <Anchor offset="0,170" point="TOP"/>
+        <Anchor offset="-40, 0" point="LEFT" relativePoint="RIGHT"/>
+      </Anchors>
+      <Param key="MODE" value="V"/>
+      <Param key="ID" type="number" value="4"/>
+      <Param key="POSITION" value="RIGHT2"/>
+    </Label>
+    <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="176,880,970,70" Name="frmSystemButtonEx" Pick="true" Show="true" Size="956,70">
+      <Anchors>
+        <Anchor point="BOTTOM"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+      <Label Inherit="" Location="1,-9,439,82" Name="lbBackGround1" Show="true" Size="439,82">
+        <BackgroundImage File="tz_030" Source="73,347,439,82"/>
+        <Anchors>
+          <Anchor offset="0,0" point="BOTTOM" relativePoint="BOTTOM"/>
+          <Anchor point="LEFT"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="" Location="418,21,419,49" Name="lbBackGround2" Show="false" Size="419,49">
+        <Anchors>
+          <Anchor offset="0,0" point="BOTTOM" relativePoint="BOTTOM" relativeTo="lbBackGround1"/>
+          <Anchor offset="0,0" point="LEFT" relativePoint="RIGHT" relativeTo="lbBackGround1"/>
+        </Anchors>
+        <BackgroundImage File="tz_011" Source="0,463,419,49"/>
+      </Label>
+      <Label Inherit="" Location="820,21,221,49" Name="lbBackGround3" Show="false" Size="221,49">
+        <Anchors>
+          <Anchor offset="0,0" point="BOTTOM" relativePoint="BOTTOM" relativeTo="lbBackGround2"/>
+          <Anchor offset="0,0" point="LEFT" relativePoint="RIGHT" relativeTo="lbBackGround2"/>
+        </Anchors>
+        <BackgroundImage File="tz_011" Source="0,412,221,49"/>
+      </Label>
+      <Label Inherit="" Location="599,19,74,52" Name="lbBackGround4" Show="false" Size="74,52">
+        <BackgroundImage File="" Source="0,206,74,51"/>
+      </Label>
+      <Label Inherit="" Location="448,-12,509,82" Name="lbBackGround5" Show="true" Size="509,82">
+        <BackgroundImage File="tz_030" Source="0,430,510,82"/>
+        <Anchors>
+          <Anchor offset="0,0" point="BOTTOM" relativePoint="BOTTOM"/>
+          <Anchor offset="-8,0" point="RIGHT"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="TemplateShortcutButtonGroupMainBar" Location="95,28,400,37" Name="MainBarShortcutGroup1" Show="true">
+        <Param key="ID" type="number" value="5"/>
+      </Label>
+      <Label Inherit="TemplateShortcutButtonGroupMainBar" Location="95,28,400,37" Name="MainBarShortcutGroup2" Show="false">
+        <Param key="ID" type="number" value="6"/>
+      </Label>
+      <Label Inherit="TemplateShortcutButtonGroupMainBar" Location="95,28,400,37" Name="MainBarShortcutGroup3" Show="false">
+        <Param key="ID" type="number" value="7"/>
+      </Label>
+      <Button Inherit="" Location="500,30,11,11" Name="btUp" Show="true">
+        <NormalImage File="" Source="38,420,23,22"/>
+        <PushedImage File="tz_030" Source="153,261,11,11"/>
+        <DisabledImage File="tz_030" Source="153,261,11,11"/>
+        <Hint Text="$L:271$"/>
+        <Scripts>
+          <OnLClick>layWorld_frmSystemButtonEx_lbNetStatus_btUp(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="500,51,11,11" Name="btDown" Show="true">
+        <NormalImage File="" Source="6,420,23,22"/>
+        <PushedImage File="tz_030" Source="153,282,11,11"/>
+        <DisabledImage File="tz_030" Source="153,282,11,11"/>
+        <Hint Text="$L:272$"/>
+        <Scripts>
+          <OnLClick>layWorld_frmSystemButtonEx_lbNetStatus_btDown(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" Inherit="" Location="526,38,12,16" Name="lbPageNumber" Show="true" Text="$L:273$" TextColor="#FF0C0C71">
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_lbPageNumber_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_lbPageNumber_OnEvent(self, event, arg)</OnEvent>
+        </Scripts>
+      </Label>
+      <CheckButton Inherit="" Location="550,30,32,32" Name="cbAttribute" Show="true">
+        <NormalImage Blend="true" File="lay_char" Source=""/>
+        <PushedImage Blend="true" File="lay_char_b" Source=""/>
+        <DisabledImage Blend="true" File="lay_char_b" Source=""/>
+        <HighlightImage File="tz_010" Source="188,378,45,45"/>
+        <Hint Text="$L:274$"/>
+        <Param key="ShortcutEventName" value="ToggleAttribute()"/>
+        <Param key="HintTextKey" value="msg_hint_actor"/>
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_MainMenuButton_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_MainMenuButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>uiUserToggleAttribute();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="588,30,32,32" Name="cbSkill" Show="true">
+        <NormalImage Blend="true" File="lay_item" Source=""/>
+        <PushedImage Blend="true" File="lay_item_b" Source=""/>
+        <DisabledImage Blend="true" File="lay_item_b" Source=""/>
+        <HighlightImage File="tz_010" Source="188,378,45,45"/>
+        <Hint Text="$L:275$"/>
+        <Param key="ShortcutEventName" value="ToggleMagicWeapon()"/>
+        <Param key="HintTextKey" value="msg_hint_skill"/>
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_MainMenuButton_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_MainMenuButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>uiUserToggleSkill();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="627,30,32,32" Name="cbItem" Show="true">
+        <NormalImage Blend="true" File="lay_Bag" Source=""/>
+        <PushedImage Blend="true" File="lay_bag_b" Source=""/>
+        <DisabledImage Blend="true" File="lay_bag_b" Source=""/>
+        <HighlightImage File="tz_010" Source="188,378,45,45"/>
+        <Hint Text="$L:276$"/>
+        <Param key="ShortcutEventName" value="ToggleItem()"/>
+        <Param key="HintTextKey" value="msg_hint_item"/>
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_MainMenuButton_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_MainMenuButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>uiUserToggleItem();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="664,30,32,32" Name="cbTask" Show="true">
+        <NormalImage Blend="true" File="lay_task" Source=""/>
+        <PushedImage Blend="true" File="lay_task_b" Source=""/>
+        <DisabledImage Blend="true" File="lay_task_b" Source=""/>
+        <HighlightImage File="tz_010" Source="188,378,45,45"/>
+        <Hint Text="$L:277$"/>
+        <Param key="ShortcutEventName" value="ToggleTask()"/>
+        <Param key="HintTextKey" value="msg_hint_task"/>
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_MainMenuButton_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_MainMenuButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>uiUserToggleTask();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="702,30,32,32" Name="cbFriends" Show="true">
+        <NormalImage Blend="true" File="lay_friend" Source=""/>
+        <PushedImage Blend="true" File="lay_friend_b" Source=""/>
+        <DisabledImage Blend="true" File="lay_friend_b" Source=""/>
+        <HighlightImage File="tz_010" Source="188,378,45,45"/>
+        <Hint Text="$L:278$"/>
+        <Param key="ShortcutEventName" value="ToggleConnection()"/>
+        <Param key="HintTextKey" value="msg_hint_friend"/>
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_MainMenuButton_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_MainMenuButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>uiUserToggleConnection();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="778,30,32,32" Name="cbSystem" Show="true">
+        <NormalImage Blend="true" File="lay_sys" Source=""/>
+        <PushedImage Blend="true" File="lay_sys_b" Source=""/>
+        <DisabledImage Blend="true" File="lay_sys_b" Source=""/>
+        <HighlightImage File="tz_010" Source="188,378,45,45"/>
+        <Hint Text="$L:279$"/>
+        <Param key="ShortcutEventName" value="ToggleSystem()"/>
+        <Param key="HintTextKey" value="msg_hint_system"/>
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_MainMenuButton_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_MainMenuButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>uiUserToggleSystem();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="740,30,32,32" Name="cbGuild" Show="true">
+        <NormalImage Blend="true" File="lay_guild" Source=""/>
+        <PushedImage Blend="true" File="lay_guild_b" Source=""/>
+        <DisabledImage Blend="true" File="lay_guild_b" Source=""/>
+        <HighlightImage File="tz_010" Source="188,378,45,45"/>
+        <Hint Text="$L:1104$"/>
+        <Param key="ShortcutEventName" value="ToggleGuild()"/>
+        <Param key="HintTextKey" value="msg_hint_guild"/>
+        <Scripts>
+          <OnLoad>layWorld_frmSystemButtonEx_MainMenuButton_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_frmSystemButtonEx_MainMenuButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>uiUserToggleGuild();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label Inherit="" Location="817,31,8,31" MouseEvent="true" MouseMove="true" Name="lbNetStatus" Show="true">
+        <Widget Inherit="" Location="0,-1,8,31" Name="BgFast" Show="true">
+          <BackgroundImage File="tz_030" Source="136,262,8,30"/>
+          <Scripts>
+            <OnShow>SAPI.GetSibling(self, "BgNormal"):Hide(); SAPI.GetSibling(self, "BgBad"):Hide();</OnShow>
+          </Scripts>
+        </Widget>
+        <Widget Inherit="" Location="0,-1,8,31" Name="BgNormal" Show="false">
+          <BackgroundImage File="tz_030" Source="136,273,8,30"/>
+          <Scripts>
+            <OnShow>SAPI.GetSibling(self, "BgFast"):Hide(); SAPI.GetSibling(self, "BgBad"):Hide();</OnShow>
+          </Scripts>
+        </Widget>
+        <Widget Inherit="" Location="0,0,19,39" Name="BgBad" Show="false">
+          <BackgroundImage File="" Source="231,201,14,36"/>
+          <Scripts>
+            <OnShow>SAPI.GetSibling(self, "BgFast"):Hide(); SAPI.GetSibling(self, "BgNormal"):Hide();</OnShow>
+          </Scripts>
+        </Widget>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmSystemButtonEx_lbNetStatus_OnHint(self);</OnHint>
+          <OnUpdate>layWorld_frmSystemButtonEx_lbNetStatus_OnUpdate(self, delta);</OnUpdate>
+        </Scripts>
+      </Label>
+      <Label Inherit="" Location="126,5,257,13" Name="lbEXPLeft" Show="true">
+        <BackgroundImage File="tz_030" Source="1,304,255,13"/>
+      </Label>
+      <Label Inherit="" Location="382,6,246,13" Name="lbEXPmidd" Pick="true" Show="true" Size="246,13">
+        <BackgroundImage File="tz_030" Source="1,318,246,13"/>
+      </Label>
+      <Label Inherit="" Location="350,0,256,18" Name="lbEXPmi" Show="false">
+        <BackgroundImage File="" Source="0,82,256,18"/>
+      </Label>
+      <Label Inherit="" Location="627,6,195,13" Name="lbEXPRight" Show="true">
+        <BackgroundImage File="tz_030" Source="2,332,194,13"/>
+      </Label>
+      <ProgressBar Inherit="" Location="140,9,670,5" Name="pbEXP" Show="true" Text="$L:280$">
+        <ProgressBarImage File="tz_012" Source="420,430,8,8"/>
+        <Scripts>
+          <OnUpdate Timer="200">local level, exp, nextexp = uiGetMyInfo("Exp"); local percent = exp/nextexp; self:SetValue(percent); self:SetText(string.format("%03.4f%%", percent * 100));</OnUpdate>
+        </Scripts>
+      </ProgressBar>
+      <Label Inherit="" Location="247,8,3,7" Name="lbEXPdot1" Show="false">
+        <BackgroundImage File="" Source="136,110,4,15"/>
+      </Label>
+      <Label Inherit="" Location="362,3,3,7" Name="lbEXPdot2" Show="false">
+        <BackgroundImage File="" Source="136,110,4,15"/>
+      </Label>
+      <Label Inherit="" Location="476,10,3,7" Name="lbEXPdot3" Show="false">
+        <BackgroundImage File="" Source="136,110,4,15"/>
+      </Label>
+      <Label Inherit="" Location="577,11,3,7" Name="lbEXPdot4" Show="false">
+        <BackgroundImage File="" Source="136,110,4,15"/>
+      </Label>
+      <Label Inherit="" Location="270,8,2,7" Name="582" Show="true">
+        <BackgroundImage File="tz_012" Source="383,481,2,7"/>
+      </Label>
+      <Label Inherit="" Location="404,7,2,7" Name="593" Show="true">
+        <BackgroundImage File="tz_012" Source="383,481,2,7"/>
+      </Label>
+      <Label Inherit="" Location="538,7,2,7" Name="633" Show="true">
+        <BackgroundImage File="tz_012" Source="383,481,2,7"/>
+      </Label>
+      <Label Inherit="" Location="672,7,2,7" Name="674" Show="true">
+        <BackgroundImage File="tz_012" Source="383,481,2,7"/>
+      </Label>
+    </Form>
+    <Label Inherit="" Location="200,0,250,32" MouseEvent="true" MouseMove="true" Name="frmPetCtrlEx" Show="false" Size="270,26">
+      <Anchors>
+        <Anchor offset="0,5" point="BOTTOM" relativePoint="TOP" relativeTo="layWorld.frmSystemButtonEx"/>
+        <Anchor offset="-200,0" point="RIGHT" relativePoint="RIGHT" relativeTo="layWorld.frmSystemButtonEx"/>
+      </Anchors>
+      <Button Inherit="" Location="0,0,26,26" Name="btAttack" Show="true">
+        <BackgroundImage File="pet_attack.tga"/>
+        <HighlightImage File="" Source=""/>
+        <PushedImage File="tz_010" Source="188,378,46,46"/>
+        <Hint Text="$L:364$"/>
+        <Scripts>
+          <OnLClick>uiUserCurrentCombatPetAttack();</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="27,0,26,26" Name="btReturn" Show="true">
+        <BackgroundImage File="pet_return.tga"/>
+        <HighlightImage File="tz_010" Source="188,378,46,46"/>
+        <PushedImage File="tz_010" Source="188,378,46,46"/>
+        <Hint Text="$L:365$"/>
+        <Scripts>
+          <OnLClick>uiUserCurrentCombatPetReturn();</OnLClick>
+        </Scripts>
+      </Button>
+      <CheckButton Inherit="" Location="54,0,26,26" Name="btDefence" Show="true">
+        <BackgroundImage File="pet_defence"/>
+        <HighlightImage File="" Source=""/>
+        <PushedImage File="tz_010" Source="188,378,46,46"/>
+        <CheckImage File="tz_010" Source="188,378,46,46"/>
+        <Hint Text="$L:366$"/>
+        <Scripts>
+          <OnLClick>uiUserCurrentCombatPetDefence();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="" Location="81,0,26,26" Name="btPassive" Show="true">
+        <BackgroundImage File="pet_passive"/>
+        <HighlightImage File="" Source=""/>
+        <PushedImage File="tz_010" Source="188,378,46,46"/>
+        <CheckImage File="tz_010" Source="188,378,46,46"/>
+        <Hint Text="$L:367$"/>
+        <Scripts>
+          <OnLClick>uiUserCurrentCombatPetPassive();</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Button Inherit="TemplateShortcutButtonCombatPetSkill" Location="131,0,26,26" Name="btSkill1"/>
+      <Button Inherit="TemplateShortcutButtonCombatPetSkill" Location="158,0,26,26" Name="btSkill2"/>
+      <Button Inherit="TemplateShortcutButtonCombatPetSkill" Location="185,0,26,26" Name="btSkill3"/>
+      <Button Inherit="TemplateShortcutButtonCombatPetSkill" Location="212,0,26,26" Name="btSkill4"/>
+      <Button Inherit="TemplateShortcutButtonCombatPetSkill" Location="239,0,26,26" Name="btSkill5"/>
+      <Scripts>
+        <OnLoad>layWorld_frmPetCtrlEx_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frmPetCtrlEx_OnEvent(self, event, arg)</OnEvent>
+      </Scripts>
+    </Label>
+    <Label Inherit="" Location="200,0,152,32" MouseEvent="true" MouseMove="true" Name="frmPetCallEx" Show="false" Size="55,26">
+      <Anchors>
+        <Anchor offset="0,5" point="BOTTOM" relativePoint="TOP" relativeTo="layWorld.frmSystemButtonEx"/>
+        <Anchor offset="300,0" point="LEFT" relativePoint="LEFT" relativeTo="layWorld.frmSystemButtonEx"/>
+      </Anchors>
+      <Button Inherit="" Location="0,0,26,26" Name="release" Show="true">
+        <BackgroundImage File="pet_release.tga"/>
+        <HighlightImage File="" Source=""/>
+        <PushedImage File="tz_010" Source="188,378,46,46"/>
+        <Hint Text="$L:368$"/>
+        <Scripts>
+          <OnLClick>uiUserCurrentCombatPetRelease();</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="27,0,26,26" Name="recall" Show="true">
+        <BackgroundImage File="pet_recall.tga"/>
+        <HighlightImage File="" Source=""/>
+        <PushedImage File="tz_010" Source="188,378,46,46"/>
+        <Hint Text="$L:369$"/>
+        <Scripts>
+          <OnLClick>uiUserCurrentCombatPetRecall();</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("EVENT_SelfEnterWorld");</OnLoad>
+        <OnEvent>local name, party = uiGetMyInfo("Role"); if party == EV_PARTY_XQ then self:Show() else self:Hide() end</OnEvent>
+      </Scripts>
+    </Label>
+  </Layer>
+</Ui>

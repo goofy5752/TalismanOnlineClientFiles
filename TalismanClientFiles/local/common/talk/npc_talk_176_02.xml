@@ -1,0 +1,14 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- <UiRichText> -->
+  <Line>
+    <Items>
+	  <Item type="TEXT" text="$L:npctalk176_02_05$"color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:npctalk176_02_10$"hlink="String:NpcDialog:Ready?npc=$NPC_OBJID" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+
+<!-- </UiRichText> -->

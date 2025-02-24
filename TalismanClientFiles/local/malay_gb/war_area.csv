@@ -1,0 +1,3 @@
+,名字,包含区域,插旗区域,守城npc分配表,通用npc分配表,守城固定复活点,守城固定传送点,持续时间(小时)
+ID,Name,Areas,FlagAreas,NpcAssign,CommonNpcAssign,RebornNode,TransNode,Duration
+1,$L:sn001_xueshenfight$,112;115,115,table/npc_assign_wararea1.csv,table/common_npc_assign_wararea1.csv,776;-1221,893;-1398,2

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layCreateChar" Show="false">
+    <Button Inherit="PushButton" Location="83,377,100,24" Name="btReturn" Show="true" Size="100,24" Text="$L:207$">
+      <Anchors>
+        <Anchor offset="0,-20" point="BOTTOM"/>
+        <Anchor offset="-20,0" point="RIGHT"/>
+      </Anchors>
+    </Button>
+    <Button Inherit="PushButton" Location="83,377,100,24" Name="btAccept" Show="true" Size="100,24" Text="$L:208$">
+      <Anchors>
+        <Anchor offset="-20,0" point="RIGHT"/>
+        <Anchor offset="0,-20" point="BOTTOM" relativePoint="TOP" relativeTo="layCreateChar.btReturn"/>
+      </Anchors>
+    </Button>
+    <Form Inherit="NoTitleBarForm" Location="6,131,300,500" MouseMove="fals" Name="frNewChar" Show="ture">
+      <Label Inherit="bg1" Location="10,20,280,223" Name="16288" Show="ture"/>
+      <Label Inherit="bg3" Location="17,137,265,90" Name="15414" Show="true"/>
+      <Label Inherit="bg3" Location="17,33,265,36" Name="14146" Show="fals"/>
+      <Label Inherit="bg3" Location="17,70,265,65" Name="15018" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="23,77,80,20" Name="lbSchoolName" Show="true" Text="$L:209$">
+        <BackgroundImage File="tz_010.tga" Source="315,196,92,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="122,77,140,20" Name="lbCharSchool" Show="true" Text="">
+        <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,300,44" Name="25410" Show="true">
+        <Label Name="lbTitelText" Show="false"/>
+      </Label>
+      <Button Inherit="" Location="107,80,14,14" Name="btSchoolLeft" Show="true">
+        <NormalImage File="tz_010.tga" Source="50,382,14,14"/>
+        <PushedImage File="tz_010.tga" Source="50,399,14,14"/>
+      </Button>
+      <Button Inherit="" Location="263,80,14,14" Name="btSchoolRight" Show="true">
+        <NormalImage File="tz_010.tga" Source="75,382,14,14"/>
+        <PushedImage File="tz_010.tga" Source="75,399,14,14"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="23,145,80,20" Name="lbHair" Show="true" Text="$L:210$">
+        <BackgroundImage File="tz_010.tga" Source="315,196,92,24"/>
+      </Label>
+      <Button Inherit="" Location="106,148,14,14" Name="btCharLeft" Show="true">
+        <NormalImage File="tz_010.tga" Source="50,382,14,14"/>
+        <PushedImage File="tz_010.tga" Source="50,399,14,14"/>
+      </Button>
+      <Button Inherit="" Location="263,147,14,14" Name="btCharRight" Show="true">
+        <NormalImage File="tz_010.tga" Source="75,382,14,14"/>
+        <PushedImage File="tz_010.tga" Source="75,399,14,14"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="23,170,80,20" Name="lbHead" Show="true" Text="$L:211$">
+        <BackgroundImage File="tz_010.tga" Source="315,196,92,24"/>
+      </Label>
+      <Button Inherit="" Location="106,174,14,14" Name="btFaceChangeLeft" Show="true">
+        <NormalImage File="tz_010.tga" Source="50,382,14,14"/>
+        <PushedImage File="tz_010.tga" Source="50,399,14,14"/>
+      </Button>
+      <Button Inherit="" Location="262,174,14,14" Name="btFaceChangeRight" Show="true">
+        <NormalImage File="tz_010.tga" Source="75,382,14,14"/>
+        <PushedImage File="tz_010.tga" Source="75,399,14,14"/>
+      </Button>
+      <Label Inherit="" Location="121,41,140,20" Name="16354" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+      </Label>
+      <EditBox Inherit="" Location="126,43,133,16" Name="edbCharName" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="24,41,80,20" Name="lbName" Show="true" Text="$L:212$">
+        <BackgroundImage File="tz_010.tga" Source="315,196,92,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="46,189,65,18" Name="lbPassword" Show="false" Text="$L:213$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <EditBox Inherit="" Location="122,189,100,18" Name="edbCharPassword" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </EditBox>
+      <Button Inherit="PushButton" Location="115,196,70,20" Name="btRandomRole" Show="true" Size="70,24" Text="$L:214$"/>
+      <CheckButton CheckStyle="false" Location="66,104,70,20" Name="ckbMale" Show="fals" Size="70,24" Text="$L:215$">
+        <NormalImage File="tz_010" Source="443,242,60,20"/>
+        <PushedImage File="tz_010" Source="443,267,60,20"/>
+        <CheckImage File="tz_010" Source="443,296,58,20"/>
+        <HighlightCheckArea File="tz_010" Source="443,267,60,20"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Location="166,104,70,20" Name="ckbFemale" Show="fals" Size="70,24" Text="$L:216$">
+        <NormalImage File="tz_010" Source="443,242,60,20"/>
+        <PushedImage File="tz_010" Source="443,267,60,20"/>
+        <CheckImage File="tz_010" Source="443,296,58,20"/>
+        <HighlightCheckArea File="tz_010" Source="443,267,60,20"/>
+      </CheckButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="122,144,140,20" Name="lbHairName" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="122,170,140,20" Name="lbHeadName" Show="true">
+        <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="38,163,65,18" Name="lbChangSexyName" Show="false" Text="$L:1042$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="" Location="117,165,13,14" Name="btChangeMan" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="201,165,13,14" Name="btChangWomen" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="130,163,70,18" Name="lbChangeSexy" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="38,163,65,18" Name="14648" Show="false" Text="$L:1042$">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+    </Form>
+    <Button Inherit="" Location="10,10,34,34" Name="btNewRight" Show="true" Size="34,34">
+      <Anchors>
+        <Anchor offset="0,330" point="CENTERV"/>
+        <Anchor offset="20,0" point="CENTERH"/>
+        <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="layCreateChar.btReturn"/>
+      </Anchors>
+      <NormalImage File="tz_011" Source="0,255,33,33"/>
+      <PushedImage File="tz_011" Source="34,255,33,33"/>
+    </Button>
+    <Button Inherit="" Location="10,10,34,34" Name="btNewLeft" Show="true" Size="34,34">
+      <Anchors>
+        <Anchor offset="0,330" point="CENTERV"/>
+        <Anchor offset="-20,0" point="CENTERH"/>
+        <Anchor point="BOTTOM" relativePoint="BOTTOM" relativeTo="layCreateChar.btReturn"/>
+      </Anchors>
+      <NormalImage File="tz_011" Source="68,255,33,33"/>
+      <PushedImage File="tz_011" Source="102,255,33,33"/>
+    </Button>
+    <Form Inherit="NoTitleBarForm" Location="0,353,300,270" MouseMove="false" Move="false" Name="fmIndex" Show="true" Size="300,270">
+      <Label Inherit="bg3" Location="16,21,280,223" Name="24462" Show="true"/>
+      <EditBox AutoScrollV="false" BackgroundColor="" EnableInput="false" Inherit="" Location="26,32,260,200" MultiLine="true" Name="edbIndex" Show="true" WordWrap="true"/>
+      <Anchors>
+        <Anchor point="LEFT"/>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="layCreateChar,frNewChar"/>
+      </Anchors>
+      <Label Inherit="" Location="3,-1,300,44" Name="24634" Show="false">
+        <BackgroundImage File="tz_010.tga" Source="0,186,294,44"/>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

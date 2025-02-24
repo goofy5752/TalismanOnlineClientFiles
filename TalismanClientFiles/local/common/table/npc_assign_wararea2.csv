@@ -1,0 +1,5 @@
+ae,int,int,string,string,marea,"comb(id:int,density[%]:int)",npc,string,string,string
+ID,areaID,IsRebirth,AssignMode,areaName,areaBlock,NpcAssign,Script,AI,Date,Comment
+1,1,0,script,$L:Scenestable_yunlingshanshexue$,,,script/NpcLocation_war2.lua,,,
+136,136,3,script,,,,script/TWduanwuNpcLocation.lua,,,
+137,137,3,script,,,,script/MLduanwuNpcLocation.lua,,,

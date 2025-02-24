@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="390,206,294,230" Name="frmWarebag" Show="true" Size="294,234">
+      <Label Inherit="bg1" Location="7,20,280,210" Name="543" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="858" Show="fals" Size=""/>
+      <TitleBarButton Location="0,0,294,30" TextFont="$L:1$" TextSize="$L:18$"/>
+      <CloseButton Location="264,28,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Button Inherit="" Location="44,64,34,34" Name="BtWbag1" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="78,64,34,34" Name="BtWbag2" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="112,64,34,34" Name="BtWbag3" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="146,64,34,34" Name="BtWbag4" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="180,64,34,34" Name="BtWbag5" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="214,64,34,34" Name="BtWbag6" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="44,100,34,34" Name="BtWbag7" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="78,100,34,34" Name="BtWbag8" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="112,100,34,34" Name="BtWbag9" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="146,100,34,34" Name="BtWbag10" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="180,100,34,34" Name="BtWbag11" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="214,100,34,34" Name="BtWbag12" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Label Inherit="" Location="52,154,190,20" Name="lbTimeLimit" Show="true"/>
+      <Anchors>
+        <Anchor point="TOP" relativeTo="frmWarehouse"/>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frmWarehouse"/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,68" Name="18335" Show="true" Text="$L:468$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+  </Layer>
+</Ui>

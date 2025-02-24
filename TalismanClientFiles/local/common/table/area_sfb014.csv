@@ -1,0 +1,8 @@
+ae,string,string,string,marea,int
+编号,区域名字,区域音乐,区域Logo,区域,地图id
+"ID","Name","Music","Logo","Area","ZoneId"
+1,$L:fuben014_xuanshizhen$,,,"-768 1865 -512 2048;",0
+2,$L:fuben014_biaojiejie$,,,"-667 1733 -557 1865;",0
+3,$L:fuben014_lijiejie$,,,"-768 1536 -667 1865;
+-557 1536 -512 1865;
+-667 1536 -557 1733;",0

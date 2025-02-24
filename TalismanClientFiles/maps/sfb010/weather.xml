@@ -1,0 +1,15 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x4">
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF808080" fog="0xFF4C4C4C" forfar="4000.000" fornear="3500.000" name="阴风洞口" range="500.000" sun="0xFF4C4C4C" suno="0xFF808080">
+      <area bottom="4965.148" left="50.729" right="5033.120" top="86.171"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF808080" fog="0xFF621E1E" forfar="2500.000" fornear="800.000" name="人间地狱" range="500.000" sun="0xFF4C4C4C" suno="0xFF800000">
+      <area bottom="9911.491" left="124.208" right="4372.741" top="5444.873"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF80FFFF" forfar="2000.000" fornear="600.000" name="极乐世界" range="500.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="9639.854" left="4713.075" right="10050.648" top="5399.545"/>
+   </group>
+   <group colors="true" desc="" env="0xFF8080FF" envo="0xFF4C4C4C" fog="0xFF808000" forfar="2000.000" fornear="300.000" name="琉璃寝宫" range="500.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="15087.333" left="5177.552" right="10154.264" top="9727.423"/>
+   </group>
+</weather>

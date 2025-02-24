@@ -1,0 +1,10 @@
+block 32, total 1856, active 1853, size 340, leak 630020.
+block 32, total 1888, active 1883, size 340, leak 640220.
+block 32, total 1952, active 1935, size 340, leak 657900.
+block 32, total 1952, active 1945, size 340, leak 661300.
+block 32, total 1952, active 1945, size 340, leak 661300.
+block 32, total 2048, active 2045, size 340, leak 695300.
+block 32, total 2048, active 2045, size 340, leak 695300.
+block 32, total 2048, active 2045, size 340, leak 695300.
+block 32, total 2080, active 2063, size 340, leak 701420.
+block 32, total 2080, active 2063, size 340, leak 701420.

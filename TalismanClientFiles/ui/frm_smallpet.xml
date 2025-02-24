@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="252,128,300,370" Name="frmSmallPet" Show="false">
+      <Label Inherit="bg1" Location="10,20,280,350" Name="lbUP" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,300,50" Name="21956" Show="true"/>
+      <Label Inherit="" Location="-2,280,256,100" Name="3427" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="9,5,280,28" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="267,28,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Form Inherit="NoTitleBarForm" Location="20,53,260,300" Name="frmTrumps" Show="fals">
+        <Label Inherit="bg3" Location="2,214,255,85" Name="12367" Show="true"/>
+        <Label Inherit="bg3" Location="2,102,255,85" Name="896" Show="false"/>
+        <Label Inherit="bg3" Location="2,1,255,187" Name="2208" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="3,189,147,24" Name="758" Show="true" Text="$L:628$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="" Location="7,219,220,75" MouseEvent="true" MouseMove="true" Name="labSkills" Show="true">
+          <Button Inherit="" Location="1,1,36,36" Name="btnSkillPet1" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="36,1,36,36" Name="btnSkillPet2" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="71,1,36,36" Name="btnSkillPet3" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="106,1,36,36" Name="btnSkillPet4" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="141,1,36,36" Name="btnSkillPet5" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="1,37,36,36" Name="btnSkillPet6" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="36,37,36,36" Name="btnSkillPet7" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="71,37,36,36" Name="btnSkillPet8" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="106,37,36,36" Name="btnSkillPet9" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+          <Button Inherit="" Location="141,37,36,36" Name="btnSkillPet10" Show="false">
+            <BackgroundImage File="tz_010" Source="142,381,41,41 "/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          </Button>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" ColSpacing="4" Inherit="" Location="89,7,90,20" Name="lbSmallPetName" Show="true" Text="">
+          <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+        </Label>
+        <Label Inherit="" Location="14,8,70,18" Name="2325" Show="true" Text="$L:631$"/>
+        <Label Inherit="" Location="14,33,70,18" Name="2393" Show="true" Text="$L:632$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" ColSpacing="4" Inherit="" Location="89,32,90,20" Name="lbSmallPetLev" Show="true" Text="">
+          <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+        </Label>
+        <Label Inherit="" Location="14,59,70,18" Name="2444" Show="true" Text="$L:633$"/>
+        <Label Inherit="" Location="14,83,70,18" Name="2598" Show="true" Text="$L:634$"/>
+        <ProgressBar BackgroundColor="#ee000000" Inherit="" Location="89,61,140,12" Name="prgSmallPetHappy" Show="true">
+          <ProgressBarImage File="tz_010" Source="106,426,225,11"/>
+        </ProgressBar>
+        <ProgressBar BackgroundColor="#ee000000" Inherit="" Location="89,86,140,12" Name="prgSmallPetExp" Show="true">
+          <ProgressBarImage File="tz_010" Source="106,439,225,11"/>
+        </ProgressBar>
+        <Label Inherit="" Location="14,108,72,18" Name="3569" Show="true" Text="$L:856$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="86,109,40,18" Name="lbRemainPoints" Show="true">
+          <BackgroundImage File="tz_011" Source="0,0,81,22"/>
+        </Label>
+        <Label Inherit="" Location="15,135,50,18" Name="4052" Show="true" Text="$L:857$"/>
+        <Label Inherit="" Location="130,135,50,18" Name="4083" Show="true" Text="$L:858$"/>
+        <Label Inherit="" Location="15,162,50,18" Name="4128" Show="true" Text="$L:859$"/>
+        <Label Inherit="" Location="131,162,50,18" Name="4174" Show="true" Text="$L:860$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="64,135,40,18" Name="lbStr" Show="true" Text="">
+          <BackgroundImage File="tz_011" Source="0,0,81,22"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="64,162,40,18" Name="lbWit" Show="true">
+          <BackgroundImage File="tz_011" Source="0,0,81,22"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="180,135,40,18" Name="lbDex" Show="true">
+          <BackgroundImage File="tz_011" Source="0,0,81,22"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="180,162,40,18" Name="lbCon" Show="true">
+          <BackgroundImage File="tz_011" Source="0,0,81,22"/>
+        </Label>
+        <Button Inherit="" Location="108,136,17,16" Name="btaddpoint1" Show="true">
+          <NormalImage File="tz_010" Source="8,486,17,16"/>
+          <PushedImage File="tz_010" Source="144,486,17,16"/>
+        </Button>
+        <Button Inherit="" Location="109,162,17,16" Name="btaddpoint3" Show="true">
+          <NormalImage File="tz_010" Source="8,486,17,16"/>
+          <PushedImage File="tz_010" Source="144,486,17,16"/>
+        </Button>
+        <Button Inherit="" Location="223,136,17,16" Name="btaddpoint2" Show="true">
+          <NormalImage File="tz_010" Source="8,486,17,16"/>
+          <PushedImage File="tz_010" Source="144,486,17,16"/>
+        </Button>
+        <Button Inherit="" Location="223,163,17,16" Name="btaddpoint4" Show="true">
+          <NormalImage File="tz_010" Source="8,486,17,16"/>
+          <PushedImage File="tz_010" Source="144,486,17,16"/>
+        </Button>
+        <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="216,108,34,20" Name="lbRename" Show="true">
+          <BackgroundImage File="tz_011" Source="0,0,81,22"/>
+        </Label>
+        <Label Inherit="" Location="130,109,86,18" Name="557" Show="true" Text="$L:1106$"/>
+        <Button Inherit="PushButton" Location="186,7,60,20" Name="btRename" Show="true" Text="$L:1107$"/>
+      </Form>
+      <Label AlignCol="CENTER" Inherit="" Location="90,0,120,68" Name="7767" Show="true" Text="$L:855$" TextFont="$L:1$" TextSize="$L:3$" AlignLine="CENTER"/>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="scene_hint_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <HintWidget FadeInTime="0.1" FadeOutTime="0.5" Inherit="bg3" Level="100" Location="0,0,4000,3000" Name="hntSceneHint" Pick="false" Show="false" Size="300,300">
+      <Anchors>
+        <Anchor offset="-84,0" point="RIGHT"/>
+        <Anchor offset="0,-70" point="BOTTOM"/>
+      </Anchors>
+      <Scripts>
+        <OnLoad>
+			layWorld_hntScreneHint_OnLoad(self);
+		</OnLoad>
+		<OnEvent>
+			layWorld_hntScreneHint_OnEvent(self, event, arg);
+		</OnEvent>
+      </Scripts>
+    </HintWidget>
+  </Layer>
+</Ui>

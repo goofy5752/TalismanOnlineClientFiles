@@ -1,0 +1,15 @@
+ae,string,string,string,marea
+编号,区域名字,区域音乐,区域Logo,区域
+"ID","Name","Music","Logo","Area"
+1,$L:Scenestable_nanjiangqv$,,30,"42 15 232 331;
+-32 317 232 467;"
+2,$L:Scenestable_lvcunbieyuan$,,30,"-233 313 -82 545;
+-85 313 -30 410;"
+3,$L:Scenestable_houhuayuan$,,30,"-82 485 -27 558;
+-238 545 -27 670;
+-168 666 -12 710;
+-103 706 -12 745;"
+4,$L:Scenestable_guanxintai$,,30,"-172 709 -103 762;
+-744 24 -513 249;
+-756 537 -515 750;"
+5,$L:Scenestable_xvkong$,,30,"-1284 -1 -1023 255;"

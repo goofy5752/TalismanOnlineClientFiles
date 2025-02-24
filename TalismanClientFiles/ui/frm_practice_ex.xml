@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_practice_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form DragIn="true" Inherit="" Location="479,383,300,370" MouseEvent="true" Name="frmPracticeEx" Show="false">
+      <Anchors/>
+      <Label Inherit="bg1" Location="10,20,280,335" Name="1637" Show="true"/>
+      <TitleBarButton Location="9,6,280,26"/>
+      <CloseButton Location="265,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,300,50" Name="21483" Show="true"/>
+      <Label Inherit="" Location="-2,256,256,75" Name="1671" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="66,51,168,167" Name="1956" Show="true">
+        <BackgroundImage File="tz_027" Source="0,0,167,165" Transparency="0.9"/>
+      </Label>
+      <Label Inherit="bg3" Location="56,222,186,26" Name="11911" Show="true"/>
+      <Label Inherit="bg3" Location="34,250,230,60" Name="12681" Show="true"/>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="134,117,32,32" Name="btItemPic" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmPracticeEx_btItemPic_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmPracticeEx_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmPracticeEx_btItemPic_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" DragIn="true" Inherit="" Location="59,225,180,20" MouseEvent="true" Name="lbItemName" Show="true" Text="111111111"/>
+      <Button Inherit="PushButton" Location="56,320,75,20" Name="btOK" Show="true" Text="$L:393$">
+        <Scripts>
+          <OnLClick>layWorld_frmPracticeEx_btOK_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="169,320,75,20" Name="btCancel" Show="true" Text="$L:394$">
+        <Scripts>
+          <OnLClick>layWorld_frmPracticeEx_btCancel_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="44,259,62,20" Name="lbMan" Show="true" Text="$L:395$"/>
+      <ProgressBar Inherit="" Location="125,262,120,10" Name="prgMan" Show="true">
+        <ProgressBarImage File="tz_010" Source="429,443,66,5"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" DragIn="true" Inherit="" Location="5,-3,110,14" MouseEvent="true" Name="lbManNumber" Show="true" Text="$L:396$">
+          <Scripts>
+            <OnDragIn>layWorld_frmPracticeEx_OnDragIn(drag)</OnDragIn>
+          </Scripts>
+        </Label>
+        <BackgroundImage File="tz_010" Source="241,383,113,8"/>
+      </ProgressBar>
+      <Label Inherit="" Location="44,285,62,20" Name="lbItem" Show="true" Text="$L:397$"/>
+      <ProgressBar Inherit="" Location="125,288,120,10" Name="prgItem" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" DragIn="true" Inherit="" Location="5,-2,110,14" MouseEvent="true" Name="lbItemNumber" Show="true" Text="$L:398$">
+          <Scripts>
+            <OnDragIn>layWorld_frmPracticeEx_OnDragIn(drag)</OnDragIn>
+          </Scripts>
+        </Label>
+        <ProgressBarImage File="tz_010" Source="429,443,66,5"/>
+        <BackgroundImage File="tz_010" Source="241,383,113,8"/>
+      </ProgressBar>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="90,0,122,68" Name="1229" Show="true" Text="$L:399$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("Practice")
+			self:RegisterScriptEventNotify("CEV_ITEM_UPTATE_WEAPON_BEGIN")
+			self:RegisterScriptEventNotify("CEV_ITEM_UPTATE_WEAPON_END")
+			self:RegisterScriptEventNotify("bag_item_update")
+			self:RegisterScriptEventNotify("bag_item_removed")
+			self:RegisterScriptEventNotify("Cre ShowAttrib Changed")</OnLoad>
+        <OnShow>uiRegisterEscWidget(self)
+			layWorld_frmPracticeEx_Refresh()</OnShow>
+        <OnEvent>layWorld_frmPracticeEx_OnEvent(self, event, arg)</OnEvent>
+        <OnDragIn>layWorld_frmPracticeEx_OnDragIn(drag)</OnDragIn>
+        <OnHide>layWorld_frmPracticeEx_OnHide()</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

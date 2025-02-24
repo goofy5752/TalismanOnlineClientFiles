@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="299,273,300,320" Name="frmAddbag" Show="true" Size="300,320">
+      <Label Inherit="bg1" Location="24,16,260,280" Name="671" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="18,2,272,47" Name="9714" Show="true"/>
+      <Label Inherit="bg3" Location="84,55,170,32" Name="735" Show="true"/>
+      <Label Inherit="bg3" Location="84,93,170,32" Name="946" Show="true"/>
+      <Label Inherit="bg3" Location="84,131,170,32" Name="1068" Show="true"/>
+      <Label Inherit="bg3" Location="84,168,170,32" Name="1200" Show="true"/>
+      <Label Inherit="bg3" Location="84,206,170,32" Name="1590" Show="true"/>
+      <Button Inherit="PushButton" Location="50,55,32,32" Name="bag1" Show="true" Text="1">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="PushButton" Location="50,93,32,32" Name="bag2" Show="true" Text="2">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="PushButton" Location="50,131,32,32" Name="bag3" Show="true" Text="3">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="PushButton" Location="50,169,32,32" Name="bag4" Show="true" Text="4">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="PushButton" Location="50,206,32,32" Name="bag5" Show="true" Text="5">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="PushButton" Location="50,244,32,32" Name="bag6" Show="true" Text="6">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="84,55,170,32" Name="bagname1" Show="true" Text=""/>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="84,93,170,32" Name="bagname2" Show="true"/>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="84,131,170,32" Name="bagname3" Show="true"/>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="84,168,170,32" Name="bagname4" Show="true"/>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="84,206,170,32" Name="bagname5" Show="true"/>
+      <Label AlignLine="CENTER" ColSpacing="6" Inherit="" Location="84,244,170,32" Name="bagname6" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="94,0,120,70" Name="lbLootTitle" Show="true" Text="$L:805$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Anchors>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="frmItem"/>
+        <Anchor point="BOTTOM" relativeTo="frmItem"/>
+      </Anchors>
+      <TitleBarButton Location="14,6,280,28"/>
+      <CloseButton Location="260,29,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg3" Location="84,244,170,32" Name="1715" Show="true"/>
+    </Form>
+  </Layer>
+</Ui>

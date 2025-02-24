@@ -1,0 +1,22 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<boundless blrate="0x2" bltile="0x80" blwidth="40.000" centerx="0x4" centery="0xFFFFFFFA" cnt="0x22" h="0x7" name="world4.snw" set="world4" version="0x506" w="0x8">
+   <block file="world4_000006" id="0x33" x="0x3" y="0x0"/>
+   <block file="world4_000007" id="0x2C" x="0x4" y="0x0"/>
+   <block file="world4_001006" id="0x23" x="0x5" y="0x0"/>
+   <block file="world4_000008" id="0x20" x="0x6" y="0x0"/>
+   <block file="world4_001006" id="0x29" x="0x7" y="0x0"/>
+   <block file="world4_001007" id="0x2E" x="0x2" y="0x1"/>
+   <block file="world4_001008" id="0x2D" x="0x3" y="0x1"/>
+   <block file="world4_002006" id="0x24" x="0x4" y="0x1"/>
+   <block file="world4_002007" id="0x2A" x="0x5" y="0x1"/>
+   <block file="world4_002008" id="0x2B" x="0x6" y="0x1"/>
+   <block file="world4_003006" id="0x47" x="0x7" y="0x1"/>
+   <block file="world4_003007" id="0x34" x="0x2" y="0x2"/>
+   <block file="world4_101006" id="0x32" x="0x3" y="0x2"/>
+   <block file="world4_101007" id="0x31" x="0x4" y="0x2"/>
+   <block file="world4_101008" id="0x30" x="0x5" y="0x2"/>
+   <block file="world4_101009" id="0x2F" x="0x6" y="0x2"/>
+   <block file="world4_102007" id="0x37" x="0x2" y="0x3"/>
+   <block file="world4_102008" id="0x35" x="0x3" y="0x3"/>
+   <block file="world4_102009" id="0x35" x="0x3" y="0x3"/>
+</boundless>

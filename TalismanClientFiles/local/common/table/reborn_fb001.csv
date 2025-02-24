@@ -1,0 +1,6 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生类型
+ID,Name,Comment,Directory,area,pos,nNpcRebirthType
+1,$L:ectype_yunlingshanshexue$,云灵山蛇穴,yunlingshanshexue/,"243 -262 520 19;
+-39 -271 285 109;
+-58 -20 280 283;",469 -207 15;,1

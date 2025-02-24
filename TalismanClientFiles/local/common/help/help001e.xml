@@ -1,0 +1,43 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<UiRichText>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_06a$" hlink="File:local/common/help/help032.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_06b$" hlink="File:local/common/help/help033.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_06c$" hlink="File:local/common/help/help034.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_06d$" hlink="File:local/common/help/help035.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_06e$" hlink="File:local/common/help/help036.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_06f$" hlink="File:local/common/help/help037.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_06g$" hlink="File:local/common/help/help038.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+
+
+  <Line/>
+  <Line/>
+  <Line/>
+</UiRichText>

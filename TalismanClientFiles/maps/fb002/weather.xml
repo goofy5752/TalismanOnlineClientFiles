@@ -1,0 +1,21 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x4">
+   <group colors="true" desc="" env="0xFF92744B" envo="0xFFAD7E30" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="房屋内部" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="5059.638" left="5088.940" right="7298.667" top="186.665"/>
+      <area bottom="3194.154" left="8578.443" right="11250.661" top="1232.584"/>
+      <area bottom="4040.288" left="9127.953" right="10037.934" top="3194.612"/>
+      <area bottom="3638.587" left="8812.640" right="9127.393" top="3395.283"/>
+   </group>
+   <group colors="true" desc="" env="0xFFDFBF6A" envo="0xFFDFBF6A" fog="0xFFFFFFFF" forfar="1500.000" fornear="200.000" name="浴室" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="3975.843" left="7302.646" right="8581.873" top="2430.865"/>
+   </group>
+   <group colors="true" desc="" env="0xFFFDEED9" envo="0xFFF8EEDE" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="户外" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="5124.220" left="7310.299" right="8443.371" top="4032.702"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3A3A3A" envo="0xFF3A3A3A" fog="0xFF2D8893" forfar="2000.000" fornear="300.000" name="石牢" range="100.000" sun="0xFF3A3A3A" suno="0xFF3A3A3A">
+      <area bottom="5036.194" left="292.534" right="5089.357" top="135.166"/>
+      <area bottom="5114.532" left="8678.890" right="11702.612" top="4045.303"/>
+      <area bottom="4080.235" left="8813.920" right="9123.117" top="3644.967"/>
+      <area bottom="4047.060" left="10114.314" right="11691.781" top="3305.831"/>
+   </group>
+</weather>

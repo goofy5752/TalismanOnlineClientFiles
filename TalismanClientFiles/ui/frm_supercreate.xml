@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_SuperCreate.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form DragIn="true" Inherit="" Location="432,225,294,512" Name="frmSuperCreate" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,470" Name="799" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,2,292,50" Name="531" Show="fals"/>
+      <Label Inherit="bg3" Location="19,49,256,405" Name="16989" Show="true"/>
+      <Label Inherit="" Location="57,71,181,140" Name="658" Show="true">
+        <BackgroundImage File="tz_031" Source="3,2,181,140"/>
+      </Label>
+      <Button Inherit="PushButton" Location="57,458,70,20" Name="btOKCreate" Show="true" Text="$L:1433$">
+        <Scripts>
+          <OnLClick>layWorld_frmSuperCreate_btOKCreate_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="168,458,70,20" Name="btCancelCreate" Show="true" Text="$L:1434$">
+        <Scripts>
+          <OnLClick>layWorld_frmSuperCreate_btCancelCreate_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="77,0,142,70" Name="1229" Show="true" Text="$L:1428$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Button DragIn="true" DragOut="true" Inherit="" Location="132,90,32,32" Name="btCreateItem" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnHint>layWorld_frmSuperCreate_btCreateItem_OnHint(self)</OnHint>
+          <OnDragIn>layWorld_frmSuperCreate_btCreateItem_OnDragIn(drag)</OnDragIn>
+          <OnDragNull>layWorld_frmSuperCreate_btCreateItem_OnDragNull(self)</OnDragNull>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,294,30" Show=""/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,329,147,24" Name="1183" Show="true" Text="$L:1432$">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Label Inherit="bg3" Location="33,226,228,100" Name="15226" Show="true"/>
+      <Button Inherit="" Location="75,148,32,32" Name="lbGem1" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="132,174,32,32" Name="lbGem2" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Button Inherit="" Location="188,148,32,32" Name="lbGem3" Show="true">
+        <BackgroundImage File="tz_010" Source="142,381,41,40"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="65,178,50,20" Name="lbGemAmount1" Show="true" Text=""/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="123,203,50,20" Name="lbGemAmount2" Show="true" Text=""/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="178,178,50,20" Name="lbGemAmount3" Show="true" Text=""/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="39,265,110,22" Name="3485" Show="true" Text="$L:1430$"/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" BackgroundColor="" Enable="false" EnableInput="false" Inherit="" Location="157,265,15,22" Name="lbSuccessRate" Show="true" Text="3"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="171,265,20,22" Name="967" Show="true" Text="%"/>
+      <EditBox AlignCol="" AlignLine="CENTER" Enable="false" EnableInput="false" Inherit="" Location="157,233,80,24" Name="edtMoney" Show="true" Text=""/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="40,234,110,22" Name="814" Show="true" Text="$L:1429$"/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="40,296,110,22" Name="522" Show="true" Text="$L:1431$"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="156,296,40,22" Name="lbResidueDegree" Show="true" Text=""/>
+      <Label Inherit="bg3" Location="33,357,228,88" Name="16955" Show="true"/>
+      <EditBox AutoScrollV="true" BackgroundColor="" Enable="false" EnableInput="false" Location="38,361,218,80" MultiLine="true" Name="lbCreateTip" Show="true" Text="$L:1463$" WordWrap="true"/>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("EVENT_LocalGurl")
+		self:RegisterScriptEventNotify("bag_item_update")
+			self:RegisterScriptEventNotify("bag_item_removed")
+			self:RegisterScriptEventNotify("bag_item_added")
+			self:RegisterScriptEventNotify("money change")</OnLoad>
+        <OnEvent>if event == "EVENT_LocalGurl" then
+				if arg[1] == "smith8" then
+					layWorld_frmSuperCreate_ToShow(self)
+				end
+				elseif event == "bag_item_removed" then
+					layWorld_frmSuperCreate_Refresh()
+				elseif event == "bag_item_update" then
+					layWorld_frmSuperCreate_OnEventItemUpDate(self, arg)
+				elseif event == "bag_item_added" then
+					layWorld_frmSuperCreate_Refresh()
+				elseif event =="money change" then
+					layWorld_frmSuperCreate_Refresh()
+			end</OnEvent>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnDragIn>layWorld_frmSuperCreate_OnDragIn(drag)</OnDragIn>
+        <OnHide>layWorld_frmSuperCreate_OnHide()</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

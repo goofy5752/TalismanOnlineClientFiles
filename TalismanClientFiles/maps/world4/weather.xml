@@ -1,0 +1,24 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x6">
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF0080FF" forfar="6000.000" fornear="500.000" name="矿洞1" range="300.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="41579.109" left="-10806.169" right="-7843.391" top="33512.723"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF804040" forfar="4000.000" fornear="2000.000" name="洞2" range="200.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="39082.422" left="-15339.765" right="-10737.347" top="35720.027"/>
+   </group>
+   <group colors="true" desc="" env="0xFF373737" envo="0xFF4C4C4C" fog="0xFF004080" forfar="3000.000" fornear="800.000" name="矿洞3" range="300.000" sun="0xFF1C4160" suno="0xFF4C4C4C">
+      <area bottom="42636.930" left="-15322.643" right="-10409.281" top="38934.020"/>
+      <area bottom="43539.223" left="-10990.297" right="-7607.294" top="41989.895"/>
+      <area bottom="45405.348" left="-9751.571" right="-6485.572" top="41352.219"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF004080" forfar="3000.000" fornear="800.000" name="矿洞4" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="46120.387" left="-15343.278" right="-10808.145" top="42487.742"/>
+      <area bottom="46136.039" left="-11135.084" right="-9738.581" top="43390.871"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF004080" forfar="5000.000" fornear="0.000" name="洞城" range="300.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="54960.559" left="-17494.191" right="-7423.946" top="46011.066"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF41617E" fog="0xFFD7FFFF" forfar="4000.000" fornear="800.000" name="洞外" range="300.000" sun="0xFF4C4C4C" suno="0xFFFFFFFF">
+      <area bottom="40759.188" left="-8075.802" right="-3511.977" top="35554.398"/>
+   </group>
+</weather>

@@ -1,0 +1,8 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<boundless blrate="0x2" bltile="0x80" blwidth="40.000" centerx="0x1" centery="0x1" cnt="0x5" h="0x3" name="fb003.snw" set="fb003" version="0x506" w="0x3">
+   <block file="fb003_000101" id="0x7" x="0x1" y="0x0"/>
+   <block file="fb003_101000" id="0x2" x="0x0" y="0x1"/>
+   <block file="fb003_000000" id="0x1" x="0x1" y="0x1"/>
+   <block file="fb003_001000" id="0x3" x="0x2" y="0x1"/>
+   <block file="fb003_000001" id="0x4" x="0x1" y="0x2"/>
+</boundless>

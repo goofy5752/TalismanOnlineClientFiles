@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_task_list_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="189,235,640,540" Name="frmTaskListEx" Show="false" Size="640,540">
+      <Anchors>
+        <Anchor point="CENTERV"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+      <Label Inherit="bg1" Location="7,18,630,520" Name="lbBackLT" Show="true"/>
+      <Label Inherit="" Location="274,0,276,276" Name="lbBackRT" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="2,276,276,200" Name="lbBackLB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="274,276,276,200" Name="lbBackRB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="0,5,642,50" Name="lbTitle" Show="true"/>
+      <Label Inherit="bg3" Location="24,79,234,400" Name="8622" Show="true"/>
+      <Label Inherit="bg3" Location="257,79,360,400" Name="6827" Show="true"/>
+      <Label Inherit="" Location="387,8,145,24" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="314,0,145,24"/>
+      </Label>
+      <TitleBarButton Location="3,3,530,28" Text="" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="14,50,240,380" Name="8522" Show="false">
+        <BackgroundImage File="tz_013" Source="1,3,322,510"/>
+      </Label>
+      <Tree AutoScrollV="true" Inherit="Def_Tree" Location="30,86,222,386" Name="tlTask" Show="true">
+        <ShrinkImage File="ico04"/>
+        <ExpandImage File="ico02"/>
+        <Scripts>
+          <OnSelect>layWorld_frmTaskListEx_tlTask_OnSelect(self);</OnSelect>
+        </Scripts>
+      </Tree>
+      <Label Inherit="" Location="52,36,70,18" Name="btselectprize" Show="true">
+        <BackgroundImage File="task_select1"/>
+      </Label>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="262,86,350,386" MultiLine="true" Name="ebTaskText" Show="true" WordWrap="true">
+        <Hint/>
+        <Scripts>
+          <OnHyperLink>layWorld_frmTaskListEx_ebTaskText_OnHyperLink(self, hypertype, hyperlink);</OnHyperLink>
+          <OnMouseMove>layWorld_frmTaskListEx_ebTaskText_OnMouseMove(self,mouse_x,mouse_y);</OnMouseMove>
+          <OnUpdate Timer="500">layWorld_frmTaskListEx_ebTaskText_OnUpdate(self,delta);</OnUpdate>
+        </Scripts>
+      </EditBox>
+      <Button Inherit="PushButton" Location="518,500,70,20" Name="btnCancelTask" Show="true" Text="$L:401$">
+        <Scripts>
+          <OnLClick>layWorld_frmTaskListEx_btnCancelTask_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <CheckButton Inherit="DefaultChkBtn" Location="38,501,150,20" Name="ckbTrace" Show="true" Text="$L:402$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        <Scripts>
+          <OnLClick>layWorld_frmTaskListEx_ckbTrace_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton Inherit="DefaultChkBtn" Location="216,501,160,20" Name="ckbAcceptTask" Show="true" Text="$L:1058$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        <Scripts>
+          <OnLClick>layWorld_frmTaskListEx_ckbAcceptTask_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Button Inherit="PushButton" Location="424,501,70,20" Name="btCancelMapPoint" Show="true" Text="$L:920$">
+        <Scripts>
+          <OnLClick>layWorld_frmTaskListEx_btCancelMapPoint_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <CloseButton Location="614,32,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="258,0,126,76" Name="17492" Show="true" Text="$L:400$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="254,67,57,17" Name="7277" Show="true">
+        <BackgroundImage File="tz_012" Source="275,150,57,17"/>
+      </Label>
+      <Label Inherit="" Location="560,66,58,16" Name="7321" Show="true">
+        <BackgroundImage File="tz_012" Source="433,150,58,16"/>
+      </Label>
+      <Label Inherit="" Location="389,65,95,17" Name="7621" Show="true">
+        <BackgroundImage File="tz_012" Source="334,150,95,17"/>
+      </Label>
+      <Label Inherit="" Location="257,476,58,16" Name="7699" Show="true">
+        <BackgroundImage File="tz_012" Source="275,176,57,16"/>
+      </Label>
+      <Label Inherit="" Location="560,476,58,16" Name="8009" Show="true">
+        <BackgroundImage File="tz_012" Source="433,176,58,16"/>
+      </Label>
+      <Label Inherit="" Location="389,476,100,17" Name="8361" Show="true">
+        <BackgroundImage File="tz_012" Source="332,176,100,17"/>
+      </Label>
+      <Label Inherit="" Location="199,476,58,16" Name="8430" Show="true">
+        <BackgroundImage File="tz_012" Source="433,176,58,16"/>
+      </Label>
+      <Label Inherit="" Location="90,437,100,16" Name="8606" Show="false">
+        <BackgroundImage File="tz_012" Source="289,179,100,16"/>
+      </Label>
+      <Label Inherit="" Location="24,476,57,16" Name="8673" Show="true">
+        <BackgroundImage File="tz_012" Source="275,176,57,16"/>
+      </Label>
+      <Label Inherit="" Location="24,67,57,17" Name="8886" Show="true">
+        <BackgroundImage File="tz_012" Source="275,150,57,17"/>
+      </Label>
+      <Label Inherit="" Location="200,67,58,16" Name="8955" Show="true">
+        <BackgroundImage File="tz_012" Source="433,150,58,16"/>
+      </Label>
+      <Scripts>
+        <OnLoad>layWorld_frmTaskListEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmTaskListEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>uiRegisterEscWidget(self);</OnShow>
+      </Scripts>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="1066,195,186,296" MouseEvent="false" MouseMove="false" Name="lbTrackTaskEx" Show="true" Size="220,320">
+      <EditBox Inherit="" Location="0,0,220,320" MouseEvent="false" MouseMove="false" Name="ebTask" Show="true">
+        <Scripts>
+          <OnUpdate Timer="500">layWorld_lbTrackTaskEx_ebTask_OnUpdate(self,delta);</OnUpdate>
+        </Scripts>
+      </EditBox>
+      <Anchors>
+        <Anchor offset="0,195" point="RIGHT"/>
+      </Anchors>
+    </Form>
+  </Layer>
+</Ui>

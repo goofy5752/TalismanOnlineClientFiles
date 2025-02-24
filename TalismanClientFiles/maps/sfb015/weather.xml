@@ -1,0 +1,62 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x11">
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF804040" forfar="6000.000" fornear="300.000" name="天气01" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="13191.252" left="-8514.535" right="-4636.760" top="10269.472"/>
+      <area bottom="11594.185" left="-5086.336" right="-3747.184" top="10300.182"/>
+      <area bottom="12124.185" left="-5040.719" right="-4162.307" top="11429.737"/>
+      <area bottom="12673.346" left="-4721.850" right="-4370.466" top="11978.300"/>
+      <area bottom="12270.576" left="-4511.260" right="-4264.569" top="12007.527"/>
+      <area bottom="13672.505" left="-6658.647" right="-5934.214" top="13028.003"/>
+      <area bottom="13521.819" left="-8495.014" right="-6597.294" top="12994.811"/>
+   </group>
+   <group colors="true" desc="" env="0xFF384861" envo="0xFF405159" fog="0xFF607799" forfar="3000.000" fornear="300.000" name="天气02" range="200.000" sun="0xFF3C545E" suno="0xFF2C686D">
+      <area bottom="15435.808" left="-11482.088" right="-9636.592" top="12823.410"/>
+   </group>
+   <group colors="true" desc="" env="0xFFEBEBEB" envo="0xFFA5A5A5" fog="0xFF732500" forfar="6000.000" fornear="1000.000" name="天气03" range="100.000" sun="0xFFC6C6C6" suno="0xFF9A9A9A">
+      <area bottom="12605.648" left="-15335.764" right="-13666.257" top="10204.312"/>
+   </group>
+   <group colors="true" desc="" env="0xFF008000" envo="0xFF102723" fog="0xFF965FFC" forfar="3000.000" fornear="300.000" name="天气04" range="100.000" sun="0xFF4C4C4C" suno="0xFF4B4B4B">
+      <area bottom="18615.367" left="-11538.108" right="-8197.098" top="15045.652"/>
+   </group>
+   <group colors="true" desc="" env="0xFF6D6D6D" envo="0xFF696969" fog="0xFF7E5C01" forfar="5000.000" fornear="1000.000" name="天气05" range="100.000" sun="0xFF373737" suno="0xFF919191">
+      <area bottom="20043.053" left="-15182.780" right="-13505.765" top="17274.785"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="天气06" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="天气07" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF555555" envo="0xFF444444" fog="0xFF8000FF" forfar="3000.000" fornear="300.000" name="天气08" range="100.000" sun="0xFF572C00" suno="0xFF525252">
+      <area bottom="43714.910" left="-29648.135" right="-27806.545" top="40407.547"/>
+   </group>
+   <group colors="true" desc="" env="0xFF2E2E2E" envo="0xFF363636" fog="0xFF004000" forfar="3000.000" fornear="300.000" name="天气09" range="200.000" sun="0xFF373737" suno="0xFF373737">
+      <area bottom="44746.516" left="-28730.141" right="-28020.635" top="43721.813"/>
+   </group>
+   <group colors="true" desc="" env="0xFF3A3A3A" envo="0xFF393939" fog="0xFF804040" forfar="3000.000" fornear="300.000" name="天气10" range="200.000" sun="0xFF3A3A3A" suno="0xFF353535">
+      <area bottom="44756.125" left="-29470.881" right="-28741.639" top="43712.176"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF008080" forfar="3000.000" fornear="300.000" name="天气11" range="300.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="46012.297" left="-34706.691" right="-33319.391" top="42061.020"/>
+   </group>
+   <group colors="true" desc="" env="0xFF2F2F2F" envo="0xFF444444" fog="0xFFFF8080" forfar="3000.000" fornear="300.000" name="天气12" range="300.000" sun="0xFF572C00" suno="0xFF505050">
+      <area bottom="41583.824" left="-33240.145" right="-30803.730" top="40100.945"/>
+      <area bottom="42600.102" left="-30897.971" right="-29803.578" top="40113.043"/>
+   </group>
+   <group colors="true" desc="" env="0xFF2F2F2F" envo="0xFF444444" fog="0xFF000040" forfar="2500.000" fornear="800.000" name="天气13" range="300.000" sun="0xFF572C00" suno="0xFF505050">
+      <area bottom="47089.574" left="-36632.703" right="-24740.285" top="34161.004"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4D4D4D" envo="0xFF5E5E5E" fog="0xFF445434" forfar="2000.000" fornear="200.000" name="天气14" range="100.000" sun="0xFF373737" suno="0xFF3A3A3A">
+      <area bottom="20499.176" left="-8258.014" right="-5271.619" top="17358.457"/>
+      <area bottom="17221.162" left="-8254.717" right="-7767.893" top="15454.148"/>
+      <area bottom="18636.568" left="-7845.679" right="-7466.473" top="15666.341"/>
+      <area bottom="18277.027" left="-7517.520" right="-6884.855" top="16426.930"/>
+      <area bottom="20535.082" left="-11218.608" right="-7388.474" top="18543.850"/>
+      <area bottom="17068.930" left="-7597.499" right="-7118.357" top="16201.878"/>
+      <area bottom="17351.477" left="-7035.822" right="-6721.775" top="16643.102"/>
+      <area bottom="17832.699" left="-8249.591" right="-5745.602" top="16846.572"/>
+      <area bottom="17733.410" left="-6003.653" right="-5505.699" top="17265.465"/>
+      <area bottom="17600.090" left="-5957.444" right="-5617.081" top="17138.533"/>
+      <area bottom="17446.063" left="-5972.847" right="-5683.483" top="17012.611"/>
+      <area bottom="17120.039" left="-7639.104" right="-7255.494" top="15974.983"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="天气15" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="天气16" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="天气17" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C"/>
+</weather>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="laySelectChar" Show="true">
+    <Form Inherit="" Location="299,273,300,300" Name="frmGameWatting" Show="true" Size="300,300">
+      <Label Inherit="bg1" Location="10,19,280,250" Name="10598" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="4,2,292,50" Name="10706" Show="true"/>
+      <Button Inherit="PushButton" Location="118,207,60,20" Name="btWattingClose" Show="true" Text="$L:722$">
+        <Scripts>
+          <OnLClick>uiCharStageReturn();</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="77,0,144,70" Name="lbRewardTitel" Show="true" Text="$L:721$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="0,189,256,11" Name="4721" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Location="103,148,90,25" Name="lbWaitNumber" Show="true" Text="152" TextFont="$L:1$" TextSize="$L:4$">
+        <BackgroundImage File="tz_012" Source="364,368,149,25"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="51,101,207,25" Name="535" Show="true" Text="$L:723$">
+        <BackgroundImage File="tz_010" Source="252,323,207,24"/>
+      </Label>
+      <TitleBarButton Location="10,4,280,28"/>
+      <CloseButton Location="264,31,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Anchors>
+        <Anchor point="CENTERV"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,272 @@
+程序导标记，不用翻译
+ID,Prefix,Content
+1,forced smile,$N feels so sad.
+10,smile1,$N smiled to everyone.
+100,good bye 1,$N saluted and saying: see you next time.
+101,good bye 2,$N sighed saying: I will miss you .
+102,good bye 2,$N looked at $n saying: I will miss you.
+103,good bye 2,$N sighed saying: I will miss you .
+104,good bye 2,$N looked at $n saying: I will miss you.
+105,good bye 2,$N said: I am looking forward to meet you next time. 
+106,caution,$N sighed: what a selfish world.
+107,caution,$N advise $n: don't showing off.
+108,caution,$N sighed: what a selfish world.
+109,caution,$N advise $n: don't showing off.
+11,confused1,$N is confused.
+110,caution,$N sighed: what a selfish world.
+111,scratch,$N extend his/her hands up to no good.
+112,scratch,$N scratch his/her face.
+113,scratch,$N extend his/her hands up to no good.
+114,scratch,$N scratched $n's face.
+115,scratch,"$N said if you make some more trouble, I will disfigure you."
+116,prattle,$N said what a nice weather today. Hehehe.
+117,prattle,"$N saluted to $n, saying: hahaha ok."
+118,prattle,$N said what a nice weather today. Hehehe.
+119,prattle,"$N saluted to $n, saying: hahaha ok."
+12,confused1,$N is confused and look at $n try to find the answer.
+120,prattle,"$N saluted to everyone saying: hahaha, ok."
+121,cudgel,"$N was hit on his/her feet, and he is crying now."
+122,cudgel,"$N hit $n's head, $n fell on the floor."
+123,cudgel,"$N was hit on his feet, and he is crying now."
+124,cudgel,"$N hit $n's head, $n fell on the floor."
+125,cudgel,"$N brandish his/her cudgel, trying to find his/her target."
+126,cold,"$N is so cold, he looks like just pulled out from ice hollow."
+127,cold,"$N looked at $n, from his/her eyes, $n feels the cold."
+128,cold,"$N is so cold, he looks like just pulled out from ice hollow."
+129,cold,"$N looked at $n, from his/her eyes, $n feels the cold."
+13,confused1,$N is confused.
+130,cold,$N is so cold and even sneezed.
+131,comfort,"$N said, I don't need your comfort, you guys just look down of me."
+132,comfort,"$N comfort $n, world is not only filled with happiness."
+133,comfort,"$N said, I don't need your comfort, you guys just look down of me."
+134,comfort,"$N comfort $n, the world is not only filled with happiness."
+135,comfort,"$N comfort everyone, the world is not only filled with happiness."
+136,congratulation,$N smiled and said: thank you.
+137,congratulation,$N speaks to $n: congratulations.
+138,congratulation,$N smiled and said: thank you.
+139,congratulation,$N speaks to $n: congratulations.
+14,confused1,$N is confused and look at $n try to find the answer.
+140,congratulation,$N said congratulations.
+141,cook,$N is preparing to cook himself as a food.
+142,cook,"$N put the meat $n diced in to pan, and fry it."
+143,cook,$N is preparing to cook himself as a food.
+144,cook,"$N put the meat $n diced in to pan, and fry it."
+145,cook,$N if preparing to make some foods.
+146,mummy,$N is dead.
+147,mummy,$N makes $n a Mummy.
+148,mummy,$N is dead.
+149,mummy,$N makes $n a Mummy.
+15,confused1,$N is confused.
+150,mummy,"$N speaks to everyone, bye bye, don't miss me. "
+151,regards,$N waved his/her hands continuously.
+152,regards,$N waved his/her hands to $n saying: hi how are you?
+153,regards,$N waved his/her hands continuously.
+154,regards,$N waved his/her hands to $n saying: hi how are you?
+155,regards,"$N nodded, waved hands saying: how are you?"
+156,crazy,"$N is crazy, he giggled, I am Jesus Christ."
+157,crazy,"$N nodded, said, $n is definitely crazy."
+158,crazy,"$N is crazy, he giggled, I am Jesus Christ."
+159,crazy,"$N nodded, said, $n is definitely crazy."
+16,robot,"$N hold his head, and shout don't pull out my CPU."
+160,crazy,"$N nodded sigh: insane, mad."
+161,cry,"$N is so sad, he/she can't help himself crying."
+162,cry,"$N is so sad, he/she cried on $n's shoulders."
+163,cry,"$N is so sad, he/she can't help himself crying."
+164,cry,"$N is so sad, he/she cried on $n's shoulders."
+165,cry,$N is crying.
+166,cut,"$N cut his/her own head down, and hold in his/her hand."
+167,cut,$N cut $n into several small dices.
+168,cut,"$N cut his/her own head down, and hold in his/her hand."
+169,cut,$N cut $n  into several small dices.
+17,robot,"$N knocked $n 's head, saying these kind of robot are too barbarism."
+170,cut,$N is using a finger knife cutting his/her nail.
+171,die for love,"$N shout, let me die...."
+172,die for love,"$N looked at $n, if you dead, how could I be alive?"
+173,die for love,"$N shout, let me die...."
+174,die for love,"$N looked at $n, if you dead, how could I be alive?"
+175,die for love,"$N asked himself, what is love??"
+176,hopeless stupid,"$N cried, oh my god, I am hopeless stupid."
+177,hopeless stupid,"$N abused $n , you are hopeless stupid."
+178,hopeless stupid,"$N cried, oh my god, I am hopeless stupid."
+179,hopeless stupid,"$N abused $n , you are hopeless stupid."
+18,robot,"$N hold his head, and shout don't pull out my CPU."
+180,hopeless stupid,"$N sighed, let it be then..."
+181,confused 2,$N is confused.
+182,confused 2,$N seems not understanding why $n is so confused.
+183,confused 2,$N is confused.
+184,confused 2,$N seems not understanding why $n is so confused.
+185,confused 2,"$N said, what are you guys talking about now?"
+186,cheers,$N is almost drunk.
+187,cheers,"$N told $n, let's have some alcohol."
+188,cheers,$N is almost drunk.
+189,cheers,"$N told $n, let's have some alcohol."
+19,robot,"$N knocked $n 's head, saying these kind of robot are too barbarism."
+190,cheers,$N is drinking some alcohol.
+191,poison,$N drunk the poison wine with some meat. 
+192,poison,$N put some poison into $n's wine.
+193,poison,$N drunk the poison wine. 
+194,poison,$N put some poison into $n's wine.
+195,poison,$N is selling power pill on the street.
+196,donkey,"$N trying to get into a car accident scene, he said, I am the one 's father who is getting hurt, he get into the accident scene, only found a dead donkey."
+197,donkey,"$N abused $n, you are as stupid as a donkey."
+198,donkey,"$N trying to get into a car accident scene, he said, I am the one 's father who is getting hurt, he get into the accident scene, only found a dead donkey."
+199,donkey,"$N abused $n, you are as stupid as a donkey."
+2,forced smile,"$N looked at $n, almost sad to cry."
+20,robot,"$N looked around, everyone seems stunned, then say, they are all robots."
+200,donkey,$N feels himself as stupid as a donkey.
+201,flee,$N ran away without saying one word.
+202,flee,"$N said let's go, then ran away."
+203,flee,$N ran away without saying one word.
+204,flee,"$N said let's go, then ran away."
+205,flee,$N ran away without saying one word
+206,faint,"$N fainted on the floor, with some blood in his/her mouth."
+207,faint,"$N is so upset with $n, and faint."
+208,faint,"$N fainted on the floor, with some blood in his/her mouth."
+209,faint,"$N is so upset with $n, and faint."
+21,"go, go, go…",$N encourage himself. 
+210,faint,$N is faint
+211,fat,"$N look into the mirror, saying what a big distorting mirror."
+212,fat,"$N pointed $n's nose saying: look, what a big hippo."
+213,fat,"$N look into the mirror, saying what a big distorting mirror."
+214,fat,"$N pointed $n's nose saying: look, what a big hippo."
+215,fat,"$N told everyone, I am not that fat, it's just strong."
+216,fear,"$N is so scared, and ran away."
+217,fear,$N was scared by $n.
+218,fear,"$N is so scared, and ran away."
+219,fear,$N was scared by $n.
+22,"go, go, go…","$N shouted to $n, go go go..."
+220,fear,$N looks so scared.
+221,dissolute,"$N singing: my wife is not home today, I am gonna go to the night club to have some fun."
+222,dissolute,$N said to $n: you are so charming.
+223,dissolute,"$N singing: my wife is not home today, I am gonna go to the night club to have some fun."
+224,dissolute,$N said to $n: you are so charming.
+225,dissolute,$N said: what a charming lady!
+226,good bye 3,"$N said: sorry everyone, I am dead."
+227,good bye 3,"$N looked $n, said: we are waiting for you."
+228,good bye 3,"$N said: sorry everyone, I am dead."
+229,good bye 3,"$N looked $n, said: we are waiting for you."
+23,"go, go, go…",$N encourage himself. 
+230,good bye 3,"$N told everyone: I am leaving now, bye bye."
+231,good child,"$N is confused, I am such a good person, why no one likes me."
+232,good child,"$N touched $n's head, saying: good child. "
+233,good child,"$N is confused, I am such a good person, why no one likes me."
+234,good child,"$N touched $n's head, saying: good child. "
+235,good child,$N saying: I am gonna sing a song to your all.
+236,insidious smile,$N 's face appeared insidious smile.
+237,insidious smile,$N insidious smiled to $n.
+238,insidious smile,$N's  face appeared insidious smile.
+239,insidious smile,$N insidious smiled to $n.
+24,"go, go, go…","$N shouted to $n, go go go...."
+240,insidious smile,$N insidious smiled.
+241,gang fight,"$N looked around, saying: I can beat you all."
+242,gang fight,"$N said, let's go to kill $n."
+243,gang fight,"$N looked around, saying: I can beat you all."
+244,gang fight,$N said: let's go to kill $n.
+245,gang fight,$N shout: let's go to kill that person!
+246,handgun,"$N took out a handgun, wants to suicide."
+247,handgun,"$N took out a handgun, and shoot $n down."
+248,handgun,"$N took out a handgun, wants to suicide."
+249,handgun,"$N took out a handgun, and shoot $n down."
+25,"go, go, go…","$N shouted to everyone, everybody, go go go..."
+250,handgun,$N took out a handgun.
+251,handsome,$N said: I am the most handsome guy in the world.
+252,handsome,"$N pointed $n's nose saying: yes, true. you are the most handsome guy in the world."
+253,handsome,$N said: I am the most handsome guy in the world.
+254,handsome,"$N pointed $n's nose saying: yes, true. you are the most handsome guy in the world."
+255,handsome,"$N smiled: yes, all you guys are more handsome than me."
+256,sinister smile,"$N sinister smiled, seems he/she is got some bad ideas."
+257,sinister smile,$N sinister smiled to $n.
+258,sinister smile,"$N sinister smiled, seems he/she is got some bad ideas."
+259,sinister smile,$N sinister smiled to $n.
+26,admire,"$N saluted to everyone, said: luckily I bring my pen today, anyone here want my signature?"
+260,sinister smile,$N sinister smiled.
+261,giggle,$N giggled hehehe...
+262,giggle,$N giggled to $n hehehe...
+263,giggle,$N giggled hehehe...
+264,giggle,$N giggled to $n hehehe...
+265,giggle,$N giggled hehehe...
+266,hero,$N shout: dead is nothing!
+267,hero,"$N shout to $n: dead is nothing, let's fight him!"
+268,hero,$N shout: dead is nothing!
+269,hero,"$N shout to $n, dead is nothing, let's fight him!"
+27,admire,"$N saluted to $n, said: I admire you so much."
+270,hero,$N shout: dead is nothing!
+28,admire,"$N saluted to everyone, said: luckily I bring my pen today, anyone here want my signature?"
+29,admire,"$N saluted to $n, said: I admire you so much."
+3,forced smile,$N just some kind of heart broken.
+30,admire,"$N saluted to everyone, said I admire you so much."
+31,confess,"$N duck on the ground, said, I didn't do anything wrong."
+32,confess,"$N condemned $n, what the hell you want to do?"
+33,confess,"$N duck on the ground, said, I didn't do anything wrong."
+34,confess,"$N condemned $n, what the hell you want to do?"
+35,confess,"$N soliloquized, confess my guilt?"
+36,agree,"$N ask everyone, do you agree with me?"
+37,agree,"$N talk to $n: you are right, I have got the same idea with you."
+38,agree,"$N ask everyone, do you agree with me?"
+39,agree,"$N talk to $n: you are right, I have got the same idea with you."
+4,forced smile,"$N looked at $n, almost sad to cry."
+40,agree,"$N said, all of you are right, actually I am thinking of the same."
+41,surprise,$N surprised: how come I didn't consider of that!
+42,surprise,$N was surprised by $n.
+43,surprise,$N surprised: how come I didn't consider of that.
+44,surprise,$N was surprised by $n.
+45,surprise,$N was surprised.
+46,angry,$N is so angry.
+47,angry,$N is so angry and stare at $n.
+48,angry,$N is so angry .
+49,angry,$N is so angry and stare at $n.
+5,forced smile,$N is upset.
+50,angry,$N is so angry
+51,anniversary,"$N talk to everyone: hi everyone, today is my birthday."
+52,anniversary,"$N shout to %n, you gonna die today."
+53,anniversary,"$N talk to everyone: hi everyone, today is my birthday."
+54,anniversary,"$N shout to $n, you gonna die today."
+55,anniversary,"$N think it over and over, Today should be an anniversary day."
+56,head,"$N shouted, why you knocked my head, I will cut your hands off."
+57,head,$N knocked $n's head
+58,head,"$N shouted, why you knocked my head, I will cut your hands off."
+59,head,$N knocked $n's head
+6,smile1,$N smiled on the face.
+60,head,$N knocked his/her own head.
+61,bite,$N bit his/her own finger
+62,bite,$N wants to bite $n
+63,bite,$N bit his/her own finger
+64,bite,$N wants to bite $n
+65,bite,$N grind his/her teeth
+66,shy,$N is so shy
+67,shy,"$N looked at $n, feels so shy."
+68,shy,$N feels so shy.
+69,shy,"$N looked at $n, feels so shy."
+7,smile1,$N smiled to $n.
+70,shy,$N's face is turning red
+71,love,"$N is singing: my man, I love you."
+72,love,"$N is singing: my girl , I love you."
+73,love,"$N is singing: my man, I love you."
+74,love,"$N is singing: my girl , I love you."
+75,love,"$N hold a microphone saying, I would like to sing a song for you guys."
+76,bow,$N bowed to his/her own picture 3 times.
+77,bow,$N bowed to $n
+78,bow,$N bowed to his/her own picture 3 times.
+79,bow,$N bowed to $n
+8,smile1,$N smiled on the face.
+80,bow,$N bowed to everyone.
+81,brag,$N feels the only opponent in the world is himself.
+82,brag,"$N shouted to $n, anyone here who dare duel with me??"
+83,brag,$N feels the only opponent in the world is himself.
+84,brag,"$N shouted to $n, anyone here who dare duel with me??"
+85,brag,"$N shouted to everyone, anyone here who dare duel with me??"
+86,brother,"$N looked everyone over and over, still can't make the decision"
+87,brother,"$N greeting to $n, hello brother."
+88,brother,"$N looked everyone over and over, still can't make the decision"
+89,brother,"$N greeting to $n, hello brother."
+9,smile1,$N smiled to $n.
+90,brother,$N saluted to everyone saying: hello everyone.
+91,chinch,"$N found a chinch, and throw it away."
+92,chinch,"$N found a chinch, and pass it to $n."
+93,chinch,"$N found a chinch, and throw it away."
+94,chinch,"$N found a chinch,  and pass it to $n."
+95,chinch,$N hold a chinch saying: I want to report a bug.
+96,good bye 1,$N saluted and saying: I gonna go now.
+97,good bye 1,$N saluted to $n saying: see you next time.
+98,good bye 1,$N saluted and saying: I gonna go now.
+99,good bye 1,$N saluted to $n saying: see you next time.

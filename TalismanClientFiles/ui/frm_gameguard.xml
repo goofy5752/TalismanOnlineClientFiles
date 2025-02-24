@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="481,190,270,440" Name="frmGameguard" Show="false">
+      <TitleBarButton Location="-4,2,270,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <Label Inherit="bg1" Location="11,20,250,400" Name="13245" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="5,5,262,25" Name="13243" Show="true"/>
+      <CloseButton Location="235,32,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg3" Location="37,53,200,80" Name="lbGameguard" Show="true"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="38,142,80,20" Name="3283" Show="true" Text="$L:1648$"/>
+      <EditBox AlignCol="LEFT" EnableInput="true" Inherit="" LineSpacing="4" Location="42,169,190,50" Name="edbGuard" Show="true" WordWrap="true"/>
+      <EditBox AlignCol="LEFT" EnableInput="false" Inherit="" LineSpacing="4" Location="42,256,190,100" Name="edbGameguardDes" Show="true"/>
+      <Label Inherit="bg3" Location="37,164,200,60" Name="2166" Show="true"/>
+      <Label Inherit="bg3" Location="37,251,200,110" Name="2130" Show="true"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="38,229,80,20" Name="3315" Show="true" Text="$L:1649$"/>
+      <Button Inherit="PushButton" Location="37,372,70,20" Name="btOk" Show="true" Text="$L:958$"/>
+      <Button Inherit="PushButton" Location="167,372,70,20" Name="btCancel" Show="true" Text="$L:297$"/>
+    </Form>
+  </Layer>
+</Ui>

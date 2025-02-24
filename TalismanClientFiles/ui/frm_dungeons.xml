@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form HandleMove="true" Inherit="" Location="347,606,256,102" Name="frmDungeonProtect" Show="false" Size="200,170">
+      <Anchors>
+        <Anchor offset="0,200" point="TOP"/>
+        <Anchor offset="-100,0" point="RIGHT"/>
+      </Anchors>
+      <Label BackgroundColor="#77000000" Inherit="" Location="4,3,192,163" Name="6600" Show="true"/>
+      <Label BackgroundColor="" Inherit="bg3" Location="1,0,199,169" Name="6054" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="10,16,180,40" Name="lbNpcLev" Show="true" Text="第99波" TextFont="$L:1$" TextSize="34"/>
+      <Button Inherit="PushButton" Location="62,144,80,20" Name="btnQuit" Show="true" Text="$L:1102$"/>
+      <BorderImage/>
+      <EditBox EnableInput="false" Inherit="" Location="10,58,180,85" MouseEvent="false" MouseMove="false" MultiLine="true" Name="edbAtcInfo" Show="true" WordWrap="true"/>
+      <TitleBarButton Location="0,0,200,20"/>
+      <CloseButton Location="185,0,14,14" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </CloseButton>
+    </Form>
+    <Form Inherit="" Location="371,250,535,450" Movable="false" Name="frmDungeonMsg" Show="false" Size="535,450">
+      <TitleBarButton Location="7,2,520,28"/>
+      <Label Inherit="bg1" Location="6,18,520,430" Name="1256" Show="true"/>
+      <Label Inherit="" Location="256,0,256,256" Name="1294" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="512,8,216,258" Name="1313" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,256,256,256" Name="1406" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,256,256" Name="1451" Show="false">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="512,257,216,258" Name="1473" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor point="CENTERV"/>
+      </Anchors>
+      <Label Inherit="bg3" Location="20,52,200,34" Name="8222" Show="true"/>
+      <Label Inherit="bg3" Location="365,52,140,34" Name="8362" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="20,52,200,34" Name="lbDungeonName" Show="true" Text="保卫莫斯科" TextColor="#ff22ff22" TextFont="$L:1$" TextSize="24"/>
+      <Label Inherit="bg3" Location="18,87,491,322" Name="7315" Show="true"/>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="21,90,485,316" MultiLine="true" Name="edtContent" Show="true" WordWrap="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="365,52,140,34" Name="edtState" Show="true" Text="失败了" TextFont="$L:1$" TextSize="20"/>
+      <Button Inherit="PushButton" Location="231,412,100,24" Name="btnQuit" Show="true" Text="$L:1102$"/>
+      <CloseButton Show="false"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,532,47" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="207,0,120,68" Name="3856" Show="true" Text="$L:1109$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+    <Button BackgroundColor="#77000000" HandleMove="true" Inherit="" Location="1047,146,240,22" Name="btn3C" Show="false" Size="250,22">
+      <Button Inherit="" Location="218,1,22,20" Name="wgtDropDown" Show="true" Size="22,20">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor offset="0,1" point="TOP"/>
+        </Anchors>
+        <NormalImage File="tz_010" Source="68,418,27,26"/>
+        <PushedImage File="tz_010" Source="206,481,27,26"/>
+      </Button>
+      <Anchors>
+        <Anchor offset="0,180" point="TOP"/>
+        <Anchor offset="-20,0" point="RIGHT"/>
+      </Anchors>
+      <CheckButton Inherit="DefaultChkBtn" Location="0,0,114,20" Name="chkSelfTeam" Show="true" Text="$L:1155$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+      </CheckButton>
+      <CheckButton Inherit="DefaultChkBtn" Location="114,0,114,20" Name="chkOtherTeam" Show="true" Text="$L:1156$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+      </CheckButton>
+    </Button>
+    <Form BackgroundColor="#77000000" Inherit="" Location="10,10,240,320" Name="frmDungeon3C" Show="false" Size="250,320">
+      <Label Inherit="bg3" Location="1,40,248,280" Name="735" Show="fals"/>
+      <ListBox Inherit="" Location="4,43,241,273" Name="lstInfo" Show="true" Text=""/>
+      <TitleBarButton Location="0,0,200,20" Show="false"/>
+      <Anchors>
+        <Anchor offset="0,-1" point="TOP" relativePoint="BOTTOM" relativeTo="layWorld.btn3C"/>
+        <Anchor point="RIGHT" relativeTo="layWorld.btn3C"/>
+      </Anchors>
+      <Label AlignCol="CENTER" Inherit="" Location="9,1,70,18" Name="745" Show="true" Text="$L:1145$" TextColor="#EE17e834"/>
+      <Label AlignCol="CENTER" Inherit="" Location="96,1,70,18" Name="806" Show="true" Text="$L:1146$" TextColor="#EEfff902"/>
+      <Label Inherit="" Location="5,18,80,20" Name="12151" Show="true">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <EditBox AlignCol="CENTER" Enable="false" Inherit="" Location="5,21,80,20" Name="edbMyPoint" Show="true" Text="sdfds"/>
+      <Label Inherit="" Location="92,18,80,20" Name="12185" Show="true">
+        <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+      </Label>
+      <EditBox AlignCol="CENTER" Enable="false" Inherit="" Location="92,21,80,20" Name="edbYourPoint" Show="true" Text=""/>
+      <Button Inherit="PushButton" Location="179,11,60,20" Name="btClose" Show="true" Text="$L:1147$"/>
+      <CloseButton Location="185,0,14,14" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </CloseButton>
+    </Form>
+    <Label AlignCol="CENTER" Location="564,384,170,42" Name="labKiller" Show="false" Text="$L:1114$" TextColor="#ffdd1111" TextFont="$L:1$" TextSize="36"/>
+    <Form HandleMove="true" Inherit="" Location="347,606,200,150" Name="frmDungeonHuSong" Show="false" Size="200,120">
+      <Anchors>
+        <Anchor offset="0,200" point="TOP"/>
+        <Anchor offset="-100,0" point="RIGHT"/>
+      </Anchors>
+      <Label Inherit="bg3" Location="0,0,200,120" Name="40369" Show="true"/>
+      <Label BackgroundColor="#77000000" Inherit="" Location="3,3,194,114" Name="6600" Show="true"/>
+      <Button Inherit="PushButton" Location="62,95,80,20" Name="btnQuit" Show="true" Text="$L:1102$"/>
+      <BorderImage/>
+      <TitleBarButton Location="0,0,200,20"/>
+      <CloseButton Location="185,0,14,14" Show="false">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </CloseButton>
+      <Label AlignCol="true" AlignLine="true" Inherit="" Location="0,21,200,22" Name="lbDungeonName" Show="true"/>
+      <Label AlignCol="true" AlignLine="true" Inherit="" Location="1,52,200,20" Name="lbTime" Show="true"/>
+    </Form>
+  </Layer>
+</Ui>

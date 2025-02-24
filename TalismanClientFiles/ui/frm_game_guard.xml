@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="481,191,270,360" Name="frmGameguard" Show="false">
+      <TitleBarButton Location="-4,2,270,28" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <Label Inherit="bg1" Location="11,20,250,340" Name="13245" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="5,5,262,25" Name="13243" Show="true"/>
+      <CloseButton Location="235,32,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="bg3" Location="37,54,200,80" Name="lbGameguard" Show="true"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="38,137,160,20" Name="3283" Show="true" Text="$L:1648$"/>
+      <Label Inherit="" Location="42,159,159,20" Name="2166" Show="true">
+        <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+      </Label>
+      <Label Inherit="bg3" Location="37,207,200,110" Name="2130" Show="true"/>
+      <Label AlignCol="LEFT" AlignLine="CENTER" Inherit="" Location="38,188,160,20" Name="3315" Show="true" Text="$L:1649$"/>
+      <EditBox AlignCol="LEFT" EnableInput="true" Inherit="" LineSpacing="4" Location="47,161,140,20" MaxChar="4" Name="edbGuard" Show="true" WordWrap="true"/>
+      <EditBox AlignCol="LEFT" EnableInput="false" Inherit="" LineSpacing="4" Location="42,211,190,100" MultiLine="true" Name="edbGameguardDes" Show="true" Text="$L:1650$" WordWrap="true"/>
+      <Button Inherit="PushButton" Location="50,323,70,20" Name="btOk" Show="true" Text="$L:958$">
+        <Scripts>
+          <OnLClick>local edbGuard = SAPI.GetSibling(self, "edbGuard");
+			local text = edbGuard:getText();
+			if uiAuctionBidDiamondCheckPic(text) == true then
+				SAPI.GetParent(self):Hide();
+			else
+				uiClientMsg(LAN("msg_bid_diamond_check_pic_fail"), true);
+			end</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="156,324,70,20" Name="btCancel" Show="true" Text="$L:297$">
+        <Scripts>
+          <OnLClick>SAPI.GetParent(self):Hide();</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("EVENT_AuctionBidDiamondCheckPic")</OnLoad>
+        <OnEvent>if event == "EVENT_AuctionBidDiamondCheckPic" then
+				local image = uiAuctionGetBidDiamondCheckPic();
+				if not image then self:Hide() return end
+				local lbGameguard = SAPI.GetChild(self, "lbGameguard");
+				local edbGuard = SAPI.GetChild(self, "edbGuard");
+				lbGameguard:SetBackgroundImage(image);
+				edbGuard:SetText("");
+				self:ShowModal();
+			end</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

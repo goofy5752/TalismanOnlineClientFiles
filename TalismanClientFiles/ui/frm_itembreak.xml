@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="299,273,235,140" Name="frmItemBreak" Show="fals">
+      <Label Inherit="bg1" Location="8,19,220,120" Name="582" Show="true">
+        <BackgroundImage/>
+      </Label>
+      <Button Inherit="PushButton" Location="43,104,50,20" Name="btRewardOk" Show="true" Text="$L:843$"/>
+      <Button Inherit="PushButton" Location="152,104,50,20" Name="btRewardClose" Show="true" Text="$L:844$"/>
+      <Label Inherit="" Location="33,53,70,18" Name="1220" Show="true" Text="$L:842$"/>
+      <EditBox BackgroundColor="" ColSpacing="4" Enable="true" EnableInput="true" Inherit="" LineSpacing="4" Location="90,74,60,20" MaxChar="3" Name="1354" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+      </EditBox>
+      <Button Inherit="" Location="76,77,12,14" Name="btItemb1" Show="true">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+      </Button>
+      <Button Inherit="" Location="152,77,12,14" Name="btItemb2" Show="true">
+        <NormalImage File="tz_010" Source="76,382,12,14"/>
+        <PushedImage File="tz_010" Source="76,399,12,14"/>
+      </Button>
+      <Label Inherit="TemplateNormalTitle" Location="3,2,230,45" Name="569" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="85,0,70,68" Name="lbRewardTitel" Show="true" Text="$L:841$"/>
+      <TitleBarButton Location="0,0,235,26" Show="true"/>
+      <CloseButton Location="208,30,13,13" Show="true">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

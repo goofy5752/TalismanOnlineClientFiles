@@ -1,0 +1,5 @@
+ae,string,string,string,marea,mpos,int
+编号,名字,注释,目录,区域,复活点,Npc重生方式
+"ID","Name","Comment","Directory","area","pos","nNpcRebirthType"
+1,$L:sn001_baihuachaoyin$,$L:sn001_baihuachaoyin$,baihuachaoyin/,"-39 -12 284 298;
+-49 258 287 532;","130 40 0;",1

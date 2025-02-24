@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Location="47,75,770,538" Name="frBuyAll" Show="false">
+      <TitleBarButton Location="5,1,760,35"/>
+      <Form Inherit="NoTitleBarForm" Location="0,2,770,538" Name="frBuyBrowes" Show="false">
+        <Label Inherit="bg1" Location="9,17,750,512" Name="lbBrowes1" Show="fals"/>
+        <Label Inherit="" Location="256,0,256,256" Name="lbBrowes2" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label Inherit="" Location="512,0,220,256" Name="lbBrowes3" Show="false">
+          <BackgroundImage File="" Source="0,0,220,256"/>
+        </Label>
+        <Label Inherit="bg3" Location="260,102,480,340" Name="12615" Show="true"/>
+        <Label Inherit="" Location="0,256,256,256" Name="lbBrowes4" Show="false">
+          <BackgroundImage File="" Source="0,1,256,255"/>
+        </Label>
+        <Label Inherit="" Location="256,256,256,256" Name="lbBrowes5" Show="false">
+          <BackgroundImage File="" Source="0,0,256,256"/>
+        </Label>
+        <Label Inherit="" Location="512,256,220,256" Name="lbBrowes6" Show="false">
+          <BackgroundImage File="" Source="0,0,220,256"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="146,52,86,18" Name="lbPlayTitle" Show="true" Text="$L:508$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="261,52,80,18" Name="lbItemLev" Show="true" Text="$L:509$"/>
+        <EditBox ColSpacing="6" Inherit="DefaultEdit" Location="146,72,80,20" Name="edbItemName" Show="true">
+          <BackgroundImage File="tz_010" Source="442,217,60,20"/>
+        </EditBox>
+        <EditBox AutoScrollV="false" Inherit="DefaultEdit" Location="261,72,30,20" Name="edbItem1" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <EditBox AutoScrollV="false" Inherit="DefaultEdit" Location="301,72,30,20" Name="edbItem2" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <Label AlignCol="CENTER" Inherit="" Location="354,52,80,18" Name="lbItemQuality" Show="true" Text="$L:510$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="464,52,118,18" Name="lbSchool" Show="true" Text="$L:511$"/>
+        <ComboBox AlignCol="CENTER" AlignLine="CENTER" Inherit="StudioCb" Location="345,72,100,22" Name="cbItemQuality" Show="true">
+          <Editor ColSpacing="4" LineSpacing="5"/>
+        </ComboBox>
+        <ComboBox AlignCol="CENTER" AlignLine="CENTER" Inherit="StudioCb" Location="474,72,100,22" Name="cbItemSchool" Show="true">
+          <Editor ColSpacing="4" LineSpacing="5"/>
+        </ComboBox>
+        <Label Inherit="" Location="604,52,56,18" Name="lbAbleItem" Show="true" Text="$L:512$"/>
+        <CheckButton Inherit="" Location="622,72,24,22" Name="ckbtUseItem" Show="true">
+          <CheckImage File="tz_012" Source="82,4,25,22"/>
+          <BackgroundImage File="tz_012" Source="151,6,24,22"/>
+        </CheckButton>
+        <Button Inherit="PushButton" Location="678,74,60,20" Name="btsearch" Show="true" Text="$L:513$"/>
+        <Label Inherit="" Location="100,101,40,18" Name="lbListName" Show="true" Text="$L:514$"/>
+        <Label Inherit="bg3" Location="35,119,170,255" Name="2045" Show="true"/>
+        <Tree BackgroundColor="#99221100" Inherit="Def_Tree" Location="39,124,160,246" Name="trBrowes" Show="true">
+          <ShrinkImage File="ico04"/>
+          <ExpandImage File="ico02"/>
+        </Tree>
+        <ScrollBarV Inherit="DefaultSbv" Location="721,134,14,305" Name="sbBuyBrowes" Show="true"/>
+        <Label Inherit="" Location="262,135,460,40" Name="lbBuyItem1" Show="true">
+          <Label BackgroundColor="" Inherit="bg3" Location="0,0,460,40" Name="lbShowItem1" Show="true"/>
+          <Button Inherit="" Location="2,5,32,32" Name="btBuyItem1" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName1" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,10,20,20" Name="lbBuyItemLev1" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,10,60,20" Name="lbBuyLastTime1" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,10,80,20" Name="lbBuyPlayer1" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,5,126,18" Name="edbBuyGold" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,20,126,18" Name="edOneBuyGold11" Show="true"/>
+        </Label>
+        <Label Inherit="" Location="262,173,460,40" Name="lbBuyItem2" Show="true">
+          <Label BackgroundColor="" Inherit="bg3" Location="0,0,460,40" Name="lbShowItem2" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btBuyItem2" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName2" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,11,18,18" Name="lbBuyItemLev2" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,11,60,18" Name="lbBuyLastTime2" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,11,80,18" Name="lbBuyPlayer2" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,4,126,18" Name="edbBuyGold2" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,19,126,18" Name="edOneBuyGold22" Show="true"/>
+        </Label>
+        <Label Inherit="" Location="262,211,460,40" Name="lbBuyItem3" Show="true">
+          <Label BackgroundColor="" Inherit="bg3" Location="0,0,460,40" Name="lbShowItem3" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btBuyItem3" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName3" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,11,18,18" Name="lbBuyItemLev3" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,11,60,18" Name="lbBuyLastTime3" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,11,80,18" Name="lbBuyPlayer3" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,4,126,18" Name="edbBuyGold3" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,19,126,18" Name="edOneBuyGold33" Show="true"/>
+        </Label>
+        <Label Inherit="" Location="262,249,460,40" Name="lbBuyItem4" Show="true">
+          <Label BackgroundColor="" Inherit="bg3" Location="0,0,460,40" Name="lbShowItem4" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btBuyItem4" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName4" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,11,18,18" Name="lbBuyItemLev4" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,11,60,18" Name="lbBuyLastTime4" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,11,80,18" Name="lbBuyPlayer4" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,3,126,18" Name="edbBuyGold4" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,18,126,18" Name="edOneBuyGold44" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="262,287,460,40" Name="lbBuyItem5" Show="true">
+          <Label Inherit="bg3" Location="0,0,460,40" Name="lbShowItem5" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btBuyItem5" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName5" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,11,18,18" Name="lbBuyItemLev5" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,11,60,18" Name="lbBuyLastTime5" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,11,80,18" Name="lbBuyPlayer5" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,4,126,18" Name="edbBuyGold5" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,19,126,18" Name="edOneBuyGold55" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="262,325,460,40" Name="lbBuyItem6" Show="true">
+          <Label Inherit="bg3" Location="0,0,460,40" Name="lbShowItem6" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btBuyItem6" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName6" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,11,18,18" Name="lbBuyItemLev6" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,11,60,18" Name="lbBuyLastTime6" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,11,80,18" Name="lbBuyPlayer6" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,4,126,18" Name="edbBuyGold6" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,19,126,18" Name="edOneBuyGold66" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="262,363,460,40" Name="lbBuyItem7" Show="true">
+          <Label Inherit="bg3" Location="0,0,460,40" Name="lbShowItem7" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btBuyItem7" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName7" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,11,18,18" Name="lbBuyItemLev7" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,11,60,18" Name="lbBuyLastTime7" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,11,80,18" Name="lbBuyPlayer7" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,4,126,18" Name="edbBuyGold7" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,19,126,18" Name="edOneBuyGold77" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="262,401,460,40" Name="lbBuyItem8" Show="true">
+          <Label Inherit="bg3" Location="0,0,460,40" Name="lbShowItem8" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btBuyItem8" Show="true">
+            <BackgroundImage File="tz_010" Source="141,383,40,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="38,11,90,18" Name="lbBuyItemName8" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="147,11,18,18" Name="lbBuyItemLev8" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="185,11,60,18" Name="lbBuyLastTime8" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="243,11,80,18" Name="lbBuyPlayer8" Show="false"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,4,126,18" Name="edbBuyGold8" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="325,19,126,18" Name="edOneBuyGold88" Show="true"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="69,379,100,18" Name="lbChange" Show="true" Text="$L:515$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="70,424,100,18" Name="lbNow" Show="true" Text="$L:516$"/>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="58,400,60,20" MaxNumber="200000" Name="edbChangeGold" NumberOnly="true" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="144,400,30,20" Name="EdbChangeAg" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="199,400,30,20" Name="edbChangeCu" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" EnableInput="false" Inherit="DefaultEdit" Location="57,448,60,20" MaxNumber="200000" Name="edbNowGold" NumberOnly="true" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" EnableInput="false" Inherit="DefaultEdit" Location="144,448,30,20" Name="edbNowAg" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" EnableInput="false" Inherit="DefaultEdit" Location="199,448,30,20" Name="edbNowCu" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <Button Inherit="PushButton" Location="438,484,80,20" Name="BtBrowesChange" Show="true" Text="$L:517$"/>
+        <Button Inherit="PushButton" Location="542,484,80,20" Name="btOneMoney" Show="true" Text="$L:518$"/>
+        <Button Inherit="PushButton" Location="643,484,80,20" Name="btAllClose" Show="true" Text="$L:519$"/>
+        <Button Inherit="PushButton" Location="261,444,50,20" Name="btBuyBrowesLeft" Show="true" Text="$L:520$"/>
+        <Button Inherit="PushButton" Location="672,444,50,20" Name="btBuyBrowesRight" Show="true" Text="$L:521$"/>
+        <Label Inherit="" Location="32,399,24,22" Name="lbGold" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="119,399,24,22" Name="lbAg" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="174,397,24,26" Name="lbCu" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label Inherit="" Location="31,447,24,22" Name="lbNowGold" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="118,446,24,22" Name="lbNowAg" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="174,446,24,26" Name="lbNowCu" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="262,113,80,18" Name="15477" Show="true" Text="$L:522$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="437,113,60,18" Name="15499" Show="true" Text="$L:523$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="366,113,60,18" Name="22351" Show="true" Text="$L:524$"/>
+        <Label Inherit="" Location="510,113,46,18" Name="23019" Show="false" Text="$L:525$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="598,113,56,18" Name="23688" Show="true" Text="$L:526$"/>
+        <Label Inherit="TemplateNormalTitle" Location="3,0,762,47" Name="lbTitle" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="326,0,120,66" Name="1156" Show="true" Text="$L:527$" TextFont="$L:1$" TextSize="$L:3$"/>
+        <Button Inherit="" Location="23,32,52,52" Name="btPlayBrowesImg" Show="true"/>
+        <Button Inherit="" Location="15,23,78,80" Name="btChangeBuyImg" Show="fals">
+          <BackgroundImage File="tz_010" Source="404,51,78,80"/>
+        </Button>
+        <CheckButton Checked="true" Inherit="" Location="261,475,24,22" Name="ckbSort" Show="true">
+          <CheckImage File="tz_012" Source="82,4,25,22"/>
+          <BackgroundImage File="tz_012" Source="151,6,24,22"/>
+        </CheckButton>
+        <Label Inherit="" Location="291,477,130,18" Name="13512" Show="true" Text="$L:1302$"/>
+        <Label Inherit="" Location="-6,493,240,28" Name="lbBindMoney" Show="true">
+          <Label Inherit="" Location="37,3,24,22" Name="lbNowbindGold" Show="true">
+            <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+          </Label>
+          <Label Inherit="" Location="124,3,24,22" Name="lbNowbindAg" Show="true">
+            <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+          </Label>
+          <Label Inherit="" Location="180,3,24,26" Name="lbNowbindCu" Show="true">
+            <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+          </Label>
+          <EditBox AlignCol="CENTER" EnableInput="false" Inherit="DefaultEdit" Location="62,4,60,20" MaxNumber="200000" Name="lbTotalbindG" NumberOnly="true" Show="true">
+            <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+          </EditBox>
+          <EditBox AlignCol="CENTER" EnableInput="false" Inherit="DefaultEdit" Location="149,4,30,20" Name="lbTotalbindA" Show="true">
+            <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+          </EditBox>
+          <EditBox AlignCol="CENTER" EnableInput="false" Inherit="DefaultEdit" Location="204,4,30,20" Name="lbTotalbindC" Show="true">
+            <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+          </EditBox>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("Cre ShowAttrib Changed")</OnLoad>
+            <OnEvent>if event == "Cre ShowAttrib Changed" then
+					local lbTotalbindG = SAPI.GetChild(self, "lbTotalbindG");
+					local lbTotalbindA = SAPI.GetChild(self, "lbTotalbindA");
+					local lbTotalbindC = SAPI.GetChild(self, "lbTotalbindC");
+					local _, bindmoney = uiGetMyInfo("Money");
+					local gold, silver, sopper = SAPI.GetMoneyShowStyle(bindmoney);
+					lbTotalbindG:SetText(tostring(gold));
+					lbTotalbindA:SetText(tostring(silver));
+					lbTotalbindC:SetText(tostring(sopper));
+				end</OnEvent>
+          </Scripts>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="70,473,100,20" Name="lbNowbindMoneyChange" Show="true" Text="$L:1532$" TextFont="" TextSize=""/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="0,0,770,535" Name="frChange" Show="false">
+        <Label Inherit="bg1" Location="9,18,750,512" Name="lbChange1" Show="true">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,256,256" Name="lbChange2" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label Inherit="" Location="512,0,220,256" Name="lbChange3" Show="false">
+          <BackgroundImage File="" Source="0,0,220,256"/>
+        </Label>
+        <Label Inherit="" Location="0,256,256,256" Name="lbChange4" Show="false">
+          <BackgroundImage File="" Source="0,0,256,256"/>
+        </Label>
+        <Label Inherit="bg3" Location="91,73,624,360" Name="12615" Show="fals"/>
+        <Label Inherit="" Location="256,256,256,256" Name="lbBrowes5" Show="false">
+          <BackgroundImage File="" Source="0,0,256,256"/>
+        </Label>
+        <Label Inherit="" Location="512,256,218,256" Name="lbChange6" Show="false">
+          <BackgroundImage File="" Source="0,0,218,256"/>
+        </Label>
+        <Label Inherit="bg3" Location="90,146,600,40" Name="lbChangeItem2" Show="true">
+          <Label Inherit="" Location="0,0,600,40" Name="lbShowItem2" Show="true"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem2" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName2" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev2" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime2" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer2" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold2" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold12" Show="true"/>
+        </Label>
+        <Label Inherit="" Location="90,105,600,40" Name="lbChangeItem1" Show="true">
+          <Label Inherit="bg3" Location="0,0,600,40" Name="lbShowItem1" Show="true"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem1" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName1" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev1" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime1" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer1" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold11" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="bg3" Location="90,187,600,40" Name="lbChangeItem3" Show="true">
+          <Label Inherit="bg3" Location="0,0,600,40" Name="lbShowItem3" Show="fals"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem3" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName3" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev3" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime3" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer3" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold3" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold13" Show="true"/>
+        </Label>
+        <Label Inherit="bg3" Location="90,228,600,40" Name="lbChangeItem4" Show="true">
+          <Label Inherit="bg3" Location="0,0,600,40" Name="lbShowItem4" Show="true"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem4" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName4" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev4" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime4" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer4" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold4" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold14" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="bg3" Location="90,269,600,40" Name="lbChangeItem5" Show="true">
+          <Label Inherit="" Location="0,0,600,40" Name="lbShowItem5" Show="true"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem5" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName5" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev5" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime5" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer5" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold5" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold15" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="bg3" Location="90,310,600,40" Name="lbChangeItem6" Show="true">
+          <Label Inherit="" Location="0,0,600,40" Name="lbShowItem6" Show="true"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem6" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName6" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev6" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime6" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer6" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold6" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold16" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="bg3" Location="90,351,600,40" Name="lbChangeItem7" Show="true">
+          <Label Inherit="" Location="0,0,600,40" Name="lbShowItem7" Show="true"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem7" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName7" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev7" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime7" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer7" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold7" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold17" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="bg3" Location="90,392,600,40" Name="lbChangeItem8" Show="true">
+          <Label Inherit="" Location="0,0,600,40" Name="lbShowItem8" Show="true"/>
+          <Button Inherit="" Location="3,4,32,32" Name="btChangeItem8" Show="true">
+            <BackgroundImage File="tz_010" Source="143,382,41,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbChangeItemName8" Show="true"/>
+          <Label AlignLine="CENTER" Inherit="" Location="140,11,18,18" Name="lbChangeItemLev8" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="175,11,60,18" Name="lbChangeLastTime8" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="368,11,60,18" Name="lbChangePlayer8" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="442,11,146,18" Name="edbChangeGold8" Show="true"/>
+          <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="242,11,126,18" Name="edOneChangeGold18" Show="true"/>
+        </Label>
+        <ScrollBarV Inherit="DefaultSbv" Location="691,104,14,326" Name="sbChange" Show="true"/>
+        <Button Inherit="PushButton" Location="372,490,80,20" Name="BtChange" Show="false" Text="$L:528$"/>
+        <Button Inherit="PushButton" Location="495,490,90,20" Name="btOneMoneyChange" Show="false" Text="$L:529$"/>
+        <Button Inherit="PushButton" Location="635,490,80,20" Name="btAllCloseChange" Show="true" Text="$L:530$"/>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="173,497,60,20" MaxNumber="200000" Name="edbChangeG" NumberOnly="true" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="259,497,30,20" Name="edbChangeA" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="316,497,30,20" Name="edbChangeC" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <Label AlignCol="CENTER" Inherit="" Location="46,470,100,18" Name="lbNowMoneyChange" Show="true" Text="$L:531$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" LineSpacing="4" Location="173,469,60,20" Name="lbChangeG" Show="true" Text="">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </Label>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="4" Location="259,469,30,20" Name="lbChangeA" Show="true" Text="">
+          <BackgroundImage File="tz_010" Source="458,193,30,20."/>
+        </Label>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="4" Location="316,469,30,20" Name="lbChangeC" Show="true" Text="">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Button Inherit="PushButton" Location="85,438,50,20" Name="btChangeLeft" Show="true" Text="$L:532$"/>
+        <Button Inherit="PushButton" Location="659,438,50,20" Name="btChangeRight" Show="true" Text="$L:533$"/>
+        <Label Inherit="" Location="147,468,24,22" Name="lbAllGold" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="234,466,24,22" Name="lbAllAg" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="290,465,24,26" Name="lbAllCu" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label Inherit="" Location="147,496,24,22" Name="21302" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="233,493,24,26" Name="22049" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="290,493,24,26" Name="22798" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="107,82,80,18" Name="15477" Show="true" Text="$L:534$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="207,82,55,18" Name="15499" Show="true" Text="$L:535$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="262,82,80,18" Name="16160" Show="true" Text="$L:536$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="356,82,84,18" Name="16822" Show="true" Text="$L:537$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="450,82,80,18" Name="17485" Show="true" Text="$L:538$"/>
+        <Label Inherit="" Location="543,47,140,18" Name="18149" Show="false" Text="$L:539$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="561,82,100,18" Name="1918" Show="fals" Text="$L:540$"/>
+        <Label Inherit="TemplateNormalTitle" Location="3,0,762,47" Name="lbTitle" Show="true"/>
+        <Label AlignCol="CENTER" Inherit="" Location="323,23,126,20" Name="1156" Show="true" Text="$L:541$" TextFont="$L:1$" TextSize="$L:3$"/>
+        <Button Inherit="" Location="21,25,52,52" Name="btChangeBuyImg" Show="fals"/>
+        <Label Inherit="" Location="16,21,52,52" Name="10571" Show="false"/>
+        <Label AlignCol="CENTER" Inherit="" Location="46,498,100,18" Name="56061" Show="true" Text="$L:528$"/>
+        <Button Inherit="" Location="12,18,78,80" Name="btPlayBrowesImg" Show="fals">
+          <BackgroundImage File="tz_010" Source="404,51,78,80"/>
+        </Button>
+        <Label Inherit="" Location="348,464,280,30" Name="lbBindMoney" Show="true">
+          <Label AlignCol="CENTER" Inherit="" Location="2,6,80,20" Name="lbNowbindMoneyChange" Show="true" Text="$L:1532$"/>
+          <Label Inherit="" Location="81,4,24,22" Name="lbAllbindGold" Show="true">
+            <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+          </Label>
+          <Label Inherit="" Location="167,4,24,22" Name="lbAllbindAg" Show="true">
+            <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+          </Label>
+          <Label Inherit="" Location="223,3,24,26" Name="lbAllbindCu" Show="true">
+            <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+          </Label>
+          <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="4" Location="105,5,60,20" Name="lbTotalbindG" Show="true" Text="">
+            <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+          </Label>
+          <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="4" Location="192,5,30,20" Name="lbTotalbindA" Show="true" Text="">
+            <BackgroundImage File="tz_010" Source="458,193,30,20."/>
+          </Label>
+          <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="4" Location="248,5,30,20" Name="lbTotalbindC" Show="true" Text="">
+            <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+          </Label>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("Cre ShowAttrib Changed")</OnLoad>
+            <OnEvent>if event == "Cre ShowAttrib Changed" then
+					local lbTotalbindG = SAPI.GetChild(self, "lbTotalbindG");
+					local lbTotalbindA = SAPI.GetChild(self, "lbTotalbindA");
+					local lbTotalbindC = SAPI.GetChild(self, "lbTotalbindC");
+					local _, bindmoney = uiGetMyInfo("Money");
+					local gold, silver, sopper = SAPI.GetMoneyShowStyle(bindmoney);
+					lbTotalbindG:SetText(tostring(gold));
+					lbTotalbindA:SetText(tostring(silver));
+					lbTotalbindC:SetText(tostring(sopper));
+				end</OnEvent>
+          </Scripts>
+        </Label>
+      </Form>
+      <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="0,0,770,535" Name="fmBuy" Show="false">
+        <Label Inherit="bg1" Location="9,18,750,512" Name="lbBuy1" Show="true"/>
+        <Label Inherit="" Location="256,0,256,256" Name="lbBuy2" Show="false">
+          <BackgroundImage File=""/>
+        </Label>
+        <Label Inherit="bg3" Location="290,93,449,352" Name="12615" Show="true"/>
+        <Label Inherit="bg3" Location="37,93,245,420" Name="13966" Show="true"/>
+        <Label Inherit="" Location="512,0,220,256" Name="lbBuy3" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="0,256,256,256" Name="lbBuy4" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,256,256,256" Name="lbBuy5" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="512,256,218,256" Name="lbBuy6" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label ColSpacing="4" Inherit="" LineSpacing="5" Location="107,131,125,24" Name="lbItemBuyName" Show="fals" Text="sdf">
+          <BackgroundImage File="tz_012" Source="364,368,150,25"/>
+        </Label>
+        <Label Inherit="" Location="61,123,40,40" Name="1669" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,40,40"/>
+        </Label>
+        <Button Inherit="" Location="65,127,32,32" Name="btItemBuyImg" Show="true"/>
+        <Label AlignCol="LEFT" Inherit="" Location="62,104,70,18" Name="lbBuyItem" Show="true" Text="$L:542$"/>
+        <Label Inherit="" Location="51,227,90,18" Name="lbMoney" Show="true" Text="$L:543$"/>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="83,255,60,20" MaxNumber="200000" Name="edbBuyG" NumberOnly="true" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="171,254,30,20" Name="edbBuyA" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="227,254,30,20" Name="edbBuyC" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <Label Inherit="" Location="62,179,70,18" Name="lbBuyTime" Show="true" Text="$L:544$"/>
+        <CheckButton Inherit="" Location="142,178,20,20" Name="ckbTiime1" Show="true">
+          <CheckImage File="tz_012" Source="83,4,24,24"/>
+          <BackgroundImage File="tz_012" Source="152,7,23,23"/>
+        </CheckButton>
+        <Label Inherit="" Location="166,179,60,18" Name="lbBuytime1" Show="true" Text="$L:545$"/>
+        <CheckButton Inherit="" Location="142,201,20,20" Name="ckbTiime2" Show="true">
+          <CheckImage File="tz_012" Source="83,4,24,24"/>
+          <BackgroundImage File="tz_012" Source="152,7,23,21"/>
+        </CheckButton>
+        <Label Inherit="" Location="166,202,60,18" Name="lbBuytime2" Show="true" Text="$L:546$"/>
+        <CheckButton Inherit="" Location="142,224,20,20" Name="ckbTiime3" Show="true">
+          <CheckImage File="tz_012" Source="83,4,24,24"/>
+          <BackgroundImage File="tz_012" Source="152,7,23,21"/>
+        </CheckButton>
+        <Label Inherit="" Location="166,225,60,18" Name="lbBuyTime3" Show="true" Text="$L:547$"/>
+        <Label Inherit="" Location="52,280,90,18" Name="lbOneBuy" Show="true" Text="$L:548$"/>
+        <Label Inherit="bg3" Location="126,332,124,26" Name="47859" Show="true"/>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="83,302,60,20" MaxNumber="200000" Name="edbBuyGold" NumberOnly="true" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="171,302,30,20" Name="edbBuyAg" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <EditBox AlignCol="CENTER" Inherit="DefaultEdit" Location="227,302,30,20" Name="edbBuyCu" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </EditBox>
+        <Label ColSpacing="" Inherit="" Location="50,336,78,18" Name="lbSaveMoney" Show="true" Text="$L:549$"/>
+        <EditBox AlignCol="CENTER" AlignLine="CENTER" ColSpacing="4" Inherit="" Location="129,335,120,20" Name="edbSaveMoney" Show="true"/>
+        <Button Inherit="PushButtonLong" Location="95,474,126,20" Name="btSaveMoney" Show="true" Text="$L:550$"/>
+        <Label Inherit="" Location="50,361,100,18" Name="LbtotalMoney" Show="true" Text="$L:551$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="DefaultEdit" LineSpacing="4" Location="83,383,60,20" Name="lbTotalG" Show="true" Text="">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </Label>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="DefaultEdit" LineSpacing="4" Location="171,383,30,20" Name="lbTotalA" Show="true" Text="">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="DefaultEdit" LineSpacing="4" Location="227,383,30,20" Name="lbTotalC" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <ScrollBarV Inherit="DefaultSbv" Location="719,123,15,320" Name="sbBuy" Show="true"/>
+        <Label BackgroundColor="" Inherit="" Location="293,126,425,40" Name="lbAllItem1" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem1" Show="fals"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem1" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName1" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime1" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer1" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,4,146,18" Name="edbAllItemBuyGold" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold11" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="293,165,425,40" Name="lbAllItem2" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem2" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem2" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName2" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime2" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer2" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,4,146,18" Name="edbAllItemBuyGold2" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold12" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="293,205,425,40" Name="lbAllItem3" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem3" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem3" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName3" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime3" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer3" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,4,146,18" Name="edbAllItemBuyGold3" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold13" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="293,245,425,40" Name="lbAllItem4" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem4" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem4" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName4" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime4" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer4" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,4,146,18" Name="edbAllItemBuyGold4" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold14" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="293,285,425,40" Name="lbAllItem5" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem5" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem5" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName5" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime5" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer5" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,4,146,18" Name="edbAllItemBuyGold5" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold15" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="293,325,425,40" Name="lbAllItem6" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem6" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem6" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName6" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime6" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer6" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,4,146,18" Name="edbAllItemBuyGold6" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold16" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="293,365,425,40" Name="lbAllItem7" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem7" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem7" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName7" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime7" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer7" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,4,146,18" Name="edbAllItemBuyGold7" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold17" Show="true"/>
+        </Label>
+        <Label BackgroundColor="" Inherit="" Location="293,405,425,40" Name="lbAllItem8" Show="true">
+          <Label Inherit="bg3" Location="0,0,425,40" Name="lbShowItem8" Show="true"/>
+          <Button Inherit="" Location="3,5,32,32" Name="btAllItem8" Show="true">
+            <BackgroundImage File="tz_010" Source="141,382,42,40"/>
+          </Button>
+          <Label AlignLine="CENTER" Inherit="" Location="36,11,90,18" Name="lbAllItemName8" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="133,11,60,18" Name="lbAllItemLastTime8" Show="true"/>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="200,11,60,18" Name="lbAllItemPlayer8" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,5,146,18" Name="edbAllItemBuyGold8" Show="true"/>
+          <EditBox AlignCol="CENTER" Inherit="" Location="272,19,146,18" Name="edAllItemOneBuyGold18" Show="true"/>
+        </Label>
+        <Button Inherit="PushButton" Location="375,490,80,20" Name="btAllBuyFalse" Show="true" Text="$L:552$"/>
+        <Button Inherit="PushButton" Location="580,490,80,20" Name="btBuyClose" Show="true" Text="$L:553$"/>
+        <Button Inherit="PushButton" Location="291,455,50,20" Name="btBuyLeft" Show="true" Text="$L:554$"/>
+        <Button Inherit="PushButton" Location="688,455,50,20" Name="btBuyRight" Show="true" Text="$L:555$"/>
+        <Label Inherit="" Location="58,253,24,22" Name="lbAllGold" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="145,253,24,22" Name="lbAllAg" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="202,250,24,26" Name="lbAllCu" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label Inherit="" Location="58,300,24,22" Name="lbOneGold" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="145,300,24,22" Name="lbOneAg" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="202,379,24,26" Name="34389" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,24"/>
+        </Label>
+        <Label Inherit="" Location="58,382,24,22" Name="35576" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="145,382,24,22" Name="36171" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="202,298,24,26" Name="lbOneCu" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="285,104,76,18" Name="8217" Show="true" Text="$L:556$"/>
+        <Label AlignCol="RIGHT" Inherit="" Location="396,104,64,18" Name="8239" Show="true" Text="$L:557$"/>
+        <Label AlignCol="LEFT" Inherit="" Location="482,104,85,18" Name="8872" Show="true" Text="$L:558$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="565,104,94,18" Name="9506" Show="true" Text="$L:559$"/>
+        <Label Inherit="" Location="20,138,70,18" Name="7475" Show="false" Text="$L:636$"/>
+        <EditBox Inherit="DefaultEdit" Location="20,163,126,18" Name="ebCardNumber" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </EditBox>
+        <Label Inherit="" Location="20,187,70,18" Name="10364" Show="false" Text="$L:637$"/>
+        <EditBox Inherit="DefaultEdit" Location="20,212,126,18" Name="ebCardPassword" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </EditBox>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="103,82,70,18" Name="31018" Show="false" Text="$L:638$">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <CheckButton Enable="false" Inherit="DefaultChkBtn" Location="174,82,18,18" Name="chbCard" Show="false">
+          <DisabledImage File="" Source=""/>
+        </CheckButton>
+        <ComboBox Inherit="StudioCb" Location="111,135,120,20" Name="cbDimond" Show="falsee"/>
+        <CheckButton Enable="false" Inherit="DefaultChkBtn" Location="142,168,18,18" Name="chkDiamond" Show="false">
+          <DisabledImage File="" Source=""/>
+        </CheckButton>
+        <Label Inherit="TemplateNormalTitle" Location="3,1,762,47" Name="lbTitle" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="67,134,25,22" Name="13297" Show="fals" Text="$L:825$">
+          <BackgroundImage File="tz_010" Source="382,490,25,22"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="325,23,120,20" Name="1156" Show="true" Text="$L:560$" TextFont="$L:1$" TextSize="$L:3$"/>
+        <Button Inherit="" Location="16,25,78,80" Name="btChangeBuyImg" Show="true">
+          <BackgroundImage File="tz_010" Source="404,51,78,80"/>
+        </Button>
+        <Button Inherit="" Location="25,32,52,52" Name="btPlayBuyImg" Show="true"/>
+        <Label AlignCol="LEFT" Inherit="" Location="62,108,80,18" Name="29889" Show="falsee" Text="$L:825$"/>
+        <Label Inherit="" Location="46,431,220,30" Name="lbBindMoney" Show="true">
+          <Label Inherit="" Location="12,4,24,22" Name="98300" Show="true">
+            <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+          </Label>
+          <Label Inherit="" Location="99,3,24,22" Name="101842" Show="true">
+            <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+          </Label>
+          <Label Inherit="" Location="156,1,24,26" Name="105384" Show="true">
+            <BackgroundImage File="tz_010" Source="476,485,24,24"/>
+          </Label>
+          <Label AlignCol="CENTER" ColSpacing="4" Inherit="DefaultEdit" LineSpacing="4" Location="37,5,60,20" Name="lbTotalbindG" Show="true" Text="">
+            <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+          </Label>
+          <Label AlignCol="CENTER" ColSpacing="4" Inherit="DefaultEdit" LineSpacing="4" Location="125,5,30,20" Name="lbTotalbindA" Show="true" Text="">
+            <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+          </Label>
+          <Label AlignCol="CENTER" ColSpacing="4" Inherit="DefaultEdit" LineSpacing="4" Location="181,5,30,20" Name="lbTotalbindC" Show="true">
+            <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+          </Label>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("Cre ShowAttrib Changed")</OnLoad>
+            <OnEvent>if event == "Cre ShowAttrib Changed" then
+					local lbTotalbindG = SAPI.GetChild(self, "lbTotalbindG");
+					local lbTotalbindA = SAPI.GetChild(self, "lbTotalbindA");
+					local lbTotalbindC = SAPI.GetChild(self, "lbTotalbindC");
+					local _, bindmoney = uiGetMyInfo("Money");
+					local gold, silver, sopper = SAPI.GetMoneyShowStyle(bindmoney);
+					lbTotalbindG:SetText(tostring(gold));
+					lbTotalbindA:SetText(tostring(silver));
+					lbTotalbindC:SetText(tostring(sopper));
+				end</OnEvent>
+          </Scripts>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="110,410,100,20" Name="lbtotalbindMonney" Show="true" Text="$L:1532$"/>
+      </Form>
+      <CloseButton Show="false"/>
+      <Label Inherit="" Location="360,446,260,18" Name="lbItemsNumber" Show="true"/>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="70,604,320,40" Name="frButtons" Show="false" Size="320,40">
+      <Anchors>
+        <Anchor offset="24,0" point="LEFT" relativeTo="layWorld.frBuyAll"/>
+        <Anchor offset="0,-8" point="TOP" relativePoint="BOTTOM" relativeTo="layWorld.frBuyAll"/>
+      </Anchors>
+      <CheckButton AlignLine="CENTER" CheckStyle="false" Inherit="" Location="4,-3,80,40" Name="ckbAllBrowes" Show="true" Size="80,40" Text="$L:561$">
+        <NormalImage File="tz_010" Source="83,278,80,40"/>
+        <CheckImage File="tz_010" Source="1,278,80,40"/>
+      </CheckButton>
+      <CheckButton AlignLine="CENTER" CheckStyle="false" Inherit="" Location="82,-3,80,40" Name="ckbAllChange" Show="true" Text="$L:562$">
+        <NormalImage File="tz_010" Source="83,278,80,40"/>
+        <CheckImage File="tz_010" Source="1,278,80,40"/>
+      </CheckButton>
+      <CheckButton AlignLine="CENTER" CheckStyle="false" Inherit="" Location="161,-3,80,40" Name="ckbAllBuy" Show="true" Size="80,40" Text="$L:563$">
+        <NormalImage File="tz_010" Source="83,278,80,40"/>
+        <CheckImage File="tz_010" Source="1,278,80,40"/>
+        <Scripts>
+          <OnLClick>local show_list =
+				{
+					"lbBuyItem",
+					"btItemBuyImg",
+					"1669",
+					"lbItemBuyName",
+					"lbSaveMoney",
+					"edbSaveMoney",
+					"47859",
+					"lbMoney",
+					--[[
+					"lbAllGold",
+					"edbBuyG",
+					"lbAllAg",
+					"edbBuyA",
+					"lbAllCu",
+					"edbBuyC",
+					]]
+					"lbBuyTime",
+					"ckbTiime1",
+					"ckbTiime2",
+					"ckbTiime3",
+					"lbBuytime1",
+					"lbBuytime2",
+					"lbBuyTime3",
+					
+				}
+				local hide_list =
+				{
+					"13297",
+					"29889",
+					"cbDimond",
+				
+				}
+				local move_list =
+				{
+					["lbAllGold"] = {49,253},
+					["edbBuyG"] = {75,255},
+					["lbAllAg"] = {137,253},
+					["edbBuyA"] = {163,254},
+					["lbAllCu"] = {195,248},
+					["edbBuyC"] = {221,254},
+				}
+				for _, name in ipairs(show_list) do
+					uiGetglobal("layWorld.frBuyAll.fmBuy."..name):Show();
+				end
+				for _, name in ipairs(hide_list) do
+					uiGetglobal("layWorld.frBuyAll.fmBuy."..name):Hide();
+				end
+				for name, pos in pairs(move_list) do
+					uiGetglobal("layWorld.frBuyAll.fmBuy."..name):MoveTo(pos[1], pos[2]);
+				end</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton AlignLine="CENTER" CheckStyle="false" Inherit="" Location="240,-3,80,40" Name="ckbAllItemPiont" Show="true" Size="80,40" Text="$L:1187$">
+        <NormalImage File="tz_010" Source="83,278,80,40"/>
+        <CheckImage File="tz_010" Source="1,278,80,40"/>
+        <Scripts>
+          <OnLClick>local show_list =
+				{
+					"13297",
+					"29889",
+					"cbDimond",
+					"lbBuyTime",
+					"ckbTiime1",
+					"ckbTiime2",
+					"ckbTiime3",
+					"lbBuytime1",
+					"lbBuytime2",
+					"lbBuyTime3",
+				}
+				local hide_list =
+				{
+					"lbBuyItem",
+					"btItemBuyImg",
+					"1669",
+					"lbItemBuyName",
+					"lbSaveMoney",
+					"edbSaveMoney",
+					"47859",
+					"lbMoney",
+					--[[
+					"lbAllGold",
+					"edbBuyG",
+					"lbAllAg",
+					"edbBuyA",
+					"lbAllCu",
+					"edbBuyC",
+					]]
+				}
+				local move_list =
+				{
+					["lbAllGold"] = {49,-300},
+					["edbBuyG"] = {75,-300},
+					["lbAllAg"] = {137,-300},
+					["edbBuyA"] = {163,-300},
+					["lbAllCu"] = {195,-300},
+					["edbBuyC"] = {221,-300},
+				}
+				for _, name in ipairs(show_list) do
+					uiGetglobal("layWorld.frBuyAll.fmBuy."..name):Show();
+				end
+				for _, name in ipairs(hide_list) do
+					uiGetglobal("layWorld.frBuyAll.fmBuy."..name):Hide();
+				end
+				for name, pos in pairs(move_list) do
+					uiGetglobal("layWorld.frBuyAll.fmBuy."..name):MoveTo(pos[1], pos[2]);
+				end</OnLClick>
+        </Scripts>
+      </CheckButton>
+    </Form>
+  </Layer>
+</Ui>

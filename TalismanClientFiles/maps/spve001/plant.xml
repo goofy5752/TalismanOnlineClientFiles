@@ -1,0 +1,9 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<plant>
+   <group name="腐地草">
+      <model density="0x32" id="0x496" max="1.000" min="1.000" radius="10.000"/>
+   </group>
+   <group name="黑白草">
+      <model density="0x32" id="0x49C" max="1.000" min="1.000" radius="10.000"/>
+   </group>
+</plant>

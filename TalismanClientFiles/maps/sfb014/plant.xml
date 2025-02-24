@@ -1,0 +1,210 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<plant>
+   <group name="植被1">
+      <model density="0xA" id="0x14" max="1.500" min="1.000" radius="100.000"/>
+      <model density="0x14" id="0x21" max="1.500" min="0.500" radius="20.000"/>
+      <model density="0x32" id="0x22" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="植被2">
+      <model density="0xA" id="0x15" max="1.500" min="1.000" radius="100.000"/>
+      <model density="0x6" id="0x78" max="0.800" min="0.300" radius="20.000"/>
+      <model density="0x6" id="0x7A" max="0.800" min="0.300" radius="20.000"/>
+      <model density="0x3" id="0x7B" max="0.800" min="0.300" radius="20.000"/>
+      <model density="0x6" id="0x7C" max="0.800" min="0.300" radius="20.000"/>
+   </group>
+   <group name="枯萎灌木1">
+      <model density="0x14" id="0x6B" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="农田枯萎的庄稼">
+      <model density="0x14" id="0x54" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="水草001">
+      <model density="0x64" id="0x81" max="1.500" min="0.500" radius="20.000"/>
+      <model density="0x32" id="0x82" max="1.500" min="0.500" radius="20.000"/>
+      <model density="0x32" id="0x83" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="枯萎的灌木2">
+      <model density="0x32" id="0x6C" max="1.500" min="0.500" radius="20.000"/>
+      <model density="0x32" id="0x6D" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="花草001">
+      <model density="0x14" id="0x76" max="0.510" min="0.500" radius="20.000"/>
+      <model density="0x28" id="0x75" max="0.510" min="0.500" radius="20.000"/>
+   </group>
+   <group name="花草002">
+      <model density="0x14" id="0x6F" max="0.510" min="0.500" radius="20.000"/>
+      <model density="0x3" id="0x7B" max="0.510" min="0.500" radius="15.000"/>
+   </group>
+   <group name="奇花001">
+      <model density="0x64" id="0x74" max="1.500" min="1.000" radius="10.000"/>
+      <model density="0x64" id="0x75" max="1.500" min="1.000" radius="20.000"/>
+   </group>
+   <group name="奇花002">
+      <model density="0x64" id="0x76" max="1.500" min="1.000" radius="20.000"/>
+      <model density="0x64" id="0x78" max="1.500" min="1.000" radius="20.000"/>
+   </group>
+   <group name="小点的奇花001"/>
+   <group name="小草001">
+      <model density="0x64" id="0x83" max="1.500" min="1.300" radius="20.000"/>
+   </group>
+   <group name="绿点的草">
+      <model density="0x32" id="0x123" max="1.500" min="1.500" radius="20.000"/>
+      <model density="0x32" id="0x122" max="1.500" min="1.500" radius="20.000"/>
+   </group>
+   <group name="黄土草01">
+      <model density="0x32" id="0x124" max="1.000" min="1.000" radius="20.000"/>
+      <model density="0x32" id="0x125" max="1.000" min="1.000" radius="20.000"/>
+   </group>
+   <group name="黄土灌木01">
+      <model density="0x32" id="0x129" max="1.000" min="0.800" radius="20.000"/>
+      <model density="0x32" id="0x12A" max="1.000" min="0.800" radius="20.000"/>
+   </group>
+   <group name="黄土灌木02">
+      <model density="0x32" id="0x12B" max="1.000" min="0.800" radius="20.000"/>
+      <model density="0x32" id="0x12C" max="1.000" min="0.800" radius="20.000"/>
+   </group>
+   <group name="腐地植物01">
+      <model density="0x32" id="0x14B" max="1.400" min="1.200" radius="10.000"/>
+   </group>
+   <group name="腐地植物02">
+      <model density="0x32" id="0x14C" max="0.800" min="1.000" radius="20.000"/>
+   </group>
+   <group name="腐地植物03">
+      <model density="0x32" id="0x14D" max="1.400" min="1.200" radius="10.000"/>
+   </group>
+   <group name="腐地植物04">
+      <model density="0x32" id="0x14E" max="1.400" min="1.200" radius="10.000"/>
+   </group>
+   <group name="芦苇">
+      <model density="0x32" id="0x15E" max="1.500" min="1.200" radius="15.000"/>
+   </group>
+   <group name="沼泽植被001">
+      <model density="0x32" id="0x15A" max="0.700" min="0.700" radius="15.000"/>
+   </group>
+   <group name="沼泽植被002">
+      <model density="0x32" id="0x15B" max="0.700" min="0.700" radius="15.000"/>
+   </group>
+   <group name="沼泽植被003">
+      <model density="0x32" id="0x15C" max="0.700" min="0.800" radius="15.000"/>
+   </group>
+   <group name="沼泽植被004">
+      <model density="0x32" id="0x15D" max="0.600" min="0.700" radius="15.000"/>
+   </group>
+   <group name="荆棘1">
+      <model density="0x3" id="0x163" max="1.200" min="0.300" radius="20.000"/>
+      <model density="0x3" id="0x164" max="1.200" min="0.300" radius="20.000"/>
+      <model density="0x3" id="0x165" max="1.200" min="0.300" radius="20.000"/>
+      <model density="0x3" id="0x166" max="1.200" min="0.300" radius="20.000"/>
+   </group>
+   <group name="荆棘大">
+      <model density="0x3" id="0x163" max="1.500" min="0.500" radius="20.000"/>
+      <model density="0x3" id="0x164" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="荆棘小">
+      <model density="0x3" id="0x165" max="1.500" min="0.500" radius="20.000"/>
+      <model density="0x3" id="0x166" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="小蘑菇a">
+      <model density="0x32" id="0x1B1" max="0.600" min="0.600" radius="10.000"/>
+   </group>
+   <group name="小蘑菇b">
+      <model density="0x32" id="0x1B2" max="0.600" min="0.600" radius="10.000"/>
+   </group>
+   <group name="测试用001">
+      <model density="0x64" id="0x268" max="1.200" min="1.200" radius="80.000"/>
+   </group>
+   <group name="雪地灌木1">
+      <model density="0x32" id="0x278" max="2.500" min="2.200" radius="20.000"/>
+   </group>
+   <group name="雪地灌木2">
+      <model density="0x32" id="0x27A" max="0.500" min="0.300" radius="20.000"/>
+      <model density="0x32" id="0x27B" max="0.500" min="0.100" radius="20.000"/>
+   </group>
+   <group name="黄草地">
+      <model density="0x64" id="0x269" max="1.200" min="1.200" radius="80.000"/>
+   </group>
+   <group name="骷髅堆">
+      <model density="0x32" id="0x2DD" max="1.000" min="1.000" radius="80.000"/>
+      <model density="0x32" id="0x2DF" max="1.000" min="1.000" radius="80.000"/>
+      <model density="0x32" id="0x2E1" max="1.000" min="1.000" radius="80.000"/>
+   </group>
+   <group name="骷髏堆01">
+      <model density="0x32" id="0x2DE" max="1.000" min="1.000" radius="80.000"/>
+      <model density="0x32" id="0x2E0" max="1.000" min="1.000" radius="80.000"/>
+      <model density="0x32" id="0x2E2" max="1.000" min="1.000" radius="80.000"/>
+   </group>
+   <group name="原始森林灌木">
+      <model density="0x64" id="0x2FF" max="1.300" min="1.400" radius="20.000"/>
+      <model density="0x64" id="0x300" max="1.400" min="1.300" radius="20.000"/>
+   </group>
+   <group name="小小花001">
+      <model density="0x32" id="0x33C" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="小小花002">
+      <model density="0x32" id="0x33D" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="小小花003">
+      <model density="0x32" id="0x33E" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="小小花004">
+      <model density="0x32" id="0x33F" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="金莲花1">
+      <model density="0x1E" id="0x345" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="春天的花">
+      <model density="0x1E" id="0x348" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="春天的植物">
+      <model density="0x1E" id="0x349" max="1.500" min="0.500" radius="20.000"/>
+   </group>
+   <group name="戴家场绿草">
+      <model density="0x32" id="0x388" max="1.000" min="0.800" radius="1.000"/>
+   </group>
+   <group name="金莲花小">
+      <model density="0x32" id="0x345" max="0.600" min="0.500" radius="10.000"/>
+   </group>
+   <group name="金莲花2小">
+      <model density="0x32" id="0x346" max="0.600" min="0.800" radius="10.000"/>
+   </group>
+   <group name="水中植物">
+      <model density="0x14" id="0x323" max="1.500" min="1.000" radius="30.000"/>
+      <model density="0x14" id="0x324" max="1.500" min="1.000" radius="25.000"/>
+   </group>
+   <group name="戴家场灌木a">
+      <model density="0x14" id="0x3DB" max="1.000" min="0.800" radius="40.000"/>
+      <model density="0x14" id="0x3DD" max="1.500" min="1.000" radius="25.000"/>
+   </group>
+   <group name="戴家场灌木b">
+      <model density="0x14" id="0x3DC" max="0.800" min="0.700" radius="40.000"/>
+      <model density="0x14" id="0x3E0" max="1.200" min="1.000" radius="25.000"/>
+   </group>
+   <group name="戴家场灌木c">
+      <model density="0x3" id="0x3DE" max="1.200" min="1.000" radius="40.000"/>
+      <model density="0x14" id="0x3E2" max="1.200" min="1.000" radius="30.000"/>
+   </group>
+   <group name="戴家场紫花">
+      <model density="0x32" id="0x3DF" max="0.600" min="0.500" radius="12.000"/>
+   </group>
+   <group name="戴家场黄花">
+      <model density="0x32" id="0x3E1" max="0.600" min="0.500" radius="12.000"/>
+   </group>
+   <group name="戴家场树木">
+      <model density="0x1" id="0x3D4" max="1.300" min="1.000" radius="160.000"/>
+   </group>
+   <group name="戴家场树b">
+      <model density="0x1" id="0x3D5" max="1.300" min="1.000" radius="160.000"/>
+   </group>
+   <group name="戴家场树c">
+      <model density="0x1" id="0x3D6" max="1.300" min="1.000" radius="160.000"/>
+   </group>
+   <group name="戴家场树d">
+      <model density="0x1" id="0x3D7" max="1.300" min="1.000" radius="160.000"/>
+   </group>
+   <group name="戴家场树e">
+      <model density="0x1" id="0x3D8" max="1.300" min="1.000" radius="160.000"/>
+   </group>
+   <group name="小石快">
+      <model density="0x6" id="0x455" max="2.000" min="0.500" radius="20.000"/>
+   </group>
+</plant>

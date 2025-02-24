@@ -1,0 +1,11 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<plant>
+   <group name="骷髅堆">
+      <model density="0x32" id="0x26" max="1.200" min="1.000" radius="20.000"/>
+      <model density="0x32" id="0x27" max="1.200" min="1.000" radius="20.000"/>
+      <model density="0x32" id="0x28" max="1.200" min="1.000" radius="50.000"/>
+      <model density="0x32" id="0x29" max="1.200" min="1.000" radius="50.000"/>
+      <model density="0x32" id="0x2A" max="1.200" min="1.000" radius="50.000"/>
+      <model density="0x32" id="0x2B" max="1.200" min="1.000" radius="20.000"/>
+   </group>
+</plant>

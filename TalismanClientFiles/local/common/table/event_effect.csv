@@ -1,0 +1,6 @@
+,说明,特效名称,特效是否循环播放,Link点[默认为root],动作名字,动作是否循环播放,音效名字
+STRID,,EffectName,EffectLoop,EffectLink,PoseName,PoseLoop,SoundName
+task_accept,接受任务时,,,,,,task_accept.wav
+task_finish,完成任务时,,,,,,task_finish.wav
+task_cancel,放弃任务时,,,,,,task_cancel.wav
+doing_task_relate_npc,正在执行任务的相关采集类NPC,,,,,,

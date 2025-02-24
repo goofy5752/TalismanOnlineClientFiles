@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<bls_objects maxcid="4" maxoid="19">
+<category idx="0" name="分类1" desc="描述">
+<category idx="0" name="分类1" desc="描述">
+<category idx="0" name="分类1" desc="描述">
+<category idx="0" name="分类1" desc="描述">
+<object idx="10" name="sccd_tree001_树" file="sccd_tree001" desc=""/>
+<object idx="11" name="sccd_tree002_树" file="sccd_tree002" desc=""/>
+<object idx="12" name="sccd_tree003_树" file="sccd_tree003" desc=""/>
+<object idx="13" name="sccd_tree004_树" file="sccd_tree004" desc=""/>
+<object idx="14" name="sccd_tree005_树" file="sccd_tree005" desc=""/>
+<object idx="15" name="sccd_tree006_树" file="sccd_tree006" desc=""/>
+<object idx="16" name="sccd_gtr001_怪点的树" file="sccd_grt001" desc=""/>
+<object idx="17" name="sccd_gtr002_怪点的树" file="sccd_grt002" desc=""/>
+<object idx="18" name="sccd_gtr003_怪点的树" file="sccd_grt003" desc=""/>
+</category>
+<object idx="1" name="sccd_tree001_树" file="" desc=""/>
+<object idx="2" name="sccd_tree002_树" file="" desc=""/>
+<object idx="3" name="sccd_tree003_树" file="" desc=""/>
+<object idx="4" name="sccd_tree004_树" file="" desc=""/>
+<object idx="5" name="sccd_tree005_树" file="" desc=""/>
+<object idx="6" name="sccd_tree006_树" file="" desc=""/>
+<object idx="7" name="sccd_gtr001_怪点的树" file="" desc=""/>
+<object idx="8" name="sccd_gtr002_怪点的树" file="" desc=""/>
+<object idx="9" name="sccd_gtr003_怪点的树" file="" desc=""/>
+</category>
+<object idx="19" name="大家的天神" file="s_testman001" desc=""/>
+</category>
+<category idx="0" name="分类1" desc="描述">
+</category>
+</category>
+</bls_objects>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Itembreak_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="299,273,235,140" Name="frmItemBreakEx" Show="false">
+      <Label Inherit="bg1" Location="8,19,220,120" Name="582" Show="true">
+        <BackgroundImage/>
+      </Label>
+      <Button Inherit="PushButton" Location="43,104,50,20" Name="btOk" Show="true" Text="$L:843$">
+        <Scripts>
+          <OnLClick>layWorld_frmItemBreakEx_btOk_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="152,104,50,20" Name="btCancel" Show="true" Text="$L:844$">
+        <Scripts>
+          <OnLClick>layWorld_frmItemBreakEx_btCancel_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="33,53,70,18" Name="1220" Show="true" Text="$L:842$"/>
+      <EditBox BackgroundColor="" ColSpacing="4" Inherit="" LineSpacing="4" Location="90,74,60,20" MaxChar="4" Name="ebCount" NumberOnly="true" Pick="true" Show="true">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        <Scripts>
+          <OnUpdate>layWorld_frmItemBreakEx_ebCount_OnUpdate(self)</OnUpdate>
+        </Scripts>
+      </EditBox>
+      <Button Inherit="" Location="76,77,12,14" Name="btMinus" Show="true">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemBreakEx_btMinus_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="152,77,12,14" Name="btPlus" Show="true">
+        <NormalImage File="tz_010" Source="76,382,12,14"/>
+        <PushedImage File="tz_010" Source="76,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemBreakEx_btPlus_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="TemplateNormalTitle" Location="3,2,230,45" Name="569" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="58,0,120,68" Name="lbRewardTitel" Show="true" Text="$L:841$"/>
+      <TitleBarButton Location="0,0,235,26" Show="true"/>
+      <CloseButton Location="208,30,13,13" Show="true">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnShow>layWorld_frmItemBreakEx_OnShow(self)</OnShow>
+        <OnHide>layWorld_frmItemBreakEx_OnHide(self)</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

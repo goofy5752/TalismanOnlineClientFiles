@@ -1,0 +1,50 @@
+  <Line>
+    <Items>
+	  <Item text="$L:Dungeon_Protect_Fail_3$" />
+	</Items>
+  </Line>
+
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_Protect_Success_8$" />
+	   <Item text="$DEFENCE_COUNT" />
+	</Items>
+  </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_Protect_Success_14$" />
+       <Item text="$TD_Score" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_Protect_Success_Exp$" />
+       <Item text="$TD_Exp" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_Protect_Success_Nimbus$" />
+       <Item text="$TD_Nimbus" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_Protect_Success_Money$" />
+       <Item text="$TD_Money" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_Protect_Success_God$" />
+       <Item text="$TD_God" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_Protect_Fail_21$" />
+    </Items>
+   </Line>
+
+  <Line>
+  </Line>

@@ -1,0 +1,11 @@
+ae,string,string,string,marea,int
+编号,区域名字,区域音乐,区域Logo,区域,地图id
+ID,Name,Music,Logo,Area,ZoneId
+1,$L:fuben02_cysdilao$,thematic,26,14 4 257 231;,26
+2,$L:fuben02_hxdkefang$,thematic,26,248 82 364 276;,26
+3,$L:fuben02_hxdneitang$,thematic,26,364 117 434 205;,26
+4,$L:fuben02_zawufang$,thematic,26,364 204 434 236;,26
+5,$L:fuben02_hxdzhengdian$,thematic,26,"432 82 511 190;
+504 73 570 147;",26
+6,$L:fuben02_hxddidao$,thematic,26,"439 188 530 245;
+525 151 600 227;",26

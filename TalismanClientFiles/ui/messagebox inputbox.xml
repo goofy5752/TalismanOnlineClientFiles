@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Form Inherit="" Name="$MessageBox_Test" Show="false" Size="320,211">
+    <Label Inherit="bg1" Location="9,18,300,190" Name="648" Show="true"/>
+    <Label Inherit="TemplateNormalTitle" Location="0,1,320,32" Name="16880" Show="true">
+      <Label Name="lbTitelText" Show="false"/>
+    </Label>
+    <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="19,48,280,108" MultiLine="true" Name="$Message" Show="true" WordWrap="true"/>
+    <Button Inherit="PushButton" Location="55,167,80,20" Name="$Ok" Show="true" Text="$L:603$"/>
+    <Button Inherit="PushButton" Location="188,167,80,20" Name="$Cancel" Show="true" Text="$L:604$"/>
+    <Anchors>
+      <Anchor point="CENTERH"/>
+      <Anchor offset="0,-140" point="CENTERV"/>
+    </Anchors>
+    <TitleBarButton Location="0,0,316,26"/>
+    <CloseButton Location="284,27,14,15">
+      <NormalImage File="tz_010" Source="120,383,13,13"/>
+      <PushedImage File="tz_010" Source="98,383,13,13"/>
+    </CloseButton>
+  </Form>
+  <Form Inherit="" Location="200,200,290,180" Name="$InputBox_Test" Show="false" Size="290,200">
+    <Label Inherit="bg1" Location="12,18,255,160" Name="648" Show="true"/>
+    <Label Inherit="TemplateNormalTitle" Location="4,1,270,47" Name="16880" Show="true"/>
+    <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="75,0,130,68" Name="790" Show="true" Text=""/>
+    <Button Inherit="PushButton" Location="46,146,80,20" Name="$Ok" Text="$L:603$"/>
+    <Button Inherit="PushButton" Location="154,146,80,20" Name="$Cancel" Text="$L:604$"/>
+    <EditBox EnableInput="false" Location="31,52,220,66" MultiLine="true" Name="$Message" WordWrap="true"/>
+    <EditBox AutoScrollV="false" Inherit="" Location="29,123,220,18" MultiLine="false" Name="$Edit" Text="" WordWrap="false">
+      <Border color="#ff999999" size="1"/>
+    </EditBox>
+    <Anchors>
+      <Anchor point="CENTERH"/>
+      <Anchor offset="0,-140" point="CENTERV"/>
+    </Anchors>
+    <TitleBarButton Location="0,1,286,30"/>
+    <CloseButton Location="244,26,14,15">
+      <NormalImage File="tz_010" Source="120,383,13,13"/>
+      <PushedImage File="tz_010" Source="98,383,13,13"/>
+    </CloseButton>
+  </Form>
+</Ui>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="252,138,294,512" Name="frmNewTeam" Show="fals" Size="294,512">
+      <Label Inherit="bg1" Location="7,20,280,410" Name="lbUP" Show="fals"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="lbDown" Show="fals"/>
+      <TitleBarButton Location="0,0,294,30" Text="" TextFont="$L:1$" TextSize="$L:4$"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="13,91,268,6" Name="18980" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+      <Form Inherit="NoTitleBarForm" Location="12,96,270,348" Name="frmFindPlayer" Show="false">
+        <Label Inherit="" Location="11,5,70,18" Name="3042" Show="true" Text="$L:1006$"/>
+        <Label Inherit="bg3" Location="5,47,260,232" Name="3454" Show="true"/>
+        <ListBox BackgroundColor="#ee000000" Inherit="" Location="10,51,250,222" Name="lstNeed" Show="true"/>
+        <ComboBox Inherit="StudioCb" Location="11,26,100,18" Name="cmbTeamNeed" Show="true"/>
+        <Label Inherit="" Location="115,5,70,18" Name="3124" Show="true" Text="$L:1007$"/>
+        <ComboBox Inherit="StudioCb" Location="114,26,120,18" Name="cmbCaseName" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="11,282,242,18" Name="lbSearchNumber" Show="true"/>
+        <Button Inherit="PushButton" Location="98,304,74,20" Name="btRenovate" Show="true" Text="$L:1010$"/>
+        <Button Inherit="PushButton" Location="48,330,74,20" Name="btSendMessage" Show="false" Text="$L:1011$"/>
+        <Button Inherit="PushButton" Location="150,322,74,20" Name="btAddTeam" Show="false" Text="$L:1012$"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="29,101,240,310" Name="frmNeedTeam" Show="fals">
+        <Label Inherit="" Location="11,9,220,18" Name="1373" Show="true" Text="$L:1013$"/>
+        <ComboBox Inherit="StudioCb" Location="6,28,100,18" Name="cmbNeed1" Show="true"/>
+        <ComboBox Inherit="StudioCb" Location="110,28,120,18" Name="cmbInfo1" Show="true"/>
+        <Label Inherit="" Location="11,72,220,18" Name="1569" Show="true" Text="$L:1014$"/>
+        <ComboBox Inherit="StudioCb" Location="6,92,100,18" Name="cmbNeed2" Show="true"/>
+        <ComboBox Inherit="StudioCb" Location="110,93,120,18" Name="cmbInfo2" Show="true"/>
+        <Label Inherit="" Location="11,136,220,18" Name="2207" Show="true" Text="$L:1014$"/>
+        <ComboBox Inherit="StudioCb" Location="6,156,100,18" Name="cmbNeed3" Show="true"/>
+        <ComboBox Inherit="StudioCb" Location="110,156,120,18" Name="cmbInfo3" Show="true"/>
+        <Label Inherit="" Location="11,197,220,18" Name="2605" Show="false" Text="$L:1014$"/>
+        <ComboBox Inherit="StudioCb" Location="6,205,100,18" Name="cmbNeed4" Show="false"/>
+        <ComboBox Inherit="StudioCb" Location="110,205,120,18" Name="cmbInfo4" Show="false"/>
+        <Label Inherit="" Location="11,260,220,18" Name="3074" Show="false" Text="$L:1014$"/>
+        <ComboBox Inherit="StudioCb" Location="6,257,100,18" Name="cmbNeed5" Show="false"/>
+        <ComboBox Inherit="StudioCb" Location="109,257,120,18" Name="cmbInfo5" Show="false"/>
+        <Button Inherit="PushButton" Location="25,280,74,20" Name="btSendInfo" Show="true" Text="$L:1015$"/>
+        <Button Inherit="PushButton" Location="132,280,74,20" Name="btAllDelt" Show="true" Text="$L:1016$"/>
+        <Button Inherit="PushButton" Location="163,271,74,20" Name="btClose" Show="false" Text="$L:1017$"/>
+      </Form>
+      <CheckButton CheckStyle="false" Inherit="" Location="102,57,80,40" Name="btUser" Show="true" Text="$L:1004$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Enable="fals" Inherit="" Location="22,57,80,40" Name="btGod" Show="true" Text="$L:1005$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <Anchors>
+        <Anchor point="CENTERV"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,0,120,68" Name="14153" Show="true" Text="$L:1003$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+  </Layer>
+</Ui>

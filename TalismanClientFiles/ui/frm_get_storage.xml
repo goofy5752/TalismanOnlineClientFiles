@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form BackgroundColor="#66666666" Inherit="TitleBarForm" Location="199,173,400,400" Name="frmAucGet" Show="true">
+      <Label Inherit="" Location="0,0,256,256" Name="570" Show="true">
+        <BackgroundImage File=""/>
+      </Label>
+      <Label Inherit="" Location="256,0,146,256" Name="521" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,256,256,146" Name="623" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,146,146" Name="680" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="PushButton" Location="28,358,50,20" Name="Previous" Show="true" Text="$L:564$"/>
+      <Button Inherit="PushButton" Location="321,358,50,20" Name="Next" Show="true" Text="$L:565$"/>
+      <Label AlignCol="true" Inherit="" Location="166,1,70,18" Name="lbLootTitle" Show="true" Text="$L:566$"/>
+      <Label Inherit="" Location="25,67,350,32" Name="labItem1" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg1" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName1" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc1" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime1" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem1" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="25,304,350,32" Name="labItem8" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg8" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName8" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc8" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime8" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem8" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="25,270,350,32" Name="labItem7" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg7" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName7" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc7" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime7" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem7" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="25,236,350,32" Name="labItem6" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg6" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName6" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc6" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime6" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem6" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="25,202,350,32" Name="labItem5" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg5" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName5" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc5" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime5" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem5" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="25,168,350,32" Name="labItem4" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg4" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName4" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc4" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime4" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem4" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="25,134,350,32" Name="labItem3" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg3" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName3" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc3" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime3" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem3" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="25,101,350,32" Name="labItem2" Show="true" Text="">
+        <Label Inherit="" Location="0,0,256,32" Name="626" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="256,0,94,32" Name="664" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Button Inherit="" Location="4,0,32,32" Name="btnItemImg2" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="37,0,100,32" Name="labItemName2" Show="true"/>
+        <Label AlignLine="CENTER" Inherit="" Location="137,0,130,32" Name="labItemDesc2" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="267,0,80,32" Name="labItemRemainTime2" Show="true"/>
+        <Label Inherit="" Location="0,0,350,32" Name="lbShowItem2" Show="true"/>
+      </Label>
+      <Button Inherit="PushButton" Location="124,358,160,20" Name="btnGet" Show="true" Text="$L:567$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="72,44,74,18" Name="1777" Show="true" Text="$L:568$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="186,44,74,18" Name="1816" Show="true" Text="$L:569$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="293,44,74,18" Name="1896" Show="true" Text="$L:570$"/>
+    </Form>
+  </Layer>
+</Ui>

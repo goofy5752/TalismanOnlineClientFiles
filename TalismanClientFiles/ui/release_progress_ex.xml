@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="release_progress_ex.lua"></Script>
+  <Layer Name="layWorld" Show="true">
+    <Label FadeOutTime="0.4" Inherit="" Location="514,821,246,28" Name="lbReleaseProgressEx" Show="false" Size="246,28">
+      <BackgroundImage File="tz_012" Source="0,469,247,22"/>
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor offset="0,-120" point="BOTTOM"/>
+      </Anchors>
+      <ProgressBar Inherit="" LeadingWidth="16" Location="9,9,229,11" Name="pgbFail" Show="true">
+        <ProgressBarImage File="tz_010" FillMode="REPEAT" Source="104,452,229,11"/>
+      </ProgressBar>
+      <ProgressBar Inherit="" LeadingWidth="16" Location="9,9,229,11" Name="pgbPreAct" Show="true" ShowLeading="true">
+        <ProgressBarImage File="tz_010" FillMode="REPEAT" Source="104,439,229,11"/>
+        <ProgressLeadingImage File="tz_012" Source="353,10,13,15"/>
+		<Scripts>
+		  <OnUpdate Timer="1">layWorld_lbReleaseProgressEx_pgbPreAct_OnUpdate(self,delta);</OnUpdate>
+		</Scripts>
+      </ProgressBar>
+      <ProgressBar Inherit="" LeadingWidth="16" Location="9,9,229,11" Name="pgbLoading" Show="true">
+        <ProgressBarImage File="tz_010" FillMode="REPEAT" Source="104,426,229,11"/>
+		<Scripts>
+		  <OnUpdate Timer="1">layWorld_lbReleaseProgressEx_pgbLoading_OnUpdate(self,delta);</OnUpdate>
+		</Scripts>
+      </ProgressBar>
+      <Button Inherit="" Location="0,0,246,28" Name="btnHighlight" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+	  <Scripts>
+		<OnLoad>layWorld_lbReleaseProgressEx_OnLoad(self);</OnLoad>
+		<OnEvent>layWorld_lbReleaseProgressEx_OnEvent(self,event,arg);</OnEvent>
+	  </Scripts>
+    </Label>
+  </Layer>
+</Ui>

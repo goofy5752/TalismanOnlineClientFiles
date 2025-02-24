@@ -1,0 +1,9 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x2">
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="洞内" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="83.749" left="-23.562" right="10197.370" top="-5079.875"/>
+   </group>
+   <group colors="true" desc="" env="0xFF4C4C4C" envo="0xFF4C4C4C" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="宫殿" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="5107.196" left="12.841" right="4775.453" top="102.306"/>
+   </group>
+</weather>

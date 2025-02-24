@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_KillerTip_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="299,257,294,220" Name="frmKillerTipEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,200" Name="698" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="758" Show="fals"/>
+      <Label Inherit="" Location="23,52,250,95" Name="5257" Show="true">
+        <Label Inherit="" Location="0,0,250,95" Name="7076" Show="true">
+          <Label Inherit="bg3" Location="0,0,250,30" Name="8043" Show="true"/>
+        </Label>
+        <Label Inherit="" Location="0,95,250,95" Name="7108" Show="false">
+          <Label Inherit="bg3" Location="0,0,250,30" Name="8043" Show="true"/>
+        </Label>
+        <Label Inherit="bg3" Location="0,0,250,95" Name="1425" Show="true"/>
+      </Label>
+      <Label Inherit="" Location="31,58,84,20" Name="lbUserName1" Show="true" Text="$L:935$"/>
+      <Label Inherit="" Location="41,152,210,26" Name="lbPriceBackground" Show="true">
+        <Label Inherit="" Location="2,2,24,22" Name="Jin" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="93,2,24,22" Name="Yin" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="152,0,24,26" Name="Tong" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label Inherit="" Location="30,3,60,20" Name="S_Jin" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </Label>
+        <Label Inherit="" Location="120,3,30,20" Name="S_Yin" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Label Inherit="" Location="179,3,30,20" Name="S_Tong" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+      </Label>
+      <Button Inherit="PushButton" Location="49,184,80,20" Name="cbAcceptKill" Show="true" Text="$L:943$">
+        <Scripts>
+          <OnLClick>layWorld_frmKillerTipEx_cbAcceptKill_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="153,184,80,20" Name="btCancleKill" Show="true" Text="$L:944$">
+        <Scripts>
+          <OnLClick>layWorld_frmKillerTipEx_btCancleKill_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="6,0,282,70" Name="lbLootTitle" Show="true" Text="$L:945$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="4" Location="130,116,110,20" Name="edbKillerName" Show="true" WordWrap="false">
+        <BackgroundImage File="tz_011" Source="84,0,160,20"/>
+      </EditBox>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="4" Location="73,155,56,18" MaxChar="4" Name="ebGameMoneyGold" NumberOnly="true" Show="true" Text="1" WordWrap="false"/>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="4" Location="164,156,24,18" MaxChar="2" Name="ebGameMoneyAg" NumberOnly="true" Show="true" Text="0" WordWrap="false"/>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="4" Location="223,156,24,18" MaxChar="2" Name="ebGameMoneyGoldCu" NumberOnly="true" Show="true" Text="0" WordWrap="false"/>
+      <EditBox ColSpacing="4" Inherit="" LineSpacing="4" Location="190,110,100,20" Name="ebDimond" NumberOnly="false" Show="false" WordWrap="false"/>
+      <Button Enable="true" Inherit="PushButton" Location="42,116,80,20" Name="btnBlackList" Show="true" Text="$L:936$">
+        <Scripts>
+          <OnLClick>layWorld_frmKillerTipEx_btnBlackList_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="30,153,100,20" Name="945" Show="false" Text="$L:938$"/>
+      <Label Inherit="" Location="198,61,80,20" Name="1046" Show="false" Text="$L:941$"/>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="42,87,150,20" Name="cbAddname" Show="true" Text="$L:942$">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="42,180,150,20" Name="cbGamemoney" Show="false" Text="$L:939$">
+        <BackgroundImage File="tz_012" Source="364,368,150,25"/>
+        <Scripts>
+          <OnLClick>layWorld_frmKillerTipEx_cbGamemoney_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="32,110,110,20" Name="cbDimond" Show="false" Text="$L:940$"/>
+      <TitleBarButton Location="0,0,294,30"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnShow>layWorld_frmKillerTipEx_OnShow(self)</OnShow>
+        <OnLoad>self:RegisterScriptEventNotify("EVENT_ItemUseIndirect")
+			self:RegisterScriptEventNotify("EVENT_SelfEnterWorld")</OnLoad>
+        <OnEvent>if event == "EVENT_ItemUseIndirect" then
+				layWorld_frmKillerTipEx_Use_MurderItem(self,arg[1], arg[2])
+			elseif event == "EVENT_SelfEnterWorld" then
+				layWorld_frmKillerTipEx_InitAll(self)
+			end</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,12 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x3">
+   <group colors="true" desc="" env="0xFF3F5081" envo="0xFF3F5081" fog="0xFF3E579B" forfar="1500.000" fornear="500.000" name="山洞" range="100.000" sun="0xFF4C4C4C" suno="0xFF3F6B76">
+      <area bottom="-6158.901" left="465.992" right="4428.113" top="-9640.080"/>
+   </group>
+   <group colors="true" desc="" env="0xFF74441D" envo="0xFFD79457" fog="0xFFFEE481" forfar="3000.000" fornear="500.000" name="虎王坡" range="100.000" sun="0xFFFFC286" suno="0xFFFFD9B3">
+      <area bottom="-1840.072" left="683.381" right="4489.665" top="-5937.299"/>
+   </group>
+   <group colors="true" desc="" env="0xFF1B4F76" envo="0xFF1D4874" fog="0xFF82FDDE" forfar="2000.000" fornear="500.000" name="遗迹" range="100.000" sun="0xFFFFC286" suno="0xFFFFC286">
+      <area bottom="4713.235" left="308.450" right="4561.898" top="1795.932"/>
+   </group>
+</weather>

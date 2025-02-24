@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Widget Inherit="bg3" Location="222,134,200,200" Name="wgtHint" Show="false" BackgroundColor="#ee000000">
+    <EditBox Inherit="" Location="7,7,70,18" MultiLine="true" Name="edtText" Show="true" WordWrap="true">
+      <Anchors>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+        <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+      </Anchors>
+    </EditBox>
+  </Widget>
+</Ui>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_dialoger_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Location="216,173,294,512" Name="frmDialogerEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,492" Name="2395" Show="true"/>
+      <Label Inherit="" Location="12,28,77,80" Name="4699" Show="true">
+        <BackgroundImage File="tz_010" Source="404,51,77,80"/>
+      </Label>
+      <Label Inherit="" Location="93,59,170,24" Name="9453" Show="true">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Label Inherit="bg3" Location="19,111,256,355" Name="17666" Show="true"/>
+      <Button Inherit="" Location="14,30,64,64" Name="btdialogerImg" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,2,292,50" Name="605" Show="fals"/>
+      <TitleBarButton Location="0,0,294,30"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="27,118,240,340" MultiLine="true" Name="edtdialogerTest" Show="true" WordWrap="true">
+        <Scripts>
+          <OnHyperLink>layWorld_frmDialogerEx_edtdialogerTest_OnHyperLink(self, hypertype, hyperlink);</OnHyperLink>
+        </Scripts>
+      </EditBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="108,61,140,20" Name="lbdialogerNpcName" Show="true" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Button Inherit="PushButton" Location="49,469,70,20" Name="btAction" Show="false" Text=""/>
+      <Button Inherit="PushButton" Location="107,475,80,20" Name="btClose" Show="true" Text="$L:503$">
+        <Scripts>
+          <OnLClick>layWorld_frmDialogerEx_btClose_OnLClick();</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="93,0,110,70" Name="730" Show="true" Text="$L:502$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>layWorld_frmDialogerEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmDialogerEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>uiRegisterEscWidget(self);</OnShow>
+        <OnUpdate>layWorld_frmDialogerEx_OnUpdate(self, delta);</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

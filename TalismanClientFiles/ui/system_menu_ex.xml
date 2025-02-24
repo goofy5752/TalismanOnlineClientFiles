@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="system_menu_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="TitleBarForm" Location="475,212,293,342" Name="frmSystemMenuEx" Show="false" Size="293,342">
+      <Label Inherit="bg1" Location="58,20,180,322" Name="lbBackUp" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,215,180,106" Name="lbBackDown" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="PushButtonLong" Location="83,96,130,24" Name="btVideoSetting" Show="true" Text="$L:281$">
+        <Scripts>
+          <OnLClick>layWorld_frmSystemMenuEx_btVideoSetting_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="83,133,130,24" Name="btSoundSetting" Show="true" Text="$L:282$">
+        <Scripts>
+          <OnLClick>layWorld_frmSystemMenuEx_btSoundSetting_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="83,166,130,24" Name="btInterfaceSetting" Show="true" Text="$L:283$">
+        <Scripts>
+          <OnLClick>layWorld_frmSystemMenuEx_btInterfaceSetting_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="83,197,130,24" Name="btKeySetting" Show="true" Text="$L:284$">
+        <Scripts>
+          <OnLClick>layWorld_frmSystemMenuEx_btKeySetting_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="83,230,130,24" Name="btReturnSelectCharacter" Show="false" Text="$L:285$">
+        <Scripts>
+          <OnLClick>uiClientMsg("request new version");</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="83,264,130,24" Name="btExitGame" Show="true" Text="$L:286$">
+        <Scripts>
+          <OnLClick>uiRequestExitGame();</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="83,298,130,24" Name="btReturnGame" Show="true" Text="$L:287$">
+        <Scripts>
+          <OnLClick>layWorld_frmSystemMenuEx_btReturnGame_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="83,61,130,24" Name="btSystemHelp" Show="true" Text="$L:288$">
+        <Scripts>
+          <OnLClick>layWorld_frmSystemMenuEx_btSystemHelp_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Anchors>
+        <Anchor point="CENTERV"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+      <TitleBarButton Location="0,8,293,18"/>
+      <CloseButton Location="152,2,18,18" Show="false"/>
+      <Label Inherit="TemplateNormalTitle" Location="53,1,190,49" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" Inherit="" Location="103,23,90,20" Name="9487" Show="true" Text="$L:289$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>layWorld_frmSystemMenuEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmSystemMenuEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>layWorld_frmSystemMenuEx_OnShow(self);</OnShow>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="332,153,540,450" Name="frmInterfaceSettingEx" Show="false">
+      <Label Inherit="bg1" Location="6,18,520,415" Name="lbBackLT" Show="true"/>
+      <Label Inherit="" Location="256,0,520,430" Name="lbBackRT" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,256,256,174" Name="lbBackLB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,256,256,174" Name="lbBackRB" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Button Inherit="PushButton" Location="21,53,80,24" Name="btBasicOpt" Show="fals" Text="$L:299$">
+        <Scripts>
+          <OnLClick>layWorld_frmInterfaceSettingEx_btBasicOpt_OnClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="105,53,80,24" Name="btSuperOpt" Show="true" Text="$L:300$">
+        <Scripts>
+          <OnLClick>layWorld_frmInterfaceSettingEx_btSuperOpt_OnClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Form Inherit="NoTitleBarForm" Location="10,80,500,320" Name="frmBasicOpt" Show="fals">
+        <Label Inherit="bg3" Location="9,26,490,60" Name="1630" Show="true"/>
+        <Label Inherit="bg3" Location="9,115,490,147" Name="2549" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="7,2,92,24" Name="lbMisc" Show="true" Text="$L:301$" TextColor="#ee5adef2">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="17,38,110,18" Name="lbMapVisible" Show="true" Text="$L:836$" TextColor=""/>
+        <Label AlignCol="CENTER" Inherit="" Location="17,57,28,18" Name="871" Show="true" Text="$L:837$" TextColor=""/>
+        <SliderV Inherit="DefaultSliderV" Location="49,60,220,12" Name="slvMapVisible" Show="true"/>
+        <Label AlignCol="CENTER" Inherit="" Location="274,57,28,18" Name="872" Show="true" Text="$L:838$" TextColor=""/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="7,90,92,24" Name="btDisplay" Show="true" Text="$L:302$" TextColor="#ee5adef2">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="13,222,92,24" Name="btHelp" Show="false" Text="$L:303$">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="16,127,150,20" Name="ckbShowName" Show="true" Text="$L:304$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="16,154,150,20" Name="ckbShowLevel" Show="true" Text="$L:305$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="16,180,150,20" Name="ckbShowBlood" Show="true" Text="$L:306$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="333,127,150,20" Name="ckbShowFaction" Show="true" Text="$L:307$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="173,127,150,20" Name="ckbShowNpcName" Show="true" Text="$L:308$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="173,153,150,20" Name="ckbShowSelfName" Show="true" Text="$L:309$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="175,136,150,20" Name="ckbShowFactionIcon" Show="false" Text="$L:310$">
+          <BackgroundImage File="tz_012" Source="364,368,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="333,153,150,20" Name="ckbShowFactionDuty" Show="true" Text="$L:311$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="173,180,150,20" Name="ckbShowSpeak" Show="true" Text="$L:312$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="16,206,150,20" Name="ckbShowPetMasterName" Show="true" Text="$L:313$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="173,206,150,20" Name="ckbShowNpcBlood" Show="true" Text="$L:314$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="333,206,150,20" Name="ckbShowHelpPrompt" Show="true" Text="$L:315$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="333,180,150,20" Name="ckb3DHud" Show="true" Text="$L:845$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="16,232,150,20" Name="ckbShowSmallpet" Show="true" Text="$L:1407$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+      </Form>
+      <Form AlignCol="CENTER" AlignLine="CENTER" Enable="true" Inherit="NoTitleBarForm" Location="10,77,500,320" Name="frmSuperOpt" Show="false">
+        <Label Inherit="bg3" Location="10,30,490,60" Name="1630" Show="true"/>
+        <Label Inherit="bg3" Location="10,119,490,90" Name="10784" Show="true"/>
+        <Label Inherit="bg3" Location="9,238,490,80" Name="13835" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="8,5,92,24" Name="lbControl" Show="true" Text="$L:316$" TextColor="#ee5adef2">
+          <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+        </Label>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="18,37,120,20" Name="ckbLockShortcut" Show="true" Text="$L:317$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="182,37,120,20" Name="ckbAlwaysShowShortcut" Show="true" Text="$L:318$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="347,37,120,20" Name="ckbShowRightShortcut1" Show="true" Text="$L:319$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="18,63,120,20" Name="ckbShowLeftDownShortcut" Show="true" Text="$L:320$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="183,61,120,20" Name="ckbShowRightDownShortcut" Show="true" Text="$L:321$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="347,61,120,20" Name="ckbShowRightShortcut2" Show="true" Text="$L:322$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="8,212,147,24" Name="lbChat" Text="$L:912$" TextColor="#ee5adef2">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="8,94,147,24" Name="lbFightInformation" Show="true" Text="$L:324$" TextColor="#ee5adef2">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="18,127,120,20" Name="ckbOpenUserFloatFightInfo" Show="true" Text="$L:325$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="345,94,147,24" Name="lbFightInfoFloatType" Show="true" Text="$L:326$" TextColor="#ee5adef2">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <ComboBox Inherit="StudioCb" Location="357,129,130,18" Name="cbFightInfoFloatType" Show="true"/>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="10,130,120,20" Name="ckbHpMpLow" Show="false" Text="$L:327$">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="18,152,120,20" Name="ckbEffect" Show="true" Text="$L:328$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="18,177,120,20" Name="ckbEffectRemove" Show="true" Text="$L:329$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="183,127,150,20" Name="ckbCombat" Show="true" Text="$L:330$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="183,152,150,20" Name="ckbDodgeParryMiss" Show="true" Text="$L:331$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="10,178,120,20" Name="ckbDamageDerate" Show="false" Text="$L:332$">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="190,178,138,20" Name="ckbHealUserName" Show="false" Text="$L:333$">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="357,152,130,20" Name="ckbHitPoint" Show="true" Text="$L:334$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="183,177,150,20" Name="ckbTargetDamage" Show="true" Text="$L:335$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="370,154,120,20" Name="ckbTargetPeriodDamage" Show="false" Text="$L:336$">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="357,177,130,20" Name="ckbTargetPetDamage" Show="true" Text="$L:337$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="10,288,84,20" Name="lbTeam" Show="false" Text="$L:339$">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="18,246,120,20" Name="ckTeachSmall" Text="$L:907$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="183,246,120,20" Name="ckTeamSmall" Text="$L:908$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="347,246,120,20" Name="ckGuildSmall" Text="$L:909$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="19,269,120,20" Name="ckBuySmall" Text="$L:910$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="183,269,120,20" Name="ckTouchSmall" Text="$L:911$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="347,269,120,20" Name="ckFriendSmall" Show="true" Text="$L:1165$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+        <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="19,292,120,20" Name="ckPvPSmall" Show="true" Text="$L:1166$" TextColor="">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        </CheckButton>
+      </Form>
+      <Button Inherit="PushButton" Location="35,399,80,24" Name="btDefaultSetting" Show="true" Text="$L:340$">
+        <Scripts>
+          <OnLClick>layWorld_frmInterfaceSettingEx_btDefaultSetting_OnClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="129,399,80,24" Name="btreplay" Show="true" Text="$L:826$">
+        <Scripts>
+          <OnLClick>layWorld_frmInterfaceSettingEx_btreplay_OnClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="320,399,80,24" Name="btOk" Show="true" Text="$L:341$">
+        <Scripts>
+          <OnLClick>layWorld_frmInterfaceSettingEx_btOk_OnClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="409,399,80,24" Name="btCancel" Show="true" Text="$L:342$">
+        <Scripts>
+          <OnLClick>layWorld_frmInterfaceSettingEx_btCancel_OnClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,520,30"/>
+      <CloseButton Location="501,28,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="-1,0,533,47" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="386,8,147,47" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="314,0,145,47"/>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" Location="188,22,158,22" Name="8142" Show="true" Text="$L:343$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+    <Form Inherit="" Location="332,153,321,230" Name="frmAudioEx" Show="false">
+      <Label Inherit="bg1" Location="20,26,280,190" Name="lbBackLT" Show="true"/>
+      <Label Inherit="bg3" Location="32,63,255,100" Name="18057" Show="true"/>
+      <Form Inherit="NoTitleBarForm" Location="5,57,296,120" Name="frmSelect" Show="true">
+        <Label Inherit="" Location="35,19,90,18" Name="lbAudio" Show="true" Text="$L:344$"/>
+        <Label Inherit="" Location="35,47,90,18" Name="lbMusic" Show="true" Text="$L:345$"/>
+        <CheckButton Inherit="DefaultChkBtn" Location="49,76,125,20" Name="ckbAroundAudio" Show="true" Text="$L:346$">
+          <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+          <Scripts>
+            <OnLClick>layWorld_frmAudioEx_frmSelect_ckbAroundAudio_OnLClick(self);</OnLClick>
+          </Scripts>
+        </CheckButton>
+        <SliderV Inherit="DefaultSliderV" Location="124,22,144,12" Name="slvAudio" Show="true">
+          <Scripts>
+            <OnUpdateValue>layWorld_frmAudioEx_frmSelect_slvAudio_OnUpdateValue(self);</OnUpdateValue>
+          </Scripts>
+        </SliderV>
+        <SliderV Inherit="DefaultSliderV" Location="124,50,144,12" Name="slvMusic" Show="true">
+          <Scripts>
+            <OnUpdateValue>layWorld_frmAudioEx_frmSelect_slvMusic_OnUpdateValue(self);</OnUpdateValue>
+          </Scripts>
+        </SliderV>
+      </Form>
+      <Button Inherit="PushButton" Location="121,172,80,24" Name="btDefaultSetting" Show="true" Text="$L:347$">
+        <Scripts>
+          <OnLClick>layWorld_frmAudioEx_btDefaultSetting_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="33,172,80,24" Name="btOk" Show="true" Text="$L:348$">
+        <Scripts>
+          <OnLClick>layWorld_frmAudioEx_btOk_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="208,172,80,24" Name="btCancel" Show="true" Text="$L:349$">
+        <Scripts>
+          <OnLClick>layWorld_frmAudioEx_btCancel_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,309,28"/>
+      <Label Inherit="TemplateNormalTitle" Location="7,6,301,48" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" Inherit="" Location="97,28,120,20" Name="10355" Show="true" Text="$L:350$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="277,34,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnShow>layWorld_frmAudioEx_OnShow(self);</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+  <Form Inherit="" Location="331,153,295,354" Movable="fals" Name="frmVedioEx" Show="false">
+    <Label Inherit="bg1" Location="8,21,280,330" Name="lbBackLT" Show="true"/>
+    <Label Inherit="bg3" Location="18,57,260,240" Name="5137" Show="true"/>
+    <Label Inherit="" Location="0,256,256,170" Name="lbBackLB" Show="false">
+      <BackgroundImage File="" Source=""/>
+    </Label>
+    <Form Inherit="NoTitleBarForm" Location="20,60,256,280" Name="frmSelect" Show="true">
+      <Label AlignCol="RIGHT" ColSpacing="10" Inherit="" Location="11,12,95,18" Name="lbSize" Show="true" Text="$L:351$"/>
+      <Label AlignCol="RIGHT" ColSpacing="10" Inherit="" Location="11,87,95,18" Name="lbTexture" Show="true" Text="$L:352$"/>
+      <Label AlignCol="RIGHT" ColSpacing="10" Inherit="" Location="11,111,95,18" Name="lbShadow" Show="true" Text="$L:353$"/>
+      <CheckButton AlignCol="CENTER" AlignLine="CENTER" CheckStyle="true" Enable="false" Inherit="DefaultChkBtn" Location="30,250,140,20" Name="ckbHighLight" Show="false" Text="$L:354$">
+        <BackgroundImage File="" Source=""/>
+        <Hint Text="$L:839$"/>
+        <DisabledImage File="" Source="" Transparency=""/>
+      </CheckButton>
+      <CheckButton AlignCol="CENTER" AlignLine="CENTER" CheckStyle="true" Inherit="DefaultChkBtn" Location="106,177,120,20" Name="ckbFullScreen" Show="true" Text="$L:355$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        <Scripts>
+          <OnLClick>frmVedioEx_frmSelect_ckbFullScreen_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton AlignCol="CENTER" AlignLine="CENTER" CheckStyle="true" Inherit="DefaultChkBtn" Location="106,206,120,20" Name="ckbCamera" Show="true" Text="$L:356$">
+        <BackgroundImage File="tz_012" Source="364,369,149,24"/>
+        <Scripts>
+          <OnLClick>frmVedioEx_frmSelect_ckbCamera_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <ComboBox AlignCol="CENTER" AlignLine="CENTER" Inherit="StudioCb" Location="107,12,120,18" Name="cbSize" Show="true">
+        <Scripts>
+          <OnUpdateText>frmVedioEx_frmSelect_cbSize_OnUpdateText(self,"cbSize");</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <ComboBox AlignCol="CENTER" AlignLine="CENTER" Inherit="StudioCb" Location="107,87,120,18" Name="cbTexture" Show="true">
+        <Scripts>
+          <OnUpdateText>frmVedioEx_frmSelect_cbSize_OnUpdateText(self,"cbTexture");</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <ComboBox AlignCol="CENTER" AlignLine="CENTER" Inherit="StudioCb" Location="107,112,120,18" Name="cbShadow" Show="true">
+        <Scripts>
+          <OnUpdateText>frmVedioEx_frmSelect_cbSize_OnUpdateText(self,"cbShadow");</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <Label AlignCol="RIGHT" ColSpacing="10" Inherit="" Location="11,135,95,18" Name="lbPeople" Show="true" Text="$L:357$"/>
+      <ComboBox AlignCol="CENTER" AlignLine="CENTER" Inherit="StudioCb" Location="107,62,120,18" Name="cbRefresh" Show="true">
+        <Scripts>
+          <OnUpdateText>frmVedioEx_frmSelect_cbSize_OnUpdateText(self,"cbRefresh");</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <ComboBox AlignCol="CENTER" AlignLine="CENTER" Inherit="StudioCb" Location="107,37,120,18" Name="cbColor" Show="true">
+        <Scripts>
+          <OnUpdateText>frmVedioEx_frmSelect_cbSize_OnUpdateText(self,"cbColor");</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <Label AlignCol="RIGHT" ColSpacing="10" Inherit="" Location="11,62,95,18" Name="lbRefresh" Show="true" Text="$L:358$"/>
+      <Label AlignCol="RIGHT" ColSpacing="10" Inherit="" Location="11,37,95,18" Name="lbColor" Show="true" Text="$L:359$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="108,151,18,18" Name="871" Show="true" Text="$L:832$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="157,151,18,18" Name="lvPeopleCount" Show="true" Text="Count"/>
+      <Label AlignCol="CENTER" Inherit="" Location="206,151,18,18" Name="872" Show="true" Text="$L:833$"/>
+      <SliderV Inherit="DefaultSliderV" Location="107,138,120,12" Name="slvPeople" Show="true">
+        <Scripts>
+		  <OnLoad>self:SetData(50, 60, 50)</OnLoad>
+          <OnUpdateValue>frmVedioEx_frmSelect_slvPeople_OnUpdateValue(self);</OnUpdateValue>
+        </Scripts>
+	  </SliderV>
+      <Scripts/>
+    </Form>
+    <Button Inherit="PushButton" Location="109,306,80,24" Name="btDefaultSetting" Show="true" Text="$L:360$">
+      <Scripts>
+        <OnLClick>frmVedioEx_btDefaultSetting_OnLClick(self);</OnLClick>
+      </Scripts>
+    </Button>
+    <Button Inherit="PushButton" Location="23,306,80,24" Name="btOk" Show="true" Text="$L:361$">
+      <Scripts>
+        <OnLClick>frmVedioEx_btOk_OnLClick(self);</OnLClick>
+      </Scripts>
+    </Button>
+    <Button Inherit="PushButton" Location="196,306,80,24" Name="btCancel" Show="true" Text="$L:362$">
+      <Scripts>
+        <OnLClick>frmVedioEx_btCancel_OnLClick(self);</OnLClick>
+      </Scripts>
+    </Button>
+    <TitleBarButton Location="0,0,226,30"/>
+    <CloseButton Location="264,29,14,14">
+      <NormalImage File="tz_010" Source="120,383,13,13"/>
+      <PushedImage File="tz_010" Source="98,383,13,13"/>
+    </CloseButton>
+    <Label Inherit="TemplateNormalTitle" Location="0,2,296,48" Name="lbTitle" Show="true"/>
+    <Label AlignCol="CENTER" Inherit="" Location="88,24,120,20" Name="2015" Show="true" Text="$L:1041$" TextFont="$L:1$" TextSize="$L:3$"/>
+	<Scripts>
+	  <OnShow>layWorld_frmVedioEx_OnShow(self)</OnShow>
+	</Scripts>
+  </Form>
+</Ui>

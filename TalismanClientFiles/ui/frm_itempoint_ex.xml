@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_ItemPoint_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="147,266,300,370" Name="frmItemPointEx" Show="false">
+      <Label Inherit="bg1" Location="10,20,280,335" Name="1637" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="4,1,293,50" Name="14899" Show="true"/>
+      <Label Inherit="" Location="-2,256,256,100" Name="1671" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="69,51,161,165" Name="1956" Show="true">
+        <BackgroundImage File="tz_024" Source="0,0,161,165" Transparency="1"/>
+      </Label>
+      <Label Inherit="bg3" Location="67,220,176,27" Name="7291" Show="true"/>
+      <Button DragIn="true" Inherit="" Location="134,118,32,32" Name="btItemPoint" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,40,39"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmItemPointEx_btItemPoint_OnDragIn(self, drag)</OnDragIn>
+          <OnHint>layWorld_frmItemPointEx_btItemPoint_OnHint(self)</OnHint>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="70,223,170,20" Name="lbItemPointInfo" Show="true" Text="$L:1034$"/>
+      <Button Inherit="PushButton" Location="47,323,70,20" Name="btOK" Show="true" Text="$L:1031$">
+        <Scripts>
+          <OnLClick>layWorld_frmItemPointEx_btOK_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="174,323,70,20" Name="btCancel" Show="true" Text="$L:1032$">
+        <Scripts>
+          <OnLClick>layWorld_frmItemPointEx_btCancel_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Anchors/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="85,2,110,16" Name="1229" Show="true" Text=""/>
+      <CheckButton AlignCol="" Inherit="DefaultChkBtn" Location="42,297,210,20" Name="ckbShowPoint" Show="true" Text="$L:1111$">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <CheckButton AlignCol="" Inherit="DefaultChkBtn" Location="42,274,210,20" Name="ckbShowName" Show="true" Text="$L:1036$">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <CheckButton AlignCol="" Inherit="DefaultChkBtn" Location="42,250,210,20" Name="ckbHidePoint" Show="true" Text="$L:1035$">
+        <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+      </CheckButton>
+      <TitleBarButton Location="1,3,300,28"/>
+      <CloseButton Location="264,32,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="91,0,120,68" Name="13105" Show="true" Text="$L:1033$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_ITEMPOINTS_SHOW")</OnLoad>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnEvent>if event == "CEV_ITEMPOINTS_SHOW" then
+				self:Show()
+			end</OnEvent>
+        <OnHide>layWorld_frmItemPointEx_OnHide(self)</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

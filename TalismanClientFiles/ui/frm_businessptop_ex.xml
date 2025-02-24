@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_BusinessPtoP_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="104,192,294,512" Name="frmBPToPEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,492" Name="lbPlayerBg" Show="true" Size=""/>
+      <Label Inherit="TemplateNormalTitle" Location="1,1,292,50" Name="lbUserbg" Show="true"/>
+      <Label Inherit="bg3" Location="22,47,250,430" Name="6349" Show="true"/>
+      <Label Inherit="" Location="41,82,211,141" Name="590" Show="true">
+        <BackgroundImage File="tz_011" Source="299,2,211,141"/>
+      </Label>
+      <Label Inherit="" Location="41,299,211,141" Name="728" Show="true">
+        <BackgroundImage File="tz_011" Source="299,2,211,141"/>
+      </Label>
+      <Label Inherit="" Location="27,230,240,26" Name="1194" Show="true">
+        <Label Inherit="" Location="0,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="23,3,24,22" Name="Jin" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="97,3,24,22" Name="Yin" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="158,0,24,26" Name="Tong" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+      </Label>
+      <Label Inherit="" Location="27,445,240,26" Name="1842" Show="true">
+        <Label Inherit="" Location="0,3,24,20" Name="Shi" Show="false">
+          <BackgroundImage File="tz_010" Source="383,490,24,20"/>
+        </Label>
+        <Label Inherit="" Location="23,3,24,22" Name="Jin" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="98,3,24,22" Name="Yin" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label Inherit="" Location="160,0,24,26" Name="Tong" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+      </Label>
+      <Label BackgroundColor="#6633dd33" Inherit="" Location="32,76,230,190" Name="lbLockState1" Show="false"/>
+      <Label BackgroundColor="#6633dd33" Inherit="" Location="32,292,230,186" Name="lbLockState2" Show="false"/>
+      <TitleBarButton Location="0,0,294,30"/>
+      <EditBox AlignCol="CENTER" EnableInput="true" Inherit="" LineSpacing="6" Location="77,450,44,20" Name="lbUsergoldnum" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        <Scripts>
+          <OnTextChanged>layWorld_frmBPToPEx_Gold_OnTextChanged(self);</OnTextChanged>
+        </Scripts>
+      </EditBox>
+      <EditBox AlignCol="CENTER" EnableInput="true" Inherit="" LineSpacing="6" Location="152,450,30,20" MaxChar="2" Name="lbUsersilvernum" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        <Scripts>
+          <OnTextChanged>layWorld_frmBPToPEx_Gold_OnTextChanged(self);</OnTextChanged>
+        </Scripts>
+      </EditBox>
+      <EditBox AlignCol="CENTER" EnableInput="true" Inherit="" LineSpacing="6" Location="215,450,30,20" MaxChar="2" Name="lbUsercoppernum" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        <Scripts>
+          <OnTextChanged>layWorld_frmBPToPEx_Gold_OnTextChanged(self);</OnTextChanged>
+        </Scripts>
+      </EditBox>
+      <EditBox AlignCol="CENTER" Enable="false" EnableInput="true" Inherit="" LineSpacing="6" Location="51,450,40,20" Name="lbUserDimond" Show="false">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </EditBox>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="76,235,44,20" Name="lbPlayergoldnum" Show="true" Text="$L:461$">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="151,235,30,20" Name="lbPlayersilvernum" Show="true" Text="$L:462$">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="211,235,30,20" Name="lbPlayercoppernum" Show="true" Text="$L:463$">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="28,56,147,24" Name="lbPlayername" Show="true">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="51,235,40,20" Name="lbPlayerDimond" Show="false" Text="$L:461$">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="28,271,147,24" Name="lbUsername" Show="true">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <Button Inherit="PushButton" Location="163,479,80,22" Name="btBuy" Show="true" Text="$L:464$">
+        <Scripts>
+          <OnLClick>layWorld_frmBPToPEx_btBuy_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="52,479,80,22" Name="btCheck" Show="true" Text="$L:465$">
+        <Scripts>
+          <OnLClick>layWorld_frmBPToPEx_btCheck_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="83,0,128,68" Name="22104" Show="true" Text="$L:460$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom1" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,1);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,1);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,1);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom2" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,2);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,2);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,2);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom3" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,3);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,3);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,3);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom4" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,4);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,4);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,4);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom5" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,5);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,5);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,5);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom6" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,6);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,6);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,6);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom7" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,7);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,7);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,7);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom8" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,8);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,8);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,8);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom9" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,9);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,9);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,9);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom10" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,10);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,10);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,10);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom11" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,11);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,11);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,11);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom12" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,12);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,12);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,12);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom13" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,13);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,13);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,13);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom14" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,14);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,14);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,14);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom15" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,15);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,15);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,15);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom16" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,16);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,16);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,16);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom17" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,17);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,17);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,17);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom18" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,18);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,18);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,18);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom19" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,19);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,19);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,19);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom20" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,20);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,20);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,20);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom21" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,21);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,21);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,21);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom22" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,22);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,22);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,22);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom23" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,23);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,23);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,23);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom24" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,24);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,24);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,24);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom25" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,25);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,25);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,25);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom26" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,26);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,26);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,26);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom27" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,27);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,27);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,27);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom28" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,28);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,28);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,28);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom29" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,29);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,29);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,29);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="false" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom30" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_OnRClick(self,mouse_x,mouse_y,30);</OnRClick>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_OnLClick(self,mouse_x,mouse_y,30);</OnLClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_OnHint(self,30);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D1" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,1);</OnDragIn>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,1);</OnHint>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,1);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,1);</OnRClick>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D2" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,2);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,2);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,2);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,2);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D3" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,3);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,3);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,3);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,3);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D4" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,4);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,4);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,4);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,4);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D5" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,5);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,5);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,5);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,5);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D6" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,6);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,6);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,6);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,6);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D7" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,7);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,7);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,7);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,7);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D8" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,8);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,8);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,8);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,8);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D9" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,9);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,9);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,9);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,9);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D10" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,10);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,10);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,10);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,10);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D11" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,11);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,11);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,11);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,11);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D12" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,12);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,12);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,12);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,12);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D13" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,13);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,13);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,13);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,13);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D14" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,14);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,14);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,14);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,14);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D15" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,15);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,15);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,15);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,15);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D16" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,16);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,16);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,16);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,16);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D17" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,17);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,17);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,17);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,17);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D18" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,18);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,18);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,18);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,18);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D19" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,19);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,19);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,19);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,19);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D20" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,20);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,20);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,20);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,20);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D21" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,21);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,21);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,21);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,21);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D22" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,22);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,22);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,22);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,22);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D23" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,23);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,23);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,23);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,23);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D24" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,24);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,24);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,24);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,24);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D25" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,25);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,25);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,25);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,25);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D26" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,26);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,26);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,26);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,26);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D27" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,27);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,27);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,27);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,27);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D28" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,28);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,28);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,28);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,28);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D29" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,29);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,29);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,29);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,29);</OnHint>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="btnCustom_D30" Show="false" Text="">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnDragIn>layWorld_frmBPToPEx_btnCustom_D_OnDragIn(self, drag,30);</OnDragIn>
+          <OnLClick>layWorld_frmBPToPEx_btnCustom_D_OnLClick(self,mouse_x,mouse_y,30);</OnLClick>
+          <OnRClick>layWorld_frmBPToPEx_btnCustom_D_OnRClick(self,mouse_x,mouse_y,30);</OnRClick>
+          <OnHint>layWorld_frmBPToPEx_btnCustom_D_OnHint(self,30);</OnHint>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_frmBPToPEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmBPToPEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>layWorld_frmBPToPEx_OnShow(self);</OnShow>
+        <OnHide>layWorld_frmBPToPEx_OnHide(self);</OnHide>
+        <OnUpdate>if uiUserTradCheckDistance() ~= true then self:Hide() end</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

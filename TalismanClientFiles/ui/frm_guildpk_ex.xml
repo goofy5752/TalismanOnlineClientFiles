@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_GuildPK_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="50,150,580,532" Movable="true" Name="frmGuildPKEx" Show="false" Size="580,532">
+      <Label Inherit="bg1" Location="6,18,553,512" Name="lbBackLT" Show="true"/>
+      <TitleBarButton Location="-2,0,570,44"/>
+      <CloseButton Location="534,27,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="TemplateNormalTitle" Location="-2,0,570,44" Name="lbTitle" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="223,0,120,66" Name="2015" Show="true" Text="$L:1275$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="34,124,500,350" MouseEvent="true" MouseMove="true" Name="lbList" Pick="false" Show="true">
+        <EditBox ColSpacing="5" EnableInput="false" Inherit="" LineSpacing="20" Location="7,7,485,335" MultiLine="true" Name="etPKTime" Show="true" Text="$L:1281$" WordWrap="true"/>
+        <ListBox Inherit="" Location="7,7,485,335" MouseEvent="true" MouseMove="true" Name="lstPKList" Pick="false" Show="false">
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1282$" TextColor="#ffe0e020" Width="150"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1283$" TextColor="#ffe0e020" Width="80"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1284$" TextColor="#ffe0e020" Width="150"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1283$" TextColor="#ffe0e020" Width="80"/>
+        </ListBox>
+        <ListBox Inherit="" Location="7,7,485,335" MouseEvent="true" MouseMove="true" Name="lstRanking" Pick="false" Show="false">
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1285$" TextColor="#ffe0e020" Width="150"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1286$" TextColor="#ffe0e020" Width="80"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1291$" TextColor="#ffe0e020" Width="80"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1346$" TextColor="#ffe0e020" Width="150"/>
+          <Scripts>
+            <OnSelect>layWorld_frmGuildPKEx_lbList_lstRanking_OnSelect(self);</OnSelect>
+          </Scripts>
+        </ListBox>
+        <ListBox Inherit="" Location="7,7,485,335" MouseEvent="true" MouseMove="true" Name="lstApplyPK" Pick="false" Show="false">
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1287$" TextColor="#ffe0e020" Width="150"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1283$" TextColor="#ffe0e020" Width="80"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1288$" TextColor="#ffe0e020" Width="150"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="" TextColor="#ffe0e020" Width="80"/>
+        </ListBox>
+        <ListBox Inherit="" Location="7,7,485,335" MouseEvent="true" MouseMove="true" Name="LstUserRanking" Pick="false" Show="false">
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1321$" TextColor="#ffe0e020" Width="120"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1322$" TextColor="#ffe0e020" Width="120"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1323$" TextColor="#ffe0e020" Width="50"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1324$" TextColor="#ffe0e020" Width="50"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1325$" TextColor="#ffe0e020" Width="65"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1326$" TextColor="#ffe0e020" Width="65"/>
+        </ListBox>
+      </Label>
+      <Button Inherit="PushButton" Location="35,91,80,20" Name="BtnPKTime" Show="true" Text="$L:1276$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_BtnPKTime_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="138,91,80,20" Name="BtnPKList" Show="true" Text="$L:1277$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_BtnPKList_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="344,91,80,20" Name="BtnRanking" Show="true" Text="$L:1278$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_BtnRanking_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="241,91,80,20" Name="BtnApplyPK" Show="true" Text="$L:1279$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_BtnApplyPK_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="436,488,80,20" Name="btDetailed" Show="false" Text="$L:1310$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_btDetailed_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="51,488,80,20" Name="BtnRefresh" Show="false" Text="$L:1280$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_BtnRefresh_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="170,483,230,30" Name="lbSearch" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="4,4,70,22" Name="lbGuildName" Show="true" Text="$L:1289$"/>
+        <EditBox AlignCol="LEFT" AlignLine="CENTER" ColSpacing="6" Inherit="" LineSpacing="6" Location="70,4,110,22" MaxChar="16" Name="ebGuildName" Show="true">
+          <BackgroundImage File="tz_012" Source="364,368,148,25"/>
+        </EditBox>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="183,4,40,22" Name="BtSearch" Show="true" Text="$L:1290$">
+          <Scripts>
+            <OnLClick>layWorld_frmGuildPKEx_lbSearch_BtSearch_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+      </Label>
+      <Button Inherit="PushButton" Location="436,488,80,20" Name="btRanking" Show="false" Text="$L:1316$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_btRanking_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="447,91,80,20" Name="BtnUserRanking" Show="true" Text="$L:1320$">
+        <Scripts>
+          <OnLClick>layWorld_GuildPKEx_BtnUserRanking_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_frmGuildPKEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmGuildPKEx_OnEvent(self,event,arg);</OnEvent>
+        <OnShow>layWorld_frmGuildPKEx_OnShow(self);</OnShow>
+      </Scripts>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="214,483,147,24" Name="lbLastTime" Show="false" Text="">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+    </Form>
+    <Form Inherit="" Location="180,75,400,450" Movable="true" Name="frmPKDetailedEx" Show="false" Size="400,450">
+      <Anchors>
+        <Anchor offset="-33,0" point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frmGuildPKEx"/>
+        <Anchor point="TOP" relativeTo="layWorld.frmGuildPKEx"/>
+      </Anchors>
+      <TitleBarButton HandleMove="false" Location="1,3,400,44"/>
+      <Label Inherit="bg1" Location="22,18,370,430" Name="1492" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="15,0,385,44" Name="1522" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="146,0,120,66" Name="2015" Show="true" Text="$L:1311$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="bg3" Location="33,90,350,310" MouseEvent="true" MouseMove="true" Name="lbList" Show="true">
+        <ListBox Inherit="" Location="7,7,336,296" MouseEvent="true" MouseMove="true" Name="lsbDetailedPK" Show="true">
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1313$" TextColor="#ffe0e020" Width="115"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1318$" TextColor="#ffe0e020" Width="35"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1319$" TextColor="#ffe0e020" Width="60"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1314$" TextColor="#ffe0e020" Width="55"/>
+          <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="$L:1315$" TextColor="#ffe0e020" Width="55"/>
+        </ListBox>
+      </Label>
+      <Button Inherit="PushButton" Location="175,408,80,20" Name="btClose" Show="true" Text="$L:1312$">
+        <Scripts>
+          <OnLClick>layWorld_frmPKDetailedEx_btClose_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="47,59,147,24" Name="lbGuildName" Show="true">
+        <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+      </Label>
+      <CloseButton Location="366,27,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnShow>layWorld_frmPKDetailedEx_OnShow(self);</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

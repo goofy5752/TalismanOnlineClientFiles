@@ -1,0 +1,81 @@
+  <Line>
+    <Items>
+	  <Item text="$L:Dungeon_3c_3$" color="#ff44dd45" />
+	</Items>
+  </Line>
+  <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Winner$" />
+	   <Item text="$TD_Winner" />
+	</Items>
+  </Line>
+  <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Team$" color="#ff44dd45" />
+	   <Item text="$TD_Team1" color="#ff44dd45"/>
+	</Items>
+  </Line>
+  <Line>
+    <Items>
+	  <Item text="$L:Dungeon_3c_14$" />
+	</Items>
+  </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Score$" />
+       <Item text="$TD_Score1" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Exp$" />
+       <Item text="$TD_Exp1" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Nimbus$" />
+       <Item text="$TD_Nimbus1" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Money$" />
+       <Item text="$TD_Money1" />
+    </Items>
+   </Line>
+  <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Team$" color="#ff44dd45" />
+	   <Item text="$TD_Team2"  color="#ff44dd45"/>
+	</Items>
+  </Line>
+  <Line>
+    <Items>
+	  <Item text="$L:Dungeon_3c_14$" />
+	</Items>
+  </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Score$" />
+       <Item text="$TD_Score2" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Exp$" />
+       <Item text="$TD_Exp2" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Nimbus$" />
+       <Item text="$TD_Nimbus2" />
+    </Items>
+   </Line>
+   <Line>
+    <Items>
+	   <Item text="$L:Dungeon_3c_Money$" />
+       <Item text="$TD_Money2" />
+    </Items>
+   </Line>  

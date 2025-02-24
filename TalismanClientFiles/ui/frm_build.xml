@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="479,383,300,370" Name="frmBuild" Show="true">
+      <Label Inherit="bg1" Location="11,17,280,335" Name="1251" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="5,1,292,50" Name="10282" Show="true"/>
+      <Label Inherit="" Location="-2,256,256,75" Name="1285" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="47,71,207,134" Name="1356" Show="fals">
+        <BackgroundImage File="tz_025" Source="0,0,207,134" Transparency="0.8"/>
+      </Label>
+      <Button Inherit="PushButton" Location="41,306,70,20" Name="btOK" Show="true" Text="$L:504$"/>
+      <Button Inherit="PushButton" Location="193,306,70,20" Name="btCancel" Show="true" Text="$L:505$"/>
+      <Anchors/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="90,0,120,68" Name="1229" Show="true" Text="$L:506$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Button Inherit="" Location="77,109,32,32" Name="btBuildLeft" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+      </Button>
+      <Button Inherit="" Location="189,109,32,32" Name="btBuildRight" Show="true">
+        <BackgroundImage File="tz_011" Source="178,115,41,40"/>
+      </Button>
+      <Label Inherit="bg3" Location="83,215,182,67" Name="4077" Show="true"/>
+      <EditBox BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="87,219,175,60" MultiLine="true" Name="lbBuildTip" Show="true" Text="" WordWrap="true"/>
+      <Label Inherit="" Location="42,227,36,16" Name="lbBuildName" Show="true" Text="$L:507$"/>
+      <TitleBarButton Location="11,2,280,28"/>
+      <CloseButton Location="266,30,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="false">
+    <Form Inherit="" Location="299,273,256,256" Name="frmItemReward" Show="false">
+      <Label Inherit="" Location="0,0,256,256" Name="582" Show="true">
+        <BackgroundImage File="" Source="0,0,256,256"/>
+      </Label>
+      <Button Inherit="" Location="23,52,64,22" Name="btT1" Show="true" Text="$L:742$" TextFont="$L:1$" TextSize="$L:2$">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="134,52,64,22" Name="btT2" Show="true" Text="$L:742$" TextFont="$L:1$" TextSize="$L:2$">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="" Location="50,277,32,32" Name="btReward3" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Label Inherit="" Location="23,84,100,100" Name="lbReward2" Show="false" Text="">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label BackgroundColor="#ee000000" Inherit="" Location="24,190,150,22" Name="lbShow" Show="fals" Text="是否显示称号"/>
+      <Button Inherit="" Location="78,263,32,32" Name="btReward4" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Button>
+      <Button Inherit="PushButton" Location="125,276,50,20" Name="btRewardOk" Show="true" Text="$L:724$"/>
+      <Button Inherit="PushButton" Location="184,218,50,20" Name="btRewardClose" Show="true" Text="$L:724$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="68,26,124,20" Name="lbRewardTitel" Show="true" Text="$L:740$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <TitleBarButton Location="0,0,256,26"/>
+      <CloseButton Location="220,33,16,16">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </CloseButton>
+      <ListBox BackgroundColor="#ee000000" Inherit="" Location="23,73,100,110" Name="BigLine" Show="true">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="称号" TextColor="#ffffffff" Width="60"/>
+      </ListBox>
+      <ListBox BackgroundColor="#ee000000" Inherit="" Location="134,73,100,110" Name="SmallLine" Show="true">
+        <ColumnButton AlignCol="CENTER" AlignLine="CENTER" Text="分列" TextColor="#ffffffff" Width="60"/>
+      </ListBox>
+      <EditBox BackgroundColor="#ee000000" Inherit="" Location="24,217,150,22" Name="1394" Show="true" Text="称号说明"/>
+      <Label Inherit="" Location="198,190,22,22" Name="ShowItBI" Show="true" Text="">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <CheckButton AlignCol="" Location="199,194,20,14" Name="ShowIt" Show="true">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+    </Form>
+  </Layer>
+</Ui>

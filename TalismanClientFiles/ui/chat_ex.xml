@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="Shortcut">
+    <Templates>
+      <Button AlignCol="LEFT" Inherit="" Location="8,48,100,20" Name="TemplateSendChannelButton" Show="true" Text="$L:1020$">
+        <Scripts>
+          <OnLoad>TemplateSendChannelButton_OnLoad(self)</OnLoad>
+          <OnEvent>TemplateSendChannelButton_OnEvent(self, event, arg);</OnEvent>
+          <OnLClick>TemplateSendChannelButton_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Location="6,113,130,20" Name="TemplateChannelFilterCheckButton" Show="true" Text="$L:252$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+        <Scripts>
+          <OnLoad>TemplateChannelFilterCheckButton_OnLoad(self)</OnLoad>
+          <OnEvent>TemplateChannelFilterCheckButton_OnEvent(self, event, arg);</OnEvent>
+          <OnLClick>TemplateChannelFilterCheckButton_OnLClick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Form Active="false" BackgroundColor="" Inherit="NoTitleBarForm" Location="10,662,386,167" MaxSize="0,600" MinSize="0,167" Name="TemplateChatChannelFrame" Pick="false" Show="true" Size="386,167">
+        <Widget FadeInDelayTime="1" FadeInTime="0.5" FadeOutDelayTime="0.5" FadeOutTime="5" Location="3,6,30,148" MouseEvent="true" MouseMove="true" Name="wtToolsTop" Pick="false" Show="true" Size="0,20">
+          <Anchors>
+            <Anchor point="TOP"/>
+            <Anchor point="RIGHT"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+          <Button BackgroundColor="#BF000000" Inherit="" Location="10,10,100,10" Name="btResizeV" Show="true" Size="0,0">
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor offset="0,14" point="TOP"/>
+              <Anchor point="RIGHT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+            <Scripts>
+              <OnLDown>TemplateChatChannelFrame_wtToolsTop_btResizeV_OnLDown(self, mouse_x, mouse_y)</OnLDown>
+              <OnMouseMove>TemplateChatChannelFrame_wtToolsTop_btResizeV_OnMouseMove(self, mouse_x, mouse_y, delta_x, delta_y)</OnMouseMove>
+            </Scripts>
+          </Button>
+        </Widget>
+        <Widget FadeInDelayTime="1" FadeInTime="0.5" FadeOutDelayTime="0.5" FadeOutTime="5" Location="3,6,50,148" MouseEvent="true" MouseMove="true" Name="wtToolsBottom" Pick="false" Show="true" Size="60,20">
+          <Anchors>
+            <Anchor point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+          <Button Inherit="" Location="0,0,20,20" Name="btChannel" Show="true" Size="20,20">
+            <NormalImage Blend="true" File="tz_010" Source="71,454,21,20"/>
+            <PushedImage Blend="true" File="tz_010" Source="71,484,21,20"/>
+            <Hint Text="$L:250$"/>
+            <Scripts>
+              <OnLClick>TemplateChatChannelFrame_wtToolsBottom_btChannel_OnLClick(self);</OnLClick>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="20,0,20,20" Name="btMove" Show="true" Size="20,20" Text="">
+            <NormalImage File="tz_010" Source="309,484,21,20"/>
+            <HighlightImage File="tz_010" Source="309,484,21,20"/>
+            <PushedImage File="tz_010" Source="309,484,21,20"/>
+            <Hint Text="$L:270$"/>
+            <Scripts>
+              <OnLDown>TemplateChatChannelFrame_wtToolsBottom_btMove_OnLDown(self, mouse_x, mouse_y)</OnLDown>
+              <OnMouseMove>TemplateChatChannelFrame_wtToolsBottom_btMove_OnMouseMove(self, mouse_x, mouse_y, delta_x, delta_y)</OnMouseMove>
+            </Scripts>
+          </Button>
+        </Widget>
+        <Label BackgroundColor="#8F000000" FadeInDelayTime="1" FadeInTime="0.5" FadeOutDelayTime="0.5" FadeOutTime="5" Inherit="" Location="100,100,200,200" Name="wtBgDisplay" Show="true" Size="0,0">
+          <Anchors>
+            <Anchor point="RIGHT"/>
+            <Anchor offset="0,20" point="TOP"/>
+            <Anchor offset="0,-20" point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label BackgroundColor="#44000000" Inherit="" Location="100,100,200,200" Name="wtBgDisplayEx" Show="false" Size="0,0">
+          <Anchors>
+            <Anchor point="RIGHT"/>
+            <Anchor offset="0,20" point="TOP"/>
+            <Anchor offset="0,-20" point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+        </Label>
+        <Label FadeInDelayTime="1" FadeInTime="0.5" FadeOutDelayTime="0.5" FadeOutTime="5" Inherit="" Location="0,140,309,20" MouseEvent="true" MouseMove="true" Name="lbPageButtons" Pick="false" Show="true" Size="0,20">
+          <Anchors>
+            <Anchor point="RIGHT"/>
+            <Anchor point="BOTTOM"/>
+            <Anchor offset="2,0" point="LEFT" relativePoint="RIGHT" relativeTo="wtToolsBottom"/>
+          </Anchors>
+        </Label>
+        <Param key="ToolsVisible" type="bool" value="true"/>
+        <Scripts>
+          <OnLoad>TemplateChatChannelFrame_OnLoad(self)</OnLoad>
+          <OnEvent>TemplateChatChannelFrame_OnEvent(self, event, arg)</OnEvent>
+          <OnUpdate Timer="2">TemplateChatChannelFrame_OnUpdate(self, delta)</OnUpdate>
+          <OnOffset>TemplateChatChannelFrame_OnOffset(self);</OnOffset>
+        </Scripts>
+      </Form>
+      <Form Active="false" BackgroundColor="" Inherit="TemplateChatChannelFrame" Location="10,462,386,167" MaxSize="0,600" MinSize="0,167" Name="TemplateChatChannelPageMain" Pick="false" Show="fals" Size="386,167">
+        <Anchors>
+          <Anchor offset="0,-135" point="BOTTOM"/>
+          <Anchor point="LEFT"/>
+        </Anchors>
+        <Widget Name="wtToolsBottom">
+          <CheckButton Inherit="" Location="40,0,20,20" Name="cbLock" Show="true" Size="20,20">
+            <NormalImage Blend="true" File="tz_010" Source="183,206,21,21"/>
+            <CheckImage Blend="true" File="tz_010" Source="157,206,21,21"/>
+            <Hint Text="$L:1345$"/>
+            <Scripts>
+              <OnLClick>TemplateChatChannelPageMain_wtToolsBottom_cbLock(self)</OnLClick>
+            </Scripts>
+          </CheckButton>
+        </Widget>
+        <Label Name="wtBgDisplay" Show="false"/>
+        <Scripts>
+          <OnLoad>TemplateChatChannelFrame_OnLoad(self) TemplateChatChannelPageMain_OnLoad(self);</OnLoad>
+          <OnUpdate Timer="40">TemplateChatChannelPageMain_OnUpdate(self, delta);</OnUpdate>
+        </Scripts>
+      </Form>
+      <Form Active="false" BackgroundColor="" Inherit="TemplateChatChannelFrame" Location="10,462,386,167" MaxSize="0,600" MinSize="0,167" Name="TemplateChatChannelPage" Pick="false" Show="fals" Size="386,167">
+        <Widget Name="wtToolsBottom" Size="20,20"/>
+        <Label Name="lbPageButtons">
+          <CheckButton Inherit="" Location="0,-1,54,20" Name="cbHistory" Show="true" Size="54,20" Text="history">
+            <NormalImage File="tz_012" Source="440,293,64,20"/>
+            <CheckImage File="tz_012" Source="368,293,64,20"/>
+            <PushedImage File="tz_012" Source="368,293,64,20" Transparency="0.4"/>
+            <Scripts>
+              <OnLDown>TemplateChatChannelPage_lbPageButtons_cbHistory_OnLDown(self, mouse_x, mouse_y);</OnLDown>
+              <OnMouseMove>TemplateChatChannelPage_lbPageButtons_cbHistory_OnMouseMove(self, mouse_x, mouse_y, delta_x, delta_y);</OnMouseMove>
+              <OnFocus>uiMoveToTop(SAPI.GetParent(SAPI.GetParent(self)));</OnFocus>
+              <OnLClick>TemplateChatChannelPage_lbPageButtons_cbHistory_OnLCLick(self);</OnLClick>
+              <OnRClick>TemplateChatChannelPage_lbPageButtons_cbHistory_OnRCLick(self);</OnRClick>
+              <OnEnter>TemplateChatChannelPage_lbPageButtons_cbHistory_OnEnter(self);</OnEnter>
+              <OnHint>local hint = ""; if uiGetglobal("layWorld.frmChatInput"):getVisible() == false then hint = LAN("msg_chat_rclick_prompt") end self:SetHintText(hint);</OnHint>
+            </Scripts>
+            <Hint/>
+          </CheckButton>
+        </Label>
+        <EditBox AutoScrollV="true" BackgroundColor="#00000000" EnableInput="false" Inherit="" Location="35,-1,329,140" Name="ebDisplay" Show="true" Size="" WordWrap="true" MultiLine="true">
+          <Anchors>
+            <Anchor point="RIGHT"/>
+            <Anchor offset="0,20" point="TOP"/>
+            <Anchor offset="0,-20" point="BOTTOM"/>
+            <Anchor point="LEFT"/>
+          </Anchors>
+          <Scripts>
+            <OnLoad>self:getScrollBarV():ShowExternButton("ToBottom"); self:RegisterScriptEventNotify("EVENT_SelfEnterWorld");</OnLoad>
+            <OnEvent>if event == "EVENT_SelfEnterWorld" then uiEscapeHit(self, true) end</OnEvent>
+            <OnLDown>TemplateChatChannelPage_ebDisplay_OnLDown(self, mouse_x, mouse_y)</OnLDown>
+            <OnLUp>TemplateChatChannelPage_ebDisplay_OnLUp(self, mouse_x, mouse_y)</OnLUp>
+            <OnRDown>TemplateChatChannelPage_ebDisplay_OnRDown(self, mouse_x, mouse_y)</OnRDown>
+            <OnRUp>TemplateChatChannelPage_ebDisplay_OnRUp(self, mouse_x, mouse_y)</OnRUp>
+            <OnLClick>TemplateChatChannelPage_ebDisplay_OnLClick(self, mouse_x, mouse_y);</OnLClick>
+            <OnRClick>TemplateChatChannelPage_ebDisplay_OnRClick(self, mouse_x, mouse_y);</OnRClick>
+            <OnEnter>TemplateChatChannelPage_ebDisplay_OnEnter(self)</OnEnter>
+            <OnUpdate Timer="500">TemplateChatChannelPage_ebDisplay_OnUpdate(self, delta)</OnUpdate>
+            <OnScrollV>TemplateChatChannelPage_ebDisplay_OnScrollV(self)</OnScrollV>
+          </Scripts>
+        </EditBox>
+        <Scripts>
+          <OnLoad>TemplateChatChannelFrame_OnLoad(self) TemplateChatChannelPage_OnLoad(self);</OnLoad>
+          <OnEvent>TemplateChatChannelFrame_OnEvent(self,event,arg) TemplateChatChannelPage_OnEvent(self,event,arg);</OnEvent>
+        </Scripts>
+        <Param key="DefaultInGroup" type="bool" value="true"/>
+      </Form>
+      <Button Inherit="" Location="0,0,32,32" Name="TemplateComicButton" Show="true" Size="32,32" Text="">
+        <Scripts>
+          <OnLoad>TemplateComicButton_OnLoad(self)</OnLoad>
+          <OnEvent>TemplateComicButton_OnEvent(self, event, arg)</OnEvent>
+          <OnLClick>TemplateComicButton_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+    </Templates>
+  </Theme>
+  <Script file="chat_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="NoTitleBarForm" Level="50" Location="0,0,140,328" Name="frmChannelFilter" Show="false" Size="140,328">
+      <Label Inherit="bg3" Location="0,0,140,326" Name="1034" Show="true">
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+          <Anchor point="RIGHT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="6,6,60,20" Name="title" Show="true" Text="$L:260$" TextColor="#FF8F8FFF" TextFont="$L:1$" TextSize="$L:2$"/>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,29,130,20" Name="cbChannelFilter13" Text="$L:1026$">
+        <Param key="ID" type="number" value="15"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,50,130,20" Name="cbChannelFilter12" Text="$L:1020$">
+        <Param key="ID" type="number" value="14"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,71,130,20" Name="cbChannelFilter11" Text="$L:1019$">
+        <Param key="ID" type="number" value="13"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,92,130,20" Name="cbChannelFilter10" Text="$L:1018$">
+        <Param key="ID" type="number" value="12"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,113,130,20" Name="cbChannelFilter1" Text="$L:252$">
+        <Param key="ID" type="number" value="10"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,134,130,20" Name="cbChannelFilter2" Text="$L:253$">
+        <Param key="ID" type="number" value="9"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,155,130,20" Name="cbChannelFilter3" Text="$L:254$">
+        <Param key="ID" type="number" value="8"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,173,130,20" Name="cbChannelFilter4" Text="$L:255$">
+        <Param key="ID" type="number" value="5"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,194,130,20" Name="cbChannelFilter5" Text="$L:256$">
+        <Param key="ID" type="number" value="4"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,215,130,20" Name="cbChannelFilter6" Text="$L:257$">
+        <Param key="ID" type="number" value="3"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,236,130,20" Name="cbChannelFilter7" Text="$L:258$">
+        <Param key="ID" type="number" value="2"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,257,130,20" Name="cbChannelFilter8" Text="$L:259$">
+        <Param key="ID" type="number" value="1"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,278,130,20" Name="cbChannelFilter9" Text="$L:filter_system_channel$">
+        <Param key="ID" type="number" value="7"/>
+      </CheckButton>
+      <CheckButton Inherit="TemplateChannelFilterCheckButton" Location="6,300,130,20" Name="cbChannelFilter14" Text="$L:1164$">
+        <Param key="ID" type="number" value="16"/>
+      </CheckButton>
+      <Scripts>
+        <OnLoad>layWorld_wtLayerChatEx_frmChannelFilter_OnLoad(self);</OnLoad>
+        <OnHide>layWorld_wtLayerChatEx_frmChannelFilter_OnHide(self);</OnHide>
+        <OnShow>layWorld_wtLayerChatEx_frmChannelFilter_OnShow(self);</OnShow>
+      </Scripts>
+    </Form>
+    <Form Inherit="TemplateChatChannelPageMain" Location="10,413,386,167" Name="frmChatChannelMain"/>
+    <Form Inherit="TemplateChatChannelPage" Location="427,413,386,167" Name="frmChatChannelPage1">
+      <Anchors>
+        <Anchor offset="-70,0" point="RIGHT"/>
+        <Anchor offset="0, -135" point="BOTTOM"/>
+      </Anchors>
+      <EditBox Name="ebDisplay">
+        <Param key="LineFadeOutDelayTime" type="number" value="120"/>
+      </EditBox>
+      <Param key="ID" type="number" value="7"/>
+      <Param key="DefaultInGroup" type="bool" value="false"/>
+    </Form>
+    <Form Inherit="TemplateChatChannelPage" Name="frmChatChannelPage3">
+      <Param key="ID" type="number" value="6"/>
+    </Form>
+    <Form Inherit="TemplateChatChannelPage" Name="frmChatChannelPage4">
+      <Param key="ID" type="number" value="4"/>
+    </Form>
+    <Form Inherit="TemplateChatChannelPage" Name="frmChatChannelPage5">
+      <Param key="ID" type="number" value="3"/>
+    </Form>
+    <Form Inherit="TemplateChatChannelPage" Name="frmChatChannelPage6">
+      <Param key="ID" type="number" value="2"/>
+    </Form>
+    <Form Inherit="TemplateChatChannelPage" Name="frmChatChannelPage7">
+      <Param key="ID" type="number" value="1"/>
+    </Form>
+    <HintWidget BackgroundColor="#ee000000" HandleMove="true" Inherit="bg3" Level="10" Location="0,0,30,30" MouseEvent="true" MouseMove="true" Name="hntChatHint" Pick="true" Show="true">
+      <Button Inherit="" Location="0,0,13,13" Name="btCartoon" Show="true" Size="13,13">
+        <Anchors>
+          <Anchor offset="0,8" point="TOP"/>
+          <Anchor offset="-8,0" point="RIGHT"/>
+        </Anchors>
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+        <Scripts>
+          <OnLClick>SAPI.GetParent(self):Hide()</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_wtLayerChatEx_hntChatHint_OnLoad(self)</OnLoad>
+        <OnShow>layWorld_wtLayerChatEx_hntChatHint_OnShow(self)</OnShow>
+        <OnRClick>self:Hide();</OnRClick>
+      </Scripts>
+    </HintWidget>
+    <Form Active="true" Inherit="NoTitleBarForm" Location="0,0,564,28" Name="frmChatInput" Show="false" Size="564,28">
+      <Anchors>
+        <Anchor offset="0,4" point="TOP" relativePoint="BOTTOM" relativeTo="frmChatChannelMain"/>
+        <Anchor point="LEFT" relativeTo="frmChatChannelMain"/>
+      </Anchors>
+      <Label Inherit="bg3" Location="0,0,24,28" MouseEvent="false" Name="lbChaLeft" Show="true">
+        <BackgroundImage Blend="true" File="" Source="0,190,24,28"/>
+      </Label>
+      <Label Inherit="bg3" Location="512,2,24,28" Name="lbChaRight" Show="true" Size="24,28">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="bg3" Location="24,0,232,28" Name="lbChaMiddle" Show="fals" Size="0,28">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lbChaLeft"/>
+          <Anchor point="TOP"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="lbChaRight"/>
+        </Anchors>
+      </Label>
+      <Button Inherit="" Location="544,5,16,16" Name="btCartoon" Show="true" Size="16,16">
+        <NormalImage Blend="true" File="tz_010" Source="345,434,25,24"/>
+        <HighlightImage Blend="true" File="tz_010" Source="345,434,25,24"/>
+        <PushedImage Blend="true" File="tz_010" Source="345,434,25,24"/>
+        <Hint Text="$L:261$"/>
+        <Anchors>
+          <Anchor offset="-4,0" point="RIGHT"/>
+          <Anchor offset="0,5" point="TOP"/>
+        </Anchors>
+        <Scripts>
+          <OnLClick>layWorld_wtLayerChatEx_frmChatInput_btCartoon_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label BackgroundColor="#8F000000" Inherit="" Location="29,4,100,20" Name="lbInputPrefix" Show="true">
+        <Scripts>
+          <OnLoad>layWorld_wtLayerChatEx_frmChatInput_lbInputPrefix_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_wtLayerChatEx_frmChatInput_lbInputPrefix_OnEvent(self, event, arg)</OnEvent>
+        </Scripts>
+      </Label>
+      <EditBox AutoScrollV="false" BackgroundColor="#8F000000" DragIn="true" EnableInput="true" Inherit="" Location="24,3,318,20" MaxChar="5000" Name="ebInput" Show="true" Size="0,20">
+        <Anchors>
+          <Anchor offset="1,0" point="LEFT" relativePoint="RIGHT" relativeTo="lbInputPrefix"/>
+          <Anchor offset="0,4" point="TOP"/>
+          <Anchor offset="-24,0" point="RIGHT"/>
+        </Anchors>
+        <Scripts>
+          <OnLoad>layWorld_wtLayerChatEx_frmChatInput_ebInput_OnLoad(self)</OnLoad>
+          <OnEvent>layWorld_wtLayerChatEx_frmChatInput_ebInput_OnEvent(self, event, arg)</OnEvent>
+          <OnUpdateText>layWorld_wtLayerChatEx_frmChatInput_ebInput_OnUpdateText(self)</OnUpdateText>
+          <OnDragIn>layWorld_wtLayerChatEx_frmChatInput_ebInput_OnDragIn(self, drag)</OnDragIn>
+          <OnKeyDown>layWorld_wtLayerChatEx_frmChatInput_ebInput_OnKeyDown(self, key);</OnKeyDown>
+          <OnKeyChar>layWorld_wtLayerChatEx_frmChatInput_ebInput_OnKeyChar(self, key);</OnKeyChar>
+          <OnShow>layWorld_wtLayerChatEx_frmChatInput_ebInput_OnShow(self);</OnShow>
+        </Scripts>
+      </EditBox>
+      <Button Active="false" Inherit="" Location="2,3,21,20" Name="btChannel" Show="true" Size="21,20" Text="">
+        <NormalImage File="tz_011" Source="482,220,21,20"/>
+        <PushedImage File="tz_011" Source="450,220,21,20"/>
+        <Scripts>
+          <OnLClick>layWorld_wtLayerChatEx_frmChatInput_btChannel_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_wtLayerChatEx_frmChatInput_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_wtLayerChatEx_frmChatInput_OnEvent(self, event, arg);</OnEvent>
+        <OnHide>layWorld_wtLayerChatEx_frmChatInput_OnHide(self)</OnHide>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+      </Scripts>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Level="50" Location="34,624,100,222" Name="frmChannel" Show="false" Size="130,245">
+      <Anchors>
+        <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="frmChatInput"/>
+        <Anchor offset="30,0" point="LEFT" relativeTo="frmChatInput"/>
+      </Anchors>
+      <Widget Inherit="bg3" Location="0,0,130,245" Name="wgtBox" Show="true">
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+          <Anchor point="RIGHT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+      <Label Inherit="" Location="6,8,124,20" Name="channel" Show="true" Text="$L:1029$" TextColor="#FF8F8FFF" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,30,100,20" Name="btChannel1" Text="$L:1026$">
+        <Param key="ID" type="number" value="15"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,48,100,20" Name="btChannel2" Text="$L:1020$">
+        <Param key="ID" type="number" value="14"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,66,100,20" Name="btChannel3" Text="$L:1019$">
+        <Param key="ID" type="number" value="13"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,84,100,20" Name="btChannel4" Text="$L:1018$">
+        <Param key="ID" type="number" value="12"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,102,100,20" Name="btChannel5" Text="$L:262$">
+        <Param key="ID" type="number" value="10"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,120,100,20" Name="btChannel6" Text="$L:265$">
+        <Param key="ID" type="number" value="5"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,140,100,20" Name="btChannel7" Text="$L:266$">
+        <Param key="ID" type="number" value="4"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,160,100,20" Name="btChannel8" Text="$L:267$">
+        <Param key="ID" type="number" value="3"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,180,100,20" Name="btChannel9" Text="$L:268$">
+        <Param key="ID" type="number" value="2"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,200,100,20" Name="btChannel10" Text="$L:269$">
+        <Param key="ID" type="number" value="1"/>
+      </Button>
+      <Button AlignCol="LEFT" Inherit="TemplateSendChannelButton" Location="8,220,100,20" Name="btChannel11" Text="$L:1164$">
+        <Param key="ID" type="number" value="16"/>
+      </Button>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self);</OnShow>
+      </Scripts>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Level="50" Location="242,488,256,96" Name="frmComic" Show="false" Size="192,160">
+      <Anchors>
+        <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="frmChatInput"/>
+        <Anchor point="RIGHT" relativeTo="frmChatInput"/>
+      </Anchors>
+      <Button Inherit="TemplateComicButton" Location="0,0,32,32" Name="btComic1" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="1"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="32,0,32,32" Name="btComic2" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="2"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="64,0,32,32" Name="btComic3" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="3"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="96,0,32,32" Name="btComic4" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="4"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="128,0,32,32" Name="btComic5" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="5"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="160,0,32,32" Name="btComic6" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="6"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="0,32,32,32" Name="btComic7" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="7"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="32,32,32,32" Name="btComic8" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="8"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="64,32,32,32" Name="btComic9" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="9"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="96,32,32,32" Name="btComic10" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="10"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="128,32,32,32" Name="btComic11" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="11"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="160,32,32,32" Name="btComic12" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="12"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="0,64,32,32" Name="btComic13" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="13"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="32,64,32,32" Name="btComic14" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="14"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="64,64,32,32" Name="btComic15" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="15"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="96,64,32,32" Name="btComic16" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="16"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="128,64,32,32" Name="btComic17" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="17"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="160,64,32,32" Name="btComic18" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="18"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="0,96,32,32" Name="btComic19" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="19"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="32,96,32,32" Name="btComic20" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="20"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="64,96,32,32" Name="btComic21" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="21"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="96,96,32,32" Name="btComic22" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="22"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="128,96,32,32" Name="btComic23" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="23"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="160,96,32,32" Name="btComic24" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="24"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="0,128,32,32" Name="btComic25" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="25"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="32,128,32,32" Name="btComic26" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="26"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="64,128,32,32" Name="btComic27" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="27"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="96,128,32,32" Name="btComic28" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="28"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="128,128,32,32" Name="btComic29" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="29"/>
+      </Button>
+      <Button Inherit="TemplateComicButton" Location="160,128,32,32" Name="btComic30" Show="true" Size="32,32" Text="">
+        <Param key="ID" type="number" value="30"/>
+      </Button>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self);</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+  <Layer Name="layTop" Show="true">
+    <Label AlignCol="CENTER" FadeOutTime="2" Inherit="" Location="348,167,70,18" Name="lbCenterMsg1" Show="true" Size="700,24" Text="" TextFont="$L:1$" TextSize="$L:4$">
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor offset="0,100" point="TOP"/>
+      </Anchors>
+    </Label>
+    <Label AlignCol="CENTER" FadeOutTime="2" Inherit="" Location="348,167,70,18" Name="lbCenterMsg2" Show="true" Size="700,24" Text="" TextFont="$L:1$" TextSize="$L:4$">
+      <Anchors>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lbCenterMsg1"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+    </Label>
+    <Label AlignCol="CENTER" FadeOutTime="2" Inherit="" Location="348,167,70,18" Name="lbCenterMsg3" Show="true" Size="700,24" Text="" TextFont="$L:1$" TextSize="$L:4$">
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lbCenterMsg2"/>
+      </Anchors>
+    </Label>
+  </Layer>
+</Ui>

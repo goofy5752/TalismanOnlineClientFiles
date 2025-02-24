@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmTeamEx">
+    <Templates>
+      <Label AlignCol="CENTER" Inherit="" Location="0,0,16,16" Name="TemplateLbBuf" Show="true"/>
+      <Form Inherit="NoTitleBarForm" Location="0,290,196,75" Name="TemplateFrmTeamMember" Show="false" Size="196,75">
+        <Button Inherit="" Location="9,19,38,38" Name="btHead" Show="true">
+          <Scripts>
+            <OnRClick>frmTeamEx_TemplateFrmTeamMember_btHead_OnRClick(self);</OnRClick>
+            <OnLClick>frmTeamEx_TemplateFrmTeamMember_btHead_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="" Location="1,13,145,50" Name="lbBackGround" Show="true" Size="121,52">
+          <BackgroundImage Blend="true" File="tz_030" Source="8,184,146,51"/>
+        </Label>
+        <Label Inherit="" Location="126,17,28,19" Name="1095" Show="false">
+          <BackgroundImage File="tz_011" Source="301,266,28,19"/>
+        </Label>
+        <Label Inherit="" Location="50,24,94,7" Name="lbHpBarBg" Show="fals">
+          <BackgroundImage File="tz_010" Source="430,460,68,5"/>
+        </Label>
+        <ProgressBar Inherit="" Location="51,25,92,5" Name="pbHP" Show="fals">
+          <ProgressBarImage File="tz_010" Source="380,384,116,5"/>
+        </ProgressBar>
+        <Label Inherit="" Location="50,34,94,7" Name="lbMPBarBg" Show="fals">
+          <BackgroundImage File="tz_010" Source="430,460,68,5"/>
+        </Label>
+        <ProgressBar Inherit="" Location="53,34,89,6" Name="pbMP" Show="fals">
+          <ProgressBarImage File="tz_010" Source="380,395,68,7"/>
+        </ProgressBar>
+        <Label AlignCol="CENTER" Inherit="" Location="49,8,102,15" Name="lbName" Show="true" Text=""/>
+        <Label AlignCol="CENTER" Inherit="" Location="0,42,18,18" Name="lbLev" Show="true" Text="$L:220$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="14,1,30,13" Name="lbLeader" Show="true">
+          <BackgroundImage File="tz_011" Source="250,417,30,13"/>
+        </Label>
+        <Label Inherit="" Location="146,4,48,66" Name="lbByfuTitle" Show="true">
+          <Label Inherit="TemplateLbBuf" Location="1,0,16,16" Name="lbByfu1"/>
+          <Label Inherit="TemplateLbBuf" Location="16,0,16,16" Name="lbByfu2"/>
+          <Label Inherit="TemplateLbBuf" Location="32,0,16,16" Name="lbByfu3"/>
+          <Label Inherit="TemplateLbBuf" Location="0,16,16,16" Name="lbByfu4"/>
+          <Label Inherit="TemplateLbBuf" Location="15,15,16,16" Name="lbByfu5"/>
+          <Label Inherit="TemplateLbBuf" Location="31,15,16,16" Name="lbByfu6"/>
+          <Label Inherit="TemplateLbBuf" Location="0,32,16,16" Name="lbByfu7"/>
+          <Label Inherit="TemplateLbBuf" Location="15,32,16,16" Name="lbByfu8"/>
+          <Label Inherit="TemplateLbBuf" Location="32,32,16,16" Name="lbByfu9"/>
+          <Label Inherit="TemplateLbBuf" Location="0,49,16,16" Name="lbByfu10"/>
+          <Label Inherit="TemplateLbBuf" Location="16,49,16,16" Name="lbByfu11"/>
+          <Label Inherit="TemplateLbBuf" Location="32,49,16,16" Name="lbByfu12"/>
+          <Label Inherit="TemplateLbBuf" Location="0,49,16,16" Name="lbByfu13"/>
+          <Label Inherit="TemplateLbBuf" Location="33,48,16,16" Name="lbByfu14"/>
+          <Label Inherit="TemplateLbBuf" Location="50,-3,16,16" Name="lbByfu15"/>
+          <Label Inherit="TemplateLbBuf" Location="50,13,16,16" Name="lbByfu16"/>
+        </Label>
+        <ProgressBar Inherit="" Location="53,34,89,7" Name="pbEP" Show="true">
+          <ProgressBarImage File="tz_010" Source="428,470,68,5"/>
+        </ProgressBar>
+        <Form Inherit="NoTitleBarForm" InheritTag="true" Location="37,43,107,32" Name="frmPet" Show="true" Size="107,30">
+          <Label Inherit="" Location="7,0,99,32" Name="lbBackGround" Show="true" Size="30,40">
+            <BackgroundImage Blend="true" File="tz_030" Source="195,186,112,37"/>
+          </Label>
+          <Label Inherit="" Location="37,4,52,10" Name="27829" Show="true">
+            <BackgroundImage File="" Source="178,191,52,13"/>
+          </Label>
+          <ProgressBar Inherit="" Location="41,8,45,8" Name="pbPetHP" Show="fals">
+            <ProgressBarImage File="tz_010" Source="428,428,45,7"/>
+          </ProgressBar>
+          <Label Inherit="" Location="15,4,22,22" Name="1891" Show="true">
+            <BackgroundImage File="tz_011" Source="324,407,26,26"/>
+          </Label>
+          <Scripts>
+            <OnLClick>frmTeamEx_TemplateFrmTeamMember_frmPet_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Form>
+        <Scripts>
+          <OnLoad>frmTeamEx_TemplateFrmTeamMember_OnLoad(self);</OnLoad>
+          <OnEvent>frmTeamEx_TemplateFrmTeamMember_OnEvent(self, event, arg);</OnEvent>
+        </Scripts>
+      </Form>
+    </Templates>
+  </Theme>
+  <Script file="frm_team_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="NoTitleBarForm" Location="0,166,204,300" Move="true" Name="frmTeamEx" Pick="false" Show="true" Size="204,300">
+      <Form Inherit="TemplateFrmTeamMember" Location="0,0,196,75" Name="frmMember1" Show="false">
+        <Param key="ID" type="number" value="1"/>
+      </Form>
+      <Form Inherit="TemplateFrmTeamMember" Location="0,70,196,75" Name="frmMember2" Show="false">
+        <Param key="ID" type="number" value="2"/>
+      </Form>
+      <Form Inherit="TemplateFrmTeamMember" Location="0,144,196,75" Name="frmMember3" Show="false">
+        <Param key="ID" type="number" value="3"/>
+      </Form>
+      <Form Inherit="TemplateFrmTeamMember" Location="0,218,196,75" Name="frmMember4" Show="false">
+        <Param key="ID" type="number" value="4"/>
+      </Form>
+    </Form>
+  </Layer>
+</Ui>

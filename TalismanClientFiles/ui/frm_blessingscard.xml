@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_BlessingsCard.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="470,117,200,330" Name="frmBlessingsCard" Show="false">
+      <Label Inherit="bg1" Level="0" Location="6,18,190,300" Name="lbBackground" Show="true"/>
+      <TitleBarButton Location="0,0,200,30" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,0,200,50" Name="lbTitle" Show="true"/>
+      <CloseButton Location="173,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="11,46,180,260" Name="lboption" Show="true" MouseEvent="true" MouseMove="true">
+        <Label Inherit="bg3" Level="0" Location="9,6,164,224" Name="lblistback" Show="true"/>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="16,235,60,20" Name="btnenter" Show="true" Text="$L:1258$">
+          <Scripts>
+            <OnLClick>layWorld_frmBlessingsCard_lboption_btnenter_OnLClick(self);</OnLClick>
+            <OnUpdate>layWorld_frmBlessingsCard_lboption_btnenter_OnUpdate(self);</OnUpdate>
+          </Scripts>
+        </Button>
+        <Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="100,235,60,20" Name="btnclose" Show="true" Text="$L:1259$">
+          <Scripts>
+            <OnLClick>layWorld_frmBlessingsCard_lboption_btnclose_OnLClick(self);</OnLClick>
+          </Scripts>
+        </Button>
+        <ListBox Inherit="" Location="16,13,150,210" Name="lsbfriendslist" Show="true">
+          <ColumnButton Text="$L:403$" TextColor="#FFFFFF00" AlignCol="CENTER" Width="135"/>
+        </ListBox>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="37,8,130,50" Name="1784" Show="true" Text="$L:1257$" TextFont="$L:1$" TextSize="$L:3$"/>
+	  <Scripts>
+		<OnLoad>layWorld_frmBlessingsCard_OnLoad(self);</OnLoad>
+		<OnEvent>layWorld_frmBlessingsCard_OnEvent(self, event, arg);</OnEvent>
+	    <OnShow>layWorld_frmBlessingsCard_OnShow(self);</OnShow>
+	  </Scripts>
+    </Form>
+  </Layer>
+</Ui>

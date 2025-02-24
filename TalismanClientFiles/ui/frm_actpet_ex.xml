@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Actpet_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="253,137,290,360" Name="frmAllPetEx" Show="false">
+      <Label Inherit="bg1" Location="7,12,280,345" Name="lbUP" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="1,0,292,47" Name="650" Show="true"/>
+      <Label Inherit="" Location="0,256,256,75" Name="lbDown" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <TitleBarButton Location="5,-1,280,26"/>
+      <CloseButton Location="260,28,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="88,0,120,66" Name="3340" Show="true" Text="$L:1039$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Form Inherit="NoTitleBarForm" Location="7,31,270,320" Name="frmXianqingPet" Show="true">
+        <TitleBarButton Location="5,-1,250,20" Text="$L:102$"/>
+        <CloseButton Location="222,2,14,15">
+          <NormalImage File="" Source=""/>
+          <PushedImage File="" Source=""/>
+        </CloseButton>
+        <CloseButton Location="222,2,14,15">
+          <NormalImage File="" Source=""/>
+          <PushedImage File="" Source=""/>
+        </CloseButton>
+        <Label Inherit="bg3" Location="16,204,250,105" Name="2563" Show="true"/>
+        <Label Inherit="bg3" Location="16,54,250,115" Name="3150" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="16,25,147,24" Name="labPetName" Show="true" Text="$L:625$">
+          <BackgroundImage File="tz_010.tga" Source="181,351,147,24"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="143,19,100,24" Name="labCharFactionPet" Show="false" Text="$L:104$">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="26,63,50,18" Name="labPetLev" Show="true" Text="$L:105$"/>
+        <Label Inherit="" Location="26,88,50,18" Name="735" Show="true" Text="$L:106$"/>
+        <Label Inherit="" Location="26,113,52,18" Name="lbPetHappy" Show="true" Text="$L:764$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="12,133,80,24" Name="btnBaseAttribPet" Show="false" Text="$L:109$">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="22,163,40,18" Name="862" Show="false" Text="$L:110$" TextColor=""/>
+        <Label Inherit="" Location="135,163,40,18" Name="897" Show="false" Text="$L:111$" TextColor=""/>
+        <Label Inherit="" Location="22,183,40,18" Name="912" Show="false" Text="$L:112$" TextColor=""/>
+        <Label Inherit="" Location="135,183,40,18" Name="928" Show="false" Text="$L:113$" TextColor=""/>
+        <Label Inherit="" Location="71,163,40,18" Name="labStrPet" Show="false" Text="$L:114$" TextColor=""/>
+        <Label Inherit="" Location="180,163,40,18" Name="labDexPet" Show="false" Text="$L:115$" TextColor=""/>
+        <Label Inherit="" Location="71,183,40,18" Name="labWitPet" Show="false" Text="$L:116$" TextColor=""/>
+        <Label Inherit="" Location="180,183,40,18" Name="labConPet" Show="false" Text="$L:117$" TextColor=""/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="16,174,92,24" Name="btnExAttrib" Show="true" Text="$L:118$">
+          <BackgroundImage File="tz_010.tga" Source="315,196,92,24"/>
+        </Label>
+        <Label Inherit="" Location="23,212,100,18" Name="labpd" Show="true" Text="$L:119$" TextColor=""/>
+        <Label Inherit="" Location="23,235,100,18" Name="labpa" Show="true" Text="$L:121$" TextColor=""/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="119,211,80,24" Name="btnElementAttrib" Show="false" Text="$L:124$">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="14,292,40,18" Name="1422" Show="false" Text="$L:125$" TextColor="#ffFDE628"/>
+        <Label Inherit="" Location="13,309,40,18" Name="1458" Show="false" Text="$L:126$" TextColor="#ff6AA4FA"/>
+        <Label Inherit="" Location="13,326,40,18" Name="1495" Show="false" Text="$L:127$" TextColor="#ffCA8B05"/>
+        <Label Inherit="" Location="13,343,40,18" Name="1533" Show="false" Text="$L:128$" TextColor="#ff0BE505"/>
+        <Label Inherit="" Location="13,360,40,18" Name="1572" Show="false" Text="$L:129$" TextColor="#ffBCF3FA"/>
+        <Label Inherit="" Location="53,292,40,18" Name="labFireAtt" Show="false" Text="$L:130$" TextColor="#ffFDE628"/>
+        <Label Inherit="" Location="53,309,40,18" Name="labWatorAtt" Show="false" Text="$L:131$" TextColor="#ff6AA4FA"/>
+        <Label Inherit="" Location="53,326,40,18" Name="labFoAtt" Show="false" Text="$L:132$" TextColor="#ffCA8B05"/>
+        <Label Inherit="" Location="53,343,40,18" Name="labPoisonAtt" Show="false" Text="$L:133$" TextColor="#ff0BE505"/>
+        <Label Inherit="" Location="53,360,40,18" Name="labLightAtt" Show="false" Text="$L:134$" TextColor="#ffBCF3FA"/>
+        <Label Inherit="" Location="136,242,106,18" Name="labFireArmorPet" Show="false" Text="$L:135$" TextColor="#ffFDE628"/>
+        <Label Inherit="" Location="136,261,106,18" Name="labWatorArmorPet" Show="false" Text="$L:136$" TextColor="#ff6AA4FA"/>
+        <Label Inherit="" Location="136,299,106,18" Name="labFoArmorPet" Show="false" Text="$L:137$" TextColor="#ffCA8B05"/>
+        <Label Inherit="" Location="136,318,106,18" Name="labPoisonArmorPet" Show="false" Text="$L:138$" TextColor="#ff0BE505"/>
+        <Label Inherit="" Location="136,280,106,18" Name="labLightArmorPet" Show="false" Text="$L:139$" TextColor="#ffBCF3FA"/>
+        <Label Inherit="" Location="78,66,150,9" Name="lbLEVbar" Show="true">
+          <BackgroundImage File="tz_010.tga" Source="241,405,113,8"/>
+        </Label>
+        <Label Inherit="" Location="79,92,150,10" Name="lbHpbar" Show="true">
+          <BackgroundImage File="tz_010" Source="241,383,113,8"/>
+        </Label>
+        <Label Inherit="" Location="79,116,150,10" Name="lbMPbar" Show="fals">
+          <BackgroundImage File="tz_010" Source="431,476,64,5"/>
+        </Label>
+        <ProgressBar Inherit="" Location="78,66,150,10" Name="pgbExpPet" Show="true" Text="">
+          <ProgressBarImage File="tz_010.tga" Source="381,405,114,8"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="79,92,150,10" Name="pgbHpPet" Show="true" Text="">
+          <ProgressBarImage File="tz_010" Source="381,383,114,8"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="79,116,150,10" Name="pgbHapP" Show="fals" Text="$L:142$">
+          <ProgressBarImage File="tz_010" Source="119,426,113,10"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="80,152,160,12" Name="pgbNimbus" Show="false" Text="$L:142$">
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <Button Inherit="PushButton" Location="187,25,68,24" Name="btnPetSkill" Show="true" Text="$L:630$">
+          <Scripts>
+            <OnLClick>layWorld_frmAllPetEx_frmXianqingPet_btnPetSkill_OnLClick()</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="" Location="122,212,70,18" Name="labPhyDmgPet" Show="true" Text="" TextColor=""/>
+        <Label Inherit="" Location="122,235,70,18" Name="labPhyArmorPet" Show="true" Text="" TextColor=""/>
+        <Label Inherit="" Location="26,139,52,18" Name="2463" Show="true" Text="$L:1021$"/>
+        <Label Inherit="" Location="79,141,150,12" Name="lbFriendPointbg" Show="true">
+          <BackgroundImage File="tz_010" Source="431,452,64,5"/>
+        </Label>
+        <ProgressBar Inherit="" Location="79,142,150,10" Name="pgbNickPoint" Show="fals" Text="$L:1022$">
+          <ProgressBarImage File="tz_010" Source="429,443,66,5"/>
+        </ProgressBar>
+      </Form>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnLoad>self:RegisterScriptEventNotify("CEV_PET_VIEW_COMBATPET")
+		self:RegisterScriptEventNotify("CEV_COMBAT_PET_RECALLED")
+		self:RegisterScriptEventNotify("CEV_PET_CURRENT_COMBAT_PET_CHANGED")</OnLoad>
+        <OnEvent>if event == "CEV_PET_VIEW_COMBATPET" then
+			layWorld_frmAllPetEx_Show(self)
+		elseif event == "CEV_COMBAT_PET_RECALLED" then
+			self:Hide()
+		elseif event == "CEV_PET_CURRENT_COMBAT_PET_CHANGED" then
+			layWorld_frmAllPetEx_Refresh()
+		end</OnEvent>
+        <OnHide>layWorld_frmAllPetEx_OnHide()</OnHide>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="252,128,300,250" Name="frmSkillPetEx" Show="false" Size="300,250">
+      <Label Inherit="bg1" Location="11,28,280,210" Name="lbUP" Show="true"/>
+      <Label Inherit="" Location="0,243,256,11" Name="2849" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="5,9,292,50" Name="20719" Show="true"/>
+      <TitleBarButton Location="10,13,280,28" Text="" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="266,39,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13 "/>
+      </CloseButton>
+      <Form Inherit="NoTitleBarForm" Location="24,60,238,165" Name="frmTrumps" Show="fals">
+        <Label Inherit="bg3" Location="8,30,220,50" Name="10206" Show="true"/>
+        <Button Inherit="" Location="14,38,36,36" Name="btnPet1" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillPetEx_frmTrumps_btnPet(self)</OnHint>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="56,37,36,36" Name="btnPet2" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillPetEx_frmTrumps_btnPet(self)</OnHint>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="99,37,36,36" Name="btnPet3" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillPetEx_frmTrumps_btnPet(self)</OnHint>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="142,37,36,36" Name="btnPet4" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillPetEx_frmTrumps_btnPet(self)</OnHint>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="186,37,36,36" Name="btnPet5" Show="true">
+          <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+          <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+          <Hint/>
+          <Scripts>
+            <OnHint>layWorld_frmSkillPetEx_frmTrumps_btnPet(self)</OnHint>
+          </Scripts>
+        </Button>
+        <Label Inherit="bg3" Location="7,109,220,50" Name="10846" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="4,3,147,24" Name="758" Show="true" Text="$L:628$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="5,83,147,24" Name="780" Show="true" Text="$L:629$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="" Location="7,115,220,40" MouseEvent="true" MouseMove="true" Name="labSkills" Show="true">
+          <Button Inherit="" Location="8,1,36,36" Name="btnSkillPet1" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillPetEx_frmTrumps_labSkills_btnSkillPet(self)</OnHint>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="51,1,36,36" Name="btnSkillPet2" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillPetEx_frmTrumps_labSkills_btnSkillPet(self)</OnHint>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="93,1,36,36" Name="btnSkillPet3" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillPetEx_frmTrumps_labSkills_btnSkillPet(self)</OnHint>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="136,1,36,36" Name="btnSkillPet4" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillPetEx_frmTrumps_labSkills_btnSkillPet(self)</OnHint>
+            </Scripts>
+          </Button>
+          <Button Inherit="" Location="179,1,36,36" Name="btnSkillPet5" Show="true">
+            <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+            <HighlightImage Blend="true" File="tz_010" Source="186,376,48,48"/>
+            <Hint/>
+            <Scripts>
+              <OnHint>layWorld_frmSkillPetEx_frmTrumps_labSkills_btnSkillPet(self)</OnHint>
+            </Scripts>
+          </Button>
+        </Label>
+      </Form>
+      <Anchors>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frmAllPetEx"/>
+        <Anchor point="TOP" relativeTo="frmAllPetEx.frmXianqingPet.btnPetSkill"/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="92,10,120,64" Name="16622" Show="true" Text="$L:171$" TextFont="$L:1$" TextSize="$L:3$"/>
+    </Form>
+  </Layer>
+</Ui>

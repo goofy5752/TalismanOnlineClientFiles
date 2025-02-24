@@ -1,0 +1,81 @@
+8
+
+dir
+20790
+svn://192.168.1.207:10001/bin/30-40%E8%B5%84%E6%BA%90%E9%9B%86%E5%90%88/30-40scene/texture/terrain
+svn://192.168.1.207:10001
+
+
+
+2009-12-14T09:03:42.576284Z
+20034
+michaelyu
+
+
+svn:special svn:externals svn:needs-lock
+
+scxy_shidi001.dds
+file
+
+
+
+
+2009-12-14T03:54:42.578125Z
+13d086e46938e4d73ef96ac5b8af024d
+2009-12-14T09:03:42.576284Z
+20034
+michaelyu
+has-props
+
+sn35_caodi001.dds
+file
+
+
+
+
+2009-12-14T03:54:42.578125Z
+c38fa3b237472be592f27e423631ff86
+2009-12-14T09:03:42.576284Z
+20034
+michaelyu
+has-props
+
+terrain_skfb.dds
+file
+
+
+
+
+2009-12-14T03:54:42.593750Z
+0f4db2f93e629b6c545f3753d2a09773
+2009-12-14T09:03:42.576284Z
+20034
+michaelyu
+has-props
+
+sfb013.dds
+file
+
+
+
+
+2009-12-14T03:54:42.578125Z
+c4d28bd880e824469ed750276e2d27da
+2009-12-14T09:03:42.576284Z
+20034
+michaelyu
+has-props
+
+ssb013_007.dds
+file
+
+
+
+
+2009-12-14T03:54:42.593750Z
+f20aa0b9b03c8405dde084a48bd60f2f
+2009-12-14T09:03:42.576284Z
+20034
+michaelyu
+has-props
+

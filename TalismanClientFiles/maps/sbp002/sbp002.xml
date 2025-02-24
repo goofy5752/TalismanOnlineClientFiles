@@ -1,0 +1,4 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<boundless blrate="0x2" bltile="0x80" blwidth="40.000" centerx="0x7" centery="0x9" cnt="0x1" h="0x13" name="sbp002.snw" set="sbp002" version="0x506" w="0x12">
+   <block file="sbp002_001000" id="0x1" x="0x8" y="0x9"/>
+</boundless>

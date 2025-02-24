@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmUser">
+    <Templates>
+      <Button FadeInTime="0.5" FadeOutDelayTime="2" FadeOutTime="2" Inherit="" Location="39,4,32,32" Name="TemplateActionShortcutButton" Show="true" Size="32,32">
+        <PushedImage File="tz_010" Source="186,376,48,48"/>
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Scripts>
+          <OnLoad>frmUser_TemplateActionShortcutButton_OnLoad(self);</OnLoad>
+          <OnLClick>frmUser_TemplateActionShortcutButton_OnLClick(self);</OnLClick>
+          <OnRClick>frmUser_TemplateActionShortcutButton_OnRClick(self);</OnRClick>
+          <OnHint>frmUser_TemplateActionShortcutButton_OnHint(self);</OnHint>
+        </Scripts>
+        <Hint/>
+      </Button>
+      <Button FadeInTime="0.5" FadeOutDelayTime="2" FadeOutTime="2" Inherit="" Location="39,4,32,32" Name="TemplateGodSKillShortcutButton" Show="true" Size="32,32">
+        <BackgroundImage File="tz_010" Source="142,381,41,41"/>
+        <HighlightImage File="tz_010" Source="190,383,38,38"/>
+        <Scripts>
+          <OnLoad>frmUser_TemplateGodSKillShortcutButton_OnLoad(self);</OnLoad>
+          <OnHint>frmUser_TemplateGodSKillShortcutButton_OnHint(self);</OnHint>
+        </Scripts>
+        <Hint/>
+      </Button>
+    </Templates>
+  </Theme>
+  <Script file="frm_user_ex.lua"/>
+  <Layer Name="layWorld">
+    <Form Inherit="" Location="230,131,400,450" Name="frmAllEx" Show="false">
+      <Label Inherit="bg1" Location="22,18,370,430" Name="lbUP" Show="fals">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="0,255,256,206" Name="lbDown" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="256,0,120,256" Name="1949" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="255,255,120,206" Name="2183" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="15,0,385,44" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="306,9,90,25" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="315,1,145,25"/>
+      </Label>
+      <TitleBarButton Location="1,3,400,28" TextFont="$L:1$" TextSize="$L:4$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="147,0,120,66" Name="11141" Show="true" Text="$L:101$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="369,26,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Form Inherit="NoTitleBarForm" Location="33,86,346,348" Name="frmUser" Show="true">
+        <TitleBarButton Location="3,4,250,20" Text="$L:102$"/>
+        <CloseButton Location="220,3,14,15">
+          <NormalImage File="" Source=""/>
+          <PushedImage File="" Source=""/>
+        </CloseButton>
+        <Label Active="true" Inherit="" Location="0,0,48,48" MouseEvent="true" Name="475" Show="false">
+          <BackgroundImage File="item" Source="0,63,48,48"/>
+        </Label>
+        <CloseButton Location="222,2,14,15">
+          <NormalImage File="" Source=""/>
+          <PushedImage File="" Source=""/>
+        </CloseButton>
+        <Label Inherit="bg3" Location="12,30,316,90" Name="24960" Show="true"/>
+        <Label Inherit="bg3" Location="12,150,316,52" Name="25845" Show="true"/>
+        <Label Inherit="bg3" Location="167,233,168,114" Name="26316" Show="true"/>
+        <Label Inherit="bg3" Location="12,233,150,114" Name="26670" Show="true"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="12,5,147,24" Name="labCharName" Show="true" Text="" TextColor="">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="179,5,147,24" Name="labCharFaction" Show="true" Text="$L:104$" TextColor="">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="" Location="26,40,68,18" Name="696" Show="true" Text="$L:105$"/>
+        <Label Inherit="" Location="26,57,68,18" Name="735" Show="true" Text="$L:106$"/>
+        <Label Inherit="" Location="26,74,68,18" Name="745" Show="true" Text="$L:107$"/>
+        <Label Inherit="" Location="26,91,55,18" Name="756" Show="true" Text="$L:108$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="12,123,147,24" Name="btnBaseAttrib" Show="true" Text="$L:109$" TextColor="">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="" Location="22,156,76,18" MouseEvent="true" MouseMove="true" Name="labStrDesc" Show="true" Text="$L:110$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Str")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="170,155,76,18" MouseEvent="true" MouseMove="true" Name="labDexDesc" Show="true" Text="$L:111$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Dex")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="22,178,76,18" MouseEvent="true" MouseMove="true" Name="labWitDesc" Show="true" Text="$L:112$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Wit")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="170,177,76,18" MouseEvent="true" MouseMove="true" Name="labConDesc" Show="true" Text="$L:113$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Con")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="102,156,50,18" MouseEvent="true" MouseMove="true" Name="labStr" Show="true" Text="$L:114$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Str")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="249,155,50,18" MouseEvent="true" MouseMove="true" Name="labDex" Show="true" Text="$L:115$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Dex")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="102,177,50,18" MouseEvent="true" MouseMove="true" Name="labWit" Show="true" Text="$L:116$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Wit")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="249,176,50,18" MouseEvent="true" MouseMove="true" Name="labCon" Show="true" Text="$L:117$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Con")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="12,206,147,24" Name="btnExAttrib" Show="true" Text="$L:118$" TextColor="">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="" Location="88,240,66,18" Name="labPhyDmg" Show="true" Text="$L:119$" TextColor=""/>
+        <Label Inherit="" Location="88,290,66,18" MouseEvent="true" MouseMove="true" Name="labZhaoJiaRate" Show="true" Text="$L:120$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Parry")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="88,273,66,18" MouseEvent="true" MouseMove="true" Name="labPhyArmor" Show="true" Text="$L:121$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"PhyArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="88,324,66,18" MouseEvent="true" MouseMove="true" Name="labDodgeRate" Show="true" Text="$L:122$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Dodge")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="88,307,66,18" MouseEvent="true" MouseMove="true" Name="labCritical" Show="true" Text="$L:123$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Chit")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="179,206,147,24" Name="btnElementAttrib" Show="true" Text="$L:124$" TextColor="">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="" Location="13,292,40,18" Name="1422" Show="false" Text="$L:125$" TextColor="#ffFDE628"/>
+        <Label Inherit="" Location="13,309,40,18" Name="1458" Show="false" Text="$L:126$" TextColor="#ff6AA4FA"/>
+        <Label Inherit="" Location="13,326,40,18" Name="1495" Show="false" Text="$L:127$" TextColor="#ffCA8B05"/>
+        <Label Inherit="" Location="13,343,40,18" Name="1533" Show="false" Text="$L:128$" TextColor="#ff0BE505"/>
+        <Label Inherit="" Location="13,360,40,18" Name="1572" Show="false" Text="$L:129$" TextColor="#ffBCF3FA"/>
+        <Label Inherit="" Location="53,292,40,18" Name="labFireAtt" Show="false" Text="$L:130$" TextColor="#ffFDE628"/>
+        <Label Inherit="" Location="53,309,40,18" Name="labWatorAtt" Show="false" Text="$L:131$" TextColor="#ff6AA4FA"/>
+        <Label Inherit="" Location="53,326,40,18" Name="labFoAtt" Show="false" Text="$L:132$" TextColor="#ffCA8B05"/>
+        <Label Inherit="" Location="53,343,40,18" Name="labPoisonAtt" Show="false" Text="$L:133$" TextColor="#ff0BE505"/>
+        <Label Inherit="" Location="53,360,40,18" Name="labLightAtt" Show="false" Text="$L:134$" TextColor="#ffBCF3FA"/>
+        <Label Inherit="" Location="260,242,66,18" MouseEvent="true" MouseMove="true" Name="labFireArmor" Show="true" Text="$L:135$" TextColor="#ffFDE628">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"FireArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="260,261,66,18" MouseEvent="true" MouseMove="true" Name="labWatorArmor" Show="true" Text="$L:136$" TextColor="#ff6AA4FA">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"WaterArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="260,299,66,18" MouseEvent="true" MouseMove="true" Name="labFoArmor" Show="true" Text="$L:137$" TextColor="#ffCA8B05">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"BuddhistArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="260,318,66,18" MouseEvent="true" MouseMove="true" Name="labPoisonArmor" Show="true" Text="$L:138$" TextColor="#ff0BE505">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"PoisonArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="260,280,66,18" MouseEvent="true" MouseMove="true" Name="labLightArmor" Show="true" Text="$L:139$" TextColor="#ffBCF3FA">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"BoltArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="97,45,200,8" Name="lbLEVbar" Show="true">
+          <BackgroundImage File="tz_010" Source="240,403,116,8"/>
+        </Label>
+        <Label Inherit="" Location="97,62,200,8" Name="lbHpbar" Show="true">
+          <BackgroundImage File="tz_010" Source="240,383,116,8"/>
+        </Label>
+        <Label Inherit="" Location="97,78,200,8" Name="lbMPbar" Show="true">
+          <BackgroundImage File="tz_010" Source="240,394,115,8"/>
+        </Label>
+        <ProgressBar Inherit="" Location="97,45,200,8" Name="pgbExp" Show="fals" Text="$L:140$">
+          <ProgressBarImage File="tz_010" Source="106,465,228,13"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="97,62,200,8" Name="pgbHp" Show="true" Text="$L:141$">
+          <ProgressBarImage File="tz_010" Source="380,383,116,8"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="97,78,200,8" Name="pgbNimbus" Show="fals" Text="$L:142$">
+          <ProgressBarImage File="tz_010" Source="105,439,228,13"/>
+        </ProgressBar>
+        <Label Inherit="" Location="81,91,40,18" Name="labPkValue" Show="true" Text="$L:143$"/>
+        <Label Inherit="" Location="20,240,66,18" Name="labPhyDmgDesc" Show="true" Text="$L:119$" TextColor=""/>
+        <Label Inherit="" Location="20,289,66,18" MouseEvent="true" MouseMove="true" Name="labZhaoJiaRateDesc" Show="true" Text="$L:120$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Parry")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="20,307,66,18" MouseEvent="true" MouseMove="true" Name="labCriticalDesc" Show="true" Text="$L:123$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Chit")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="20,273,66,18" MouseEvent="true" MouseMove="true" Name="labPhyArmorDesc" Show="true" Text="$L:121$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"PhyArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="20,323,66,18" MouseEvent="true" MouseMove="true" Name="labDodgeRateDesc" Show="true" Text="$L:122$" TextColor="">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"Dodge")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="179,242,80,18" MouseEvent="true" MouseMove="true" Name="labFireArmorDesc" Show="true" Text="$L:135$" TextColor="#ffFDE628">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"FireArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="179,261,80,18" MouseEvent="true" MouseMove="true" Name="labWatorArmorDesc" Show="true" Text="$L:136$" TextColor="#ff6AA4FA">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"WaterArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="179,280,80,18" MouseEvent="true" MouseMove="true" Name="labLightArmorDesc" Show="true" Text="$L:139$" TextColor="#ffBCF3FA">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"BoltArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="179,299,80,18" MouseEvent="true" MouseMove="true" Name="labFoArmorDesc" Show="true" Text="$L:137$" TextColor="#ffCA8B05">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"BuddhistArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="179,318,80,18" MouseEvent="true" MouseMove="true" Name="labPoisonArmorDesc" Show="true" Text="$L:138$" TextColor="#ff0BE505">
+          <Scripts>
+            <OnHint>layWorld_frmAllEx_SetHint(self,"PoisonArmor")</OnHint>
+          </Scripts>
+          <Hint/>
+        </Label>
+        <Label Inherit="" Location="88,257,66,18" Name="labPhyDmgDesc2" Show="true" Text="" TextColor=""/>
+        <Label AlignCol="CENTER" Inherit="" Location="231,91,55,18" Name="728" Show="true" Text="$L:923$"/>
+        <Label Inherit="" Location="286,91,30,18" Name="962" Show="true" Text="$L:925$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="127,91,60,18" Name="labFatigueName" Show="true" Text="$L:1181$"/>
+        <Label Inherit="" Location="187,91,40,18" Name="labFatigue" Show="true" Text=""/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="31,93,350,345" Name="frmGod" Show="false">
+        <Label Inherit="bg3" Location="10,146,335,95" Name="2526" Show="true"/>
+        <Label Inherit="bg3" Location="157,6,185,60" Name="5257" Show="true"/>
+        <Label Inherit="bg3" Location="10,244,335,95" Name="8537" Show="true"/>
+        <ModelView BackgroundColor="#ee000000" Inherit="" Location="11,1,134,138" MouseEvent="false" MouseMove="false" Name="mdvGod" Show="true">
+          <Camera Eye="0,-160,40" IsEyePosition="true" LookAt="0,0,40"/>
+        </ModelView>
+        <Label AlignLine="CENTER" Inherit="" Location="169,13,70,20" Name="1457" Show="true" Text="$L:1081$"/>
+        <Label AlignLine="CENTER" Inherit="" Location="242,13,80,20" Name="lbGodFeel" Show="true">
+          <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+        </Label>
+        <Label AlignLine="CENTER" Inherit="" Location="169,40,70,20" Name="1522" Show="true" Text="$L:1082$"/>
+        <Label Inherit="" Location="89,156,183,8" Name="lbExpBar" Show="true">
+          <BackgroundImage File="tz_010" Source="240,394,115,8"/>
+        </Label>
+        <Label Inherit="" Location="89,175,182,8" Name="14405" Show="true">
+          <BackgroundImage File="tz_010" Source="240,394,115,8"/>
+        </Label>
+        <Label AlignLine="CENTER" Inherit="" Location="242,40,30,20" Name="lbGodLevel" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Label AlignLine="CENTER" Inherit="" Location="15,151,70,20" Name="2031" Show="true" Text="$L:1083$"/>
+        <Label Inherit="" Location="89,222,182,8" Name="16212" Show="true">
+          <BackgroundImage File="tz_010" Source="240,394,115,8"/>
+        </Label>
+        <Label AlignLine="CENTER" Inherit="" Location="15,172,70,20" Name="2534" Show="true" Text="$L:1084$"/>
+        <Label Inherit="" Location="89,198,182,8" Name="14663" Show="true">
+          <BackgroundImage File="tz_010" Source="240,394,115,8"/>
+        </Label>
+        <ProgressBar Inherit="" Location="89,156,183,8" Name="pgbGodExp" Show="true" Text="$L:1088$">
+          <ProgressBarImage File="tz_010" Source="380,394,113,8"/>
+          <Scripts>
+            <OnUpdate>local userGodExp, userNextGodLevExp = uiGetMyInfo("GodExp")
+				self:SetValue(userGodExp/userNextGodLevExp)
+				self:SetText(string.format(uiLanString("msg_god16"), userGodExp, userNextGodLevExp))</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="89,175,183,8" Name="pgbGodPower" Show="fals" Text="$L:1089$">
+          <ProgressBarImage File="tz_010" Source="104,427,116,8"/>
+          <Scripts>
+            <OnUpdate>local userGodPower, userMaxGodPower = uiGetMyInfo("GodPower")
+				self:SetValue(userGodPower/userMaxGodPower)
+				self:SetText(string.format(uiLanString("msg_god17"), userGodPower, userMaxGodPower))</OnUpdate>
+          </Scripts>
+        </ProgressBar>
+        <Label AlignLine="CENTER" Inherit="" Location="14,194,70,20" Name="6422" Show="true" Text="$L:1085$"/>
+        <ProgressBar Inherit="" Location="89,198,183,8" Name="pgbGodGainExp" Show="fals" Text="$L:1090$">
+          <ProgressBarImage File="tz_010" Source="380,405,113,8"/>
+        </ProgressBar>
+        <Label AlignLine="CENTER" Inherit="" Location="14,216,70,20" Name="6925" Show="true" Text="$L:1086$"/>
+        <ProgressBar Inherit="" Location="89,222,183,8" Name="pgbGodGainNimbus" Show="true" Text="$L:1091$">
+          <ProgressBarImage File="tz_010" Source="380,416,113,8"/>
+        </ProgressBar>
+        <Button Inherit="PushButton" Location="276,193,60,20" Name="btGetGodGainExp" Show="true" Text="$L:1087$">
+          <Scripts>
+            <OnLClick>uiGetGodGainExp()</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="276,215,60,20" Name="btGetGodGainNimbus" Show="true" Text="$L:1087$">
+          <Scripts>
+            <OnLClick>uiGetGodGainNp()</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignCol="CENTER" Inherit="" Location="12,282,80,20" Name="21280" Show="true" Text="$L:1092$"/>
+        <Form Inherit="NoTitleBarForm" Location="90,250,190,84" Name="frmGodSkill" Show="fals">
+          <Label Inherit="bg3" Location="3,3,186,77" Name="17491" Show="true"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="7,7,34,34" Name="btGodSkill01"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="43,7,34,34" Name="btGodSkill02"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="79,7,34,34" Name="btGodSkill03"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="115,7,34,34" Name="btGodSkill04"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="151,7,34,34" Name="btGodSkill05"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="7,42,34,34" Name="btGodSkill06"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="43,42,34,34" Name="btGodSkill07"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="79,42,34,34" Name="btGodSkill08"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="115,42,34,34" Name="btGodSkill09"/>
+          <Button Inherit="TemplateGodSKillShortcutButton" Location="151,42,34,34" Name="btGodSkill10"/>
+        </Form>
+        <Button Inherit="" Location="285,284,12,14" Name="btGodLeft" Show="true">
+          <NormalImage File="tz_010" Source="51,382,12,14"/>
+          <PushedImage File="tz_010" Source="51,399,12,14"/>
+          <Scripts>
+            <OnLClick>layWorld_frmAllEx_frmGod_SkillPageChange(-1)</OnLClick>
+          </Scripts>
+        </Button>
+        <Label AlignCol="CENTER" BackgroundColor="#ee000000" Inherit="" Location="298,281,18,18" Name="lbGodSkillNumber" Show="true">
+          <BackgroundImage File="tz_010" Source="459,194,30,20"/>
+        </Label>
+        <Button Inherit="" Location="317,283,12,14" Name="btGodRight" Show="true">
+          <NormalImage File="tz_010" Source="77,382,12,14"/>
+          <PushedImage File="tz_010" Source="77,399,12,14"/>
+          <Scripts>
+            <OnLClick>layWorld_frmAllEx_frmGod_SkillPageChange(1)</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="276,170,60,20" Name="btOffline" Show="true" Text="$L:1098$">
+          <Scripts>
+            <OnLClick>local frmGodOfflineEx = uiGetglobal("layWorld.frmGodOfflineEx")
+					if frmGodOfflineEx:getVisible() then
+						frmGodOfflineEx:Hide()
+					else
+						frmGodOfflineEx:ShowAndFocus()
+					end</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="" Location="51,116,20,20" Name="bt3DLeft" Show="true">
+          <NormalImage File="tz_011" Source="68,256,34,34"/>
+          <PushedImage File="tz_011" Source="102,256,34,34"/>
+        </Button>
+        <Button Inherit="" Location="78,116,20,20" Name="bt3DRight" Show="true">
+          <NormalImage File="tz_011" Source="0,256,34,34"/>
+          <PushedImage File="tz_011" Source="34,256,34,34"/>
+        </Button>
+        <Label Inherit="bg3" Location="157,71,185,68" Name="14897" Show="true"/>
+        <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="160,75,178,60" Name="edbGodHelp" Show="true" WordWrap="true">
+          <BorderImage/>
+        </EditBox>
+        <Button Inherit="PushButton" Location="276,39,60,20" Name="btNingshen" Show="true" Text="$L:1215$">
+          <Scripts>
+            <OnLClick>uiConcentrateToggleConcentrate(EV_EXCUTE_EVENT_ON_LCLICK);</OnLClick>
+          </Scripts>
+        </Button>
+        <Scripts>
+          <OnLoad>self:RegisterScriptEventNotify("sev_refresh_god_stored_info")
+				self:RegisterScriptEventNotify("Cre GodLevelUp")</OnLoad>
+          <OnEvent>if event == "sev_refresh_god_stored_info" then
+					local pgbGodGainExp = SAPI.GetChild(self, "pgbGodGainExp")
+					local pgbGodGainNimbus = SAPI.GetChild(self, "pgbGodGainNimbus")
+					pgbGodGainExp:SetValue(arg[1]/arg[2])
+					pgbGodGainExp:SetText(string.format(uiLanString("msg_god18"), arg[1], arg[2]))
+
+					pgbGodGainNimbus:SetValue(arg[3]/arg[4])
+					pgbGodGainNimbus:SetText(string.format(uiLanString("msg_god19"), arg[3], arg[4]))					
+				elseif event == "Cre GodLevelUp" then
+					layWorld_frmAllEx_frmGod_RebuildGodLevInfo(self)
+					layWorld_frmAllEx_frmGod_RebuildGodModel(self)
+				end</OnEvent>
+          <OnShow>layWorld_frmAllEx_frmGod_RebuildGodLevInfo(self)
+			layWorld_frmAllEx_frmGod_OnShow(self)</OnShow>
+          <OnUpdate>layWorld_frmAllEx_frmGod_OnUpDate(self)</OnUpdate>
+        </Scripts>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="34,87,350,350" Name="frmReputation" Show="false">
+        <Label Inherit="bg3" Location="0,4,330,68" Name="36028" Show="true"/>
+        <Label Inherit="bg3" Location="0,73,330,68" Name="36047" Show="true"/>
+        <Label Inherit="bg3" Location="0,142,330,68" Name="36392" Show="true"/>
+        <Label Inherit="bg3" Location="0,211,330,68" Name="36747" Show="true"/>
+        <Label Inherit="bg3" Location="0,280,330,68" Name="37112" Show="true"/>
+        <Label Inherit="" Location="2,4,325,68" Name="lbRpt1" Show="fals">
+          <ProgressBar Inherit="" Location="7,45,310,11" Name="pgReputation" Show="true">
+            <ProgressBarImage File="tz_010" Source="104,426,230,11"/>
+            <BackgroundImage File=""/>
+          </ProgressBar>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,8,150,20" Name="lbRepName" Show="true" Text="$L:145$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="237,29,80,16" Name="lbReputation" Show="true" Text="$L:146$"/>
+          <Label AlignCol="LEFT" Inherit="" Location="7,29,80,16" Name="lbReputationStr" Show="true" Text="$L:146$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="239,10,78,16" Name="1319" Show="true" Text="$L:1028$"/>
+          <Label AlignCol="LEFT" Inherit="" Location="7,10,70,16" Name="1400" Show="true" Text="$L:1027$"/>
+        </Label>
+        <Label Inherit="" Location="2,74,325,68" Name="lbRpt2" Show="fals">
+          <ProgressBar Inherit="" Location="7,45,310,11" Name="pgReputation" Show="true">
+            <ProgressBarImage File="tz_010" Source="104,426,230,11"/>
+            <BackgroundImage File=""/>
+          </ProgressBar>
+          <Label AlignCol="CENTER" AlignLine="CENTER " Inherit="" Location="87,8,150,20" Name="lbRepName" Show="true" Text="$L:145$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="237,29,80,16" Name="lbReputation" Show="true" Text="$L:146$"/>
+          <Label Inherit="" Location="7,29,80,16" Name="lbReputationStr" Show="true" Text="$L:146$"/>
+          <Label AlignCol="LEFT" Inherit="" Location="7,10,70,16" Name="1400" Show="true" Text="$L:1027$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="239,10,78,16" Name="1319" Show="true" Text="$L:1028$"/>
+        </Label>
+        <Label Inherit="" Location="2,143,325,68" Name="lbRpt3" Show="fals">
+          <ProgressBar Inherit="" Location="7,45,310,11" Name="pgReputation" Show="true">
+            <ProgressBarImage File="tz_010" Source="104,426,230,11"/>
+            <BackgroundImage File=""/>
+          </ProgressBar>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,8,150,20" Name="lbRepName" Show="true" Text="$L:145$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="237,29,80,16" Name="lbReputation" Show="true" Text="$L:146$"/>
+          <Label Inherit="" Location="7,29,80,16" Name="lbReputationStr" Show="true" Text="$L:146$"/>
+          <Label AlignCol="LEFT" Inherit="" Location="7,10,70,16" Name="1400" Show="true" Text="$L:1027$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="239,10,78,16" Name="1319" Show="fals" Text="$L:1028$"/>
+        </Label>
+        <Label Inherit="" Location="2,212,325,68" Name="lbRpt4" Show="fals">
+          <ProgressBar Inherit="" Location="7,45,310,11" Name="pgReputation" Show="true">
+            <ProgressBarImage File="tz_010" Source="104,426,230,11"/>
+            <BackgroundImage File=""/>
+          </ProgressBar>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,8,150,20" Name="lbRepName" Show="true" Text="$L:145$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="237,29,80,16" Name="lbReputation" Show="true" Text="$L:146$"/>
+          <Label Inherit="" Location="7,29,80,16" Name="lbReputationStr" Show="true" Text="$L:146$"/>
+          <Label AlignCol="LEFT" Inherit="" Location="7,10,70,16" Name="1400" Show="true" Text="$L:1027$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="239,10,78,16" Name="1319" Show="true" Text="$L:1028$"/>
+        </Label>
+        <Label Inherit="" Location="2,282,325,68" Name="lbRpt5" Show="fals">
+          <ProgressBar Inherit="" Location="7,45,310,11" Name="pgReputation" Show="true">
+            <ProgressBarImage File="tz_010" Source="104,426,230,11"/>
+            <BackgroundImage File=""/>
+          </ProgressBar>
+          <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="87,8,150,20" Name="lbRepName" Show="true" Text="$L:145$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="237,29,80,16" Name="lbReputation" Show="true" Text="$L:146$"/>
+          <Label Inherit="" Location="7,29,80,16" Name="lbReputationStr" Show="true" Text="$L:146$"/>
+          <Label AlignCol="LEFT" Inherit="" Location="7,10,70,16" Name="1400" Show="true" Text="$L:1027$"/>
+          <Label AlignCol="RIGHT" Inherit="" Location="239,10,78,16" Name="1319" Show="true" Text="$L:1028$"/>
+        </Label>
+        <ScrollBarV Inherit="DefaultSbv" Location="334,3,14,345" Name="scrRpt" Show="true">
+          <Scripts>
+            <OnScroll>layWorld_frmAllEx_frmReputation_Refresh()</OnScroll>
+          </Scripts>
+        </ScrollBarV>
+        <Scripts>
+          <OnShow>local scroll = SAPI.GetChild(self, "scrRpt")
+				scroll:ScrollToTop();</OnShow>
+        </Scripts>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="34,97,350,330" Name="frmAction" Show="false">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="8,4,147,24" Name="lbNormalAction" Show="true" Text="$L:165$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Label Inherit="bg3" Location="9,32,330,130" Name="2033" Show="true"/>
+        <Label Inherit="bg3" Location="8,195,330,130" Name="2117" Show="true"/>
+        <Button Inherit="TemplateActionShortcutButton" Location="16,39,34,34" Name="btNormal1">
+          <Param key="ID" type="number" value="1"/>
+        </Button>
+        <Button Inherit="TemplateActionShortcutButton" Location="54,39,34,34" Name="btNormal2">
+          <Param key="ID" type="number" value="3"/>
+        </Button>
+        <Button Inherit="TemplateActionShortcutButton" Location="92,39,34,34" Name="btNormal3">
+          <Param key="ID" type="number" value="5"/>
+        </Button>
+        <Button Inherit="TemplateActionShortcutButton" Location="130,39,34,34" Name="btNormal4">
+          <Param key="ID" type="number" value="6"/>
+        </Button>
+        <Button Inherit="TemplateActionShortcutButton" Location="169,39,34,34" Name="btNormal5"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="8,166,147,24" Name="lbMoodAction" Show="true" Text="$L:166$">
+          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        </Label>
+        <Scripts>
+          <OnShow>layWorld_frmAllEx_frmAction_OnShow(self)</OnShow>
+        </Scripts>
+      </Form>
+      <CheckButton CheckStyle="false" Inherit="" Location="42,48,80,40" Name="btUser" Show="true" Text="$L:167$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_frmAllEx_SetSelectIndex(0)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Enable="fals" Inherit="" Location="122,48,80,40" Name="btGod" Show="true" Text="$L:168$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_frmAllEx_SetSelectIndex(1)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Enable="true" Inherit="" Location="202,48,80,40" Name="btReputation" Show="true" Text="$L:169$">
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_frmAllEx_SetSelectIndex(2)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="282,48,80,40" Name="btAction" Show="true" Text="$L:170$">
+        <NormalImage File="tz_010" Source="83,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <DisabledImage File="tz_010" Source="82,231,80,40"/>
+        <Scripts>
+          <OnLClick>layWorld_frmAllEx_SetSelectIndex(3)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label Inherit="" Location="28,82,358,6" Name="12268" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("ToggleAttribute")
+			self:RegisterScriptEventNotify("Cre ShowAttrib Changed")
+			self:RegisterScriptEventNotify("EV_UpdateCredit")
+			self:RegisterScriptEventNotify("cre enter world")</OnLoad>
+        <OnShow>uiRegisterEscWidget(self)
+			layWorld_frmAllEx_SetSelectIndex(0)</OnShow>
+        <OnHide>local frmGodOfflineEx = uiGetglobal("layWorld.frmGodOfflineEx")
+			frmGodOfflineEx:Hide()</OnHide>
+        <OnEvent>if event == "ToggleAttribute" then
+			if (arg[1] ~= EV_EXCUTE_EVENT_KEY_DOWN) and (arg[1] ~= EV_EXCUTE_EVENT_ON_LCLICK) then
+				return
+			end
+			if self:getVisible() then
+				
+				self:Hide()
+			else
+				self:ShowAndFocus()
+			end
+		elseif event == "Cre ShowAttrib Changed" then
+			layWorld_frmAllEx_Refresh()
+		elseif event == "EV_UpdateCredit" then
+			layWorld_frmAllEx_Refresh()
+		elseif event == "cre enter world" then
+			layWorld_frmAllEx_Refresh()
+		end</OnEvent>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="869,372,326,310" Name="frmGodOfflineEx" Show="false" Size="326,310">
+      <Label Inherit="bg1" Location="8,19,303,275" Name="23940" Show="true" Transparency=""/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,320,48" Name="lbTitle" Show="true"/>
+      <TitleBarButton Location="2,2,316,28"/>
+      <CloseButton Location="288,27,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label AlignLine="CENTER" Inherit="" Location="20,52,70,20" Name="11692" Show="true" Text="$L:1081$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="90,52,162,20" Name="lbGodFeel2" Show="true">
+        <BackgroundImage File="tz_011" Source="84,0,161,20"/>
+      </Label>
+      <Label Inherit="bg3" Location="90,198,204,58" Name="9384" Show="true"/>
+      <Label Inherit="bg3" Location="90,79,204,58" Name="12603" Show="true"/>
+      <Label Inherit="bg3" Location="90,139,204,58" Name="12998" Show="true"/>
+      <EditBox BackgroundColor="#ee000000" ColSpacing="" EnableInput="false" Inherit="" Location="94,83,196,50" Name="edbWill" Show="true" Text="1sdfsdfdf" WordWrap="true"/>
+      <Label AlignLine="CENTER" Inherit="" Location="20,91,70,20" Name="2105" Show="true" Text="$L:1093$"/>
+      <Button Inherit="" Location="43,149,36,36" Name="btWillItem1" Show="true">
+        <BackgroundImage File="tz_010" Source="141,380,41,41"/>
+        <HighlightImage File="tz_010" Source="191,382,38,38"/>
+        <DisabledImage File="dis_zixuanguo"/>
+        <NormalImage File="zixuanguo"/>
+      </Button>
+      <EditBox BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="94,143,196,50" Name="edbWillItemInfo1" Show="true" Text="45646546545" WordWrap="true"/>
+      <Button Inherit="" Location="43,213,36,36" Name="btWillItem2" Show="true">
+        <BackgroundImage File="tz_010" Source="141,380,41,41"/>
+        <HighlightImage File="tz_010" Source="191,382,38,38"/>
+        <DisabledImage File="dis_yuanlingjinghun"/>
+        <NormalImage File="yuanlingjinghun"/>
+      </Button>
+      <EditBox BackgroundColor="#ee000000" EnableInput="false" Inherit="" Location="94,202,196,50" Name="edbWillItemInfo2" Show="true" Text="123" WordWrap="true"/>
+      <Button Inherit="PushButton" Location="132,262,70,20" Name="btStart" Show="true" Text="$L:1094$">
+        <Scripts>
+          <OnLClick>layWorld_frmGodOfflineEx_btStart_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="100,0,120,66" Name="6232" Show="true" Text="$L:1095$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="21,156,20,20" Name="ckbUseItem1" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmGodOfflineEx_Start_GodPractise()</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" Location="21,220,20,20" Name="ckbUseItem2" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmGodOfflineEx_Start_GodPractise()</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Anchors>
+        <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frmAllEx"/>
+        <Anchor point="CENTERV"/>
+      </Anchors>
+      <CheckButton CheckStyle="true" Inherit="DefaultChkBtn" InheritTag="false" Location="216,52,20,20" Name="ckbAuto" Show="true">
+        <Hint Text="$L:1186$"/>
+        <Scripts>
+          <OnLClick>layWorld_frmGodOfflineEx_Start_GodPractise()</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label AlignCol="CENTER" AlignLine="CENTER" BackgroundColor="#ee000000" Inherit="" Location="234,52,56,20" Name="10430" Show="true" Text="$L:1185$">
+        <BackgroundImage File="tz_011" Source="84,0,161,20"/>
+      </Label>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)
+			layWorld_frmGodOfflineEx_OnShow(self)</OnShow>
+        <OnLoad>self:RegisterScriptEventNotify("sev_refresh_practise_param")</OnLoad>
+        <OnEvent>if event == "sev_refresh_practise_param" then
+				local ckbUseItem1 = SAPI.GetChild(self,"ckbUseItem1")
+				local ckbUseItem2 = SAPI.GetChild(self,"ckbUseItem2")
+				local ckbAuto = SAPI.GetChild(self,"ckbAuto")
+				ckbUseItem1:SetChecked(arg[1])
+				ckbUseItem2:SetChecked(arg[2])
+				ckbAuto:SetChecked(arg[3])
+			end</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

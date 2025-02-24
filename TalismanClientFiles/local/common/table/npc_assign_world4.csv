@@ -1,0 +1,3 @@
+,"comment:
+npc名字",npcId,AI类型,AI脚本,重生周期(秒),重生日程,派系ID,是否巡逻,巡逻路径,是否为闭合的环状巡逻路线,是否默认激活巡逻,是否主动攻击,是否首领,随从id num;id num;,视野范围,控制范围,活动范围,胆量,UPDATA事件,特殊事件,关联npc响应,生命周期,备注,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ID,Name,npcId,AIType,AIScript,Circle,Date,Faction,IsPatrol,PatrolPath,IsCyclicPatrol,IsDefaultPatrol,IsActive,IsBoss,Underling,ViewRange,ControlRange,MoveRange,Courage,TriggerUpdateEvent,SpecialEvent,RelatedNpc,LifeCycle,Comment,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

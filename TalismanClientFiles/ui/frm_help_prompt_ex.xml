@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmHelpPromptEx">
+    <Templates>
+      <Button Inherit="" Location="8,382,32,32" Name="TemplateBtnFlickerPrompt" Show="false" Size="32,32">
+        <NormalImage File="tz_010" Source="382,430,40,40"/>
+        <HighlightImage File="tz_010" Source="338,472,40,40"/>
+        <PushedImage File="tz_010" Source="382,430,40,40"/>
+        <Flicker Cycle="2" Show="true">
+          <Image File="tz_010" Source="338,472,40,40"/>
+        </Flicker>
+      </Button>
+      <Button Inherit="TemplateBtnFlickerPrompt" Name="TemplateBtnHelpPrompt">
+        <Scripts>
+          <OnLClick>frmHelpPromptEx_TemplateBtnHelpPrompt_OnLClick(self)</OnLClick>
+          <OnHide>frmHelpPromptEx_TemplateBtnHelpPrompt_OnHide(self)</OnHide>
+        </Scripts>
+      </Button>
+      <Button Inherit="TemplateBtnFlickerPrompt" Name="TemplateBtnMinRemind">
+        <Scripts>
+          <OnLClick>frmHelpPromptEx_TemplateBtnMinRemind_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+    </Templates>
+  </Theme>
+  <Script file="frm_help_prompt_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Label Inherit="" Location="0,446,96,32" MouseEvent="true" MouseMove="true" Name="lbHelpPromptGroup" Pick="false" Show="true">
+      <Button Inherit="TemplateBtnHelpPrompt" Location=" 0, 0,32,32" Name="btHelpPrompt1"/>
+      <Button Inherit="TemplateBtnHelpPrompt" Location="32,0,32,32" Name="btHelpPrompt2"/>
+      <Button Inherit="TemplateBtnHelpPrompt" Location="64,0,32,32" Name="btHelpPrompt3"/>
+      <Scripts>
+        <OnLoad>layWorld_lbHelpPromptGroup_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_lbHelpPromptGroup_OnEvent(self, event, arg)</OnEvent>
+      </Scripts>
+    </Label>
+    <Label Inherit="" Location="0,478,96,32" MouseEvent="true" MouseMove="true" Name="lbMinRemindGroup" Pick="false" Show="true">
+      <Button Inherit="TemplateBtnMinRemind" Location="0,0,32,32" Name="btMinRemind1">
+        <Param key="ID" type="number" value="1"/>
+      </Button>
+      <Button Inherit="TemplateBtnMinRemind" Location="32,0,32,32" Name="btMinRemind2">
+        <Param key="ID" type="number" value="2"/>
+      </Button>
+      <Button Inherit="TemplateBtnMinRemind" Location="64,0,32,32" Name="btMinRemind3">
+        <Param key="ID" type="number" value="3"/>
+      </Button>
+      <Scripts>
+        <OnLoad>layWorld_lbMinRemindGroup_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_lbMinRemindGroup_OnEvent(self, event, arg)</OnEvent>
+      </Scripts>
+    </Label>
+    <Form Inherit="NoTitleBarForm" Location="501,167,256,230" Name="frmHelpBoxEx" Show="false" Size="294,230">
+      <Label Inherit="bg1" Location="9,16,280,212" Name="12971" Show="true"/>
+      <Label Inherit="bg3" Location="20,42,256,170" Name="1218" Show="true"/>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="26,47,244,160" MultiLine="true" Name="edbHelpIndex" Show="true" Text="" WordWrap="true"/>
+      <Label Inherit="" Location="0,192,256,11" Name="1452" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Anchors>
+        <Anchor offset="0,-50" point="CENTERV"/>
+        <Anchor offset="-40,0" point="CENTERH"/>
+      </Anchors>
+      <Label Inherit="TemplateNormalTitle" Location="2,0,294,31" Name="12880" Show="true">
+        <Label Name="lbTitelText" Show="false"/>
+      </Label>
+      <CloseButton Location="264,25,14,14" Show="fals">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+    </Form>
+  </Layer>
+</Ui>

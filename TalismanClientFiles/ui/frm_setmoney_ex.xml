@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Ui>
+	<Layer Name="layWorld" Show="true">
+		<Form ClipChildren="false" Inherit="NoTitleBarForm" Location="347,606,256,120" Name="frmSetmoneyEx" Show="false" Size="220,120">
+			<Label Inherit="bg1" Location="0,0,220,120" Name="10501" Show="true"/>
+			<BackgroundImage/>
+			<Button Inherit="PushButton" Location="19,91,50,20" Name="btSetOk" Show="true" Text="$L:466$">
+				<Scripts>
+					<OnLClick>layWorld_frmSetmoneyEx_btSetOk_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="153,91,50,20" Name="btSetCancel" Show="true" Text="$L:467$">
+				<Scripts>
+					<OnLClick>layWorld_frmSetmoneyEx_btSetCancel_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Label Inherit="" Location="18,24,185,24" Name="lbSavemoney" Show="false">
+				<BackgroundImage File="" Source=""/>
+			</Label>
+			<EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="37,26,60,20" MaxChar="4" Name="EdbGold" Show="true" NumberOnly="true">
+				<BackgroundImage File="tz_010" Source="443,217,60,20"/>
+			</EditBox>
+			<EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="122,26,30,20" MaxChar="2" Name="EdbAg" Show="true" NumberOnly="true">
+				<BackgroundImage File="tz_010" Source="458,193,30,20"/>
+			</EditBox>
+			<EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="177,26,30,20" MaxChar="2" Name="EdbCu" Show="true" NumberOnly="true">
+				<BackgroundImage File="tz_010" Source="458,193,30,20"/>
+			</EditBox>
+			<Anchors>
+				<Anchor offset="0,-100" point="BOTTOM"/>
+				<Anchor offset="-60,0" point="CENTERH"/>
+			</Anchors>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="5,52,210,36" Name="618" Show="true" Text="$L:929$"/>
+			<Label Inherit="TemplateNormalTitle" Location="-7,-19,233,35" Name="5906" Show="true">
+				<Label Name="lbTitelText" Show="false"/>
+			</Label>
+			<CloseButton Location="198,7,13,13" Show="ture">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+			<TitleBarButton Location="-5,-19,230,35" Show="ture"/>
+			<Label Inherit="" Location="12,24,24,22" Name="2554" Show="true">
+				<BackgroundImage File="tz_010" Source="413,488,24,22"/>
+			</Label>
+			<Label Inherit="" Location="97,24,24,22" Name="2674" Show="true">
+				<BackgroundImage File="tz_010" Source="445,488,24,22"/>
+			</Label>
+			<Label Inherit="" Location="152,23,24,26" Name="2794" Show="true">
+				<BackgroundImage File="tz_010" Source="476,485,24,26"/>
+			</Label>
+			<Scripts>
+			  <OnShow>layWorld_frmSetmoneyEx_OnShow(self);</OnShow>
+			</Scripts>
+		</Form>
+	</Layer>
+</Ui>

@@ -1,0 +1,14 @@
+<!-- 玩家帮助系统的辅助文件 用于接收需要的消息 设置系统变量 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Script file="system_assistant_userhelp.lua">Script</Script>
+	<Layer Name="laySystemAssistant" Show="false">
+		<Widget Location="-1,-1,1,1" Name="UserHelp" Show="false">
+			<Scripts>
+				<OnLoad>laySystemAssistant_UserHelp_OnLoad(self)</OnLoad>
+				<OnEvent>laySystemAssistant_UserHelp_OnEvent(self, event, arg)</OnEvent>
+			</Scripts>
+		</Widget>
+	</Layer>
+</Ui>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<Ui>
+	<Script file="frm_gemrefine_ex.lua">LUA</Script>
+	<Layer Name="layWorld" Show="true">
+		<Form Inherit="" Location="223,111,320,360" Name="frmGemrefineEx" Show="false">
+			<Label Inherit="bg1" Location="10,19,300,340" Name="631" Show="true"/>
+			<Label Inherit="TemplateNormalTitle" Location="0,0,320,50" Name="637" Show="true"/>
+			<TitleBarButton AlignLine="CENTER" Location="0,0,320,28"/>
+			<CloseButton Location="283,32,13,13">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="96,-1,128,68" Name="625" Show="true" Text="$L:1564$" TextFont="$L:1$" TextSize="$L:3$"/>
+			<Button AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="120,316,70,25" Name="btOK" Show="true" Text="$L:1637$" TextSize="">
+				<Scripts>
+					<OnLClick>layWorld_frmGemrefineEx_btOK_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="180,327,70,24" Name="btCancel" Show="false" Text="$L:725$">
+				<Scripts>
+					<OnLClick>layWorld_frmGemrefineEx_btCancel_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button DragIn="true" Inherit="" Location="45,170,32,32" Name="btgemlowlevel_0" Show="true">
+				<BackgroundImage File="tz_032" Source="0,399,40,40"/>
+				<Hint Text="$L:1606$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmGemrefineEx_btgemlowlevel_OnDragIn(self,drag)</OnDragIn>
+					<OnDragNull>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnDragNull>
+					<OnHint>layWorld_frmGemrefineEx_btgemlowlevel_OnHint(self)</OnHint>
+					<OnRClick>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+			<Button DragIn="true" Inherit="" Location="95,170,32,32" Name="btgemlowlevel_1" Show="true">
+				<BackgroundImage File="tz_032" Source="0,399,40,40"/>
+				<HighlightImage File="tz_010" Source="186,376,48,48"/>
+				<PushedImage File="tz_010" Source="186,376,48,48"/>
+				<Hint Text="$L:1606$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmGemrefineEx_btgemlowlevel_OnDragIn(self,drag)</OnDragIn>
+					<OnDragNull>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnDragNull>
+					<OnHint>layWorld_frmGemrefineEx_btgemlowlevel_OnHint(self)</OnHint>
+					<OnRClick>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+			<Button DragIn="true" Inherit="" Location="146,170,32,32" Name="btgemlowlevel_2" Show="true">
+				<BackgroundImage File="tz_032" Source="0,399,40,40"/>
+				<Hint Text="$L:1606$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmGemrefineEx_btgemlowlevel_OnDragIn(self,drag)</OnDragIn>
+					<OnDragNull>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnDragNull>
+					<OnHint>layWorld_frmGemrefineEx_btgemlowlevel_OnHint(self)</OnHint>
+					<OnRClick>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+			<Button DragIn="true" Inherit="" Location="196,170,32,32" Name="btgemlowlevel_3" Show="true">
+				<BackgroundImage File="tz_032" Source="0,399,40,40"/>
+				<Hint Text="$L:1606$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmGemrefineEx_btgemlowlevel_OnDragIn(self,drag)</OnDragIn>
+					<OnDragNull>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnDragNull>
+					<OnHint>layWorld_frmGemrefineEx_btgemlowlevel_OnHint(self)</OnHint>
+					<OnRClick>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+			<Button DragIn="true" Inherit="" Location="243,170,32,32" Name="btgemlowlevel_4" Show="true">
+				<BackgroundImage File="tz_032" Source="0,399,40,40"/>
+				<Hint Text="$L:1606$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmGemrefineEx_btgemlowlevel_OnDragIn(self,drag)</OnDragIn>
+					<OnDragNull>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnDragNull>
+					<OnHint>layWorld_frmGemrefineEx_btgemlowlevel_OnHint(self)</OnHint>
+					<OnRClick>layWorld_frmGemrefineEx_btgemlowlevel_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="" Location="137,264,40,40" Name="btgemhighlevel" Show="true">
+				<BackgroundImage File="tz_011" Source="178,115,41,40"/>
+				<Hint/>
+				<Scripts>
+					<OnHint>layWorld_frmGemrefineEx_btgemhighlevel_OnHint(self)</OnHint>
+				</Scripts>
+			</Button>
+			<Scripts>
+				<OnEvent>layWorld_frmGemrefineEx_OnEvent(self, event, arg);</OnEvent>
+				<OnLoad>layWorld_frmGemrefineEx_OnLoad(self);</OnLoad>
+				<OnShow>layWorld_frmGemrefineEx_OnShow(self);</OnShow>
+				<OnHide>layWorld_frmGemrefineEx_OnHide(self);</OnHide>
+			</Scripts>
+			<Label Inherit="bg3" Location="25,57,270,100" Name="729" Show="true"/>
+			<EditBox AutoScrollV="true" ColSpacing="8" EnableInput="false" Inherit="" LineSpacing="8" Location="29,61,262,92" MultiLine="true" Name="edbGemreIndex" Show="true" Text="$L:1566$" WordWrap="true"/>
+			<Label Inherit="bg3" Location="35,211,250,45" Name="1078" Show="true"/>
+			<Label Inherit="" Location="35,211,250,45" Name="lbMoneyLingli" Show="true">
+				<Label AlignLine="CENTER" Inherit="" Location="6,5,90,18" Name="lbnimbus1" Show="true" Text="$L:1638$"/>
+				<Label AlignLine="CENTER" Inherit="" Location="6,22,90,18" Name="lbmoney1" Show="true" Text="$L:1639$"/>
+				<Label Inherit="" Location="96,5,140,18" Name="lbnimbus2" Show="true"/>
+				<Label Inherit="" Location="96,22,140,18" Name="lbmoney2" Show="false"/>
+				<EditBox Name="edbmoney2" Location="96,22,140,18" Inherit="" Show="true" EnableInput="false"/>
+			</Label>
+			<Button DragIn="true" Inherit="" Location="212,267,32,32" Name="btgeminvocation_0" Show="true">
+				<BackgroundImage File="tz_032" Source="144,400,40,40"/>
+				<Hint Text="$L:1636$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmGemrefineEx_btgeminvocation0_OnDragIn(self,drag)</OnDragIn>
+					<OnDragNull>layWorld_frmGemrefineEx_btgeminvocation0_OnDragNull(self)</OnDragNull>
+					<OnHint>layWorld_frmGemrefineEx_btgeminvocation0_OnHint(self)</OnHint>
+					<OnRClick>layWorld_frmGemrefineEx_btgeminvocation0_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+			<Button DragIn="true" Inherit="" Location="71,267,32,32" Name="btgeminvocation_1" Show="true">
+				<BackgroundImage File="tz_032" Source="72,400,40,40"/>
+				<Hint Text="$L:1610$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmGemrefineEx_btgeminvocation_OnDragIn(self,drag)</OnDragIn>
+					<OnHint>layWorld_frmGemrefineEx_btgeminvocation_OnHint(self)</OnHint>
+					<OnDragNull>layWorld_frmGemrefineEx_btgeminvocation_OnDragNull(self)</OnDragNull>
+					<OnRClick>layWorld_frmGemrefineEx_btgeminvocation_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+		</Form>
+		<Form Inherit="" Location="200,100,300,300" Name="frmCompoundEx" Show="false">
+			<Label Inherit="bg1" Location="10,19,280,280" Name="631" Show="true"/>
+			<Label Inherit="TemplateNormalTitle" Location="0,0,300,50" Name="637" Show="true"/>
+			<TitleBarButton AlignLine="CENTER" Location="0,0,300,28"/>
+			<CloseButton Location="266,31,13,13">
+				<NormalImage File="tz_010" Source="120,383,13,13"/>
+				<PushedImage File="tz_010" Source="98,383,13,13"/>
+			</CloseButton>
+			<Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,128,68" Name="625" Show="true" Text="$L:1565$" TextFont="$L:1$" TextSize="$L:3$"/>
+			<Button Inherit="PushButton" Location="49,258,70,24" Name="btOK" Show="true" Text="$L:724$">
+				<Scripts>
+					<OnLClick>layWorld_frmCompoundEx_btOK_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="PushButton" Location="180,258,70,24" Name="btCancel" Show="true" Text="$L:725$">
+				<Scripts>
+					<OnLClick>layWorld_frmCompoundEx_btCancel_OnLClick(self);</OnLClick>
+				</Scripts>
+			</Button>
+			<Button DragIn="true" Inherit="" Location="81,71,32,32" Name="btgemlowlevel" Show="true">
+				<BackgroundImage File="tz_011" Source="178,115,41,40"/>
+				<HighlightImage File="tz_010" Source="186,376,48,48"/>
+				<PushedImage File="tz_010" Source="186,376,48,48"/>
+				<Hint Text="$L:1608$"/>
+				<Scripts>
+					<OnDragIn>layWorld_frmCompoundEx_btgemlowlevel_OnDragIn(self,drag)</OnDragIn>
+					<OnDragNull>layWorld_frmCompoundEx_btgemlowlevel_OnDragNull(self)</OnDragNull>
+					<OnHint>layWorld_frmCompoundEx_btgemlowlevel_OnHint(self)</OnHint>
+					<OnRClick>layWorld_frmCompoundEx_btgemlowlevel_OnDragNull(self)</OnRClick>
+				</Scripts>
+			</Button>
+			<Button Inherit="" Location="187,71,32,32" Name="btgemhighlevel" Show="true">
+				<BackgroundImage File="tz_011" Source="178,115,41,40"/>
+				<HighlightImage File="tz_010" Source="186,376,48,48"/>
+				<PushedImage File="tz_010" Source="186,376,48,48"/>
+				<Hint Text="$L:1609$"/>
+				<Scripts>
+					<OnHint>layWorld_frmCompoundEx_btgemhighlevel_OnHint(self)</OnHint>
+				</Scripts>
+			</Button>
+			<Scripts>
+				<OnLoad>layWorld_frmCompoundEx_OnLoad(self);</OnLoad>
+				<OnShow>layWorld_frmCompoundEx_OnShow(self);</OnShow>
+				<OnHide>layWorld_frmCompoundEx_OnHide(self);</OnHide>
+			</Scripts>
+			<EditBox AutoScrollV="true" ColSpacing="8" EnableInput="false" Inherit="bg3" LineSpacing="8" Location="41,111,220,140" MultiLine="true" Name="edbgemcompoundderaction" Show="true" Text="$L:1567$" WordWrap="true"/>
+		</Form>
+	</Layer>
+</Ui>

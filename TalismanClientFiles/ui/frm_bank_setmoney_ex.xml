@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_Bank_Setmoney_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="347,606,256,120" Name="frmBankSetmoneyEx" Show="false" Size="220,120">
+      <Label Inherit="bg1" Location="0,0,220,120" Name="10501" Show="true"/>
+      <BackgroundImage/>
+      <Button Inherit="PushButton" Location="30,82,50,20" Name="btSetOk" Show="true" Text="$L:466$">
+        <Scripts>
+          <OnLClick>layWorld_frmBankSetmoneyEx_btSetOk_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="136,82,50,20" Name="btSetCancel" Show="true" Text="$L:467$">
+        <Scripts>
+          <OnLClick>layWorld_frmBankSetmoneyEx_btSetCancel_OnLClick()</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="18,24,185,24" Name="lbSavemoney" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="37,41,60,20" MaxChar="4" Name="EdbGold" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+      </EditBox>
+      <EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="122,41,30,20" MaxChar="2" Name="EdbAG" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </EditBox>
+      <EditBox AlignCol="CENTER" AutoScrollV="false" ColSpacing="4" EnableInput="true" Inherit="" LineSpacing="4" Location="177,41,30,20" MaxChar="2" Name="EdbCu" NumberOnly="true" Show="true">
+        <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+      </EditBox>
+      <Anchors>
+        <Anchor offset="0,-100" point="BOTTOM"/>
+        <Anchor offset="-60,0" point="CENTERH"/>
+      </Anchors>
+      <Label Inherit="TemplateNormalTitle" Location="-7,-19,233,35" Name="5906" Show="true">
+        <Label Name="lbTitelText" Show="false"/>
+      </Label>
+      <CloseButton Location="198,7,13,13" Show="ture">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <TitleBarButton Location="-5,-19,230,35" Show="ture"/>
+      <Label Inherit="" Location="12,39,24,22" Name="2554" Show="true">
+        <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+      </Label>
+      <Label Inherit="" Location="97,39,24,22" Name="2674" Show="true">
+        <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+      </Label>
+      <Label Inherit="" Location="152,38,24,26" Name="2794" Show="true">
+        <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+      </Label>
+      <Scripts>
+        <OnShow>uiRegisterEscWidget(self)</OnShow>
+        <OnHide>layWorld_frmBankSetmoneyEx_OnHide(self)</OnHide>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

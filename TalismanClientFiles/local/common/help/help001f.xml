@@ -1,0 +1,13 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<UiRichText>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_07a$" hlink="File:local/common/help/help_jjc01.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:help001_07b$" hlink="File:local/common/help/help_jjc02.xml" underline="true" color="#ffa6a845" />
+	</Items>
+</Line>
+</UiRichText>

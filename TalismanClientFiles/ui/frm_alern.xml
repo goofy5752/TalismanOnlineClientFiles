@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_alern.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Widget Inherit="TemplateLayerFull" Location="10,480,273,190" Name="lbLayerAlern" Show="true">
+      <Form Inherit="NoTitleBarForm" Location="569,155,294,230" Movable="true" Move="true" Name="frmAlern" Show="false" Size="294,230">
+        <Label Inherit="bg1" Location="9,17,280,210" Name="18200" Show="true"/>
+        <Label Inherit="bg3" Location="20,44,256,170" Name="1218" Show="true"/>
+        <EditBox EnableInput="false" Inherit="" Location="26,49,244,40" MultiLine="true" Name="edbInfo" Show="true" WordWrap="true"/>
+        <CloseButton Location="267,26,13,13" Show="fals">
+          <NormalImage File="tz_010" Source="120,383,13,13"/>
+          <PushedImage File="tz_010" Source="98,383,13,13"/>
+        </CloseButton>
+        <Label Inherit="TemplateNormalTitle" Location="2,0,294,31" Name="12880" Show="true">
+          <Label Inherit="" Name="lbTitelText" Show="false"/>
+        </Label>
+        <TitleBarButton Location="5,0,288,30" Show="true"/>
+        <Label Inherit="" Location="27,92,242,115" Name="11965" Show="true">
+          <BackgroundImage File="korean_alern"/>
+        </Label>
+        <Anchors>
+          <Anchor point="CENTERH"/>
+          <Anchor point="CENTERV"/>
+        </Anchors>
+      </Form>
+      <Scripts>
+        <OnLoad>layWorld_lbLayerAlern_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_lbLayerAlern_OnEvent(self, event, arg);</OnEvent>
+        <OnUpdate Timer="1">layWorld_lbLayerAlern_OnUpdate(self, delta)</OnUpdate>
+      </Scripts>
+    </Widget>
+  </Layer>
+</Ui>

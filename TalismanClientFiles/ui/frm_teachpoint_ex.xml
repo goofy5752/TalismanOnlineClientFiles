@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_teachpoint_ex.lua"/>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="298,274,294,230" Name="frmTeachpointEx" Show="false">
+      <Label Inherit="bg1" Location="7,20,280,210" Name="1110" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,0,294,50" Name="1213" Show="true"/>
+      <Label Inherit="" Location="184,113,60,20" Name="6152" Show="false">
+        <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+      </Label>
+      <Label Inherit="bg3" Location="21,57,250,130" Name="14894" Show="true"/>
+      <Button Inherit="PushButton" Location="65,193,60,20" Name="btTeachpointOk" Show="true" Text="$L:724$">
+        <Scripts>
+          <OnLClick>layWorld_frmTeachpointEx_btTeachpointOk_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="165,194,60,20" Name="btTeachpointClose" Show="true" Text="$L:725$">
+        <Scripts>
+          <OnLClick>layWorld_frmTeachpointEx_btTeachpointClose_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="82,0,130,66" Name="lbRewardTitel" Show="true" Text="$L:890$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="0,189,256,11" Name="3204" Show="false"/>
+      <EditBox AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="191,113,60,20" Name="edbTeachpointNumber" Show="true" NumberOnly="true">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        <Scripts>
+          <OnTextChanged>layWorld_frmTeachpointEx_edbTeachpointNumber_OnTextChanged(self);</OnTextChanged>
+        </Scripts>
+      </EditBox>
+      <Label AlignCol="true" Inherit="" Location="41,150,150,18" Name="2423" Show="true" Text="$L:889$"/>
+      <Label AlignCol="true" Inherit="" Location="41,114,150,18" Name="2557" Show="true" Text="$L:888$"/>
+      <Label AlignCol="true" Inherit="" Location="41,78,150,18" Name="944" Show="true" Text="$L:887$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="191,77,60,20" Name="lbCurTeachPoint" Show="true" Text="">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+      </Label>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="191,149,60,20" Name="lbGetCredit" Show="true" Text="">
+        <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+      </Label>
+      <TitleBarButton Location="0,0,294,22"/>
+      <CloseButton Location="264,29,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Scripts>
+        <OnLoad>layWorld_frmTeachpointEx_OnLoad(self);</OnLoad>
+        <OnUpdate>layWorld_frmTeachpointEx_OnUpdate(self,delta);</OnUpdate>
+        <OnEvent>layWorld_frmTeachpointEx_OnEvent(self,event,arg);</OnEvent>
+		<OnShow>layWorld_frmTeachpointEx_OnShow(self)</OnShow>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

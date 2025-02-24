@@ -1,0 +1,8 @@
+ID,Enum,ExePri,QuePri,OnlyExec
+0,AI_none,0,0,0
+1,AI_Attack,4,4,0
+2,AI_MoveTo_XX,3,3,0
+3,AI_Follow,4,4,0
+4,AI_MoveTo,1,1,1
+5,AI_Funk,5,5,0
+6,AI_Bus,6,6,0

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="frm_calendar.lua">Script</Script>
+  <Theme Name="frmCalendar">
+    <Templates>
+      <Label Inherit="" Location="20,60,100,20" MouseEvent="true" MouseMove="true" Name="TemplateLabelEventShortcut" Pick="false" Show="true">
+        <Button Inherit="" Location="0,0,12,12" Name="btIcon" Show="true">
+          <Scripts>
+            <OnLClick>frmCalendar_TemplateLabelEventShortcut_OnLClick(self)</OnLClick>
+          </Scripts>
+          <Hint/>
+        </Button>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="12,0,80,12" MouseEvent="false" MouseMove="false" Name="lbTimeDesc" Pick="false" Show="true"/>
+      </Label>
+      <CheckButton AlignCol="CENTER" AlignLine="CENTER" Inherit="" Name="TemplateCalendarDay" Show="true" Size="" TextColor="#FFFFFF00">
+        <Hint/>
+        <NormalImage Blend="true" File="tz_032" Source="124,99,100,100"/>
+        <HighlightCheckArea Blend="true" File="tz_032" Source="10,204,100,100"/>
+        <CheckImage Blend="true" File="tz_032" Source="10,204,100,100"/>
+        <Button Inherit="" Location="0,0,20,20" Name="btUserEvent" Show="true">
+          <Hint/>
+          <NormalImage File="ic_day006"/>
+          <PushedImage File="ic_day006"/>
+          <Scripts>
+            <OnLClick>frmCalendar_TemplateCalendarDay_btUserEvent_OnLClick(self)</OnLClick>
+          </Scripts>
+        </Button>
+        <Label Inherit="TemplateLabelEventShortcut" Location="0,32,100,12" Name="lbShortcut1"/>
+        <Label Inherit="TemplateLabelEventShortcut" Location="0,46,100,12" Name="lbShortcut2"/>
+        <Label Inherit="TemplateLabelEventShortcut" Location="0,60,100,12" Name="lbShortcut3"/>
+        <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="55,0,30,30" Name="lbDayInMonth" Text="12" TextFont="$L:1$" TextSize="$L:4$"/>
+        <Scripts>
+          <OnLClick>frmCalendar_TemplateCalendarDay_OnLClick(self)</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Label Inherit="" Location="111,69,840,130" MouseEvent="true" MouseMove="true" Name="TemplateCalendarWeek" Pick="true" Show="true" Size="840,130">
+        <CheckButton Inherit="TemplateCalendarDay" Location="0,0,100,74" Name="cbCalendarDay1" Show="true">
+          <Param key="ID" type="number" value="1"/>
+        </CheckButton>
+        <CheckButton Inherit="TemplateCalendarDay" Location="100,0,100,74" Name="cbCalendarDay2" Show="true">
+          <Param key="ID" type="number" value="2"/>
+        </CheckButton>
+        <CheckButton Inherit="TemplateCalendarDay" Location="200,0,100,74" Name="cbCalendarDay3" Show="true">
+          <Param key="ID" type="number" value="3"/>
+        </CheckButton>
+        <CheckButton Inherit="TemplateCalendarDay" Location="300,0,100,74" Name="cbCalendarDay4" Show="true">
+          <Param key="ID" type="number" value="4"/>
+        </CheckButton>
+        <CheckButton Inherit="TemplateCalendarDay" Location="400,0,100,74" Name="cbCalendarDay5" Show="true">
+          <Param key="ID" type="number" value="5"/>
+        </CheckButton>
+        <CheckButton Inherit="TemplateCalendarDay" Location="500,0,100,74" Name="cbCalendarDay6" Show="true">
+          <Param key="ID" type="number" value="6"/>
+        </CheckButton>
+        <CheckButton Inherit="TemplateCalendarDay" Location="600,0,100,74" Name="cbCalendarDay7" Show="true">
+          <Param key="ID" type="number" value="7"/>
+        </CheckButton>
+      </Label>
+    </Templates>
+  </Theme>
+  <Layer Name="layWorld" Show="true">
+    <Button Inherit="PushButton" Location="300,20,60,24" Name="btShowCalendar" Show="false" Text="$L:1454$">
+      <Scripts>
+        <OnLClick>uiGetglobal("layWorld.frmCalendar"):ShowAndFocus();</OnLClick>
+      </Scripts>
+      <Flicker Cycle="2" Show="true">
+        <Image File="tz_010" Source="443,267,60,20"/>
+      </Flicker>
+    </Button>
+    <Button Inherit="PushButton" Location="370,20,60,24" Name="btToggleCalendar" Show="false" Text="日历开关">
+      <Scripts>
+        <OnLClick>uiUserToggleCalendar()</OnLClick>
+      </Scripts>
+    </Button>
+    <Form Inherit="" Location="45,45,725,540" Name="frmCalendar" Show="false">
+      <Label Inherit="bg3" Location="1,0,722,540" Name="775" Show="true"/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,690,46" Name="807" Show="false" Size="750,46">
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="" Location="573,9,323,24" Name="726" Show="false">
+        <BackgroundImage File="tz_010" Source="0,108,250,24"/>
+      </Label>
+      <TitleBarButton Inherit="" Location="0,1,726,25"/>
+      <CloseButton Location="699,10,14,14">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="13,66,700,465" MouseEvent="true" MouseMove="true" Name="lbCalendarMonth" Pick="true" Show="true">
+        <Label Inherit="TemplateCalendarWeek" Location="0,25,700,74" Name="lbCalendarWeek1" Show="true">
+          <Param key="ID" type="number" value="1"/>
+        </Label>
+        <Label Inherit="TemplateCalendarWeek" Location="0,98,700,74" Name="lbCalendarWeek2" Show="true">
+          <Param key="ID" type="number" value="2"/>
+        </Label>
+        <Label Inherit="TemplateCalendarWeek" Location="0,171,700,74" Name="lbCalendarWeek3" Show="true">
+          <Param key="ID" type="number" value="3"/>
+        </Label>
+        <Label Inherit="TemplateCalendarWeek" Location="0,244,700,74" Name="lbCalendarWeek4" Show="true">
+          <Param key="ID" type="number" value="4"/>
+        </Label>
+        <Label Inherit="TemplateCalendarWeek" Location="0,317,700,74" Name="lbCalendarWeek5" Show="true">
+          <Param key="ID" type="number" value="5"/>
+        </Label>
+        <Label Inherit="TemplateCalendarWeek" Location="0,390,700,74" Name="lbCalendarWeek6" Show="true">
+          <Param key="ID" type="number" value="6"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,1,99,24" Name="lbSunday" Show="true" Text="$L:1468$" TextFont="$L:1$" TextSize="$L:4$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="101,1,99,24" Name="lbMonday" Show="true" Text="$L:1469$" TextFont="$L:1$" TextSize="$L:4$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="201,1,99,24" Name="lbTuesday" Show="true" Text="$L:1470$" TextFont="$L:1$" TextSize="$L:4$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="301,1,99,24" Name="lbWednesday" Show="true" Text="$L:1471$" TextFont="$L:1$" TextSize="$L:4$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="401,1,99,24" Name="lbThursday" Show="true" Text="$L:1472$" TextFont="$L:1$" TextSize="$L:4$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="501,1,99,24" Name="lbFriday" Show="true" Text="$L:1473$" TextFont="$L:1$" TextSize="$L:4$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="601,1,99,24" Name="lbSaturday" Show="true" Text="$L:1474$" TextFont="$L:1$" TextSize="$L:4$"/>
+      </Label>
+      <Button Inherit="" Location="281,34,16,24" Name="btNextMonth" Show="true" Text="">
+        <Scripts>
+          <OnLClick>layWorld_frmCalendar_btNextMonth_OnLClick(self)</OnLClick>
+        </Scripts>
+        <NormalImage File="tz_010" Source="74,382,15,12"/>
+        <PushedImage File="tz_010" Source="74,400,15,12"/>
+        <DisabledImage File="tz_010" Source="74,400,15,12"/>
+      </Button>
+      <Button Inherit="" Location="15,34,16,24" Name="btPreMonth" Show="true" Text="">
+        <Scripts>
+          <OnLClick>layWorld_frmCalendar_btPreMonth_OnLClick(self)</OnLClick>
+        </Scripts>
+        <NormalImage File="tz_010" Source="50,382,15,12"/>
+        <PushedImage File="tz_010" Source="50,400,15,12"/>
+        <DisabledImage File="tz_010" Source="74,400,15,12"/>
+      </Button>
+      <Button Inherit="PushButton" Location="356,34,60,24" Name="btCurMonth" Show="false" Text="$Today$">
+        <Scripts>
+          <OnLClick>layWorld_frmCalendar_btCurMonth_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="597,35,100,24" Name="btCreateUserEvent" Show="true" Text="$L:1456$">
+        <Scripts>
+          <OnLClick>layWorld_frmCalendar_btCreateUserEvent_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="76,26,170,40" Name="btMonthText" Show="true" Text="11" TextFont="$L:1$" TextSize="$L:4$"/>
+      <ComboBox ColSpacing="5" EnableInput="false" Inherit="StudioCb" LineSpacing="4" Location="398,38,130,18" Name="cbxCalendarEventFilter" Show="true" Text="事件过滤">
+        <Scripts>
+          <OnLoad>layWorld_frmCalendar_cbxCalendarEventFilter_OnLoad(self)</OnLoad>
+          <OnUpdateText>layWorld_frmCalendar_cbxCalendarEventFilter_OnUpdateText(self)</OnUpdateText>
+        </Scripts>
+      </ComboBox>
+      <Scripts>
+        <OnLoad>layWorld_frmCalendar_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_frmCalendar_OnEvent(self, event, arg)</OnEvent>
+        <OnShow>layWorld_frmCalendar_OnShow(self)</OnShow>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="44,45,266,356" Name="frmCalenderUserEventCreate" Show="false">
+      <Label Inherit="bg3" Location="9,0,248,356" Name="775" Show="true"/>
+      <Label Inherit="bg3" Location="0,0,266,44" Name="1220" Show="false"/>
+      <EditBox Location="87,62,130,20" Name="edbName" Show="true">
+        <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+      </EditBox>
+      <Label Inherit="bg3" Location="23,114,220,160" Name="974" Show="true"/>
+      <EditBox BackgroundColor="" Inherit="" Location="30,126,208,148" Name="edbDesc" Show="true" Size="208,148">
+        <Anchors>
+          <Anchor offset="6,0" point="LEFT" relativePoint="LEFT" relativeTo="layWorld.frmCalenderUserEventCreate.974"/>
+          <Anchor offset="0,6" point="TOP" relativePoint="TOP" relativeTo="layWorld.frmCalenderUserEventCreate.974"/>
+        </Anchors>
+      </EditBox>
+      <EditBox Inherit="" Location="87,283,130,20" Name="edbRecever" Show="true">
+        <BackgroundImage File="tz_011" Source="85,0,159,20"/>
+      </EditBox>
+      <Button Inherit="PushButton" Location="60,314,60,22" Name="btCreate" Show="true" Text="$L:1452$">
+        <Scripts>
+          <OnLClick>layWorld_frmCalenderUserEventCreate_btCreate_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="149,314,60,22" Name="btClose" Show="true" Text="$L:1453$">
+        <Scripts>
+          <OnLClick>SAPI.GetParent(self):Hide()</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,266,20"/>
+      <CloseButton Location="-58,-45,31,11"/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="23,62,65,20" Name="4238" Show="true" Text="$L:1449$"/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="23,283,65,20" Name="4244" Show="true" Text="$L:1451$"/>
+      <Label AlignCol="RIGHT" AlignLine="CENTER" Inherit="" Location="23,89,65,20" Name="4875" Show="true" Size="80,20" Text="$L:1450$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="72,12,120,25" Name="8479" Show="true" Text="$L:1448$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Scripts>
+        <OnLoad>layWorld_frmCalenderUserEventCreate_OnLoad(self, event, arg)</OnLoad>
+        <OnEvent>layWorld_frmCalenderUserEventCreate_OnEvent(self, event, arg)</OnEvent>
+      </Scripts>
+    </Form>
+    <Form Inherit="" Location="45,45,266,356" Name="frmCalenderEventView" Show="false">
+      <Label Inherit="bg3" Location="9,0,248,356" Name="775" Show="true"/>
+      <Label Inherit="bg3" Location="23,36,220,80" Name="2107" Show="true"/>
+      <ListBox Inherit="" Location="49,48,208,68" Name="lsbEventName" Show="true" Size="208,68">
+        <ColumnButton AlignCol="CENTER" Name="Name" Text="$L:1127$" TextColor="#eefff902" Width="200"/>
+        <Scripts>
+          <OnSelect>layWorld_frmCalendarEventView_lsbEventName_OnSelect(self)</OnSelect>
+        </Scripts>
+        <Anchors>
+          <Anchor offset="0,6" point="TOP" relativePoint="TOP" relativeTo="layWorld.frmCalenderEventView.2107"/>
+          <Anchor offset="6,0" point="LEFT" relativePoint="LEFT" relativeTo="layWorld.frmCalenderEventView.2107"/>
+        </Anchors>
+      </ListBox>
+      <Label Inherit="bg3" Location="23,138,220,160" Name="2485" Show="true"/>
+      <EditBox EnableInput="false" Inherit="" Location="29,143,208,148" MultiLine="true" Name="edbDesc" Show="true" Size="208,148" WordWrap="true">
+        <Anchors>
+          <Anchor offset="0,6" point="TOP" relativePoint="TOP" relativeTo="layWorld.frmCalenderEventView.2485"/>
+          <Anchor offset="6,0" point="LEFT" relativePoint="LEFT" relativeTo="layWorld.frmCalenderEventView.2485"/>
+        </Anchors>
+      </EditBox>
+      <Scripts>
+        <OnShow>layWorld_frmCalendarEventView_OnShow(self)</OnShow>
+      </Scripts>
+      <Button Inherit="PushButton" Location="104,318,60,22" Name="btClose" Show="true" Text="$L:1447$">
+        <Scripts>
+          <OnLClick>SAPI.GetParent(self):Hide()</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,266,20"/>
+      <CloseButton Location="54,0,16,16" Show="false"/>
+      <Label Inherit="bg3" Location="0,0,266,44" Name="1358" Show="false"/>
+    </Form>
+    <Form Inherit="" Location="45,45,266,356" Name="frmCalenderUserEventView" Show="false">
+      <Label Inherit="bg3" Location="9,0,248,356" Name="775" Show="true"/>
+      <Label Inherit="bg3" Location="23,29,220,80" Name="2107" Show="true"/>
+      <ListBox Inherit="" Location="29,36,208,68" Name="lsbEventName" Show="true" Size="208,68">
+        <ColumnButton AlignCol="CENTER" Name="Name" Text="$L:1127$" TextColor="#eefff902" Width="200"/>
+        <Scripts>
+          <OnSelect>layWorld_frmCalenderUserEventView_lsbEventName_OnSelect(self)</OnSelect>
+        </Scripts>
+        <Anchors>
+          <Anchor offset="0,6" point="TOP" relativePoint="TOP" relativeTo="layWorld.frmCalenderEventView.2107"/>
+          <Anchor offset="6,0" point="LEFT" relativePoint="LEFT" relativeTo="layWorld.frmCalenderEventView.2107"/>
+        </Anchors>
+      </ListBox>
+      <Label Inherit="bg3" Location="23,135,220,160" Name="2485" Show="true"/>
+      <EditBox EnableInput="false" Inherit="" Location="29,141,208,148" MultiLine="true" Name="edbDesc" Show="true" Size="208,148" WordWrap="true">
+        <Anchors>
+          <Anchor offset="0,6" point="TOP" relativePoint="TOP" relativeTo="layWorld.frmCalenderEventView.2485"/>
+          <Anchor offset="6,0" point="LEFT" relativePoint="LEFT" relativeTo="layWorld.frmCalenderEventView.2485"/>
+        </Anchors>
+      </EditBox>
+      <Scripts>
+        <OnShow>layWorld_frmCalenderUserEventView_OnShow(self)</OnShow>
+      </Scripts>
+      <Button Inherit="PushButton" Location="48,318,60,22" Name="btDelete" Show="true" Text="$L:1464$">
+        <Scripts>
+          <OnLClick>layWorld_frmCalendarUserEventView_btDelete_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="153,318,60,22" Name="btClose" Show="true" Text="$L:1447$">
+        <Scripts>
+          <OnLClick>SAPI.GetParent(self):Hide()</OnLClick>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,266,20"/>
+      <CloseButton Location="54,0,16,16" Show="false"/>
+      <Label Inherit="bg3" Location="0,0,266,44" Name="1358" Show="false"/>
+      <Scripts>
+        <OnLoad>layWorld_frmCalenderUserEventView_OnLoad(self, event, arg)</OnLoad>
+        <OnEvent>layWorld_frmCalenderUserEventView_OnEvent(self, event, arg)</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

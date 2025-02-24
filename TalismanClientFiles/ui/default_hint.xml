@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+	<Script file="default_hint.lua">Script</Script>
+	<HintWidget Name="hntDefaultHint" Inherit="bg3" Location="0,0,4000,3000" Show="false" Pick="false" Level="100" BackgroundColor="#ee000000">
+	  <SubHintWidget Name="hntDefaultHint_001" Inherit="bg3" Location="0,0,4000,3000" Show="false" Pick="false" Level="100" BackgroundColor="#ee000000"/>
+	  <SubHintWidget Name="hntDefaultHint_002" Inherit="bg3" Location="0,0,4000,3000" Show="false" Pick="false" Level="100" BackgroundColor="#ee000000"/>
+	  <Scripts>
+		<OnLoad>uiSetDefaultHintWidget(self);</OnLoad>
+		<OnHintBindWidget>hntDefaultHint_OnHintBindWidget(self, bind)</OnHintBindWidget>
+	  </Scripts>
+	</HintWidget>
+</Ui>
+

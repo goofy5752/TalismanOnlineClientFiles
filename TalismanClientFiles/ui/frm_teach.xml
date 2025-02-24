@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="168,128,770,532" Name="frmTeach" Show="false">
+      <Label Inherit="bg1" Location="6,18,750,460" Name="lbUP" Show="fals"/>
+      <Label Inherit="" Location="0,256,282,194" Name="lbDown" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="TemplateNormalTitle" Location="2,0,760,47" Name="lbTitle" Show="true"/>
+      <Label Inherit="" Location="512,9,250,25" Name="lbTitle1" Show="false">
+        <BackgroundImage File="tz_010" Source="0,109,250,25"/>
+      </Label>
+      <TitleBarButton Location="3,2,760,28" Text="" TextFont="$L:1$" TextSize="$L:3$"/>
+      <CloseButton Location="732,27,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Label Inherit="" Location="280,0,276,256" Name="626" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="279,256,276,194" Name="878" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="555,0,206,256" Name="770" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="555,256,206,194" Name="823" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <CheckButton CheckStyle="false" Inherit="" Location="20,47,80,40" Name="btteacher" Show="true" Text="$L:862$">
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="100,47,80,40" Name="btnmaster" Show="true" Text="$L:863$">
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="180,47,80,40" Name="ckbHelp" Show="true" Text="$L:1043$">
+        <CheckImage File="tz_010" Source="0,231,80,40"/>
+        <NormalImage File="tz_010" Source="82,231,80,40"/>
+        <PushedImage File="tz_010" Source="0,231,80,40"/>
+      </CheckButton>
+      <Label AlignCol="RIGHT" Inherit="DefaultChkBtn" Location="617,57,96,18" Name="869" Show="true" Text="$L:867$"/>
+      <CheckButton Inherit="DefaultChkBtn" Location="711,55,20,20" Name="btShowOffline" Show="true"/>
+      <Form Inherit="NoTitleBarForm" Location="16,89,728,380" Name="frmMaster" Show="true">
+        <Label AlignCol="RIGHT" Inherit="" Location="2,4,48,18" Name="615" Show="true" Text="$L:864$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="3" Location="53,4,130,20" Name="lbMasterName" Show="true" Text="sdf">
+          <BackgroundImage File="tz_011" Source="85,1,161,19"/>
+        </Label>
+        <Label AlignCol="RIGHT" Inherit="" Location="259,5,86,18" Name="696" Show="true" Text="$L:865$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="3" Location="511,3,60,20" Name="lbMasterNum" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="388,5,120,18" Name="739" Show="true" Text="$L:866$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="3" Location="346,3,40,20" Name="lbTeacherPoint" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </Label>
+        <Label Inherit="bg3" Location="0,27,722,325" Name="11558" Show="true"/>
+        <ListBox BackgroundColor="" Inherit="" Location="4,31,714,317" Name="lstMaster" Show="true"/>
+        <Button Inherit="PushButton" Location="88,357,76,20" Name="btaddstudents" Show="true" Text="$L:868$"/>
+        <Button Inherit="PushButton" Location="399,357,76,20" Name="btpass" Show="true" Text="$L:869$"/>
+        <Button Inherit="PushButton" Location="245,357,76,20" Name="btKickStudent" Show="true" Text="$L:870$"/>
+        <Label AlignCol="RIGHT" Inherit="" Location="184,5,34,18" Name="568" Show="true" Text="$L:105$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="3" Location="218,3,30,20" Name="lbMasterLev" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Button Inherit="PushButton" Location="548,357,76,20" Name="btFresh" Show="true" Text="$L:885$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="3" Location="662,3,60,20" Name="lbTotalReportGrade" Show="true">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </Label>
+        <Label AlignCol="RIGHT" Inherit="" Location="572,5,90,18" Name="1162" Show="true" Text="$L:872$"/>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="16,89,728,380" Name="frmTeacher" Show="false">
+        <Label AlignCol="RIGHT" AlignLine="RIGHT" Inherit="" Location="5,5,48,18" Name="615" Show="true" Text="$L:864$"/>
+        <Label AlignCol="CENTER" ColSpacing="3" Inherit="" LineSpacing="3" Location="53,3,130,20" Name="lbTeacherName" Show="true" Text="34543" MouseEvent="true" MouseMove="true" Pick="true">
+          <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+		  <Scripts>
+		    <OnRClick>local have, tname = uiSchoolGetTeacherSchoolInfo(); if have then uiShowPopmenuPlayer(tname, true) end</OnRClick>
+		  </Scripts>
+        </Label>
+        <Label AlignCol="RIGHT" Inherit="" Location="414,5,90,18" Name="696" Show="true" Text="$L:872$"/>
+        <Label AlignCol="CENTER" ColSpacing="3" Inherit="" LineSpacing="3" Location="686,3,30,20" Name="lbTeachNum" Show="true" Text="">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Label AlignCol="RIGHT" Inherit="" Location="575,5,110,18" Name="739" Show="true" Text="$L:871$"/>
+        <Label AlignCol="CENTER" ColSpacing="4" Inherit="" LineSpacing="3" Location="514,3,60,20" Name="lbTotalReportGrade" Show="true" Text="2311">
+          <BackgroundImage File="tz_010" Source="443,217,60,20"/>
+        </Label>
+        <Label Inherit="bg3" Location="0,27,722,325" Name="11558" Show="true"/>
+        <ListBox BackgroundColor="" Inherit="" Location="4,31,714,317" Name="lstMaster" Show="true"/>
+        <Button Inherit="PushButton" Location="88,357,76,20" Name="btyuding" Show="true" Text="$L:873$"/>
+        <Button Inherit="PushButton" Location="245,357,76,20" Name="bthuibao" Show="true" Text="$L:874$"/>
+        <Button Inherit="PushButton" Location="399,357,76,20" Name="bttuishi" Show="true" Text="$L:875$"/>
+        <Label AlignCol="RIGHT" Inherit="" Location="185,4,40,18" Name="967" Show="true" Text="$L:105$"/>
+        <Label AlignCol="CENTER" ColSpacing="3" Inherit="" LineSpacing="3" Location="226,3,30,20" Name="lbTeacherLev" Show="true">
+          <BackgroundImage File="tz_010" Source="458,193,30,20"/>
+        </Label>
+        <Button Inherit="PushButton" Location="548,357,76,20" Name="btFresh" Show="true" Text="$L:885$"/>
+        <Label AlignCol="RIGHT" Inherit="" Location="260,5,80,18" Name="lbParty" Show="true" Text="$L:209$"/>
+        <Label AlignCol="CENTER" ColSpacing="3" Inherit="" LineSpacing="3" Location="341,3,65,20" Name="lbParty2" Show="true" Text="">
+          <BackgroundImage File="tz_011" Source="0,0,80,20"/>
+        </Label>
+      </Form>
+      <Button Inherit="PushButton" Location="502,54,76,20" Name="btNeedteacher" Show="true" Text="$L:876$"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="320,0,124,66" Name="1268" Show="true" Text="$L:861$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Form Inherit="NoTitleBarForm" Location="20,90,725,376" Name="frmTeachHelp" Show="false">
+        <Label Inherit="bg3" Location="1,1,720,373" Name="10871" Show="true"/>
+        <EditBox AutoScrollV="true" BackgroundColor="" EnableInput="false" Inherit="" Location="5,5,712,365" MultiLine="true" Name="edbTeachHelp" Show="true" Text="$L:1110$" WordWrap="true"/>
+      </Form>
+      <Label Inherit="" Location="12,81,738,6" Name="55563" Show="true">
+        <BackgroundImage File="tz_010" Source="365,397,6,6"/>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

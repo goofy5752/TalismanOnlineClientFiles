@@ -1,0 +1,14 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<UiRichText>
+  <Line>
+	<Items>
+		<Item type="TEXT" text="$L:msg_script_help_xiulian$" color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line>
+	<Items>
+		 <Item type="TEXT" text="$L:msg_script_help_xiulian2$" hlink="String:local:showui_practice?NA=0" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+</UiRichText>
+

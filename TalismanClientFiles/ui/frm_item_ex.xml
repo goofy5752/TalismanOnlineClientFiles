@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmItemEx">
+    <Templates>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="TemplateBtnUserItem" Show="false">
+        <HighlightImage File="tz_010" Source="186,376,48,48"/>
+        <Hint/>
+        <Scripts>
+          <OnLoad>TemplateBtnUserItem_OnLoad(self);</OnLoad>
+          <OnLClick>TemplateBtnUserItem_OnLClick(self);</OnLClick>
+          <OnRClick>TemplateBtnUserItem_OnRClick(self);</OnRClick>
+          <OnHint>TemplateBtnUserItem_OnHint(self);</OnHint>
+          <OnDragIn>TemplateBtnUserItem_OnDragIn(self, drag);</OnDragIn>
+          <OnDragOut>TemplateBtnUserItem_OnDragOut(self);</OnDragOut>
+          <OnDragNull>TemplateBtnUserItem_OnDragNull(self);</OnDragNull>
+          <OnDragEnd>TemplateBtnUserItem_OnDragEnd(self);</OnDragEnd>
+          <OnUpdate Timer="40">TemplateBtnUserItem_OnUpdate(self, delta);</OnUpdate>
+        </Scripts>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="1,1,36,36" MouseEvent="true" MouseMove="true" Name="TemplateBtnUserEquip" Show="true">
+        <HighlightImage Blend="true" File="tz_010" Source="189,378,45,44"/>
+        <Hint/>
+        <Scripts>
+          <OnLoad>TemplateBtnUserEquip_OnLoad(self);</OnLoad>
+          <OnEvent>TemplateBtnUserEquip_OnEvent(self, event, arg);</OnEvent>
+          <OnRClick>TemplateBtnUserEquip_OnRClick(self);</OnRClick>
+          <OnHint>TemplateBtnUserEquip_OnHint(self);</OnHint>
+          <OnDragIn>TemplateBtnUserEquip_OnDragIn(self, drag);</OnDragIn>
+        </Scripts>
+      </Button>
+      <Widget Inherit="TemplateLayerNormal" Location="40,370,216,201" MouseEvent="true" MouseMove="true" Name="TemplateUserItemBag" Pick="true" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="1,1,55,18" Name="lbName" Show="true">
+          <BackgroundImage File="tz_012" Source="368,293,64,20"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="173,1,40,18" MouseEvent="true" MouseMove="true" Name="lbState" Pick="true" Show="true">
+          <Hint/>
+          <Scripts>
+            <OnUpdate Timer="1000">TemplateLimitTimeLabel_OnUpdate(self, delta)</OnUpdate>
+          </Scripts>
+          <BackgroundImage File="tz_012" Source="368,293,64,20"/>
+        </Label>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem0"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem1"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem2"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem3"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem4"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem5"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem6"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem7"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem8"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem9"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem10"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem11"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem12"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem13"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem14"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem15"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem16"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem17"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem18"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem19"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem20"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem21"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem22"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem23"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem24"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem25"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem26"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem27"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem28"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem29"/>
+        <Button Inherit="TemplateBtnUserItem" Name="btItem30"/>
+        <Label BackgroundColor="#6633dd33" Inherit="TemplateLayerFull" Location="0,0,1,1" MouseEvent="true" MouseMove="true" Name="lbLock" Pick="true" Show="false"/>
+        <Scripts>
+          <OnShow/>
+          <OnHide>TemplateUserItemBag_OnHide(self)</OnHide>
+        </Scripts>
+      </Widget>
+    </Templates>
+  </Theme>
+  <Script file="frm_item_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="" Location="102,38,524,610" Name="frmItemEx" Pick="false" Show="false">
+      <Label Inherit="bg1" Location="7,8,280,600" MouseEvent="true" MouseMove="true" Name="858" Pick="true" Show="true" Size=""/>
+      <Label Inherit="TemplateNormalTitle" Location="0,1,294,50" Name="586" Show="true"/>
+      <Label Inherit="" Location="7,35,280,300" Name="12701" Show="true">
+        <Label Inherit="" Location="19,10,40,40" Name="Item_P_1" Show="true">
+          <BackgroundImage File="tz_011" Source="133,28,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,60,40,40" Name="Item_P_2" Show="true">
+          <BackgroundImage File="tz_011" Source="44,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,110,40,40" Name="Item_P_3" Show="true">
+          <BackgroundImage File="tz_011" Source="0,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,160,40,40" Name="Item_P_4" Show="true">
+          <BackgroundImage File="tz_011" Source="88,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="19,210,40,40" Name="Item_P_5" Show="true">
+          <BackgroundImage File="tz_011" Source="44,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="70,254,40,40" Name="Item_P_6" Show="true">
+          <BackgroundImage File="tz_011" Source="178,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="120,254,40,40" Name="Item_P_7" Show="true">
+          <BackgroundImage File="tz_011" Source="133,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="170,254,40,40" Name="Item_P_8" Show="true">
+          <BackgroundImage File="tz_011" Source="88,115,40,39"/>
+        </Label>
+        <Label Inherit="" Location="221,10,40,40" Name="Item_P_9" Show="true">
+          <BackgroundImage File="tz_011" Source="178,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,60,40,40" Name="Item_P_10" Show="true">
+          <BackgroundImage File="tz_011" Source="224,29,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,110,40,40" Name="Item_P_11" Show="true">
+          <BackgroundImage File="tz_011" Source="224,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,160,40,40" Name="Item_P_12" Show="true">
+          <BackgroundImage File="tz_011" Source="133,70,40,40"/>
+        </Label>
+        <Label Inherit="" Location="221,210,40,40" Name="Item_P_13" Show="true">
+          <BackgroundImage File="tz_011" Source="178,29,40,39"/>
+        </Label>
+      </Label>
+      <Label Inherit="" Location="41,352,216,181" Name="475" Show="true">
+        <BackgroundImage File="tz_011" Source="297,0,216,181"/>
+      </Label>
+      <Button Inherit="TemplateBtnUserEquip" Location="30,48,32,32" Name="btPart0"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="30,99,32,32" Name="btPart1"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="30,149,32,32" Name="btPart2"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="30,199,32,32" Name="btPart3"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="30,249,32,32" Name="btPart4"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="81,294,32,32" Name="btPart5"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="131,294,32,32" Name="btPart6"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="181,294,32,32" Name="btPart7"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="232,49,32,32" Name="btPart8"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="232,99,32,32" Name="btPart9"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="232,149,32,32" Name="btPart10"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="232,199,32,32" Name="btPart11"/>
+      <Button Inherit="TemplateBtnUserEquip" Location="232,249,32,32" Name="btPart12"/>
+      <Button DragIn="true" Inherit="" Location="53,546,24,17" Name="btnLock" Show="true" Text="">
+        <Hint Text="$L:182$"/>
+        <BackgroundImage File="tz_012" Source="195,9,24,17"/>
+      </Button>
+      <Button DragIn="true" Inherit="" Location="20,543,24,24" Name="btDelete" Show="true" Text="">
+        <BackgroundImage File="tz_012" Source="237,6,24,24"/>
+        <Hint Text="$L:183$"/>
+        <Scripts>
+          <OnDragIn>layWorld_frmItemEx_btDelete_OnDragIn(self, drag);</OnDragIn>
+        </Scripts>
+      </Button>
+      <TitleBarButton Location="0,0,294,30"/>
+      <CloseButton Location="266,26,13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+      </CloseButton>
+      <Button Inherit="" Location="185,353,13,14" Name="btPreBag" Show="false" Text="">
+        <NormalImage File="tz_010" Source="51,382,12,14"/>
+        <PushedImage File="tz_010" Source="51,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemEx_btPreBag_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" EnableInput="false" Inherit="" Location="203,348,40,21" Name="lbPage" Pick="false" Show="false" Text="$L:187$">
+        <BackgroundImage File="tz_010" Source="458,193,30,21"/>
+      </Label>
+      <Button Inherit="" Location="246,353,13,14" Name="btNextBag" Show="false" Text="">
+        <NormalImage File="tz_010" Source="76,382,12,14"/>
+        <PushedImage File="tz_010" Source="76,399,12,14"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemEx_btNextBag_OnLClick(self);</OnLClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="bg3" Location="80,48,137,235" Name="Background_modelSelf" Pick="false" Show="true"/>
+      <ModelView Inherit="" Location="80,48,137,235" Name="modelSelf" Pick="false" Show="true">
+        <Scripts>
+          <OnLoad>layWorld_frmItemEx_modelSelf_OnLoad(self);</OnLoad>
+          <OnEvent>layWorld_frmItemEx_modelSelf_OnEvent(self, event, arg);</OnEvent>
+        </Scripts>
+      </ModelView>
+      <Button Inherit="" Location="83,258,20,20" Name="btTurnLeft" Show="true">
+        <NormalImage File="tz_011" Source="68,256,32,32"/>
+        <PushedImage File="tz_011" Source="102,256,32,32"/>
+        <Scripts>
+          <OnLDown>local model = SAPI.GetSibling(self, "modelSelf"); model:SetTurnSpeed(0, 0, -0.5); model:StartTurnModel();</OnLDown>
+          <OnLUp>local model = SAPI.GetSibling(self, "modelSelf"); model:StopTurnModel();</OnLUp>
+          <OnLeave>local model = SAPI.GetSibling(self, "modelSelf"); model:StopTurnModel();</OnLeave>
+        </Scripts>
+      </Button>
+      <Button Inherit="" Location="104,258,20,20" Name="btTurnRight" Show="true">
+        <NormalImage File="tz_011" Source="0,256,32,32"/>
+        <PushedImage File="tz_011" Source="34,256,32,32"/>
+        <Scripts>
+          <OnLDown>local model = SAPI.GetSibling(self, "modelSelf"); model:SetTurnSpeed(0, 0, 0.5); model:StartTurnModel();</OnLDown>
+          <OnLUp>local model = SAPI.GetSibling(self, "modelSelf"); model:StopTurnModel();</OnLUp>
+          <OnLeave>local model = SAPI.GetSibling(self, "modelSelf"); model:StopTurnModel();</OnLeave>
+        </Scripts>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="86,0,124,68" Name="1249" Show="true" Text="$L:186$" TextFont="$L:1$" TextSize="$L:3$"/>
+      <Label Inherit="" Location="80,538,220,30" Name="wtLayerSelfMoney" Show="true">
+        <Label Inherit="" Location="8,6,24,22" Name="2490" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="35,6,44,20" Name="lbGoldNum" Show="true" Text="$L:188$">
+          <BackgroundImage File="tz_010" Source="443,217,60,21"/>
+        </Label>
+        <Label Inherit="" Location="83,7,24,22" Name="2522" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="111,6,28,20" Name="lbSilverNum" Show="true" Text="$L:189$">
+          <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+        </Label>
+        <Label Inherit="" Location="141,3,24,26" Name="2554" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="168,6,28,20" Name="lbSopperNum" Show="true" Text="$L:190$">
+          <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+        </Label>
+        <Scripts>
+          <OnLoad>self:RegisterScriptEventNotify("Cre ShowAttrib Changed")</OnLoad>
+          <OnEvent>if event == "Cre ShowAttrib Changed" then layWorld_wtLayerSelfMoney_Refresh(self) end</OnEvent>
+        </Scripts>
+      </Label>
+      <Label Inherit="" Location="19,568,260,30" Name="wtLayerSelfbindMoney" Show="true">
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="70,6,24,22" Name="2490" Show="true">
+          <BackgroundImage File="tz_010" Source="413,488,24,22"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="97,6,44,20" Name="lbBindGoldNum" Show="true" Text="$L:188$">
+          <BackgroundImage File="tz_010" Source="443,217,60,21"/>
+        </Label>
+        <Label Inherit="" Location="144,7,24,22" Name="2522" Show="true">
+          <BackgroundImage File="tz_010" Source="445,488,24,22"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="172,6,28,20" Name="lbBindSilverNum" Show="true" Text="$L:189$">
+          <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+        </Label>
+        <Label Inherit="" Location="202,3,24,26" Name="2554" Show="true">
+          <BackgroundImage File="tz_010" Source="476,485,24,26"/>
+        </Label>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="229,6,28,20" Name="lbBindCopperNum" Show="true" Text="$L:190$">
+          <BackgroundImage File="tz_010" Source="458,193,31,21"/>
+        </Label>
+        <Scripts>
+          <OnLoad>self:RegisterScriptEventNotify("Cre ShowAttrib Changed")</OnLoad>
+          <OnEvent>if event == "Cre ShowAttrib Changed" then layWorld_wtLayerSelfbindMoney_Refresh(self) end</OnEvent>
+        </Scripts>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="0,6,70,20" Name="5184" Show="true" Text="$L:1532$" TextFont="" TextSize=""/>
+      </Label>
+      <Label Inherit="bg1" Location="294,326,230,215" MouseEvent="true" MouseMove="true" Name="lbBagBg2" Pick="true" Show="true"/>
+      <Label Inherit="bg1" Location="294,111,230,215" MouseEvent="true" MouseMove="true" Name="lbBagBg3" Pick="true" Show="true"/>
+      <Label Inherit="" Location="300,352,216,181" MouseEvent="true" MouseMove="true" Name="lbItemBg2" Pick="true" Show="true">
+        <BackgroundImage File="tz_011" Source="297,0,216,181"/>
+      </Label>
+      <Label Inherit="" Location="300,137,216,181" MouseEvent="true" MouseMove="true" Name="lbItemBg3" Pick="true" Show="true">
+        <BackgroundImage File="tz_011" Source="297,0,216,181"/>
+      </Label>
+      <Widget Inherit="TemplateUserItemBag" Location="41,333,216,201" Name="wtBag0" Show="true"/>
+      <Widget Inherit="TemplateUserItemBag" Location="41,333,216,201" Name="wtBag1" Show="false"/>
+      <Widget Inherit="TemplateUserItemBag" Location="300,333,216,201" Name="wtBag2" Show="true" Size="216,201">
+        <Anchors>
+          <Anchor point="CENTERH" relativePoint="CENTERH" relativeTo="lbBagBg2"/>
+          <Anchor point="CENTERV" relativePoint="CENTERV" relativeTo="lbBagBg2"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="TemplateUserItemBag" Location="296,118,216,201" Name="wtBag3" Show="true" Size="216,201">
+        <Anchors>
+          <Anchor point="CENTERH" relativePoint="CENTERH" relativeTo="lbBagBg3"/>
+          <Anchor point="CENTERV" relativePoint="CENTERV" relativeTo="lbBagBg3"/>
+        </Anchors>
+      </Widget>
+      <CheckButton CheckStyle="false" Inherit="" Location="41,334,40,20" Name="btCommon" Show="true" Text="$L:184$">
+        <Border color="#aaaa8822" size="1"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemEx_btCommon_OnLCLick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="82,334,40,20" Name="btTask" Show="true" Text="$L:185$">
+        <Border color="#aaaa8822" size="1"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemEx_btTask_OnLCLick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton CheckStyle="false" Inherit="" Location="206,334,51,20" Name="btExtendBag" Show="true" Text="$L:1533$">
+	    <Hint Text="$L:1535$"/>
+        <Border color="#aaaa8822" size="1"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemEx_btExtendBag_OnLCLick(self);</OnLClick>
+        </Scripts>
+      </CheckButton>
+      <Button Inherit="PushButton" Location="121,334,85,20" Name="btSort" Show="true" Text="$L:1497$" CDTime="10000">
+	    <Hint Text="$L:1534$"/>
+        <Scripts>
+          <OnLClick>layWorld_frmItemEx_btSort_OnLClick(self)</OnLClick>
+          <OnRClick>layWorld_frmItemEx_btSort_OnRClick(self)</OnRClick>
+        </Scripts>
+      </Button>
+      <Hint/>
+      <Scripts>
+        <OnLoad>layWorld_frmItemEx_OnLoad(self)</OnLoad>
+        <OnShow>layWorld_frmItemEx_OnShow(self);</OnShow>
+        <OnEvent>layWorld_frmItemEx_OnEvent(self, event, arg);</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Theme Name="frmTargetEx">
+    <Templates>
+      <Button AlignCol="CENTER" Inherit="" Location="0,0,16,16" Name="TemplateBtnBuf" Show="true">
+        <Hint/>
+        <Scripts>
+          <OnHint>frmTargetEx_TemplateBtnBuf_OnHint(self);</OnHint>
+        </Scripts>
+      </Button>
+    </Templates>
+  </Theme>
+  <Script file="frm_target_ex.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Form Inherit="NoTitleBarForm" Location="461,7,250,95" Name="frmTargetEx" Pick="false" Show="false" Size="198,95">
+      <Button Inherit="" Location="146,14,64,64" Name="btHead" Show="true">
+        <Scripts>
+          <OnLClick>layWorld_frmTargetEx_btHead_OnLClick(self);</OnLClick>
+          <OnRClick>layWorld_frmTargetEx_btHead_OnRClick(self);</OnRClick>
+        </Scripts>
+      </Button>
+      <Label Inherit="" Location="0,10,212,70" Name="lbBackGround" Pick="false" Show="true" Size="211,71">
+        <BackgroundImage Blend="true" File="tz_030" Source="15,100,212,71"/>
+      </Label>
+      <Label Inherit="" Location="0,2,219,79" Name="lbNpcTitleJY" Pick="false" Show="false" Size="198,82">
+        <BackgroundImage File="tz_030" Source="241,6,219,79"/>
+      </Label>
+      <Label Inherit="" Location="0,1,219,79" Name="lbNpcTitleYY" Pick="false" Show="false" Size="198,82">
+        <BackgroundImage File="tz_030" Source="242,93,219,78"/>
+      </Label>
+      <Label Inherit="" Location="4,37,137,8" Name="lbHpBarBg" Show="true">
+        <BackgroundImage File="tz_010" Source="240,383,115,8"/>
+      </Label>
+      <ProgressBar Inherit="" Location="4,37,137,8" Name="pbHP1" Show="true">
+        <ProgressBarImage File="tz_012" Source="380,443,116,8"/>
+      </ProgressBar>
+      <ProgressBar Inherit="" Location="4,37,137,8" Name="pbHP2" Show="true">
+        <ProgressBarImage File="tz_012" Source="380,456,116,8"/>
+      </ProgressBar>
+      <ProgressBar Inherit="" Location="4,37,137,8" Name="pbHP3" Show="true">
+        <ProgressBarImage File="tz_012" Source="380,430,116,8"/>
+      </ProgressBar>
+      <ProgressBar Inherit="" Location="4,37,137,8" Name="pbHP4" Show="true">
+        <ProgressBarImage File="tz_012" Source="380,417,116,8"/>
+      </ProgressBar>
+      <ProgressBar Inherit="" Location="4,38,137,8" Name="pbHP5" Show="true">
+        <ProgressBarImage File="tz_012" Source="381,406,115,7"/>
+      </ProgressBar>
+      <Label Inherit="" Location="4,48,137,8" Name="lbMPBarBg" Show="true">
+        <BackgroundImage File="tz_010" Source="240,394,115,8"/>
+      </Label>
+      <ProgressBar Inherit="" Location="4,49,137,8" Name="pbMP" Show="fals">
+        <ProgressBarImage File="tz_010" Source="380,394,116,8"/>
+      </ProgressBar>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="3,16,140,22" Name="lbName" Show="true" Text="$L:241$" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="190,62,20,20" Name="lbTargetLev" Show="true" Text="$L:242$"/>
+      <ProgressBar Inherit="" Location="3,48,137,9" Name="pbSP" Show="true">
+        <ProgressBarImage File="tz_010" Source="104,426,229,11"/>
+      </ProgressBar>
+      <Label Inherit="" Location="11,59,130,36" MouseEvent="true" MouseMove="true" Name="lbBuff" Show="true">
+        <Button Inherit="TemplateBtnBuf" Location="0,0,16,16" Name="btBuff1"/>
+        <Button Inherit="TemplateBtnBuf" Location="16,0,16,16" Name="btBuff2"/>
+        <Button Inherit="TemplateBtnBuf" Location="32,0,16,16" Name="btBuff3"/>
+        <Button Inherit="TemplateBtnBuf" Location="48,0,16,16" Name="btBuff4"/>
+        <Button Inherit="TemplateBtnBuf" Location="64,0,16,16" Name="btBuff5"/>
+        <Button Inherit="TemplateBtnBuf" Location="80,0,16,16" Name="btBuff6"/>
+        <Button Inherit="TemplateBtnBuf" Location="96,0,16,16" Name="btBuff7"/>
+        <Button Inherit="TemplateBtnBuf" Location="112,0,16,16" Name="btBuff8"/>
+        <Button Inherit="TemplateBtnBuf" Location="0,16,16,16" Name="btBuff9"/>
+        <Button Inherit="TemplateBtnBuf" Location="16,16,16,16" Name="btBuff10"/>
+        <Button Inherit="TemplateBtnBuf" Location="32,16,16,16" Name="btBuff11"/>
+        <Button Inherit="TemplateBtnBuf" Location="48,16,16,16" Name="btBuff12"/>
+        <Button Inherit="TemplateBtnBuf" Location="64,16,16,16" Name="btBuff13"/>
+      </Label>
+      <Scripts>
+        <OnLoad>layWorld_frmTargetEx_OnLoad(self);</OnLoad>
+        <OnEvent>layWorld_frmTargetEx_OnEvent(self, event, arg);</OnEvent>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

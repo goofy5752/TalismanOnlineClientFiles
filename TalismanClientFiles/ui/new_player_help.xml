@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Script file="new_player_help.lua">Script</Script>
+  <Layer Name="layWorld" Show="true">
+    <Label BackgroundColor="" Inherit="TemplateLayerFull" Location="10,10,70,18" MouseEvent="true" MouseMove="true" Name="lbFirstPlayShow" Pick="true" Show="false">
+      <Label Inherit="bg1" Location="364,160,290,290" Name="3769" Show="true"/>
+      <Label Inherit="bg3" Location="391,226,240,150" Name="EditBg" Show="true"/>
+      <EditBox ColSpacing="10" EnableInput="false" Inherit="" LineSpacing="10" Location="396,231,230,140" MultiLine="true" Name="814" Show="true" Text="$L:1598$" WordWrap="true"/>
+      <Button Inherit="PushButtonLong" Location="399,403,100,20" Name="btOpenUserHelp" Show="true" Text="$L:1596$">
+        <Scripts>
+          <OnLClick>layWorld_lbFirstPlayShow_btOpenUserHelp_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButtonLong" Location="523,403,100,20" Name="btCloseUserHelp" Show="true" Text="$L:1597$">
+        <Scripts>
+          <OnLClick>layWorld_lbFirstPlayShow_btCloseUserHelp_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnLoad>self:RegisterScriptEventNotify("EV_FirstEnterWorld");</OnLoad>
+        <OnEvent>self:ShowModal()</OnEvent>
+		<OnShow>
+			local SysPtr = uiUserHelpGetSystemPtr();
+			if SysPtr:IsSystemClosed() then
+				self:Hide();
+				return;
+			end
+		</OnShow>
+      </Scripts>
+      <Label Inherit="TemplateNormalTitle" Location="355,154,308,54" Name="3740" Show="true"/>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="454,158,110,60" Name="lbFirstPlayGuildTitle" Show="true" Text="$L:1591$"/>
+    </Label>
+    <Label BackgroundColor="" Inherit="TemplateLayerFull" Location="10,10,70,18" Name="lbHelp" Show="true">
+      <HintWidget Inherit="bg4" Location="10,50,30,30" Name="Kuang1" Show="false"/>
+      <HintWidget Inherit="bg5" Location="81,10,30,30" Name="Hint1" Show="false" TextColor="#FFFFFF00"/>
+      <HintWidget Inherit="bg4" Location="10,50,30,30" Name="Kuang2" Show="false"/>
+      <HintWidget Inherit="bg5" Location="81,10,30,30" Name="Hint2" Show="false" TextColor="#FFFFFF00"/>
+      <HintWidget Inherit="bg4" Location="10,50,30,30" Name="Kuang3" Show="false"/>
+      <HintWidget Inherit="bg5" Location="81,10,30,30" Name="Hint3" Show="false" TextColor="#FFFFFF00"/>
+      <HintWidget Inherit="bg4" Location="10,50,30,30" Name="Kuang4" Show="false"/>
+      <HintWidget Inherit="bg5" Location="81,10,30,30" Name="Hint4" Show="false" TextColor="#FFFFFF00"/>
+      <HintWidget Inherit="bg4" Location="10,50,30,30" Name="Kuang5" Show="false"/>
+      <HintWidget Inherit="bg5" Location="81,10,30,30" Name="Hint5" Show="false" TextColor="#FFFFFF00"/>
+      <Label ClipChildren="false" HandleMove="false" Inherit="" Location="1014,809,160,42" MouseEvent="true" MouseMove="true" Name="bgButton" Pick="true" Show="true" Size="160,42">
+        <Anchors>
+          <Anchor offset="0,114" point="TOP"/>
+          <Anchor offset="-222,0" point="RIGHT"/>
+        </Anchors>
+        <BackgroundImage NoneFile="true">
+          <BorderLayout BorderWidth="23,0,23,11">
+            <Object Position="l">
+              <Image File="tq_20" FillMode="" Source="108,3,23,31"/>
+            </Object>
+            <Object Position="r">
+              <Image File="tq_20" FillMode="" Source="112,40,23,31"/>
+            </Object>
+            <Object Position="lb">
+              <Image File="" FillMode="" Source="105,79,90,11"/>
+            </Object>
+            <Object Position="rb">
+              <Image File="" FillMode="" Source="105,79,90,11"/>
+            </Object>
+            <Object Position="b">
+              <Image File="tq_20" FillMode="" RenderOffset="5,-4,-5,-4" Source="105,79,90,11"/>
+            </Object>
+            <Object>
+              <Image File="tq_32" FillMode="" Source="0,0,32,31"/>
+            </Object>
+          </BorderLayout>
+        </BackgroundImage>
+        <Form Inherit="NoTitleBarForm" Location="-9,-118,180,120" MaxSize="0,600" MinSize="0,120" MouseEvent="true" MouseMove="true" Name="frmBackground" Pick="true" Show="true" Size="0,120">
+          <Label Inherit="bg3" Name="lbBackground" Pick="false" Show="true" Size="0,0">
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor offset="0,5" point="TOP"/>
+              <Anchor point="RIGHT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+          </Label>
+          <Button BackgroundColor="" Inherit="bg3" Location="0,0,180,6" Name="btResizeV" Show="true">
+            <Hint Text="$L:1603$"/>
+            <Scripts>
+              <OnLDown>layWorld_lbHelp_frmBackground_btResizeV_OnLDown(self, mouse_x, mouse_y)</OnLDown>
+              <OnMouseMove>layWorld_lbHelp_frmBackground_btResizeV_OnMouseMove(self, mouse_x, mouse_y, delta_x, delta_y)</OnMouseMove>
+            </Scripts>
+          </Button>
+          <Scripts>
+            <OnLDown>layWorld_lbHelp_frmBackground_OnLDown(self, mouse_x, mouse_y)</OnLDown>
+            <OnMouseMove>layWorld_lbHelp_frmBackground_OnMouseMove(self, mouse_x, mouse_y, delta_x, delta_y)</OnMouseMove>
+          </Scripts>
+        </Form>
+        <Label Inherit="" Location="0,0,160,20" Name="1130" Show="true">
+          <BackgroundImage File="tz_013" Source="256,126,145,24"/>
+        </Label>
+        <Button Inherit="PushButton" Location="21,1,60,20" Name="btSkip" Text="$L:1599$">
+          <Hint Text="$L:1601$"/>
+          <Flicker Cycle="2" Show="true">
+            <Image File="tq_21" Source="150,257,60,20"/>
+          </Flicker>
+          <Scripts>
+            <OnLClick>NewPlayerAPI:Skip()</OnLClick>
+          </Scripts>
+        </Button>
+        <Button Inherit="PushButton" Location="80,1,60,20" Name="btClose" Text="$L:1600$">
+          <Hint Text="$L:1602$"/>
+          <Flicker Cycle="2" Show="true">
+            <Image File="tq_21" Source="150,257,60,20"/>
+          </Flicker>
+          <Scripts>
+            <OnLClick>NewPlayerAPI:Close()</OnLClick>
+          </Scripts>
+        </Button>
+        <EditBox AutoScrollV="true" ColSpacing="5" EnableInput="false" Inherit="" LineSpacing="5" Location="-6,-112,170,109" MultiLine="true" Name="ebStepDesc" Pick="false" Show="true" Size="" Text="" WordWrap="true">
+          <Scripts>
+            <OnUpdate Timer="1">layWorld_lbHelp_bgButton_ebStepDesc_OnUpdate(self, delta)</OnUpdate>
+          </Scripts>
+          <Anchors>
+            <Anchor offset="3,0" point="LEFT" relativePoint="LEFT" relativeTo="frmBackground"/>
+            <Anchor offset="0,8" point="TOP" relativePoint="TOP" relativeTo="frmBackground"/>
+            <Anchor offset="-3,0" point="RIGHT" relativePoint="RIGHT" relativeTo="frmBackground"/>
+            <Anchor offset="0,-3" point="BOTTOM" relativePoint="BOTTOM" relativeTo="frmBackground"/>
+          </Anchors>
+        </EditBox>
+      </Label>
+      <Scripts>
+        <OnLoad>layWorld_lbHelp_OnLoad(self)</OnLoad>
+        <OnEvent>layWorld_lbHelp_OnEvent(self, event, arg)</OnEvent>
+        <OnUpdate Timer="1">layWorld_lbHelp_OnUpdate(self, delta)</OnUpdate>
+      </Scripts>
+    </Label>
+    <Form BackgroundColor="#A0000000" Inherit="TitleBarForm" Location="10,10,300,500" Name="frmHelpTest" Show="false">
+      <ListBox Inherit="" Location="10,10,280,380" Name="lsCaptureList" Show="true">
+        <ColumnButton AlignCol="CENTER" Size="" Text="Id" Width="10"/>
+        <ColumnButton AlignCol="LEFT" Size="" Text="Tit" Width="160"/>
+        <ColumnButton AlignCol="CENTER" Size="" Text="Sta" Width="40"/>
+        <ColumnButton AlignCol="CENTER" Text="$L:1475$" Width="30"/>
+        <ColumnButton AlignCol="CENTER" Text="$L:1476$" Width="30"/>
+      </ListBox>
+      <Button Inherit="PushButton" Location="10,426,60,24" Name="btActive" Show="true" Text="$L:1473$">
+        <Scripts>
+          <OnLClick>layWorld_frmHelpTest_btActive_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="90,426,60,24" Name="btSkip" Show="true" Text="$L:1477$">
+        <Scripts>
+          <OnLClick>layWorld_frmHelpTest_btSkip_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Button Inherit="PushButton" Location="170,426,60,24" Name="btRefresh" Show="true" Text="Refresh">
+        <Scripts>
+          <OnLClick>layWorld_frmHelpTest_btRefresh_OnLClick(self)</OnLClick>
+        </Scripts>
+      </Button>
+      <Scripts>
+        <OnShow>layWorld_frmHelpTest_OnShow(self)</OnShow>
+        <OnUpdate>layWorld_frmHelpTest_OnUpdate(self, delta)</OnUpdate>
+      </Scripts>
+    </Form>
+  </Layer>
+</Ui>

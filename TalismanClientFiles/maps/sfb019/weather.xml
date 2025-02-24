@@ -1,0 +1,16 @@
+<?xml  version="1.0" encoding="gb2312"?>
+<weather GroupCnt="0x4">
+   <group colors="true" desc="" env="0xFF808080" envo="0xFF2D2D2D" fog="0xFFD2FFFF" forfar="3000.000" fornear="1500.000" name="西极教前半" range="100.000" sun="0xFF262626" suno="0xFF4C4C4C">
+      <area bottom="2152.386" left="10924.559" right="15019.323" top="-384.219"/>
+   </group>
+   <group colors="true" desc="" env="0xFF111111" envo="0xFF232323" fog="0xFF4C4C4C" forfar="3000.000" fornear="300.000" name="密室" range="100.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="2812.091" left="13688.656" right="14474.417" top="2012.855"/>
+   </group>
+   <group colors="true" desc="" env="0xFF000000" envo="0xFF191919" fog="0xFFC49982" forfar="2500.000" fornear="300.000" name="废墟" range="100.000" sun="0xFF000000" suno="0xFF804000">
+      <area bottom="7215.833" left="15462.650" right="17555.314" top="2045.360"/>
+   </group>
+   <group colors="true" desc="" env="0xFF333333" envo="0xFF4C4C4C" fog="0xFF322242" forfar="2000.000" fornear="500.000" name="空楼" range="300.000" sun="0xFF4C4C4C" suno="0xFF4C4C4C">
+      <area bottom="8033.109" left="10610.414" right="13938.584" top="2460.302"/>
+      <area bottom="8049.353" left="12780.114" right="14868.524" top="2995.531"/>
+   </group>
+</weather>

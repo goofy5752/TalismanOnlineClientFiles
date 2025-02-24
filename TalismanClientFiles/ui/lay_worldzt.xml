@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layNeWorld" Show="true">
+    <Form ClipChildren="false" Inherit="NoTitleBarForm" Location="0,0,256,93" Name="frmMainChar" Pick="false" Show="true" Size="256,145">
+      <Button Inherit="" Location="18,25,64,64" Name="btCharHead" Show="false"/>
+      <Label Inherit="" Location="0,0,207,104" Name="lbBackGround" Show="true" Size="207,86">
+        <BackgroundImage Blend="true" File="1_1" Source="0,0,207,104"/>
+      </Label>
+      <Label Inherit="" Location="163,11,116,8" Name="lbHpBarBg" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="84,55,102,6" Name="pbCharHP" Show="true">
+        <ProgressBarImage File="" Source=""/>
+      </ProgressBar>
+      <Label Inherit="" Location="112,36,116,8" Name="lbMPBarBg" Show="false">
+        <BackgroundImage File="1_2" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="85,62,102,6" Name="pbCharMP" Show="true">
+        <ProgressBarImage File="1_2" Source=""/>
+      </ProgressBar>
+      <Label AlignCol="CENTER" Inherit="" Location="86,21,132,20" Name="lbName" Show="false" Text="$L:217$" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="20,70,20,20" Name="lbCharLev" Show="false" Text="$L:218$"/>
+      <Label Inherit="" Location="95,64,142,16" Name="lbComboTitle" Show="false">
+        <Label AlignCol="CENTER" Inherit="" Location="5,3,10,10" Name="lbPoint1" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="19,3,10,10" Name="lbPoint2" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="33,0,13,15" Name="lbPoint3" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="51,3,10,10" Name="lbPoint4" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="65,3,10,10" Name="lbPoint5" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="79,0,13,15" Name="lbPoint6" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="97,3,10,10" Name="lbPoint7" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="112,3,10,10" Name="lbPoint8" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="127,0,13,15" Name="lbPoint9" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+      </Label>
+      <Label Inherit="" Location="98,64,116,18" Name="lbSavePoint" Show="false">
+        <Label AlignCol="CENTER" Inherit="" Location="0,0,14,14" Name="lbPoint1" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="16,0,14,14" Name="lbPoint2" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="32,0,14,14" Name="lbPoint3" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="48,0,14,14" Name="lbPoint4" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label AlignCol="CENTER" Inherit="" Location="64,0,14,14" Name="lbPoint5" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+      </Label>
+      <Label AlignCol="CENTER" Inherit="" Location="61,4,31,14" Name="lbLeader" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="90,53,114,9" Name="prgFoMeng" Show="false">
+        <ProgressBarImage File="" Source=""/>
+      </ProgressBar>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="43,86,166,56" Name="frmPet" Show="true" Size="121,60">
+      <Button Inherit="" Location="17,15,32,32" Name="btPetHead" Show="false"/>
+      <Label Inherit="" Location="0,0,126,56" Name="lbBackGround" Show="true" Size="121,51">
+        <BackgroundImage Blend="true" File="1_1" Source="0,208,106,46"/>
+      </Label>
+      <Label Inherit="" Location="55,20,68,5" Name="lbHpBarBg" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="47,26,66,3" Name="pbPetHP" Show="true">
+        <ProgressBarImage File="1_2" Source="0,199,53,3"/>
+      </ProgressBar>
+      <Label Inherit="" Location="55,28,68,5" Name="lbMPBarBg" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="47,31,66,3" Name="pbPetMP" Show="true">
+        <ProgressBarImage File="1_2" Source="0,212,53,3"/>
+      </ProgressBar>
+      <Label Inherit="" Location="52,0,102,15" Name="lbName" Show="true" Text=""/>
+      <Label AlignCol="CENTER" Inherit="" Location="7,36,20,20" Name="lbPetLev" Show="false" Text="$L:219$"/>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="1,166,220,280" Move="true" Name="frmTeam" Pick="false" Show="true" Size="300,225">
+      <Form Inherit="NoTitleBarForm" Location="0,0,156,66" Name="frmMember0" Show="true" Size="126,56">
+        <Button Inherit="" Location="7,14,32,32" Name="btHead" Show="false"/>
+        <Label Inherit="" Location="0,0,126,56" Name="lbBackGround" Show="true" Size="126,56">
+          <BackgroundImage Blend="true" File="1_1" Source="0,208,106,46"/>
+        </Label>
+        <Label Inherit="" Location="56,20,68,5" Name="lbHpBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="55,28,68,5" Name="lbMPBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="43,10,102,15" Name="lbName" Show="true"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-3,35,20,20" Name="lbLev" Show="false" Text="$L:220$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbLeader" Show="false" Text="$L:221$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbLeader" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="50,34,130,16" Name="lbByfuTitle" Show="false">
+          <Label AlignCol="CENTER" Inherit="" Location="0,0,16,16" Name="lbByfu1" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,0,16,16" Name="lbByfu2" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,0,16,16" Name="lbByfu3" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,0,16,16" Name="lbByfu4" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,0,16,16" Name="lbByfu5" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,0,16,16" Name="lbByfu6" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,0,16,16" Name="lbByfu7" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,0,16,16" Name="lbByfu8" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="0,16,16,16" Name="lbByfu9" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,16,16,16" Name="lbByfu10" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,16,16,16" Name="lbByfu11" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,16,16,16" Name="lbByfu12" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,16,16,16" Name="lbByfu13" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,16,16,16" Name="lbByfu14" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,16,16,16" Name="lbByfu15" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,16,16,16" Name="lbByfu16" Show="true"/>
+        </Label>
+        <ProgressBar Inherit="" Location="56,28,68,5" Name="prgFm" Show="false">
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,26,66,3" Name="pbHP" Show="true">
+          <ProgressBarImage File="1_2" Source="0,199,53,3"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,31,66,3" Name="pbMP" Show="true">
+          <ProgressBarImage File="1_2" Source="0,212,53,3"/>
+        </ProgressBar>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbh0" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="0,70,156,66" Name="frmMember1" Show="true" Size="126,56">
+        <Button Inherit="" Location="7,14,32,32" Name="btHead" Show="false"/>
+        <Label Inherit="" Location="0,0,126,56" Name="lbBackGround" Show="true" Size="126,56">
+          <BackgroundImage Blend="true" File="1_1" Source="0,208,106,46"/>
+        </Label>
+        <Label Inherit="" Location="56,20,68,5" Name="lbHpBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="55,28,68,5" Name="lbMPBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="44,11,102,15" Name="lbName" Show="true"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-3,35,20,20" Name="lbLev" Show="false" Text="$L:220$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbLeader" Show="false" Text="$L:221$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbh1" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="50,34,130,16" Name="lbByfuTitle" Show="false">
+          <Label AlignCol="CENTER" Inherit="" Location="0,0,16,16" Name="lbByfu1" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,0,16,16" Name="lbByfu2" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,0,16,16" Name="lbByfu3" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,0,16,16" Name="lbByfu4" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,0,16,16" Name="lbByfu5" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,0,16,16" Name="lbByfu6" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,0,16,16" Name="lbByfu7" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,0,16,16" Name="lbByfu8" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="0,16,16,16" Name="lbByfu9" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,16,16,16" Name="lbByfu10" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,16,16,16" Name="lbByfu11" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,16,16,16" Name="lbByfu12" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,16,16,16" Name="lbByfu13" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,16,16,16" Name="lbByfu14" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,16,16,16" Name="lbByfu15" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,16,16,16" Name="lbByfu16" Show="true"/>
+        </Label>
+        <ProgressBar Inherit="" Location="56,28,68,5" Name="prgFm1" Show="false">
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,26,66,3" Name="pbHP1" Show="true">
+          <ProgressBarImage File="1_2" Source="0,199,53,3"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,31,66,3" Name="pbMP1" Show="true">
+          <ProgressBarImage File="1_2" Source="0,212,53,3"/>
+        </ProgressBar>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="0,141,156,66" Name="frmMember2" Show="true" Size="126,56">
+        <Button Inherit="" Location="7,14,32,32" Name="btHead" Show="false"/>
+        <Label Inherit="" Location="0,0,126,56" Name="lbBackGround" Show="true" Size="126,56">
+          <BackgroundImage Blend="true" File="1_1" Source="0,208,106,46"/>
+        </Label>
+        <Label Inherit="" Location="56,20,68,5" Name="lbHpBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="55,28,68,5" Name="lbMPBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="44,11,102,15" Name="lbName" Show="true"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-3,35,20,20" Name="lbLev" Show="false" Text="$L:220$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbLeader" Show="false" Text="$L:221$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbh2" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="50,34,130,16" Name="lbByfuTitle" Show="false">
+          <Label AlignCol="CENTER" Inherit="" Location="0,0,16,16" Name="lbByfu1" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,0,16,16" Name="lbByfu2" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,0,16,16" Name="lbByfu3" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,0,16,16" Name="lbByfu4" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,0,16,16" Name="lbByfu5" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,0,16,16" Name="lbByfu6" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,0,16,16" Name="lbByfu7" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,0,16,16" Name="lbByfu8" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="0,16,16,16" Name="lbByfu9" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,16,16,16" Name="lbByfu10" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,16,16,16" Name="lbByfu11" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,16,16,16" Name="lbByfu12" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,16,16,16" Name="lbByfu13" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,16,16,16" Name="lbByfu14" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,16,16,16" Name="lbByfu15" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,16,16,16" Name="lbByfu16" Show="true"/>
+        </Label>
+        <ProgressBar Inherit="" Location="56,28,68,5" Name="prgFm2" Show="false">
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,26,66,3" Name="pbHP2" Show="true">
+          <ProgressBarImage File="1_2" Source="0,199,53,3"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,31,66,3" Name="pbMP2" Show="true">
+          <ProgressBarImage File="1_2" Source="0,212,53,3"/>
+        </ProgressBar>
+      </Form>
+      <Form Inherit="NoTitleBarForm" Location="0,212,156,66" Name="frmMember3" Show="true" Size="126,56">
+        <Button Inherit="" Location="7,14,32,32" Name="btHead" Show="false"/>
+        <Label Inherit="" Location="0,0,126,56" Name="lbBackGround" Show="true" Size="126,56">
+          <BackgroundImage Blend="true" File="1_1" Source="0,208,106,46"/>
+        </Label>
+        <Label Inherit="" Location="56,20,68,5" Name="lbHpBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="55,28,68,5" Name="lbMPBarBg" Show="false">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="47,12,102,15" Name="lbName" Show="true"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-3,35,20,20" Name="lbLev" Show="false" Text="$L:220$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbLeader" Show="false" Text="$L:221$"/>
+        <Label AlignCol="CENTER" Inherit="" Location="-1,-2,31,14" Name="lbh3" Show="true">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+        <Label Inherit="" Location="50,34,130,16" Name="lbByfuTitle" Show="false">
+          <Label AlignCol="CENTER" Inherit="" Location="0,0,16,16" Name="lbByfu1" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,0,16,16" Name="lbByfu2" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,0,16,16" Name="lbByfu3" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,0,16,16" Name="lbByfu4" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,0,16,16" Name="lbByfu5" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,0,16,16" Name="lbByfu6" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,0,16,16" Name="lbByfu7" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,0,16,16" Name="lbByfu8" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="0,16,16,16" Name="lbByfu9" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="16,16,16,16" Name="lbByfu10" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="32,16,16,16" Name="lbByfu11" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="48,16,16,16" Name="lbByfu12" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="64,16,16,16" Name="lbByfu13" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="80,16,16,16" Name="lbByfu14" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="96,16,16,16" Name="lbByfu15" Show="true"/>
+          <Label AlignCol="CENTER" Inherit="" Location="112,16,16,16" Name="lbByfu16" Show="true"/>
+        </Label>
+        <ProgressBar Inherit="" Location="56,28,68,5" Name="prgFm3" Show="false">
+          <ProgressBarImage File="" Source=""/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,26,66,3" Name="pbHP3" Show="true">
+          <ProgressBarImage File="1_2" Source="0,199,53,3"/>
+        </ProgressBar>
+        <ProgressBar Inherit="" Location="47,31,66,3" Name="pbMP3" Show="true">
+          <ProgressBarImage File="1_2" Source="0,212,53,3"/>
+        </ProgressBar>
+      </Form>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="577,0,220,26" Name="frmMap" Show="false" Size="220,28">
+      <Label Inherit="" Location="0,0,220,26" Name="lbMapBgTop" Show="fals">
+        <BackgroundImage Blend="true" File="" Source=""/>
+      </Label>
+      <CheckButton Inherit="" Location="172,5,18,16" Name="cbMiniMap" Show="true" Sound="channel.wav">
+        <CheckedImage Blend="true" File="" Source=""/>
+        <NormalImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:229$"/>
+      </CheckButton>
+      <Button Inherit="" Location="199,4,18,18" Name="btWorldMap" Show="true" Sound="bt1.wav">
+        <HighlightImage Blend="true" File="" Source="179,233,22,22"/>
+        <CheckedImage Blend="true" File="" Source=""/>
+        <NormalImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:230$"/>
+      </Button>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="4,4,164,18" Name="lbUserPos" Show="true" Text="$L:231$" TextColor="#ffffff00"/>
+      <Anchors>
+        <Anchor point="RIGHT"/>
+      </Anchors>
+    </Form>
+    <Form Active="false" Inherit="NoTitleBarForm" Location="1117,43,157,149" Name="frmMiniMap" Pick="false" Show="true" Size="157,149">
+      <Label Inherit="" Location="9,3,130,130" MouseEvent="true" MouseMove="true" Name="lbMapBg" Show="false"/>
+      <Label Inherit="" Location="0,0,157,149" MouseEvent="false" Name="lbMapFrameBg" Pick="false" Show="true">
+        <BackgroundImage Blend="true" File="1_2" Source="0,0,157,149"/>
+      </Label>
+      <Button Inherit="" Location="161,53,28,28" Name="btZoomOut" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <HighlightImage Blend="true" File="" Source="125,208,20,20"/>
+        <PushedImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:232$"/>
+      </Button>
+      <Button Inherit="" Location="154,90,28,28" Name="btZoomIn" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <HighlightImage Blend="true" File="" Source="205,208,20,20"/>
+        <PushedImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:233$"/>
+      </Button>
+      <Button Inherit="" Location="152,21,28,28" Name="btReview" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <HighlightImage Blend="true" File="" Source="125,208,20,20"/>
+        <PushedImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:234$"/>
+      </Button>
+      <Anchors>
+        <Anchor point="RIGHT" relativeTo="frmMap"/>
+        <Anchor offset="0,-22" point="TOP" relativePoint="BOTTOM" relativeTo="frmMap"/>
+      </Anchors>
+      <Button Inherit="" Location="64,121,28,28" Name="btItemShop" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <HighlightImage Blend="true" File="" Source="125,208,20,20"/>
+        <PushedImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:639$"/>
+      </Button>
+      <Button Inherit="" Location="107,120,28,28" Name="btLevUpGuide" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <HighlightImage Blend="true" File="" Source="125,208,20,20"/>
+        <PushedImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:835$"/>
+        <Flicker Cycle="2" Show="true">
+          <Image File="" Source=""/>
+        </Flicker>
+      </Button>
+      <Button Inherit="" Location="1,43,28,28" Name="btmail" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:834$"/>
+      </Button>
+      <Button Inherit="" Location="5,77,28,28" Name="btTop100" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <HighlightImage Blend="true" File="" Source="205,208,20,20"/>
+        <PushedImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:854$"/>
+      </Button>
+      <Button Inherit="" Location="25,105,28,28" Name="btTeachneed" Show="false" Sound="MapZoom.wav">
+        <NormalImage Blend="true" File="" Source=""/>
+        <HighlightImage Blend="true" File="" Source="205,208,20,20"/>
+        <PushedImage Blend="true" File="" Source=""/>
+        <Hint Text="$L:879$"/>
+      </Button>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="391,312,92,72" Name="frmPickMode" Show="false">
+      <Widget Inherit="" Location="0,0,92,72" Name="wgtHint" Show="true">
+        <Widgets>
+          <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor point="TOP"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="RIGHT"/>
+              <Anchor point="TOP"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="RIGHT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT" relativeTo="lt"/>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+              <Anchor point="RIGHT" relativeTo="lt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT" relativeTo="rt"/>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+              <Anchor point="RIGHT" relativeTo="rt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="TOP" relativeTo="lt"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+              <Anchor point="BOTTOM" relativeTo="lt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="TOP" relativeTo="lb"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+              <Anchor point="BOTTOM" relativeTo="lb"/>
+            </Anchors>
+          </Widget>
+          <Widget BackgroundColor="#e2121212" Inherit="" Location="100,100,200,200" Name="center" Show="true">
+            <Anchors>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+            </Anchors>
+          </Widget>
+        </Widgets>
+      </Widget>
+      <CheckButton CheckStyle="true" Location="6,6,80,20" Name="ckbFreeMode" Show="true" Text="$L:235$">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+      <CheckButton BackgroundColor="#80000000" CheckStyle="true" Location="6,26,80,20" Name="ckbRandomMode" Show="true" Text="$L:236$">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+      <CheckButton BackgroundColor="#80000000" CheckStyle="true" Location="6,44,80,20" Name="ckbCaptainMode" Show="true" Text="$L:237$">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="494,312,92,72" Name="frmPickLevel" Show="false">
+      <Widget Inherit="" Location="0,0,92,72" Name="wgtHint" Show="true">
+        <Widgets>
+          <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor point="TOP"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="RIGHT"/>
+              <Anchor point="TOP"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="RIGHT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT" relativeTo="lt"/>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+              <Anchor point="RIGHT" relativeTo="lt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT" relativeTo="rt"/>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+              <Anchor point="RIGHT" relativeTo="rt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="TOP" relativeTo="lt"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+              <Anchor point="BOTTOM" relativeTo="lt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="TOP" relativeTo="lb"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+              <Anchor point="BOTTOM" relativeTo="lb"/>
+            </Anchors>
+          </Widget>
+          <Widget BackgroundColor="#e2121212" Inherit="" Location="100,100,200,200" Name="center" Show="true">
+            <Anchors>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+            </Anchors>
+          </Widget>
+        </Widgets>
+      </Widget>
+      <CheckButton CheckStyle="true" Inherit="" Location="6,6,80,20" Name="ckbGreenLevel" Show="true" Text="$L:238$" TextColor="#ff28d20b">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+      <CheckButton BackgroundColor="#80000000" CheckStyle="true" Inherit="" Location="5,25,80,20" Name="ckbBlueLevel" Show="true" Text="$L:239$" TextColor="#ff6c82d1">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+      <CheckButton BackgroundColor="#80000000" CheckStyle="true" Inherit="" Location="5,43,80,20" Name="ckbGoldLevel" Show="true" Text="$L:240$" TextColor="#ffc7a135">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="488,190,458,120" Name="frByFuTitle" Show="false" Size="478,120">
+      <Button Inherit="" Location="219,53,32,32" Name="834" Show="true"/>
+      <Button Inherit="" Location="256,53,32,32" Name="836" Show="true"/>
+      <Button Inherit="" Location="293,53,32,32" Name="1040" Show="true"/>
+      <Button Inherit="" Location="330,53,32,32" Name="1247" Show="true"/>
+      <Button Inherit="" Location="367,53,32,32" Name="1453" Show="true"/>
+      <Button Inherit="" Location="404,53,32,32" Name="1661" Show="true"/>
+      <Button Inherit="" Location="442,53,32,32" Name="1865" Show="true"/>
+      <Button Inherit="" Location="256,0,32,32" Name="2256" Show="true"/>
+      <Button Inherit="" Location="293,0,32,32" Name="2478" Show="true"/>
+      <Button Inherit="" Location="330,0,32,32" Name="2685" Show="true"/>
+      <Button Inherit="" Location="367,0,32,32" Name="2953" Show="true"/>
+      <Button Inherit="" Location="404,0,32,32" Name="3162" Show="true"/>
+      <Button Inherit="" Location="442,0,32,32" Name="3456" Show="true"/>
+      <Button Inherit="" Location="218,87,36,18" Name="3845" Show="true"/>
+      <Button Inherit="" Location="255,87,36,18" Name="3874" Show="true"/>
+      <Button Inherit="" Location="292,87,36,18" Name="4102" Show="true"/>
+      <Button Inherit="" Location="329,87,36,18" Name="4316" Show="true"/>
+      <Button Inherit="" Location="366,87,36,18" Name="4531" Show="true"/>
+      <Button Inherit="" Location="403,87,36,18" Name="4765" Show="true"/>
+      <Button Inherit="" Location="441,87,36,18" Name="4982" Show="true"/>
+      <Button Inherit="" Location="255,34,36,18" Name="5220" Show="true"/>
+      <Button Inherit="" Location="292,34,36,18" Name="5460" Show="true"/>
+      <Button Inherit="" Location="329,34,36,18" Name="5702" Show="true"/>
+      <Button Inherit="" Location="366,34,36,18" Name="5946" Show="true"/>
+      <Button Inherit="" Location="403,34,36,18" Name="6192" Show="true"/>
+      <Button Inherit="" Location="441,34,36,18" Name="6440" Show="true"/>
+      <Anchors>
+        <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="layWorld.frmMiniMap.lbMapFrameBg"/>
+        <Anchor offset="0,30" point="TOP"/>
+      </Anchors>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="330,2,240,93" Name="frmTarget" Pick="false" Show="fals" Size="198,82">
+      <Button Inherit="" Location="13,15,64,64" Name="btHead" Show="false"/>
+      <Label Inherit="" Location="2,2,207,86" Name="lbBackGround" Pick="false" Show="fals" Size="198,84">
+        <BackgroundImage Blend="true" File="1_1" Source="0,110,207,86"/>
+      </Label>
+      <Label Inherit="" Location="0,-1,215,93" Name="lbBackGroundJY" Pick="false" Show="false" Size="198,82">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <Label Inherit="" Location="4,37,116,9" Name="lbHpBarBg" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="89,38,102,6" Name="pbHP" Show="fals">
+        <ProgressBarImage File="1_2" Source="0,165,101,6"/>
+      </ProgressBar>
+      <Label Inherit="" Location="70,60,116,8" Name="lbMPBarBg" Show="false">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+      <ProgressBar Inherit="" Location="90,45,102,6" Name="pbMP" Show="fals">
+        <ProgressBarImage File="1_2" Source="0,180,101,6"/>
+      </ProgressBar>
+      <Label AlignCol="CENTER" Inherit="" Location="3,14,132,20" Name="lbName" Show="false" Text="$L:241$" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Label AlignCol="CENTER" Inherit="" Location="5,61,20,20" Name="lbTargetLev" Show="false" Text="$L:242$"/>
+      <ProgressBar Inherit="" Location="4,49,116,9" Name="prgFoMeng" Show="false">
+        <ProgressBarImage File="" Source=""/>
+      </ProgressBar>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="596,312,92,72" Name="frmPkMode" Show="false">
+      <Widget Inherit="" Location="0,0,92,72" Name="wgtHint" Show="true">
+        <Widgets>
+          <Widget Inherit="" Location="81,79,6,6" Name="lt" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor point="TOP"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="rt" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="RIGHT"/>
+              <Anchor point="TOP"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="lb" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="rb" Show="true" Size="6,6">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="RIGHT"/>
+              <Anchor point="BOTTOM"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="l" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT" relativeTo="lt"/>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+              <Anchor point="RIGHT" relativeTo="lt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="r" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="LEFT" relativeTo="rt"/>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+              <Anchor point="RIGHT" relativeTo="rt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="t" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="TOP" relativeTo="lt"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+              <Anchor point="BOTTOM" relativeTo="lt"/>
+            </Anchors>
+          </Widget>
+          <Widget Inherit="" Location="81,79,20,20" Name="b" Show="true">
+            <BackgroundImage File="" Source=""/>
+            <Anchors>
+              <Anchor point="TOP" relativeTo="lb"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+              <Anchor point="BOTTOM" relativeTo="lb"/>
+            </Anchors>
+          </Widget>
+          <Widget BackgroundColor="#e2121212" Inherit="" Location="100,100,200,200" Name="center" Show="true">
+            <Anchors>
+              <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+              <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+              <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+              <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+            </Anchors>
+          </Widget>
+        </Widgets>
+      </Widget>
+      <CheckButton CheckStyle="true" Inherit="" Location="6,6,80,20" Name="ckbMonster" Show="true" Text="$L:243$" TextColor="#ff28d20b">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+      <CheckButton BackgroundColor="#80000000" CheckStyle="true" Inherit="" Location="5,25,80,20" Name="ckbEnemy" Show="true" Text="$L:244$" TextColor="#ffdede00">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+      <CheckButton BackgroundColor="#80000000" CheckStyle="true" Inherit="" Location="5,43,80,20" Name="ckbFree" Show="true" Text="$L:245$" TextColor="#ffd03120">
+        <CheckImage File="" Source=""/>
+      </CheckButton>
+    </Form>
+    <Button Inherit="" Location="8,390,32,32" Name="btHelp" Show="false" Size="32,32">
+      <Anchors>
+        <Anchor offset="0,290" point="TOP" relativePoint="BOTTOM" relativeTo="layWorld.frmMainChar"/>
+      </Anchors>
+      <NormalImage File="ic_help_1"/>
+      <HighlightImage File="ic_help_2e"/>
+      <PushedImage File="ic_help_2"/>
+      <Flicker Cycle="2" Show="true">
+        <Image File="ic_help_2"/>
+      </Flicker>
+    </Button>
+    <Button Inherit="" Location="8,390,32,32" Name="btHelp2" Show="false" Size="32,32">
+      <Anchors>
+        <Anchor offset="0,325" point="TOP" relativePoint="BOTTOM" relativeTo="layWorld.frmMainChar"/>
+      </Anchors>
+      <NormalImage File="ic_help_1"/>
+      <PushedImage File="ic_help_2"/>
+      <Flicker Cycle="2" Show="true">
+        <Image File="ic_help_2"/>
+      </Flicker>
+    </Button>
+    <Button Inherit="" Location="8,390,32,32" Name="btHelp3" Show="false" Size="32,32">
+      <Anchors>
+        <Anchor offset="0,360" point="TOP" relativePoint="BOTTOM" relativeTo="layWorld.frmMainChar"/>
+      </Anchors>
+      <NormalImage File="ic_help_1"/>
+      <PushedImage File="ic_help_2"/>
+      <Flicker Cycle="2" Show="true">
+        <Image File="ic_help_2"/>
+      </Flicker>
+    </Button>
+    <Form Inherit="NoTitleBarForm" Location="501,167,256,202" Name="frmHelpbox" Show="false" Size="256,202">
+      <CloseButton Location="230,1,14,15" Show="true">
+        <NormalImage File="" Source=""/>
+        <PushedImage File="" Source=""/>
+      </CloseButton>
+      <BackgroundImage File="" Source=""/>
+      <EditBox AutoScrollV="true" EnableInput="false" Inherit="" Location="13,23,235,164" Name="edbHelpIndex" Show="true" WordWrap="true"/>
+      <Anchors>
+        <Anchor point="CENTERV"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+      <Label Inherit="" Location="0,192,256,11" Name="1452" Show="true">
+        <BackgroundImage File="" Source=""/>
+      </Label>
+    </Form>
+  </Layer>
+</Ui>

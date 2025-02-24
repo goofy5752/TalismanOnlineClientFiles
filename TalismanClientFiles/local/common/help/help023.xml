@@ -1,0 +1,22 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<UiRichText>
+  <Line/>
+  <Line>
+    	<Items>
+	  <Item type="TEXT" text="$L:help_task_paimaijieshao$" color="#ffa6a845" />
+	</Items>
+  </Line>
+<Line>
+	<Items>
+	<Item type="TEXT" text="  " color="#ffa6a845" />	 
+	</Items>
+  </Line>
+<Line>
+	<Items>
+		 <Item type="TEXT" text="$L:helpaaa$" hlink="File:local/common/help/help001d.xml" underline="true" color="#ffa6a845" />
+	</Items>
+  </Line>
+  <Line/>
+  <Line/>
+  <Line/>
+</UiRichText>
